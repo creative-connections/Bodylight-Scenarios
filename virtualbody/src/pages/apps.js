@@ -28,10 +28,10 @@ export class Apps {
     utter.voice = this.available_voices[0];
 
     // event after text has been spoken
-    utter.onend = function() {
+/*    utter.onend = function() {
       alert('Speech has finished');
     }
-
+*/
     // speak
     window.speechSynthesis.speak(utter);
   }
