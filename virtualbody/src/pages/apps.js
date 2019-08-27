@@ -24,8 +24,9 @@ export class Apps {
     var utter = new SpeechSynthesisUtterance();
     utter.rate = 1;
     utter.pitch = 0.5;
-    utter.text = 'Good morning doctor Kulhaaneck. Patient, Mr. Smith, age 41, he is currently stable and vital sings are within normal limits.';
-    utter.voice = this.available_voices[0];
+    utter.text = 'Good morning doctor Kulhaaneck. Patient, Mr. Smith, age 41, he is currently stable and vital signs are within normal limits.';
+    if (this.available_voices.length>1) utter.voice = this.available_voices[1];
+      else utter.voice = this.available_voices[0];
 
     // event after text has been spoken
 /*    utter.onend = function() {
