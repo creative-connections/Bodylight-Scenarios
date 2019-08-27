@@ -1,7 +1,4 @@
 body {
-  background-image: url("./images/digitalbody.png");
-  background-repeat: no-repeat;
-  background-size: cover;
   background-color: black;
 }
 
@@ -101,3 +98,8 @@ body {
 .animate-fade-out.au-leave-active {
   animation: FadeOut 1s;
 }
+
+.animate-fade-out.au-leave-done {
+  opacity: 0;
+}
+
