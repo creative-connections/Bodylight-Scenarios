@@ -1,0 +1,103 @@
+body {
+  background-image: url("./images/digitalbody.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+}
+
+/* Animations */
+@keyframes SlideInRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes SlideOutRight {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes SlideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes SlideOutLeft {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes FadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.animate-slide-in-right.au-enter {
+  transform: translateX(100%);
+}
+
+.animate-slide-in-right.au-enter-active {
+  animation: SlideInRight 1s;
+}
+
+.animate-slide-out-right.au-leave-active {
+  animation: SlideOutRight 1s;
+}
+
+.animate-slide-in-left.au-enter {
+  transform: translateX(-100%);
+}
+
+.animate-slide-in-left.au-enter-active {
+  animation: SlideInLeft 1s;
+}
+
+.animate-slide-out-left.au-leave-active {
+  animation: SlideOutLeft 1s;
+}
+
+.animate-fade-in.au-enter {
+  opacity: 0;
+}
+
+.animate-fade-in.au-enter-active {
+  animation: FadeIn 1s;
+}
+
+.animate-fade-out.au-leave-active {
+  animation: FadeOut 1s;
+}

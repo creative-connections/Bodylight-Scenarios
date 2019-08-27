@@ -1,0 +1,14 @@
+<template>
+  <require from="./w3.css"></require>
+  <require from="font-awesome/css/font-awesome.min.css"></require>
+  <require from="./styles.css"></require>
+
+  <require from="./nav-bar.html"></require>
+<div class="w3-black">
+  <nav-bar router.bind="router"></nav-bar>
+
+  <div class="page-host">
+    <router-view></router-view>
+  </div>
+</div>
+</template>
