@@ -6,6 +6,11 @@ export class Apps {
     this.ap2src="";
     this.showap1=false;
     this.showap2=false;
+    this.report={'summary':'Good morning doctor Koolhaaneck. Patient, Mr. Smith, age 41,  is currently stable and vital signs are within normal limits.',
+      'kidney':'All kidney function within normal limits. Serum Creatinine, 90. Estimated, GFR 95.',
+      'heart':'Heart function is normal. Pulse 120. Pressure 120/80.'
+
+    }
   }
 
   attached(){
@@ -20,6 +25,8 @@ export class Apps {
     else {
       this.available_voices = window.speechSynthesis.getVoices();
     }
+    // new SpeechSynthesisUtterance object
+
   }
 
   activate(params, routeConfig, navigationInstruction){
@@ -43,26 +50,28 @@ export class Apps {
   toggleapp(position,what)
   {
     console.log('toggleapp position,what:',position,what)
-    if (position===0) { this.ap1src=what+'.html';  this.showap1=!this.showap1;}
-    if (position===1) {this.ap2src=what+'.html'; this.showap2=! this.showap2;}
+    if (position===0) { this.ap1src=what+'.html';  this.showap1=!this.showap1; if (this.showap1) this.speakreport(what)}
+    if (position===1) { this.ap2src=what+'.html'; this.showap2=! this.showap2; if (this.showap2) this.speakreport(what)}
+
   }
 
-  speak() {
-    // new SpeechSynthesisUtterance object
-    var utter = new SpeechSynthesisUtterance();
-    utter.rate = 1;
-    utter.pitch = 0.5;
-    utter.text = 'Good morning doctor Koolhaaneck. Patient, Mr. Smith, age 41,  is currently stable and vital signs are within normal limits.';
-    if (this.available_voices.length>1) utter.voice = this.available_voices[1];
-      else utter.voice = this.available_voices[0];
+  speak(text) {
+    this.utter = new SpeechSynthesisUtterance();
+    this.utter.rate = 1;
+    this.utter.pitch = 0.5;
+    this.utter.text = text;
+    if (this.available_voices.length>1) this.utter.voice = this.available_voices[1];
+    else this.utter.voice = this.available_voices[0];
+    window.speechSynthesis.speak(this.utter);
+  }
+  summary(){
+    this.speak(this.report['summary'])
+  }
 
-    // event after text has been spoken
-/*    utter.onend = function() {
-      alert('Speech has finished');
-    }
-*/
-    // speak
-    window.speechSynthesis.speak(utter);
+  speakreport(what){
+    console.log('speakreport, what, report',what,this.report[what])
+    //this.utter.text = this.report[what];
+    this.speak(this.report[what]);
   }
 
 }
