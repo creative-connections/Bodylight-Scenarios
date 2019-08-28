@@ -13,7 +13,7 @@ export class App {
         settings:{icon:'fa fa-home'}
       },
       {
-        route: 'Apps',
+        route: ['apps','apps/*target'],
         name: 'apps',
         moduleId: PLATFORM.moduleName('./pages/apps'),
         nav: true,
