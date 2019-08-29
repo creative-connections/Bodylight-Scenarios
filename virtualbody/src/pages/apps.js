@@ -1,34 +1,21 @@
 import {I18N} from 'aurelia-i18n';
+import {Virtualbodyapi} from '../components/virtualbodyapi';
+import {inject} from 'aurelia-framework';
 
+@inject(Virtualbodyapi)
 export class Apps {
 
-  constructor(){
+  constructor(api){
+    this.api=api;
     let synth = window.speechSynthesis;
     this.ap1src="";
     this.ap2src="";
     this.showap1=false;
     this.showap2=false;
-    this.report={'summary':'Good morning doctor Koolhaaneck. Patient, Mr. Smith, age 41,  is currently stable and vital signs are within normal limits.',
-      'kidney':'All kidney function within normal limits. Serum Creatinine, 90. Estimated, GFR 95.',
-      'heart':'Heart function is normal. Pulse 120. Pressure 120/80.'
-
-    }
   }
 
   attached(){
-    this.available_voices =[];
-
-// list of languages is probably not loaded, wait for it
-    if(window.speechSynthesis.getVoices().length == 0) {
-      window.speechSynthesis.addEventListener('voiceschanged', function() {
-        this.available_voices = window.speechSynthesis.getVoices();
-      });
-    }
-    else {
-      this.available_voices = window.speechSynthesis.getVoices();
-    }
-    // new SpeechSynthesisUtterance object
-
+//speech initialization moved to virtualbodyapi
   }
 
   activate(params, routeConfig, navigationInstruction){
@@ -57,23 +44,14 @@ export class Apps {
 
   }
 
-  speak(text) {
-    this.utter = new SpeechSynthesisUtterance();
-    this.utter.rate = 1;
-    this.utter.pitch = 0.5;
-    this.utter.text = text;
-    if (this.available_voices.length>1) this.utter.voice = this.available_voices[1];
-    else this.utter.voice = this.available_voices[0];
-    window.speechSynthesis.speak(this.utter);
-  }
   summary(){
-    this.speak(this.report['summary'])
+    this.api.speaktran('summary')
   }
 
   speakreport(what){
-    console.log('speakreport, what, report',what,this.report[what])
+    console.log('speakreport, what, report',what)
     //this.utter.text = this.report[what];
-    this.speak(this.report[what]);
+    this.api.speaktran(what);
   }
 
 }

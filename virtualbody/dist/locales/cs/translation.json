@@ -1,5 +1,10 @@
 {
   "summary":"Dobrý den pane doktore. Pacient, pan Novák, věk 41, je stabilizovaný a všechny životní funkce jsou v normě.",
-  "kidney":"Renální funkce v normě. Sérum kreatininu 90. Odhad GFR 95.",
-  "heart":"Funkce srdce v normě. Puls 120, Tlak 120 na 80."
+  "kidney":"Renální funkce v normě. Sérum kreatininu 90, odhad GFR 95",
+  "heart":"Funkce srdce v normě. Puls 120, Tlak 120 na 80",
+  "title": "Virtuální pacient",
+  "title-apps":"Virtuální pacient - volný mód simulátoru",
+  "title-physiomodel": "Virtuální pacient - Physiome Model simulátor",
+  "title-scenarios":"Virtuální pacient - Scénáře",
+  "title-settings": "Nastavení"
 }
