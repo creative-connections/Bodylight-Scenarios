@@ -8,7 +8,7 @@
   </div>
   <div class="w3-border-aqua w3-round-large">
     <p t="settings.langtts">Text to speech language and voices</p>
-    <p> <i t="settings.currentvoice">Current voice</i> <b>${api.utter.voice.name}</b></p>
+    <p> <i t="settings.currentvoice">Current voice</i> <select>${api.utter.voice.name}</select></p>
     <span class="w3-large">
     <button click.delegate="setTTSEnglish()">EN</button><button click.delegate="setTTSCzech()">CZ</button>
   </span>

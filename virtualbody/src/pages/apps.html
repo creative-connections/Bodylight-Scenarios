@@ -2,11 +2,11 @@
   <section class="au-animate animate-fade-in">
     <h2 t="title-apps">Virtual Patient Free Style Mode Simulator</h2><button click.delegate="summary()" class="w3-indigo w3-button"><i class="fa fa-play"></i></button>
     <div style="position: relative">
-<img src="../images/digitalbody.png" style="width:97%;"/>
-    <a href="#/apps/ap1=kidney" click.delegate="toggleapp(0,'kidney')"><div style="position: absolute;left: 57%;top: 44%;width: 4%;height: 12%; background-color: rgba(150, 150, 0, .65);"></div></a>
-    <a href="#/apps/ap2=heart" click.delegate="toggleapp(1,'heart')"><div style="position: absolute; left: 67%; top: 43%; width: 7%; height: 20%; background-color: rgba(150, 150, 0, .65);"></div></a>
-      <div ref="ap1" class="au-animate animate-fade-in" show.bind="showap1" style="position: absolute; left: 35%; top: 50%; width: 30%; height: 50%; background-color: rgba(250, 250, 250, 0.9);"><iframe ref="ap1iframe" style="width:133%;height:133%;-ms-zoom: 0.75;-moz-transform: scale(0.75);-moz-transform-origin: 0 0;-o-transform: scale(0.75);-o-transform-origin: 0 0;-webkit-transform: scale(0.75);-webkit-transform-origin: 0 0;" src.bind="ap1src"></iframe></div>
-      <div ref="ap2" class="au-animate animate-fade-in" show.bind="showap2" style="position: absolute; left: 67%; top: 50%; width: 35%; height: 50%; background-color: rgba(250, 250, 250, 0.9);"><iframe ref="ap2iframe" style="width:133%;height:133%;-ms-zoom: 0.75;-moz-transform: scale(0.75);-moz-transform-origin: 0 0;-o-transform: scale(0.75);-o-transform-origin: 0 0;-webkit-transform: scale(0.75);-webkit-transform-origin: 0 0;" src.bind="ap2src"></iframe></div>
+<img src="../images/digitalbody.png" style="width:95%;"/>
+    <a href="#/apps/ap1=kidney" click.delegate="toggleapp(0,'kidney')"><div class="vb-roundblueborder" style="position: absolute;left: 57%;top: 44%;width: 4%;height: 12%; "></div></a>
+    <a href="#/apps/ap2=heart" click.delegate="toggleapp(1,'heart')"><div class="vb-roundblueborder" style="position: absolute; left: 67%; top: 43%; width: 7%; height: 20%; "></div></a>
+      <div ref="ap1" class="au-animate animate-fade-in" show.bind="showap1" style="position: absolute; left: 35%; top: 50%; width: 30%; height: 50%; background-color: rgba(250, 250, 250, 0.9);border-radius:10px;"><iframe ref="ap1iframe" class="vb-roundborder" style="width:133%;height:133%;-ms-zoom: 0.75;-moz-transform: scale(0.75);-moz-transform-origin: 0 0;-o-transform: scale(0.75);-o-transform-origin: 0 0;-webkit-transform: scale(0.75);-webkit-transform-origin: 0 0;" src.bind="ap1src"></iframe></div>
+      <div ref="ap2" class="au-animate animate-fade-in" show.bind="showap2" style="position: absolute; left: 67%; top: 50%; width: 35%; height: 50%; background-color: rgba(250, 250, 250, 0.9);border-radius:10px;"><iframe ref="ap2iframe" class="vb-roundborder" style="width:133%;height:133%;-ms-zoom: 0.75;-moz-transform: scale(0.75);-moz-transform-origin: 0 0;-o-transform: scale(0.75);-o-transform-origin: 0 0;-webkit-transform: scale(0.75);-webkit-transform-origin: 0 0;" src.bind="ap2src"></iframe></div>
     </div>
   </section>
 </template>

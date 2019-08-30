@@ -2,6 +2,23 @@ body {
   background-color: black;
 }
 
+.vb-roundblueborder {
+  border: 5px solid #00a5ff;
+  border-radius: 30px;
+}
+.vb-roundborder {
+  border: 0px;
+  border-radius: 30px;
+}
+
+.vb-ap1 {
+  position: absolute; left: 35%; top: 50%; width: 30%; height: 50%; background-color: rgba(250, 250, 250, 0.9);
+}
+
+.vb-ap2 {
+  position: absolute; left: 67%; top: 50%; width: 35%; height: 50%; background-color: rgba(250, 250, 250, 0.9);
+}
+
 /* Animations */
 @keyframes SlideInRight {
   0% {
