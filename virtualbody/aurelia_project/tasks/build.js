@@ -42,7 +42,7 @@ function onBuild(err, stats) {
 }
 
 function clearDist() {
-  return del([config.output.path]);
+  return del([config.output.path],{force:true});
 }
 
 const build = gulp.series(

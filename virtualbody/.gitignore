@@ -33,6 +33,6 @@ node_modules
 /src/environment.js
 /src/environment.ts
 # dist might be commited
-# /dist
+/dist
 /test/coverage-jest
 /test/coverage-karma

@@ -24,7 +24,7 @@
     "hmr": false,
     "open": false,
     "port": 8080,
-    "output": "dist"
+    "output": "../build/virtualbody"
   },
   "packageManager": "npm"
 }

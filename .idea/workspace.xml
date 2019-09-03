@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f224c62b-0b06-466b-b578-6dbd2ddf6e6e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Bodylight-Scenarios.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/.babelrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/aurelia_project/aurelia.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/aurelia_project/environments/dev.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/aurelia_project/environments/prod.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/aurelia_project/environments/stage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/aurelia_project/generators/attribute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/aurelia_project/generators/attribute.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/aurelia_project/generators/binding-behavior.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/aurelia_project/generators/binding-behavior.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/aurelia_project/generators/component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/aurelia_project/generators/component.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/aurelia_project/generators/element.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/aurelia_project/generators/element.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/aurelia_project/generators/generator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/aurelia_project/generators/generator.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/aurelia_project/generators/task.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/aurelia_project/generators/task.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/aurelia_project/generators/value-converter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/aurelia_project/generators/value-converter.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/aurelia_project/tasks/build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/aurelia_project/tasks/build.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/aurelia_project/tasks/environment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/aurelia_project/tasks/run.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/aurelia_project/tasks/run.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/src/app.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/src/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/src/bodylymphatic3d.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/src/bodylymphatic3d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/src/resources/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/static/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/static/scene5.gltf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/threejs-app/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/.babelrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/aurelia_project/aurelia.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/aurelia_project/environments/dev.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/aurelia_project/environments/prod.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/aurelia_project/environments/stage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/aurelia_project/generators/attribute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/aurelia_project/generators/attribute.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/aurelia_project/generators/binding-behavior.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/aurelia_project/generators/binding-behavior.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/aurelia_project/generators/component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/aurelia_project/generators/component.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/aurelia_project/generators/element.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/aurelia_project/generators/element.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/aurelia_project/generators/generator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/aurelia_project/generators/generator.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/aurelia_project/generators/task.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/aurelia_project/generators/task.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/aurelia_project/generators/value-converter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/aurelia_project/generators/value-converter.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/aurelia_project/tasks/build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/aurelia_project/tasks/build.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/aurelia_project/tasks/environment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/aurelia_project/tasks/run.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/aurelia_project/tasks/run.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/index.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/src/app.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/src/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/src/gl-matrix.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/src/resources/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/static/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/webgl-app/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/publishsite.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/virtualbody/nohup.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/virtualbody/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/virtualbody/src/components/bodylymphatic3d.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/virtualbody/src/components/bodylymphatic3d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/virtualbody/static/models/scene5.gltf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbody/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbody/aurelia_project/aurelia.json" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/aurelia_project/aurelia.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbody/aurelia_project/tasks/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/aurelia_project/tasks/build.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbody/dist/1_glomerulus_files/Chart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbody/dist/1_glomerulus_files/O6wGwX-xRb-mj6R_6MzyoOKEoKtJVig00FqXi8nT9L48V_s9_LjHm-XxsHBP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbody/dist/1_glomerulus_files/createjs-2015.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbody/dist/1_glomerulus_files/plotly-latest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbody/dist/674f50d287a8c48dc19ba404d20fe713.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbody/dist/912ec66d7572ff821749319396470bde.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbody/dist/af7ae505a9eed503f8b8e6982036873e.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbody/dist/app~d0ae3f07.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbody/dist/b06871f281fee6b241d60582ae9369b9.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbody/dist/bdff8c2d6f62ed56e8fc8d39022650bd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbody/dist/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/examples/threejs-app/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbody/dist/fee66e712a8a08eef5805a46892932ad.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbody/dist/heart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbody/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/examples/threejs-app/index.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbody/dist/kidney.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbody/dist/locales/cs/translation.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbody/dist/locales/en/translation.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbody/dist/vendors~253ae210.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbody/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbody/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbody/src/pages/physiomemodel.html" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/src/pages/physiomemodel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbody/src/pages/scenarios.html" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/src/pages/scenarios.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbody/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbody/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/webpack.config.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/examples/threejs-app/src/bodylymphatic3d.html">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/examples/threejs-app/src/bodylymphatic3d.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="2" selection-start-line="2" selection-end-line="2" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/examples/threejs-app/src/app.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="75">
+                  <caret line="5" selection-start-line="5" selection-end-line="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/examples/threejs-app/README.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="SPLIT">
+                  <first_editor />
+                  <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/examples/README.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="FIRST">
+                  <first_editor relative-caret-position="120">
+                    <caret line="8" selection-start-line="8" selection-end-line="8" />
+                  </first_editor>
+                  <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/virtualbody/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="473">
+                  <caret line="35" selection-start-line="35" selection-end-line="35" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="6" selection-start-column="6" selection-end-column="6" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/publishsite.sh">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="15">
+                  <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/examples/threejs-app/webpack.config.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="375">
+                  <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/examples/threejs-app/src/app.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="15">
+                  <caret line="1" selection-start-line="1" selection-end-line="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/examples/webgl-app/src/app.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="53">
+                  <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="tsconfig.json" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>addclass</find>
+      <find>ap2show</find>
+      <find>aurelia:</find>
+      <find>'</find>
+      <find>bootstrap</find>
+      <find>font-size</find>
+      <find>this.report</find>
+      <find>requestAn</find>
+      <find>shaderProgram</find>
+      <find>loadShader</find>
+      <find>initShaderProgram</find>
+      <find>requestAnimationFrame</find>
+      <find>mat4</find>
+      <find>cubeRotation</find>
+      <find>console</find>
+      <find>skin</find>
+      <find>mat4.rotate</find>
+      <find>load</find>
+      <find>geometry</find>
+      <find>this.cube</find>
+      <find>stats</find>
+      <find>orbit</find>
+      <find>camera</find>
+      <find>add</find>
+      <find>scene</find>
+      <find>16/9</find>
+      <find>dist</find>
+      <find>outdir</find>
+      <find>clean</find>
+      <find>clear</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>showap2</replace>
+      <replace>&quot;</replace>
+      <replace>this.sharedProgram</replace>
+      <replace>gl</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/virtualpatientapp/src/welcome.html" />
+        <option value="$PROJECT_DIR$/virtualpatientapp/src/styles.css" />
+        <option value="$PROJECT_DIR$/virtualpatientapp/webpack.config.js" />
+        <option value="$PROJECT_DIR$/virtualpatientapp/.gitignore" />
+        <option value="$PROJECT_DIR$/virtualbody/src/pages/welcome.js" />
+        <option value="$PROJECT_DIR$/virtualbody/src/pages/physiomemodel.js" />
+        <option value="$PROJECT_DIR$/virtualbody/src/pages/welcome.html" />
+        <option value="$PROJECT_DIR$/virtualbody/static/heart.html" />
+        <option value="$PROJECT_DIR$/virtualbody/src/nav-bar.html" />
+        <option value="$PROJECT_DIR$/virtualbody/src/app.html" />
+        <option value="$PROJECT_DIR$/virtualbody/src/components/nav-bar.html" />
+        <option value="$PROJECT_DIR$/virtualbody/src/main.js" />
+        <option value="$PROJECT_DIR$/virtualbody/src/pages/settings.js" />
+        <option value="$PROJECT_DIR$/virtualbody/src/pages/scenarios.js" />
+        <option value="$PROJECT_DIR$/virtualbody/src/pages/apps.js" />
+        <option value="$PROJECT_DIR$/virtualbody/src/components/virtualbodyapi.js" />
+        <option value="$PROJECT_DIR$/virtualbody/src/locales/cs/translation.json" />
+        <option value="$PROJECT_DIR$/virtualbody/src/locales/en/translation.json" />
+        <option value="$PROJECT_DIR$/virtualbody/src/pages/settings.html" />
+        <option value="$PROJECT_DIR$/virtualbody/src/pages/gl-matrix.js" />
+        <option value="$PROJECT_DIR$/virtualbody/src/pages/demo3d.html" />
+        <option value="$PROJECT_DIR$/virtualbody/index.ejs" />
+        <option value="$PROJECT_DIR$/virtualbody/src/pages/demo3dbody.html" />
+        <option value="$PROJECT_DIR$/virtualbody/src/styles.css" />
+        <option value="$PROJECT_DIR$/virtualbody/src/pages/demo3dbody.js" />
+        <option value="$PROJECT_DIR$/examples/webgl-app/src/app.html" />
+        <option value="$PROJECT_DIR$/examples/webgl-app/src/app.js" />
+        <option value="$PROJECT_DIR$/virtualbody/src/pages/demo3d.js" />
+        <option value="$PROJECT_DIR$/virtualbody/webpack.config.js" />
+        <option value="$PROJECT_DIR$/virtualbody/aurelia_project/aurelia.json" />
+        <option value="$PROJECT_DIR$/virtualbody/aurelia_project/tasks/build.js" />
+        <option value="$PROJECT_DIR$/virtualbody/src/app.js" />
+        <option value="$PROJECT_DIR$/virtualbody/src/components/demo3dbody.html" />
+        <option value="$PROJECT_DIR$/virtualbody/src/components/humanbody.js" />
+        <option value="$PROJECT_DIR$/virtualbody/src/components/demo3dbody.js" />
+        <option value="$PROJECT_DIR$/virtualbody/src/pages/apps.html" />
+        <option value="$PROJECT_DIR$/examples/webgl-app/aurelia_project/tasks/build.js" />
+        <option value="$PROJECT_DIR$/examples/webgl-app/aurelia_project/aurelia.json" />
+        <option value="$PROJECT_DIR$/examples/webgl-app/webpack.config.js" />
+        <option value="$PROJECT_DIR$/examples/threejs-app/aurelia_project/aurelia.json" />
+        <option value="$PROJECT_DIR$/examples/threejs-app/aurelia_project/tasks/build.js" />
+        <option value="$PROJECT_DIR$/virtualbody/src/pages/scenarios.html" />
+        <option value="$PROJECT_DIR$/virtualbody/src/pages/physiomemodel.html" />
+        <option value="$PROJECT_DIR$/examples/threejs-app/src/bodylymphatic3d.js" />
+        <option value="$PROJECT_DIR$/examples/threejs-app/src/app.js" />
+        <option value="$PROJECT_DIR$/examples/threejs-app/src/app.html" />
+        <option value="$PROJECT_DIR$/examples/README.md" />
+        <option value="$PROJECT_DIR$/virtualbody/.gitignore" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/publishsite.sh" />
+        <option value="$PROJECT_DIR$/examples/threejs-app/webpack.config.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+        <option value="$PROJECT_DIR$/.idea/Bodylight-Scenarios.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="121" />
+    <option name="y" value="61" />
+    <option name="width" value="1400" />
+    <option name="height" value="903" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Bodylight-Scenarios" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bodylight-Scenarios" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Bodylight-Scenarios" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bodylight-Scenarios" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Bodylight-Scenarios" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bodylight-Scenarios" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+              <item name="threejs-app" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/examples/threejs-app/src" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/examples/threejs-app/src" />
+      <recent name="$PROJECT_DIR$/examples/threejs-app/static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/virtualbody/src/components" />
+      <recent name="$PROJECT_DIR$/examples/webgl-app/src" />
+      <recent name="$PROJECT_DIR$/virtualbody/src/pages" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f224c62b-0b06-466b-b578-6dbd2ddf6e6e" name="Default Changelist" comment="" />
+      <created>1566900921612</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566900921612</updated>
+      <workItem from="1566900926417" duration="22538000" />
+      <workItem from="1566985779301" duration="1687000" />
+      <workItem from="1566998035469" duration="5489000" />
+      <workItem from="1567016130930" duration="223000" />
+      <workItem from="1567022747397" duration="15961000" />
+      <workItem from="1567164378594" duration="23560000" />
+      <workItem from="1567352122310" duration="10542000" />
+      <workItem from="1567498157186" duration="6802000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial virtual body app">
+      <created>1566905333969</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1566905333969</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add: added speech api support">
+      <created>1566906613580</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1566906613580</updated>
+    </task>
+    <task id="LOCAL-00003" summary="UPDATE: speech alert">
+      <created>1566906686127</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1566906686127</updated>
+    </task>
+    <task id="LOCAL-00004" summary="FIX #3 initial app ready: screen, board, speech api">
+      <created>1566907069943</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1566907069943</updated>
+    </task>
+    <task id="LOCAL-00005" summary="UPDATE animation fade-in only">
+      <created>1566915366672</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1566915366672</updated>
+    </task>
+    <task id="LOCAL-00006" summary="ADD #4: heart app and toggle feature">
+      <created>1566975818935</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1566975818935</updated>
+    </task>
+    <task id="LOCAL-00007" summary="UPDATE #4: background">
+      <created>1566976359924</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1566976359924</updated>
+    </task>
+    <task id="LOCAL-00008" summary="UPDATE #4: report speech on apps">
+      <created>1566977935259</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1566977935259</updated>
+    </task>
+    <task id="LOCAL-00009" summary="UPDATE #4: add kidney, i18n support">
+      <created>1567003344412</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1567003344413</updated>
+    </task>
+    <task id="LOCAL-00010" summary="FIX #4: fixed i18n support, added czech voice and language detection, settings table, iframe with moodle">
+      <created>1567070557409</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1567070557409</updated>
+    </task>
+    <task id="LOCAL-00011" summary="UPDATE: round border, color">
+      <created>1567172347071</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1567172347071</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="86802000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-3" y="31" width="1955" height="763" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17790456" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32951945" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <MESSAGE value="Initial virtual body app" />
+    <MESSAGE value="Add: added speech api support" />
+    <MESSAGE value="UPDATE: speech alert" />
+    <MESSAGE value="FIX #3 initial app ready: screen, board, speech api" />
+    <MESSAGE value="UPDATE animation fade-in only" />
+    <MESSAGE value="ADD #4: heart app and toggle feature" />
+    <MESSAGE value="UPDATE #4: background" />
+    <MESSAGE value="UPDATE #4: report speech on apps" />
+    <MESSAGE value="UPDATE #4: add kidney, i18n support" />
+    <MESSAGE value="FIX #4: fixed i18n support, added czech voice and language detection, settings table, iframe with moodle" />
+    <MESSAGE value="UPDATE: round border, color" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATE: round border, color" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/virtualbody/src/locale/en/translation.json" />
+    <entry file="file://$PROJECT_DIR$/virtualbody/src/components/nav-bar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/src/components/virtualbodyapi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="70" column="33" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
+          <folding>
+            <element signature="e#665#699#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/src/locales/en/translation.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/src/locales/cs/translation.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/src/pages/settings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#0#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/src/pages/physiomemodel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="26" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/webgl-app/src/gl-matrix.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19140">
+          <caret line="1276" column="29" selection-start-line="1276" selection-start-column="29" selection-end-line="1276" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/node_modules/three/examples/jsm/libs/stats.module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/src/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/src/pages/demo3d.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="2" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/src/pages/demo3d.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="333" lean-forward="true" selection-start-line="333" selection-end-line="333" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/webgl-app/src/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/webgl-app/src/app.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/src/w3.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2730">
+          <caret line="182" column="55" selection-start-line="182" selection-start-column="55" selection-end-line="182" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/node_modules/del/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="133" column="52" selection-start-line="133" selection-start-column="52" selection-end-line="133" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/node_modules/del/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/src/pages/apps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/src/components/humanbody.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="217" column="30" selection-start-line="217" selection-start-column="30" selection-end-line="217" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/webgl-app/aurelia_project/tasks/build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="46" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/webgl-app/aurelia_project/aurelia.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/webgl-app/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="21" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/aurelia_project/tasks/build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" selection-start-line="43" selection-end-line="45" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/aurelia_project/aurelia.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" selection-start-line="26" selection-end-line="26" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/threejs-app/aurelia_project/aurelia.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="48" lean-forward="true" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/threejs-app/aurelia_project/tasks/build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/threejs-app/static/scene5.gltf">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/src/pages/settings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="62" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/src/pages/welcome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/src/pages/apps.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="55" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="55" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#a#1;n#div#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#div#1;n#div#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/src/app.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/src/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/src/pages/scenarios.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/src/components/bodylymphatic3d.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/src/components/bodylymphatic3d.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/src/pages/scenarios.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#div#1;n#section#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/src/pages/physiomemodel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="58" selection-start-line="1" selection-start-column="58" selection-end-line="1" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/threejs-app/src/bodylymphatic3d.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/threejs-app/src/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/threejs-app/src/bodylymphatic3d.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/threejs-app/src/app.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/threejs-app/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="120">
+            <caret line="8" selection-start-line="8" selection-end-line="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/static/kidney.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/publishsite.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/threejs-app/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

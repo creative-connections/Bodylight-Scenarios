@@ -44,7 +44,6 @@ export class App {
         title: 'Settings',
         settings:{icon:'fa fa-cog'}
       }
-
     ]);
 
     this.router = router;
