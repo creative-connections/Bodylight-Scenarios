@@ -13,20 +13,21 @@ export class Bodylymphatic3d {
     this.onWindowResize = event =>
     {
       var w = window.innerWidth;
-      var h = window.innerWidth * 9 / 16 * 0.8;
+      var h = window.innerWidth * 9 / 16 * 0.69;
       this.camera.aspect = w/h;
       this.camera.updateProjectionMatrix();
       //console.log('resize camera position',this.camera.position);
       //console.log('resize camera rotation',this.camera.rotation);
       this.renderer.setSize( w, h );    }
   }
+
 attached(){
   this.scene = new THREE.Scene();
   var w = window.innerWidth;
-  var h = window.innerWidth * 9 / 16 * 0.8;
+  var h = window.innerWidth * 9 / 16 * 0.69;
   console.log('attached w,h',w,h);
-  this.camera = new THREE.PerspectiveCamera( 50, w/h, 0.2, 3000 );
-  this.camera.position.set( -25, 10, 1971 );
+  this.camera = new THREE.PerspectiveCamera( 32, w/h, 0.2, 3000 );
+  this.camera.position.set( -200, 10, 1971 );
 
   this.camera.rotation.set(-.02,-0.08,-0.001);
   this.light = new THREE.DirectionalLight('white',0.8);

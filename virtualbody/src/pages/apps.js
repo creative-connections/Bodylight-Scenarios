@@ -12,6 +12,7 @@ export class Apps {
     this.ap2src="";
     this.showap1=false;
     this.showap2=false;
+    window.addEventListener( 'mark', this.onMark );
   }
 
   attached(){
@@ -52,6 +53,11 @@ export class Apps {
     console.log('speakreport, what, report',what)
     //this.utter.text = this.report[what];
     this.api.speaktran(what);
+  }
+
+  onMark(event){
+    console.log("onMark event",event);
+    console.log("onMark eventname",event.name);
   }
 
 }

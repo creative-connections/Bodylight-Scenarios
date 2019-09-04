@@ -1,7 +1,7 @@
 <template bindable="router">
   <require from="font-awesome/css/font-awesome.min.css"></require>
 
-  <div class="w3-navbar w3-black w3-xxlarge">
+  <div class="w3-navbar w3-black w3-xxlarge w3-left">
     <!--a class='w3-bar-item w3-button w3-white w3-padding-0 w3-border-bottom' href="/"><irep></irep>Repository Home</a-->
     <a repeat.for="row of router.navigation" class="${row.isActive ? ' w3-round-large w3-button w3-padding-4 w3-indigo w3-border-aqua' : 'w3-round-large w3-button w3-padding-4 w3-black w3-border-aqua'}" href.bind="row.href" title.bind="row.title">
       <i class.bind="row.settings.icon"></i>
