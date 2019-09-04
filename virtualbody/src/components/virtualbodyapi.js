@@ -78,7 +78,7 @@ export class Virtualbodyapi {
 //      console.log("onmark catched:",event)
 //    }
     utter.onboundary = function(event){
-      console.log("onboundary catched:",event)
+      if (event.name === "sentence") console.log("onboundary catched:",event)
     }
     // this will hold a selected voice
     window.speechSynthesis.speak(utter);

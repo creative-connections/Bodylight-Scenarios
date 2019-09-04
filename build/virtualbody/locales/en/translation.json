@@ -1,0 +1,10 @@
+{
+  "summary":"Good morning doctor Koolhaaneck. Patient, Mr. Smith, age 41,  is currently stable and vital signs are within normal limits.",
+  "kidney":"All kidney function within normal limits. Serum Creatinine, 90. Estimated, GFR 95.",
+  "heart":"Heart function is normal. Pulse 120. Pressure 120 over 80.",
+  "title": "Dashboard Virtual Patient",
+  "title-apps": "Virtual Patient Free Style Mode Simulator",
+  "title-physiomodel": "Virtual Patient Physiome Model",
+  "title-scenarios":"Virtual Patient Scenarios",
+  "title-settings": "Settings"
+}
