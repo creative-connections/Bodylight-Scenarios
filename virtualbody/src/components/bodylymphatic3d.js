@@ -10,6 +10,9 @@ import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
 export class Bodylymphatic3d {
 
   constructor(){
+
+    let progresstxt =' 0% loaded';
+
     this.onWindowResize = event =>
     {
       var w = window.innerWidth;
@@ -84,18 +87,20 @@ attached(){
       //gltf.scenes; // Array<THREE.Scene>
       //gltf.cameras; // Array<THREE.Camera>
       //gltf.asset; // Object
-
+      window.that.progresstxt='';
     },
     // called while loading is progressing
     function ( xhr ) {
 
       console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
+      window.that.progresstxt=' '+ ( xhr.loaded / xhr.total * 100 ) + '% loaded'
 
     },
     // called when loading has errors
     function ( error ) {
 
       console.log( 'An error happened',error );
+      window.that.progresstxt+='An error happened '+error;
 
     });
 

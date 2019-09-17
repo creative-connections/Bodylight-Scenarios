@@ -2,12 +2,13 @@
   <require from="./w3.css"></require>
   <require from="font-awesome/css/font-awesome.min.css"></require>
   <require from="./styles.css"></require>
-
-  <require from="./components/nav-bar.html"></require>
+  <require from="./components/bodylymphatic3d"></require>
 <div class="w3-black">
+  <require from="./components/nav-bar.html"></require>
   <nav-bar router.bind="router"></nav-bar>
+  <bodylymphatic3d></bodylymphatic3d>
 
-  <div class="page-host">
+  <div class="page-host w3-left w3-border-blue-grey w3-round-large w3-opacity w3-opacity w3-white w3-padding" style="position: absolute; left: 75%; top: 5%; width: 24%; height: 95%; ">
     <router-view></router-view>
   </div>
 </div>

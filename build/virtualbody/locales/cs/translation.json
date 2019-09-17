@@ -1,10 +1,13 @@
 {
   "summary":"Dobrý den pane doktore. Pacient, pan Novák, věk 41, je stabilizovaný a všechny životní funkce jsou v normě.",
-  "kidney":"Ledvina je orgán, který zabezpečuje stálost vnitřního prostředí a vylučování odpadních látek rozpuštěných v krvi. V této kapitole chceme zopakovat anatomii a histologii ledvin. Předpokládáme však jejich znalost na úrovni studentů, kteří prošli úvodními ročníky studia medicíny. Cílem je hlavně zopakovat anatomii ledvin z funkčního hlediska, zopakovat detailní strukturu nefronu a cévní zásobení ledvin.",
-  "heart":"Funkce srdce v normě. Puls 120, Tlak 120 na 80",
+  "kidney":"Ledvina je orgán, který zabezpečuje stálost vnitřního prostředí a vylučování odpadních látek rozpuštěných v krvi. ",
+  "heart":"Funkce srdce v normě. Puls 120, Tlak stodvacet na 80.",
   "title": "Virtuální pacient",
   "title-apps":"Virtuální pacient - volný mód simulátoru",
   "title-physiomodel": "Virtuální pacient - Physiome Model simulátor",
   "title-scenarios":"Virtuální pacient - Scénáře",
-  "title-settings": "Nastavení"
+  "title-settings": "Nastavení",
+  "title-summary": "Report celkoveho stavu",
+  "title-kidney": "Report stavu ledvin",
+  "title-heart": "Report stavu srdce"
 }

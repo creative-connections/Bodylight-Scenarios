@@ -6,5 +6,9 @@
   "title-apps": "Virtual Patient Free Style Mode Simulator",
   "title-physiomodel": "Virtual Patient Physiome Model",
   "title-scenarios":"Virtual Patient Scenarios",
-  "title-settings": "Settings"
+  "title-settings": "Settings",
+  "title-summary": "Summary report",
+  "title-kidney": "Report of kidney function",
+  "title-heart": "Report of heart function"
+
 }
