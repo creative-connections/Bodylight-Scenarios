@@ -8,8 +8,14 @@ export class Apps {
   constructor(api){
     this.api=api;
     let synth = window.speechSynthesis;
+
+    this.ap1deg=0;
+    this.ap2deg=0;
     this.ap1src="";
+    this.ap1style="position: fixed; left: 5%; top: 55%; width: 28%; height: 45%; background-color: rgba(250, 250, 250, 0.9);border-radius:10px;"
+
     this.ap2src="";
+    this.ap2style="position: fixed; left: 37%; top: 55%; width: 28%; height: 45%; background-color: rgba(250, 250, 250, 0.9);border-radius:10px;"
     this.showap1=false;
     this.showap2=false;
     window.addEventListener( 'mark', this.onMark );
@@ -58,6 +64,22 @@ export class Apps {
   onMark(event){
     console.log("onMark event",event);
     console.log("onMark eventname",event.name);
+  }
+
+  rotateap1(){
+    //this.before= this.style;
+    console.log('rotateap1')
+    this.ap1deg=this.ap1deg+90; if (this.ap1deg>=360) this.ap1deg=0;
+    if (!this.ap1style.includes('transform')) this.ap1beforestyle=this.ap1style;
+    this.ap1style=this.ap1beforestyle+"transform:rotate("+this.ap1deg+"deg);"
+  }
+
+  rotateap2(){
+    //this.before= this.style;
+    console.log('rotateap2')
+    this.ap2deg=this.ap2deg+90; if (this.ap2deg>=360) this.ap2deg=0;
+    if (!this.ap2style.includes('transform')) this.ap2beforestyle=this.ap2style;
+    this.ap2style=this.ap2beforestyle+"transform:rotate("+this.ap2deg+"deg);"
   }
 
 }

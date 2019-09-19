@@ -3,12 +3,15 @@
   "kidney":"All kidney function within normal limits. Serum Creatinine, 90. Estimated, GFR 95.",
   "heart":"Heart function is normal. Pulse 120. Pressure 120 over 80.",
   "title": "Dashboard Virtual Patient",
-  "title-apps": "Virtual Patient Free Style Mode Simulator",
-  "title-physiomodel": "Virtual Patient Physiome Model",
-  "title-scenarios":"Virtual Patient Scenarios",
+  "title-apps": "List of simulators",
+  "title-physiomodel": "Physiome Model Simulator",
+  "title-elearning": "E-Learning",
+  "title-scenarios":"Scenarios",
   "title-settings": "Settings",
   "title-summary": "Summary report",
   "title-kidney": "Report of kidney function",
-  "title-heart": "Report of heart function"
-
+  "title-heart": "Report of heart function",
+  "settings-currentvoice": "Current voice",
+  "settings-langdialogs": "Dialog language",
+  "settings-langtts": "Text to speech language and voices"
 }

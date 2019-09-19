@@ -1,19 +1,19 @@
 <template>
   <section class="au-animate animate-fade-in">
 
-  <h2 t="title.settings">Settings</h2>
+  <h2 t="title-settings">Settings</h2>
   <div class="w3-border-aqua w3-round-large">
-    <p t="settings.langdialogs">Dialog language </p>
+    <p t="settings-langdialogs">Dialog language </p>
   <span class="w3-large">
     <button click.delegate="setEnglish()">EN</button><button click.delegate="setCzech()">CZ</button>
   </span>
   </div>
   <div class="w3-border-aqua w3-round-large">
-    <p t="settings.langtts">Text to speech language and voices</p>
-    <p> <i t="settings.currentvoice">Current voice</i> <select>${api.utter.voice.name}</select></p>
+    <p t="settings-langtts">Text to speech language and voices</p>
+    <p> <i t="settings-currentvoice">Current voice</i> <select value.bind="api.utter.voice"><option repeat.for="option of voices" model.bind="option">${option.name} (${option.lang})</select></p>
     <span class="w3-large">
-    <button click.delegate="setTTSEnglish()">EN</button><button click.delegate="setTTSCzech()">CZ</button>
-  </span>
+      <button click.delegate="testvoice()"><i class="fa fa-play"></i></button>
+    </span>
   </div>
   </section>
 </template>

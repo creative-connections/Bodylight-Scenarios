@@ -8,7 +8,11 @@
   <nav-bar router.bind="router"></nav-bar>
   <bodylymphatic3d></bodylymphatic3d>
 
-  <div class="page-host w3-left w3-border-blue-grey w3-round-large w3-opacity w3-opacity w3-white w3-padding" style="position: absolute; left: 75%; top: 5%; width: 24%; height: 95%; ">
+  <div class="page-host w3-left w3-border-blue-grey w3-round-large w3-white w3-padding w3-opacity w3-hover-opacity-off" style.bind="style">
+    <button class="w3-right w3-button w3-hover-indigo w3-black" click.delegate="maximise()" title="maximise"><i class="fa fa-arrows-alt"></i></button>
+    <button class="w3-right w3-button w3-hover-indigo w3-black" click.delegate="normalise()" title="make medium"><i class="fa fa-window-maximize"></i></button>
+    <button class="w3-right w3-button w3-hover-indigo w3-black" click.delegate="minimise()" title="minimise"><i class="fa fa-window-minimize"></i></button>
+    <!--button class="w3-right w3-button w3-hover-indigo w3-black" click.delegate="rotate()" title="rotate"><i class="fa fa-rotate-left"></i></button-->
     <router-view></router-view>
   </div>
 </div>

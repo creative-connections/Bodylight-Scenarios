@@ -16,7 +16,7 @@ export class Bodylymphatic3d {
     this.onWindowResize = event =>
     {
       var w = window.innerWidth;
-      var h = window.innerWidth * 9 / 16 * 0.69;
+      var h = window.innerWidth * 9 / 16 * 0.91;
       this.camera.aspect = w/h;
       this.camera.updateProjectionMatrix();
       //console.log('resize camera position',this.camera.position);
@@ -27,10 +27,10 @@ export class Bodylymphatic3d {
 attached(){
   this.scene = new THREE.Scene();
   var w = window.innerWidth;
-  var h = window.innerWidth * 9 / 16 * 0.69;
+  var h = window.innerWidth * 9 / 16 * 0.91;
   console.log('attached w,h',w,h);
   this.camera = new THREE.PerspectiveCamera( 32, w/h, 0.2, 3000 );
-  this.camera.position.set( -200, 10, 1971 );
+  this.camera.position.set( -350, 10, 2321 );
 
   this.camera.rotation.set(-.02,-0.08,-0.001);
   this.light = new THREE.DirectionalLight('white',0.8);

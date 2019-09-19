@@ -3,11 +3,15 @@
   "kidney":"Ledvina je orgán, který zabezpečuje stálost vnitřního prostředí a vylučování odpadních látek rozpuštěných v krvi. ",
   "heart":"Funkce srdce v normě. Puls 120, Tlak stodvacet na 80.",
   "title": "Virtuální pacient",
-  "title-apps":"Virtuální pacient - volný mód simulátoru",
-  "title-physiomodel": "Virtuální pacient - Physiome Model simulátor",
-  "title-scenarios":"Virtuální pacient - Scénáře",
+  "title-apps":"Seznam simulátorů",
+  "title-physiomodel": "Physiome Model simulátor",
+  "title-elearning": "E-Learning",
+  "title-scenarios": "Scénáře",
   "title-settings": "Nastavení",
   "title-summary": "Report celkoveho stavu",
   "title-kidney": "Report stavu ledvin",
-  "title-heart": "Report stavu srdce"
+  "title-heart": "Report stavu srdce",
+  "settings-currentvoice": "Nastavený hlas",
+  "settings-langdialogs": "Jazyk dialogů",
+  "settings-langtts": "Jazyk a hlas pro generování hlasu z textu"
 }
