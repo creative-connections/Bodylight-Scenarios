@@ -5,26 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f224c62b-0b06-466b-b578-6dbd2ddf6e6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/virtualbody/src/pages/elearning.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/virtualbody/src/pages/elearning.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Bodylight-Scenarios.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Bodylight-Scenarios.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/virtualbody/app~d0ae3f07.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/virtualbody/app~d0ae3f07.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/virtualbody/bdff8c2d6f62ed56e8fc8d39022650bd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/virtualbody/locales/cs/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/virtualbody/locales/cs/translation.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/virtualbody/locales/en/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/virtualbody/locales/en/translation.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualbody/nohup.out" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/nohup.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualbody/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/src/app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualbody/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualbody/src/components/bodylymphatic3d.html" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/src/components/bodylymphatic3d.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/virtualbody/vendors~253ae210.chunk.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/virtualbody/vendors~253ae210.chunk.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/virtualbody/src/components/bodylymphatic3d.js" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/src/components/bodylymphatic3d.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualbody/src/locales/cs/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/src/locales/cs/translation.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualbody/src/locales/en/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/src/locales/en/translation.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualbody/src/pages/apps.html" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/src/pages/apps.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualbody/src/pages/apps.js" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/src/pages/apps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualbody/src/pages/scenarios.html" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/src/pages/scenarios.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualbody/src/pages/settings.html" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/src/pages/settings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualbody/src/pages/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/src/pages/settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbody/static/models/scene5.gltf" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -55,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/virtualbody/src/components/bodylymphatic3d.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="35" column="55" lean-forward="true" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
+            <state relative-caret-position="170">
+              <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -122,11 +107,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/virtualbody/src/pages/apps.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="66" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
+            <state relative-caret-position="240">
+              <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -240,10 +225,10 @@
         <option value="$PROJECT_DIR$/virtualbody/src/locales/cs/translation.json" />
         <option value="$PROJECT_DIR$/virtualbody/src/pages/apps.html" />
         <option value="$PROJECT_DIR$/virtualbody/src/components/bodylymphatic3d.html" />
-        <option value="$PROJECT_DIR$/virtualbody/src/components/bodylymphatic3d.js" />
         <option value="$PROJECT_DIR$/virtualbody/src/app.js" />
         <option value="$PROJECT_DIR$/virtualbody/src/app.html" />
         <option value="$PROJECT_DIR$/virtualbody/src/pages/apps.js" />
+        <option value="$PROJECT_DIR$/virtualbody/src/components/bodylymphatic3d.js" />
       </list>
     </option>
   </component>
@@ -286,7 +271,27 @@
               <item name="Bodylight-Scenarios" type="462c0819:PsiDirectoryNode" />
               <item name="virtualbody" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Bodylight-Scenarios" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bodylight-Scenarios" type="462c0819:PsiDirectoryNode" />
+              <item name="virtualbody" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Bodylight-Scenarios" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bodylight-Scenarios" type="462c0819:PsiDirectoryNode" />
+              <item name="virtualbody" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Bodylight-Scenarios" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bodylight-Scenarios" type="462c0819:PsiDirectoryNode" />
+              <item name="virtualbody" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -352,7 +357,7 @@
       <workItem from="1568207778926" duration="2085000" />
       <workItem from="1568724169646" duration="6637000" />
       <workItem from="1568794481368" duration="10223000" />
-      <workItem from="1568883196991" duration="6740000" />
+      <workItem from="1568883196991" duration="9310000" />
     </task>
     <task id="LOCAL-00001" summary="Initial virtual body app">
       <created>1566905333969</created>
@@ -445,11 +450,18 @@
       <option name="project" value="LOCAL" />
       <updated>1567604020357</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fix #19 locales, voice selection, hover, app position 16:9, icons min/max/rotation">
+      <created>1568892646720</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1568892646720</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124523000" />
+    <option name="totallyTimeSpent" value="127093000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="31" width="2037" height="1395" extended-state="6" />
@@ -511,7 +523,8 @@
     <MESSAGE value="UPDATE: round border, color" />
     <MESSAGE value="FIX #5: added examples of Webgl, threejs, created component with 3d human body, refactor" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="fix #19 locales, voice selection, hover, app position 16:9, icons min/max/rotation" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix #19 locales, voice selection, hover, app position 16:9, icons min/max/rotation" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/virtualbody/node_modules/del/index.js">
@@ -863,13 +876,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/virtualbody/src/components/bodylymphatic3d.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="35" column="55" lean-forward="true" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/virtualbody/src/app.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -886,11 +892,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/virtualbody/src/pages/apps.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="66" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
+        <state relative-caret-position="240">
+          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/src/components/bodylymphatic3d.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
         </state>
       </provider>
     </entry>

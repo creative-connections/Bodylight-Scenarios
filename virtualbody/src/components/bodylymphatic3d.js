@@ -9,6 +9,13 @@ import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
 
 export class Bodylymphatic3d {
 
+  urls = {
+    skeletonlymphatic:"https://filedn.com/lHGc7w3H4jOpIe46u1nPt57/skeletonlymphatic.gltf",
+    lungs:"https://filedn.com/lHGc7w3H4jOpIe46u1nPt57/lungs.gltf",
+    liver:"https://filedn.com/lHGc7w3H4jOpIe46u1nPt57/liver.gltf",
+
+        }
+
   constructor(){
 
     let progresstxt =' 0% loaded';
@@ -61,7 +68,8 @@ attached(){
   let loader = new GLTFLoader();
   loader.load(
     // resource URL
-    'models/scene5.gltf',
+    //'models/scene5.gltf',
+    this.urls.skeletonlymphatic,
     // called when the resource is loaded
     function ( gltf ) {
       //gltf.scene.traverse( function ( child ) {
