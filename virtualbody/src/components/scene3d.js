@@ -39,10 +39,9 @@ attached(){
 
   this.camera = new THREE.PerspectiveCamera( 32, w/h, 0.2, 5000 );
 
-  /*this.camera.position.set( -350, 10, 2321 );
-  this.camera.rotation.set(-.02,-0.08,-0.001);*/
-  this.camera.position.set(0,0,800)
+  /*this.camera.position.set( -350, 10, 2321 );*/
 
+  this.camera.position.set(-0,0,2480);
   this.light = new THREE.DirectionalLight('white',0.8);
   this.light.position.set(0.4,1.1,1000);
 
@@ -85,7 +84,7 @@ attached(){
 }
 
 declareOrbitControls(){
-  console.log('orbit controls')
+  console.log('orbit controls 7')
   let controls = new OrbitControls( this.camera, this.renderer.domElement );
   controls.target.set( 0, 0, 0 );
   controls.update();
@@ -134,9 +133,9 @@ loadfromurl(myurl){
     myurl,
     function ( gltf ) {
 
-      gltf.scene.rotation.set(0.5*Math.PI,-0*Math.PI,0.5*Math.PI);
-      //gltf.scene.rotateY(-0.5*Math.PI);
-      gltf.scene.position.set(-300,0,-800)
+      //gltf.scene.rotation.set(0.5*Math.PI,-0*Math.PI,0.5*Math.PI);
+      gltf.scene.rotateZ(0.5*Math.PI);
+      //gltf.scene.position.set(-300,0,-800)
       window.that.scene.add( gltf.scene );
       window.that.progresstxt='';
       window.that.loadobjects2();

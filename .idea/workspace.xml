@@ -5,27 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f224c62b-0b06-466b-b578-6dbd2ddf6e6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/virtualbody/cachemodels.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/virtualbody/src/components/objects3d.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/virtualbody/src/locales/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/virtualbody/app~d0ae3f07.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/virtualbody/app~d0ae3f07.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/virtualbody/locales/cs/translation.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/virtualbody/locales/en/translation.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/virtualbody/vendors~253ae210.chunk.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/virtualbody/vendors~253ae210.chunk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/virtualbody/vendors~c8b84549.chunk.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/virtualbody/vendors~c8b84549.chunk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/examples/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualbody/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualbody/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualbody/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualbody/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualbody/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/src/app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualbody/src/components/bodylymphatic3d.html" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/src/components/scene3d.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualbody/src/components/bodylymphatic3d.js" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/src/components/scene3d.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualbody/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualbody/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbody/src/components/scene3d.js" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/src/components/scene3d.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,8 +23,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/virtualbody/src/components/scene3d.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="39" column="60" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="60" />
+            <state relative-caret-position="558">
+              <caret line="68" column="40" lean-forward="true" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -338,7 +320,7 @@
       <workItem from="1568724169646" duration="6637000" />
       <workItem from="1568794481368" duration="10223000" />
       <workItem from="1568883196991" duration="9513000" />
-      <workItem from="1568966754816" duration="14562000" />
+      <workItem from="1568966754816" duration="16370000" />
     </task>
     <task id="LOCAL-00001" summary="Initial virtual body app">
       <created>1566905333969</created>
@@ -445,11 +427,18 @@
       <option name="project" value="LOCAL" />
       <updated>1568905458601</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fix #20 added loading multiple objects">
+      <created>1568982241753</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1568982241753</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141858000" />
+    <option name="totallyTimeSpent" value="143666000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="31" width="1924" height="1395" extended-state="6" />
@@ -513,7 +502,8 @@
     <MESSAGE value="update" />
     <MESSAGE value="fix #19 locales, voice selection, hover, app position 16:9, icons min/max/rotation" />
     <MESSAGE value="updated urls of 3d objects" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated urls of 3d objects" />
+    <MESSAGE value="fix #20 added loading multiple objects" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix #20 added loading multiple objects" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/examples/webgl-app/webpack.config.js">
@@ -896,8 +886,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/virtualbody/src/components/scene3d.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="39" column="60" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="60" />
+        <state relative-caret-position="558">
+          <caret line="68" column="40" lean-forward="true" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
