@@ -4,17 +4,22 @@ This project is bootstrapped by [aurelia-cli](https://github.com/aurelia/cli).
 
 For more information, go to https://aurelia.io/docs/cli/webpack
 
-## Run dev app
+## Local cache of GLTF files
 
-Run `au run`, then open `http://localhost:8080`
+GLTF files of 3d models are from externally hosted on public cloud, for testing offline purposes execute the script:
 
-To open browser automatically, do `au run --open`.
+`python cachemodels.py`
+ - this will download the model files into `/static/models` directory which is not part of source control. Scened3d object checks whether local files are available, if not then remote files are downloaded.
 
-To change dev server port, do `au run --port 8888`.
+## Add new 3d model
 
-To enable Webpack Bundle Analyzer, do `au run --analyze`.
+- upload to public pcloud - 
+- add new entry line to src/components/objects3d.json
+- add code to load object into src/components/scene3d.js
 
-To enable hot module reload, do `au run --hmr`.
+## Build for test
+
+Run `au build --watch`. build/virtualbody contains the html and js files - these should be aliased from local apache config.
 
 ## Build for production
 
@@ -33,3 +38,4 @@ You need the app running for integration test.
 First, run `au run` and keep it running.
 
 Then run `au protractor`.
+

@@ -6,6 +6,7 @@ import {I18N, TCustomAttribute} from 'aurelia-i18n';
 import Backend from 'i18next-xhr-backend';
 import environment from './environment';
 import {PLATFORM} from 'aurelia-pal';
+import resBundle from 'i18next-resource-store-loader!./locales/index.js';
 
 export function configure(aurelia) {
   aurelia.use
@@ -17,6 +18,7 @@ export function configure(aurelia) {
       TCustomAttribute.configureAliases(aliases);
       instance.i18next.use(Backend);
       return instance.setup({
+        resources  : resBundle, //<-- configure aurelia-i18n to use your bundled translations
         backend: {
           loadPath: 'locales/{{lng}}/{{ns}}.json',
         },

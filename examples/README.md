@@ -6,7 +6,7 @@ this example contains demo project utilizing direct webgl api. Further tutorial 
 # ThreeJS
 
 This example contains demo project utilizing Three.js library with WEBGL support. The scene5.gltf was downloaded from https://sketchfab.com/3d-models/lymphatic-system-14800d739ecb46678d7584a401b0aa77
-The scene cameras and rotation was debuged using https://threejs.org/editor/ and manually set in bodylymphatic3d.js
+The scene cameras and rotation was debuged using https://threejs.org/editor/ and manually set in scene3d.js
 
 # Adding new example
 
