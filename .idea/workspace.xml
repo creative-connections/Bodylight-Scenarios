@@ -7,7 +7,11 @@
     <list default="true" id="f224c62b-0b06-466b-b578-6dbd2ddf6e6e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/virtualbody/app~d0ae3f07.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/virtualbody/app~d0ae3f07.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/virtualbody/vendors~253ae210.chunk.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/virtualbody/vendors~253ae210.chunk.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/virtualbody/src/components/scene3d.js" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/src/components/scene3d.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbody/src/components/virtualbodyapi.js" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/src/components/virtualbodyapi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbody/src/pages/settings.html" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/src/pages/settings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbody/src/pages/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/src/pages/settings.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/virtualbody/src/components/scene3d.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="68" column="40" lean-forward="true" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
+            <state relative-caret-position="720">
+              <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -35,17 +39,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/virtualbody/src/components/virtualbodyapi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="21" selection-start-line="21" selection-end-line="23" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+            <state relative-caret-position="480">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+              <folding>
+                <element signature="e#665#699#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -55,6 +53,27 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="919">
               <caret line="163" column="43" selection-start-line="163" selection-start-column="43" selection-end-line="163" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/virtualbody/src/pages/settings.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/virtualbody/src/pages/settings.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#60#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -79,15 +98,6 @@
                 <caret line="17" column="56" lean-forward="true" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
               </first_editor>
               <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/virtualbody/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -198,7 +208,6 @@
         <option value="$PROJECT_DIR$/examples/threejs-app/webpack.config.js" />
         <option value="$PROJECT_DIR$/examples/webgl-app/src/app.html" />
         <option value="$PROJECT_DIR$/virtualbody/src/components/nav-bar.html" />
-        <option value="$PROJECT_DIR$/virtualbody/src/components/virtualbodyapi.js" />
         <option value="$PROJECT_DIR$/examples/threejs-app/src/kidney.html" />
         <option value="$PROJECT_DIR$/examples/threejs-app/src/kidney.js" />
         <option value="$PROJECT_DIR$/examples/threejs-app/src/app.html" />
@@ -207,8 +216,6 @@
         <option value="$PROJECT_DIR$/virtualbody/src/pages/scenarios.html" />
         <option value="$PROJECT_DIR$/virtualbody/src/pages/elearning.js" />
         <option value="$PROJECT_DIR$/virtualbody/src/pages/elearning.html" />
-        <option value="$PROJECT_DIR$/virtualbody/src/pages/settings.js" />
-        <option value="$PROJECT_DIR$/virtualbody/src/pages/settings.html" />
         <option value="$PROJECT_DIR$/virtualbody/src/locales/en/translation.json" />
         <option value="$PROJECT_DIR$/virtualbody/src/locales/cs/translation.json" />
         <option value="$PROJECT_DIR$/virtualbody/src/pages/apps.html" />
@@ -228,7 +235,10 @@
         <option value="$PROJECT_DIR$/virtualbody/cachemodels.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/virtualbody/README.md" />
+        <option value="$PROJECT_DIR$/virtualbody/src/components/virtualbodyapi.js" />
         <option value="$PROJECT_DIR$/virtualbody/src/components/scene3d.js" />
+        <option value="$PROJECT_DIR$/virtualbody/src/pages/settings.js" />
+        <option value="$PROJECT_DIR$/virtualbody/src/pages/settings.html" />
       </list>
     </option>
   </component>
@@ -253,7 +263,38 @@
             <path>
               <item name="Bodylight-Scenarios" type="b2602c69:ProjectViewProjectNode" />
               <item name="Bodylight-Scenarios" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Bodylight-Scenarios" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bodylight-Scenarios" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
               <item name="virtualbody" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Bodylight-Scenarios" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bodylight-Scenarios" type="462c0819:PsiDirectoryNode" />
+              <item name="virtualbody" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Bodylight-Scenarios" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bodylight-Scenarios" type="462c0819:PsiDirectoryNode" />
+              <item name="virtualbody" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Bodylight-Scenarios" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bodylight-Scenarios" type="462c0819:PsiDirectoryNode" />
+              <item name="virtualbody" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Bodylight-Scenarios" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bodylight-Scenarios" type="462c0819:PsiDirectoryNode" />
+              <item name="virtualbody" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -320,7 +361,7 @@
       <workItem from="1568724169646" duration="6637000" />
       <workItem from="1568794481368" duration="10223000" />
       <workItem from="1568883196991" duration="9513000" />
-      <workItem from="1568966754816" duration="16370000" />
+      <workItem from="1568966754816" duration="18693000" />
     </task>
     <task id="LOCAL-00001" summary="Initial virtual body app">
       <created>1566905333969</created>
@@ -434,11 +475,18 @@
       <option name="project" value="LOCAL" />
       <updated>1568982241753</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="update #20 position of objects">
+      <created>1568984042801</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1568984042801</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143666000" />
+    <option name="totallyTimeSpent" value="145989000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="31" width="1924" height="1395" extended-state="6" />
@@ -503,7 +551,8 @@
     <MESSAGE value="fix #19 locales, voice selection, hover, app position 16:9, icons min/max/rotation" />
     <MESSAGE value="updated urls of 3d objects" />
     <MESSAGE value="fix #20 added loading multiple objects" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix #20 added loading multiple objects" />
+    <MESSAGE value="update #20 position of objects" />
+    <option name="LAST_COMMIT_MESSAGE" value="update #20 position of objects" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/examples/webgl-app/webpack.config.js">
@@ -704,16 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/virtualbody/src/pages/settings.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="25" column="74" selection-start-line="25" selection-start-column="74" selection-end-line="25" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/virtualbody/src/pages/scenarios.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -725,13 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/virtualbody/src/pages/settings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -829,13 +861,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/virtualbody/src/components/virtualbodyapi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" selection-start-line="21" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/virtualbody/cachemodels.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -884,13 +909,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/src/components/virtualbodyapi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#665#699#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/virtualbody/src/components/scene3d.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="68" column="40" lean-forward="true" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
+        <state relative-caret-position="720">
+          <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/src/pages/settings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/src/pages/settings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
         </state>
       </provider>
     </entry>

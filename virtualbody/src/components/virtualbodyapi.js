@@ -23,10 +23,16 @@ import {inject} from 'aurelia-framework';
 
 @inject(I18N)
 export class Virtualbodyapi {
+
   constructor(i18n) {
     this.i18n = i18n;
     this.available_voices = [];
+    this.utter = {}//new SpeechSynthesisUtterance();
+    this.utter.rate = 1;
+    this.utter.pitch = 1;
+  }
 
+  initvoices(){
     // list of languages is probably not loaded, wait for it
     if (window.speechSynthesis.getVoices().length == 0) {
       window.speechSynthesis.addEventListener('voiceschanged', function () {

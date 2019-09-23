@@ -65,42 +65,19 @@ attached(){
   this.renderer.gammaOutput = true;
   this.renderer.gammaFactor = 2.2;
   this.controls = this.declareOrbitControls()
-  //this.controls = this.declareTrackballControls()
-  //this.controls.target.set( 0, 0, 0 );
-  //controls.m
-  //controls.minAzimuthAngle=-0.3;
-  //controls.maxAzimuthAngle=0.3;
 
-  //controls
   this.controls.update();
 
   window.addEventListener( 'resize', this.onWindowResize, false );
-  //this.camera.position.z = 5;
-
-  //this.stats = Stats();
-  //this.canvas.appendChild( this.stats.dom );
-
   this.animate()
 }
 
 declareOrbitControls(){
-  console.log('orbit controls 7')
+  console.log('orbit controls 8')
   let controls = new OrbitControls( this.camera, this.renderer.domElement );
   controls.target.set( 0, 0, 0 );
   controls.update();
   return controls;
-}
-
-declareTrackballControls(){
-    console.log('trackball controls')
-  let controls = new TrackballControls( this.camera, this.renderer.domElement );
-  controls.rotateSpeed = 1.0;
-  controls.zoomSpeed = 1.2;
-  controls.panSpeed = 0.8;
-  controls.staticMoving = true;
-  controls.dynamicDampingFactor = 0.3;
-  controls.keys = [ 65, 83, 68 ];
-  return controls
 }
 
 loadobjects(names){

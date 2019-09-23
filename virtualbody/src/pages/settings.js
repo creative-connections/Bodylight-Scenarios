@@ -11,15 +11,22 @@ export class Settings {
   }
 
   attached(){
+    //console.log('settings 1')
+    if (this.api.available_voices.length == 0 ) {
+      this.api.initvoices() ;
+    }
     this.voices = this.api.available_voices;
-
+    this.locale = this.i18n.getLocale();
   }
+
   setEnglish(){
     this.i18n.setLocale('en')
+    this.locale = this.i18n.getLocale();
 
   }
   setCzech(){
     this.i18n.setLocale('cs')
+    this.locale = this.i18n.getLocale();
   }
 
   testvoice(){
