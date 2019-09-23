@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f224c62b-0b06-466b-b578-6dbd2ddf6e6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deploy.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/publishsite.sh" beforeDir="false" afterPath="$PROJECT_DIR$/publishsite.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualbody/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/virtualbody/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/virtualbody/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -40,31 +37,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/virtualbody/aurelia_project/tasks/run.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/virtualbody/aurelia_project/tasks/protractor.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/virtualbody/aurelia_project/tasks/jest.json">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/virtualbody/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="64" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
+            <state relative-caret-position="225">
+              <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -78,12 +59,24 @@
         <entry file="file://$PROJECT_DIR$/publishsite.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" column="52" lean-forward="true" selection-start-line="1" selection-start-column="52" selection-end-line="1" selection-end-column="52" />
+              <caret line="1" column="52" selection-start-line="1" selection-start-column="52" selection-end-line="1" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="45">
+                <caret line="3" selection-start-line="3" selection-end-line="3" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
@@ -114,7 +107,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>skin</find>
       <find>mat4.rotate</find>
       <find>load</find>
       <find>geometry</find>
@@ -144,6 +136,7 @@
       <find>locales</find>
       <find>controls</find>
       <find>scr</find>
+      <find>gh-p</find>
     </findStrings>
     <replaceStrings>
       <replace>showap2</replace>
@@ -208,9 +201,9 @@
         <option value="$PROJECT_DIR$/virtualbody/src/pages/settings.js" />
         <option value="$PROJECT_DIR$/virtualbody/src/pages/settings.html" />
         <option value="$PROJECT_DIR$/virtualbody/aurelia_project/tasks/deploy.json" />
-        <option value="$PROJECT_DIR$/virtualbody/package.json" />
         <option value="$PROJECT_DIR$/publishsite.sh" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/virtualbody/package.json" />
       </list>
     </option>
   </component>
@@ -235,12 +228,20 @@
             <path>
               <item name="Bodylight-Scenarios" type="b2602c69:ProjectViewProjectNode" />
               <item name="Bodylight-Scenarios" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="virtualbody" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Bodylight-Scenarios" type="b2602c69:ProjectViewProjectNode" />
               <item name="Bodylight-Scenarios" type="462c0819:PsiDirectoryNode" />
               <item name="virtualbody" type="462c0819:PsiDirectoryNode" />
+              <item name="aurelia_project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Bodylight-Scenarios" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bodylight-Scenarios" type="462c0819:PsiDirectoryNode" />
+              <item name="virtualbody" type="462c0819:PsiDirectoryNode" />
+              <item name="aurelia_project" type="462c0819:PsiDirectoryNode" />
+              <item name="tasks" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -307,7 +308,7 @@
       <workItem from="1568724169646" duration="6637000" />
       <workItem from="1568794481368" duration="10223000" />
       <workItem from="1568883196991" duration="9513000" />
-      <workItem from="1568966754816" duration="21234000" />
+      <workItem from="1568966754816" duration="21456000" />
     </task>
     <task id="LOCAL-00001" summary="Initial virtual body app">
       <created>1566905333969</created>
@@ -435,15 +436,28 @@
       <option name="project" value="LOCAL" />
       <updated>1569225148667</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="update git gh-pages and ignore build">
+      <created>1569227769986</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1569227769986</updated>
+    </task>
+    <task id="LOCAL-00020" summary="update git gh-pages and ignore build">
+      <created>1569227828141</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1569227828141</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148530000" />
+    <option name="totallyTimeSpent" value="148752000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="31" width="1924" height="1395" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18133895" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -506,16 +520,10 @@
     <MESSAGE value="fix #20 added loading multiple objects" />
     <MESSAGE value="update #20 position of objects" />
     <MESSAGE value="update #21 fix settings initialization" />
-    <option name="LAST_COMMIT_MESSAGE" value="update #21 fix settings initialization" />
+    <MESSAGE value="update git gh-pages and ignore build" />
+    <option name="LAST_COMMIT_MESSAGE" value="update git gh-pages and ignore build" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/examples/threejs-app/src/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/examples/threejs-app/src/kidney.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -724,16 +732,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" selection-start-line="3" selection-end-line="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/virtualbody/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -852,27 +850,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/virtualbody/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="64" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deploy.sh">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/publishsite.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="52" lean-forward="true" selection-start-line="1" selection-start-column="52" selection-end-line="1" selection-end-column="52" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/publishsite.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="52" selection-start-line="1" selection-start-column="52" selection-end-line="1" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="45">
+            <caret line="3" selection-start-line="3" selection-end-line="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualbody/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
         </state>
       </provider>
     </entry>
