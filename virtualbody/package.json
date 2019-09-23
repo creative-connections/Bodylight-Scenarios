@@ -1,10 +1,11 @@
 {
   "name": "virtualpatientapp",
   "description": "An Aurelia client application.",
-  "version": "0.1.0",
+  "version": "19.9.1",
+  "homepage": "https://bodylight.physiome.cz/Bodylight-Scenarios",
   "repository": {
-    "type": "???",
-    "url": "???"
+    "type": "git",
+    "url": "https://github.com/creative-connections/Bodylight-Scenarios.git"
   },
   "license": "MIT",
   "dependencies": {
@@ -13,6 +14,7 @@
     "aurelia-fetch-client": "^1.0.0",
     "aurelia-i18n": "^3.0.0-beta.7",
     "font-awesome": "^4.6.3",
+    "gh-pages": "^2.1.1",
     "i18next-resource-store-loader": "^0.1.2",
     "i18next-xhr-backend": "^3.1.2",
     "jquery": "^3.3.1",
@@ -71,7 +73,9 @@
   "scripts": {
     "build": "au build",
     "start": "au run",
-    "test": "au test"
+    "test": "au test",
+
+    "deploy": "gh-pages -d ../build/virtualbody"
   },
   "engines": {
     "node": ">=8.9.0"
