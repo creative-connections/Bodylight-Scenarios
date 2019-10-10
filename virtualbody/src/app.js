@@ -2,27 +2,26 @@ import {PLATFORM} from 'aurelia-pal';
 
 export class App {
   constructor() {
-    this.style = "position: absolute; left: 75%; top: 5%; width: 24%; height: 95%;";
-    this.deg=0;
-    this.rotatestyle="";
+    this.style = 'position: absolute; left: 75%; top: 0%; width: 24%; height: 7%;overflow:hidden;';
+    this.deg = 0;
+    this.rotatestyle = '';
   }
 
   minimise() {
-    this.style = "position: absolute; left: 75%; top: 5%; width: 24%; height: 7%;overflow:hidden;";
+    this.style = 'position: absolute; left: 75%; top: 0%; width: 24%; height: 7%;overflow:hidden;';
   }
 
-  normalise(){
-    this.style = "position: absolute; left: 75%; top: 5%; width: 24%; height: 95%;";
+  normalise() {
+    this.style = 'position: absolute; left: 75%; top: 0%; width: 24%; height: 95%;';
   }
-  maximise(){
-    this.style = "position: absolute; left: 50%; top: 5%; width: 49%; height: 95%;";
+  maximise() {
+    this.style = 'position: absolute; left: 50%; top: 0%; width: 49%; height: 95%;';
   }
 
-  rotate(){
+  rotate() {
+    this.deg = this.deg + 45; if (this.deg >= 360) this.deg = 0;
 
-    this.deg=this.deg+45; if (this.deg>=360) this.deg=0;
-
-    this.rotatestyle="transform:rotate("+this.deg+"deg);"
+    this.rotatestyle = 'transform:rotate(' + this.deg + 'deg);';
   }
 
   configureRouter(config, router) {
@@ -34,31 +33,31 @@ export class App {
         moduleId: PLATFORM.moduleName('./pages/welcome'),
         nav: true,
         title: 'Dashboard',
-        settings:{icon:'fa fa-home'}
+        settings: {icon: 'fa fa-home'}
       },
       {
-        route: ['apps','apps/*target'],
+        route: ['apps', 'apps/*target'],
         name: 'apps',
         moduleId: PLATFORM.moduleName('./pages/apps'),
         nav: true,
         title: 'Free Style Simulator',
-        settings:{icon:'fa fa-male', icon2:'fa fa-line-chart'}
+        settings: {icon: 'fa fa-male', icon2: 'fa fa-line-chart'}
       },
       {
-        route: ['scenarios','scenarios/*target'],
+        route: ['scenarios', 'scenarios/*target'],
         name: 'scenarios',
         moduleId: PLATFORM.moduleName('./pages/scenarios'),
         nav: true,
         title: 'Scenarios',
-        settings:{icon:'fa fa-male', icon2:'fa fa-list-ol'}
+        settings: {icon: 'fa fa-male', icon2: 'fa fa-list-ol'}
       },
       {
-        route: ['elearning','elearning/*target'],
+        route: ['elearning', 'elearning/*target'],
         name: 'elearning',
         moduleId: PLATFORM.moduleName('./pages/elearning'),
         nav: true,
         title: 'E-Learning',
-        settings:{icon:'fa fa-male', icon2:'fa fa-leanpub'}
+        settings: {icon: 'fa fa-male', icon2: 'fa fa-leanpub'}
       },
       {
         route: 'physiomemodel',
@@ -66,7 +65,7 @@ export class App {
         moduleId: PLATFORM.moduleName('./pages/physiomemodel'),
         nav: true,
         title: 'Physiome Model',
-        settings:{icon:'fa fa-male', icon2:'fa fa-tasks'}
+        settings: {icon: 'fa fa-male', icon2: 'fa fa-tasks'}
       },
       {
         route: 'settings',
@@ -74,12 +73,10 @@ export class App {
         moduleId: PLATFORM.moduleName('./pages/settings'),
         nav: true,
         title: 'Settings',
-        settings:{icon:'fa fa-cog'}
+        settings: {icon: 'fa fa-cog'}
       }
     ]);
 
     this.router = router;
   }
-
-
 }

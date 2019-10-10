@@ -2,6 +2,10 @@
   "remote": "https://filedn.com/lHGc7w3H4jOpIe46u1nPt57/",
   "local": "models/",
   "skeletonlymphatic":"skeletonlymphatic.gltf",
+  "skeleton":"skeleton.gltf",
   "lungs":"lungs.gltf",
-  "liver":"liver.gltf"
+  "liver":"liver.gltf",
+  "arteries": "arteries.gltf",
+  "veins": "veins.gltf",
+  "skinskeleton": "skinskeleton.gltf"
   }
