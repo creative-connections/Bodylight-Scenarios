@@ -37,9 +37,9 @@ export class Scene3d {
 
     /*this.camera.position.set( -350, 10, 2321 );*/
 
-    this.camera.position.set(-0, 0, 200);
-    this.light = new THREE.DirectionalLight('white',0.8)//new THREE.DirectionalLight('white', 0.8);
-    this.light.position.set(0.4, 1.1, 600);
+    this.camera.position.set(-0, 0, 180);
+    this.light = new THREE.DirectionalLight('white', 0.8);//new THREE.DirectionalLight('white', 0.8);
+    this.light.position.set(0, 1, 600);
 
     this.light2 = new THREE.AmbientLight('white', 0.2);
     this.light2.position.set(0.4, 1.1, -300);

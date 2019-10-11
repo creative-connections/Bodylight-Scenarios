@@ -43,14 +43,14 @@ export class App {
         title: 'Free Style Simulator',
         settings: {icon: 'fa fa-male', icon2: 'fa fa-line-chart'}
       },
-      {
+      /*{
         route: ['scenarios', 'scenarios/*target'],
         name: 'scenarios',
         moduleId: PLATFORM.moduleName('./pages/scenarios'),
         nav: true,
         title: 'Scenarios',
         settings: {icon: 'fa fa-male', icon2: 'fa fa-list-ol'}
-      },
+      },*/
       {
         route: ['elearning', 'elearning/*target'],
         name: 'elearning',
@@ -58,7 +58,7 @@ export class App {
         nav: true,
         title: 'E-Learning',
         settings: {icon: 'fa fa-male', icon2: 'fa fa-leanpub'}
-      },
+      },/*
       {
         route: 'physiomemodel',
         name: 'physiomemodel',
@@ -66,7 +66,7 @@ export class App {
         nav: true,
         title: 'Physiome Model',
         settings: {icon: 'fa fa-male', icon2: 'fa fa-tasks'}
-      },
+      },*/
       {
         route: 'settings',
         name: 'settings',
