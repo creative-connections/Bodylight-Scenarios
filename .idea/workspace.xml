@@ -1,59 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f224c62b-0b06-466b-b578-6dbd2ddf6e6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/virtualbody/src/components/OrbitControls2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/virtualbody/src/components/scene3db.html" afterDir="false" />
+    <list default="true" id="6b9e4276-0540-4b0b-8502-1382a7605d90" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualbody/cachemodels.py" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/cachemodels.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualbody/nohup.out" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/nohup.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualbody/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/src/app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualbody/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualbody/src/components/objects3d.json" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/src/components/objects3d.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/virtualbody/src/components/scene3d.html" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/src/components/scene3d.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/virtualbody/src/components/scene3d.js" beforeDir="false" afterPath="$PROJECT_DIR$/virtualbody/src/components/scene3d.js" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="tsconfig.json" />
-        <option value="JavaScript File" />
-        <option value="HTML File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1S0nEEXUbVwGtShmaHcI8WZmjgT" />
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/examples/threejs-app/src" />
-      <recent name="$PROJECT_DIR$/examples/threejs-app/static" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/virtualbody/src/components" />
-      <recent name="$PROJECT_DIR$/examples/webgl-app/src" />
-      <recent name="$PROJECT_DIR$/virtualbody/src/pages" />
-    </key>
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -71,225 +34,14 @@
     <configuration />
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="f224c62b-0b06-466b-b578-6dbd2ddf6e6e" name="Default Changelist" comment="" />
-      <created>1566900921612</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1566900921612</updated>
-      <workItem from="1566900926417" duration="22538000" />
-      <workItem from="1566985779301" duration="1687000" />
-      <workItem from="1566998035469" duration="5489000" />
-      <workItem from="1567016130930" duration="223000" />
-      <workItem from="1567022747397" duration="15961000" />
-      <workItem from="1567164378594" duration="23560000" />
-      <workItem from="1567352122310" duration="10542000" />
-      <workItem from="1567498157186" duration="18547000" />
-      <workItem from="1568204087902" duration="291000" />
-      <workItem from="1568207778926" duration="2085000" />
-      <workItem from="1568724169646" duration="6637000" />
-      <workItem from="1568794481368" duration="10223000" />
-      <workItem from="1568883196991" duration="9513000" />
-      <workItem from="1568966754816" duration="22380000" />
-      <workItem from="1569397239906" duration="649000" />
-      <workItem from="1569477642584" duration="3792000" />
-      <workItem from="1570176346522" duration="3015000" />
-      <workItem from="1570709298947" duration="4088000" />
-    </task>
-    <task id="LOCAL-00001" summary="Initial virtual body app">
-      <created>1566905333969</created>
+    <task id="LOCAL-00001" summary="update instructions">
+      <created>1570782321664</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1566905333969</updated>
+      <updated>1570782321664</updated>
     </task>
-    <task id="LOCAL-00002" summary="Add: added speech api support">
-      <created>1566906613580</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1566906613580</updated>
-    </task>
-    <task id="LOCAL-00003" summary="UPDATE: speech alert">
-      <created>1566906686127</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1566906686127</updated>
-    </task>
-    <task id="LOCAL-00004" summary="FIX #3 initial app ready: screen, board, speech api">
-      <created>1566907069943</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1566907069943</updated>
-    </task>
-    <task id="LOCAL-00005" summary="UPDATE animation fade-in only">
-      <created>1566915366672</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1566915366672</updated>
-    </task>
-    <task id="LOCAL-00006" summary="ADD #4: heart app and toggle feature">
-      <created>1566975818935</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1566975818935</updated>
-    </task>
-    <task id="LOCAL-00007" summary="UPDATE #4: background">
-      <created>1566976359924</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1566976359924</updated>
-    </task>
-    <task id="LOCAL-00008" summary="UPDATE #4: report speech on apps">
-      <created>1566977935259</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1566977935259</updated>
-    </task>
-    <task id="LOCAL-00009" summary="UPDATE #4: add kidney, i18n support">
-      <created>1567003344412</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1567003344413</updated>
-    </task>
-    <task id="LOCAL-00010" summary="FIX #4: fixed i18n support, added czech voice and language detection, settings table, iframe with moodle">
-      <created>1567070557409</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1567070557409</updated>
-    </task>
-    <task id="LOCAL-00011" summary="UPDATE: round border, color">
-      <created>1567172347071</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1567172347071</updated>
-    </task>
-    <task id="LOCAL-00012" summary="FIX #5: added examples of Webgl, threejs, created component with 3d human body, refactor">
-      <created>1567507793168</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1567507793168</updated>
-    </task>
-    <task id="LOCAL-00013" summary="update">
-      <created>1567604020357</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1567604020357</updated>
-    </task>
-    <task id="LOCAL-00014" summary="fix #19 locales, voice selection, hover, app position 16:9, icons min/max/rotation">
-      <created>1568892646720</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1568892646720</updated>
-    </task>
-    <task id="LOCAL-00015" summary="updated urls of 3d objects">
-      <created>1568905458601</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1568905458601</updated>
-    </task>
-    <task id="LOCAL-00016" summary="fix #20 added loading multiple objects">
-      <created>1568982241753</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1568982241753</updated>
-    </task>
-    <task id="LOCAL-00017" summary="update #20 position of objects">
-      <created>1568984042801</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1568984042801</updated>
-    </task>
-    <task id="LOCAL-00018" summary="update #21 fix settings initialization">
-      <created>1569225148667</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1569225148667</updated>
-    </task>
-    <task id="LOCAL-00019" summary="update git gh-pages and ignore build">
-      <created>1569227769986</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1569227769986</updated>
-    </task>
-    <task id="LOCAL-00020" summary="update git gh-pages and ignore build">
-      <created>1569227828141</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1569227828141</updated>
-    </task>
-    <task id="LOCAL-00021" summary="remove npm gh-pages - replaced by deploy.sh">
-      <created>1569227990897</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1569227990897</updated>
-    </task>
-    <task id="LOCAL-00022" summary="update instructions">
-      <created>1569228291952</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1569228291952</updated>
-    </task>
-    <option name="localTasksCounter" value="23" />
+    <option name="localTasksCounter" value="2" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="Initial virtual body app" />
-    <MESSAGE value="Add: added speech api support" />
-    <MESSAGE value="UPDATE: speech alert" />
-    <MESSAGE value="FIX #3 initial app ready: screen, board, speech api" />
-    <MESSAGE value="UPDATE animation fade-in only" />
-    <MESSAGE value="ADD #4: heart app and toggle feature" />
-    <MESSAGE value="UPDATE #4: background" />
-    <MESSAGE value="UPDATE #4: report speech on apps" />
-    <MESSAGE value="UPDATE #4: add kidney, i18n support" />
-    <MESSAGE value="FIX #4: fixed i18n support, added czech voice and language detection, settings table, iframe with moodle" />
-    <MESSAGE value="UPDATE: round border, color" />
-    <MESSAGE value="FIX #5: added examples of Webgl, threejs, created component with 3d human body, refactor" />
-    <MESSAGE value="update" />
-    <MESSAGE value="fix #19 locales, voice selection, hover, app position 16:9, icons min/max/rotation" />
-    <MESSAGE value="updated urls of 3d objects" />
-    <MESSAGE value="fix #20 added loading multiple objects" />
-    <MESSAGE value="update #20 position of objects" />
-    <MESSAGE value="update #21 fix settings initialization" />
-    <MESSAGE value="update git gh-pages and ignore build" />
-    <MESSAGE value="remove npm gh-pages - replaced by deploy.sh" />
-    <MESSAGE value="update instructions" />
-    <option name="LAST_COMMIT_MESSAGE" value="update instructions" />
   </component>
 </project>

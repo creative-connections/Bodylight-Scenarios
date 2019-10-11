@@ -147,4 +147,10 @@ export class Scene3d {
     skeleton.visible = ! skeleton.visible;
     eyes.visible = ! eyes.visible;
   }
+
+  blink() {
+    let eyes = this.scene.getObjectByName('Eyes', true);
+    eyes.castShadow = ! eyes.castShadow;
+    console.log('eyes', eyes);
+  }
 }
