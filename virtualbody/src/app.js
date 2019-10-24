@@ -2,7 +2,7 @@ import {PLATFORM} from 'aurelia-pal';
 
 export class App {
   constructor() {
-    this.style = 'position: absolute; left: 75%; top: 0%; width: 24%; height: 7%;overflow:hidden;';
+    this.style = 'position: absolute; left: 75%; top: 0%; width: 24%; height: 95%;';
     this.deg = 0;
     this.rotatestyle = '';
   }
@@ -58,7 +58,7 @@ export class App {
         nav: true,
         title: 'E-Learning',
         settings: {icon: 'fa fa-male', icon2: 'fa fa-leanpub'}
-      },/*
+      }, /*
       {
         route: 'physiomemodel',
         name: 'physiomemodel',
@@ -67,6 +67,14 @@ export class App {
         title: 'Physiome Model',
         settings: {icon: 'fa fa-male', icon2: 'fa fa-tasks'}
       },*/
+      {
+        route: 'help',
+        name: 'help',
+        moduleId: PLATFORM.moduleName('./pages/help'),
+        nav: true,
+        title: 'Help',
+        settings: {icon: 'fa fa-question-circle-o'}
+      },
       {
         route: 'settings',
         name: 'settings',
