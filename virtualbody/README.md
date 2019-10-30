@@ -1,7 +1,12 @@
 # Virtual Body - Default Virtual Patient App
 
 This project is bootstrapped by [aurelia-cli](https://github.com/aurelia/cli).
-
+brief installation:
+```bash
+cd [to this directory]
+npm install aurelia-cli -g
+npm install
+```
 For more information, go to https://aurelia.io/docs/cli/webpack
 
 ## Local cache of GLTF files

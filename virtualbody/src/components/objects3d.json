@@ -1,7 +1,7 @@
 {
   "remote": "https://filedn.com/lHGc7w3H4jOpIe46u1nPt57/",
   "local": "models/",
-  "skeletonlymphatic":"skeletonlymphatic.gltf",
+  "skeletonlymphatic":"skeletonlymphatic.gltf.json",
   "skeleton":"skeleton.gltf",
   "lungs":"lungs.gltf",
   "liver":"liver.gltf",
