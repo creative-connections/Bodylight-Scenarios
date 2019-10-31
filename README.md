@@ -20,6 +20,6 @@ Then deploy the build to the gh-pages
 ```
 
 ## Further docs
-virtualbody/README.md
-examples/README.md
-scenarios/README.md
+ * [virtualbody/README.md](virtualbody/README.md)
+ * [examples/README.md](examples/README.md)
+ * [scenarios/README.md](scenarios/README.md)
