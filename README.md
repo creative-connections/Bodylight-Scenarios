@@ -1,6 +1,9 @@
 # Bodylight-Scenarios
 Scenarios for Bodylight platform based on physiolobrary models
 
+# Installation
+
+To install this component use scripts to create virtual machine https://github.com/creative-connections/Bodylight-VirtualMachine
 
 ## Build and deploy
 
