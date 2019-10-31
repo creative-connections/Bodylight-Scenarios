@@ -1,5 +1,5 @@
 # Bodylight-Scenarios
-Scenarios for Bodylight platform based on physiolobrary models
+Scenarios and supporting components for Bodylight platform.
 
 # Installation
 
@@ -19,3 +19,7 @@ Then deploy the build to the gh-pages
 ./publishsite.sh
 ```
 
+## Further docs
+virtualbody/README.md
+examples/README.md
+scenarios/README.md
