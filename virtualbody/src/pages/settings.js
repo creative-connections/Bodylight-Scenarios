@@ -17,6 +17,7 @@ export class Settings {
     this.voices = this.api.available_voices;
     this.locale = this.i18n.getLocale();
     this.getpixelratio = this.api.getPixelRatio();
+    this.pixelratio = this.getpixelratio;
   }
 
   setEnglish() {

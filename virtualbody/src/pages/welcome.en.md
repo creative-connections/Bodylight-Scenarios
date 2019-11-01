@@ -1,4 +1,4 @@
-# Virtual patient trainer
+### Virtual patient trainer
 This application allows to simulate different medical scenarios of virtual patient.
 
 The following application sections are available: medical scenarios, e-learning, help and setting.

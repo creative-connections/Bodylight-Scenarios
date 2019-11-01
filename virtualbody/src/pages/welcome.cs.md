@@ -1,4 +1,4 @@
-# Simulátor virtuálního pacienta
+### Simulátor virtuálního pacienta
 Tato aplikace umožňuje procházet scénáře medicínských stavů virtuálního pacienta.
  * Vyžaduje se podpora technologie WebGL, v tom případě uvidíte figurínu virtuálního pacienta ![screenshot](help/screenshot.PNG), kterou lze ovládat gesty (myš/dotyk levé tlačítko/jeden prst otáčí, pravé tlačítko/dva prsty zvětšuje zmenšuje nebo posouvá)
  * Poklepáním na symbol navigační liště ![navigationbar](help/navigationbar.PNG) vyberte aplikaci. K dispozici je sekce simulátoru s medicínskými scénáři, e-learning, help a nastavení.
