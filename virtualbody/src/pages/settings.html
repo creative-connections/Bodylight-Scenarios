@@ -19,10 +19,13 @@
 <hr/>
       </li>
       <li>
+        <p t="settings-pixelratioinfo">For android devices try different pixel ratio e.g. 1.75 or 2 to get better resolution in 3D visualisation</p>
         <label t="settings-pixelratio">Pixel Ratio:</label><i>${getpixelratio}</i>
-        <input type="text" value.bind="pixelratio"/>
-        <button click.delegate="setPixelRatio()">OK</button>
+        <input type="range" min="0.25" max="8" step="0.25" value.bind="pixelratio"/><i>${pixelratio}</i>
+        <button click.delegate="setPixelRatio()">Set</button>
       </li>
+      <li><label t="settings-fullscreen">Enter FullScreen</label>: <button click.delegate="setFullScreen()"><i class="fa fa-arrows"></i></button><br/>
+        <label t="settings-fullscreen">Exit FullScreen</label>: <button click.delegate="setNoFullScreen()"><i class="fa fa-window-restore"></i></button></li>
     </ul>
   </section>
 </template>

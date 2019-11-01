@@ -33,7 +33,17 @@ export class Settings {
   }
 
   setPixelRatio() {
-    this.api.setPixelRatio(this.pixelratio);
+    if (this.pixelratio > 0) this.api.setPixelRatio(this.pixelratio);
     this.getpixelratio = this.api.getPixelRatio();
+  }
+
+  setFullScreen() {
+    if (window.chrome) document.documentElement.webkitRequestFullScreen();
+    else document.documentElement.requestFullscreen();
+  }
+
+  setNoFullScreen() {
+    if (window.chrome) document.webkitExitFullScreen();
+    else document.exitFullscreen();
   }
 }
