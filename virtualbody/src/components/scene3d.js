@@ -10,11 +10,13 @@ import {HttpClient} from 'aurelia-fetch-client';
 //'examples/js/loaders/GLTFLoader.js';
 import {inject} from 'aurelia-framework';
 import {OrbitControls} from './OrbitControls2';
+import {Virtualbodyapi} from "./virtualbodyapi";
 
-@inject(HttpClient)
+@inject(Virtualbodyapi, HttpClient)
 export class Scene3d {
-  constructor(httpclient) {
+  constructor(api, httpclient) {
     this.progresstxt = ' 0% loaded';
+    this.api=api;
     this.httpclient = httpclient;
     this.onWindowResize = event => {
       let w = window.innerWidth;
@@ -48,6 +50,7 @@ export class Scene3d {
     this.light2.position.set(0.4, 1.1, -300);
 
     this.renderer = new THREE.WebGLRenderer();
+    this.api.setRenderer(this.renderer);
     this.renderer.setSize(w, h);
 
     this.canvas.appendChild(this.renderer.domElement);
