@@ -54,7 +54,7 @@ export class Scene3d {
     this.renderer.setSize(w, h);
     this.pixelratio = window.devicePixelRatio;
     if (this.pixelratio && this.pixelratio>0) this.renderer.setPixelRatio(this.pixelratio);
-    
+
     this.canvas.appendChild(this.renderer.domElement);
 
 

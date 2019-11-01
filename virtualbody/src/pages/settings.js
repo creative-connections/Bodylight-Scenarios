@@ -44,7 +44,7 @@ export class Settings {
   }
 
   setNoFullScreen() {
-    if (window.chrome) document.webkitExitFullScreen();
+    if (window.chrome) document.webkitExitFullscreen();
     else document.exitFullscreen();
   }
 }
