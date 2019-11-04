@@ -16,7 +16,7 @@ import {Virtualbodyapi} from "./virtualbodyapi";
 export class Scene3d {
   constructor(api, httpclient) {
     this.progresstxt = ' 0% loaded';
-    this.api=api;
+    this.api = api;
     this.httpclient = httpclient;
     this.onWindowResize = event => {
       let w = window.innerWidth;
@@ -123,8 +123,8 @@ export class Scene3d {
     this.loader.load(
       myurl,
       function( gltf ) {
-      //gltf.scene.rotation.set(0.5*Math.PI,-0*Math.PI,0.5*Math.PI);
-        gltf.scene.rotateZ(0.5 * Math.PI);
+        //gltf.scene.rotation.set(Math.PI, -0*Math.PI,0.5*Math.PI);
+        //gltf.scene.rotateZ(0.5 * Math.PI);
         //gltf.scene.position.set(-300,0,-800)
         window.that.scene.add( gltf.scene );
         window.that.progresstxt = '';
@@ -163,8 +163,8 @@ export class Scene3d {
   }
 
   opaquefrom100to50(o1, o2) {
-    o1.material.transparent = 1.0; o1.material.opacity = 1.0;
-    o2.material.transparent = 1.0; o2.material.opacity = 1.0;
+    o1.material.transparent = true; o1.material.opacity = 1.0;
+    o2.material.transparent = true; o2.material.opacity = 1.0;
     if (this.timerid) clearInterval(this.timerid);
     this.timerid = setInterval(this.decOp, 50, o1, o2, 0.02, 0.5);
 
@@ -174,28 +174,29 @@ export class Scene3d {
   decOp(o1, o2, decr, min) {
     o1.material.opacity -= decr;
     o2.material.opacity -= decr;
+    console.log('decop MATERIAL', o1.material);
     console.log('decop', o1.material.opacity);
     console.log('decop min', min);
-    console.log('decop timerid', this.timerid);
-    if (o1.material.opacity <= min) {clearInterval(that.timerid); that.timerid = false;}
+    console.log('decop timerid', that.timerid);
+    if (o1.material.opacity <= min) {o1.material.opacity=min;o2.material.opacity=min;clearInterval(that.timerid); that.timerid = false;}
   }
 
   opaquefrom50to0(o1, o2) {
-    o1.material.transparent = 1.0; o1.material.opacity = 0.5;
-    o2.material.transparent = 1.0; o2.material.opacity = 0.5;
+    o1.material.transparent = true; o1.material.opacity = 0.5;
+    o2.material.transparent = true; o2.material.opacity = 0.5;
     if (this.timerid) clearInterval(this.timerid);
 
     this.timerid = setInterval(this.decOp, 50, o1, o2, 0.02, 0);
   }
   opaquefrom0to50(o1, o2) {
-    o1.material.transparent = 1.0; o1.material.opacity = 0;
-    o2.material.transparent = 1.0; o2.material.opacity = 0;
+    o1.material.transparent = true; o1.material.opacity = 0;
+    o2.material.transparent = true; o2.material.opacity = 0;
     if (this.timerid) clearInterval(this.timerid);
     this.timerid = setInterval(this.incOp, 50, o1, o2, 0.02, 0.5);
   }
   opaquefrom50to100(o1, o2) {
-    o1.material.transparent = 1.0; o1.material.opacity = 0.5;
-    o2.material.transparent = 1.0; o2.material.opacity = 0.5;
+    o1.material.transparent = true; o1.material.opacity = 0.5;
+    o2.material.transparent = true; o2.material.opacity = 0.5;
     if (this.timerid) clearInterval(this.timerid);
     this.timerid = setInterval(this.incOp, 50, o1, o2, 0.02, 1);
   }
@@ -204,7 +205,8 @@ export class Scene3d {
     o1.material.opacity += incr;
     o2.material.opacity += incr;
     console.log('incop', o1.material.opacity);
-    if (o1.material.opacity >= max) {clearInterval(that.timerid); that.timerid = false;}
+    if (o1.material.opacity >= max) {o1.material.opacity=max;o2.material.opacity=max; if (max===1) {o1.material.transparent=false;o2.material.transparent=false;}
+    clearInterval(that.timerid); that.timerid = false;}
   }
 
   switchskeleton() {
@@ -212,7 +214,10 @@ export class Scene3d {
     let eyes = this.scene.getObjectByName('Eyes', true);
     //skeleton.visible = ! skeleton.visible;
     //eyes.visible = ! eyes.visible;
-    if (this.skeletonstate === 0) {this.skeletonstate++; this.opaquefrom100to50(skeleton, eyes); } else if (this.skeletonstate === 1) {this.skeletonstate++; this.opaquefrom50to0(skeleton, eyes);} else if (this.skeletonstate === 2) {this.skeletonstate++; this.opaquefrom0to50(skeleton, eyes); } else if (this.skeletonstate === 3) {this.skeletonstate = 0; this.opaquefrom50to100(skeleton, eyes); }
+    if (this.skeletonstate === 0) {this.skeletonstate++; this.opaquefrom100to50(skeleton, eyes); }
+    else if (this.skeletonstate === 1) {this.skeletonstate++; this.opaquefrom50to0(skeleton, eyes);}
+    else if (this.skeletonstate === 2) {this.skeletonstate++; this.opaquefrom0to50(skeleton, eyes); }
+    else if (this.skeletonstate === 3) {this.skeletonstate = 0; this.opaquefrom50to100(skeleton, eyes); }
   }
 
   blink() {
