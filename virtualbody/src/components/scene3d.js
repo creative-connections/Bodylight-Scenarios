@@ -10,7 +10,7 @@ import {HttpClient} from 'aurelia-fetch-client';
 //'examples/js/loaders/GLTFLoader.js';
 import {inject} from 'aurelia-framework';
 import {OrbitControls} from './OrbitControls2';
-import {Virtualbodyapi} from "./virtualbodyapi";
+import {Virtualbodyapi} from './virtualbodyapi';
 
 @inject(Virtualbodyapi, HttpClient)
 export class Scene3d {
@@ -53,7 +53,7 @@ export class Scene3d {
     this.api.setRenderer(this.renderer);
     this.renderer.setSize(w, h);
     this.pixelratio = window.devicePixelRatio;
-    if (this.pixelratio && this.pixelratio>0) this.renderer.setPixelRatio(this.pixelratio);
+    if (this.pixelratio && this.pixelratio > 0) this.renderer.setPixelRatio(this.pixelratio);
 
     this.canvas.appendChild(this.renderer.domElement);
 
@@ -67,7 +67,7 @@ export class Scene3d {
     this.loadobjects([objects3d.skinskeleton])
       .then(x=>{
         //this.scheduleblink();
-      })
+      });
     //,objects3d.lungs,objects3d.arteries,objects3d.veins
     //TODO add other objects
     this.renderer.gammaOutput = true;
@@ -87,7 +87,7 @@ export class Scene3d {
   }
 
   declareOrbitControls() {
-    console.log('orbit controls 8');
+    //console.log('orbit controls 8');
     let controls = new OrbitControls( this.camera, this.renderer.domElement );
     controls.target.set( 0, 0, 0 );
     controls.update();
@@ -124,7 +124,7 @@ export class Scene3d {
       myurl,
       function( gltf ) {
         //gltf.scene.rotation.set(Math.PI, -0*Math.PI,0.5*Math.PI);
-        //gltf.scene.rotateZ(0.5 * Math.PI);
+        gltf.scene.rotateZ(0.5 * Math.PI);
         //gltf.scene.position.set(-300,0,-800)
         window.that.scene.add( gltf.scene );
         window.that.progresstxt = '';
@@ -132,15 +132,14 @@ export class Scene3d {
       },
       // called while loading is progressing
       function( xhr ) {
-        console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
+        //console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
         window.that.progresstxt = ' ' + ( xhr.loaded / xhr.total * 100 ) + '% loaded';
       },
       // called when loading has errors
       function( error ) {
-        console.log( 'An error happened', error );
+        //console.log( 'An error happened', error );
         window.that.progresstxt += 'An error happened ' + error;
       });
-
   }
 
   animate() {
@@ -174,11 +173,11 @@ export class Scene3d {
   decOp(o1, o2, decr, min) {
     o1.material.opacity -= decr;
     o2.material.opacity -= decr;
-    console.log('decop MATERIAL', o1.material);
-    console.log('decop', o1.material.opacity);
-    console.log('decop min', min);
-    console.log('decop timerid', that.timerid);
-    if (o1.material.opacity <= min) {o1.material.opacity=min;o2.material.opacity=min;clearInterval(that.timerid); that.timerid = false;}
+    //    console.log('decop MATERIAL', o1.material);
+    //    console.log('decop', o1.material.opacity);
+    //    console.log('decop min', min);
+    //    console.log('decop timerid', that.timerid);
+    if (o1.material.opacity <= min) {o1.material.opacity = min; o2.material.opacity = min; clearInterval(that.timerid); that.timerid = false;}
   }
 
   opaquefrom50to0(o1, o2) {
@@ -204,9 +203,11 @@ export class Scene3d {
   incOp(o1, o2, incr, max) {
     o1.material.opacity += incr;
     o2.material.opacity += incr;
-    console.log('incop', o1.material.opacity);
-    if (o1.material.opacity >= max) {o1.material.opacity=max;o2.material.opacity=max; if (max===1) {o1.material.transparent=false;o2.material.transparent=false;}
-    clearInterval(that.timerid); that.timerid = false;}
+    //console.log('incop', o1.material.opacity);
+    if (o1.material.opacity >= max) {
+      o1.material.opacity = max; o2.material.opacity = max; if (max === 1) {o1.material.transparent = false; o2.material.transparent = false;}
+      clearInterval(that.timerid); that.timerid = false;
+    }
   }
 
   switchskeleton() {
@@ -214,10 +215,7 @@ export class Scene3d {
     let eyes = this.scene.getObjectByName('Eyes', true);
     //skeleton.visible = ! skeleton.visible;
     //eyes.visible = ! eyes.visible;
-    if (this.skeletonstate === 0) {this.skeletonstate++; this.opaquefrom100to50(skeleton, eyes); }
-    else if (this.skeletonstate === 1) {this.skeletonstate++; this.opaquefrom50to0(skeleton, eyes);}
-    else if (this.skeletonstate === 2) {this.skeletonstate++; this.opaquefrom0to50(skeleton, eyes); }
-    else if (this.skeletonstate === 3) {this.skeletonstate = 0; this.opaquefrom50to100(skeleton, eyes); }
+    if (this.skeletonstate === 0) {this.skeletonstate++; this.opaquefrom100to50(skeleton, eyes); } else if (this.skeletonstate === 1) {this.skeletonstate++; this.opaquefrom50to0(skeleton, eyes);} else if (this.skeletonstate === 2) {this.skeletonstate++; this.opaquefrom0to50(skeleton, eyes); } else if (this.skeletonstate === 3) {this.skeletonstate = 0; this.opaquefrom50to100(skeleton, eyes); }
   }
 
   blink() {
