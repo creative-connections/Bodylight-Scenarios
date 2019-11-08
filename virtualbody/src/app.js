@@ -36,12 +36,12 @@ export class App {
         settings: {icon: 'fa fa-home'}
       },
       {
-        route: ['apps', 'apps/*target'],
-        name: 'apps',
-        moduleId: PLATFORM.moduleName('./pages/apps'),
+        route: ['scenarios', 'scenarios/*target'],
+        name: 'scenarios',
+        moduleId: PLATFORM.moduleName('./pages/scenarios'),
         nav: true,
-        title: 'Free Style Simulator',
-        settings: {icon: 'fa fa-male', icon2: 'fa fa-line-chart'}
+        title: 'Topics and Scenarios',
+        settings: {icon: 'fa fa-male', icon2: 'fa fa-list-ol'}
       },
       /*{
         route: ['scenarios', 'scenarios/*target'],

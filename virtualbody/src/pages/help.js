@@ -1,5 +1,6 @@
 import helpentext from 'raw-loader!./help.en.md';
 import helpcstext from 'raw-loader!./help.cs.md';
+
 import {Converter} from 'showdown';
 import {I18N} from 'aurelia-i18n';
 import {inject} from 'aurelia-framework';

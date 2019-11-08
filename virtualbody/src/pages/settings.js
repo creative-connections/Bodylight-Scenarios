@@ -18,6 +18,7 @@ export class Settings {
     this.locale = this.i18n.getLocale();
     this.getpixelratio = this.api.getPixelRatio();
     this.pixelratio = this.getpixelratio;
+    this.scenariosurl = this.api.scenariourlprefix;
   }
 
   setEnglish() {
@@ -46,5 +47,9 @@ export class Settings {
   setNoFullScreen() {
     if (window.chrome) document.webkitExitFullscreen();
     else document.exitFullscreen();
+  }
+
+  setScenariosUrl() {
+    this.api.scenariourlprefix = this.scenariosurl;
   }
 }

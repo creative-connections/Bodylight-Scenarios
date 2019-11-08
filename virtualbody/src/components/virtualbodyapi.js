@@ -29,6 +29,7 @@ export class Virtualbodyapi {
     this.utter = {};//new SpeechSynthesisUtterance();
     this.utter.rate = 1;
     this.utter.pitch = 1;
+    this.scenariourlprefix = 'https://raw.githubusercontent.com/wiki/creative-connections/Bodylight-Scenarios/';
   }
 
   initvoices() {
