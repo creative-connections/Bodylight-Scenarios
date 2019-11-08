@@ -17,7 +17,7 @@
     "i18next-resource-store-loader": "^0.1.2",
     "i18next-xhr-backend": "^3.1.2",
     "jquery": "^3.3.1",
-    "marked": "^0.7.0",
+    "marked": "git+https://github.com/TomasKulhanek/marked.git",
     "raw-loader": "^3.1.0",
     "showdown": "^1.9.1",
     "three": "^0.108.0",

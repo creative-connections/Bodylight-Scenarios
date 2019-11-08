@@ -30,7 +30,7 @@ export class Scenarios {
     this.httpclient.fetch(this.scenariourl)
       .then(response => response.text())
       .then(text => {
-        this.html = marked(text, {baseUrl: '#/scenarios/'});
+        this.html = marked(text, {baseUrl: '#/scenarios/', baseImgUrl: this.api.scenariourlprefix});
       })
       .catch(error => {
         console.log('error', error);
