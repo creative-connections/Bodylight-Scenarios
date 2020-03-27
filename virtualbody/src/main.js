@@ -13,19 +13,21 @@ export function configure(aurelia) {
     .standardConfiguration()
     .feature(PLATFORM.moduleName('resources/index'))
     .plugin(PLATFORM.moduleName('aurelia-animator-css'))
+
+    .plugin(PLATFORM.moduleName('aurelia-dynamic-html'))
     .plugin(PLATFORM.moduleName('aurelia-i18n'), (instance) => {
       let aliases = ['t', 'i18n'];
       TCustomAttribute.configureAliases(aliases);
       instance.i18next.use(Backend);
       return instance.setup({
-        resources  : resBundle, //<-- configure aurelia-i18n to use your bundled translations
+        resources: resBundle, //<-- configure aurelia-i18n to use your bundled translations
         backend: {
-          loadPath: 'locales/{{lng}}/{{ns}}.json',
+          loadPath: 'locales/{{lng}}/{{ns}}.json'
         },
         attributes: aliases,
-        lng : 'cs',
-        fallbackLng : 'en',
-        debug : true,
+        lng: 'cs',
+        fallbackLng: 'en',
+        debug: true,
 
         skipTranslationOnMissingKey: true
       });

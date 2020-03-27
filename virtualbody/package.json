@@ -11,6 +11,7 @@
   "dependencies": {
     "aurelia-animator-css": "^1.0.4",
     "aurelia-bootstrapper": "^2.3.2",
+    "aurelia-dynamic-html": "^0.3.1",
     "aurelia-fetch-client": "^1.0.0",
     "aurelia-i18n": "^3.0.0-beta.7",
     "font-awesome": "^4.6.3",
