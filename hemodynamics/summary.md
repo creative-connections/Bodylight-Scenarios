@@ -1,8 +1,8 @@
-
-  * [Hemodynamics](#hemodynamics/hemodynamics.md)
-    * [Hemo1](#hemodynamics/hemo1.md)
-    * [Hemo2](#hemodynamics/hemo2.md)
-    * [Hemo3](#hemodynamics/hemo3.md)
-      * [Hemo31](#hemodynamics/hemo31.md)
-      * [Hemo32](#hemodynamics/hemo32.md)
+| EN | [CZ](#index=hemodynamics/index.cs.md&summary=hemodynamics/summary.cs.md) |
+  * [Hemodynamics](#hemodynamics/index.md)
+    * [Hemodynamics 1]
+    * [Hemodynamics 2]
+    * [Hemodynamics 3]
+      * [Hemo31]
+      * [Hemo32]
  
