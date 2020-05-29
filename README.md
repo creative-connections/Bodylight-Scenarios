@@ -12,14 +12,13 @@ https://github.com/creative-connections/Bodylight-VirtualMachine
 
 (1) every directory should contain at least 
   * `index.md` a default MD text
-  * `summary.md` Summary - List of all MD documents as links, this is rendered in sidebar
+  * `summary.md` Summary - List of all MD documents as links, this is rendered in sidebar, root `summary.md` will manually merge all summaries.
   
 (2) For language specific documents
   * `index.[lang].md` default MD text in language variant `[lang]`
   * `summary.[lang].md` Summary in language variant `[lang]`
   * replace `[lang]` by Internet language tags, as defined in RFC 3066. E.g. `en` for English, `cs` for Czech, `sk` for Slovak ...
     
-
 (3) All internal links should be relative in form `#[directory]/[document].md` or `#index=[directory]/[document].md`.
 E.g. for hemodynamics/hemo1.cs.md `[Hemo 1](#index=hemodynamics/hemo1.cs.md)`   
 
