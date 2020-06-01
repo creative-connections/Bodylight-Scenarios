@@ -8,16 +8,19 @@ V druhé fázi srdeční sval kontrahuje a vypuzuje krev, tato fáze se nazývá
 Poté se cyklus periodicky opakuje.
 
 [animace systola, diastola]
+<bdl-simplegif src="hemodynamics/heart.gif"></bdl-simplegif>
+
 
 Protože srdeční síně a komory nekontrahují současně, fáze srdečního cyklu 
-lze detailněji rozdělit na 
-* síňo komorová diastola - krev plní síň a komoru
-* síňová systola - síň tlačí krev do komory (asi 20%)
-* komorová systola- první komorová kontrakce a první zvuk tepu srdce - isovolumická kontrakce
-* komorová ejekce 
-* komorová relaxace - druhý zvuk tepu srdce - isovolumická relaxace
+lze detailněji rozdělit na
+
+* isovolumická kontrakce - první zvuk tepu srdce  
+* ejekce
+* isovolumická relaxace - druhý zvuk tepu srdce 
+* plnění - krev plní síň a komoru
 
 [animace systola síní a systola komor]
+<bdl-simplegif src="hemodynamics/heart.gif"></bdl-simplegif>
 
 
   
