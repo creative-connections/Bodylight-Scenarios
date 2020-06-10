@@ -32,11 +32,14 @@ Např. pro hemodynamics/hemo1.cs.md `[Hemodynamika část 1](#index=hemodynamics
 # Výchozí webová aplikace
 
 Výchozí dokument `index.html` načítá knihovnu `bodylight.bundle.js` 
-která umožňuje používat Bodylight komponenty v HTML, či v Markdownu.
-Navíc obsahuje `<bdl-markdown-book>` který čte výchozí zdrojový soubor `index.cs.md`
-a `summary.cs.md` v značkovacím jazyce Markdown. Jakýkoliv interní link
-se interpretuje jen jako  načtení nových dokumentů v Markdownu a přegenerování
-obsahu v HTML.
+která umožňuje používat Bodylight komponenty v HTML a v Markdownu.
+Obsahuje komponentu `<bdl-markdown-book>` ktera interpretuje 
+  - výchozí zdrojový soubor `index.cs.md`
+  - a `summary.cs.md` 
+Obojí v značkovacím jazyce Markdown a s komponentami bodylight. 
+Jakýkoliv interní link (se znakem `#` na začátku) se interpretuje
+jako  načtení nového dokumentu v Markdownu a přegenerování obsahu v HTML.
+např. Adresa `#hemodynamics/hemo1.md` načte MD dokument v adresáři hemodynamics. 
 
 # Syntaxe Markdown rozšířená o Bodylight komponenty
  
@@ -75,11 +78,11 @@ Horizontální oddělovač:
 Vlastnosti textu _kurzíva_, *kurzíva*, __tučně__, **tučně**, `neproporcionální`.
 
 <p>Dle libosti ''můžu používat'' html</p>
+<bdl-range>Dle libosti ''můžu používat'' komponenty Bodylight</bdl-range>'
 ``` 
 
-Navíc lze v Markdownu použít krom HTML značek i komponenty Bodylight, které
-  mají podobnou syntax jako HTML značky.
-Dále jsou navíc povoleny tato rozšíření: 
+V Markdownu používat HTML značky a komponenty Bodylight.
+Tato rozšíření MD jsou povolena: 
 * **highlight.js** pro zvýraznění zdrojových kódů v různých jazycích 
  ```markdown
     ```javascript
@@ -118,14 +121,14 @@ Pythagoran theorem is $a^2 + b^2 = c^2$
   $$
 
 ### HTML v Markdownu
-HTML značky lze použít v Markdownu. Navíc je přidána podpora stylů W3.CSS a Font Awesome.
+HTML značky lze použít v Markdownu. Navíc je přidána podpora stylů W3.CSS Pro a Font Awesome.
 ```html
-<div class="w3-blue w3-panel w3-card">
+<div class="w3-theme w3-panel w3-card">
 <i class="fa fa-info"></i> Informační panel
 </div>
 ```
 Se zobrazi jako:
-<div class="w3-blue w3-panel w3-card">
+<div class="w3-theme w3-panel w3-card">
 <i class="fa fa-info"></i> Informační panel
 
 </div>
