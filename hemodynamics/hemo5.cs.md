@@ -1,23 +1,16 @@
 <div class="w3-row">
 <div class="w3-col s12 l4">
 
-## Srdeční cyklus 4 objem v pravé komoře
+## Srdeční cyklus 5 Wiggersův diagram
 
-Objemy během srdečního cyklu:
+Srdeční cyklus:
 
 - (1) isovolumická kontrakce 
-    - objem v obou komorách se nemění       
 - (2) ejekce
-    - objem v obou komorách se snižuje
 - (3) isovolumická relaxace 
-    - objem v obou komorách se nemění
-- (4) plnění - krev plní síň a komoru
-    - oběm krve v komorách se postupně zvyšuje
-    - (4a) plnění - diastola atrií (síní)
-    - (4b) plnění - systola atrií (síní) - rychlost  
-
-</div>
-<div class="w3-col s12 l4">
+- (4) plnění - krev plní síň a komoru    
+    - (4a) plnění - diastola atrií 
+    - (4b) plnění - systola atrií    
 
 <bdl-fmi id="id4" src="hemodynamics/BurkhoffFMI.js" 
          fminame="Cardiovascular_Model_Burkhoff_HemodynamicsBurkhoff_0shallow"
@@ -41,21 +34,27 @@ simsegments="70;120;175;260;380"></bdl-animate-control>
 
 <bdl-animate-gif fromid="id5" src="hemodynamics/heart.gif" width=400></bdl-animate-gif>
 </div>
-<div class="w3-col s12 l4">
-Objem krve v levé a pravé komoře:
+<div class="w3-col s12 l8">
+Wiggersův diagram:
 
 <bdl-chartjs-time
    id="id11"  
-   width="400"  
-   height="300"  
+   width="300"  
+   height="130"  
    fromid="id4"  
-   labels="Left Ventricle Volume,Right Ventricle Volume" 
-   refindex="0"  refvalues="2"></bdl-chartjs-time> | 
-  
+   labels="Left Ventricle Pressure, Aorta Pressure, Left Atria Pressure" 
+   refindex="2"  refvalues="3"></bdl-chartjs-time>  
+<bdl-chartjs-time
+   id="id11"  
+   width="300"  
+   height="80"  
+   fromid="id4"  
+   labels="Left Ventricle Volume" 
+   refindex="0"  refvalues="1"></bdl-chartjs-time>   
 </div>
 </div>
 
-<bdl-quiz question="Z grafu odečtěte kolik krve se vypudí z pravé komory během ejekční fáze:"
+<bdl-quiz question="Jaký je maxim"
   answers="asi 140 ml|
            asi 5 l|
            asi 80 ml"
