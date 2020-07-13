@@ -49,18 +49,21 @@ Tlak krve v pravé komoře a plicnici:
    height="300"  
    fromid="id4"  
    labels="Right Ventricle Pressure, Right Arterie Pressure" 
-   refindex="9"  refvalues="2"></bdl-chartjs-time> | 
+   refindex="9"  refvalues="2"
+   ylabel="tlak (mmHg)"
+     xlabel="čas (s)"
+     convertors="0.00750062,1;0.00750062,1;0.00750062,1"></bdl-chartjs-time> 
   
 </div>
 </div>
 
-<bdl-quiz question="Jaký je maxim"
-  answers="asi 140 ml|
-           asi 5 l|
-           asi 80 ml"
+<bdl-quiz question="Z grafu odečtěte, jaký je maximální systolický tlak v pravé komoře srdce."
+  answers="asi 31 mmHg|
+           asi 10 mmHg|
+           asi 4 mmHg"
   correctoptions="true|false|false"           
-  explanations="150 ml je maximální náplň krve v levé komoře, ale vypudí se 'jen' 80 ml.|
-  Za minutu srdce vypudí asi 5 l krve, ale během jedné fáze 80 ml.|
-  80 ml se vypudí během ejekční fáze z pravé komory. Stejně jako z levé při fyziologicky normálním stavu.">
+  explanations="31 mmHg je maximální (systolický) tlak v pravé komoře.|
+                  10 mmHg je diastolický (minimální) tlak v plicní arterii.|
+                  4 mmHg je diastolický (minimální) tlak v pravé komoře.">
 </bdl-quiz> 
 

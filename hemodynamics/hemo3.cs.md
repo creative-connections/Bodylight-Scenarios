@@ -50,18 +50,21 @@ Objem krve v levé komoře:
    width="400"  
    height="300"  
    fromid="id4"  
-   labels="Left Ventricle Volume" refindex="0"  refvalues="1"></bdl-chartjs-time> | 
+   labels="Left Ventricle Volume" refindex="0"  refvalues="1"
+      ylabel="objem (ml)"
+      xlabel="čas (s)"
+      convertors="1000000,1">></bdl-chartjs-time>
   
 </div>
 </div>
 
 <bdl-quiz question="Z grafu odečtěte kolik krve se vypudí z levé komory během ejekční fáze:"
-  answers="asi 80 ml|
+  answers="asi 77 ml|
            asi 5 l|
-           asi 150 ml"
+           asi 151 ml"
   correctoptions="true|false|false"           
-  explanations="Během jednoho srdečního cyklu se vypudí asi 80 ml krve.|
-  Za minutu srdce vypudí asi 5 l krve, ale během jedné fáze 80 ml.|
-  150 ml je maximální náplň krve v levé komoře, ale vypudí se 'jen' 80 ml.">
+  explanations="Během jednoho srdečního cyklu se vypudí asi 77 ml (151ml - 74ml) krve.|
+  Za minutu srdce vypudí asi 5 l krve, ale během jedné fáze 77 ml.|
+  151 ml je maximální náplň krve v levé komoře, ale vypudí se 'jen' 77 ml.">
 </bdl-quiz> 
 

@@ -49,18 +49,21 @@ Tlak krve v levé komoře a aortě:
    height="300"  
    fromid="id4"  
    labels="Left Ventricle Pressure, Aorta Pressure" 
-   refindex="2"  refvalues="2"></bdl-chartjs-time> | 
+   refindex="2"  refvalues="2"
+   ylabel="tlak (mmHg)"
+     xlabel="čas (s)"
+     convertors="0.00750062,1;0.00750062,1"></bdl-chartjs-time> | 
   
 </div>
 </div>
 
-<bdl-quiz question="Jaký je maxim"
-  answers="asi 140 ml|
-           asi 5 l|
-           asi 80 ml"
+<bdl-quiz question="Jaký je diastolický (minimální) tlak v aortě během srdeční fáze"
+  answers="asi 68 mmHg|
+           asi 108 mmHg|
+           asi 124 mmHg"
   correctoptions="true|false|false"           
-  explanations="150 ml je maximální náplň krve v levé komoře, ale vypudí se 'jen' 80 ml.|
-  Za minutu srdce vypudí asi 5 l krve, ale během jedné fáze 80 ml.|
-  80 ml se vypudí během ejekční fáze z pravé komory. Stejně jako z levé při fyziologicky normálním stavu.">
+  explanations="68 mmHg je diastolický (minimální) tlak v aortě během jedné fáze.|
+  108 mmHg je systolický (maximální) tlak v aortě.|
+  124 mmHg je systolický (maximální) tlak v levé komoře.">
 </bdl-quiz> 
 
