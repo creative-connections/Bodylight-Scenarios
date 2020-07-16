@@ -46,7 +46,9 @@ Wiggersův diagram:
    refindex="2"  refvalues="3"
    ylabel="tlak (mmHg)"
    xlabel="čas (s)"
-   convertors="0.00750062,1;0.00750062,1;0.00750062,1"></bdl-chartjs-time>  
+   convertors="0.00750062,1;0.00750062,1;0.00750062,1"
+   sectionid="id5" 
+   maxdata="400"></bdl-chartjs-time>  
 <bdl-chartjs-time
    id="id11"  
    width="300"  
@@ -56,7 +58,9 @@ Wiggersův diagram:
    refindex="0"  refvalues="1"
    ylabel="objem (ml)"
    xlabel="čas (s)"
-   convertors="1000000,1"></bdl-chartjs-time>   
+   convertors="1000000,1"
+   sectionid="id5" 
+   maxdata="400"></bdl-chartjs-time>   
 </div>
 </div>
 
