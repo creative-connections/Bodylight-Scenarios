@@ -1,6 +1,6 @@
 # Bodylight-Scénáře
 
-Scénáře používající platofrmu Bodylight.
+Scénáře používající platformu Bodylight spojují webové technologie interaktivních aplikací a matematické modely v jazyce Modelika exportované pomocí standardu FMU.
 Veřejné scénáře jsou brány z větve `master` repozitáře zdrojových kódů na https://github.com/creative-connections/Bodylight-Scenarios/
 a generovány automaticky na adrese 
 https://bodylight.physiome.cz/Bodylight-Scenarios/
@@ -13,9 +13,9 @@ Použíjte skripty pro vytvoření virtuálního stroje:
 https://github.com/creative-connections/Bodylight-VirtualMachine
 Scénáře jsou pak dostupné na adrese: http://localhost:8080/scenarios/
 
-# Postup tvorby simulátoru
+# Postup tvorby scénáře se simulátorem
 
-   1. export modelu (.MO) do FMU. 
+   1. exportujte model z Modeliky (.MO) do FMU. 
       - V Dymole otevřete model
       - přepněte do módu `Simulation`
       - v ikonce `t0-t1` nastavte FMI Export: [x] Co-Simulation using Cvode, [x] Include source code, [x] Version 2.0
@@ -32,7 +32,7 @@ Scénáře jsou pak dostupné na adrese: http://localhost:8080/scenarios/
    3. vložení JS souboru do dokumentu se simulátorem
       - v adresáři `/home/vagrant/Bodylight-Scenarios` vytvořte např. nový adresář `test` nebo použijte existující.       
       - zkopírujte JS a XML soubor ze ZIP archivu `modelfile.zip` do adresáře `test` vedle dokumentu MD se simulátorem
-      - vytvořte dokument se simulátorem např `test/simulator.md`
+   4. vytvořte dokument se simulátorem např `test/simulator.md`
       - vložte do něj komponentu `bdl-fmi`(nezapomeňte uzavřít tag `</bdl-fmi>`):
       ```markdown
       # Simulátor
@@ -47,17 +47,17 @@ Scénáře jsou pak dostupné na adrese: http://localhost:8080/scenarios/
                inputs="id2,16777277,1,1;id4,16777313,1,60;id6,16777249,1,1"         
                ></bdl-fmi>
       ```  
-      - `src` odkazuje relativně k JS souboru
+      - `src` odkazuje relativně k JS souboru s exportovaným modelem
       - otevřte soubor `modelDescription.xml` 
-      - `fminame` obsahuje přesné jméno z atributu `modelIdentifier` z modelDescription.xml 
-      - `guid` obsahuje přesně identifikátor `guid` jak je v modelDescription.xml
+      - do atributu `fminame` vložte přesné jméno z atributu `modelIdentifier` z modelDescription.xml 
+      - do atributu `guid` vložte přesně identifikátor `guid` jak je v modelDescription.xml
       - ostatní atributy jsou volitelné 
-      - `valuereferences` obsahuje seznam referencí na proměnné modelu oddělených čárkou, jejichž hodnoty simulátor bude dávat do výstupního pole
-      - `valuelabels` obsahuje názvy proměnných ve stejném pořadí z `valuereferences`
-      - `inputs` obsahuje seznam vstupů, každý oddělený `;` každý vstup má položky oddělené čárkou `[id-komponenty],[valuereference],[numerator],[denominator]`
+      - `valuereferences` obsahuje seznam všech referencí na proměnné modelu oddělených čárkou, které budou během simulace umísťovány do pole. Uvěďte všechny proměnné, které budete potřebovat. 
+      - `valuelabels` obsahuje názvy proměnných ve stejném pořadí z `valuereferences` (zatím nevyužito, ale vhodné pro dokumentaci proměnných v poli hodnot které je specifikování `valuereferences`)
+      - `inputs` obsahuje seznam všech vstupních proměnných (parametrů), každý oddělený `;` každý vstup má položky oddělené čárkou `[id-komponenty],[valuereference],[numerator],[denominator]`
         - [id-komponenty] je id existující jiné komponenty, jejíž výstup se poslouchá a hodnoty se zapisují jako hondota parametru v modelu označené [valuereference]
         - [numerator] a [denominator] mohou být čísla, která se použijí na přepočet jednotek, defaultně 1 `hodnota = hondota_z_komponenty * numerator / denominator`
-   4. vložení komponent pro vstup:
+   5. vložení komponent pro vstup:
       - do dokumentu simulátoru `test/simulator.md` vložte komponentu, která sbírá od uživatele vstupní hodnoty
       - např.:
       ```markdown
@@ -70,6 +70,13 @@ Scénáře jsou pak dostupné na adrese: http://localhost:8080/scenarios/
       - `id` je unikátní id komponenty, (referencované z bdl-fmi inputs)
       - `min` a `max` uvádějí numerický rozsah posuvníku
       - `default` definují předvolenou hodnotu
+      - do komponenty `bdl-fmi` vložte patřičnou definici do kterého parametru se hodnoty vstupu při změně budou ukládat
+      ```markdown
+      <bdl-fmi ...
+        inputs="id2,16777277,1,1" 
+      ></bdl-fmi>
+      ```
+      - tzn. při změně hodnoty se tato uloží do modelu jako parametr s referencí `16777277` a vynásobí se číslem `1`  a vydělí číslem `1`, tj. hondota se nepřepočítá.
    5. Vložení komponent pro výstup, vizualizaci
       - do dokumentu simulátoru `test/simulator.md` vložte výstupní komponentu, např graf:
       ```markdown
