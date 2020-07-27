@@ -3,6 +3,7 @@
   * [Hemodynamika kardiovaskulárního <br /> systému](#hemodynamics/index.cs.md)  
     * [Srdeční cyklus](#hemodynamics/hemo1.cs.md)    
       * [2 Fáze srdečního cyklu](#hemodynamics/hemo2.cs.md)
+      * [2 EKG během srdečního cyklu](#hemodynamics/hemo2ekg.cs.md)
       * [3l Objem v levé komoře](#hemodynamics/hemo3.cs.md)
       * [3p Objem v pravé komoře](#hemodynamics/hemo31.cs.md)
       * [4l Tlaky v levé komoře](#hemodynamics/hemo4.cs.md)
