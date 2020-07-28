@@ -3,8 +3,10 @@
 
 ## Srdeční cyklus 5 Wiggersův diagram
 
-Srdeční cyklus:
+Wiggersův diagram spojuje některé předchozí průběhy proměnných 
+ během srdečního cyklu do jednoho diagramu.
 
+Shrnutí srdečního cyklu:
 - (1) isovolumická kontrakce 
 - (2) ejekce
 - (3) isovolumická relaxace 
@@ -36,13 +38,20 @@ simsegments="70;120;175;260;380"></bdl-animate-control>
 </div>
 <div class="w3-col s12 l8">
 Wiggersův diagram:
-
+<bdl-ecg 
+  id="id11" 
+  fromid="id5"
+  labels="EKG svod I"
+  ylabel="EKG (mV)"
+  width="300"
+  height="50"
+  maxdata="45"></bdl-ecg>      
 <bdl-chartjs-time
    id="id11"  
    width="300"  
    height="130"  
    fromid="id4"  
-   labels="Left Ventricle Pressure, Aorta Pressure, Left Atria Pressure" 
+   labels="tlak v levé komoře, tlak v aortě, tlak v levé síni" 
    refindex="2"  refvalues="3"
    ylabel="tlak (mmHg)"
    xlabel="čas (s)"
@@ -54,13 +63,15 @@ Wiggersův diagram:
    width="300"  
    height="80"  
    fromid="id4"  
-   labels="Left Ventricle Volume" 
+   labels="Objem levé komory" 
    refindex="0"  refvalues="1"
    ylabel="objem (ml)"
    xlabel="čas (s)"
    convertors="1000000,1"
    sectionid="id5" 
-   maxdata="400"></bdl-chartjs-time>   
+   maxdata="400"></bdl-chartjs-time>
+
+  
 </div>
 </div>
 
