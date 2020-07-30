@@ -21,8 +21,8 @@ Tlaky během srdečního cyklu:
 <bdl-fmi id="id4" src="hemodynamics/BurkhoffFMI.js" 
          fminame="Cardiovascular_Model_Burkhoff_HemodynamicsBurkhoff_0shallow"
          tolerance="0.000001" starttime="0" guid="{b5629132-3ba6-4153-87c2-f3ff108e1920}"
-         valuereferences="33554435,33554438,637534265,637534241,637534290,16777312,637534466,637534294,637534268,637534345,637534371"
-         valuelabels="Left Ventricle Volume,Right Ventricle Volume,Pressure in Left Ventricle,Pressure in Aorta, Pressure in Left Atria, Heart Rate, LA elastance,MV open, AOV open, Pressure in Right Ventricle, Pressure in Pulmonary Arteries"         
+         valuereferences="33554435,33554438,637534265,637534241,637534290,16777312,637534466,637534294,637534268,637534345,637534371,637534323"
+         valuelabels="Left Ventricle Volume,Right Ventricle Volume,Pressure in Left Ventricle,Pressure in Aorta, Pressure in Left Atria, Heart Rate, LA elastance,MV open, AOV open, Pressure in Right Ventricle, Pressure in Pulmonary Arteries,Pressure in Right Atria"         
          controlid="id5"
          fstepsize="0.002"
          showcontrols="false"></bdl-fmi>

@@ -52,7 +52,7 @@ Tlak krve v levé komoře a aortě:
    refindex="2"  refvalues="2"
    ylabel="tlak (mmHg)"
      xlabel="čas (s)"
-     convertors="0.00750062,1;0.00750062,1"></bdl-chartjs-time> | 
+     convertors="0.00750062,1;0.00750062,1"></bdl-chartjs-time>
   
 </div>
 </div>
