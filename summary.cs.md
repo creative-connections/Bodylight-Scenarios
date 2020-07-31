@@ -12,5 +12,6 @@
       * [9 Wiggersův diagram](#hemodynamics/hemo5.cs.md)
       * [10 PV diagram](#hemodynamics/hemo6.cs.md)
       * [11 PV diagram komor a síní](#hemodynamics/hemo6pv.cs.md)
+      * [12 Defekty Septa PV diagramy](#hemodynamics/hemoseptumdefects.cs.md)      
     * [Model hemodynamiky Burkhoff](#hemodynamics/hemodynamicsburkhoff.cs.md)
     * [Model hemodynamiky Meurs](#hemodynamics/hemodynamicsmeurs.cs.md)
