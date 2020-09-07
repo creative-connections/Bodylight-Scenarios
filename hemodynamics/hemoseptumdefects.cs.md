@@ -3,7 +3,7 @@
 
 ## Srdeční cyklus a defekty septa
 
-Defekt septa - nenulový tok mezi pravo a levou síní a pravou a levou komorou.
+Defekt septa - nenulový odpor mezi pravo a levou síní a pravou a levou komorou.
  
 Shrnutí srdečního cyklu:
 - (1) isovolumická kontrakce 
