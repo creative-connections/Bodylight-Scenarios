@@ -16,3 +16,9 @@ Můžete nastavit tepovou frekvenci srdce:
                
 V grafu je vidět tlak v aortě a levé komoře.
 <bdl-dygraphchart width="600" height="300" fromid="id4" inputs="time,aorta pressure,ventricle pressure" refindex="0" refvalues="2"></bdl-dygraphchart>
+
+Rovnice:
+
+$$ \frac{dx}{dt} = 1-x $$
+
+$$ y := k_1 u_1 + k_2 u_2 $$
