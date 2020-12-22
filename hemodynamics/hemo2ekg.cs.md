@@ -34,7 +34,8 @@ Stiskněte tlačítko pro animaci:
   fromid="id4"
   labels="ECG I (mV)"
   width="300"
-  height="50"></bdl-ecg>
+  height="30"
+  responsive="true"></bdl-ecg>
   
 </div>
 </div>

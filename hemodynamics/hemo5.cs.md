@@ -44,12 +44,14 @@ Wiggersův diagram:
   labels="EKG svod I"
   ylabel="EKG (mV)"
   width="300"
-  height="50"
+  height="40"
+  responsive="true"
   maxdata="45"></bdl-ecg>      
 <bdl-chartjs-time
    id="id11"  
    width="300"  
-   height="130"  
+   height="100"  
+   responsive="true"
    fromid="id4"  
    labels="tlak v levé komoře, tlak v aortě, tlak v levé síni" 
    refindex="2"  refvalues="3"
@@ -61,7 +63,8 @@ Wiggersův diagram:
 <bdl-chartjs-time
    id="id11"  
    width="300"  
-   height="80"  
+   height="60"  
+   responsive="true"
    fromid="id4"  
    labels="Objem levé komory" 
    refindex="0"  refvalues="1"

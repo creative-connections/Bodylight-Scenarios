@@ -6,7 +6,8 @@
 Defekt septa - nenulový tok mezi pravo a levou síní a pravou a levou komorou.
  
 Shrnutí srdečního cyklu:
-- (1) isovolumická kontrakce 
+- (1) isovolumic
+ká kontrakce 
 - (2) ejekce
 - (3) isovolumická relaxace 
 - (4) plnění - krev plní síň a komoru    
@@ -48,7 +49,8 @@ PV diagram pravé síně:
   refindex="12" 
   maxdata="256"
   width="100"
-  height="80"
+  height="60"
+  responsive="true"
   refvalues="2"></bdl-chartjs-xy>
 
 PV diagram pravé komory:
@@ -59,7 +61,8 @@ PV diagram pravé komory:
   refindex="8" 
   maxdata="256"
   width="100"
-  height="80"
+  height="60"
+  responsive="true"
   refvalues="2"></bdl-chartjs-xy>
 </div>
 <div class="w3-col s12 l4">
@@ -71,7 +74,8 @@ PV diagram levé síně:
   refindex="10" 
   maxdata="256"
   width="100"
-  height="100"
+  height="60"
+  responsive="true"
   refvalues="2"></bdl-chartjs-xy>
   
 PV diagram levé komory:
@@ -82,7 +86,8 @@ PV diagram levé komory:
   refindex="0" 
   maxdata="256"
   width="100"
-  height="100"
+  height="60"
+  responsive="true"
   refvalues="2"></bdl-chartjs-xy>
   
 </div>

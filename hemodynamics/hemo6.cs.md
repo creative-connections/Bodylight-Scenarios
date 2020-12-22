@@ -48,7 +48,8 @@ PV diagram:
   refindex="0" 
   maxdata="128"
   width="100"
-  height="100"
+  height="60"
+  responsive="true"
   refvalues="2"></bdl-chartjs-xy>
   
 </div>
