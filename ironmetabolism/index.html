@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8">
-    <title>Iron_Metabolism</title>
+    <title>Bodylight Web Components 2.0 Tutorial</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="bodylight.bundle.js" data-main="aurelia-bootstrapper"></script>
-</head>
-<body aurelia-app="webcomponents">
+    <!--script src="https://cdn.jsdelivr.net/npm/bodylight-components/dist/bodylight.bundle.js" data-main="aurelia-bootstrapper"></script-->
+
+<!-- Web component polyfill (only loads what it needs) -->
+<script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs/webcomponents-lite.js" charset="utf-8"></script>
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="https://www.ebi.ac.uk/pdbe/pdb-component-library/css/pdbe-molstar-1.1.0.css">
+
+<!-- JS -->
+<script type="text/javascript" src="https://www.ebi.ac.uk/pdbe/pdb-component-library/js/pdbe-molstar-component-1.1.0.js"></script>
+
+  </head>
+  <body aurelia-app="webcomponents" style="position:relative;min-height:100vh">
+      <header class="w3-bar" style="position: sticky;top: 0;background:#4a4a4a;color:white;">
+        <a href="/" class="w3-bar-item w3-button"><img style="width:10%" src="bodylight_logo.svg" alt="Bodylight.js"> Bodylight.js</a>
+        <a class="w3-bar-item w3-button w3-right" href="/Bodylight-docs/" target="_self">Docs</a>
+        <a class="w3-bar-item w3-button w3-right" href="https://github.com/creative-connections" target="_self">GitHub</a>
+      </header>
+
     <bdl-markdown-book2 index="index.md" summary="summary.md">
-<img src="Bodylight_loading2_amber.gif" height="140" width="85" style="display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);"/>
+      <img src="Bodylight_loading2_amber.gif" height="140" width="85" style="display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);"/>
     </bdl-markdown-book2>
-</body>
+    <br />
+    <footer class="w3-bar" style="background:#4a4a4a; color:white;position:absolute;bottom:0;z-index:1"><section class="w3-center">2021 &#169; Creative Connections</section></footer>
+  </body>
 </html>
