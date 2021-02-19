@@ -26,7 +26,7 @@ Stiskněte tlačítko pro animaci systoly a diastoly:
 
 <bdl-animate-control id="id4" speedfactor="20" segments="3;5;14;17;29" segmentlabels="4b plnění atriální systola;1 systola komor - isovolumická kontrakce;2 systola komor - ejekce;3 isovolumická relaxace;4a plnění"></bdl-animate-control>
 
-<bdl-animate-gif fromid="id4" src="hemodynamics/heart.gif" width=600></bdl-animate-gif>
+<bdl-animate-gif fromid="id4" src="heart.gif" width=600></bdl-animate-gif>
 </div>
 </div>
 

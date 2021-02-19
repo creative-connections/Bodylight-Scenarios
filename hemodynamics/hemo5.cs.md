@@ -14,7 +14,7 @@ Shrnutí srdečního cyklu:
     - (4a) plnění - diastola atrií 
     - (4b) plnění - systola atrií    
 
-<bdl-fmi id="id4" src="hemodynamics/BurkhoffFMI.js" 
+<bdl-fmi id="id4" src="BurkhoffFMI.js" 
          fminame="Cardiovascular_Model_Burkhoff_HemodynamicsBurkhoff_0shallow"
          tolerance="0.000001" starttime="0" guid="{b5629132-3ba6-4153-87c2-f3ff108e1920}"
          valuereferences="33554435,33554438,637534265,637534241,637534290,16777312,637534466,637534294,637534268"
@@ -34,7 +34,7 @@ segmentlabels="4b plnění atriální systola;1 systola komor - isovolumická ko
 segmentcond="7,eq,0;8,eq,1;8,eq,0;7,eq,1;6,gt,100000" 
 simsegments="70;120;175;260;380"></bdl-animate-control> 
 
-<bdl-animate-gif fromid="id5" src="hemodynamics/heart.gif" width=400></bdl-animate-gif>
+<bdl-animate-gif fromid="id5" src="heart.gif" width=400></bdl-animate-gif>
 </div>
 <div class="w3-col s12 l8">
 Wiggersův diagram:

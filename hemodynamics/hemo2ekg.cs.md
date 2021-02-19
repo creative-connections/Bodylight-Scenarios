@@ -27,7 +27,7 @@ Stiskněte tlačítko pro animaci:
   segmentlabels="4b P-Q segment systola atrií (síní), na konci QRS komplex;1 isovolumická kontrakce, S-T segment, systola komor;2 ejekce, T vlna, repolarizace komor;3 isovolumická relaxace;4a plnění, P vlna, na konci depolarizace atrií (síní)">
   </bdl-animate-control>
 
-<bdl-animate-gif fromid="id4" src="hemodynamics/heart.gif" width=600></bdl-animate-gif>
+<bdl-animate-gif fromid="id4" src="heart.gif" width=600></bdl-animate-gif>
 
 <bdl-ecg 
   id="id11" 
