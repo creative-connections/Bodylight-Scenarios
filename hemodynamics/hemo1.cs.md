@@ -18,7 +18,7 @@ Stiskněte tlačítko pro animaci systoly a diastoly:
 <bdl-animate-control id="id4" speedfactor="50" segments="14;29" segmentlabels="systola;diastola"></bdl-animate-control>
 
 Animace (až se nahraje obrázek (červený pruh)):
-<bdl-animate-gif fromid="id4" src="hemodynamics/heart.gif"></bdl-animate-gif>
+<bdl-animate-gif fromid="id4" src="heart.gif"></bdl-animate-gif>
 
 </div>
 </div>

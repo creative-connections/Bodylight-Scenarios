@@ -11,7 +11,6 @@ Hemové železo je absorbováno duodenálními enterocyty. Mechanismus přenosu 
 
 ![ironhem](ironhem.png)
 <br/>__Obrázek HEM__. A. Molekulární struktura hemu, B. Schématické znázornění hemu, modře: tetrapyrolové porfyrinové jádro, červeně: centrálně vázaný iont Fe<sup>2+</sup>.
-
 <bdl-quiz 
 question="Kolik hemových skupin je v hemoglobinu" 
 answers="1|2|3|4"
@@ -21,6 +20,6 @@ explanations=""></bdl-quiz>
 __Interaktivní obrázek:__ (myší můžete rotovat, zobrazeny hemy v molekule hemoglobinu - skryté)
 <div style="width:400px;height:300px;float:left;position:relative">
 
-<pdbe-molstar molecule-id="2h35" hide-controls="true" hide-polymer="true" bg-color-r="255" bg-color-g="255" bg-color-b="255"></pdbe-molstar>
 
+<pdbe-molstar molecule-id="2h35" hide-controls="true" hide-polymer2="true" bg-color-r="255" bg-color-g="255" bg-color-b="255"></pdbe-molstar>
 </div>

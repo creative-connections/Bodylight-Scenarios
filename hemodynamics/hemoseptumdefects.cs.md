@@ -17,7 +17,7 @@ ká kontrakce
 Defekt septa v pravé síni(0=norm):<bdl-range id="id1" min="0" max="2000000" step="100000" default="0"></bdl-range>      
 Defekt septa v pravé komoře(0=norm):<bdl-range id="id2" min="0" max="2000000" step="100000" default="0"></bdl-range>
 
-<bdl-fmi id="id4" src="hemodynamics/Cardiovascular_Model_Burkhoff_Pathology_HemodynamicsWithAtriumVentricleSeptalDeffects.js" 
+<bdl-fmi id="id4" src="Cardiovascular_Model_Burkhoff_Pathology_HemodynamicsWithAtriumVentricleSeptalDeffects.js" 
          fminame="Cardiovascular_Model_Burkhoff_Pathology_HemodynamicsWithAtriumVentricleSeptalDeffects"
          tolerance="0.000001" starttime="0" guid="{9e06b025-e9b9-4b06-b532-f67da6a1f6cd}"
          valuereferences="33554435,637534265,637534241,637534290,16777312,637534466,637534294,637534268,33554438,637534345,33554436,637534290,33554437,637534323"
@@ -38,7 +38,7 @@ segmentlabels="4b plnění atriální systola;1 systola komor - isovolumická ko
 segmentcond="6,eq,0;7,eq,1;7,eq,0;6,eq,1;5,gt,100000" 
 simsegments="70;120;175;260;380"></bdl-animate-control>
 
-<bdl-animate-gif fromid="id5" src="hemodynamics/heart.gif" width=300></bdl-animate-gif>
+<bdl-animate-gif fromid="id5" src="heart.gif" width=300></bdl-animate-gif>
 </div>
 <div class="w3-col s12 l4">
 PV diagram pravé síně:

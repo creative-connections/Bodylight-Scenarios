@@ -5,7 +5,7 @@ Model dle Burkhoffa zjednodušuje krevní oběh na uzavřenou nevětvící se sm
 komponent, jenž mají elastické a odporové vlastnosti.  
 
 Tlačítky můžete pustit a zastavit simulaci, krokovat simulaci a resetovat simulátor:
-<bdl-fmi id="id4" src="hemodynamics/BurkhoffFMI.js" 
+<bdl-fmi id="id4" src="BurkhoffFMI.js" 
          fminame="Cardiovascular_Model_Burkhoff_HemodynamicsBurkhoff_0shallow"
          tolerance="0.000001" starttime="0" guid="{b5629132-3ba6-4153-87c2-f3ff108e1920}"
          valuereferences="33554435,637534265,637534241,16777312"
