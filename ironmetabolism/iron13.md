@@ -17,7 +17,7 @@ Vizualizace simulátoru shrnuje schématicky předchozí fakta:
 |![bigimagefoodiron](simironpool.png) |__5.Pohotový pool, sdílená zásoba Fe<sup>2+</sup>__ která reguluje (inhibuje) transportér DMT1 a přenašeč hemu|
 
 ### 1.3.2 Ikony
-Schémata a vizualizace obsahuje navíc tyto ikony:
+Schémata a vizualizace obsahují tyto ikony:
 
 |Ikona|Definice|Popis/funkce|
 |---|---|---|
