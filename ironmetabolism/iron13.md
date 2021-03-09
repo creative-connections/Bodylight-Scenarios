@@ -2,7 +2,8 @@
 img[alt^="image"] {max-width:20px;}
 img[alt^="bigimage"] {  max-height:60px}
 </style>
-## 1.3 Simulace vstřebávání železa v tenkém střevě (duodenu) <button class="w3-small w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
+## 1.3 Simulace vstřebávání železa v tenkém střevě (duodenu) 
+<button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
 
 Simulátor spusťte/zastavte tlačítky níže a zkuste zodpovědět otázky v sekci 1.3.2. Během simulace můžete měnit **parametr** koncentrace železa v potravě, který se kontinuálně vstřebává během simulace. Tlačítkem vpravo zobrazíte legendu. 
 
@@ -53,7 +54,7 @@ Plné šipky představují tok, tj. reálný přenos, dané látky (například 
 </div>
 <div class="w3-rest">
 
-<div id="legenda" class="w3-card w3-white" style="display:none;z-index:1;position:absolute;top:20px;right:10px;width:400px;transform:scale(0.75)">
+<div id="legenda" class="w3-card w3-small" style="display:none;z-index:1;position:absolute;top:20px;right:10px;width:400px;background-color:white">
 <button class="w3-button w3-theme" onclick="document.getElementById('legenda').style.display='none'">Skryj legendu <i class="fa fa-close"></i></button>
 
 ### 1.3.2 Vizualizace
