@@ -17,11 +17,8 @@ Hemové železo je absorbováno duodenálními enterocyty. Mechanismus přenosu 
 
 <div class="w3-row">
 <div class="w3-third">
-<div style="width:400px;height:300px;position:relative">
+<bdl-pdb-pdbe-molstar molecule-id="2h35" hide-polymer="true"></bdl-pdb-pdbe-molstar>
 
-<pdbe-molstar molecule-id="2h35" hide-controls="true" hide-polymer="true" bg-color-r="255" bg-color-g="255" bg-color-b="255"></pdbe-molstar>
-
-</div>
 </div>
 <div class="w3-twothird">
 
@@ -30,16 +27,16 @@ Hemové železo je absorbováno duodenálními enterocyty. Mechanismus přenosu 
 </div>
 </div>
 
-__Obrázek HEM__. interaktivní 3D obrázek 
+**Obrázek HEM**. interaktivní 3D obrázek 
 proteinu 2h35 (lidský hemoglobin) s prostorovou 
 vizualizací hemových skupin, polymerová struktura 
-hemoglobinu skryta (myší můžete rotovat) A. Molekulární struktura hemu, B. Schématické znázornění hemu, modře: tetrapyrolové porfyrinové jádro, červeně: centrálně vázaný iont Fe<sup>2+</sup>.
+hemoglobinu skryta (myší můžete rotovat) **A.** Molekulární struktura hemu, **B.** Schématické znázornění hemu, modře: tetrapyrolové porfyrinové jádro, červeně: centrálně vázaný iont Fe<sup>2+</sup>.
+
 
 <bdl-quiz 
 question="Kolik hemových skupin je v hemoglobinu" 
 answers="1|2|3|4"
 correctoptions="false|false|false|true" 
 explanations=""></bdl-quiz>
-
 
 
