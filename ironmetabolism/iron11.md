@@ -20,4 +20,3 @@ question="Pokud si k salátu dám čaj obsahující taniny (třísloviny), jak s
 answers="Absorpce se sníží|Absorpce se zvýší|Absorpce zůstane nezměněna"
 correctoptions="true|false|false" 
 explanations="Taniny obsažené v čaji, tvoří s železem nerozpustné komplexy a tak snižují jeho vstřebávání| | "></bdl-quiz>
-
