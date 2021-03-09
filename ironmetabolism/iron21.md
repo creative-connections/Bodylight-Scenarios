@@ -2,7 +2,8 @@
 img[alt^="image"] {max-width:20px;}
 img[alt^="bigimage"] {  max-height:60px}
 </style>
-# 2.1 Simulace <button class="w3-small w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
+# 2.1 Simulace 
+<button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
 Regulace příjmu Fe a příjmu a výdeje Fe do/z ferritinu. Vyzkoušejte v simulátoru a zodpovězte otázky.
 
 <div class="w3-row">
@@ -75,8 +76,7 @@ Regulace příjmu Fe a příjmu a výdeje Fe do/z ferritinu. Vyzkoušejte v simu
 </div>
 </div>
 </div>
-
-<div id="legenda" class="w3-card w3-white" style="display:none;z-index:1;position:absolute;top:20px;right:10px;width:400px;transform:scale(0.75)">
+<div id="legenda" class="w3-card w3-small" style="display:none;z-index:1;position:absolute;top:20px;right:10px;width:400px;background-color:white">
 <button class="w3-button w3-theme" onclick="document.getElementById('legenda').style.display='none'">Skryj legendu <i class="fa fa-close"></i></button>
 
 ## Vizualizace
