@@ -21,7 +21,7 @@ Simulátor spusťte/zastavte tlačítky níže a zkuste zodpovědět otázky v s
 </div>
 <div class="w3-row">
 
-<div class="w3-col s8">
+<div class="w3-col s7">
 Plné šipky představují tok, tj. reálný přenos, dané látky (například atomu/molekuly/proteinu/atd.). Barva šipky odpovídá přenášené látce, tloušťka šipky reflektuje velikost toku v daném směru. Přerušované šipky značí regulaci a to jak pozitivní (aktivační - šipka s ostrým hrotem) a nebo negativní (inhibiční - šipka s tupým koncem). Transparence přerušované šipky odpovídá síle interakce. Čím je regulační šipka průsvitnější, tím je daná interakce slabší a naopak. Indikátor ve tvaru půlkruhu označuje množství dané látky, číslo pod indikátorem představuje relativní množství vztažené k fyziologické normě (&gt;1: více než norma, &lt;1: méně než norma).
 
 <bdl-animate-adobe src="DuodenumFinalObrazovka1.js" width="800" height="600" name="DuodenumFinalObrazovka1" fromid="idfmi"></bdl-animate-adobe>
@@ -85,7 +85,6 @@ Schémata a vizualizace obsahují tyto ikony:
 |![image10](image10.jpg)|Pool Fe<sup>2+</sup>|Pohotový pool Fe<sup>2+</sup> železa v buňce, míra zaplnění odpovídá množství (zde 6/8)|
 
 </div>
-
 
 ### 1.3.1 Otázky
 Kontrolní otázky, vyzkoušejte v simulátoru a zodpovězte tyto otázky
