@@ -54,7 +54,7 @@ Plné šipky představují tok, tj. reálný přenos, dané látky (například 
 </div>
 <div class="w3-rest">
 
-<div id="legenda" class="w3-card w3-small" style="display:none;z-index:1;position:absolute;top:20px;right:10px;width:400px;background-color:white">
+<div id="legenda" class="w3-card w3-small w3-padding" style="display:none;z-index:1;position:absolute;top:20px;right:10px;width:500px;background-color:white">
 <button class="w3-button w3-theme" onclick="document.getElementById('legenda').style.display='none'">Skryj legendu <i class="fa fa-close"></i></button>
 
 ### 1.3.2 Vizualizace
