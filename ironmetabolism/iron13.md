@@ -14,7 +14,7 @@ Simulátor spusťte/zastavte tlačítky níže a zkuste zodpovědět otázky v s
 </div>
 <div class="w3-rest">
 
-||| 
+|parametr|hodnota| 
 |-------------|-------|
 | Koncentrace železa v potravě [$\frac{\mu g}{h}$] | <bdl-range id="id1" title="" min="0" max="1000" default="219" step="1"></bdl-range> 
 </div>
