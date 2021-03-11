@@ -5,7 +5,7 @@ img[alt^="bigimage"] {  max-height:60px}
 ## 1.3 Simulace vstřebávání železa v tenkém střevě (duodenu) 
 <button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
 
-Simulátor spusťte/zastavte tlačítky níže a zkuste zodpovědět otázky v sekci 1.3.2. Během simulace můžete měnit **parametr** koncentrace železa v potravě, který se kontinuálně vstřebává během simulace. Tlačítkem vpravo zobrazíte legendu. 
+Simulátor spusťte/zastavte tlačítky níže a zkuste zodpovědět otázky. Během simulace můžete měnit **parametr**: koncentrace železa v potravě, tj. kolik mikrogramů železa se vstřebá za hodinu. Tlačítkem vpravo zobrazíte legendu. 
 
 <div class="w3-row">
 <div class="w3-third">
