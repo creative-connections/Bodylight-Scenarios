@@ -5,19 +5,19 @@ Protože je dvojmocné železo pro buňku toxické (viz. Fentonova reakce), je s
 Pro účely skladování železa slouží protein **ferritin** (Obrázek FERRITIN), který je lokalizovaný v cytosolu buněk. Lidský ferritin se skládá ze 24 podjednotek dvou typů (L a H), které vytvářejí kulovitý útvar (apoferitin) ve kterém může být skladováno, dle stupně saturace, až 4 500 iontů Fe<sup>3+</sup>. Jedná se o veliký nadmolekulární systém o hmotnosti 474 kDa. Kromě duodenálních erytrocytů se ferritin vyskytuje ve větším množství v játrech, slezině nebo kostní dřeni. 
 
 <div class="w3-row">
-<div class="w3-third">
+<div class="w3-col s5">
 
 **A**
 <bdl-pdb-pdbe-molstar molecule-id="6m54"></bdl-pdb-pdbe-molstar>
 </div>
-<div class="w3-third">
+<div class="w3-col s5">
 
 **B**
 
 ![Ferritin](imageferritin.png)
 
 </div>
-<div class="w3-third">
+<div class="w3-col s2">
 </div>
 
 **Obrázek FERRITIN.** A. Molekulární struktura ferritinu, B. Schématické znázornění ferritinu, oranžová: apoferitin - proteinová část ferritinu, modře: vázané ionty Fe<sup>3+</sup>.
