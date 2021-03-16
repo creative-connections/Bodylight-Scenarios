@@ -7,8 +7,6 @@ Pro výběr konkrétní obrazovky použijte odkazy v levém panelu.
 Pro navigaci zpět a vpřed použijte tlačítka v dolní liště.
 
 
-<u></u>
-
 
 
 
