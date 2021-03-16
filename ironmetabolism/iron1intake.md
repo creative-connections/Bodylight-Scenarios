@@ -7,7 +7,6 @@
 
 Doporučená denní dávka železa je ~ 10 mg/den u mužů a 15 mg/den u žen v reprodukčním období. Z tohoto množství se do organismu vstřebá přibližně 1-2 mg/den, nevyužitý zbytek odchází stolicí. 
 
-### quiz
 
 <bdl-quiz 
 question="Které z následujících porcí jídel je nejhodnotnější pro příjem železa." 
