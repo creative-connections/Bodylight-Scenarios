@@ -10,10 +10,18 @@ Primární funkcí duodenálních enterocytů není železo skladovat (tuto funk
 </div>
 <div class="w3-col s5">
 
+**B**
+<bdl-pdb-pdbe-molstar molecule-id="6wbv"></bdl-pdb-pdbe-molstar>
+
 
 </div>
 <div class="w3-col s2">
 
-**Obrázek FERROPORTIN.** **A.** Molekulární struktura ferroportinu, .
+**Obrázek FERROPORTIN.** 
+
+**A.** Molekulární struktura ferroportinu 
+
+**B** molekulární struktura ferroportinu s navázaným hepcidinem a zároveň iontem Cobaltu (který v laboratorních podmínkách napodobuje iont železa)
+
 </div>
 </div>
