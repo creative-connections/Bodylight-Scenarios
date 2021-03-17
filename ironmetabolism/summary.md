@@ -6,3 +6,4 @@
   * [2. Ferritin](#iron2.md)
     * [2.1 Simulátor Ferritin](#iron21.md)
   * [3. Přenos železa](#iron3.md)
+    * [3.1 Mimo buňku enterocytu](#iron31.md)
