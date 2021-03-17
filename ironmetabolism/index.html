@@ -7,14 +7,11 @@
     <script src="../bodylight.bundle.js" data-main="aurelia-bootstrapper"></script>
     <!--script src="https://cdn.jsdelivr.net/npm/bodylight-components/dist/bodylight.bundle.js" data-main="aurelia-bootstrapper"></script-->
 
-<!-- Web component polyfill (only loads what it needs) -->
-<script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs/webcomponents-lite.js" charset="utf-8"></script>
-
 <!-- CSS -->
-<link rel="stylesheet" type="text/css" href="https://www.ebi.ac.uk/pdbe/pdb-component-library/css/pdbe-molstar-1.1.0.css">
+<link rel="stylesheet" type="text/css" href="../lib/pdbe-molstar-1.1.1.css">
 
-<!-- JS -->
-<script type="text/javascript" src="https://www.ebi.ac.uk/pdbe/pdb-component-library/js/pdbe-molstar-component-1.1.0.js"></script>
+<!-- JS with fix #18, until 1.1.1 will be released-->
+<script type="text/javascript" src="../lib/pdbe-molstar-component-1.1.1.js"></script>
 
   </head>
   <body aurelia-app="webcomponents" style="position:relative;min-height:100vh">
