@@ -20,23 +20,23 @@ Hemové železo je absorbováno duodenálními enterocyty. Mechanismus přenosu 
 <bdl-pdb-pdbe-molstar molecule-id="2h35" hide-polymer="true"></bdl-pdb-pdbe-molstar>
 
 </div>
-<div class="w3-twothird">
+<div class="w3-third">
 
 ![ironhem](ironhem.png)
 
 </div>
+<div class="w3-rest">
+**Obrázek HEM**. interaktivní 3D obrázek 
+proteinu 6ls8 (myoglobin) vyskytující se v kosterním svalstvu savců. Polymerová struktura 
+hemoglobinu skryta (myší můžete rotovat) **A.** Molekulární struktura hemu, **B.** Schématické znázornění hemu, modře: tetrapyrolové porfyrinové jádro, červeně: centrálně vázaný iont Fe<sup>2+</sup>.
 </div>
 
-**Obrázek HEM**. interaktivní 3D obrázek 
-proteinu 2h35 (lidský hemoglobin) s prostorovou 
-vizualizací hemových skupin, polymerová struktura 
-hemoglobinu skryta (myší můžete rotovat) **A.** Molekulární struktura hemu, **B.** Schématické znázornění hemu, modře: tetrapyrolové porfyrinové jádro, červeně: centrálně vázaný iont Fe<sup>2+</sup>.
-
+</div>
 
 <bdl-quiz 
 question="Kolik hemových skupin je v hemoglobinu" 
-answers="1|2|3|4"
-correctoptions="false|false|false|true" 
-explanations=""></bdl-quiz>
+answers="1|4"
+correctoptions="false|true" 
+explanations="1 hem je v jiném proteinu tzv. myoglobinu vyskytující se v buňkách kosterního svalstva|4 hemy jsou v proteinu hemoglobinu vyskytující se v buňkách červených krvinek"></bdl-quiz>
 
 
