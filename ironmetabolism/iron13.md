@@ -27,7 +27,7 @@ Simulátor spusťte/zastavte tlačítky níže a zkuste zodpovědět otázky. B�
 <bdl-animate-adobe src="DuodenumFinalObrazovka1.js" width="800" height="600" name="DuodenumFinalObrazovka1" fromid="idfmi"></bdl-animate-adobe>
 <bdl-bind2a findex="3" aname="SipkaCervena1_anim" amin="0" amax="100" fmin="1" fmax="1000"></bdl-bind2a>
 <bdl-bind2a findex="3" aname="Merak1_anim" amin="0" amax="99" fmin="0" fmax="1000"></bdl-bind2a>
-<bdl-bind2a-text findex="3" aname="Hodnota1_text"></bdl-bind2a-text>
+<bdl-bind2a-text findex="3" aname="Hodnota1_text" convertor='1,219'></bdl-bind2a-text>
 
 <bdl-bind2a findex="6" aname="SipkaCervena2_anim" amin="0" amax="100" fmin="0.91" fmax="2.74"></bdl-bind2a>
 <bdl-bind2a findex="6" aname="SipkaZlutaH_anim" amin="0" amax="100" fmin="0.91" fmax="2.74"></bdl-bind2a>
@@ -38,11 +38,11 @@ Simulátor spusťte/zastavte tlačítky níže a zkuste zodpovědět otázky. B�
 <bdl-bind2a findex="6" aname="CervenaPoolIn_anim" amin="0" amax="100" fmin="0.91" fmax="2.74"></bdl-bind2a>
 
 <bdl-bind2a findex="8" aname="CervenaKos_anim" amin="0" amax="100" fmin="0" fmax="0.5"></bdl-bind2a>
-<bdl-bind2a-text findex="8" aname="Hodnota5_text"></bdl-bind2a-text>
+<bdl-bind2a-text findex="8" aname="Hodnota5_text" convertor="1,0.237"></bdl-bind2a-text>
 
 <bdl-bind2a findex="7" aname="Merak2Cerveny_anim" amin="0" amax="99" fmin="0" fmax="16"></bdl-bind2a>
 <bdl-bind2a findex="7" aname="SipkaSeda_anim" amin="0" amax="100" fmin="0" fmax="16"></bdl-bind2a>
-<bdl-bind2a-text findex="7" aname="Hodnota2Cerveny_text"></bdl-bind2a-text>
+<bdl-bind2a-text findex="7" aname="Hodnota2Cerveny_text" convertor="1,3.612"></bdl-bind2a-text>
 
 <bdl-bind2a findex="4" aname="Fe2Skupina_anim" amin="100" amax="0" fmin="0.5" fmax="1.5"></bdl-bind2a>
 <bdl-bind2a findex="4" aname="KanalCerveny_anim" amin="0" amax="99" fmin="0.5" fmax="1.5"></bdl-bind2a>
@@ -50,12 +50,11 @@ Simulátor spusťte/zastavte tlačítky níže a zkuste zodpovědět otázky. B�
 <bdl-bind2a findex="4" aname="CervenaSrafovanaZastaveni1_anim" amin="99" amax="0" fmin="0.5" fmax="1.5"></bdl-bind2a>
 <bdl-bind2a findex="4" aname="Merak4_anim" amin="0" amax="99" fmin="0.5" fmax="1.5"></bdl-bind2a>
 
-<bdl-bind2a-text findex="4" aname="Hodnota4_text"></bdl-bind2a-text>
+<bdl-bind2a-text findex="4" aname="Hodnota4_text" convertor="1,0.7428"></bdl-bind2a-text>
 </div>
 
 <div class="w3-rest">
-<span class="w3-small">
-Plné šipky představují tok, tj. reálný přenos, dané látky (například atomu/molekuly/proteinu/atd.). Barva šipky odpovídá přenášené látce, tloušťka šipky reflektuje velikost toku v daném směru. Přerušované šipky značí regulaci a to jak pozitivní (aktivační - šipka s ostrým hrotem) a nebo negativní (inhibiční - šipka s tupým koncem). Transparence přerušované šipky odpovídá síle interakce. Čím je regulační šipka průsvitnější, tím je daná interakce slabší a naopak. Indikátor ve tvaru půlkruhu označuje množství dané látky, číslo pod indikátorem představuje relativní množství vztažené k fyziologické normě (&gt;1: více než norma, &lt;1: méně než norma).</span>
+
 
 **Kontrolní otázky**, vyzkoušejte v simulátoru a zodpovězte:
 <bdl-quiz question="Sledujte reakci DMT1 a přenašeče hemu v reakci na množství železa v enterocytu a v potravě" answers="DMT1 se rozšíří při poklesu Fe2+ | DMT1 se zúží při poklesu Fe2+" correctoptions="true|false" explanations="pool Fe2+ inhibuje DMT1|pool Fe2+ inhibuje DMT1, při poklesu Fe2+ se rozšíří"></bdl-quiz>
@@ -67,6 +66,11 @@ Plné šipky představují tok, tj. reálný přenos, dané látky (například 
 
 <div id="legenda" class="w3-card w3-small w3-padding" style="display:none;z-index:1;position:absolute;top:20px;right:10px;width:500px;background-color:white">
 <button class="w3-button w3-theme" onclick="document.getElementById('legenda').style.display='none'">Skryj legendu <i class="fa fa-close"></i></button>
+
+* **Plné šipky** představují tok, reálný přenos dané látky (například atomu/molekuly/proteinu/atd.). Barva šipky odpovídá přenášené látce, tloušťka šipky reflektuje velikost toku v daném směru. 
+* **Přerušované šipky** značí regulaci a to jak pozitivní (aktivační - šipka s ostrým hrotem) a nebo negativní (inhibiční - šipka s tupým koncem). Transparence přerušované šipky odpovídá síle interakce. Čím je regulační šipka průsvitnější, tím je daná interakce slabší a naopak. 
+* **Indikátor ve tvaru půlkruhu** označuje množství dané látky, číslo pod indikátorem představuje relativní množství vztažené k fyziologické normě (&gt;1: více než norma, &lt;1: méně než norma).
+
 
 |Schéma|Popis/funkce|
 |---|---|
