@@ -20,11 +20,9 @@ Simulátor spusťte/zastavte tlačítky níže a zkuste zodpovědět otázky. B�
 </div>
 </div>
 
-
 <div class="w3-row">
 
 <div class="w3-col s8">
-
 
 <bdl-animate-adobe src="DuodenumFinalObrazovka1.js" width="800" height="600" name="DuodenumFinalObrazovka1" fromid="idfmi"></bdl-animate-adobe>
 <bdl-bind2a findex="3" aname="SipkaCervena1_anim" amin="0" amax="100" fmin="1" fmax="1000"></bdl-bind2a>
