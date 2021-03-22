@@ -12,7 +12,10 @@ Regulace příjmu Fe a ukládání do ferritinu a výdeje z enterocytu. Vyzkouš
 <div class="w3-row">
 <div class="w3-third">
 
-<bdl-fmi id="idfmi" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.1" guid="{ff6d8a55-f24a-4855-bbf0-86edcafe471e}" valuereferences="637534208,637534209,100663315,16777260,33554448,33554449,637534228,905969688,637534231,16777271,16777272" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate" inputs="id1,16777260,1,1;id2,16777271,1,1;id3,16777272,1,1" inputlabels="Fe_food,to_ferritin_rate,from_ferritin_rate" fpslimit="3"></bdl-fmi>
+<bdl-fmi id="idfmi" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.1" guid="{ff6d8a55-f24a-4855-bbf0-86edcafe471e}" valuereferences="637534208,637534209,100663315,16777260,33554448,33554449,637534228,905969688,637534231,16777271,16777272,16777267,637534233,637534237,33554439,33554443" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate,Fpn_duo_knockout,Fpn_duo_in_1,Fpn_duo_in,Fpn_duo_mRNA,Fpn_duo" inputs="id1,16777260,1,1;id4,16777267,1,1" inputlabels="Fe_food,Fpn_duo_knockout"></bdl-fmi>
+
+
+
 
 </div>
 <div class="w3-rest">
@@ -20,16 +23,14 @@ Regulace příjmu Fe a ukládání do ferritinu a výdeje z enterocytu. Vyzkouš
 ||| 
 |-------------|-------|
 | Koncentrace železa v potravě [$\frac{\mu g}{h}$] | <bdl-range id="id1" title="" min="0" max="1000" default="219" maxlength="5" step="1"></bdl-range> |
-| Přítok železa do ferritinu v buňce | <bdl-range id="id2" title="" min="0" max="10" default="3" maxlength="5" step="0.1"></bdl-range>  |
-| Odtok železa z ferritinu v buňce | <bdl-range id="id3" title="" min="0" max="10" default="0.3" maxlength="5" step="0.1"></bdl-range>  |
+| Knockout genu pro ferroportin(Fpn) | <bdl-checkbox id="id4"></bdl-checkbox>  |
 </div>
 </div>
 <div class="w3-row">
 
 <div class="w3-col s8">
 
-<bdl-animate-adobe src="DuodenumFinalObrazovka2.js" width="800" height="600" name="DuodenumFinalObrazovka2" fromid="idfmi"></bdl-animate-adobe>
-
+<bdl-animate-adobe src="DuodenumFinalObrazovka3.js" width="800" height="600" name="DuodenumFinalObrazovka3" fromid="idfmi"></bdl-animate-adobe>
 
 <bdl-bind2a findex="3" aname="SipkaCervena1_anim" amin="0" amax="100" fmin="1" fmax="1000"></bdl-bind2a>
 <bdl-bind2a findex="3" aname="Merak1_anim" amin="0" amax="99" fmin="0" fmax="1000"></bdl-bind2a>
@@ -64,8 +65,22 @@ Regulace příjmu Fe a ukládání do ferritinu a výdeje z enterocytu. Vyzkouš
 <bdl-bind2a-text findex="5" aname="Hodnota3_text" convertor="1,2.228"></bdl-bind2a-text>
 <bdl-bind2a findex="5" aname="Fe3Skupina_anim" amin="0" amax="200" fmin="0" fmax="10"></bdl-bind2a>
 
+<bdl-bind2a findex="14" aname="SipkaRuzova2_anim" amin="0" amax="100" fmin="0.026" fmax="0.028"></bdl-bind2a>
+<bdl-bind2a findex="13" aname="SipkaFialovaSrafovana_anim" amin="0" amax="100" fmin="0.02" fmax="0.05"></bdl-bind2a>
+<bdl-bind2a findex="15" aname="SipkaFialovaSpodni3_anim" amin="0" amax="100" fmin="1.5" fmax="0.5"></bdl-bind2a>
+
+
+
+
 </div>
 <div class="w3-rest">
+
+<bdl-chartjs-time id="id10" width="300" height="200" fromid="idfmi" labels="Fpn duoin1" initialdata="" refindex="12" refvalues="1" maxdata="1024"></bdl-chartjs-time>
+<bdl-chartjs-time id="id11" width="300" height="200" fromid="idfmi" labels="duoin" initialdata="" refindex="13" refvalues="1" maxdata="1024"></bdl-chartjs-time>
+<bdl-chartjs-time id="id12" width="300" height="200" fromid="idfmi" labels="mrna" initialdata="" refindex="14" refvalues="1" maxdata="1024"></bdl-chartjs-time>
+<bdl-chartjs-time id="id13" width="300" height="200" fromid="idfmi" labels="duo" initialdata="" refindex="15" refvalues="1" maxdata="1024"></bdl-chartjs-time>
+
+
 
 ## Kontrolní otázky
 
