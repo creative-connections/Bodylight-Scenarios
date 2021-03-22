@@ -65,9 +65,12 @@ Regulace příjmu Fe a ukládání do ferritinu a výdeje z enterocytu. Vyzkouš
 <bdl-bind2a-text findex="5" aname="Hodnota3_text" convertor="1,2.228"></bdl-bind2a-text>
 <bdl-bind2a findex="5" aname="Fe3Skupina_anim" amin="0" amax="200" fmin="0" fmax="10"></bdl-bind2a>
 
-<bdl-bind2a findex="14" aname="SipkaRuzova2_anim" amin="0" amax="100" fmin="0.026" fmax="0.028"></bdl-bind2a>
+<bdl-bind2a findex="12" aname="SipkaRuzova2_anim" amin="0" amax="100" fmin="0.026" fmax="0.028"></bdl-bind2a>
 <bdl-bind2a findex="13" aname="SipkaFialovaSrafovana_anim" amin="0" amax="100" fmin="0.02" fmax="0.05"></bdl-bind2a>
 <bdl-bind2a findex="15" aname="SipkaFialovaSpodni3_anim" amin="0" amax="100" fmin="1.5" fmax="0.5"></bdl-bind2a>
+<bdl-bind2a findex="15" aname="KanalFialovy_anim" amin="0" amax="100" fmin="1.5" fmax="0.5"></bdl-bind2a>
+<bdl-bind2a findex="11" aname="Semafor_anim" amin="4" amax="5" fmin="0" fmax="1"></bdl-bind2a>
+
 
 
 
@@ -79,7 +82,7 @@ Regulace příjmu Fe a ukládání do ferritinu a výdeje z enterocytu. Vyzkouš
 <bdl-chartjs-time id="id11" width="300" height="200" fromid="idfmi" labels="duoin" initialdata="" refindex="13" refvalues="1" maxdata="1024"></bdl-chartjs-time>
 <bdl-chartjs-time id="id12" width="300" height="200" fromid="idfmi" labels="mrna" initialdata="" refindex="14" refvalues="1" maxdata="1024"></bdl-chartjs-time>
 <bdl-chartjs-time id="id13" width="300" height="200" fromid="idfmi" labels="duo" initialdata="" refindex="15" refvalues="1" maxdata="1024"></bdl-chartjs-time>
-
+<bdl-chartjs-time id="id13" width="300" height="200" fromid="idfmi" labels="knockout" initialdata="" refindex="11" refvalues="1" maxdata="1024"></bdl-chartjs-time>
 
 
 ## Kontrolní otázky
