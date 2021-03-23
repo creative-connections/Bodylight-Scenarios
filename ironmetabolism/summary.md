@@ -7,3 +7,5 @@
     * [2.1 Simulátor Ferritin](#iron21.md)
   * [3. Přenos železa](#iron3.md)
     * [3.1 Mimo buňku enterocytu](#iron31.md)
+    * [3.2 Simulace příjmu a výdeje železa z enterocytu](#iron32.md)
+    
