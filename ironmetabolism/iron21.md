@@ -42,6 +42,7 @@ Regulace příjmu Fe a příjmu a výdeje Fe do/z ferritinu. Vyzkoušejte v simu
 <bdl-bind2a findex="6" aname="SipkaCervena3_anim" amin="0" amax="100" fmin="0.91" fmax="2.74"></bdl-bind2a>
 <bdl-bind2a findex="6" aname="CervenaPoolIn_anim" amin="0" amax="100" fmin="0.91" fmax="2.74"></bdl-bind2a>
 
+
 <bdl-bind2a findex="8" aname="CervenaKos_anim" amin="0" amax="100" fmin="0" fmax="0.5"></bdl-bind2a>
 <bdl-bind2a-text findex="8" aname="Hodnota5_text" convertor="1,0.237"></bdl-bind2a-text>
 
