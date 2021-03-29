@@ -26,6 +26,7 @@ Hemové železo je absorbováno duodenálními enterocyty. Mechanismus přenosu 
 
 </div>
 <div class="w3-rest">
+
 **Obrázek HEM**. interaktivní 3D obrázek 
 proteinu 6ls8 (myoglobin) vyskytující se v kosterním svalstvu savců. Polymerová struktura 
 hemoglobinu skryta (myší můžete rotovat) **A.** Molekulární struktura hemu, **B.** Schématické znázornění hemu, modře: tetrapyrolové porfyrinové jádro, červeně: centrálně vázaný iont Fe<sup>2+</sup>.
