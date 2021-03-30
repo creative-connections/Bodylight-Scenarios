@@ -8,4 +8,8 @@
   * [3. Přenos železa](#iron3.md)
     * [3.1 Mimo buňku enterocytu](#iron31.md)
     * [3.2 Simulace příjmu a výdeje železa z enterocytu](#iron32.md)
+  * [4. Přenos železa z krve](#iron4.md)
+    * [4.1 Transferin receptor](#iron41.md)
+    * [4.2 Endocyt](#iron42.md)
+    
     
