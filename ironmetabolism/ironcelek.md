@@ -8,7 +8,6 @@ Simulátor spusťte/zastavte tlačítky níže a zkuste zodpovědět otázky. B�
 <div class="w3-row">
 
 <div class="w3-col s8">
-
 <bdl-animate-adobe src="ZelezoCelekFinal2019_2.js" width="800" height="600" name="ZelezoCelekFinal2019_2" fromid="idfmi"></bdl-animate-adobe>
 
 <!--prijem-->
@@ -18,7 +17,6 @@ Simulátor spusťte/zastavte tlačítky níže a zkuste zodpovědět otázky. B�
 
 <!--vstrebavani-->
 <bdl-bind2a findex="6" aname="children.0.Duodenum_SipkaCervena2_anim" amin="0" amax="100" fmin="0.91" fmax="2.74"></bdl-bind2a>
-
 <bdl-bind2a findex="6" aname="children.0.Duodenum_SipkaZlutaH_anim" amin="0" amax="100" fmin="0.91" fmax="2.74"></bdl-bind2a>
 
 <bdl-bind2a findex="6" aname="children.0.Duodenum_SipkaFialovaHorni_anim" amin="0" amax="100" fmin="0.91" fmax="2.74"></bdl-bind2a>
