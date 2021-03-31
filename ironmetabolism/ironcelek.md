@@ -4,7 +4,6 @@ img[alt^="bigimage"] {  max-height:60px}
 </style>
 ## Simulátor celku
 <button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
-
 Simulátor spusťte/zastavte tlačítky níže a zkuste zodpovědět otázky. Během simulace můžete měnit **parametr**: koncentrace železa v potravě, tj. kolik mikrogramů železa se vstřebá za hodinu. Tlačítkem vpravo zobrazíte legendu. 
 <div class="w3-row">
 
@@ -13,34 +12,57 @@ Simulátor spusťte/zastavte tlačítky níže a zkuste zodpovědět otázky. B�
 <bdl-animate-adobe src="ZelezoCelekFinal2019_2.js" width="800" height="600" name="ZelezoCelekFinal2019_2" fromid="idfmi"></bdl-animate-adobe>
 
 <!--prijem-->
-<bdl-bind2a findex="3" aname="SipkaCervena1_anim" amin="0" amax="100" fmin="1" fmax="1000"></bdl-bind2a>
-<bdl-bind2a findex="3" aname="Merak1_anim" amin="0" amax="99" fmin="0" fmax="1000"></bdl-bind2a>
-<bdl-bind2a-text findex="3" aname="Hodnota1_text" convertor="1,219"></bdl-bind2a-text>
+<bdl-bind2a findex="3" aname="children.0.Duodenum_SipkaCervena1_anim" amin="0" amax="100" fmin="1" fmax="1000"></bdl-bind2a>
+<bdl-bind2a findex="3" aname="children.0.Duodenum_Merak1_anim" amin="0" amax="99" fmin="0" fmax="1000"></bdl-bind2a>
+<bdl-bind2a-text findex="3" aname="children.0.Duodenum_Hodnota1_text" convertor="1,219"></bdl-bind2a-text>
+
 <!--vstrebavani-->
-<bdl-bind2a findex="6" aname="SipkaCervena2_anim" amin="0" amax="100" fmin="0.91" fmax="2.74"></bdl-bind2a>
-<bdl-bind2a findex="6" aname="SipkaZlutaH_anim" amin="0" amax="100" fmin="0.91" fmax="2.74"></bdl-bind2a>
-<bdl-bind2a findex="6" aname="SipkaFialovaHorni_anim" amin="0" amax="100" fmin="0.91" fmax="2.74"></bdl-bind2a>
-<bdl-bind2a findex="6" aname="SipkaModra_anim" amin="0" amax="100" fmin="0.91" fmax="2.74"></bdl-bind2a>
-<bdl-bind2a findex="6" aname="SipkaModraModryKanalSpodni_anim" amin="0" amax="100" fmin="0.91" fmax="2.74"></bdl-bind2a>
-<bdl-bind2a findex="6" aname="SipkaCervena3_anim" amin="0" amax="100" fmin="0.91" fmax="2.74"></bdl-bind2a>
-<bdl-bind2a findex="6" aname="CervenaPoolIn_anim" amin="0" amax="100" fmin="0.91" fmax="2.74"></bdl-bind2a>
-<bdl-bind2a findex="6" aname="Hemox_anim" amin="0" amax="100" fmin="0.91" fmax="2.74"></bdl-bind2a>
-<bdl-bind2a findex="6" aname="DcytB_anim" amin="0" amax="100" fmin="0.91" fmax="2.74"></bdl-bind2a>
+<bdl-bind2a findex="6" aname="children.0.Duodenum_SipkaCervena2_anim" amin="0" amax="100" fmin="0.91" fmax="2.74"></bdl-bind2a>
+
+<bdl-bind2a findex="6" aname="children.0.Duodenum_SipkaZlutaH_anim" amin="0" amax="100" fmin="0.91" fmax="2.74"></bdl-bind2a>
+
+<bdl-bind2a findex="6" aname="children.0.Duodenum_SipkaFialovaHorni_anim" amin="0" amax="100" fmin="0.91" fmax="2.74"></bdl-bind2a>
+
+<bdl-bind2a findex="6" aname="children.0.Duodenum_SipkaModra_anim" amin="0" amax="100" fmin="0.91" fmax="2.74"></bdl-bind2a>
+
+<bdl-bind2a findex="6" aname="children.0.Duodenum_SipkaModraModryKanalSpodni_anim" amin="0" amax="100" fmin="0.91" fmax="2.74"></bdl-bind2a>
+
+<bdl-bind2a findex="6" aname="children.0.Duodenum_SipkaCervena3_anim" amin="0" amax="100" fmin="0.91" fmax="2.74"></bdl-bind2a>
+
+<bdl-bind2a findex="6" aname="children.0.Duodenum_CervenaPoolIn_anim" amin="0" amax="100" fmin="0.91" fmax="2.74"></bdl-bind2a>
+
+<bdl-bind2a findex="6" aname="children.0.Duodenum_Hemox_anim" amin="0" amax="100" fmin="0.91" fmax="2.74"></bdl-bind2a>
+
+<bdl-bind2a findex="6" aname="children.0.Duodenum_DcytB_anim" amin="0" amax="100" fmin="0.91" fmax="2.74"></bdl-bind2a>
+
 <!--ztraty v bunce -->
-<bdl-bind2a findex="8" aname="CervenaKos_anim" amin="0" amax="100" fmin="0" fmax="0.5"></bdl-bind2a>
-<bdl-bind2a-text findex="8" aname="Hodnota5_text" convertor="1,0.237"></bdl-bind2a-text>
-<bdl-bind2a findex="8" aname="Merak5_anim" amin="0" amax="100" fmin="0" fmax="0.5"></bdl-bind2a>
+<bdl-bind2a findex="8" aname="children.0.Duodenum_CervenaKos_anim" amin="0" amax="100" fmin="0" fmax="0.5"></bdl-bind2a>
+
+<bdl-bind2a-text findex="8" aname="children.0.Duodenum_Hodnota5_text" convertor="1,0.237"></bdl-bind2a-text>
+
+<bdl-bind2a findex="8" aname="children.0.Duodenum_Merak5_anim" amin="0" amax="100" fmin="0" fmax="0.5"></bdl-bind2a>
+
 <!-- nevyuzito -->
-<bdl-bind2a findex="7" aname="Merak2Cerveny_anim" amin="0" amax="99" fmin="0" fmax="16"></bdl-bind2a>
-<bdl-bind2a findex="7" aname="SipkaSeda_anim" amin="0" amax="100" fmin="0" fmax="16"></bdl-bind2a>
-<bdl-bind2a-text findex="7" aname="Hodnota2Cerveny_text" convertor="1,3.612"></bdl-bind2a-text>
+<bdl-bind2a findex="7" aname="children.0.Duodenum_Merak2Cerveny_anim" amin="0" amax="99" fmin="0" fmax="16"></bdl-bind2a>
+
+<bdl-bind2a findex="7" aname="children.0.Duodenum_SipkaSeda_anim" amin="0" amax="100" fmin="0" fmax="16"></bdl-bind2a>
+
+<bdl-bind2a-text findex="7" aname="children.0.Duodenum_Hodnota2Cerveny_text" convertor="1,3.612"></bdl-bind2a-text>
+
 <!-- tok Fe2+ do bunky -->
-<bdl-bind2a findex="4" aname="Fe2Skupina_anim" amin="100" amax="0" fmin="0.5" fmax="1.5"></bdl-bind2a>
-<bdl-bind2a findex="4" aname="KanalCerveny_anim" amin="0" amax="99" fmin="0.5" fmax="1.5"></bdl-bind2a>
-<bdl-bind2a findex="4" aname="KanalModry_anim" amin="0" amax="99" fmin="0.5" fmax="1.5"></bdl-bind2a>
-<bdl-bind2a findex="4" aname="CervenaSrafovanaZastaveni1_anim" amin="99" amax="0" fmin="0.5" fmax="1.5"></bdl-bind2a>
-<bdl-bind2a findex="4" aname="Merak4_anim" amin="0" amax="99" fmin="0.5" fmax="1.5"></bdl-bind2a>
-<bdl-bind2a-text findex="4" aname="Hodnota4_text" convertor="1,0.7428"></bdl-bind2a-text>
+<bdl-bind2a findex="4" aname="children.0.Fe2Skupina_anim" amin="100" amax="0" fmin="0.5" fmax="1.5"></bdl-bind2a>
+
+<bdl-bind2a findex="4" aname="children.0.KanalCerveny_anim" amin="0" amax="99" fmin="0.5" fmax="1.5"></bdl-bind2a>
+
+<bdl-bind2a findex="4" aname="children.0.KanalModry_anim" amin="0" amax="99" fmin="0.5" fmax="1.5"></bdl-bind2a>
+
+<bdl-bind2a findex="4" aname="children.0.Duodenum_CervenaSrafovanaZastaveni1_anim" amin="99" amax="0" fmin="0.5" fmax="1.5"></bdl-bind2a>
+<bdl-bind2a findex="4" aname="children.0.Duodenum_CervenaSrafovanaZastaveni2_anim" amin="99" amax="0" fmin="0.5" fmax="1.5"></bdl-bind2a>
+
+<bdl-bind2a findex="4" aname="children.0.Duodenum_Merak4_anim" amin="0" amax="99" fmin="0.5" fmax="1.5"></bdl-bind2a>
+
+<bdl-bind2a-text findex="4" aname="children.0.Duodenum_Hodnota4_text" convertor="1,0.7428" undefined=""></bdl-bind2a-text>
+
 </div>
 
 <div class="w3-rest">
