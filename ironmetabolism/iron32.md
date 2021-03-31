@@ -67,17 +67,20 @@ Regulace příjmu Fe a ukládání do ferritinu a výdeje z enterocytu. Vyzkouš
 
 <bdl-bind2a findex="12" aname="SipkaRuzova2_anim" amin="0" amax="100" fmin="0.026" fmax="0.028"></bdl-bind2a>
 <bdl-bind2a findex="13" aname="SipkaFialovaSrafovana_anim" amin="0" amax="100" fmin="0.02" fmax="0.05"></bdl-bind2a>
-<bdl-bind2a findex="17" aname="SipkaFialovaSpodni3_anim" amin="0" amax="100" fmin="0.1" fmax="3.5"></bdl-bind2a>
+<bdl-bind2a findex="16" aname="SipkaFialovaSpodni3_anim" amin="0" amax="100" fmin="0.1" fmax="3.5"></bdl-bind2a>
 <bdl-bind2a findex="15" aname="KanalFialovy_anim" amin="99" amax="0" fmin="0.03" fmax="1.3"></bdl-bind2a>
 <bdl-bind2a findex="11" aname="Semafor_anim" amin="4" amax="5" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a-text findex="13" aname="Hodnota6_text" convertor="1,0.0412"></bdl-bind2a-text>
 <bdl-bind2a findex="18" aname="children.587.FeTransferin_anim" amin="0" amax="200" fmin="0.2" fmax="3"></bdl-bind2a>
 <bdl-bind2a-text findex="18" aname="Hodnota9_text" convertor="1,1.51"></bdl-bind2a-text>
+<bdl-bind2a findex="16" aname="CervenaVSipkaVehicle1_anim" amin="0" amax="100" fmin="0.1" fmax="3.5"></bdl-bind2a>
+
+
 
 </div>
 <div class="w3-rest">
 
-<bdl-chartjs-time id="id10" width="300" height="200" fromid="idfmi" labels="Fpn duoin1" initialdata="" refindex="8" refvalues="1" maxdata="1024"></bdl-chartjs-time>
+<bdl-chartjs-time id="id10" width="300" height="200" fromid="idfmi" labels="Fpn duo" initialdata="" refindex="15" refvalues="1" maxdata="1024"></bdl-chartjs-time>
 <!--bdl-chartjs-time id="id11" width="300" height="200" fromid="idfmi" labels="duoin" initialdata="" refindex="13" refvalues="1" maxdata="1024"></bdl-chartjs-time>
 <bdl-chartjs-time id="id12" width="300" height="200" fromid="idfmi" labels="mrna" initialdata="" refindex="14" refvalues="1" maxdata="1024"></bdl-chartjs-time>
 <bdl-chartjs-time id="id13" width="300" height="200" fromid="idfmi" labels="duo" initialdata="" refindex="15" refvalues="1" maxdata="1024"></bdl-chartjs-time>
