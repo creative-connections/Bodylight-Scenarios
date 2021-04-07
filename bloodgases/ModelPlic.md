@@ -39,11 +39,9 @@ Demonstruje výměnu krevních plynů $O_2$ a $CO_2$ v plicích, která je ovliv
 | parametr | hodnota |
 |----------|---------|
 | teplota [&deg;K] (norma 310.15&deg;K = 37&deg;KC | <bdl-range id="id1" title="" min="290.15" max="320.15" default="310.15" step="1" maxlength="6"></bdl-range> |
-| tlak vzduchu [kPa] (norma 101 kPa) | <bdl-range id="id2" title="" min="30" max="1000" default="101" step="1" maxlength="6"></bdl-range> |
+| tlak vzduchu [kPa] (norma 101 kPa) | <bdl-range id="id2" title="" min="30" max="1000" default="101" step="1" maxlength="7"></bdl-range>KPa |
 
 <bdl-animate-adobe src="Alveola.js" width="800" height="600" name="Alveola" fromid="idfmi"></bdl-animate-adobe>
-
-
 
 </div>
 </div>
