@@ -1,11 +1,8 @@
-# Simulátor přenosu krevních plynů
+# Fyziologie a patofyziologie respirace - poruchy přenosu krevních plynů
 
-Tento simulátor je vyvíjen v laboratoři biokybernetiky a počítačové podpory výuky (vedoucí Doc. MUDr. Jiří Kofránek, CSc.) Ústavu patologické fyziologie při 1.LF UK v Praze.
+Tento výukový text včetně matematických modelů a simulátorů je vyvíjen v laboratoři biokybernetiky a počítačové podpory výuky (vedoucí Doc. MUDr. Jiří Kofránek, CSc.) Ústavu patologické fyziologie při 1.LF UK v Praze.
 
 <!--Plíce a tkáně tvoří dvě části propojené do jedné regulační smyčky. (Plíce představují proměnnou zpětnou vazbu a tkáně akční člen - integrátor.) Protože obě chování obou částí je silně nelineární, může uživatel přerušit regulační smyčku a pozorovat chování samotných plic.-->
-
-
-
 
 ## Simulace modelu tkání
 
