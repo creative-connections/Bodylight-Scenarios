@@ -28,8 +28,7 @@ Demonstruje výměnu krevních plynů $O_2$ a $CO_2$ v plicích, která je ovliv
 </div>
 <div class="w3-third">
 
-<bdl-fmi id="idfmi" src="Physiolibrary_Fluid_Examples_BloodGasesTransport_BloodyMary.js" fminame="Physiolibrary_Fluid_Examples_BloodGasesTransport_BloodyMary" tolerance="0.000001" starttime="0" fstepsize="1" guid="{9cf9ddee-a4c0-4744-9f83-dc25801100f8}" valuereferences="637536357,905971815,637536358,905971812,905971811,905971620,905971622,905971621,905971619,905971618,905972516,905972513,905972514,905972515,905972512" valuelabels="arterial.pO2,arterial.sO2,arterial.pCO2,arterial.pH,arterial.pressure,alveolarUnit[1].pO2,alveolarUnit[1].sO2,alveolarUnit[1].pCO2,alveolarUnit[1].pH,alveolarUnit[1].pressure,tissueUnit[1].tissue.sO2,tissueUnit[1].tissue.pO2,tissueUnit[1].tissue.pCO2,tissueUnit[1].tissue.pH,tissueUnit[1].tissue.pressure" inputs="id1,16777217,1,1;id2,16777216,1000,1" inputlabels="system.T_ambient,system.p_ambient"></bdl-fmi>
-
+<bdl-fmi id="idfmi" src="Physiolibrary_Fluid_Examples_BloodGasesTransport_BloodyMary.js" fminame="Physiolibrary_Fluid_Examples_BloodGasesTransport_BloodyMary" tolerance="0.000001" starttime="0" fstepsize="1" guid="{9cf9ddee-a4c0-4744-9f83-dc25801100f8}" valuereferences="637536357,905971815,637536358,905971812,905971811,905971620,905971622,905971621,905971619,905971618,905972516,905972513,905972514,905972515,905972512,16777244" valuelabels="arterial.pO2,arterial.sO2,arterial.pCO2,arterial.pH,arterial.pressure,alveolarUnit[1].pO2,alveolarUnit[1].sO2,alveolarUnit[1].pCO2,alveolarUnit[1].pH,alveolarUnit[1].pressure,tissueUnit[1].tissue.sO2,tissueUnit[1].tissue.pO2,tissueUnit[1].tissue.pCO2,tissueUnit[1].tissue.pH,tissueUnit[1].tissue.pressure,Blood_Hb" inputs="id1,16777217,1,1;id2,16777216,1000,1;id3,16777252,1,100;id4,16777253,1,1000;id5,100663341,1,100;id6,16777244,1,1" inputlabels="system.T_ambient,system.p_ambient,AirO2,AirCO2,AirN2,Blood_Hb"></bdl-fmi>
 
 <bdl-animate-adobe src="AlveolaTK.js" width="800" height="600" name="AlveolaTK" fromid="idfmi"></bdl-animate-adobe>
 
@@ -40,12 +39,15 @@ Demonstruje výměnu krevních plynů $O_2$ a $CO_2$ v plicích, která je ovliv
 
 | parametr | hodnota |
 |----------|---------|
-| teplota [&deg;K] (norma 310.15&deg;K = 37&deg;KC | <bdl-range id="id1" title="" min="290.15" max="320.15" default="310.15" step="1" maxlength="6"></bdl-range> |
-| tlak vzduchu [kPa] (norma 101 kPa) | <bdl-range id="id2" title="" min="30" max="1000" default="101" step="1" maxlength="7"></bdl-range>KPa |
-
+| teplota [&deg;K] (norma 310.15&deg;K = 37&deg;KC | <bdl-range id="id1" title="" min="290.15" max="320.15" default="310.15" step="1" maxlength="7"></bdl-range> |
+| tlak vzduchu [kPa] (norma 101 kPa) | <bdl-range id="id2" title="" min="30" max="1000" default="101" step="1" maxlength="7"></bdl-range> |
+| koncentrace O2 (norma 21%) | <bdl-range id="id3" title="" min="5" max="50" default="21" step="1" maxlength="5"></bdl-range> |
+| koncentrace CO2 (norma 0.3&permil;) | <bdl-range id="id4" title="" min="0.1" max="50" default="0.3" step="0.1" maxlength="5"></bdl-range> |
+| koncentrace N2 (norma 72%) | <bdl-range id="id5" title="" min="60" max="90" default="72" step="1" maxlength="5"></bdl-range> |
+| koncentrace Hb v krvinkach (norma 8.4) | <bdl-range id="id6" title="" min="1" max="16" default="8.4" step="0.1" maxlength="5"></bdl-range> |
 
 <bdl-chartjs-time id="id10" width="300" height="200" fromid="idfmi" labels="arterial pO2" initialdata="" refindex="0" refvalues="1" convertors="1,133.322" maxdata="1024"></bdl-chartjs-time>
-<bdl-chartjs-time id="id10" width="300" height="200" fromid="idfmi" labels="alveoral pO2" initialdata="" refindex="5" refvalues="1" convertors="1,133.322" maxdata="1024"></bdl-chartjs-time>
-<bdl-chartjs-time id="id10" width="300" height="200" fromid="idfmi" labels="tissue pO2" initialdata="" refindex="11" refvalues="1" convertors="1,133.322" maxdata="1024"></bdl-chartjs-time>
+<bdl-chartjs-time id="id11" width="300" height="200" fromid="idfmi" labels="Hb" initialdata="" refindex="15" refvalues="1" convertors="1,1" maxdata="1024"></bdl-chartjs-time>
+
 </div>
 </div>
