@@ -25,14 +25,27 @@ Demonstruje výměnu krevních plynů $O_2$ a $CO_2$ v plicích, která je ovliv
 <bdl-chartjs-barplot  id="idt13"  fromid="idfmi"  refindex="12"  extremelimits="0,75" labels="pCO2" normallimits="40,55"  initialdata="40"  convertors="1,133.322" responsive="true"></bdl-chartjs-barplot>
 <bdl-chartjs-barplot  id="idt14"  fromid="idfmi"  refindex="13"  extremelimits="7,8" labels="pH" normallimits="7.3,7.4"  initialdata="7.4"  convertors="1,1" responsive="true"></bdl-chartjs-barplot>
 
+**Vdechovaný vzduch**
+
+<bdl-chartjs-barplot  id="idt12"  fromid="idfmi"  refindex="16"  extremelimits="0,300" labels="pO2" initialdata="159"  convertors="1,133.322" responsive="true"></bdl-chartjs-barplot>
+<bdl-chartjs-barplot  id="idt13"  fromid="idfmi"  refindex="17"  extremelimits="0,75" labels="pCO2" initialdata="0"  convertors="1,133.322" responsive="true"></bdl-chartjs-barplot>
+
 </div>
 <div class="w3-third">
 
-<bdl-fmi id="idfmi" src="Physiolibrary_Fluid_Examples_BloodGasesTransport_BloodyMary.js" fminame="Physiolibrary_Fluid_Examples_BloodGasesTransport_BloodyMary" tolerance="0.000001" starttime="0" fstepsize="1" guid="{9cf9ddee-a4c0-4744-9f83-dc25801100f8}" valuereferences="637536357,905971815,637536358,905971812,905971811,905971620,905971622,905971621,905971619,905971618,905972516,905972513,905972514,905972515,905972512,16777244" valuelabels="arterial.pO2,arterial.sO2,arterial.pCO2,arterial.pH,arterial.pressure,alveolarUnit[1].pO2,alveolarUnit[1].sO2,alveolarUnit[1].pCO2,alveolarUnit[1].pH,alveolarUnit[1].pressure,tissueUnit[1].tissue.sO2,tissueUnit[1].tissue.pO2,tissueUnit[1].tissue.pCO2,tissueUnit[1].tissue.pH,tissueUnit[1].tissue.pressure,Blood_Hb" inputs="id1,16777217,1,1,-272.15;id2,16777216,1000,1;id3,16777252,1,100;id4,16777253,1,1000;id5,100663341,1,100;id6,16777244,1,1,0,f;id7,16777238,1,100,0,f" inputlabels="system.T_ambient,system.p_ambient,AirO2,AirCO2,AirN2,Blood_Hb,Hct"></bdl-fmi>
+<bdl-fmi id="idfmi" src="Physiolibrary_Fluid_Examples_BloodGasesTransport_BloodyMary.js" fminame="Physiolibrary_Fluid_Examples_BloodGasesTransport_BloodyMary" tolerance="0.000001" starttime="0" fstepsize="1" guid="{9cf9ddee-a4c0-4744-9f83-dc25801100f8}" valuereferences="637536357,905971815,637536358,905971812,905971811,905971620,905971622,905971621,905971619,905971618,905972516,905972513,905972514,905972515,905972512,16777244,100663342,100663343,16777223" valuelabels="arterial.pO2,arterial.sO2,arterial.pCO2,arterial.pH,arterial.pressure,alveolarUnit[1].pO2,alveolarUnit[1].sO2,alveolarUnit[1].pCO2,alveolarUnit[1].pH,alveolarUnit[1].pressure,tissueUnit[1].tissue.sO2,tissueUnit[1].tissue.pO2,tissueUnit[1].tissue.pCO2,tissueUnit[1].tissue.pH,tissueUnit[1].tissue.pressure,Blood_Hb,Air_pO2,Air_pCO2,RR" inputs="id1,16777217,1,1,-272.15;id2,16777216,1000,1;id3,16777252,1,100;id4,16777253,1,1000;id5,100663341,1,100;id6,16777244,1,1,0,f;id7,16777238,1,100,0,f;id8,16777251,1,1,f;id9,16777223,1,60,f;id10,16777224,1,1000,f;id11,16777225,1,1000,t;id12,16777226,1,60000,t" inputlabels="system.T_ambient,system.p_ambient,AirO2,AirCO2,AirN2,Blood_Hb,Hct,Blood_BEox,RR,TV,DV,CO"></bdl-fmi>
+
 
 <bdl-animate-adobe src="AlveolaTK.js" width="800" height="600" name="AlveolaTK" fromid="idfmi"></bdl-animate-adobe>
 
 <bdl-bind2a findex="-1" aname="Alveola_anim" amin="0" amax="99" fmin="0" fmax="1" convertor="Math.sin(x/10)**2"></bdl-bind2a>
+
+
+
+<bdl-chartjs-time id="idt12"  fromid="idfmi"  refindex="11" refvalues="2" extremelimits="0,150" labels="pO2,pCO2" responsive="true"  convertors="1,133.322;1,133.322"></bdl-chartjs-time>
+<bdl-chartjs-time id="idt14"  fromid="idfmi"  refindex="13" refvalues="1" labels="pH" responsive="true" min="7" max="8"></bdl-chartjs-time>
+
+
 </div>
 <div class="w3-third w3-tiny">
 
@@ -45,9 +58,11 @@ Demonstruje výměnu krevních plynů $O_2$ a $CO_2$ v plicích, která je ovliv
 | koncentrace N2 (norma 72%) | <bdl-range id="id5" title="" min="60" max="90" default="72" step="1" maxlength="5"></bdl-range> |
 | koncentrace Hb v krvinkach (norma 8.4) | <bdl-range id="id6" title="" min="1" max="16" default="8.4" step="0.1" maxlength="5"></bdl-range> |
 | hematocrit Hct (44%) | <bdl-range id="id7" title="" min="10" max="80" default="44" step="1" maxlength="5"></bdl-range> |
-
-<bdl-chartjs-time id="id10" width="300" height="200" fromid="idfmi" labels="arterial pO2" initialdata="" refindex="0" refvalues="1" convertors="1,133.322" maxdata="1024"></bdl-chartjs-time>
-<bdl-chartjs-time id="id11" width="300" height="200" fromid="idfmi" labels="Hb" initialdata="" refindex="15" refvalues="1" convertors="1,1" maxdata="1024"></bdl-chartjs-time>
+| BeOX (0) | <bdl-range id="id8" title="" min="-10" max="10" default="0" step="1" maxlength="5"></bdl-range> |
+| dechová frekvence (norma 17)1/min | <bdl-range id="id9" title="" min="0" max="60" default="17" step="1" maxlength="5"></bdl-range> |
+| objem nádechu (tidal volume) (0.5 l) | <bdl-range id="id10" title="" min="0.1" max="1.5" default="0.5" step="0.1" maxlength="7"></bdl-range> |
+| mrtvý prostor nádechu (death space) (0.15 l) | <bdl-range id="id11" title="" min="0.05" max="1" default="0.15" step="0.05" maxlength="7"></bdl-range> |
+| minutový srdeční výdej (cardiac output) (5 l/min) | <bdl-range id="id12" title="" min="1" max="15" default="5" step="0.5" maxlength="7"></bdl-range> |
 
 </div>
 </div>
