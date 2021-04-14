@@ -75,13 +75,11 @@ Regulace příjmu Fe a ukládání do ferritinu a výdeje z enterocytu. Vyzkouš
 <bdl-bind2a-text findex="18" aname="Hodnota9_text" convertor="1,1.51"></bdl-bind2a-text>
 <bdl-bind2a findex="16" aname="CervenaVSipkaVehicle1_anim" amin="0" amax="100" fmin="0.1" fmax="3.5"></bdl-bind2a>
 
-
-
 </div>
 <div class="w3-rest">
 
-<bdl-chartjs-time id="id10" width="300" height="200" fromid="idfmi" labels="Fpn duo" initialdata="" refindex="15" refvalues="1" maxdata="1024"></bdl-chartjs-time>
-<!--bdl-chartjs-time id="id11" width="300" height="200" fromid="idfmi" labels="duoin" initialdata="" refindex="13" refvalues="1" maxdata="1024"></bdl-chartjs-time>
+<!--bdl-chartjs-time id="id10" width="300" height="200" fromid="idfmi" labels="Fpn duo" initialdata="" refindex="15" refvalues="1" maxdata="1024"></bdl-chartjs-time>
+<bdl-chartjs-time id="id11" width="300" height="200" fromid="idfmi" labels="duoin" initialdata="" refindex="13" refvalues="1" maxdata="1024"></bdl-chartjs-time>
 <bdl-chartjs-time id="id12" width="300" height="200" fromid="idfmi" labels="mrna" initialdata="" refindex="14" refvalues="1" maxdata="1024"></bdl-chartjs-time>
 <bdl-chartjs-time id="id13" width="300" height="200" fromid="idfmi" labels="duo" initialdata="" refindex="15" refvalues="1" maxdata="1024"></bdl-chartjs-time>
 <bdl-chartjs-time id="id14" width="300" height="200" fromid="idfmi" labels="Fe_duo_out_ser" initialdata="" refindex="16" refvalues="1" maxdata="1024"></bdl-chartjs-time>
