@@ -16,12 +16,12 @@ Demonstruje výměnu krevních plynů $O_2$ a $CO_2$ v plicích, která je ovliv
 **Smíšená arteriální krev**
 <bdl-chartjs-barplot id="id11" fromid="idfmi"  refindex="1"  extremelimits="0,1"  normallimits="0.93,0.99" responsive="true" labels="SAT" initialdata="0.97"></bdl-chartjs-barplot> 
 <bdl-chartjs-barplot  id="id12"  fromid="idfmi"  refindex="0"  extremelimits="0,150" labels="pO2" normallimits="90,110"  initialdata="94.01"  convertors="1,133.322" responsive="true"></bdl-chartjs-barplot>
-<bdl-chartjs-barplot  id="id13"  fromid="idfmi"  refindex="2"  extremelimits="0,75" labels="pCO2" normallimits="35,45"  initialdata="40"  convertors="1,133.322" responsive="true"></bdl-chartjs-barplot>
-<bdl-chartjs-barplot  id="id14"  fromid="idfmi"  refindex="3"  extremelimits="7,8" labels="pH" normallimits="7.38,7.42"  initialdata="7.4"  convertors="1,1" responsive="true"></bdl-chartjs-barplot>
+<bdl-chartjs-barplot  id="id13"  fromid="idfmi"  refindex="10"  extremelimits="0,75" labels="pCO2" normallimits="35,45"  initialdata="40"  convertors="1,133.322" responsive="true"></bdl-chartjs-barplot>
+<bdl-chartjs-barplot  id="id14"  fromid="idfmi"  refindex="11"  extremelimits="7,8" labels="pH" normallimits="7.38,7.42"  initialdata="7.4"  convertors="1,1" responsive="true"></bdl-chartjs-barplot>
 
 **Smíšená krev ve tkáních**
-<bdl-chartjs-barplot id="idt11" fromid="idfmi"  refindex="10"  extremelimits="0,1"  normallimits="0.5,0.7" responsive="true" labels="SAT" initialdata="0.97"></bdl-chartjs-barplot> 
-<bdl-chartjs-barplot  id="idt12"  fromid="idfmi"  refindex="11"  extremelimits="0,150" labels="pO2" normallimits="30,40"  initialdata="94.01"  convertors="1,133.322" responsive="true"></bdl-chartjs-barplot>
+<bdl-chartjs-barplot id="idt11" fromid="idfmi"  refindex="2"  extremelimits="0,1"  normallimits="0.5,0.7" responsive="true" labels="SAT" initialdata="0.97"></bdl-chartjs-barplot> 
+<bdl-chartjs-barplot  id="idt12"  fromid="idfmi"  refindex="4"  extremelimits="0,150" labels="pO2" normallimits="30,40"  initialdata="94.01"  convertors="1,133.322" responsive="true"></bdl-chartjs-barplot>
 <bdl-chartjs-barplot  id="idt13"  fromid="idfmi"  refindex="12"  extremelimits="0,75" labels="pCO2" normallimits="40,55"  initialdata="40"  convertors="1,133.322" responsive="true"></bdl-chartjs-barplot>
 <bdl-chartjs-barplot  id="idt14"  fromid="idfmi"  refindex="13"  extremelimits="7,8" labels="pH" normallimits="7.3,7.4"  initialdata="7.4"  convertors="1,1" responsive="true"></bdl-chartjs-barplot>
 
@@ -33,20 +33,21 @@ Demonstruje výměnu krevních plynů $O_2$ a $CO_2$ v plicích, která je ovliv
 </div>
 <div class="w3-third">
 
-<bdl-fmi id="idfmi" src="Physiolibrary_Fluid_Examples_BloodGasesTransport_BloodyMary.js" fminame="Physiolibrary_Fluid_Examples_BloodGasesTransport_BloodyMary" tolerance="0.000001" starttime="0" fstepsize="1" guid="{9cf9ddee-a4c0-4744-9f83-dc25801100f8}" valuereferences="637536357,905971815,637536358,905971812,905971811,905971620,905971622,905971621,905971619,905971618,905972516,905972513,905972514,905972515,905972512,16777244,100663342,100663343,16777223" valuelabels="arterial.pO2,arterial.sO2,arterial.pCO2,arterial.pH,arterial.pressure,alveolarUnit[1].pO2,alveolarUnit[1].sO2,alveolarUnit[1].pCO2,alveolarUnit[1].pH,alveolarUnit[1].pressure,tissueUnit[1].tissue.sO2,tissueUnit[1].tissue.pO2,tissueUnit[1].tissue.pCO2,tissueUnit[1].tissue.pH,tissueUnit[1].tissue.pressure,Blood_Hb,Air_pO2,Air_pCO2,RR" inputs="id1,16777217,1,1,-272.15;id2,16777216,1000,1;id3,16777252,1,100;id4,16777253,1,1000;id5,100663341,1,100;id6,16777244,1,1,0,f;id7,16777238,1,100,0,f;id8,16777251,1,1,f;id9,16777223,1,60,f;id10,16777224,1,1000,f;id11,16777225,1,1000,t;id12,16777226,1,60000,t" inputlabels="system.T_ambient,system.p_ambient,AirO2,AirCO2,AirN2,Blood_Hb,Hct,Blood_BEox,RR,TV,DV,CO"></bdl-fmi>
+<bdl-fmi id="idfmi" src="Physiolibrary_Fluid_Examples_BloodGasesTransport_BloodyMary.js" fminame="Physiolibrary_Fluid_Examples_BloodGasesTransport_BloodyMary" tolerance="0.000001" starttime="0" fstepsize="1" guid="{9cf9ddee-a4c0-4744-9f83-dc25801100f8}" valuereferences="637536357,905971815,905972513,905972516,905971811,905971620,905971622,905971621,905971619,905971618,637536358,905971812,905972514,905972515,905972512,16777244,100663342,100663343,16777223,637536357,905971832,905972513,905972466" valuelabels="arterial.pO2,arterial.sO2, tissueUnit[1].tissue.pO2, tissueUnit[1].tissue.sO2,arterial.pressure,alveolarUnit[1].pO2,alveolarUnit[1].sO2,alveolarUnit[1].pCO2,alveolarUnit[1].pH,alveolarUnit[1].pressure,arterial.pCO2,tissueUnit[1].tissue.pO2,arterial.pH,tissueUnit[1].tissue.pH,tissueUnit[1].tissue.pressure,Blood_Hb,Air_pO2,Air_pCO2,RR,arterial.pO2,arterial.c[2],tissueUnit[1].tissue.pO2,tissueUnit[1].tissue.c[2]" inputs="id1,16777217,1,1,-272.15;id2,16777216,1000,1;id3,16777252,1,100;id4,16777253,1,1000;id5,100663341,1,100;id6,16777244,1,1,0,f;id7,16777238,1,100,0,f;id8,16777251,1,1,f;id9,16777223,1,60,f;id10,16777224,1,1000,f;id11,16777225,1,1000,t;id12,16777226,1,60000,t" inputlabels="system.T_ambient,system.p_ambient,AirO2,AirCO2,AirN2,Blood_Hb,Hct,Blood_BEox,RR,TV,DV,CO"></bdl-fmi>
+
 
 
 <bdl-animate-adobe src="AlveolaTK.js" width="800" height="600" name="AlveolaTK" fromid="idfmi"></bdl-animate-adobe>
 
 <bdl-bind2a findex="-1" aname="Alveola_anim" amin="0" amax="99" fmin="0" fmax="1" convertor="Math.sin(x/10)**2"></bdl-bind2a>
 
+<bdl-chartjs-xy-points id="idt12"  fromid="idfmi"  refindex="19" refvalues="4"  labels=",arterialní krev,tkáně," responsive="true" xmin="0" xmax="110" min="0" max="10" convertors="1,133.322;1,1;1,133.322;1,1" atitle="Přidat bod" rtitle="Odebrat bod" xlabel="pO2 [mmHg]" ylabel="cO2 [mmol/l]"></bdl-chartjs-xy-points>
 
-
-<bdl-chartjs-time id="idt12"  fromid="idfmi"  refindex="11" refvalues="2" extremelimits="0,150" labels="pO2,pCO2" responsive="true"  convertors="1,133.322;1,133.322"></bdl-chartjs-time>
-<bdl-chartjs-time id="idt14"  fromid="idfmi"  refindex="13" refvalues="1" labels="pH" responsive="true" min="7" max="8"></bdl-chartjs-time>
+<bdl-chartjs-time id="idt13" fromid="idfmi" refindex="0" refvalues="1" convertors="1,133.322" labels="pO2" responsive="true" xlabel="time" ylabel="pO2 [mmHg]"></bdl-chartjs-time>
 
 
 </div>
+
 <div class="w3-third w3-tiny">
 
 | parametr | hodnota |
