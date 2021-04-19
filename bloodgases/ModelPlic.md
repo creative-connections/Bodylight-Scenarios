@@ -1,3 +1,8 @@
+<style>
+img[alt^="image"] {max-width:20px;}
+img[alt^="bigimage"] {  max-height:60px}
+tbody tr:nth-child(even){background-color:#f1f1f1}
+</style>
 ## Simulace modelu plic
 
 Demonstruje výměnu krevních plynů $O_2$ a $CO_2$ v plicích, která je ovlivněna množstvím parametrů (teplota, BEox, atd.). Je možné rozdělit plíce na několik částí s různými poměry ventilace/perfůze, což umožňuje experimenty vysvětlující jak a proč mají reálné plíce nerovnoměrné rozdělení těchto parametrů. Model též umožňuje zpětně agregovat rozdělené plíce do jediné jednotky beze změny chování (tato agregace změní míru ventilace mrtvého prostoru a pravolevých perfůzních zkratů).
@@ -36,18 +41,14 @@ Demonstruje výměnu krevních plynů $O_2$ a $CO_2$ v plicích, která je ovliv
 <bdl-fmi id="idfmi" src="Physiolibrary_Fluid_Examples_BloodGasesTransport_BloodyMary.js" fminame="Physiolibrary_Fluid_Examples_BloodGasesTransport_BloodyMary" tolerance="0.000001" starttime="0" fstepsize="1" guid="{9cf9ddee-a4c0-4744-9f83-dc25801100f8}" valuereferences="637536357,905971815,905972513,905972516,905971811,905971620,905971622,905971621,905971619,905971618,637536358,905971812,905972514,905972515,905972512,16777244,100663342,100663343,16777223,637536357,905971832,905972513,905972466" valuelabels="arterial.pO2,arterial.sO2, tissueUnit[1].tissue.pO2, tissueUnit[1].tissue.sO2,arterial.pressure,alveolarUnit[1].pO2,alveolarUnit[1].sO2,alveolarUnit[1].pCO2,alveolarUnit[1].pH,alveolarUnit[1].pressure,arterial.pCO2,tissueUnit[1].tissue.pO2,arterial.pH,tissueUnit[1].tissue.pH,tissueUnit[1].tissue.pressure,Blood_Hb,Air_pO2,Air_pCO2,RR,arterial.pO2,arterial.c[2],tissueUnit[1].tissue.pO2,tissueUnit[1].tissue.c[2]" inputs="id1,16777217,1,1,-272.15;id2,16777216,1000,1;id3,16777252,1,100;id4,16777253,1,1000;id5,100663341,1,100;id6,16777244,1,1,0,f;id7,16777238,1,100,0,f;id8,16777251,1,1,f;id9,16777223,1,60,f;id10,16777224,1,1000,f;id11,16777225,1,1000,t;id12,16777226,1,60000,t" inputlabels="system.T_ambient,system.p_ambient,AirO2,AirCO2,AirN2,Blood_Hb,Hct,Blood_BEox,RR,TV,DV,CO"></bdl-fmi>
 
 
-
 <bdl-animate-adobe src="AlveolaTK.js" width="800" height="600" name="AlveolaTK" fromid="idfmi"></bdl-animate-adobe>
 
 <bdl-bind2a findex="-1" aname="Alveola_anim" amin="0" amax="99" fmin="0" fmax="1" convertor="Math.sin(x/10)**2"></bdl-bind2a>
 
+<h4>Křivka O2 - závislost parciálního tlaku O<sub>2</sub> a jeho koncentrace v krvi</h4>
 <bdl-chartjs-xy-points id="idt12"  fromid="idfmi"  refindex="19" refvalues="4"  labels=",arterialní krev,tkáně," responsive="true" xmin="0" xmax="110" min="0" max="10" convertors="1,133.322;1,1;1,133.322;1,1" atitle="Přidat bod" rtitle="Odebrat bod" xlabel="pO2 [mmHg]" ylabel="cO2 [mmol/l]"></bdl-chartjs-xy-points>
 
-<bdl-chartjs-time id="idt13" fromid="idfmi" refindex="0" refvalues="1" convertors="1,133.322" labels="pO2" responsive="true" xlabel="time" ylabel="pO2 [mmHg]"></bdl-chartjs-time>
-
-
 </div>
-
 <div class="w3-third w3-tiny">
 
 | parametr | hodnota |
