@@ -73,28 +73,31 @@ Regulace příjmu Fe a ukládání do ferritinu a výdeje z enterocytu. Vyzkouš
 <bdl-bind2a findex="15" aname="KanalFialovy_anim" amin="99" amax="0" fmin="0.03" fmax="1.3"></bdl-bind2a>
 <bdl-bind2a findex="11" aname="Semafor_anim" amin="4" amax="5" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a-text findex="13" aname="Hodnota6_text" convertor="1,0.0412"></bdl-bind2a-text>
-<bdl-bind2a findex="18" aname="children.587.FeTransferin_anim" amin="0" amax="200" fmin="0.2" fmax="3"></bdl-bind2a>
+<bdl-bind2a findex="18" aname="children.611.FeTransferin_anim" amin="0" amax="200" fmin="0.2" fmax="3"></bdl-bind2a>
+
 <bdl-bind2a-text findex="18" aname="Hodnota9_text" convertor="1,1.51"></bdl-bind2a-text>
+
+<!-- TODO pridat skupinu vstrebavani zeleza do enterocytu -->
 
 </div>
 <div class="w3-rest">
 
-<bdl-chartjs-time id="id10" width="300" height="100" fromid="idfmi" labels="Fpn duoin1" initialdata="" refindex="8" refvalues="1" maxdata="1024"></bdl-chartjs-time>
-<!--bdl-chartjs-time id="id11" width="300" height="200" fromid="idfmi" labels="duoin" initialdata="" refindex="13" refvalues="1" maxdata="1024"></bdl-chartjs-time>
+<!--bdl-chartjs-time id="id10" width="300" height="100" fromid="idfmi" labels="Fpn duoin1" initialdata="" refindex="8" refvalues="1" maxdata="1024"></bdl-chartjs-time>
+<bdl-chartjs-time id="id11" width="300" height="200" fromid="idfmi" labels="duoin" initialdata="" refindex="13" refvalues="1" maxdata="1024"></bdl-chartjs-time>
 <bdl-chartjs-time id="id12" width="300" height="200" fromid="idfmi" labels="mrna" initialdata="" refindex="14" refvalues="1" maxdata="1024"></bdl-chartjs-time>
 <bdl-chartjs-time id="id13" width="300" height="200" fromid="idfmi" labels="duo" initialdata="" refindex="15" refvalues="1" maxdata="1024"></bdl-chartjs-time>
 <bdl-chartjs-time id="id14" width="300" height="200" fromid="idfmi" labels="Fe_duo_out_ser" initialdata="" refindex="16" refvalues="1" maxdata="1024"></bdl-chartjs-time>
 <bdl-chartjs-time id="id13" width="300" height="200" fromid="idfmi" labels="koncentrace Fe v krvi" initialdata="" refindex="18" refvalues="1" maxdata="1024" xlabel="čas (hodiny)" ylabel="množství orientační (ug)"></bdl-chartjs-time-->
 
 
-## Kontrolní otázky
-* Vyzkoušejte si, jak reaguje počet Fpn transportérů (míra otevření) na množství železa v buňce.
-* Vyzkoušejte si hypotetický genový knockout pro Fpn.
-* Sledujte vývoj saturace transferinu (~ množství železa v séru) se změnou příjmu železa v potravě
+## 4.3 Kontrolní otázky
+* Vyzkoušejte si, jak se mění tok železa do enterocytu v závislosti na množství železa v plazmě.
 
-<bdl-quiz question="Co má za následek genový knockout Fpn? Jak se změní koncentrace železa v enterocytu a v séru?" answers="Počet ferroportinu v membráně se sníží. Železo se hromadí v enterocytu a jeho množství v séru klesá|Počet ferroportinu se v membraně zvýší. Železo se transportuje z enterocytu do krve" correctoptions="true|false" explanations="správná odpověď na tuto otázku|nesprávná odpověď. Toto se děje pokud je gen aktivní."></bdl-quiz>
-<bdl-quiz question="Jak vypočítáme rovnovážnou konstantu?" answers="podíl koncentrací|součin koncentrací" correctoptions="true|false" explanations="Ano|Ne"></bdl-quiz>
-<bdl-quiz question="Která rychlostní konstanta bude větší a jaký stav bude buňka preferovat? A proč?" answers="1. Přítok železa do ferritinu. |2. Odtok železa z ferritinu." correctoptions="true|false" explanations="vyšší koncentrace Fe2+ je pro buňku toxická. Buňka se snaží tedy ukládat železo do ferritinu|Odtok železa z ferritinu udržuje buňka nižší."></bdl-quiz>
+* Proč je potřeba ATP k přenosu protonu do endocytického váčku?
+* Z jakého důvodu jsou protony transportovány do váčku?
+Pro redukci železa na Fe2+ je potřeba donor elektronu. Která molekula je dárcem a kde vzniká?
+
+
 </div>
 </div>
 </div>
