@@ -1,4 +1,3 @@
   * [Úvod](#index.md)
-    * [Simulace plic](#ModelPlic.md)
-    * [Snížený hemoglobin](#plice1hemoglobin.md)
-
+    * [Anemická hypoxie](#plice1hemoglobin.md)
+    * [Komplexní simulace plic](#ModelPlic.md)
