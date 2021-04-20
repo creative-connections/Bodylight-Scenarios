@@ -64,15 +64,12 @@ Anemická hypoxie je způsobená buď nedostatkem červených krvinek, nebo nedo
 1. Spusťte simulátor
 2. Sledujte v grafu body udávající parciální tlak a koncentraci O<sub>2</sub> v arteriální krvi a v krvi, která opouští tkáň. 
 3. Stiskněte tlačítko "Přidat bod" pod grafem
-4. Zastavte simulátor a odečtěte rozdíl koncentrací O<sub>2</sub> v arteriální krvi a v krvi tkání (najeďte myší) na graf. <bdl-quiz question="Jaký je rozdíl koncentrací" answers="2.8 mmol/l|8.28mmol/l|37.2 mmHg" correctoptions="true|false|false" explanations="Ano, toto mnžství O2 si odeberou buňky z krve|Ne, toto je absolutn9 hodnota koncentrace v arteriální krvi|Ne toto je parciální tlak kyslíku ve tkáních"></bdl-quiz>
+4. Zastavte simulátor a odečtěte rozdíl koncentrací O<sub>2</sub> v arteriální krvi a v krvi tkání (najeďte myší) na graf. <bdl-quiz question="Jaký je rozdíl koncentrací" answers="2.8 mmol/l|8.28mmol/l|37.2 mmHg" correctoptions="true|false|false" explanations="Ano, toto množství O2 si odeberou buňky z krve|Ne, toto je absolutní hodnota koncentrace v arteriální krvi|Ne toto je parciální tlak kyslíku ve tkáních"></bdl-quiz>
  
 5. Spusťte simulátor a změnte hodnotu koncentrace Hb posuvníkem např. na hodnotu 4.4
 6. Sledujte v grafu body parciálního tlaku kyslíku v krvi. <bdl-quiz question="Co se děje s koncentrací O2 při anemické hypoxii" answers="koncentrace v arteriální i smíšené krvi v tkáních se snižuje| koncentrace se nemění" correctoptions="true|false" explanations="Ano, v grafu se oba body snižují| Ne."></bdl-quiz>
 7. Zastavte simulaci a odečtěte rozdíl koncentrací O<sub>2</sub> v arteriální krvi a v krvi tkání (najeďte myší) na graf. <bdl-quiz question="Jaký je rozdíl koncentrací při anémii" answers="2.8 mmol/l|8.28mmol/l|37.2 mmHg" correctoptions="true|false|false" explanations="Ano, toto množství O2 si odeberou buňky z krve i při anémii|Ne, toto je absolutní hodnota koncentrace v arteriální krvi|Ne, toto je parciální tlak kyslíku ve tkáních"></bdl-quiz>
 8. <bdl-quiz question="Čeho jste si všimli" answers="rozdíl koncentrací je stejný|Při anemii se sníží odběr kyslíku" correctoptions="true|false" explanations="Ano. Metabolismus mitochondrií bez ohledu na vnější příčiny má stejný odběr kyslíku|Ne v tomto případě. Odběr kyslíku se sníží až při výraznější anémii."></bdl-quiz>
-
-
-
 
 </div>
 </div>
