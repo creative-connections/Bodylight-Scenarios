@@ -25,8 +25,8 @@ Anemická hypoxie je způsobená buď nedostatkem červených krvinek, nebo nedo
 <bdl-chartjs-barplot  id="id14"  fromid="idfmi"  refindex="11"  extremelimits="7,8" labels="pH" normallimits="7.38,7.42"  initialdata="7.4"  convertors="1,1" responsive="true"></bdl-chartjs-barplot>
 
 **Smíšená krev ve tkáních**
-<bdl-chartjs-barplot id="idt11" fromid="idfmi"  refindex="2"  extremelimits="0,1"  normallimits="0.5,0.7" responsive="true" labels="SAT" initialdata="0.97"></bdl-chartjs-barplot> 
-<bdl-chartjs-barplot  id="idt12"  fromid="idfmi"  refindex="4"  extremelimits="0,150" labels="pO2" normallimits="30,40"  initialdata="94.01"  convertors="1,133.322" responsive="true"></bdl-chartjs-barplot>
+<bdl-chartjs-barplot id="idt11" fromid="idfmi"  refindex="1"  extremelimits="0,1"  normallimits="0.5,0.7" responsive="true" labels="SAT" initialdata="0.97"></bdl-chartjs-barplot> 
+<bdl-chartjs-barplot  id="idt12"  fromid="idfmi"  refindex="21"  extremelimits="0,150" labels="pO2" normallimits="30,40"  initialdata="94.01"  convertors="1,133.322" responsive="true"></bdl-chartjs-barplot>
 <bdl-chartjs-barplot  id="idt13"  fromid="idfmi"  refindex="12"  extremelimits="0,75" labels="pCO2" normallimits="40,55"  initialdata="40"  convertors="1,133.322" responsive="true"></bdl-chartjs-barplot>
 <bdl-chartjs-barplot  id="idt14"  fromid="idfmi"  refindex="13"  extremelimits="7,8" labels="pH" normallimits="7.3,7.4"  initialdata="7.4"  convertors="1,1" responsive="true"></bdl-chartjs-barplot>
 
@@ -36,7 +36,7 @@ Anemická hypoxie je způsobená buď nedostatkem červených krvinek, nebo nedo
 <bdl-chartjs-barplot  id="idt13"  fromid="idfmi"  refindex="17"  extremelimits="0,75" labels="pCO2" initialdata="0"  convertors="1,133.322" responsive="true"></bdl-chartjs-barplot>
 
 </div>
-<div class="w3-third">
+<div class="w3-third w3-small">
 
 ### Simulátor
 
