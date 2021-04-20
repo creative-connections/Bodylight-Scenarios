@@ -4,8 +4,7 @@ img[alt^="bigimage"] {  max-height:60px}
 tbody tr:nth-child(even){background-color:#f1f1f1}
 </style>
 ## Anemická hypoxie
-Anemická hypoxie je způsobená buď nedostatkem červených krvinek, nebo nedostatkem hemoglobinu v krvi. Postupujte dle instrukcí a zjistěte jaké množství (mmol) kyslíku se z litru krve dostane do tkání v normě a při anémii způsobené nedostatkem hemoglobinu. Více o anemické hypoxii viz [https://www.wikiskripta.eu/w/Hypoxie](https://www.wikiskripta.eu/w/Hypoxie)
-
+Anemická hypoxie je způsobená buď nedostatkem červených krvinek, nebo nedostatkem hemoglobinu v krvi. V následující simulátoru si můžete srovnat množství doručeného a spotřebovaného kyslíku v normě a v případě anemické hypoxie způsobené sníženým množstvím hemoglobinu. Více o anemické hypoxii viz [https://www.wikiskripta.eu/w/Hypoxie](https://www.wikiskripta.eu/w/Hypoxie)
 
 <div class="w3-row">
 <div class="w3-third">
