@@ -3,8 +3,11 @@ img[alt^="image"] {max-width:20px;}
 img[alt^="bigimage"] {  max-height:60px}
 tbody tr:nth-child(even){background-color:#f1f1f1}
 </style>
-## Anemická hypoxie
-Anemická hypoxie je způsobená buď nedostatkem červených krvinek, nebo nedostatkem hemoglobinu v krvi. V následující simulátoru si můžete srovnat množství doručeného a spotřebovaného kyslíku v normě a v případě anemické hypoxie způsobené sníženým množstvím hemoglobinu. Více o anemické hypoxii viz [https://www.wikiskripta.eu/w/Hypoxie](https://www.wikiskripta.eu/w/Hypoxie)
+<h2 class="w3-left w3-margin-right">Anemická hypoxie</h2>
+
+Anemická (také nebo transportní) hypoxie je způsobená nedostatečným počtem funkčních erytrocytů nebo hemoglobinu. Základním znakem tohoto typu hypoxie je arteriální hypoxémie při normálním pO2 v okolí, arteriovenózní diference je stejná. Anemická hypoxie může být způsobena sníženým počtem erytrocytů (krevní ztráty, snížená erytropoéza, zvýšený rozpad), poklesem koncentrace hemoglobinu při dostatečném počtu erytrocytů (tzv. hypochromní anémie), tvorbou patologického Hb nebo vyřazením Hb z funkce vázat O2.^[Anemická hypoxie, [WIKISKRIPTA](https://www.wikiskripta.eu/w/Hypoxie#Anemick.C3.A1_hypoxie) ] ^[Hypoxie, [WIKIPEDIE](https://cs.wikipedia.org/wiki/Hypoxie) ]
+
+
 
 <div class="w3-row">
 <div class="w3-third">
@@ -60,15 +63,14 @@ Anemická hypoxie je způsobená buď nedostatkem červených krvinek, nebo nedo
 
 ### Instrukce a otázky
 
-1. Spusťte simulátor
-2. Sledujte v grafu body udávající parciální tlak a koncentraci O<sub>2</sub> v arteriální krvi a v krvi, která opouští tkáň. 
+1. Spusťte simulátor <button><i class="fa fa-play"></i></button> a sledujte v grafu body udávající parciální tlak a koncentraci O<sub>2</sub> v arteriální krvi a ve venózní krvi, která opouští tkáně. 
 3. Stiskněte tlačítko "Přidat bod" pod grafem
-4. Zastavte simulátor a odečtěte rozdíl koncentrací O<sub>2</sub> v arteriální krvi a v krvi tkání (najeďte myší) na graf. <bdl-quiz question="Jaký je rozdíl koncentrací" answers="2.8 mmol/l|8.28mmol/l|37.2 mmHg" correctoptions="true|false|false" explanations="Ano, toto množství O2 si odeberou buňky z krve|Ne, toto je absolutní hodnota koncentrace v arteriální krvi|Ne toto je parciální tlak kyslíku ve tkáních"></bdl-quiz>
+4. <bdl-quiz question="Zastavte simulátor a odečtěte rozdíl koncentrací O<sub>2</sub> v arteriální krvi a v krvi tkání (najeďte myší) na graf. Jaký je rozdíl koncentrací?" answers="2.8 mmol/l|8.28mmol/l|37.2 mmHg" correctoptions="true|false|false" explanations="Ano, toto množství O2 si odeberou buňky z krve|Ne, tato hodnota je absolutní hodnota koncentrace v arteriální krvi|Ne, tato hondota je parciální tlak kyslíku ve tkáních"></bdl-quiz>
  
 5. Spusťte simulátor a změnte hodnotu koncentrace Hb posuvníkem např. na hodnotu 4.4
-6. Sledujte v grafu body parciálního tlaku kyslíku v krvi. <bdl-quiz question="Co se děje s koncentrací O2 při anemické hypoxii" answers="koncentrace v arteriální i smíšené krvi v tkáních se snižuje| koncentrace se nemění" correctoptions="true|false" explanations="Ano, v grafu se oba body snižují| Ne."></bdl-quiz>
-7. Zastavte simulaci a odečtěte rozdíl koncentrací O<sub>2</sub> v arteriální krvi a v krvi tkání (najeďte myší) na graf. <bdl-quiz question="Jaký je rozdíl koncentrací při anémii" answers="2.8 mmol/l|8.28mmol/l|37.2 mmHg" correctoptions="true|false|false" explanations="Ano, toto množství O2 si odeberou buňky z krve i při anémii|Ne, toto je absolutní hodnota koncentrace v arteriální krvi|Ne, toto je parciální tlak kyslíku ve tkáních"></bdl-quiz>
-8. <bdl-quiz question="Čeho jste si všimli" answers="rozdíl koncentrací je stejný|Při anemii se sníží odběr kyslíku" correctoptions="true|false" explanations="Ano. Metabolismus mitochondrií bez ohledu na vnější příčiny má stejný odběr kyslíku|Ne v tomto případě. Odběr kyslíku se sníží až při výraznější anémii."></bdl-quiz>
+6. <bdl-quiz question="Sledujte v grafu body parciálního tlaku kyslíku v krvi. Co se děje s koncentrací O2 při anemické hypoxii?" answers="koncentrace v arteriální i smíšené krvi v tkáních se snižuje| koncentrace se nemění" correctoptions="true|false" explanations="Ano, v grafu se oba body snižují| Ne."></bdl-quiz>
+7. <bdl-quiz question="Zastavte simulaci a odečtěte rozdíl koncentrací O<sub>2</sub> v arteriální krvi a v krvi tkání (najeďte myší) na graf. Jaký je rozdíl koncentrací při anémii?" answers="2.8 mmol/l|8.28mmol/l|37.2 mmHg" correctoptions="true|false|false" explanations="Ano, toto množství O2 si odeberou buňky z krve i při anémii|Ne, toto je absolutní hodnota koncentrace v arteriální krvi|Ne, toto je parciální tlak kyslíku ve tkáních"></bdl-quiz>
+8. <bdl-quiz question="Čeho jste si všimli" answers="Rozdíl koncentrací je stejný při anemické hypoxii stejně jako při normálním fyziologickém stavu|Při anemii se sníží odběr kyslíku" correctoptions="true|false" explanations="Ano. Metabolismus mitochondrií bez ohledu na vnější příčiny má stejný odběr kyslíku v případě anemixké hypoxie |Ne v tomto případě. Odběr kyslíku se sníží až při výraznější anémii nebo při jiných typech hypoxie."></bdl-quiz>
 
 </div>
 </div>
