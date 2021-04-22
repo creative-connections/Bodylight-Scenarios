@@ -4,7 +4,9 @@ img[alt^="bigimage"] {  max-height:60px}
 tbody tr:nth-child(even){background-color:#f1f1f1}
 </style>
 ## Anemická hypoxie
-Anemická hypoxie je způsobená buď nedostatkem červených krvinek, nebo nedostatkem hemoglobinu v krvi. V následující simulátoru si můžete srovnat množství doručeného a spotřebovaného kyslíku v normě a v případě anemické hypoxie způsobené sníženým množstvím hemoglobinu. Více o anemické hypoxii viz [https://www.wikiskripta.eu/w/Hypoxie](https://www.wikiskripta.eu/w/Hypoxie)
+Anemická (také nebo transportní) hypoxie je způsobená nedostatečným počtem funkčních erytrocytů nebo hemoglobinu. Základním znakem tohoto typu hypoxie je arteriální hypoxémie při normálním pO2 v okolí, arteriovenózní diference je stejná. Anemická hypoxie může být způsobena sníženým počtem erytrocytů (krevní ztráty, snížená erytropoéza, zvýšený rozpad), poklesem koncentrace hemoglobinu při dostatečném počtu erytrocytů (tzv. hypochromní anémie), tvorbou patologického Hb nebo vyřazením Hb z funkce vázat O2.^[Anemická hypoxie, wikiskripta, [https://www.wikiskripta.eu/w/Hypoxie#Anemick.C3.A1_hypoxie](wikiskripta.eu/w/Hypoxie)] ^[Hypoxie, WIKIPEDIE, https://cs.wikipedia.org/wiki/Hypoxie]
+
+
 
 <div class="w3-row">
 <div class="w3-third">
