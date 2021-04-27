@@ -3,11 +3,12 @@ img[alt^="image"] {max-width:20px;}
 img[alt^="bigimage"] {  max-height:60px}
 tbody tr:nth-child(even){background-color:#f1f1f1}
 </style>
-## Simulace modelu plic
-
-Demonstruje výměnu krevních plynů $O_2$ a $CO_2$ v plicích, která je ovlivněna množstvím parametrů (teplota, BEox, atd.). Je možné rozdělit plíce na několik částí s různými poměry ventilace/perfůze, což umožňuje experimenty vysvětlující jak a proč mají reálné plíce nerovnoměrné rozdělení těchto parametrů. Model též umožňuje zpětně agregovat rozdělené plíce do jediné jednotky beze změny chování (tato agregace změní míru ventilace mrtvého prostoru a pravolevých perfůzních zkratů).
-
-<div class="w3-row">
+<bdl-tabs idlist="uvod,modelplic,modeltkani,krivkao2,krivkaco2,porovnani" 
+  titlelist="Úvod,Model plic,Model tkání,Křivka O2,KřivkaCO2,Porovnání O2 a CO2"></bdl-tabs>
+<div id="uvod">
+Uvod
+</div>  
+<div id="modelplic" class="w3-row">
 <div class="w3-third">
 
 ### Ukazatele
@@ -67,4 +68,16 @@ Demonstruje výměnu krevních plynů $O_2$ a $CO_2$ v plicích, která je ovliv
 | minutový srdeční výdej (cardiac output) (5 l/min) | <bdl-range id="id12" title="" min="1" max="15" default="5" step="0.5" maxlength="7"></bdl-range> |
 
 </div>
+</div>
+<div id="modeltkani">
+modeltkani
+</div>
+<div id="krivkao2">
+krivkao2
+</div>
+<div id="krivkaco2">
+krivkaco2
+</div>
+<div id="porovnani">
+porovnani
 </div>
