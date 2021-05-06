@@ -4,4 +4,5 @@ Následující interaktivní text představí hlavní moderní představy o meta
 
 Pro výběr konkrétní obrazovky použijte odkazy v levém panelu.
 
-Pro navigaci zpět a vpřed použijte tlačítka v dolní liště.
+Pro navigaci zpět a vpřed použijte tlačítka v dolní liště. :-)
+
