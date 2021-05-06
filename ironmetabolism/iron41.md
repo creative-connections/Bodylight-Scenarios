@@ -11,16 +11,13 @@ H<sup>+</sup>-ATPáza využívá energie ATP k přenosu protonů do endocytické
 
 <div class="w3-row">
 <div class="w3-half">
-<b>A:</b>
-<bdl-pdb-pdbe-molstar id="pdb2h35" molecule-id="2vns" hide-controls="true" height="500px"></bdl-pdb-pdbe-molstar>
 
+**A:** <bdl-pdb-pdbe-molstar id="pdb2h35" molecule-id="2vns" hide-controls="true" height="500px"></bdl-pdb-pdbe-molstar>
 </div>
-<div class="w3-half">
+<div class="w3-half w3-padding">
 
-**B:**
-![imgmetaloreduktaza](imgmetaloreduktaza.png)
-**C:**
-![schemasteap3](schemasteap3.png)<br/>
+<b>B:</b> ![imgmetaloreduktaza](imgmetaloreduktaza.png)
+**C:**![schemasteap3](schemasteap3.png)<br/>
 
 **D:**
 ![schemaendocyt](schemaendocyt.png)
