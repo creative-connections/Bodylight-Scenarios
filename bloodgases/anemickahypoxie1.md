@@ -5,7 +5,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 </style>
 <h2 class="w3-left w3-margin-right">Anemická hypoxie</h2>
 
-Anemická (také nebo transportní) hypoxie je způsobená nedostatečným počtem funkčních erytrocytů nebo hemoglobinu. Základním znakem tohoto typu hypoxie je arteriální hypoxémie při normálním pO2 v okolí, arteriovenózní diference je stejná. Anemická hypoxie může být způsobena sníženým počtem erytrocytů (krevní ztráty, snížená erytropoéza, zvýšený rozpad), poklesem koncentrace hemoglobinu při dostatečném počtu erytrocytů (tzv. hypochromní anémie), tvorbou patologického Hb nebo vyřazením Hb z funkce vázat O2.^[Anemická hypoxie, [WIKISKRIPTA](https://www.wikiskripta.eu/w/Hypoxie#Anemick.C3.A1_hypoxie) ] ^[Hypoxie, [WIKIPEDIE](https://cs.wikipedia.org/wiki/Hypoxie) ]
+Anemická (také transportní) hypoxie je způsobená nedostatečným počtem funkčních erytrocytů nebo hemoglobinu. Základním znakem tohoto typu hypoxie je arteriální hypoxémie při normálním pO2 v okolí, arteriovenózní diference je stejná. Anemická hypoxie může být způsobena sníženým počtem erytrocytů (krevní ztráty, snížená erytropoéza, zvýšený rozpad), poklesem koncentrace hemoglobinu při dostatečném počtu erytrocytů (tzv. hypochromní anémie), tvorbou patologického Hb nebo vyřazením Hb z funkce vázat O2.^[Anemická hypoxie, [WIKISKRIPTA](https://www.wikiskripta.eu/w/Hypoxie#Anemick.C3.A1_hypoxie) ] ^[Hypoxie, [WIKIPEDIE](https://cs.wikipedia.org/wiki/Hypoxie) ]
 
 
 
@@ -60,11 +60,9 @@ Anemická (také nebo transportní) hypoxie je způsobená nedostatečným počt
 
 **Instrukce a otázky**
 <div class="w3-tiny">
-
 1. Spusťte simulátor tlačítkem <button><i class="fa fa-play"></i></button> a sledujte v grafu body udávající parciální tlak a koncentraci O<sub>2</sub> v arteriální krvi a ve venózní krvi, která opouští tkáně. 
 3. Stiskněte tlačítko <button>Přidat bod</button> pod grafem.
-4. <bdl-quiz question="Zastavte simulátor a odečtěte rozdíl koncentrací O2 v arteriální krvi a ve venózní krvi (najeďte myší na graf a odečtěte hodnoty). Jaký je rozdíl koncentrací (hodnota u symbolu delta)?" answers="2.8 mmol/l|8.28mmol/l|37.2 mmHg" correctoptions="true|false|false" explanations="Ano, toto množství O2 si odeberou buňky z krve|Ne, tato hodnota je absolutní hodnota koncentrace v arteriální krvi|Ne, tato hondota je parciální tlak kyslíku ve tkáních" button="zkontrolovat odpovědi"></bdl-quiz>
- 
+4. <bdl-quiz question="Zastavte simulátor. Jaký je rozdíl koncentrací O2 v arteriální krvi a ve venózní krvi (najeďte myší na graf a zjistěte hodnotu delta)?" answers="2.8 mmol/l|8.28mmol/l|37.2 mmHg" correctoptions="true|false|false" explanations="Ano, toto množství O2 si odeberou buňky z krve|Ne, tato hodnota je absolutní hodnota koncentrace v arteriální krvi|Ne, tato hondota je parciální tlak kyslíku ve tkáních" button="zkontrolovat odpovědi"></bdl-quiz>
 5. Spusťte simulátor a změnte hodnotu koncentrace Hb posuvníkem např. na hodnotu 4.4
 6. <bdl-quiz question="Sledujte v grafu body parciálního tlaku kyslíku v krvi. Co se děje s koncentrací O2 při anemické hypoxii?" answers="koncentrace v arteriální i smíšené krvi v tkáních se snižuje| koncentrace se nemění" correctoptions="true|false" explanations="Ano, v grafu se oba body snižují| Ne." button="zkontrolovat odpovědi"></bdl-quiz>
 7. <bdl-quiz question="Zastavte simulaci a odečtěte rozdíl koncentrací O<sub>2</sub> v arteriální krvi a v krvi tkání (najeďte myší) na graf. Jaký je rozdíl koncentrací při anémii?" answers="2.8 mmol/l|8.28mmol/l|37.2 mmHg" correctoptions="true|false|false" explanations="Ano, toto množství O2 si odeberou buňky z krve i při anémii|Ne, toto je absolutní hodnota koncentrace v arteriální krvi|Ne, toto je parciální tlak kyslíku ve tkáních" button="zkontrolovat odpovědi"></bdl-quiz>
