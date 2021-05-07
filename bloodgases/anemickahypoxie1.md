@@ -5,7 +5,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 </style>
 <h2 class="w3-left w3-margin-right">Anemická hypoxie</h2>
 
-Anemická (také transportní) hypoxie je způsobená nedostatečným počtem funkčních erytrocytů nebo hemoglobinu. Základním znakem tohoto typu hypoxie je arteriální hypoxémie při normálním pO2 v okolí, arteriovenózní diference je stejná. Anemická hypoxie může být způsobena sníženým počtem erytrocytů (krevní ztráty, snížená erytropoéza, zvýšený rozpad), poklesem koncentrace hemoglobinu při dostatečném počtu erytrocytů (tzv. hypochromní anémie), tvorbou patologického Hb nebo vyřazením Hb z funkce vázat O2.^[Anemická hypoxie, [WIKISKRIPTA](https://www.wikiskripta.eu/w/Hypoxie#Anemick.C3.A1_hypoxie) ] ^[Hypoxie, [WIKIPEDIE](https://cs.wikipedia.org/wiki/Hypoxie) ]
+Anemická (nebo také transportní) hypoxie je způsobená nedostatečným počtem funkčních erytrocytů nebo hemoglobinu. Základním znakem tohoto typu hypoxie je arteriální hypoxémie při normálním pO2 v okolí, arteriovenózní diference je stejná. Anemická hypoxie může být způsobena sníženým počtem erytrocytů (krevní ztráty, snížená erytropoéza, zvýšený rozpad), poklesem koncentrace hemoglobinu při dostatečném počtu erytrocytů (tzv. hypochromní anémie), tvorbou patologického Hb nebo vyřazením Hb z funkce vázat O2.^[Anemická hypoxie, [WIKISKRIPTA](https://www.wikiskripta.eu/w/Hypoxie#Anemick.C3.A1_hypoxie) ] ^[Hypoxie, [WIKIPEDIE](https://cs.wikipedia.org/wiki/Hypoxie) ]
 
 
 
