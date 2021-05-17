@@ -91,12 +91,10 @@ Regulace příjmu Fe a ukládání do ferritinu a výdeje z enterocytu. Vyzkouš
 
 
 ## 4.3 Kontrolní otázky
-* Vyzkoušejte si, jak se mění tok železa do enterocytu v závislosti na množství železa v plazmě.
-
-* Proč je potřeba ATP k přenosu protonu do endocytického váčku?
-* Z jakého důvodu jsou protony transportovány do váčku?
-Pro redukci železa na Fe2+ je potřeba donor elektronu. Která molekula je dárcem a kde vzniká?
-
+<bdl-quiz question="Vyzkoušejte si, jak se mění tok železa do enterocytu v závislosti na množství železa v plazmě." answers="Vyšší množství železa v plasmě zvýší tok do enterocytu.|Vyšší množství železa v plasmě sníží tok do enterocytu." correctoptions="true|false" explanations="Toto je správné. Ze simulace je vidět.|Toto je špatně. Ze simulace je vidět."></bdl-quiz>
+<bdl-quiz question="Proč je potřeba ATP k přenosu protonu do endocytického váčku?" answers="Potřeba energie pro přenos proti gradientu|Potřeba redukce železa." correctoptions="true|false" explanations="Toto je správná odpověď.|Tato odpověď neodpovídá na danou otázku."></bdl-quiz>
+<bdl-quiz question="Z jakého důvodu jsou protony transportovány do váčku?" answers="Symport Fe a H+|Udržuje eletrkochemický gradient" correctoptions="true|false" explanations="Toto je správná odpověď.|Tato odpověď neodpovídá na danou otázku."></bdl-quiz>
+<bdl-quiz question="Pro redukci železa na Fe2+ je potřeba donor elektronu. Která molekula je dárcem a kde vzniká?" answers="ATP|ADP" correctoptions="true|false" explanations="ano|ne"></bdl-quiz>
 
 </div>
 </div>
@@ -105,9 +103,6 @@ Pro redukci železa na Fe2+ je potřeba donor elektronu. Která molekula je dár
 <div id="legenda" class="w3-card w3-small w3-padding" style="display:none;z-index:1;position:absolute;top:20px;right:10px;width:500px;background-color:white">
 <button class="w3-button w3-theme w3-right" onclick="document.getElementById('legenda').style.display='none'">Skryj legendu <i class="fa fa-close w3-large"></i></button>
 
-## Vizualizace
-Vizualizace simulátoru shrnuje schématicky předchozí fakta:
-
 |Schéma|Popis/funkce|
 |---|---|
 |![bigimagefoodiron](simfoodiron.png)|__1. Příjem železa v potravě__ ve formě nehemové ![image1](image1.jpg)Fe<sup>2+</sup>, ![image2](image2.jpg)Fe<sup>3+</sup> a hemové.|
@@ -115,12 +110,10 @@ Vizualizace simulátoru shrnuje schématicky předchozí fakta:
 |![bigimagefoodiron](simhem.png) |__3. Hemové železo__ se přenáší do buňky, kde se pomocí HO uvolňuje Fe<sup>2+</sup> |
 |![bigimagefoodiron](simironout.png) |__4. Ztráty__ železa vzniklé nevstřebáním|
 |![bigimagefoodiron](simironpool.png) |__5.Pohotový pool, sdílená zásoba Fe<sup>2+</sup>__ která reguluje (inhibuje) transportér DMT1 a přenašeč hemu|
-|![bigimagefoodiron](simironferritin.png) |__6.Regulace příjmu a výdeje Fe<sup>2+</sup> ve ferritinu__
+|![bigimagefoodiron](simironferritin.png) |__6.Regulace příjmu a výdeje Fe<sup>2+</sup> ve ferritinu__ |
+|![bigimageferroportin](imageferroportin.png) |__7.Genová regulace ferroportinu__ |
 
-## Ikony
-Schémata a vizualizace obsahují tyto ikony:
-
-|Ikona|Definice|Popis/funkce|
+||Definice|Popis/funkce|
 |---|---|---|
 |![image1](image1.jpg)|Fe<sup>2+</sup>|Dvojmocné železo|
 |![image2](image2.jpg)|Fe<sup>3+</sup>|Trojmocné železo|
@@ -133,5 +126,10 @@ Schémata a vizualizace obsahují tyto ikony:
 |![image9](image9.jpg)|Ztráty železa|Ztráty železa vzniklé nevstřebáním nebo ztrátou buněk, které železo obsahují|
 |![image10](image10.jpg)|Pool Fe<sup>2+</sup>|Pohotový pool Fe<sup>2+</sup> železa v buňce, míra zaplnění odpovídá množství (zde 6/8)|
 |![imageferritin](imageferritin.png)|Ferritin| Ferritin složený z a) proteinové části apoferitinu (oranžová) a b) iontů Fe3+. Funguje jako zásobárna Fe.|
+|![imagetransferrin](imagetransferrin.png)|Transferin| Transferin|
+|![imagehephesdin](smallhephesdin.png)|Hephesdin|Hephesdin|
+|![imageferroportin](smallferroportin.png)|Ferroportin|Ferroportin|
+|![imagetfr1](imgtfr1.png)|TfR1|Transferinový receptor 1|
+|![imageschemasteap3](imgmetaloreduktaza.png)| STEAP3 | Metaloreduktáza |
 
 </div>
