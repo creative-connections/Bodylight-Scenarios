@@ -99,10 +99,7 @@ Regulace příjmu Fe a ukládání do ferritinu a výdeje z enterocytu. Vyzkouš
 </div>
 
 <div id="legenda" class="w3-card w3-small w3-padding" style="display:none;z-index:1;position:absolute;top:20px;right:10px;width:500px;background-color:white">
-<button class="w3-button w3-theme w3-right" onclick="document.getElementById('legenda').style.display='none'">Skryj legendu <i class="fa fa-close w3-large"></i></button>
-
-## Vizualizace
-Vizualizace simulátoru shrnuje schématicky předchozí fakta:
+<button class="w3-button w3-theme w3-right" onclick="document.getElementById('legenda').style.display='none'"><i class="fa fa-close w3-large"></i></button>
 
 |Schéma|Popis/funkce|
 |---|---|
@@ -111,10 +108,8 @@ Vizualizace simulátoru shrnuje schématicky předchozí fakta:
 |![bigimagefoodiron](simhem.png) |__3. Hemové železo__ se přenáší do buňky, kde se pomocí HO uvolňuje Fe<sup>2+</sup> |
 |![bigimagefoodiron](simironout.png) |__4. Ztráty__ železa vzniklé nevstřebáním|
 |![bigimagefoodiron](simironpool.png) |__5.Pohotový pool, sdílená zásoba Fe<sup>2+</sup>__ která reguluje (inhibuje) transportér DMT1 a přenašeč hemu|
-|![bigimagefoodiron](simironferritin.png) |__6.Regulace příjmu a výdeje Fe<sup>2+</sup> ve ferritinu__
-
-## Ikony
-Schémata a vizualizace obsahují tyto ikony:
+|![bigimagefoodiron](simironferritin.png) |__6.Regulace příjmu a výdeje Fe<sup>2+</sup> ve ferritinu__ |
+|![bigimageferroportin](imageferroportin.png) |__7.Genová regulace ferroportinu__ |
 
 |Ikona|Definice|Popis/funkce|
 |---|---|---|
