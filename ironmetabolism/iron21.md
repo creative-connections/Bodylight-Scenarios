@@ -69,9 +69,9 @@ Regulace příjmu Fe a příjmu a výdeje Fe do/z ferritinu. Vyzkoušejte v simu
 
 ## Kontrolní otázky
 
-<bdl-quiz question="Jak se mění rovnováha mezi množstvím železa ve ferritinu (Fe3+) a v pohotovém poolu (Fe2+)?" answers="zvýšený Fe3+ svýší i koncentraci Fe2+|zvýšený Fe3+ sníží koncentraci Fe2+" correctoptions="true|false" explanations="|"></bdl-quiz>
-<bdl-quiz question="Jak vypočítáme rovnovážnou konstantu?" answers="podíl koncentrací|součin koncentrací" correctoptions="true|false" explanations="Ano|Ne"></bdl-quiz>
-<bdl-quiz question="Která rychlostní konstanta bude větší a jaký stav bude buňka preferovat? A proč?" answers="1. Přítok železa do ferritinu. |2. Odtok železa z ferritinu." correctoptions="true|false" explanations="vyšší koncentrace Fe2+ je pro buňku toxická. Buňka se snaží tedy ukládat železo do ferritinu|Odtok železa z ferritinu udržuje buňka nižší."></bdl-quiz>
+<bdl-quiz question="Jak se mění rovnováha mezi množstvím železa ve ferritinu (Fe3+) a v pohotovém poolu (Fe2+)?" answers="zvýšený Fe3+ svýší i koncentraci Fe2+|zvýšený Fe3+ sníží koncentraci Fe2+" correctoptions="true|false" explanations="|" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="Jak vypočítáme rovnovážnou konstantu?" answers="podíl koncentrací|součin koncentrací" correctoptions="true|false" explanations="Ano|Ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="Která rychlostní konstanta bude větší a jaký stav bude buňka preferovat? A proč?" answers="1. Přítok železa do ferritinu. |2. Odtok železa z ferritinu." correctoptions="true|false" explanations="vyšší koncentrace Fe2+ je pro buňku toxická. Buňka se snaží tedy ukládat železo do ferritinu|Odtok železa z ferritinu udržuje buňka nižší."  buttontitle="zkontrolovat odpověď"></bdl-quiz>
 </div>
 </div>
 </div>
