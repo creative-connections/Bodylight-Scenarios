@@ -3,16 +3,14 @@ img[alt^="image"] {max-width:20px;}
 img[alt^="bigimage"] {  max-height:60px}
 tbody tr:nth-child(even){background-color:#f1f1f1}
 </style>
-# 4.2 Simulace přenos železa z krve do střeva
 <button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
-
-Regulace příjmu Fe a ukládání do ferritinu a výdeje z enterocytu. Vyzkoušejte v simulátoru a zodpovězte otázky.
-
+# 4.2 Simulace přenosu železa z krve do střeva
 
 <div class="w3-row">
 <div class="w3-third">
 
-<bdl-fmi id="idfmi" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.5" guid="{ff6d8a55-f24a-4855-bbf0-86edcafe471e}" valuereferences="637534208,637534209,100663315,16777260,33554448,33554449,637534228,905969688,637534231,16777271,16777272,16777267,637534233,637534237,33554439,33554443,637534230,637534257,33554447" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate,Fpn_duo_knockout,Fpn_duo_in_1,Fpn_duo_in,Fpn_duo_mRNA,Fpn_duo,Fe_duo_out_ser,Fe_ser_in_duo,Fe_ser" inputs="id1,16777260,1,1;id4,16777267,1,1" inputlabels="Fe_food,Fpn_duo_knockout"></bdl-fmi>
+<bdl-fmi id="idfmi" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="5" guid="{ff6d8a55-f24a-4855-bbf0-86edcafe471e}" valuereferences="637534208,637534209,100663315,16777260,33554448,33554449,637534228,905969688,637534231,16777271,16777272,16777267,637534233,637534237,33554439,33554443,637534230,637534257,33554447,637534229" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate,Fpn_duo_knockout,Fpn_duo_in_1,Fpn_duo_in,Fpn_duo_mRNA,Fpn_duo,Fe_duo_out_ser,Fe_ser_in_duo,Fe_ser,Fe_duo_in_ser" inputs="id1,16777260,1,1;id4,16777267,1,1" inputlabels="Fe_food,Fpn_duo_knockout"></bdl-fmi>
+
 
 </div>
 <div class="w3-rest">
@@ -33,12 +31,13 @@ Regulace příjmu Fe a ukládání do ferritinu a výdeje z enterocytu. Vyzkouš
 <bdl-bind2a findex="3" aname="Merak1_anim" amin="0" amax="99" fmin="0" fmax="1000"></bdl-bind2a>
 <bdl-bind2a-text findex="3" aname="Hodnota1_text" convertor="1,219"></bdl-bind2a-text>
 
-<bdl-bind2a findex="6" aname="SipkaCervena2_anim" amin="0" amax="100" fmin="0.91" fmax="2.74"></bdl-bind2a>
-<bdl-bind2a findex="6" aname="SipkaZlutaH_anim" amin="0" amax="100" fmin="0.91" fmax="2.74"></bdl-bind2a>
-<bdl-bind2a findex="6" aname="SipkaFialovaHorni_anim" amin="0" amax="100" fmin="0.91" fmax="2.74"></bdl-bind2a>
-<bdl-bind2a findex="6" aname="SipkaModra_anim" amin="0" amax="100" fmin="0.91" fmax="2.74"></bdl-bind2a>
-<bdl-bind2a findex="6" aname="SipkaModraModryKanalSpodni_anim" amin="0" amax="100" fmin="0.91" fmax="2.74"></bdl-bind2a>
-<bdl-bind2a findex="6" aname="SipkaCervena3_anim" amin="0" amax="100" fmin="0.91" fmax="2.74"></bdl-bind2a>
+<bdl-bind2a findex="6" aname="SipkaCervena2_anim" amin="0" amax="159" fmin="0.91" fmax="2.74"></bdl-bind2a>
+<bdl-bind2a findex="6" aname="SipkaZlutaH_anim" amin="0" amax="159" fmin="0.91" fmax="2.74"></bdl-bind2a>
+<bdl-bind2a findex="6" aname="SipkaZlutaH1_anim" amin="0" amax="159" fmin="0.91" fmax="2.74"></bdl-bind2a>
+<bdl-bind2a findex="6" aname="SipkaFialovaHorni_anim" amin="0" amax="159" fmin="0.91" fmax="2.74"></bdl-bind2a>
+<bdl-bind2a findex="6" aname="SipkaModra_anim" amin="0" amax="159" fmin="0.91" fmax="2.74"></bdl-bind2a>
+<bdl-bind2a findex="6" aname="SipkaModraModryKanalSpodni_anim" amin="0" amax="159" fmin="0.91" fmax="2.74"></bdl-bind2a>
+<bdl-bind2a findex="6" aname="SipkaCervena3_anim" amin="0" amax="159" fmin="0.91" fmax="2.74"></bdl-bind2a>
 <bdl-bind2a findex="6" aname="CervenaPoolIn_anim" amin="0" amax="100" fmin="0.91" fmax="2.74"></bdl-bind2a>
 <bdl-bind2a findex="6" aname="Hemox_anim" amin="0" amax="100" fmin="0.91" fmax="2.74"></bdl-bind2a>
 
@@ -67,22 +66,31 @@ Regulace příjmu Fe a ukládání do ferritinu a výdeje z enterocytu. Vyzkouš
 
 <bdl-bind2a findex="14" aname="SipkaRuzova2_anim" amin="0" amax="100" fmin="0.026" fmax="0.028"></bdl-bind2a>
 <bdl-bind2a findex="13" aname="SipkaFialovaSrafovana_anim" amin="0" amax="100" fmin="0.02" fmax="0.05"></bdl-bind2a>
-<bdl-bind2a findex="16" aname="SipkaFialovaSpodni3_anim" amin="0" amax="100" fmin="0.1" fmax="3.5"></bdl-bind2a>
-<bdl-bind2a findex="16" aname="CervenaVSipkaVehicle1_anim_1" amin="0" amax="100" fmin="0.1" fmax="3.5"></bdl-bind2a>
+<bdl-bind2a findex="16" aname="SipkaFialovaSpodni3_anim" amin="0" amax="100" fmin="0.1" fmax="2.6"></bdl-bind2a>
+<bdl-bind2a findex="16" aname="children.0.CervenaVSipkaVehicle1_anim_1" amin="0" amax="159" fmin="0.01" fmax="2.6"></bdl-bind2a>
 
 <bdl-bind2a findex="15" aname="KanalFialovy_anim" amin="99" amax="0" fmin="0.03" fmax="1.3"></bdl-bind2a>
 <bdl-bind2a findex="11" aname="Semafor_anim" amin="4" amax="5" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a-text findex="13" aname="Hodnota6_text" convertor="1,0.0412"></bdl-bind2a-text>
-<bdl-bind2a findex="18" aname="children.611.FeTransferin_anim" amin="0" amax="200" fmin="0.2" fmax="3"></bdl-bind2a>
+<bdl-bind2a findex="18" aname="children.0.children.611.FeTransferin_anim" amin="0" amax="200" fmin="0.2" fmax="3"></bdl-bind2a>
+
+<bdl-bind2a findex="19" aname="children.0.OranzovoZlutaSipkaDiTF_anim" amin="0" amax="159" fmin="0.001" fmax="1.06"></bdl-bind2a>
+<bdl-bind2a findex="19" aname="children.0.CervenaVSipkaVehicle1_anim" amin="0" amax="159" fmin="0.001" fmax="1.06"></bdl-bind2a>
+<bdl-bind2a findex="19" aname="children.0.CervenaVSipkaVehicle1_anim_2" amin="0" amax="159" fmin="0.001" fmax="1.06"></bdl-bind2a>
+<bdl-bind2a findex="19" aname="children.0.children.593.KanalZlutyVehicle_anim" amin="0" amax="159" fmin="0.001" fmax="1.06"></bdl-bind2a>
+<bdl-bind2a findex="19" aname="children.0.children.593.PrechodUvnitrVehicle_anim" amin="0" amax="159" fmin="0.001" fmax="1.06"></bdl-bind2a>
+<bdl-bind2a findex="19" aname="children.0.children.593.KanalCervenyVehicle2_anim" amin="0" amax="159" fmin="0.001" fmax="1.06"></bdl-bind2a>
+
+
 
 <bdl-bind2a-text findex="18" aname="Hodnota9_text" convertor="1,1.51"></bdl-bind2a-text>
 
 <!-- TODO pridat skupinu vstrebavani zeleza do enterocytu -->
-
 </div>
 <div class="w3-rest">
 
-<!--bdl-chartjs-time id="id10" width="300" height="100" fromid="idfmi" labels="Fpn duoin1" initialdata="" refindex="8" refvalues="1" maxdata="1024"></bdl-chartjs-time>
+<!--bdl-chartjs-time id="id10" width="400" height="200" fromid="idfmi" labels="fe duo out ser" initialdata="" refindex="19" refvalues="1" maxdata="1024"></bdl-chartjs-time>
+<bdl-chartjs-time id="id10" width="400" height="200" fromid="idfmi" labels="fe duo in ser" initialdata="" refindex="16" refvalues="1" maxdata="1024"></bdl-chartjs-time>
 <bdl-chartjs-time id="id11" width="300" height="200" fromid="idfmi" labels="duoin" initialdata="" refindex="13" refvalues="1" maxdata="1024"></bdl-chartjs-time>
 <bdl-chartjs-time id="id12" width="300" height="200" fromid="idfmi" labels="mrna" initialdata="" refindex="14" refvalues="1" maxdata="1024"></bdl-chartjs-time>
 <bdl-chartjs-time id="id13" width="300" height="200" fromid="idfmi" labels="duo" initialdata="" refindex="15" refvalues="1" maxdata="1024"></bdl-chartjs-time>
