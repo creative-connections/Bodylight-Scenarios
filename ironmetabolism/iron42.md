@@ -99,10 +99,10 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 
 ## 4.3 Kontrolní otázky
-<bdl-quiz question="Vyzkoušejte si, jak se mění tok železa do enterocytu v závislosti na množství železa v plazmě." answers="Vyšší množství železa v plasmě zvýší tok do enterocytu.|Vyšší množství železa v plasmě sníží tok do enterocytu." correctoptions="true|false" explanations="Toto je správné. Ze simulace je vidět.|Toto je špatně. Ze simulace je vidět."></bdl-quiz>
-<bdl-quiz question="Proč je potřeba ATP k přenosu protonu do endocytického váčku?" answers="Potřeba energie pro přenos proti gradientu|Potřeba redukce železa." correctoptions="true|false" explanations="Toto je správná odpověď.|Tato odpověď neodpovídá na danou otázku."></bdl-quiz>
-<bdl-quiz question="Z jakého důvodu jsou protony transportovány do váčku?" answers="Symport Fe a H+|Udržuje eletrkochemický gradient" correctoptions="true|false" explanations="Toto je správná odpověď.|Tato odpověď neodpovídá na danou otázku."></bdl-quiz>
-<bdl-quiz question="Pro redukci železa na Fe2+ je potřeba donor elektronu. Která molekula je dárcem a kde vzniká?" answers="ATP|ADP" correctoptions="true|false" explanations="ano|ne"></bdl-quiz>
+<bdl-quiz question="Vyzkoušejte si, jak se mění tok železa do enterocytu v závislosti na množství železa v plazmě." answers="Vyšší množství železa v plasmě zvýší tok do enterocytu.|Vyšší množství železa v plasmě sníží tok do enterocytu." correctoptions="true|false" explanations="Toto je správné. Ze simulace je vidět.|Toto je špatně. Ze simulace je vidět." buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="Proč je potřeba ATP k přenosu protonu do endocytického váčku?" answers="Potřeba energie pro přenos proti gradientu|Potřeba redukce železa." correctoptions="true|false" explanations="Toto je správná odpověď.|Tato odpověď neodpovídá na danou otázku." buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="Z jakého důvodu jsou protony transportovány do váčku?" answers="Symport Fe a H+|Udržuje eletrkochemický gradient" correctoptions="true|false" explanations="Toto je správná odpověď.|Tato odpověď neodpovídá na danou otázku." buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="Pro redukci železa na Fe2+ je potřeba donor elektronu. Která molekula je dárcem a kde vzniká?" answers="ATP|ADP" correctoptions="true|false" explanations="ano|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 
 </div>
 </div>
