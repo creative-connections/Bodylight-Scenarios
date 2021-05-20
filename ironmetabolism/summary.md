@@ -11,8 +11,10 @@
   * [4. Přenos železa z krve](#iron4.md)
     * [4.1 Transferin receptor](#iron41.md)
     * [4.2 Endocyt](#iron42.md)
-  * [5. Přenos železa z krve](#iron4.md)
-    * [4.1 Transferin receptor](#iron41.md)
-    * [4.2 Endocyt](#iron42.md)
+  * [5. Hepcidin](#iron5.md)
+    * [5.1 Role hepcidinu](#iron51.md)
+    * [5.2 Regulace exprese hepcidinu](#iron52.md)
+    * [5.3 Erytropoietin a hepcidin](#iron53.md)
     
+
     
