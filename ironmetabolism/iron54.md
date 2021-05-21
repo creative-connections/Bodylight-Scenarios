@@ -89,16 +89,10 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a findex="20" aname="children.0.SipkaZlutaSrafovana_anim" amin="149" amax="0" fmin="0.5" fmax="1.5"></bdl-bind2a>
 <bdl-bind2a-text findex="21" aname="children.0.Hodnota7_text"></bdl-bind2a-text>
 <bdl-bind2a findex="21" aname="children.0.Merak7_anim" amin="0" amax="99" fmin="0" fmax="1.2"></bdl-bind2a>
-
-
-
-
-<!-- TODO pridat skupinu vstrebavani zeleza do enterocytu -->
 </div>
 <div class="w3-rest">
-
-<bdl-chartjs-time id="id10" width="400" height="200" fromid="idfmi" labels="fe duo out ser" initialdata="" refindex="21" refvalues="1" maxdata="1024"></bdl-chartjs-time>
-<!--bdl-chartjs-time id="id10" width="400" height="200" fromid="idfmi" labels="fe duo in ser" initialdata="" refindex="16" refvalues="1" maxdata="1024"></bdl-chartjs-time>
+<!--bdl-chartjs-time id="id10" width="400" height="200" fromid="idfmi" labels="fe duo out ser" initialdata="" refindex="21" refvalues="1" maxdata="1024"></bdl-chartjs-time>
+<bdl-chartjs-time id="id10" width="400" height="200" fromid="idfmi" labels="fe duo in ser" initialdata="" refindex="16" refvalues="1" maxdata="1024"></bdl-chartjs-time>
 <bdl-chartjs-time id="id11" width="300" height="200" fromid="idfmi" labels="duoin" initialdata="" refindex="13" refvalues="1" maxdata="1024"></bdl-chartjs-time>
 <bdl-chartjs-time id="id12" width="300" height="200" fromid="idfmi" labels="mrna" initialdata="" refindex="14" refvalues="1" maxdata="1024"></bdl-chartjs-time>
 <bdl-chartjs-time id="id13" width="300" height="200" fromid="idfmi" labels="duo" initialdata="" refindex="15" refvalues="1" maxdata="1024"></bdl-chartjs-time>
