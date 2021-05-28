@@ -15,7 +15,8 @@
     * [5.1 Role hepcidinu](#iron51.md)
     * [5.2 Regulace exprese hepcidinu](#iron52.md)
     * [5.3 Erytropoietin a hepcidin](#iron53.md)
-    * [5.4 Simulace vlivu hepcidinu](iron54.md)
+    * [5.4 Simulace vlivu hepcidinu](#iron54.md)
   * [6. Zánět](#iron6.md)
     * [6.1 Zánětlivá reakce](#iron61.md)
+    * [6.2 Simulace zánětu](#iron62.md)
 
