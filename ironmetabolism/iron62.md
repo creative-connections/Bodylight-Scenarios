@@ -117,14 +117,14 @@ Vyzkoušejte si, jaké bude mít následky dlouhodobý (chronický) zánět (opa
 <bdl-chartjs-time id="id14" width="300" height="200" fromid="idfmi" labels="Fe_duo_out_ser" initialdata="" refindex="16" refvalues="1" maxdata="1024"></bdl-chartjs-time>
 <bdl-chartjs-time id="id13" width="300" height="200" fromid="idfmi" labels="koncentrace Fe v krvi" initialdata="" refindex="18" refvalues="1" maxdata="1024" xlabel="čas (hodiny)" ylabel="množství orientační (ug)"></bdl-chartjs-time-->
 
-## 6.2.1 Kontrolní otázky
-* Vyzkoušejte si, jak ovlivňuje hladina hepcidinu koncentraci feroportinu v mebráně enterocytu.
-* Vyzkoušejte si, jaké má následky genový knock-out pro hepcidin.
-* Vyzkoušejte si, jak ovlivňuje hladina železa koncentraci hepcidinu.
+* Vyzkoušejte si, jaká je reakce organismu na přítomnost bakteriální infekce.
+* Vyzkoušejte si, jaké bude mít následky dlouhodobý (chronický) zánět (opakovaná injekce LPS)
 
-<bdl-quiz question="Co způsobí genový knock-out hepcidinu a proč?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Pokud omezíme příjem železa na minimum, jaká bude reakce organismu a jak se změní koncentrace/množství DMT1, Fpn a Hepcidinu?" answers="Potřeba energie pro přenos proti gradientu|Potřeba redukce železa." correctoptions="true|false" explanations="Toto je správná odpověď.|Tato odpověď neodpovídá na danou otázku." buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Pokud provedeme genový knock-out enterocytárního Fpn, jaký vliv to bude mít na hladinu hepcidinu?" answers="hladina hepcidinu se zvýší|hladina hepcidinu se sníží" correctoptions="true|false" explanations="Toto je správná odpověď.|Tato odpověď neodpovídá na danou otázku." buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="Jakými cestami ovlivňuje endotoxin metabolismus železa?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="Pokud provedeme knock-out genu pro hepcidin, bude zachovaná účinnost LPS?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="Pokud provedeme knock-out genu pro Fpn, bude zachovaná účínnost LPS?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="Jaké následky může mít dlouhodobý zánět (stran metabolismu železa)?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="Jaké následky může mít dlouhodobý zánět (stran metabolismu železa)?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 
 </div>
 </div>
