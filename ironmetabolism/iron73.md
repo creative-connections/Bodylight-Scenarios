@@ -124,7 +124,6 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 </div>
 </div>
 </div>
-
 <div id="legenda" class="w3-card w3-small w3-padding" style="display:none;z-index:1;position:absolute;top:20px;right:10px;width:500px;background-color:white">
 <button class="w3-button w3-theme w3-right" onclick="document.getElementById('legenda').style.display='none'">Skryj legendu <i class="fa fa-close w3-large"></i></button>
 
@@ -156,5 +155,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 |![imageferroportin](smallferroportin.png)|Ferroportin|Ferroportin|
 |![imagetfr1](imgtfr1.png)|TfR1|Transferinový receptor 1|
 |![imageschemasteap3](imgmetaloreduktaza.png)| STEAP3 | Metaloreduktáza |
+|![imagetransfuze](transfuze.jpg) |Transfúze | Krevní transfúze, příjem krve |
+|![imageodberkrve](odberkrve.jpg) |Odběr krve | Odběr krve, krevní ztráty, krvácení |
 
 </div>
