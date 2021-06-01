@@ -116,11 +116,10 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-chartjs-time id="id14" width="300" height="200" fromid="idfmi" labels="Fe_duo_out_ser" initialdata="" refindex="16" refvalues="1" maxdata="1024"></bdl-chartjs-time>
 <bdl-chartjs-time id="id13" width="300" height="200" fromid="idfmi" labels="koncentrace Fe v krvi" initialdata="" refindex="18" refvalues="1" maxdata="1024" xlabel="čas (hodiny)" ylabel="množství orientační (ug)"></bdl-chartjs-time-->
 
-<bdl-quiz question="Jakými cestami ovlivňuje endotoxin metabolismus železa?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Pokud provedeme knock-out genu pro hepcidin, bude zachovaná účinnost LPS?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Pokud provedeme knock-out genu pro Fpn, bude zachovaná účínnost LPS?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Jaké následky může mít dlouhodobý zánět (stran metabolismu železa)?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Jaký má LPS dopad na vstřebávání železa v duodenu? Má smysl zvyšovat příjem železa potravou?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+
+<bdl-quiz question="Jak reaguje hladina hepcidinu na opakovanou krevní transfúzi a proč?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="Jak reaguje hladina hepcidinu na opakovaný odběr krve a proč?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="Jaký patologický stav může způsobit malabsorpci železa a k jakému klinickému obrazu to může vést?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 
 </div>
 </div>
