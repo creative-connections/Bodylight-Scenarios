@@ -8,8 +8,8 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <div class="w3-row">
 <div class="w3-half">
 
-* Vyzkoušejte si, jak reaguje organismus na ztráty železa. Pokuste se udržet fyziologickou hladinu sérového železa regulací příjmu železa v potravě.
-* Vyzkoušejte si, jak reaguje organismus na příjem železa. Pokuste se udržet fyziologickou hladinu sérového železa regulací příjmu železa v potravě.
+* Vyzkoušejte si, jak reaguje organismus na ztráty železa pří ztrátě krve, krvácení. Pokuste se udržet fyziologickou hladinu sérového železa regulací příjmu železa v potravě.
+* Vyzkoušejte si, jak reaguje organismus na příjem železa při krevní transfúzi. Pokuste se udržet fyziologickou hladinu sérového železa regulací příjmu železa v potravě.
 
 <bdl-fmi id="idfmi" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.01" guid="{ff6d8a55-f24a-4855-bbf0-86edcafe471e}" valuereferences="637534208,637534209,100663315,16777260,33554448,33554449,637534228,905969688,637534231,16777271,16777272,16777267,637534233,637534237,33554439,33554443,637534230,637534257,33554447,637534229,637534236,33554434,33554432,16777266" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate,Fpn_duo_knockout,Fpn_duo_in_1,Fpn_duo_in,Fpn_duo_mRNA,Fpn_duo,Fe_duo_out_ser,Fe_ser_in_duo,Fe_ser,Fe_duo_in_ser,Fpn_duo_out_2,LPS,hep,hep_knockout" inputs="id1,16777260,1,1;id4,16777267,1,1;id5,16777266,1,1,t;id6,33554434,1,1,t" inputlabels="Fe_food,Fpn_duo_knockout,hep_knockout,LPS"></bdl-fmi>
 
@@ -18,10 +18,12 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 ||| 
 |-------------|-------|
-| Koncentrace železa v potravě [$\frac{\mu g}{h}$] | <bdl-range id="id1" title="" min="0" max="1000" default="219" maxlength="5" step="1"></bdl-range> |
+| Koncentrace železa v potravě | <bdl-range id="id1" title="" min="0" max="1000" default="219" maxlength="5" step="1"></bdl-range> $\frac{\mu g}{h}$ |
 | Knockout genu pro ferroportin(Fpn) | <bdl-checkbox id="id4" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
 | Knockout genu pro hepcidin | <bdl-checkbox id="id5" titlemin="gen pro hepcidin je knockoutován (neaktivní)" titlemax="gen pro expresi hepcidinu je aktivní" default="true"></bdl-checkbox>  |
 | LPS injekce jednorázová 1ug při stisknutí | <bdl-buttonparams title="LPS injekce" ids="id6" values="1" fromid="idfmi"></bdl-buttonparams>  |
+| Krevní ztráty, krvácení [$\frac{\ml}{h}$] | <bdl-range id="id7" title="" min="0" max="1000" default="0" maxlength="5" step="1"></bdl-range> |
+| Příjem krve z transfúze [$\frac{\ml}{h}$] | <bdl-range id="id8" title="" min="0" max="1000" default="0" maxlength="5" step="1"></bdl-range> |
 </div>
 
 </div>
