@@ -6,7 +6,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 # 2.1 Simulace skladování železa
 <button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
-Regulace příjmu Fe a příjmu a výdeje Fe do/z ferritinu. Vyzkoušejte v simulátoru a zodpovězte otázky. Simulace (1s &asymp; 1m).
+Regulace příjmu Fe a příjmu a výdeje Fe do/z ferritinu. Vyzkoušejte v simulátoru a zodpovězte otázky. Simulace (1s &asymp; 1min).
 
 <div class="w3-row">
 <div class="w3-third">
