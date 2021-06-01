@@ -23,5 +23,6 @@
     * [7.2 Vliv příjmu krve na metabolismus železa](#iron72.md)
     * [7.3 Simulace ztrát a příjmů železa](#iron73.md)
   * [8. Komplexní simulace metabolismu železa v duodenu](#iron8.md)
+  * [about](#about.md)
 
 
