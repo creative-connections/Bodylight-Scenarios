@@ -116,16 +116,14 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-chartjs-time id="id14" width="300" height="200" fromid="idfmi" labels="Fe_duo_out_ser" initialdata="" refindex="16" refvalues="1" maxdata="1024"></bdl-chartjs-time>
 <bdl-chartjs-time id="id13" width="300" height="200" fromid="idfmi" labels="koncentrace Fe v krvi" initialdata="" refindex="18" refvalues="1" maxdata="1024" xlabel="čas (hodiny)" ylabel="množství orientační (ug)"></bdl-chartjs-time-->
 
-<bdl-quiz question="Jakými cestami ovlivňuje endotoxin metabolismus železa?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Pokud provedeme knock-out genu pro hepcidin, bude zachovaná účinnost LPS?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Pokud provedeme knock-out genu pro Fpn, bude zachovaná účínnost LPS?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Jaké následky může mít dlouhodobý zánět (stran metabolismu železa)?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Jaký má LPS dopad na vstřebávání železa v duodenu? Má smysl zvyšovat příjem železa potravou?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+
+<bdl-quiz question="Jak reaguje hladina hepcidinu na opakovanou krevní transfúzi a proč?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="Jak reaguje hladina hepcidinu na opakovaný odběr krve a proč?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="Jaký patologický stav může způsobit malabsorpci železa a k jakému klinickému obrazu to může vést?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 
 </div>
 </div>
 </div>
-
 <div id="legenda" class="w3-card w3-small w3-padding" style="display:none;z-index:1;position:absolute;top:20px;right:10px;width:500px;background-color:white">
 <button class="w3-button w3-theme w3-right" onclick="document.getElementById('legenda').style.display='none'">Skryj legendu <i class="fa fa-close w3-large"></i></button>
 
@@ -157,5 +155,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 |![imageferroportin](smallferroportin.png)|Ferroportin|Ferroportin|
 |![imagetfr1](imgtfr1.png)|TfR1|Transferinový receptor 1|
 |![imageschemasteap3](imgmetaloreduktaza.png)| STEAP3 | Metaloreduktáza |
+|![imagetransfuze](transfuze.jpg) |Transfúze | Krevní transfúze, příjem krve |
+|![imageodberkrve](odberkrve.jpg) |Odběr krve | Odběr krve, krevní ztráty, krvácení |
 
 </div>
