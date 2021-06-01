@@ -23,7 +23,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 | Koncentrace železa v potravě [$\frac{\mu g}{h}$] | <bdl-range id="id1" title="" min="0" max="1000" default="219" maxlength="5" step="1"></bdl-range> |
 | Knockout genu pro ferroportin(Fpn) | <bdl-checkbox id="id4" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
 | Knockout genu pro hepcidin | <bdl-checkbox id="id5" titlemin="gen pro hepcidin je knockoutován (neaktivní)" titlemax="gen pro expresi hepcidinu je aktivní" default="true"></bdl-checkbox>  |
-| LPS injekce jednorázová 1ug při stisknutí | <bdl-buttonparams title="LPS injekce" ids="id6" values="1" fromid="idfmi"></bdl-buttonparams>  |
+| LPS injekce jednorázová 1$\mu$g při stisknutí | <bdl-buttonparams title="LPS injekce" ids="id6" values="1" fromid="idfmi"></bdl-buttonparams>  |
 </div>
 
 </div>
