@@ -85,6 +85,8 @@ Regulace příjmu Fe a ukládání do ferritinu a výdeje z enterocytu. Vyzkouš
 <bdl-bind2a-text findex="18" aname="Hodnota9_text" convertor="1,1.51"></bdl-bind2a-text>
 <bdl-bind2a findex="16" aname="CervenaVSipkaVehicle1_anim" amin="0" amax="159" fmin="0.1" fmax="3.5"></bdl-bind2a>
 
+
+
 </div>
 <div class="w3-rest">
 
