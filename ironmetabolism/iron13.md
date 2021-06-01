@@ -6,7 +6,7 @@ img[alt^="bigimage"] {  max-height:60px}
 <button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
 
 Simulátor spusťte/zastavte tlačítky níže a zkuste zodpovědět otázky. Během simulace můžete měnit **parametr**: koncentrace železa v potravě, tj. kolik mikrogramů železa se vstřebá za hodinu. Tlačítkem vpravo zobrazíte legendu. 
-Simulace (1s &asymp; 1m).
+Simulace (1s &asymp; 1min).
 <div class="w3-row">
 <div class="w3-third">
 
