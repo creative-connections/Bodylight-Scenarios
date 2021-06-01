@@ -19,9 +19,9 @@
   * [6. Zánět](#iron6.md)
     * [6.1 Zánětlivá reakce](#iron61.md)
     * [6.2 Simulace zánětu](#iron62.md)
-  * [iron7](#iron7.md)
-    * [iron72](#iron72.md)
-    * [iron73](#iron73.md)
-  * [iron8](#iron8.md)
+  * [7. Ztráty a příjmy krve](#iron7.md)
+    * [7.2 Vliv příjmu krve na metabolismus železa](#iron72.md)
+    * [7.3 Simulace ztrát a příjmů železa](#iron73.md)
+  * [8. Komplexní simulace metabolismu železa v duodenu](#iron8.md)
 
 
