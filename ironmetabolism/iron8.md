@@ -4,18 +4,13 @@ img[alt^="bigimage"] {  max-height:60px}
 tbody tr:nth-child(even){background-color:#f1f1f1}
 </style>
 <button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
-# 8 Kompletní simulace metabolismu železa v duodenu
+# 8 Komplexní simulace metabolismu železa v duodenu
 <div class="w3-row">
 <div class="w3-third">
 
 * Vyzkoušejte si, jak reagují hladiny/koncentrace na neregulovaný příjem železa z potravy (ztráta zpětné vazby).
 * Vyzkoušejte si simulaci malabsorpce.
 * Vyzkoušejte si, jak se mění hladiny/koncentrace HEP, Fpn a Tf v závislosti na knock-out Fpn genů pro různé orgánové systémy.
-
-<bdl-fmi id="idfmi" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.01" guid="{ff6d8a55-f24a-4855-bbf0-86edcafe471e}" valuereferences="637534208,637534209,100663315,16777260,33554448,33554449,637534228,905969688,637534231,16777271,16777272,16777267,637534233,637534237,33554439,33554443,637534230,637534257,33554447,637534229,637534236,33554434,33554432,16777266" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate,Fpn_duo_knockout,Fpn_duo_in_1,Fpn_duo_in,Fpn_duo_mRNA,Fpn_duo,Fe_duo_out_ser,Fe_ser_in_duo,Fe_ser,Fe_duo_in_ser,Fpn_duo_out_2,LPS,hep,hep_knockout" inputs="id1,16777260,1,1;id4,16777267,1,1;id5,16777266,1,1,t;id6,33554434,1,1,t" inputlabels="Fe_food,Fpn_duo_knockout,hep_knockout,LPS"></bdl-fmi>
-
-
-
 </div>
 <div class="w3-rest">
 
@@ -32,6 +27,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 <div class="w3-col s8">
 
+<bdl-fmi id="idfmi" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.01" guid="{ff6d8a55-f24a-4855-bbf0-86edcafe471e}" valuereferences="637534208,637534209,100663315,16777260,33554448,33554449,637534228,905969688,637534231,16777271,16777272,16777267,637534233,637534237,33554439,33554443,637534230,637534257,33554447,637534229,637534236,33554434,33554432,16777266" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate,Fpn_duo_knockout,Fpn_duo_in_1,Fpn_duo_in,Fpn_duo_mRNA,Fpn_duo,Fe_duo_out_ser,Fe_ser_in_duo,Fe_ser,Fe_duo_in_ser,Fpn_duo_out_2,LPS,hep,hep_knockout" inputs="id1,16777260,1,1;id4,16777267,1,1;id5,16777266,1,1,t;id6,33554434,1,1,t" inputlabels="Fe_food,Fpn_duo_knockout,hep_knockout,LPS"></bdl-fmi>
 <bdl-animate-adobe src="DuodenumFinalObrazovka8.js" width="800" height="600" name="DuodenumFinalObrazovka8" fromid="idfmi"></bdl-animate-adobe>
 
 <bdl-bind2a findex="3" aname="children.0.SipkaCervena1_anim" amin="0" amax="159" fmin="1" fmax="1000"></bdl-bind2a>
@@ -118,11 +114,13 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-chartjs-time id="id14" width="300" height="200" fromid="idfmi" labels="Fe_duo_out_ser" initialdata="" refindex="16" refvalues="1" maxdata="1024"></bdl-chartjs-time>
 <bdl-chartjs-time id="id13" width="300" height="200" fromid="idfmi" labels="koncentrace Fe v krvi" initialdata="" refindex="18" refvalues="1" maxdata="1024" xlabel="čas (hodiny)" ylabel="množství orientační (ug)"></bdl-chartjs-time-->
 
-<bdl-quiz question="Jakými cestami ovlivňuje endotoxin metabolismus železa?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Pokud provedeme knock-out genu pro hepcidin, bude zachovaná účinnost LPS?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Pokud provedeme knock-out genu pro Fpn, bude zachovaná účínnost LPS?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+
+<bdl-quiz question="Jak v rámci možností modelu nasimulujete stav hemochromatózy (najděte dvě možnosti)?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="Jak v rámci možností modelu nasimulujete stav vedoucí k anémii?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="Jakou očekáváte změnu hladin železa při postupném knock-out Fpn v jednotlivých orgánech?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 <bdl-quiz question="Jaké následky může mít dlouhodobý zánět (stran metabolismu železa)?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Jaký má LPS dopad na vstřebávání železa v duodenu? Má smysl zvyšovat příjem železa potravou?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="Jaký očekáváte vliv snížení/zvýšení příjmu železa potravou na koncentraci Fpn?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="Jaký má gastrektomie vliv na metabolismus železa a proč?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 
 </div>
 </div>
