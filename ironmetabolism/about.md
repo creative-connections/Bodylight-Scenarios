@@ -5,11 +5,11 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 | | |
 |--:|--|
-| **Odborní garanti:** | Doc. MUDr. Jiří Kofránek, CSc. |
-| | Prof. MUDr. Martin Vokurka, CSc. |
 | **Scénář, text, matematický model:** | RNDr. Arnošt Mládek, Ph.D. |
 | **Technologie a webový simulátor:** | Mgr. Tomáš Kulhánek, Ph.D. |
 | **Grafické prvky a animace:** | Martin Brož, DiS. |
+| **Odborní garanti:** | Doc. MUDr. Jiří Kofránek, CSc. |
+| | Prof. MUDr. Martin Vokurka, CSc. |
 
 # Reference
 ## matematický model fyziologie a patofyziologie
