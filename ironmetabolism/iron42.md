@@ -3,27 +3,9 @@ img[alt^="image"] {max-width:20px;}
 img[alt^="bigimage"] {  max-height:60px}
 tbody tr:nth-child(even){background-color:#f1f1f1}
 </style>
-<button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
-# 4.2 Simulace přenosu železa z krve do střeva
-
 <div class="w3-row">
-<div class="w3-third">
+<div class="w3-col s12 m7 l7">
 
-<bdl-fmi id="idfmi" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="5" guid="{ff6d8a55-f24a-4855-bbf0-86edcafe471e}" valuereferences="637534208,637534209,100663315,16777260,33554448,33554449,637534228,905969688,637534231,16777271,16777272,16777267,637534233,637534237,33554439,33554443,637534230,637534257,33554447,637534229" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate,Fpn_duo_knockout,Fpn_duo_in_1,Fpn_duo_in,Fpn_duo_mRNA,Fpn_duo,Fe_duo_out_ser,Fe_ser_in_duo,Fe_ser,Fe_duo_in_ser" inputs="id1,16777260,1,1;id4,16777267,1,1" inputlabels="Fe_food,Fpn_duo_knockout"></bdl-fmi>
-
-
-</div>
-<div class="w3-rest">
-
-||| 
-|-------------|-------|
-| Koncentrace železa v potravě [$\frac{\mu g}{h}$] | <bdl-range id="id1" title="" min="0" max="1000" default="219" maxlength="5" step="1"></bdl-range> |
-| Knockout genu pro ferroportin(Fpn) | <bdl-checkbox id="id4" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
-</div>
-</div>
-<div class="w3-row">
-
-<div class="w3-col s8">
 
 <bdl-animate-adobe src="DuodenumFinalObrazovka4.js" width="800" height="600" name="DuodenumFinalObrazovka4" fromid="idfmi"></bdl-animate-adobe>
 
@@ -86,8 +68,19 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a-text findex="18" aname="Hodnota9_text" convertor="1,1.51"></bdl-bind2a-text>
 
 <!-- TODO pridat skupinu vstrebavani zeleza do enterocytu -->
+
 </div>
-<div class="w3-rest">
+<div class="w3-col s12 m5 l5 w3-justify">
+
+<button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
+
+<bdl-fmi id="idfmi" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.1" guid="{ff6d8a55-f24a-4855-bbf0-86edcafe471e}" valuereferences="637534208,637534209,100663315,16777260,33554448,33554449,637534228,905969688,637534231,16777271,16777272,16777267,637534233,637534237,33554439,33554443,637534230,637534257,33554447,637534229" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate,Fpn_duo_knockout,Fpn_duo_in_1,Fpn_duo_in,Fpn_duo_mRNA,Fpn_duo,Fe_duo_out_ser,Fe_ser_in_duo,Fe_ser,Fe_duo_in_ser" inputs="id1,16777260,1,1;id4,16777267,1,1" inputlabels="Fe_food,Fpn_duo_knockout" showtime="1" showtimemultiply="3600"></bdl-fmi>
+
+||| 
+|-------------|-------|
+| Koncentrace železa v potravě [$\frac{\mu g}{h}$] | <bdl-range id="id1" title="" min="0" max="1000" default="219" maxlength="5" step="1"></bdl-range> |
+| Knockout genu pro ferroportin(Fpn) | <bdl-checkbox id="id4" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
+
 
 <!--bdl-chartjs-time id="id10" width="400" height="200" fromid="idfmi" labels="fe duo out ser" initialdata="" refindex="19" refvalues="1" maxdata="1024"></bdl-chartjs-time>
 <bdl-chartjs-time id="id10" width="400" height="200" fromid="idfmi" labels="fe duo in ser" initialdata="" refindex="16" refvalues="1" maxdata="1024"></bdl-chartjs-time>
@@ -97,14 +90,11 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-chartjs-time id="id14" width="300" height="200" fromid="idfmi" labels="Fe_duo_out_ser" initialdata="" refindex="16" refvalues="1" maxdata="1024"></bdl-chartjs-time>
 <bdl-chartjs-time id="id13" width="300" height="200" fromid="idfmi" labels="koncentrace Fe v krvi" initialdata="" refindex="18" refvalues="1" maxdata="1024" xlabel="čas (hodiny)" ylabel="množství orientační (ug)"></bdl-chartjs-time-->
 
-
-## 4.3 Kontrolní otázky
 <bdl-quiz question="Vyzkoušejte si, jak se mění tok železa do enterocytu v závislosti na množství železa v plazmě." answers="Vyšší množství železa v plasmě zvýší tok do enterocytu.|Vyšší množství železa v plasmě sníží tok do enterocytu." correctoptions="true|false" explanations="Toto je správné. Ze simulace je vidět.|Toto je špatně. Ze simulace je vidět." buttontitle="zkontrolovat odpověď"></bdl-quiz>
 <bdl-quiz question="Proč je potřeba ATP k přenosu protonu do endocytického váčku?" answers="Potřeba energie pro přenos proti gradientu|Potřeba redukce železa." correctoptions="true|false" explanations="Toto je správná odpověď.|Tato odpověď neodpovídá na danou otázku." buttontitle="zkontrolovat odpověď"></bdl-quiz>
 <bdl-quiz question="Z jakého důvodu jsou protony transportovány do váčku?" answers="Symport Fe a H+|Udržuje eletrkochemický gradient" correctoptions="true|false" explanations="Toto je správná odpověď.|Tato odpověď neodpovídá na danou otázku." buttontitle="zkontrolovat odpověď"></bdl-quiz>
 <bdl-quiz question="Pro redukci železa na Fe2+ je potřeba donor elektronu. Která molekula je dárcem a kde vzniká?" answers="ATP|ADP" correctoptions="true|false" explanations="ano|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 
-</div>
 </div>
 </div>
 
