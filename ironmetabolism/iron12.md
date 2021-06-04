@@ -1,7 +1,7 @@
 <style>
-img[alt^="image"] {max-width:20px;}
-img[alt^="sim"] {  max-height:230px;}
-img[alt^="iron"] {  max-width:550px;}
+img[alt^="image"] {  max-width:30px;}
+img[alt^="iron"] {  max-width:60%;}
+img[alt^="sim"] {  max-width:12%;}
 </style>
 <div class="w3-row">
 <div class="w3-half w3-center">
