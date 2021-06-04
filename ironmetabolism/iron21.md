@@ -3,29 +3,8 @@ img[alt^="image"] {max-width:20px;}
 img[alt^="bigimage"] {  max-height:60px}
 tbody tr:nth-child(even){background-color:#f1f1f1}
 </style>
-
-# 2.1 Simulace skladování železa
-<button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
-Regulace příjmu Fe a příjmu a výdeje Fe do/z ferritinu. Vyzkoušejte v simulátoru a zodpovězte otázky. Simulace (1s &asymp; 1min).
-
 <div class="w3-row">
-<div class="w3-third">
-
-<bdl-fmi id="idfmi" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.001" guid="{ff6d8a55-f24a-4855-bbf0-86edcafe471e}" valuereferences="637534208,637534209,100663315,16777260,33554448,33554449,637534228,905969688,637534231,16777271,16777272" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate" inputs="id1,16777260,1,1;id2,16777271,1,1;id3,16777272,1,1" inputlabels="Fe_food,to_ferritin_rate,from_ferritin_rate" ></bdl-fmi>
-
-</div>
-<div class="w3-rest">
-
-||| 
-|-------------:|-------|
-| Koncentrace železa v potravě | <bdl-range id="id1" title="" min="0" max="1000" default="219" step="1"></bdl-range> $\frac{\mu g}{h}$ |
-| Přítok železa do ferritinu v buňce | <bdl-range id="id2" title="" min="0" max="10" default="3" maxlength="5" step="0.1"></bdl-range>  |
-| Odtok železa z ferritinu v buňce | <bdl-range id="id3" title="" min="0" max="10" default="0.3" maxlength="5" step="0.1"></bdl-range>  |
-</div>
-</div>
-<div class="w3-row">
-
-<div class="w3-col s8">
+<div class="w3-col s12 m7 l7">
 
 <bdl-animate-adobe src="DuodenumFinalObrazovka2.js" width="800" height="600" name="DuodenumFinalObrazovka2" fromid="idfmi"></bdl-animate-adobe>
 
@@ -75,22 +54,29 @@ Regulace příjmu Fe a příjmu a výdeje Fe do/z ferritinu. Vyzkoušejte v simu
 <bdl-bind2a findex="5" aname="children.0.Fe3Skupina_anim" amin="0" amax="159" fmin="0.8" fmax="3.5"></bdl-bind2a>
 
 </div>
-<div class="w3-rest">
+<div class="w3-col s12 m5 l5 w3-justify">
 
-## Kontrolní otázky
+<button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
+
+<bdl-fmi id="idfmi" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.001" guid="{ff6d8a55-f24a-4855-bbf0-86edcafe471e}" valuereferences="637534208,637534209,100663315,16777260,33554448,33554449,637534228,905969688,637534231,16777271,16777272" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate" inputs="id1,16777260,1,1;id2,16777271,1,1;id3,16777272,1,1" inputlabels="Fe_food,to_ferritin_rate,from_ferritin_rate" showtime="1" showtimemultiply="3600" ></bdl-fmi>
+
+Regulace příjmu Fe a příjmu a výdeje Fe do/z ferritinu. Vyzkoušejte v simulátoru a zodpovězte otázky. Simulace (1s &asymp; 1min).
+
+||| 
+|-------------:|-------|
+| Koncentrace železa v potravě | <bdl-range id="id1" title="" min="0" max="1000" default="219" step="1"></bdl-range> $\frac{\mu g}{h}$ |
+| Přítok železa do ferritinu v buňce | <bdl-range id="id2" title="" min="0" max="10" default="3" step="0.1"></bdl-range>  |
+| Odtok železa z ferritinu v buňce | <bdl-range id="id3" title="" min="0" max="10" default="0.3" step="0.1"></bdl-range>  |
 
 <bdl-quiz question="Jak se mění rovnováha mezi množstvím železa ve ferritinu (Fe3+) a v pohotovém poolu (Fe2+)?" answers="zvýšený Fe3+ svýší i koncentraci Fe2+|zvýšený Fe3+ sníží koncentraci Fe2+" correctoptions="true|false" explanations="|" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 <bdl-quiz question="Jak vypočítáme rovnovážnou konstantu?" answers="podíl koncentrací|součin koncentrací" correctoptions="true|false" explanations="Ano|Ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 <bdl-quiz question="Která rychlostní konstanta bude větší a jaký stav bude buňka preferovat? A proč?" answers="1. Přítok železa do ferritinu. |2. Odtok železa z ferritinu." correctoptions="true|false" explanations="vyšší koncentrace Fe2+ je pro buňku toxická. Buňka se snaží tedy ukládat železo do ferritinu|Odtok železa z ferritinu udržuje buňka nižší."  buttontitle="zkontrolovat odpověď"></bdl-quiz>
-</div>
+
 </div>
 </div>
 
 <div id="legenda" class="w3-card w3-small w3-padding" style="display:none;z-index:1;position:absolute;top:20px;right:10px;width:500px;background-color:white">
 <button class="w3-button w3-theme w3-right" onclick="document.getElementById('legenda').style.display='none'">Skryj legendu <i class="fa fa-close w3-large"></i></button>
-
-## Vizualizace
-Vizualizace simulátoru shrnuje schématicky předchozí fakta:
 
 |Schéma|Popis/funkce|
 |---|---|
@@ -100,9 +86,6 @@ Vizualizace simulátoru shrnuje schématicky předchozí fakta:
 |![bigimagefoodiron](simironout.png) |__4. Ztráty__ železa vzniklé nevstřebáním|
 |![bigimagefoodiron](simironpool.png) |__5.Pohotový pool, sdílená zásoba Fe<sup>2+</sup>__ která reguluje (inhibuje) transportér DMT1 a přenašeč hemu|
 |![bigimagefoodiron](simironferritin.png) |__6.Regulace příjmu a výdeje Fe<sup>2+</sup> ve ferritinu__
-
-## Ikony
-Schémata a vizualizace obsahují tyto ikony:
 
 |Ikona|Definice|Popis/funkce|
 |---|---|---|
@@ -119,3 +102,5 @@ Schémata a vizualizace obsahují tyto ikony:
 |![imageferritin](imageferritin.png)|Ferritin| Ferritin složený z a) proteinové části apoferitinu (oranžová) a b) iontů Fe3+. Funguje jako zásobárna Fe.|
 
 </div>
+
+<!-- konec -->
