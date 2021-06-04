@@ -10,8 +10,8 @@ img[alt^="iron"] {  max-width:550px;}
 <bdl-pdb-pdbe-molstar molecule-id="2h35" hide-polymer="true"></bdl-pdb-pdbe-molstar>
 
 **Obrázek HEM**. interaktivní 3D obrázek 
-proteinu 6ls8 (myoglobin) vyskytující se v kosterním svalstvu savců. Polymerová struktura 
-hemoglobinu skryta (myší můžete rotovat)
+proteinu 2h35 (hemoglobin) vyskytující se v krvi savců. Polymerová struktura 
+hemoglobinu skryta (levé tlačítko myši rotuje, pravé tlačítko posouvá, kolečko přibližuje nebo oddaluje). 
 
 ![ironhem](ironhem.png) &nbsp;&nbsp;&nbsp;<b style="vertical-align:top;">C.</b> ![simhem](simhem.png)
 
