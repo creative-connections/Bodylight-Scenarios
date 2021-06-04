@@ -2,7 +2,7 @@
 <div class="w3-half w3-center">
 
 **A.**
-<bdl-pdb-pdbe-molstar molecule-id="6jas" assembly-id="1"></bdl-pdb-pdbe-molstar>
+<bdl-pdb-pdbe-molstar molecule-id="6jas" assembly-id="1" height="490px"></bdl-pdb-pdbe-molstar>
 
 **B.**
 ![Ferroportin](imagetransferrin.png)

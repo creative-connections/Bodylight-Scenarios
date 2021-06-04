@@ -3,28 +3,9 @@ img[alt^="image"] {max-width:20px;}
 img[alt^="bigimage"] {  max-height:60px}
 tbody tr:nth-child(even){background-color:#f1f1f1}
 </style>
-# 3.2 Simulace příjmu a výdeje železa z enterocytu
-<button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
-
-Regulace příjmu Fe a ukládání do ferritinu a výdeje z enterocytu. Vyzkoušejte v simulátoru a zodpovězte otázky. Simulace (1s &asymp; 1h).
 
 <div class="w3-row">
-<div class="w3-third">
-
-<bdl-fmi id="idfmi" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.1" guid="{ff6d8a55-f24a-4855-bbf0-86edcafe471e}" valuereferences="637534208,637534209,100663315,16777260,33554448,33554449,637534228,905969688,637534231,16777271,16777272,16777267,637534233,637534237,33554439,33554443,637534230,637534257,33554447" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate,Fpn_duo_knockout,Fpn_duo_in_1,Fpn_duo_in,Fpn_duo_mRNA,Fpn_duo,Fe_duo_out_ser,Fe_ser_in_duo,Fe_ser" inputs="id1,16777260,1,1;id4,16777267,1,1" inputlabels="Fe_food,Fpn_duo_knockout"></bdl-fmi>
-
-</div>
-<div class="w3-rest">
-
-||| 
-|-------------|-------|
-| Koncentrace železa v potravě | <bdl-range id="id1" title="" min="0" max="1000" default="219" step="1"></bdl-range> $\frac{\mu g}{h}$  |
-| Knockout genu pro ferroportin(Fpn) | <bdl-checkbox id="id4" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
-</div>
-</div>
-<div class="w3-row">
-
-<div class="w3-col s8">
+<div class="w3-col s12 m7 l7">
 
 <bdl-animate-adobe src="DuodenumFinalObrazovka3.js" width="800" height="600" name="DuodenumFinalObrazovka3" fromid="idfmi"></bdl-animate-adobe>
 
@@ -89,27 +70,26 @@ Regulace příjmu Fe a ukládání do ferritinu a výdeje z enterocytu. Vyzkouš
 <bdl-bind2a findex="18" aname="children.587.FeTransferin_anim" amin="0" amax="200" fmin="0.2" fmax="3"></bdl-bind2a>
 <bdl-bind2a-text findex="18" aname="Hodnota9_text" convertor="1,1.51"></bdl-bind2a-text>
 
-
-
 </div>
-<div class="w3-rest">
+<div class="w3-col s12 m5 l5 w3-justify">
 
-<!--bdl-chartjs-time id="id10" width="300" height="200" fromid="idfmi" labels="Fpn duo" initialdata="" refindex="15" refvalues="1" maxdata="1024"></bdl-chartjs-time>
-<bdl-chartjs-time id="id11" width="300" height="200" fromid="idfmi" labels="duoin" initialdata="" refindex="13" refvalues="1" maxdata="1024"></bdl-chartjs-time>
-<bdl-chartjs-time id="id12" width="300" height="200" fromid="idfmi" labels="mrna" initialdata="" refindex="14" refvalues="1" maxdata="1024"></bdl-chartjs-time>
-<bdl-chartjs-time id="id13" width="300" height="200" fromid="idfmi" labels="duo" initialdata="" refindex="15" refvalues="1" maxdata="1024"></bdl-chartjs-time>
-<bdl-chartjs-time id="id14" width="300" height="200" fromid="idfmi" labels="Fe_duo_out_ser" initialdata="" refindex="16" refvalues="1" maxdata="1024"></bdl-chartjs-time>
-<bdl-chartjs-time id="id13" width="300" height="200" fromid="idfmi" labels="koncentrace Fe v krvi" initialdata="" refindex="18" refvalues="1" maxdata="1024" xlabel="čas (hodiny)" ylabel="množství orientační (ug)"></bdl-chartjs-time-->
+<button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
+
+<bdl-fmi id="idfmi" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.1" guid="{ff6d8a55-f24a-4855-bbf0-86edcafe471e}" valuereferences="637534208,637534209,100663315,16777260,33554448,33554449,637534228,905969688,637534231,16777271,16777272,16777267,637534233,637534237,33554439,33554443,637534230,637534257,33554447" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate,Fpn_duo_knockout,Fpn_duo_in_1,Fpn_duo_in,Fpn_duo_mRNA,Fpn_duo,Fe_duo_out_ser,Fe_ser_in_duo,Fe_ser" inputs="id1,16777260,1,1;id4,16777267,1,1" inputlabels="Fe_food,Fpn_duo_knockout"></bdl-fmi>
+
+Regulace příjmu Fe a ukládání do ferritinu a výdeje z enterocytu. Vyzkoušejte v simulátoru a zodpovězte otázky. Simulace (1s &asymp; 1h).
+||| 
+|-------------|-------|
+| Koncentrace železa v potravě | <bdl-range id="id1" title="" min="0" max="1000" default="219" step="1"></bdl-range> $\frac{\mu g}{h}$  |
+| Knockout genu pro ferroportin(Fpn) | <bdl-checkbox id="id4" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
 
 
-## Kontrolní otázky
 * Vyzkoušejte si, jak reaguje počet Fpn transportérů (míra otevření) na množství železa v buňce.
 * Vyzkoušejte si hypotetický genový knockout pro Fpn.
 * Sledujte vývoj saturace transferinu (~ množství železa v séru) se změnou příjmu železa v potravě
 
 <bdl-quiz question="Co má za následek genový knockout Fpn? Jak se změní koncentrace železa v enterocytu a v séru?" answers="Počet ferroportinu v membráně se sníží. Železo se hromadí v enterocytu a jeho množství v séru klesá|Počet ferroportinu se v membraně zvýší. Železo se transportuje z enterocytu do krve" correctoptions="true|false" explanations="správná odpověď na tuto otázku|nesprávná odpověď. Toto se děje pokud je gen aktivní."  buttontitle="zkontrolovat odpověď"></bdl-quiz>
 
-</div>
 </div>
 </div>
 

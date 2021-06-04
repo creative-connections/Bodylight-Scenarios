@@ -1,11 +1,11 @@
 <div class="w3-row">
 <div class="w3-half w3-center">
 
-<bdl-pdb-pdbe-molstar molecule-id="6m54"></bdl-pdb-pdbe-molstar>
+<bdl-pdb-pdbe-molstar molecule-id="6m54" height="440px"></bdl-pdb-pdbe-molstar>
 
-**Obrázek FERRITIN** Molekulární struktura ferritinu, 
+**Obrázek FERRITIN** Molekulární struktura ferritinu 
 
-<b style="vertical-align:top;">B.</b>  ![Ferritin](imageferritin.png)
+![Ferritin](imageferritin.png)
 
 **Schématické znázornění ferritinu**, oranžová: apoferitin - proteinová část ferritinu, modře: vázané ionty Fe<sup>3+</sup>.
 
