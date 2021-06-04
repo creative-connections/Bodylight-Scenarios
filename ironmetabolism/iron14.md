@@ -3,6 +3,39 @@ img[alt^="image"] {max-width:20px;}
 img[alt^="bigimage"] {  max-height:60px}
 tbody tr:nth-child(even){background-color:#f1f1f1}
 </style>
+
+<!-- text only template -->
+
+<div class="w3-row">
+<div class="w3-half w3-center">
+
+</div>
+<div class="w3-half">
+<div class="w3-justify w3-margin-left">
+
+
+</div>
+</div>
+</div>
+
+<!-- simulator with text  template -->
+
+<style>
+img[alt^="image"] {max-width:20px;}
+img[alt^="bigimage"] {  max-height:60px}
+tbody tr:nth-child(even){background-color:#f1f1f1}
+</style>
+
+<div class="w3-row">
+<div class="w3-col s12 m7 l7">
+
+</div>
+<div class="w3-col s12 m5 l5 w3-justify">
+
+</div>
+</div>
+
+
 <div style="height:100vh">
 <button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
 </div>

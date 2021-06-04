@@ -1,4 +1,12 @@
-# 5.2 Regulace exprese hepcidinu
+<div class="w3-row">
+<div class="w3-half w3-justify">
+
+![imageregulacehepcidinu](imageregulacehepcidinu.png)
+**Obrázek Role HEPCIDINU.** Schématické znázornění role hepcidinu v udržování homeostázy železa. Hepcidin je regulován primárně třemi nezávislými mechanismy: 1) aktuální hladina železa - zvyšuje hladinu hepcidinu, 2) aseptický nebo infekční zánět - zvyšuje hladinu hepcidinu, 3) erytropoetická aktivita - snižuje hladinu hepcidinu.
+
+</div>
+<div class="w3-half">
+<div class="w3-justify w3-margin-left">
 
 Exprese hepcidinu je homeostaticky regulovaná minimálně třemi nezávislými mechanismy (Obrázek HEPCIDIN):
 
@@ -10,6 +18,9 @@ ad 1) Zvýšená hladina depotního železa vázaného na ferritin i plazmatick�
 
 ad 2) Syntéza hepcidinu je dramaticky stimulována v případě zánětu nebo infekce mechanismy, které jsou nezávislé na aktuální koncentraci železa nebo na erytropoetické aktivitě. Role zánětu na homeostázu železa popsána v následující sekci.
 
+</div>
+</div>
+</div>
 
-![imageregulacehepcidinu](imageregulacehepcidinu.png)
-**Obrázek HEPCIDIN.** Schématické znázornění role hepcidinu v udržování homeostázy železa. Hepcidin je regulován primárně třemi nezávislými mechanismy: 1) aktuální hladina železa - zvyšuje hladinu hepcidinu, 2) aseptický nebo infekční zánět - zvyšuje hladinu hepcidinu, 3) erytropoetická aktivita - snižuje hladinu hepcidinu.
+
+
