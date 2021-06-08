@@ -38,7 +38,8 @@ Po vstupu do enterocytu se Fe<sup>2+</sup> stává součástí malého “pohoto
 question="Pokud si k salátu dám čaj obsahující taniny (třísloviny), jak se změní absorpce nehemového železa ve střevě?" 
 answers="Absorpce se sníží|Absorpce se zvýší|Absorpce zůstane nezměněna"
 correctoptions="true|false|false" 
-explanations="Taniny obsažené v čaji, tvoří s železem nerozpustné komplexy a tak snižují jeho vstřebávání| | "></bdl-quiz>
+explanations="Taniny obsažené v čaji, tvoří s železem nerozpustné komplexy a tak snižují jeho vstřebávání| | "
+buttontitle="zkontrolovat odpověď"></bdl-quiz>
 </div> 
 </div>
 </div>

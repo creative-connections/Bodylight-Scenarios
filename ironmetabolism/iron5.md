@@ -20,6 +20,7 @@ Hepcidin je nízkomolekulární oligopeptidový hormon, který byl náhodně obj
 
 Role hepcidinu spočívá v udržování homeostázy železa a to prostřednictvím inhibice exportu železa z některých buněk a porucha této regulace v jednom nebo druhém směru vede různým patologickým stavům. V případě chronického nedostatku hepcidinu dochází k přetížení organismu železem a jeho ukládání v játrech a ostatním parenchymu, kde způsobuje fibrotizaci, a naopak chronické zvýšení hladiny hepcidinu vede k sideropenické anémii. Mechanismus účinku hepcidinu spočívá ve snížení koncentrace feroportinových exportérů. Po navázání hepcidinu na feroportin dojde ke změně konformace feroportinu a následně jeho internalizaci do buňky, kde je degradován v lysosomech. Efektivně je tak snížen tok železa z buňky do plazmy, kde klesá saturace transferinu. Funkce hepcidinu tak spočívá v redistribuci železa v organismu tak, že klesá koncentrace pro tělo dostupného železa v plazmě a naopak stoupá obsah depotního železa v buňkách, především v enterocytech, hepatocytech a buňkách monocyto-makrofágového systému.
 
+<bdl-quiz question="V obrázku molekulární struktury je přeponuto do režimu zobrazení atomů a vazeb. Hepcidin obsahuje atomy síry, kolik atomů síry vidíte v zobrazené struktuře a kolik disulfidových můstků tvoří vazbu?" answers="9 atomů síry a 4 disulfidové vazby|2 atomy a 1 disulfidová vazba" correctoptions="true|false" explanations="ano. V obrázku žluté kuličky a žluté vazby|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 
 </div>
 </div>
