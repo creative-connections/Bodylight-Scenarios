@@ -4,7 +4,7 @@
 
 <bdl-pdb-pdbe-molstar molecule-id="2j5w" height="500px" show-ions="CA,CU,NA"></bdl-pdb-pdbe-molstar>
 
-**Obrázek: Ceruloplasmin** Molekulární struktura. Kromě polymerové struktury jsou vyznačeny  kovové ionty vápníku Ca<sup>2+</sup>), sodíku Na<sup>+</sup> a  mědi Cu<sup>2+</sup>, která formuje tzv. cluster ze 3 atomů a další atomy jsou ve větších vzdálenostech. Tato formace poskytuje elektrony důležité pro oxidační reakce, které Ceruloplasmin katalyzuje.
+**Obrázek: Ceruloplasmin** Molekulární struktura. Kromě polymerové struktury jsou vyznačeny  kovové ionty vápníku Ca<sup>2+</sup>, sodíku Na<sup>+</sup> a  mědi Cu<sup>2+</sup>, která formuje shluk, tzv. cluster ze 3 atomů. Tato formace poskytuje elektrony důležité pro oxidační reakce, které Ceruloplasmin katalyzuje.
 
 </div>
 <div class="w3-half">
