@@ -8,7 +8,7 @@
 **C:** ![schematfr1](schematfr1.png)
 
 **Obrázek TfR1**. **A** interaktivní 3D obrázek komplexu
-proteinu TfR1 (transferrin receptor, oranžový a zelený) s navázaným transferrinem (červený a fialový).
+proteinu TfR1 (transferrin receptor, oranžový a zelený) s navázanými 2 transferriny (červený a fialový).
 **B** ikona transferrin receptoru
 **C** schéma transferrin receptoru s navazujícím se transferrinem na membráně enterocytu.
 
