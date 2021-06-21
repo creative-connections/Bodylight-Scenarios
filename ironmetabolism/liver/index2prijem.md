@@ -29,7 +29,7 @@ V principu existují tři způsoby příjmu železa játry, nejvíce se však up
  2. Příjem železa nevázaného na Tf, tzv. NTBI (non-transferrin bound iron)
  3. Příjem železa asociovaného s hemem/hemoglobinem
 
-# 1. Příjem železa vázaného na Tf
+### 1. Příjem železa vázaného na Tf
 
 Hlavní mechanismus pro příjem železa v játrech a ve většině ostatních tkání je prostřednictvím systému Tf-TfR (transferinový receptor). Tf je v játrech konstitutivně exprimovaný protein. Stabilita transkriptu TfR1 je regulována systémem IRP/IRE (viz. duodenum). Na rozdíl od ferritinu, který má ve svém 5'-UTR jediný IRE, přepis TfR1 obsahuje ve svém 3'-UTR několik IRE. IRP se váží na IRE v transkriptu TfR1, což zvyšuje stabilitu příslušné mRNA. 
 
