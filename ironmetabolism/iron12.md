@@ -9,9 +9,7 @@ img[alt^="sim"] {  max-width:12%;}
 
 <bdl-pdb-pdbe-molstar custom-data-url="heme.pdb" hide-polymer="true" height="500px"></bdl-pdb-pdbe-molstar>
 
-**Obrázek HEM**. interaktivní 3D obrázek 
-proteinu 2h35 (hemoglobin) vyskytující se v krvi savců. Polymerová struktura 
-hemoglobinu skryta (levé tlačítko myši rotuje, pravé tlačítko posouvá, kolečko přibližuje nebo oddaluje). 
+**Obrázek HEM**. interaktivní 3D obrázek hemu vyskytující se např. ve hemoglobinu v krvi savců nebo v myoglobinu (svalových buňkách). Polymerová struktura hemoglobinu skryta (levé tlačítko myši rotuje, pravé tlačítko posouvá, kolečko přibližuje nebo oddaluje). 
 
 ![ironhem](ironhem.png) &nbsp;&nbsp;&nbsp;<b style="vertical-align:top;">C.</b> ![simhem](simhem.png)
 
