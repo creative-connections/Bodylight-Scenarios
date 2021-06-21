@@ -1,27 +1,19 @@
 <style>
 img[alt^="image"] {max-width:20px;}
 img[alt^="bigimage"] {  max-height:60px}
-img[alt^="simnonhem"] { height:400px}
+img[alt^="simnonhem"] { height:200px}
+img[alt^="Schema"] { height:540px}
 </style>
 <div class="w3-row">
 <div class="w3-half w3-center">
-<div class="w3-margin-right">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 
+![SchemaDuodenum](SchemaDuodenum.jpg)
+
+**Obrázek** - schéma umístění buněk duodena v trávícím systému.
 
 ![simnonhem.png](simnonhem.png)
-<br/>
-<br />
-<br/>
-<p class="w3-center">
-<b>Obrázek</b> - schéma přenosu nehemového železa do buňky v duodenu. 
-</p>
-</div>
+
+**Obrázek** - schéma přenosu nehemového železa do buňky v duodenu. Na povrchu buňky tzv. mikrovilly a přenos dochází přes DMT1.
 </div>
 <div class="w3-half w3-justify">
 <div class="w3-margin-left">
