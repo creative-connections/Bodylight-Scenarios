@@ -7,7 +7,7 @@ img[alt^="sim"] {  max-width:12%;}
 <div class="w3-half w3-center">
 <div class="w3-margin-right">
 
-<bdl-pdb-pdbe-molstar molecule-id="2h35" hide-polymer="true" height="500px"></bdl-pdb-pdbe-molstar>
+<bdl-pdb-pdbe-molstar custom-data-url="heme.pdb" hide-polymer="true" height="500px"></bdl-pdb-pdbe-molstar>
 
 **Obrázek HEM**. interaktivní 3D obrázek 
 proteinu 2h35 (hemoglobin) vyskytující se v krvi savců. Polymerová struktura 
