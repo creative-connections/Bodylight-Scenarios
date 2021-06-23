@@ -27,7 +27,6 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a-text findex="8" aname="Hodnota5_text" convertor="1,0.273"></bdl-bind2a-text>
 <bdl-bind2a findex="8" aname="Merak5_anim" amin="0" amax="99" fmin="0" fmax="1.1"></bdl-bind2a>
 
-
 <bdl-bind2a findex="7" aname="Merak2Cerveny_anim" amin="0" amax="99" fmin="0" fmax="14.4"></bdl-bind2a>
 <bdl-bind2a findex="7" aname="SipkaSeda_anim" amin="0" amax="100" fmin="0" fmax="14.4"></bdl-bind2a>
 <bdl-bind2a-text findex="7" aname="Hodnota2Cerveny_text" convertor="1,3.612"></bdl-bind2a-text>
@@ -56,18 +55,15 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a-text findex="13" aname="Hodnota6_text" convertor="1,0.0412"></bdl-bind2a-text>
 <bdl-bind2a findex="18" aname="children.0.children.611.FeTransferin_anim" amin="0" amax="200" fmin="0.2" fmax="3"></bdl-bind2a>
 
-<bdl-bind2a findex="19" aname="children.0.OranzovoZlutaSipkaDiTF_anim" amin="0" amax="159" fmin="0.001" fmax="1.06"></bdl-bind2a>
-<bdl-bind2a findex="19" aname="children.0.CervenaVSipkaVehicle1_anim" amin="0" amax="159" fmin="0.001" fmax="1.06"></bdl-bind2a>
-<bdl-bind2a findex="19" aname="children.0.CervenaVSipkaVehicle1_anim_2" amin="0" amax="159" fmin="0.001" fmax="1.06"></bdl-bind2a>
-<bdl-bind2a findex="19" aname="children.0.children.593.KanalZlutyVehicle_anim" amin="0" amax="159" fmin="0.001" fmax="1.06"></bdl-bind2a>
-<bdl-bind2a findex="19" aname="children.0.children.593.PrechodUvnitrVehicle_anim" amin="0" amax="159" fmin="0.001" fmax="1.06"></bdl-bind2a>
-<bdl-bind2a findex="19" aname="children.0.children.593.KanalCervenyVehicle2_anim" amin="0" amax="159" fmin="0.001" fmax="1.06"></bdl-bind2a>
-
-
+<bdl-bind2a findex="19" aname="children.0.OranzovoZlutaSipkaDiTF_anim" amin="0" amax="159" fmin="0.1" fmax="2"></bdl-bind2a>
+<bdl-bind2a findex="19" aname="children.0.CervenaVSipkaVehicle1_anim" amin="0" amax="159" fmin="0.1" fmax="2"></bdl-bind2a>
+<bdl-bind2a findex="19" aname="children.0.CervenaVSipkaVehicle1_anim_2" amin="0" amax="159" fmin="0.1" fmax="2"></bdl-bind2a>
+<bdl-bind2a findex="19" aname="children.0.children.593.KanalZlutyVehicle_anim" amin="0" amax="159" fmin="0.1" fmax="2"></bdl-bind2a>
+<bdl-bind2a findex="19" aname="children.0.children.593.PrechodUvnitrVehicle_anim" amin="0" amax="159" fmin="0.1" fmax="2"></bdl-bind2a>
+<bdl-bind2a findex="19" aname="children.0.children.593.KanalCervenyVehicle2_anim" amin="0" amax="159" fmin="0.1" fmax="2"></bdl-bind2a>
 
 <bdl-bind2a-text findex="18" aname="Hodnota9_text" convertor="1,1.51"></bdl-bind2a-text>
 
-<!-- TODO pridat skupinu vstrebavani zeleza do enterocytu -->
 
 </div>
 <div class="w3-col s12 m5 l5 w3-justify">
