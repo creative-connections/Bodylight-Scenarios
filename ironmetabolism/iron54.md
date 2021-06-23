@@ -88,15 +88,15 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 ||| 
 |-------------|-------|
 | Koncentrace železa v potravě [$\frac{\mu g}{h}$] | <bdl-range id="id1" title="" min="0" max="1000" default="219" maxlength="5" step="1"></bdl-range> |
-| Knockout genu pro ferroportin(Fpn) | <bdl-checkbox id="id4" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
-| Knockout genu pro hepcidin | <bdl-checkbox id="id5" titlemin="gen pro hepcidin je knockoutován (neaktivní)" titlemax="gen pro expresi hepcidinu je aktivní" default="true"></bdl-checkbox>  |
+| Knockout genu pro ferroportin(Fpn) | <bdl-checkbox id="id4" titlemin="gen Fpn je knockoutován" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
+| Knockout genu pro hepcidin | <bdl-checkbox id="id5" titlemin="gen pro hepcidin je knockoutován" titlemax="gen pro expresi hepcidinu je aktivní" default="true"></bdl-checkbox>  |
 
 
 * Vyzkoušejte si, jak ovlivňuje hladina hepcidinu koncentraci feroportinu v mebráně enterocytu.
 * Vyzkoušejte si, jaké má následky genový knock-out pro hepcidin.
 * Vyzkoušejte si, jak ovlivňuje hladina železa koncentraci hepcidinu.
 
-<bdl-quiz question="Co způsobí genový knock-out hepcidinu a proč?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="Co způsobí genový knock-out hepcidinu a proč?" answers="zvýšený tok železa z enterocytu do krve|snížený tok železa z enterocytu do krve" correctoptions="true|false" explanations="ano, ztratí se zpětnovazební regulace aktivity ferroportinu, čímž se může dočasně zvýšit příjem železa do krva|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 <bdl-quiz question="Pokud omezíme příjem železa na minimum, jaká bude reakce organismu a jak se změní koncentrace/množství DMT1, Fpn a Hepcidinu?" answers="Potřeba energie pro přenos proti gradientu|Potřeba redukce železa." correctoptions="true|false" explanations="Toto je správná odpověď.|Tato odpověď neodpovídá na danou otázku." buttontitle="zkontrolovat odpověď"></bdl-quiz>
 <bdl-quiz question="Pokud provedeme genový knock-out enterocytárního Fpn, jaký vliv to bude mít na hladinu hepcidinu?" answers="hladina hepcidinu se zvýší|hladina hepcidinu se sníží" correctoptions="true|false" explanations="Toto je správná odpověď.|Tato odpověď neodpovídá na danou otázku." buttontitle="zkontrolovat odpověď"></bdl-quiz>
 
