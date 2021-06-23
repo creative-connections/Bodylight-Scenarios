@@ -2,9 +2,9 @@
 <div class="w3-half w3-justify">
 
 **A.**
-<bdl-pdb-pdbe-molstar molecule-id="6wbv" height="400px"></bdl-pdb-pdbe-molstar>
+<bdl-pdb-pdbe-molstar molecule-id="6wbv" height="400px" show-ions="CO"></bdl-pdb-pdbe-molstar>
 
-**Obrázek FERROPORTIN.** **A** molekulární struktura ferroportinu s navázaným hepcidinem a zároveň iontem Cobaltu (který v laboratorních podmínkách napodobuje iont železa)
+**Obrázek FERROPORTIN.** **A** molekulární struktura ferroportinu s navázaným hepcidinem a zároveň ionty kobaltu (fialové koule, kobalt laboratorních podmínkách napodobuje iont železa)
 
 &nbsp;&nbsp;&nbsp;<b style="vertical-align:top;">B.</b> 
 ![imageferroportin](imageferroportin.png)
@@ -13,7 +13,7 @@
 &nbsp;&nbsp;&nbsp;<b style="vertical-align:top;">D.</b> 
 ![smallhephesdin](smallhephesdin.png)
 
-**B.** schéma přenosu Fe2+ mimo buňku a schéma transkripce a translace genu SLC40A+ na protein ferroportin. **C.** ikona ferroportinu. **D.*** ikona hephesdinu oxidující  Fe<sup>2+</sup> na Fe<sup>3+</sup>.<br/>
+**B.** schéma přenosu Fe2+ mimo buňku a schéma transkripce a translace genu SLC40A+ na protein ferroportin. **C.** ikona ferroportinu. **D.** ikona hephestinu oxidující  Fe<sup>2+</sup> na Fe<sup>3+</sup>.<br/>
 
 </div>
 <div class="w3-half">
