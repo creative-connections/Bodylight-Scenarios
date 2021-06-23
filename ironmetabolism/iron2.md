@@ -19,6 +19,9 @@ Protože je dvojmocné železo pro buňku toxické (viz. Fentonova reakce), je s
 Pro účely skladování železa slouží protein **ferritin** (Obrázek FERRITIN), který je lokalizovaný v cytosolu buněk. Lidský ferritin se skládá ze 24 podjednotek dvou typů (L a H), které vytvářejí kulovitý útvar (apoferitin) ve kterém může být skladováno, dle stupně saturace, až 4 500 iontů Fe<sup>3+</sup>. Jedná se o veliký nadmolekulární systém o hmotnosti 474 kDa. Kromě duodenálních erytrocytů se ferritin vyskytuje ve větším množství v játrech, slezině nebo kostní dřeni. 
 
 Druhou zásobní formou železa je **hemosiderin**, který vzniká agregací a postupnou degradací molekul ferritinu v lyzozomech při nadbytečném sycení cytozolu železem. Hemosiderin je ve srovnání s ferritinem větší, viditelný ve světelném mikroskopu (granulární pigment rezavě hnědé barvy) a jeho vazebná kapacita pro železo je rovněž vyšší. Železo se z hemosiderinu však uvolňuje obtížněji než z ferritinu.
+
+<bdl-quiz question="Odhadněte saturaci ve schématickém znázornění ferritinu vlevo?" answers="3/4|1/2" correctoptions="true|false" explanations="6 z 8 bloků ve schématu je zaplněno, tj. 6/8=3/4|ne"></bdl-quiz>
+
 </div>
 </div>
 </div>
