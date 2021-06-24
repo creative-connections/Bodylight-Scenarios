@@ -53,15 +53,15 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 **Parametry**
 | jméno | hodnota |
 |----------|---------|
-| teplota [&deg;C] (norma 37&deg;C) | <bdl-range id="id1" title="" min="22" max="42" default="37" step="0.5" maxlength="5"></bdl-range> |
-| tlak vzduchu [kPa] (norma 101 kPa) | <bdl-range id="id2" title="" min="30" max="1000" default="101" step="1" maxlength="5"></bdl-range> |
-| koncentrace O2 (norma 21%) | <bdl-range id="id3" title="" min="5" max="50" default="21" step="1" maxlength="5"></bdl-range> |
-| koncentrace CO2 (norma 0.3&permil;) | <bdl-range id="id4" title="" min="0.1" max="50" default="0.3" step="0.1" maxlength="5"></bdl-range> |
-| koncentrace N2 (norma 72%) | <bdl-range id="id5" title="" min="60" max="90" default="72" step="1" maxlength="5"></bdl-range> |
-| koncentrace Hb v krvinkach (norma 8.4) | <bdl-range id="id6" title="" min="1" max="16" default="8.4" step="0.1" maxlength="5"></bdl-range> |
-| hematocrit Hct (44%) | <bdl-range id="id7" title="" min="10" max="80" default="44" step="1" maxlength="5"></bdl-range> |
-| BeOX (0) | <bdl-range id="id8" title="" min="-10" max="10" default="0" step="1" maxlength="5"></bdl-range> |
-| dechová frekvence (norma 17)1/min | <bdl-range id="id9" title="" min="0" max="60" default="17" step="1" maxlength="5"></bdl-range> |
+| teplota [&deg;C] (norma 37&deg;C) | <bdl-range id="id1" title="" min="22" max="42" default="37" step="0.5" maxlength="7"></bdl-range> |
+| tlak vzduchu [kPa] (norma 101 kPa) | <bdl-range id="id2" title="" min="30" max="1000" default="101" step="1" maxlength="7"></bdl-range> |
+| koncentrace O2 (norma 21%) | <bdl-range id="id3" title="" min="5" max="50" default="21" step="1" maxlength="7"></bdl-range> |
+| koncentrace CO2 (norma 0.3&permil;) | <bdl-range id="id4" title="" min="0.1" max="50" default="0.3" step="0.1" maxlength="7"></bdl-range> |
+| koncentrace N2 (norma 72%) | <bdl-range id="id5" title="" min="60" max="90" default="72" step="1" maxlength="7"></bdl-range> |
+| koncentrace Hb v krvinkach (norma 8.4) | <bdl-range id="id6" title="" min="1" max="16" default="8.4" step="0.1" maxlength="7"></bdl-range> |
+| hematocrit Hct (44%) | <bdl-range id="id7" title="" min="10" max="80" default="44" step="1" maxlength="7"></bdl-range> |
+| BeOX (0) | <bdl-range id="id8" title="" min="-10" max="10" default="0" step="1" maxlength="7"></bdl-range> |
+| dechová frekvence (norma 17)1/min | <bdl-range id="id9" title="" min="0" max="60" default="17" step="1" maxlength="7"></bdl-range> |
 | objem nádechu (tidal volume) (0.5 l) | <bdl-range id="id10" title="" min="0.1" max="1.5" default="0.5" step="0.1" maxlength="7"></bdl-range> |
 | mrtvý prostor nádechu (death space) (0.15 l) | <bdl-range id="id11" title="" min="0.05" max="1" default="0.15" step="0.05" maxlength="7"></bdl-range> |
 | minutový srdeční výdej (cardiac output) (5 l/min) | <bdl-range id="id12" title="" min="1" max="15" default="5" step="0.5" maxlength="7"></bdl-range> |
