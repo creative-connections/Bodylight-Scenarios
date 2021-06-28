@@ -45,7 +45,7 @@ Anemická (nebo také transportní) hypoxie je způsobená nedostatečným počt
 
 | parametr | hodnota |
 |----------|---------|
-| koncentrace Hb v krvinkach (norma 8.4) | <bdl-range id="id6" title="" min="4.4" max="12" default="8.4" step="0.1" maxlength="5"></bdl-range> |
+| koncentrace Hb v krvinkach (norma 8.4) | <bdl-range id="id6" title="" min="4.4" max="12" default="8.4" step="0.1" maxlength="7"></bdl-range> |
 
 
 <bdl-animate-adobe src="AlveolaTK.js" width="404" height="227" name="AlveolaTK" fromid="idfmi"></bdl-animate-adobe>
