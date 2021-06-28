@@ -83,6 +83,13 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a findex="21" aname="children.0.StrikackaModra_anim" amin="1" amax="29" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a findex="21" aname="children.0.ModraSipkaOdStrikacky_anim" amin="159" amax="0" fmin="0" fmax="1"></bdl-bind2a>
 
+<bdl-bind2a findex="25" aname="children.0.ModraRuzovaPruhovanaSipka_anim" amin="159" amax="0" fmin="0" fmax="3600"></bdl-bind2a>
+<bdl-bind2a findex="26" aname="children.0.SipkaRuzovaZluta_anim" amin="159" amax="0" fmin="0.1" fmax="0.5"></bdl-bind2a>
+<bdl-bind2a findex="24" aname="children.0.Merak8_anim" amin="0" amax="99" fmin="0" fmax="1600"></bdl-bind2a>
+<bdl-bind2a-text findex="24" aname="children.0.Hodnota8_text" ></bdl-bind2a-text>
+
+
+
 
 </div>
 <div class="w3-col s12 m5 l5 w3-justify" style="line-height: 1.3">
@@ -91,14 +98,15 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <!-- hidden input - buttonparams must be before fmi component - or input with id must be created explicitly -->
 <input id="id6" value="" type="number" style="display:none" />
 
-<bdl-fmi id="idfmi" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.01" guid="{ff6d8a55-f24a-4855-bbf0-86edcafe471e}" valuereferences="637534208,637534209,100663315,16777260,33554448,33554449,637534228,905969688,637534231,16777271,16777272,16777267,637534233,637534237,33554439,33554443,637534230,637534257,33554447,637534229,637534236,33554434,33554432,16777266" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate,Fpn_duo_knockout,Fpn_duo_in_1,Fpn_duo_in,Fpn_duo_mRNA,Fpn_duo,Fe_duo_out_ser,Fe_ser_in_duo,Fe_ser,Fe_duo_in_ser,Fpn_duo_out_2,LPS,hep,hep_knockout" inputs="id1,16777260,1,1;id4,16777267,1,1;id5,16777266,1,1,t;id6,33554434,1,1,t" inputlabels="Fe_food,Fpn_duo_knockout,hep_knockout,LPS"  showtime="1" showtimemultiply="3600"></bdl-fmi>
+<bdl-fmi id="idfmi" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.01" guid="{ff6d8a55-f24a-4855-bbf0-86edcafe471e}" valuereferences="637534208,637534209,100663315,16777260,33554448,33554449,637534228,905969688,637534231,16777271,16777272,16777267,637534233,637534237,33554439,33554443,637534230,637534257,33554447,637534229,637534236,33554434,33554432,16777266,33554436,637534267,637534263" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate,Fpn_duo_knockout,Fpn_duo_in_1,Fpn_duo_in,Fpn_duo_mRNA,Fpn_duo,Fe_duo_out_ser,Fe_ser_in_duo,Fe_ser,Fe_duo_in_ser,Fpn_duo_out_2,LPS,hep,hep_knockout,Il6,Il6_in,hep_in" inputs="id1,16777260,1,1;id4,16777267,1,1;id5,16777266,1,1,t;id6,33554434,1,1,t" inputlabels="Fe_food,Fpn_duo_knockout,hep_knockout,LPS" showtime="1" showtimemultiply="3600"></bdl-fmi>
+
 
 ||| 
 |-------------|-------|
 | Koncentrace železa v potravě [$\frac{\mu g}{h}$] | <bdl-range id="id1" title="" min="0" max="1000" default="219" maxlength="5" step="1"></bdl-range> |
-| Knockout genu pro ferroportin(Fpn) | <bdl-checkbox id="id4" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
-| Knockout genu pro hepcidin | <bdl-checkbox id="id5" titlemin="gen pro hepcidin je knockoutován (neaktivní)" titlemax="gen pro expresi hepcidinu je aktivní" default="true"></bdl-checkbox>  |
-| LPS injekce jednorázová 1$\mu$g při stisknutí | <bdl-buttonparams title="LPS injekce" ids="id6" values="1" fromid="idfmi"></bdl-buttonparams>  |
+| Knockout genu pro ferroportin(Fpn) | <bdl-checkbox id="id4" titlemin="gen Fpn je knockoutován" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
+| Knockout genu pro hepcidin | <bdl-checkbox id="id5" titlemin="gen pro hepcidin je knockoutován" titlemax="gen pro expresi hepcidinu je aktivní" default="true"></bdl-checkbox>  |
+| LPS injekce jednorázová 1$\mu$g | <bdl-buttonparams title="LPS injekce" ids="id6" values="1" fromid="idfmi"> </bdl-buttonparams>  |
 
 * Vyzkoušejte si, jaká je reakce organismu na přítomnost bakteriální infekce (jednorázová injekce LPS).
 * Vyzkoušejte si, jaké bude mít následky dlouhodobý (chronický) zánět (opakovaná injekce LPS) a zodpovězte otázky.
