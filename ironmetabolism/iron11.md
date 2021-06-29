@@ -7,13 +7,16 @@ img[alt^="Schema"] { height:540px}
 <div class="w3-row">
 <div class="w3-half w3-center">
 
+*[DMT1]: divalent metal transporter 1
+*[Dcytb]: duodenal cytochrome b
+
 ![SchemaDuodenum](SchemaDuodenum.jpg)
 
 **Obrázek: duodenum a enterocyty** - schéma umístění buněk duodena v trávícím systému.
 
 ![simnonhem.png](simnonhem.png)
 
-**Obrázek: membrána enterocytu duodena** - schéma přenosu nehemového železa do buňky v duodenu. Na povrchu buňky tzv. mikrovilly a přenos dochází přes DMT1.
+**Obrázek: membrána enterocytu duodena** - schéma přenosu nehemového železa do buňky v duodenu. Na povrchu buňky tzv. mikrovilly a Dcytb. Přenáší se Fe<sup>2+</sup> přes DMT1.
 </div>
 <div class="w3-half w3-justify">
 <div class="w3-margin-left">
