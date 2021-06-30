@@ -72,12 +72,15 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 <bdl-bind2a-text findex="18" aname="Hodnota9_text" convertor="1,1.51"></bdl-bind2a-text>
 
-<bdl-bind2a findex="23" aname="children.0.SipkaZlutaSrafovana_anim" amin="149" amax="0" fmin="0.5" fmax="1.5"></bdl-bind2a>
+<bdl-bind2a findex="22" aname="children.0.SipkaZlutaSrafovana_anim" amin="159" amax="0" fmin="0.5" fmax="2.2"></bdl-bind2a>
 
-<bdl-bind2a-text findex="23" aname="children.0.Hodnota7_text" convertor="1,1.2"></bdl-bind2a-text>
-<bdl-bind2a findex="23" aname="children.0.Merak7_anim" amin="0" amax="99" fmin="0" fmax="4.8"></bdl-bind2a>
-<bdl-bind2a findex="24" aname="children.0.children.563.Semafor1_anim" amin="0" amax="6" fmin="0" fmax="1"></bdl-bind2a>
-<bdl-bind2a findex="23" aname="children.0.children.563.MerakSemaforu1_anim" amin="0" amax="159" fmin="0" fmax="1.6"></bdl-bind2a>
+
+<bdl-bind2a-text findex="22" aname="children.0.Hodnota7_text" convertor="1.5,1"></bdl-bind2a-text>
+
+<bdl-bind2a findex="22" aname="children.0.Merak7_anim" amin="0" amax="99" fmin="0" fmax="4.8"></bdl-bind2a>
+<bdl-bind2a findex="23" aname="children.0.children.563.Semafor1_anim" amin="0" amax="159" fmin="0" fmax="1"></bdl-bind2a>
+
+<bdl-bind2a findex="22" aname="children.0.children.563.MerakSemaforu1_anim" amin="0" amax="159" fmin="0" fmax="2.2"></bdl-bind2a>
 
 
 <bdl-bind2a findex="21" aname="children.0.StrikackaModra_anim" amin="1" amax="29" fmin="0" fmax="1"></bdl-bind2a>
@@ -86,9 +89,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a findex="25" aname="children.0.ModraRuzovaPruhovanaSipka_anim" amin="159" amax="0" fmin="0" fmax="3600"></bdl-bind2a>
 <bdl-bind2a findex="26" aname="children.0.SipkaRuzovaZluta_anim" amin="159" amax="0" fmin="0.1" fmax="0.5"></bdl-bind2a>
 <bdl-bind2a findex="24" aname="children.0.Merak8_anim" amin="0" amax="99" fmin="0" fmax="1600"></bdl-bind2a>
-<bdl-bind2a-text findex="24" aname="children.0.Hodnota8_text" ></bdl-bind2a-text>
-
-
+<bdl-bind2a-text findex="24" aname="children.0.Hodnota8_text" convertor="1,100"></bdl-bind2a-text>
 
 
 </div>
@@ -98,8 +99,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <!-- hidden input - buttonparams must be before fmi component - or input with id must be created explicitly -->
 <input id="id6" value="" type="number" style="display:none" />
 
-<bdl-fmi id="idfmi" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.01" guid="{ff6d8a55-f24a-4855-bbf0-86edcafe471e}" valuereferences="637534208,637534209,100663315,16777260,33554448,33554449,637534228,905969688,637534231,16777271,16777272,16777267,637534233,637534237,33554439,33554443,637534230,637534257,33554447,637534229,637534236,33554434,33554432,16777266,33554436,637534267,637534263" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate,Fpn_duo_knockout,Fpn_duo_in_1,Fpn_duo_in,Fpn_duo_mRNA,Fpn_duo,Fe_duo_out_ser,Fe_ser_in_duo,Fe_ser,Fe_duo_in_ser,Fpn_duo_out_2,LPS,hep,hep_knockout,Il6,Il6_in,hep_in" inputs="id1,16777260,1,1;id4,16777267,1,1;id5,16777266,1,1,t;id6,33554434,1,1,t" inputlabels="Fe_food,Fpn_duo_knockout,hep_knockout,LPS" showtime="1" showtimemultiply="3600"></bdl-fmi>
-
+<bdl-fmi id="idfmi" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.02" guid="{ff6d8a55-f24a-4855-bbf0-86edcafe471e}" valuereferences="637534208,637534209,100663315,16777260,33554448,33554449,637534228,905969688,637534231,16777271,16777272,16777267,637534233,637534237,33554439,33554443,637534230,637534257,33554447,637534229,637534236,33554434,33554432,16777266,33554436,637534267,637534263" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate,Fpn_duo_knockout,Fpn_duo_in_1,Fpn_duo_in,Fpn_duo_mRNA,Fpn_duo,Fe_duo_out_ser,Fe_ser_in_duo,Fe_ser,Fe_duo_in_ser,Fpn_duo_out_2,LPS,hep,hep_knockout,Il6,Il6_in,hep_in" inputs="id1,16777260,1,1;id4,16777267,1,1;id5,16777266,1,1,t;id6,33554434,1,1,t" inputlabels="Fe_food,Fpn_duo_knockout,hep_knockout,LPS" showtime="1" showtimemultiply="3600"></bdl-fmi>
 
 ||| 
 |-------------|-------|
@@ -108,10 +108,12 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 | Knockout genu pro hepcidin | <bdl-checkbox id="id5" titlemin="gen pro hepcidin je knockoutován" titlemax="gen pro expresi hepcidinu je aktivní" default="true"></bdl-checkbox>  |
 | LPS injekce jednorázová 1$\mu$g | <bdl-buttonparams title="LPS injekce" ids="id6" values="1" fromid="idfmi"> </bdl-buttonparams>  |
 
-* Vyzkoušejte si, jaká je reakce organismu na přítomnost bakteriální infekce (jednorázová injekce LPS).
-* Vyzkoušejte si, jaké bude mít následky dlouhodobý (chronický) zánět (opakovaná injekce LPS) a zodpovězte otázky.
-
 <div class="w3-small" style="line-height: 1.2">
+
+<bdl-quiz question="Vyzkoušejte si, jaká je reakce organismu na přítomnost bakteriální infekce (jednorázová injekce LPS)." answers="A" correctoptions="true" explanations="IL6 se zvýší dočasně přesáhne hodnotu 7 po 3 hodinách na to reaguje produkce hepcidinu asi 3x nad normu vrcholí po 7 hodinách. Zároveň LPS dočasně redukuje expresi Fpn, sníží se přenos železa z enterocytu do krve, tím se sníží koncentrace Fe v krvi (až 5x méně oproti normě po 12 hodinách). Během 24 hodin se vše normalizuje" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="Vyzkoušejte si, jaké bude mít následky dlouhodobý (chronický) zánět (opakovaná injekce LPS)" answers="A" correctoptions="true" explanations="IL6 se zvýší záleží na počtu opakování, ale může přesáhnout hodnotu 20 a více. Hepcidin reguluje přenos železa z enterocytu do krve dlouhodoběji, tím se snížuje koncentrace Fe v krvi dlouhodobě(až na 0.15 oproti normě)" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+
+
 <!--bdl-chartjs-time id="id10" width="400" height="200" fromid="idfmi" labels="fe duo in ser" initialdata="" refindex="16" refvalues="1" maxdata="1024"></bdl-chartjs-time>
 <bdl-chartjs-time id="id11" width="300" height="200" fromid="idfmi" labels="duoin" initialdata="" refindex="13" refvalues="1" maxdata="1024"></bdl-chartjs-time>
 <bdl-chartjs-time id="id12" width="300" height="200" fromid="idfmi" labels="mrna" initialdata="" refindex="14" refvalues="1" maxdata="1024"></bdl-chartjs-time>
@@ -119,11 +121,11 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-chartjs-time id="id14" width="300" height="200" fromid="idfmi" labels="Fe_duo_out_ser" initialdata="" refindex="16" refvalues="1" maxdata="1024"></bdl-chartjs-time>
 <bdl-chartjs-time id="id13" width="300" height="200" fromid="idfmi" labels="koncentrace Fe v krvi" initialdata="" refindex="18" refvalues="1" maxdata="1024" xlabel="čas (hodiny)" ylabel="množství orientační (ug)"></bdl-chartjs-time-->
 
-<bdl-quiz question="Jakými cestami ovlivňuje endotoxin metabolismus železa?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Pokud provedeme knock-out genu pro hepcidin, bude zachovaná účinnost LPS?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Pokud provedeme knock-out genu pro Fpn, bude zachovaná účínnost LPS?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Jaké následky může mít dlouhodobý zánět (stran metabolismu železa)?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Jaký má LPS dopad na vstřebávání železa v duodenu? Má smysl zvyšovat příjem železa potravou?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="Jakými cestami ovlivňuje endotoxin metabolismus železa?" answers="A" correctoptions="true" explanations="přímá redukce aktivity genu pro Fpn. Zvýšení produkce hepcidinu." buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="Pokud provedeme knock-out genu pro hepcidin, bude zachovaná účinnost LPS?" answers="Ano|Částečně|Ne" correctoptions="false|true|false" explanations="-|přes částečnou redukci aktivity genu pro Fpn|-" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="Pokud provedeme knock-out genu pro Fpn, bude zachovaná účínnost LPS?" answers="Ano|Částečně|Ne" correctoptions="false|true|false" explanations="-|částečně přes redukci hepcidinem|-" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="Jaké následky může mít dlouhodobý zánět (stran metabolismu železa)?" answers="A" correctoptions="true" explanations="Nedostatek železa pro jiné metabolické procesy" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="Jaký má LPS dopad na vstřebávání železa v duodenu? Má smysl zvyšovat příjem železa potravou?" answers="Ano|Ne" correctoptions="False|true" explanations="-|Na vstřebávání nemá dopad, ale na přenos z enterocytu do krve. Zvyšovat příjem železa" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 </div>
 
 </div>
