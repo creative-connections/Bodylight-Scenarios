@@ -9,7 +9,6 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 <bdl-animate-adobe src="DuodenumFinalObrazovka7.js" width="800" height="600" name="DuodenumFinalObrazovka7" fromid="idfmi" undefined=""></bdl-animate-adobe>
 
-
 <bdl-bind2a findex="3" aname="children.0.SipkaCervena1_anim" amin="0" amax="159" fmin="1" fmax="1000"></bdl-bind2a>
 <bdl-bind2a findex="3" aname="children.0.Merak1_anim" amin="0" amax="99" fmin="0" fmax="1000"></bdl-bind2a>
 <bdl-bind2a-text findex="3" aname="children.0.Hodnota1_text" convertor="1,219" ></bdl-bind2a-text>
@@ -73,16 +72,25 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 <bdl-bind2a-text findex="18" aname="Hodnota9_text" convertor="1,1.51"></bdl-bind2a-text>
 
-<bdl-bind2a findex="23" aname="children.0.SipkaZlutaSrafovana_anim" amin="149" amax="0" fmin="0.5" fmax="1.5"></bdl-bind2a>
+<bdl-bind2a findex="22" aname="children.0.SipkaZlutaSrafovana_anim" amin="159" amax="0" fmin="0.5" fmax="2.2"></bdl-bind2a>
 
-<bdl-bind2a-text findex="23" aname="children.0.Hodnota7_text" convertor="1,1.2"></bdl-bind2a-text>
-<bdl-bind2a findex="23" aname="children.0.Merak7_anim" amin="0" amax="99" fmin="0" fmax="4.8"></bdl-bind2a>
-<bdl-bind2a findex="24" aname="children.0.children.563.Semafor1_anim" amin="0" amax="6" fmin="0" fmax="1"></bdl-bind2a>
-<bdl-bind2a findex="23" aname="children.0.children.563.MerakSemaforu1_anim" amin="0" amax="159" fmin="0" fmax="1.6"></bdl-bind2a>
+
+<bdl-bind2a-text findex="22" aname="children.0.Hodnota7_text" convertor="1.5,1"></bdl-bind2a-text>
+
+<bdl-bind2a findex="22" aname="children.0.Merak7_anim" amin="0" amax="99" fmin="0" fmax="4.8"></bdl-bind2a>
+<bdl-bind2a findex="23" aname="children.0.children.563.Semafor1_anim" amin="0" amax="159" fmin="0" fmax="1"></bdl-bind2a>
+
+<bdl-bind2a findex="22" aname="children.0.children.563.MerakSemaforu1_anim" amin="0" amax="159" fmin="0" fmax="2.2"></bdl-bind2a>
 
 
 <bdl-bind2a findex="21" aname="children.0.StrikackaModra_anim" amin="1" amax="29" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a findex="21" aname="children.0.ModraSipkaOdStrikacky_anim" amin="159" amax="0" fmin="0" fmax="1"></bdl-bind2a>
+
+<bdl-bind2a findex="25" aname="children.0.ModraRuzovaPruhovanaSipka_anim" amin="159" amax="0" fmin="0" fmax="3600"></bdl-bind2a>
+<bdl-bind2a findex="26" aname="children.0.SipkaRuzovaZluta_anim" amin="159" amax="0" fmin="0.1" fmax="0.5"></bdl-bind2a>
+<bdl-bind2a findex="24" aname="children.0.Merak8_anim" amin="0" amax="99" fmin="0" fmax="1600"></bdl-bind2a>
+<bdl-bind2a-text findex="24" aname="children.0.Hodnota8_text" convertor="1,100"></bdl-bind2a-text>
+
 
 </div>
 <div class="w3-col s12 m5 l5 w3-justify">
