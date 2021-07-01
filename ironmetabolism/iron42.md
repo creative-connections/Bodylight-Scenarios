@@ -45,24 +45,34 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a-text findex="5" aname="Hodnota3_text" convertor="1,2.228"></bdl-bind2a-text>
 <bdl-bind2a findex="5" aname="Fe3Skupina_anim" amin="0" amax="100" fmin="0" fmax="10"></bdl-bind2a>
 
-<bdl-bind2a findex="14" aname="SipkaRuzova2_anim" amin="0" amax="100" fmin="0.026" fmax="0.028"></bdl-bind2a>
-<bdl-bind2a findex="13" aname="SipkaFialovaSrafovana_anim" amin="0" amax="100" fmin="0.02" fmax="0.05"></bdl-bind2a>
-<bdl-bind2a findex="16" aname="SipkaFialovaSpodni3_anim" amin="0" amax="100" fmin="0.1" fmax="2.6"></bdl-bind2a>
-<bdl-bind2a findex="16" aname="children.0.CervenaVSipkaVehicle1_anim_1" amin="0" amax="159" fmin="0.01" fmax="2.6"></bdl-bind2a>
+<!-- funkcni z iron32.md-->
+<bdl-bind2a findex="14" aname="children.0.SipkaRuzova2_anim" amin="0" amax="159" fmin="0.002" fmax="2"></bdl-bind2a>
+
+<bdl-bind2a findex="13" aname="SipkaFialovaSrafovana_anim" amin="0" amax="159" fmin="0.02" fmax="0.07"></bdl-bind2a>
+
+<bdl-bind2a findex="16" aname="SipkaFialovaSpodni3_anim" amin="0" amax="159" fmin="1.5" fmax="3.0"></bdl-bind2a>
+<bdl-bind2a findex="16" aname="CervenaVSipkaVehicle1_anim" amin="0" amax="159" fmin="1.5" fmax="3.0"></bdl-bind2a>
+<bdl-bind2a findex="16" aname="children.0.SipkaCervenaSpodni_anim" amin="0" amax="159" fmin="1.5" fmax="3.0"></bdl-bind2a>
+<bdl-bind2a findex="16" aname="children.0.Hep_anim" amin="0" amax="159" fmin="1.5" fmax="3.0"></bdl-bind2a>
 
 <bdl-bind2a findex="15" aname="KanalFialovy_anim" amin="99" amax="0" fmin="0.03" fmax="1.3"></bdl-bind2a>
 <bdl-bind2a findex="11" aname="Semafor_anim" amin="4" amax="5" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a-text findex="13" aname="Hodnota6_text" convertor="1,0.0412"></bdl-bind2a-text>
 <bdl-bind2a findex="18" aname="children.0.children.611.FeTransferin_anim" amin="0" amax="200" fmin="0.2" fmax="3"></bdl-bind2a>
 
+<bdl-bind2a-text findex="18" aname="Hodnota9_text" convertor="1,1.51"></bdl-bind2a-text>
+<bdl-bind2a findex="18" aname="children.0.Merak9_anim" amin="0" amax="99" fmin="0.2" fmax="3"></bdl-bind2a>
+
+<bdl-bind2a findex="13" aname="children.0.Merak6_anim" amin="0" amax="99" fmin="0.01" fmax="0.07"></bdl-bind2a>
+
+<!-- nove sipky-->
+
 <bdl-bind2a findex="19" aname="children.0.OranzovoZlutaSipkaDiTF_anim" amin="0" amax="159" fmin="0.1" fmax="2"></bdl-bind2a>
-<bdl-bind2a findex="19" aname="children.0.CervenaVSipkaVehicle1_anim" amin="0" amax="159" fmin="0.1" fmax="2"></bdl-bind2a>
 <bdl-bind2a findex="19" aname="children.0.CervenaVSipkaVehicle1_anim_2" amin="0" amax="159" fmin="0.1" fmax="2"></bdl-bind2a>
 <bdl-bind2a findex="19" aname="children.0.children.593.KanalZlutyVehicle_anim" amin="0" amax="159" fmin="0.1" fmax="2"></bdl-bind2a>
 <bdl-bind2a findex="19" aname="children.0.children.593.PrechodUvnitrVehicle_anim" amin="0" amax="159" fmin="0.1" fmax="2"></bdl-bind2a>
 <bdl-bind2a findex="19" aname="children.0.children.593.KanalCervenyVehicle2_anim" amin="0" amax="159" fmin="0.1" fmax="2"></bdl-bind2a>
 
-<bdl-bind2a-text findex="18" aname="Hodnota9_text" convertor="1,1.51"></bdl-bind2a-text>
 
 
 </div>
