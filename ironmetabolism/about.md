@@ -6,7 +6,10 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 | | |
 |--:|--|
 | **Scénář, text, matematický model:** | RNDr. Arnošt Mládek, Ph.D. |
-| **Technologie, simulátor, 3D molekulární obrázky:** | Mgr. Tomáš Kulhánek, Ph.D. |
+| **Technologie a simulátory:** | Mgr. Tomáš Kulhánek, Ph.D. |
+| | Ing. Jan Šilar, Ph.D. |
+| | Ing. Filip Ježek, Ph.D. |
+| | Bc. David Polák |
 | **Grafické prvky, interaktivní animace:** | Martin Brož, DiS. |
 | **Odborní garanti:** | Doc. MUDr. Jiří Kofránek, CSc. |
 | | Prof. MUDr. Martin Vokurka, CSc. |
