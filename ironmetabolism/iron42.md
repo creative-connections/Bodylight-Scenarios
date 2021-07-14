@@ -54,13 +54,10 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 <bdl-bind2a findex="13" aname="SipkaFialovaSrafovana_anim" amin="0" amax="159" fmin="0.02" fmax="0.07"></bdl-bind2a>
 
-<bdl-bind2a findex="16" aname="SipkaFialovaSpodni3_anim" amin="0" amax="159" fmin="1.5" fmax="3.0"></bdl-bind2a>
-
-<bdl-bind2a findex="16" aname="children.0.CervenaVSipkaVehicle1_anim_1" amin="0" amax="159" fmin="1.5" fmax="3"></bdl-bind2a>
-
-
-<bdl-bind2a findex="16" aname="children.0.SipkaCervenaSpodni_anim" amin="0" amax="159" fmin="1.5" fmax="3.0"></bdl-bind2a>
-<bdl-bind2a findex="16" aname="children.0.Hep_anim" amin="0" amax="159" fmin="1.5" fmax="3.0"></bdl-bind2a>
+<bdl-bind2a findex="16" aname="SipkaFialovaSpodni3_anim" amin="0" amax="159" fmin="0.5" fmax="4"></bdl-bind2a>
+<bdl-bind2a findex="16" aname="children.0.CervenaVSipkaVehicle1_anim_1" amin="0" amax="159" fmin="0.5" fmax="4"></bdl-bind2a>
+<bdl-bind2a findex="16" aname="children.0.SipkaCervenaSpodni_anim" amin="0" amax="159" fmin="0.5" fmax="4"></bdl-bind2a>
+<bdl-bind2a findex="16" aname="children.0.Hep_anim" amin="0" amax="159" fmin="0.5" fmax="4"></bdl-bind2a>
 
 <bdl-bind2a findex="15" aname="KanalFialovy_anim" amin="99" amax="0" fmin="0.03" fmax="1.3"></bdl-bind2a>
 <bdl-bind2a findex="11" aname="Semafor_anim" amin="4" amax="5" fmin="0" fmax="1"></bdl-bind2a>
