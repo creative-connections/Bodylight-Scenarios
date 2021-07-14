@@ -170,9 +170,9 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-chartjs-time id="id13" width="300" height="200" fromid="idfmi" labels="koncentrace Fe v krvi" initialdata="" refindex="18" refvalues="1" maxdata="1024" xlabel="čas (hodiny)" ylabel="množství orientační (ug)"></bdl-chartjs-time-->
 
 
-<bdl-quiz question="Jaké následky může mít dlouhodobý zánět (stran metabolismu železa)?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Jaký očekáváte vliv snížení/zvýšení příjmu železa potravou na koncentraci Fpn?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Jaký má gastrektomie vliv na metabolismus železa a proč?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="Jaké následky může mít dlouhodobý zánět (stran metabolismu železa)?" answers="A" correctoptions="true" explanations="dlouhodobě snížený obsah železa a tím snížená krvetvorba, která na ni závisí - anémie" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="Jaký očekáváte vliv snížení/zvýšení příjmu železa potravou na koncentraci Fpn?" answers="A" correctoptions="true" explanations="přímo úměrná" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="Jaký má gastrektomie vliv na metabolismus železa a proč?" answers="A" correctoptions="true" explanations="snížení vstřebávání železa v důsledku snížení počtu buněk enterocytu a snížené efektivity trávení" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 
 </div>
 </div>
