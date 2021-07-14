@@ -104,11 +104,15 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a findex="24" aname="children.0.Merak8_anim" amin="0" amax="99" fmin="0" fmax="1600"></bdl-bind2a>
 <bdl-bind2a-text findex="24" aname="children.0.Hodnota8_text" convertor="1,100"></bdl-bind2a-text>
 
-<bdl-bind2a-play findex="27" aname="children.0.StrikackaFeFialovaSipkaIn_anim"></bdl-bind2a-play>
-<bdl-bind2a-play findex="28" aname="children.0.KapackaFeFialovaSipkaOut_anim"></bdl-bind2a-play>
+<bdl-bind2a-play findex="27" aname="children.0.StrikackaCervena_anim"></bdl-bind2a-play>
+<bdl-bind2a findex="27" aname="children.0.StrikackaFeFialovaSipkaIn_anim" amin="0" amax="159" fmin="0" fmax="10"></bdl-bind2a>
 
+<bdl-bind2a-play findex="28" aname="children.0.ZelezoVelkeKapacka_anim"></bdl-bind2a-play>
+<bdl-bind2a-play findex="28" aname="children.0.KapackaJehlaFe_anim"></bdl-bind2a-play>
+<bdl-bind2a-play findex="28" aname="children.0.KapackaFeMale_anim"></bdl-bind2a-play>
+<bdl-bind2a-play findex="28" aname="children.0.children.630.children.59.Kapka1_anim"></bdl-bind2a-play>
 
-
+<bdl-bind2a findex="28" aname="children.0.KapackaFeFialovaSipkaOut_anim" amin="0" amax="159" fmin="0" fmax="11"></bdl-bind2a>
 
 </div>
 <div class="w3-col s12 m5 l5 w3-justify">
@@ -123,12 +127,12 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 ||| 
 |-------------|-------|
-| Koncentrace železa v potravě | <bdl-range id="id1" title="" min="0" max="1000" default="219" maxlength="5" step="1"></bdl-range> $\frac{\mu g}{h}$ |
+| Koncentrace železa v potravě | <bdl-range id="id1" title="" min="0" max="1000" default="219" step="1"></bdl-range> $\frac{\mu g}{h}$ |
 | Knockout genu pro ferroportin(Fpn) | <bdl-checkbox id="id4" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
 | Knockout genu pro hepcidin | <bdl-checkbox id="id5" titlemin="gen pro hepcidin je knockoutován (neaktivní)" titlemax="gen pro expresi hepcidinu je aktivní" default="true"></bdl-checkbox>  |
 | LPS injekce jednorázová 1$\mu$g při stisknutí | <bdl-buttonparams title="LPS injekce" ids="id6" values="1" fromid="idfmi"></bdl-buttonparams> 1$\mu$g |
-| Krevní ztráty, krvácení | <bdl-range id="id7" title="" min="0" max="1000" default="0" maxlength="5" step="1"></bdl-range>  $\frac{ml}{h}$ |
-| Příjem krve z transfúze  | <bdl-range id="id8" title="" min="0" max="1000" default="0" maxlength="5" step="1"></bdl-range> $\frac{ml}{h}$ |
+| Krevní ztráty, krvácení | <bdl-range id="id7" title="" min="0" max="10" default="0" step="1"></bdl-range>  $\frac{ml}{h}$ |
+| Příjem krve z transfúze  | <bdl-range id="id8" title="" min="0" max="10" default="0" step="1"></bdl-range> $\frac{ml}{h}$ |
 
 * Vyzkoušejte si, jak reaguje organismus na ztráty železa pří ztrátě krve, krvácení. Pokuste se udržet fyziologickou hladinu sérového železa regulací příjmu železa v potravě.
 * Vyzkoušejte si, jak reaguje organismus na příjem železa při krevní transfúzi. Pokuste se udržet fyziologickou hladinu sérového železa regulací příjmu železa v potravě.
