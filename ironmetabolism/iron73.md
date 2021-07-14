@@ -103,7 +103,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a findex="26" aname="children.0.SipkaRuzovaZluta_anim" amin="159" amax="0" fmin="0.1" fmax="0.5"></bdl-bind2a>
 <bdl-bind2a findex="24" aname="children.0.Merak8_anim" amin="0" amax="99" fmin="0" fmax="1600"></bdl-bind2a>
 <bdl-bind2a-text findex="24" aname="children.0.Hodnota8_text" convertor="1,100"></bdl-bind2a-text>
-
+<!-- nove animace 7 -->
 <bdl-bind2a-play findex="27" aname="children.0.StrikackaCervena_anim"></bdl-bind2a-play>
 <bdl-bind2a findex="27" aname="children.0.StrikackaFeFialovaSipkaIn_anim" amin="0" amax="159" fmin="0" fmax="10"></bdl-bind2a>
 
