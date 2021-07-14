@@ -142,7 +142,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-quiz question="Pokud provedeme knock-out genu pro hepcidin, bude zachovaná účinnost LPS?" answers="Ano|Částečně|Ne" correctoptions="false|true|false" explanations="-|přes částečnou redukci aktivity genu pro Fpn|-" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 <bdl-quiz question="Pokud provedeme knock-out genu pro Fpn, bude zachovaná účínnost LPS?" answers="Ano|Částečně|Ne" correctoptions="false|true|false" explanations="-|částečně přes redukci hepcidinem|-" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 <bdl-quiz question="Jaké následky může mít dlouhodobý zánět (stran metabolismu železa)?" answers="A" correctoptions="true" explanations="Nedostatek železa pro jiné metabolické procesy" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Jaký má LPS dopad na vstřebávání železa v duodenu? Má smysl zvyšovat příjem železa potravou?" answers="Ano|Ne" correctoptions="False|true" explanations="-|Na vstřebávání nemá dopad, ale na přenos z enterocytu do krve. Zvyšovat příjem železa" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="Jaký má LPS dopad na vstřebávání železa v duodenu? Má smysl zvyšovat příjem železa potravou?" answers="A" correctoptions="true" explanations="LPS nemá přímý dopad na vstřebávání železa. Zvyšovat příjem železa má mírný vliv při pozdější rekonvalescenci." buttontitle="zkontrolovat odpověď"></bdl-quiz>
 </div>
 
 </div>
