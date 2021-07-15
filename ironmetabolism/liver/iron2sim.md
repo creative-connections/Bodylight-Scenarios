@@ -4,6 +4,8 @@ img[alt^="bigimage"] {  max-height:60px}
 tbody tr:nth-child(even){background-color:#f1f1f1}
 </style>
 
+*[DMT1]: divalent metal transporter 1
+
 <div class="w3-row">
 <div class="w3-col s12 m8 l8">
 
@@ -35,7 +37,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 
 
-<bdl-bind2a findex="2" aname="children.1.Fe2Skupina_anim" amin="0" amax="159" fmin="0" fmax="40"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.1.Fe2Skupina_anim" amin="159" amax="0" fmin="0" fmax="40"></bdl-bind2a>
 <bdl-bind2a findex="2" aname="children.1.Merak7_anim" amin="0" amax="99" fmin="0" fmax="40"></bdl-bind2a>
 <bdl-bind2a-text findex="2" aname="children.1.Hodnota7_text" ></bdl-bind2a-text>
 
