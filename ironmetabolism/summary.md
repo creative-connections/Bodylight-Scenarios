@@ -29,4 +29,5 @@
     * [2.1.2 Příjem železa NTBI](#liver/index2prijemntbi.md)
     * [2.1.3 Příjem železa v hemu](#liver/index2prijemhem.md)
     * [2.2 Skladování železa](#liver/index2skladovani.md)
+
   * [O simulátoru](#about.md)
