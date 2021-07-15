@@ -51,14 +51,14 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <!-- hidden input  - buttonparams must be before fmi component - or input with id must be created explicitly -->
 <input id="id6" value="" type="number" style="display:none" />
 
-<bdl-fmi id="idfmi" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.05" guid="{ff6d8a55-f24a-4855-bbf0-86edcafe471e}" valuereferences="637534208,637534244,33554450,33554447" valuelabels="Fe_liv,Fe_liv_in_ser,Fe_liv_2,Fe_ser" inputs="id1,16777260,1,1;id10,16777265,1,1,t" inputlabels="Fe_food,unregulated_absorption"></bdl-fmi>
+<bdl-fmi id="idfmi" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.1" guid="{ff6d8a55-f24a-4855-bbf0-86edcafe471e}" valuereferences="637534208,637534244,33554450,33554447" valuelabels="Fe_liv,Fe_liv_in_ser,Fe_liv_2,Fe_ser" inputs="id1,16777260,1,1;id10,16777265,1,1,t" inputlabels="Fe_food,unregulated_absorption"></bdl-fmi>
 
 
 
 ||| 
 |-------------|-------|
-| Koncentrace železa v potravě [$\frac{\mu g}{h}$] | <bdl-range id="id1" title="" min="0" max="1000" default="219" maxlength="5" step="1"></bdl-range> |
-| Neregulovaná absorpce železa. (chybí zpětná vazba mezi DMT1 a množství železa v organismu) | <bdl-checkbox id="id10" titlemin="absorpce je fyziologicky regulovaná" titlemax="simulace vypnuté regulace - neregulovaná absorpce" default="true"></bdl-checkbox>  |
+| Koncentrace železa v potravě [$\frac{\mu g}{h}$] | <bdl-range id="id1" title="" min="0" max="1000" default="219" step="1"></bdl-range> |
+| Neregulovaná absorpce železa. (chybí zpětná vazba mezi DMT1 a množství železa v organismu) | <bdl-checkbox id="id10" titlemin="absorpce je fyziologicky regulovaná" titlemax="simulace vypnuté regulace - neregulovaná absorpce" default="false"></bdl-checkbox>  |
 
 * Vyzkoušejte si, jak se mění tok železa do jater v závislosti na koncentraci holo-Tf
 * Vyzkoušejte si, jak reaguje hepatocyt množstvím DMT1 (míra otevření kanálu) na množství železa v játrech
