@@ -26,8 +26,8 @@
     * [8.2 Komplexní simulace 2](#iron81.md)
   * [2. Metabolismus železa v játrech](#liver/index.md)
     * [2.1 Příjem železa Tfr1](#liver/index2prijem.md)
-    * [2.1.2 Příjem železa NTBI](#liver/index2prijemntbi.md)
-    * [2.1.3 Příjem železa v hemu](#liver/index2prijemhem.md)
-    * [2.2 Skladování železa](#liver/index2skladovani.md)
-
+    * [2.2 Příjem železa NTBI](#liver/index2prijemntbi.md)
+    * [2.3 Příjem železa v hemu](#liver/index2prijemhem.md)
+    * [2.4 Skladování železa](#liver/index2skladovani.md)
+    * [2.5 Simulace skladování železa](#liver/iron2sim.md) 
   * [O simulátoru](#about.md)
