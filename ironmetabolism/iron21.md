@@ -28,7 +28,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <!--ztraty v bunce -->
 <bdl-bind2a findex="8" aname="CervenaKos_anim" amin="0" amax="159" fmin="0.1" fmax="0.4"></bdl-bind2a>
 <bdl-bind2a-text findex="8" aname="Hodnota5_text" convertor="10,2.73"></bdl-bind2a-text>
-<bdl-bind2a findex="8" aname="Merak5_anim" amin="0" amax="100" fmin="0.1" fmax="0.4"></bdl-bind2a>
+<bdl-bind2a findex="8" aname="Merak5_anim" amin="0" amax="99" fmin="0.1" fmax="0.4"></bdl-bind2a>
 <!-- nevyuzito -->
 <bdl-bind2a findex="7" aname="Merak2Cerveny_anim" amin="0" amax="99" fmin="0" fmax="16"></bdl-bind2a>
 <bdl-bind2a findex="7" aname="SipkaSeda_anim" amin="0" amax="100" fmin="0" fmax="16"></bdl-bind2a>
