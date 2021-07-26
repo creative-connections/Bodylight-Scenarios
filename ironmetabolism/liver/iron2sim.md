@@ -9,7 +9,8 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <div class="w3-row">
 <div class="w3-col s12 m8 l8">
 
-<bdl-animate-adobe src="HepatocytFinalObrazovka02.js" width="800" height="600" name="HepatocytFinalObrazovka02" fromid="idfmi"></bdl-animate-adobe>
+<bdl-animate-adobe src="Hepatocyt_2_FinalObrazovka1.js" width="800" height="600" name="Hepatocyt_2_FinalObrazovka1" fromid="idfmi"></bdl-animate-adobe>
+
 <bdl-bind2a findex="1" aname="children.1.CervenaSipka6_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.ZlutyVodikVnejsiCervenyKanal_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.ZlutyVodikVnitrniCervenyKanal_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
