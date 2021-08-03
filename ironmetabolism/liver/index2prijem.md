@@ -23,9 +23,15 @@ img[alt^="schemaendocyt"] {max-width:270px;}
 </div>
 <div class="w3-half w3-justify">
 
+*[Tf]: Transferin
+*[NTBI]: non-transferrin bound iron
+*[TfR1]: transferin receptor 1
+*[IRE]: iron response element - smyčka na mRNA, která funguje jako čidlo koncentrace železa efektivně zajišťující represi translace mRNA v případě, kdy je v buňce železa nedostatek.
+*[IRP]: iron regulatory proteins - se naváží na IRE smyčku a zablokují tak posun ribozomu podél mRNA
+
 V principu existují tři způsoby příjmu železa játry, nejvíce se však uplatňuje mechanismus první:
 
- 1. Příjem železa vázaného na T
+ 1. Příjem železa vázaného na Tf
  2. Příjem železa nevázaného na Tf, tzv. NTBI (non-transferrin bound iron)
  3. Příjem železa asociovaného s hemem/hemoglobinem
 
