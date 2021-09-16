@@ -10,6 +10,8 @@
 <div class="w3-half">
 <div class="w3-justify w3-margin-left">
 
+*[Tf]: transferin
+
 Játra plní tři základní funkce při udržování systémové homeostázy železa:
 
 * jsou hlavním místem pro produkci proteinů, které udržují systémovou rovnováhu

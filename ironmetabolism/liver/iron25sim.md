@@ -9,7 +9,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <div class="w3-row">
 <div class="w3-col s12 m8 l8">
 
-<bdl-animate-adobe src="Hepatocyt_2_FinalObrazovka1.js" width="800" height="600" name="Hepatocyt_2_FinalObrazovka1" fromid="idfmi"></bdl-animate-adobe>
+<bdl-animate-adobe src="Hepatocyt_2_FinalObrazovka2.js" width="800" height="600" name="Hepatocyt_2_FinalObrazovka2" fromid="idfmi"></bdl-animate-adobe>
 
 <bdl-bind2a findex="1" aname="children.1.CervenaSipka6_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.ZlutyVodikVnejsiCervenyKanal_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
@@ -63,17 +63,25 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 | Koncentrace železa v potravě [$\frac{\mu g}{h}$] | <bdl-range id="id1" title="" min="0" max="1000" default="219" step="1"></bdl-range> |
 | Neregulovaná absorpce železa. (chybí zpětná vazba mezi DMT1 a množství železa v organismu) | <bdl-checkbox id="id10" titlemin="absorpce je fyziologicky regulovaná" titlemax="simulace vypnuté regulace - neregulovaná absorpce" default="false"></bdl-checkbox>  |
 
-* Vyzkoušejte si, jak se mění tok železa do jater v závislosti na koncentraci holo-Tf
-* Vyzkoušejte si, jak reaguje hepatocyt množstvím DMT1 (míra otevření kanálu) na množství železa v játrech
-* Vyzkoušejte si, co způsobí malabsorpce železa
-* Vyzkoušejte si, k čemu povede hypotetický neregulovaný příjem železa z potravy do organismu.
+Možnosti regulace:
 
-* V jakých formách je železo uloženo/skladováno v hepatocytu?
-* Odkud pochází energie nutná k transportu železa do hepatocytu prostřednictvím DMT1?
-* K jaké chemické reakci dochází v endocytickém váčku?
-* Co je endocytóza obecně a co ji v případě příjmu železa do hepatocytu iniciuje?
-* Jaký je hlavní mechanismu příjmu železa do jater?
-* Jaké jsou sekundární mechanismy příjmu železa do jater a při jakých stavech hrají signifikantní roli?
+Příjem železa
+Knock-out genu pro Fpn
+
+Vyzkoušejte si a zodpovězte:
+
+Vyzkoušejte si, jak reaguje počet Fpn transportérů (míra otevření) na množství železa v hepatocytu.
+Vyzkoušejte si hypotetický genový knockout pro Fpn - k čemu povede? Ověřte v chování v modelu.
+Sledujte vývoj saturace transferinu (~ množství železa v séru) se změnou příjmu železa v potravě. 
+Vyzkoušejte si, jak se mění obsah železa v mitochondriích v závislosti na obsahu železa v cytozolu.
+
+Co má za následek genový knockout Fpn? Jak se změní koncentrace železa v hepatocytu a v séru?
+Jak se genový knockout Fpn projeví na počtu DMT1 (míra otevření)?
+Jak se genový knockout Fpn projeví na množství železa v krvi? Vysvětlete.
+Vysvětlete pojem IRE a IRP. Jakou mají funkci?
+Jakou roli mají mitochondrie v buňce a k čemu využívají železo?
+Vyjmenujte alespoň 3 molekulární systémy využívající pro svou funkci železo.
+
 
 </div>
 </div>

@@ -15,8 +15,12 @@
 
 ### 2. Příjem železa nevázaného na Tf, tzv. NTBI (non-transferrin bound iron)
 
-*[Tf]: Transferrin
+*[Tf]: Transferin
 *[NTBI]: non-transferrin bound iron
+*[TfR1]: transferin receptor 1
+*[IRE]: iron response element - smyčka na mRNA, která funguje jako čidlo koncentrace železa efektivně zajišťující represi translace mRNA v případě, kdy je v buňce železa nedostatek.
+*[IRP]: iron regulatory proteins - se naváží na IRE smyčku a zablokují tak posun ribozomu podél mRNA
+*[DMT1]: divalent metal transporter 1 - transportér divalentních kovů
 
 V případech silného přetížení organismu železem překročí hladina železa kapacitu Tf a v plazmě je pak větší poměr nevázaného železa. Na řadu příchází příjem železa nevázaného na Tf.
 
