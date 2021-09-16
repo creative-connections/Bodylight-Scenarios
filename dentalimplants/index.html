@@ -99,7 +99,7 @@
                         // define a horizontal Panel to place the node's text alongside the buttons
                         $(go.Panel, "Horizontal",
                                 $(go.TextBlock,
-                                        { font: "30px Roboto, sans-serif", margin: 5 },
+                                        { font: "8px Roboto, sans-serif", margin: 5 },
                                         new go.Binding("text", "key")),
                                 // define a vertical panel to place the node's two buttons one above the other
                                 $(go.Panel, "Vertical",
@@ -149,7 +149,7 @@
                         // define a horizontal Panel to place the node's text alongside the buttons
                         $(go.Panel, "Horizontal",
                                 $(go.TextBlock,
-                                        { font: "30px Roboto, sans-serif", margin: 5 },
+                                        { font: "8px Roboto, sans-serif", margin: 5 },
                                         new go.Binding("text", "key")),
                                 // define a vertical panel to place the node's two buttons one above the other
                                 $(go.Panel, "Vertical",
@@ -279,6 +279,7 @@
           },
           {
             key: "MHD",
+            category: "decision3",
             a:"S",
             aText:"střední řezák",
             aToolTip:"střední řezák",
@@ -301,12 +302,63 @@
             text: "jednočlenná mezera dolní frontální úsek  - detaily zatím nejsou v tomto rozhodovacím stromě"
           },          {
             key: "MHFS",
+            category: "decision",
+            a:"M",
+            aText:"mezera",
+            aToolTip:"mezera",
+            b:"K",
+            bText:"kost",
+            bToolTip: "kost",
+          },
+          {
+            key: "MHFSM",
+            category: "decision",
+            a:"V",
+            aText:">8,5+-1mm",
+            aToolTip:"mezera větší jak 8,5 mm",
+            b:"M",
+            bText:"<8,5+-1mm",
+            bToolTip: "mezera menší jak 8,5 mm",
+          },
+          {
+            key: "MHFSMV",
             category: "suggestion",
-            text: "horní frontální úsek, střední řezák, mezera: ≥ 8,5 ± 1 mm, vyhovující vzdálenost apexů – implantace\n" +
-                    ": < 8,5 ± 1 mm, nevyhovující vzdálenost apexů\n" +
+            text: "vyhovující vzdálenost apexů – implantace"
+          },
+          {
+            key: "MHFSMM",
+            category: "suggestion",
+            text: "nevyhovující vzdálenost apexů\n" +
                     "– ortodoncie, stripping\n" +
                     "–přepracování protetické práce sousedních zubů"
           },
+          {
+            key: "MHFSK",
+            category: "decision",
+            a:"H",
+            aText:"horizontálně",
+            aToolTip:"horizontálně",
+            b:"V",
+            bText:"vertikálně",
+            bToolTip:"vertikálně",
+          },
+          {
+            key:"MHFSKH",
+            category: "suggestion",
+            text: "≥ 8 mm – implantace\n" +
+                    ": < 8-3 mm – augmentace s implantací\n" +
+                    ": < 3 mm – augmentace\n" +
+                    "– implantace za 4-9 měsíců"
+          },
+          {
+            key: "MHFSKV",
+            category: "suggestion",
+            text: "2-3 mm pod CS hranici – implantace\n" +
+                    ": > 3-6 mm pod CS hranici – augmentace s implantací\n" +
+                    ": > 6 mm pod CS hranici – augmentace\n" +
+                    "– implantace za 6-9 měsíců"
+          },
+
           {
             key: "MHFP",
             category: "suggestion",
