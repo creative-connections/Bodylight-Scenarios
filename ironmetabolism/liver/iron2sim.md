@@ -10,41 +10,42 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <div class="w3-col s12 m8 l8">
 
 <bdl-animate-adobe src="Hepatocyt_2_FinalObrazovka1.js" width="800" height="600" name="Hepatocyt_2_FinalObrazovka1" fromid="idfmi"></bdl-animate-adobe>
-
+<bdl-bind2a-text findex="4" aname="children.1.Hodnota8_text" convertor="1,57.717"></bdl-bind2a-text>
+<bdl-bind2a-text findex="3" aname="children.1.Hodnota3_text" convertor="1,1.513"></bdl-bind2a-text>
+<bdl-bind2a-text findex="2" aname="children.1.Hodnota7_text" convertor="1,19.24"></bdl-bind2a-text>
+<bdl-bind2a findex="1" aname="children.1.CervenaSipka5_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranzova1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranzova2_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.1.Merak7_anim" amin="0" amax="99" fmin="0" fmax="40"></bdl-bind2a>
+<bdl-bind2a findex="3" aname="children.1.children.265.FeTransferin_anim" amin="0" amax="99" fmin="0" fmax="3"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranova2_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.ModraSipka2_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.ModraSipka1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.CervenaSipka6_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a findex="1" aname="children.1.ZlutyVodikVnejsiCervenyKanal_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.CervenaSipka1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranova1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.ZlutyVodikVnitrniCervenyKanal_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.ZlutyVodikVnejsiCervenyKanal_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.CervenaSipka4_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.SipkaFialovaCervenaVnejsi_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.KanalCerveny_anim" amin="99" amax="0" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a findex="1" aname="children.1.CervenaSipka5_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-
-<bdl-bind2a findex="1" aname="children.1.children.171.SipkaHneda2Vehicle_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a findex="1" aname="children.1.children.171.SipkaHneda1Vehicle_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a findex="1" aname="children.1.children.171.PrechodUvnitrVehicle_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a findex="1" aname="children.1.children.171.SipkaZlutaHUvnitrVehicle_anim_1" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a findex="1" aname="children.1.children.171.KanalCervenyVehicle2_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a findex="1" aname="children.1.children.171.SipkaZlutaHUvnitrVehicle_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a findex="1" aname="children.1.children.171.SipkaCervenaHUvnitrVehicle_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a findex="1" aname="children.1.children.171.KanalZlutyVehicle_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a findex="1" aname="children.1.children.171.OranzovaSipkaSpodniVehicle_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a findex="1" aname="children.1.CervenaSipka1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a findex="1" aname="children.1.ModraSipka1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a findex="1" aname="children.1.ModraSipka2_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranova2_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranzova1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranzova2_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranova1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-
-
-
-<bdl-bind2a findex="2" aname="children.1.Fe2Skupina_anim" amin="159" amax="0" fmin="0" fmax="40"></bdl-bind2a>
-<bdl-bind2a findex="2" aname="children.1.Merak7_anim" amin="0" amax="99" fmin="0" fmax="40"></bdl-bind2a>
-<bdl-bind2a-text findex="2" aname="children.1.Hodnota7_text" ></bdl-bind2a-text>
-
-<bdl-bind2a findex="3" aname="children.1.children.259.FeTransferin_anim" amin="0" amax="159" fmin="0.5" fmax="3"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.1.Fe2Skupina_anim" amin="159" amax="0" fmin="9.6" fmax="28.86"></bdl-bind2a>
+<bdl-bind2a findex="4" aname="children.1.Fe3Skupina_anim" amin="0" amax="159" fmin="28.86" fmax="86.5"></bdl-bind2a>
+<bdl-bind2a findex="6" aname="children.1.SipkaFialovaCervena1_anim" amin="0" amax="99" fmin="56.7" fmax="58.7"></bdl-bind2a>
+<bdl-bind2a findex="5" aname="children.1.SipkaCervenoFialova1_anim" amin="0" amax="99" fmin="56.7" fmax="58.7"></bdl-bind2a>
+<bdl-bind2a findex="4" aname="children.1.Merak8_anim" amin="0" amax="99" fmin="0" fmax="114"></bdl-bind2a>
 <bdl-bind2a findex="3" aname="children.1.Merak3_anim" amin="0" amax="99" fmin="0.5" fmax="3"></bdl-bind2a>
-<bdl-bind2a-text findex="3" aname="children.1.Hodnota3_text" ></bdl-bind2a-text>
+<bdl-bind2a findex="1" aname="children.1.children.171.OranzovaSipkaSpodniVehicle_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.171.KanalZlutyVehicle_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.171.SipkaCervenaHUvnitrVehicle_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.171.SipkaZlutaHUvnitrVehicle_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.171.KanalCervenyVehicle2_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.171.SipkaZlutaHUvnitrVehicle_anim_1" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.171.PrechodUvnitrVehicle_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.171.SipkaHneda1Vehicle_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.171.SipkaHneda2Vehicle_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+
+
 
 
 </div>
@@ -52,16 +53,20 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 <button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
 <!-- hidden input  - buttonparams must be before fmi component - or input with id must be created explicitly -->
-<input id="id6" value="" type="number" style="display:none" />
+<input id="id6" value="" type="number" style="display:none"/>
 
-<bdl-fmi id="idfmi" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.1" guid="{ff6d8a55-f24a-4855-bbf0-86edcafe471e}" valuereferences="637534208,637534244,33554450,33554447" valuelabels="Fe_liv,Fe_liv_in_ser,Fe_liv_2,Fe_ser" inputs="id1,16777260,1,1;id10,16777265,1,1,t" inputlabels="Fe_food,unregulated_absorption"></bdl-fmi>
+<bdl-fmi id="idfmi" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.1" guid="{ff6d8a55-f24a-4855-bbf0-86edcafe471e}" valuereferences="637534208,637534244,33554450,33554447,33554451,637534242,637534243" valuelabels="Fe_liv,Fe_liv_in_ser,Fe_liv_2,Fe_ser,Fe_liv_3,Fe_liv_to_ferritin,Fe_liv_from_ferritin" inputs="id1,16777260,1,1;id10,16777265,1,1,t;id11,16777262,1,1,t" inputlabels="Fe_food,unregulated_absorption,malabsorption"></bdl-fmi>
+
+
+
 
 
 
 ||| 
 |-------------|-------|
 | Koncentrace železa v potravě [$\frac{\mu g}{h}$] | <bdl-range id="id1" title="" min="0" max="1000" default="219" step="1"></bdl-range> |
-| Neregulovaná absorpce železa. (chybí zpětná vazba mezi DMT1 a množství železa v organismu) | <bdl-checkbox id="id10" titlemin="absorpce je fyziologicky regulovaná" titlemax="simulace vypnuté regulace - neregulovaná absorpce" default="false"></bdl-checkbox>  |
+| Malabsorpce | <bdl-range id="id11" title="" min="0" max="1" default="0" step="0.1"></bdl-range>  |
+| Regulace absorpce v DMT1 podle množství Fe v séru. | <bdl-checkbox id="id10" titlemin="absorpce je fyziologicky regulovaná" titlemax="simulace vypnuté regulace - neregulovaná absorpce" default="false"></bdl-checkbox>  |
 
 * Vyzkoušejte si, jak se mění tok železa do jater v závislosti na koncentraci holo-Tf
 * Vyzkoušejte si, jak reaguje hepatocyt množstvím DMT1 (míra otevření kanálu) na množství železa v játrech
@@ -79,7 +84,9 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 </div>
 
 <div id="legenda" class="w3-card w3-small w3-padding" style="display:none;z-index:1;position:absolute;top:20px;right:10px;width:500px;background-color:white">
-<button class="w3-button w3-theme w3-right" onclick="document.getElementById('legenda').style.display='none'">Skryj legendu <i class="fa fa-close w3-large"></i></button>
+
+<button class="w3-button w3-theme w3-right" onclick="document.getElementById('legenda').style.display='none'">Skryj legendu <i class="fa fa-close"></i> </button>
+
 
 |Schéma|Popis/funkce|
 |---|---|

@@ -64,7 +64,7 @@ Regulace příjmu Fe a příjmu a výdeje Fe do/z ferritinu. Regulace příjmu a
 
 ||| 
 |-------------:|-------|
-| Koncentrace železa v potravě | <bdl-range id="id1" title="" min="0" max="1000" default="219" step="1"></bdl-range> $\frac{\mu g}{h}$ |
+| Koncentrace železa v potravě | <bdl-range id="id1" title="" min="0" max="1000" default="219" step="1" listenkey="true"></bdl-range> $\frac{\mu g}{h}$ |
 | Přítok železa do ferritinu v buňce | <bdl-range id="id2" title="" min="0" max="10" default="3" step="0.1"></bdl-range>  |
 | Odtok železa z ferritinu v buňce | <bdl-range id="id3" title="" min="0" max="10" default="0.3" step="0.1"></bdl-range>  |
 
