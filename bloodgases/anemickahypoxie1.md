@@ -12,9 +12,11 @@ Anemická (nebo také transportní) hypoxie je způsobená nedostatečným počt
 <div class="w3-row">
 <div class="w3-third">
 
+
 **Plicní kapiláry v alveolech**
 <bdl-chartjs-barplot id="idp11" fromid="idfmi"  refindex="6"  extremelimits="0,1"  normallimits="0,1" responsive="true" labels="SAT" initialdata="0.97"></bdl-chartjs-barplot> 
-<bdl-chartjs-time id="idch1" width="300" height="200" fromid="idfmi" labels="" initialdata="" refindex="6" refvalues="1"></bdl-chartjs-time>
+<bdl-chartjs-time id="idch1" width="300" height="100" fromid="idfmi" labels="SAT" initialdata="" refindex="6" refvalues="1"></bdl-chartjs-time>
+<bdl-chartjs-time id="idch2" width="300" height="100" fromid="idfmi" labels="BloodHB" initialdata="" refindex="15" refvalues="1"></bdl-chartjs-time>
 
 <bdl-chartjs-barplot  id="idp12"  fromid="idfmi"  refindex="5"  extremelimits="0,150" labels="pO2" normallimits="90,110"  initialdata="94.01"  convertors="1,133.322" responsive="true"></bdl-chartjs-barplot>
 <bdl-chartjs-barplot  id="idp13"  fromid="idfmi"  refindex="7"  extremelimits="0,75" labels="pCO2" normallimits="35,45"  initialdata="40"  convertors="1,133.322" responsive="true"></bdl-chartjs-barplot>
