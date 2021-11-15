@@ -5,6 +5,7 @@
 <bdl-chartjs-fixed id="id10" width="500" height="300" fromid="idfmi" refindex="2" refvalues="101" maxdata="10"></bdl-chartjs-time>
 
 <bdl-chartjs-fixed-xy id="id11" width="500" height="300" fromid="idfmi" xrefindex="103" xrefvalues="101" refindex="2" refvalues="101" maxdata="10"></bdl-chartjs-time-xy>
+
 </div>
 <div class="w3-half">
 
@@ -24,7 +25,7 @@
 
 # parciální tlaky plynů
 
-<bdl-chartjs fromid="idfmi" width="300" height="300" id="id12" refindex="204" refvalues="2" type="doughnut" labels="PCO2,PO2"></bdl-chartjs>
+<bdl-chartjs fromid="idfmi" width="300" height="300" id="id12" refindex="204" refvalues="2" type="doughnut" labels="PCO2 mmHg,PO2 mmHg" convertors="1,760;1,760"></bdl-chartjs>
 
 </div>
 </div>
