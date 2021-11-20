@@ -50,7 +50,7 @@ PV diagram:
   width="100"
   height="60"
   responsive="true"
-  refvalues="2"></bdl-chartjs-xy>
+  refvalues="2" throttle="0"></bdl-chartjs-xy>
   
 </div>
 </div>

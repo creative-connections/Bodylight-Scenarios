@@ -51,7 +51,7 @@ PV diagram pravé síně:
   width="100"
   height="60"
   responsive="true"
-  refvalues="2"></bdl-chartjs-xy>
+  refvalues="2" throttle="50" ></bdl-chartjs-xy>
 
 PV diagram pravé komory:
 <bdl-chartjs-xy 
@@ -63,7 +63,7 @@ PV diagram pravé komory:
   width="100"
   height="60"
   responsive="true"
-  refvalues="2"></bdl-chartjs-xy>
+  refvalues="2" throttle="50"></bdl-chartjs-xy>
 </div>
 <div class="w3-col s12 l4">
 PV diagram levé síně:
@@ -76,7 +76,7 @@ PV diagram levé síně:
   width="100"
   height="60"
   responsive="true"
-  refvalues="2"></bdl-chartjs-xy>
+  refvalues="2" throttle="50"></bdl-chartjs-xy>
   
 PV diagram levé komory:
 <bdl-chartjs-xy 
@@ -88,7 +88,7 @@ PV diagram levé komory:
   width="100"
   height="60"
   responsive="true"
-  refvalues="2"></bdl-chartjs-xy>
+  refvalues="2" throttle="50"></bdl-chartjs-xy>
   
 </div>
 </div>

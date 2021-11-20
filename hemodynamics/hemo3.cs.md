@@ -53,7 +53,7 @@ Objem krve v levé komoře:
    labels="Left Ventricle Volume" refindex="0"  refvalues="1"
       ylabel="objem (ml)"
       xlabel="čas (s)"
-      convertors="1000000,1">></bdl-chartjs-time>
+      convertors="1000000,1"  throttle="50"></bdl-chartjs-time>
   
 </div>
 </div>

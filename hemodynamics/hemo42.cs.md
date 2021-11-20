@@ -45,7 +45,7 @@ Tlaky v levé komoře
    refindex="1"  refvalues="3"
    ylabel="tlak (mmHg)"
      xlabel="čas (s)"
-     convertors="0.00750062,1;0.00750062,1;0.00750062,1"></bdl-chartjs-time>
+     convertors="0.00750062,1;0.00750062,1;0.00750062,1" throttle="0"></bdl-chartjs-time>
      
 Objem krve v levé komoře:
 <bdl-chartjs-time
@@ -57,7 +57,7 @@ Objem krve v levé komoře:
    labels="Left Ventricle Volume" refindex="0"  refvalues="1"
       ylabel="objem (ml)"
       xlabel="čas (s)"
-      convertors="1000000,1"></bdl-chartjs-time>
+      convertors="1000000,1" throttle="0"></bdl-chartjs-time>
   
 </div>
 <div class="w3-col s12 l4">
@@ -72,7 +72,7 @@ Tlaky v pravé komoře:
    refindex="8"  refvalues="3"
    ylabel="tlak (mmHg)"
      xlabel="čas (s)"
-     convertors="0.00750062,1;0.00750062,1;0.00750062,1"></bdl-chartjs-time>
+     convertors="0.00750062,1;0.00750062,1;0.00750062,1" throttle="0"></bdl-chartjs-time>
       
 Objem krve v pravé komoře:
 <bdl-chartjs-time
@@ -85,7 +85,7 @@ Objem krve v pravé komoře:
    refindex="11"  refvalues="1"
       ylabel="objem (ml)"
       xlabel="čas (s)"
-      convertors="1000000,1"></bdl-chartjs-time>
+      convertors="1000000,1" throttle="0"></bdl-chartjs-time>
   
 </div>
 </div>

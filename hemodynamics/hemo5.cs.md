@@ -46,7 +46,7 @@ Wiggersův diagram:
   width="300"
   height="40"
   responsive="true"
-  maxdata="45"></bdl-ecg>      
+  maxdata="45" throttle="50"></bdl-ecg>      
 <bdl-chartjs-time
    id="id11"  
    width="300"  
@@ -59,7 +59,7 @@ Wiggersův diagram:
    xlabel="čas (s)"
    convertors="0.00750062,1;0.00750062,1;0.00750062,1"
    sectionid="id5" 
-   maxdata="400"></bdl-chartjs-time>  
+   maxdata="400" throttle="50"></bdl-chartjs-time>  
 <bdl-chartjs-time
    id="id11"  
    width="300"  
@@ -72,7 +72,7 @@ Wiggersův diagram:
    xlabel="čas (s)"
    convertors="1000000,1"
    sectionid="id5" 
-   maxdata="400"></bdl-chartjs-time>
+   maxdata="400" throttle="50"></bdl-chartjs-time>
 
   
 </div>
