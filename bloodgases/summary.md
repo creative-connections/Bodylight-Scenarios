@@ -1,3 +1,5 @@
   * [Úvod](#index.md)
+    * [BloodyMary2](#bloodymary2.md)
+    * [BloodyMary3](#bloodymary3.md)
     * [Anemická hypoxie](#anemickahypoxie1.md)
     * [Komplexní simulace plic](#komplexnisimulator.md)
