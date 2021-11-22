@@ -2,7 +2,9 @@
 img[alt^="image"] {max-width:20px;}
 img[alt^="bigimage"] {  max-height:60px}
 tbody tr:nth-child(even){background-color:#f1f1f1}
+
 </style>
+
 <bdl-tabs idlist="uvod,modelplic,modeltkani,krivkao2,krivkaco2,porovnani" 
   titlelist="Úvod,Model plic,Model tkání,Křivka O2,KřivkaCO2,Porovnání O2 a CO2"></bdl-tabs>
 <div id="uvod">
