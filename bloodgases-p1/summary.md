@@ -1,6 +1,2 @@
-  * [Úvod](#index.md)
-    * [Simulátor krevních plynů 1](#bloodymary2.md)
-    * [Simulátor krevních plynů 2](#bloodymary3.md)
-    * [KřivkaO2](#KřivkaO2.md)
-    * [KřivkaCO2](#KřivkaCO2.md)
- 
+  * [Křivky O2CO2](#bloodymaryO2CO2.md)
+  * [Křivky O2CO2 více proměnných](#bloodymaryO2CO2ViceProm.md)
