@@ -43,12 +43,13 @@ PAO2:
 
 <!--bdl-chartjs-time id="id50" width="300" height="200" fromid="idfmi" labels="fsh.y,fsh.k" initialdata="" refindex="742" refvalues="3"></bdl-chartjs-time-->
 
+<bdl-animate-adobe src="AlveolaDve_Smycka_Min_Max_Min_09_12_2021.js" width="800" height="600" name="AlveolaDve_Smycka_Min_Max_Min_09_12_2021" fromid="idfmi"></bdl-animate-adobe>
 
+<bdl-bind2a findex="743" aname="children.0.ZkratkaAnimace2_anim" amin="0" amax="100" fmin="0" fmax="1"></bdl-bind2a>
 
 </div></div>
 
-<bdl-animate-adobe src="AlveolaDve_14_2_2019.js" width="800" height="600" name="AlveolaDve_14_2_2019" fromid="idfmi"></bdl-animate-adobe>
-<bdl-bind2a findex="743" aname="children.0.ZkratkaAnimace2_anim" amin="0" amax="100" fmin="0" fmax="1"></bdl-bind2a>
+
 
 
 
