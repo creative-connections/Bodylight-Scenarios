@@ -33,9 +33,9 @@
 
 <bdl-range id="id19" title="Pulonary shunt fractions %" min="0" max="60" default="2" step="1" maxlength="10"></bdl-range>
 
-<bdl-range id="id22" title="Alveolar ventilation distribution %" min="0" max="100" default="50" step="1" maxlength="2"></bdl-range>
+<bdl-range id="id22" title="Alveolar ventilation distribution %" min="1" max="99" default="50" step="1" maxlength="2"></bdl-range>
 
-<bdl-range id="id20" title="Alveolar perfusion distribution %" min="0" max="100" default="50" step="1" maxlength="2"></bdl-range>
+<bdl-range id="id20" title="Alveolar perfusion distribution %" min="1" max="99" default="50" step="1" maxlength="2"></bdl-range>
 
 
 VAi <bdl-value fromid="idfmi" refindex="628" convertors="6e7,1,0"></bdl-value>ml/min
