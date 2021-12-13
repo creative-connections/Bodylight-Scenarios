@@ -54,14 +54,14 @@ if (reversed == null) { reversed = false; }
 
 	// Vrstva_1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.lf(["#FF0000","#0092FF"],[0,1],1.2,26.1,1.8,-27.4).s().p("AhiElQAYgBAQgPQAOgNACgOIAFhLIAEg5QABgggMg9IgDgSQgOhOATg+QADgLAPgmQARguAEgWQACgKgHgIQgIgJgUgDQABgMAHgMQAPgaAjgFQAjgFAZARQAMAJAFAKQgbAUgJARQgDAHgFAWQgGAegSAwQgLAcgFARQgPAwALBBIADAQQANBEgBAlQgBAcgDAhIgDAnQgCAeABAaQAAAOAFALQAHASAXATg");
-	this.shape.setTransform(10.5729,35.9029,1.0653,1.0653);
+	this.shape.graphics.lf(["#FF0000","#0092FF"],[0,1],-1.1,27.8,-1.6,-29.1).s().p("AgUE/QAEgLAAgPQABgcgCggIgCgpQgDgjgBgeQgCgoANhIIADgRQAJhGgNgzIgPgwQgRgzgFggQgFgXgDgIQgIgRgZgWQAEgKAMgKQAXgSAhAFQAgAFAOAcQAHANAAANQgSADgIAKQgHAIADALQADAXAQAxIARA1QARBCgNBSIgCATQgLBCABAhQAAAWADAoIAFBPQACAQANANQAPAQAWABIiNAvQAWgUAHgUg");
+	this.shape.setTransform(10.525,35.905);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.Zkratka, new cjs.Rectangle(0,0,21.2,71.8), null);
+}).prototype = getMCSymbolPrototype(lib.Zkratka, new cjs.Rectangle(1.3,0,18.5,71.8), null);
 
 
 (lib.Kapilary2 = function(mode,startPosition,loop,reversed) {
@@ -515,14 +515,15 @@ if (reversed == null) { reversed = false; }
 
 	// Vrstva_1
 	this.instance = new lib.Zkratka();
-	this.instance.setTransform(10.6,35.9,0.3019,1,0,0,0,10.6,35.9);
+	this.instance.setTransform(10.1,36.4,0.3019,1.0706,0,0,0,9,36.4);
+	this.instance._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({scaleX:1},99).to({scaleX:0.3019},100).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({_off:false},0).to({regX:10.5,regY:35.8,scaleX:1.5435,scaleY:1.0563,x:5,y:37.35},98).to({regX:9,regY:36.4,scaleX:0.3019,scaleY:1.0706,x:10.1,y:36.4},100).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,21.2,71.8);
+p.nominalBounds = new cjs.Rectangle(-9.2,-2.5,30.8,78);
 
 
 (lib.AlveolyKulicky = function(mode,startPosition,loop,reversed) {
