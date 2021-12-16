@@ -7,7 +7,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <div class="w3-row">
 <div class="w3-col s12 m7 l7">
 
-<bdl-animate-adobe src="DuodenumFinalObrazovka3.js" width="800" height="600" name="DuodenumFinalObrazovka3" fromid="idfmi"></bdl-animate-adobe>
+<bdl-animate-adobe src="DuodenumFinalObrazovka3.js" width="824" height="824" name="DuodenumFinalObrazovka3" fromid="idfmi" responsive="true"></bdl-animate-adobe>
 
 <!--prijem-->
 <bdl-bind2a findex="3" aname="children.0.SipkaCervena1_anim" amin="0" amax="159" fmin="0" fmax="1000"></bdl-bind2a>

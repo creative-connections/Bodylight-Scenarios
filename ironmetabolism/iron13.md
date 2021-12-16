@@ -7,7 +7,7 @@ img[alt^="bigimage"] {  max-height:60px}
 
 <div class="w3-col s12 m7 l7">
 
-<bdl-animate-adobe src="DuodenumFinalObrazovka1.js" width="800" height="600" name="DuodenumFinalObrazovka1" fromid="idfmi"></bdl-animate-adobe>
+<bdl-animate-adobe src="DuodenumFinalObrazovka1.js" width="800" height="800" name="DuodenumFinalObrazovka1" fromid="idfmi" responsive="true"></bdl-animate-adobe>
 <!--prijem-->
 <bdl-bind2a findex="3" aname="children.0.SipkaCervena1_anim" amin="0" amax="159" fmin="0" fmax="1000"></bdl-bind2a>
 
