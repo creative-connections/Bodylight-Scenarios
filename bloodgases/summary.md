@@ -1,3 +1,5 @@
-  * [Úvod](#index.md)
+  * [Úvod](#index.md) 
     * [Anemická hypoxie](#anemickahypoxie1.md)
     * [Komplexní simulace plic](#komplexnisimulator.md)
+    * [Simulátor krevních plynů 1](#bloodymary2.md)
+    * [Simulátor krevních plynů 2](#bloodymary3.md)
