@@ -52,7 +52,7 @@ V simulátoru si vyzkoušíte vliv změny koncentrace hemoglobinu na distribuci 
 | koncentrace Hb v krvinkach (norma 8.4) | <bdl-range id="id6" title="" min="4.4" max="12" default="8.4" step="0.1" maxlength="7"></bdl-range> |
 
 
-<bdl-animate-adobe src="AlveolaTK.js" width="404" height="227" name="AlveolaTK" fromid="idfmi"></bdl-animate-adobe>
+<bdl-animate-adobe src="AlveolaTK.js" width="404" height="227" name="AlveolaTK" fromid="idfmi" responsive="true"></bdl-animate-adobe>
 
 <bdl-bind2a findex="-1" aname="Alveola_anim" amin="0" amax="99" fmin="0" fmax="1" convertor="Math.sin(x/10)**2"></bdl-bind2a>
 
