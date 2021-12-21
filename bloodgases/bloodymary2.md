@@ -27,13 +27,8 @@
 ## &nbsp;
 ## &nbsp;
 
-
-
 ![dychani](dychani.gif)
-
-<bdl-chartjs-time id="0" width="400" height="200" fromid="idfmi" labels="" initialdata="" refindex="45" refvalues="2"></bdl-chartjs-time>
-
-
+  
 </div>
 <div class="w3-rest w3-right-align">
 
