@@ -167,26 +167,8 @@ V simulátoru nasimulujeme stav hemosiderózy
 
 <bdl-quiz question="1. Jak v rámci možností modelu nasimulujete stav hemosiderózy?" answers="opakovaná transfúze|dlouhodobé krevní ztráty|knockout genu pro hepcidin" correctoptions="true|false|false" explanations="ano, z předchozího textu, hemosideróza je způsobená dlouhodobě zvýšenou koncentrací železa v séru (např. opakovanými transfúzemi) a jeho následná kumulace v orgánech a tkáních|ne|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 
-<bdl-quiz question="2. z předchozího úkolu nastavte parametr, který simuuje hemosiderózu a nechte simulaci běžet aspoň 48 h (simulační čas)?" answers="opakovaná transfúze|dlouhodobé krevní ztráty|knockout genu pro hepcidin" correctoptions="true|false|false" explanations="ano, z předchozího textu, hemosideróza je způsobená dlouhodobě zvýšenou koncentrací železa v séru (např. opakovanými transfúzemi) a jeho následná kumulace v orgánech a tkáních|ne|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="2. z předchozího úkolu nastavte parametr, který simuuje hemosiderózu a nechte simulaci běžet aspoň 2 dny (48 h simulační čas). Jaké jsou hodnoty koncentrací obou typů iontů železa v enterocytu?" answers="zvýšené|snížené" correctoptions="true|false|false" explanations="ano, ze simulace by měli být hodnoty výrazně zvýšené oproti normované hodnotě 1.0, hemosideróza se projevuje kumulací železa v orgánech a tkáních|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 
-
-
-
-* Vyzkoušejte si, jak reagují hladiny/koncentrace na neregulovaný příjem železa z potravy (ztráta zpětné vazby).
-* Vyzkoušejte si simulaci malabsorpce.
-* Vyzkoušejte si, jak se mění hladiny/koncentrace HEP, Fpn a Tf v závislosti na knock-out Fpn genů pro různé orgánové systémy.
-
-<!--bdl-chartjs-time id="id10" width="400" height="200" fromid="idfmi" labels="fe duo in ser" initialdata="" refindex="16" refvalues="1" maxdata="1024"></bdl-chartjs-time>
-<bdl-chartjs-time id="id11" width="300" height="200" fromid="idfmi" labels="duoin" initialdata="" refindex="13" refvalues="1" maxdata="1024"></bdl-chartjs-time>
-<bdl-chartjs-time id="id12" width="300" height="200" fromid="idfmi" labels="mrna" initialdata="" refindex="14" refvalues="1" maxdata="1024"></bdl-chartjs-time>
-<bdl-chartjs-time id="id13" width="300" height="200" fromid="idfmi" labels="duo" initialdata="" refindex="15" refvalues="1" maxdata="1024"></bdl-chartjs-time>
-<bdl-chartjs-time id="id14" width="300" height="200" fromid="idfmi" labels="Fe_duo_out_ser" initialdata="" refindex="16" refvalues="1" maxdata="1024"></bdl-chartjs-time>
-<bdl-chartjs-time id="id13" width="300" height="200" fromid="idfmi" labels="koncentrace Fe v krvi" initialdata="" refindex="18" refvalues="1" maxdata="1024" xlabel="čas (hodiny)" ylabel="množství orientační (ug)"></bdl-chartjs-time-->
-
-
-<bdl-quiz question="Jak v rámci možností modelu nasimulujete stav hemochromatózy (najděte dvě možnosti)?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Jak v rámci možností modelu nasimulujete stav vedoucí k anémii?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Jakou očekáváte změnu hladin železa při postupném knock-out Fpn v jednotlivých orgánech?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 
 </div>
 </div>
