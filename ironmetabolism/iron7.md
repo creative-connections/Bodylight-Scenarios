@@ -6,7 +6,7 @@ img[alt^="ztraty"] {max-width:200px;}
 
 ![ztratyprijemkrve](ztratyprijemkrve.png)
 
-**Obrázek:** schéma ztráty krve jako umělého odběru krve pomocí stříkačky a příjem krve pomocí krevního vaku v následujícím simulátoru. Je potřeba si uvědomit, že ztráta a příjem krve jsou neodlučitelně spojeny s přesunem železa z/do organismu a s tím souvisí i patologické stavy plynoucí z nedostatku, resp. nadbytku železa.
+**Obrázek:** schéma příjmu a ztrát krve. Krevní transfúze nebo krvácení souvisí s vnějšími přesuny železa z/do organismu. V dalších simulátorech lze příjmem a ztrátou krve simulovat patologické stavy plynoucí z nedostatku, resp. nadbytku železa.
 
 </div>
 <div class="w3-half">
