@@ -86,9 +86,10 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a findex="19" aname="children.0.SvetleModraSpodni1_anim" amin="0" amax="159" fmin="0.1" fmax="2"></bdl-bind2a>
 
 <!-- nove sipky 5 -->
+
 <bdl-bind2a findex="22" aname="children.0.SipkaZlutaSrafovana_anim" amin="149" amax="0" fmin="0.5" fmax="1.5"></bdl-bind2a>
 
-<bdl-bind2a-text findex="22" aname="children.0.Hodnota7_text" convertor="1,1.2"></bdl-bind2a-text>
+<bdl-bind2a-text findex="22" aname="children.0.Hodnota7_text" convertor="1,0.665"></bdl-bind2a-text>
 <bdl-bind2a findex="22" aname="children.0.Merak7_anim" amin="0" amax="99" fmin="0" fmax="4.8"></bdl-bind2a>
 <bdl-bind2a findex="23" aname="children.0.children.637.Semafor1_anim" amin="0" amax="6" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a findex="22" aname="children.0.children.637.MerakSemaforu1_anim" amin="0" amax="159" fmin="0" fmax="1.6"></bdl-bind2a>
@@ -135,7 +136,6 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 
 
-
 </div>
 <div class="w3-col s12 m5 l5 w3-justify">
 
@@ -143,10 +143,10 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <!-- hidden input  - buttonparams must be before fmi component - or input with id must be created explicitly -->
 <input id="id6" value="" type="number" style="display:none" />
 
-<bdl-fmi id="idfmi" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.02" guid="{ff6d8a55-f24a-4855-bbf0-86edcafe471e}" valuereferences="637534208,637534209,100663315,16777260,33554448,33554449,637534228,905969688,637534231,16777271,16777272,16777267,637534233,637534237,33554439,33554443,637534230,637534257,33554447,637534229,637534236,33554434,33554432,16777266,16777268,16777269,16777270,33554441,33554442,33554444,33554436,637534267,637534263,16777261,16777264" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate,Fpn_duo_knockout,Fpn_duo_in_1,Fpn_duo_in,Fpn_duo_mRNA,Fpn_duo,Fe_duo_out_ser,Fe_ser_in_duo,Fe_ser,Fe_duo_in_ser,Fpn_duo_out_2,LPS,hep,hep_knockout,Fpn_liv_knockout,Fpn_spl_knockout,Fpn_res_knockout,Fpn_liv,Fpn_spl,Fpn_res,Il6,Il6_in,hep_in,bleeding,transfusion" inputs="id1,16777260,1,1;id4,16777267,1,1;id5,16777266,1,1,t;id6,33554434,1,1,t;id7,16777261,1,1,t;id8,16777264,1,1,t;idliv,16777268,1,1,t;idspl,16777269,1,1,t;idres,16777270,1,1,t" inputlabels="Fe_food,Fpn_duo_knockout,hep_knockout,LPS,bleeding,transfusion,Fpn_liv_knockout,Fpn_spl_knockout,Fpn_res_knockout" showtime="1" showtimemultiply="3600"></bdl-fmi>
+<bdl-fmi id="idfmi" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="1" guid="{ff6d8a55-f24a-4855-bbf0-86edcafe471e}" valuereferences="637534208,637534209,100663315,16777260,33554448,33554449,637534228,905969688,637534231,16777271,16777272,16777267,637534233,637534237,33554439,33554443,637534230,637534257,33554447,637534229,637534236,33554434,33554432,16777266,16777268,16777269,16777270,33554441,33554442,33554444,33554436,637534267,637534263,16777261,16777264" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate,Fpn_duo_knockout,Fpn_duo_in_1,Fpn_duo_in,Fpn_duo_mRNA,Fpn_duo,Fe_duo_out_ser,Fe_ser_in_duo,Fe_ser,Fe_duo_in_ser,Fpn_duo_out_2,LPS,hep,hep_knockout,Fpn_liv_knockout,Fpn_spl_knockout,Fpn_res_knockout,Fpn_liv,Fpn_spl,Fpn_res,Il6,Il6_in,hep_in,bleeding,transfusion" inputs="id1,16777260,1,1;id4,16777267,1,1;id5,16777266,1,1,t;id6,33554434,1,1,t;id7,16777261,1,1,t;id8,16777264,1,1,t;idliv,16777268,1,1,t;idspl,16777269,1,1,t;idres,16777270,1,1,t" inputlabels="Fe_food,Fpn_duo_knockout,hep_knockout,LPS,bleeding,transfusion,Fpn_liv_knockout,Fpn_spl_knockout,Fpn_res_knockout" showtime="1" showtimemultiply="3600"></bdl-fmi>
 
 
-
+<div class="w3-panel w3-border">
 
 ||| 
 |-------------|-------|
@@ -159,10 +159,23 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 | Knockout genu pro FPN v játrech | <bdl-checkbox id="idliv" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
 | Knockout genu pro FPN ve slezině | <bdl-checkbox id="idspl" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
 | Knockout genu pro FPN ve | <bdl-checkbox id="idres" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox> |  
+</div>
+
+**Úkoly** 
+
+V simulátoru nasimulujeme stav hemosiderózy
+
+<bdl-quiz question="1. Jak v rámci možností modelu nasimulujete stav hemosiderózy?" answers="opakovaná transfúze|dlouhodobé krevní ztráty|knockout genu pro hepcidin" correctoptions="true|false|false" explanations="ano, z předchozího textu, hemosideróza je způsobená dlouhodobě zvýšenou koncentrací železa v séru (např. opakovanými transfúzemi) a jeho následná kumulace v orgánech a tkáních|ne|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+
+<bdl-quiz question="2. z předchozího úkolu nastavte parametr, který simuuje hemosiderózu a nechte simulaci běžet aspoň 48 h (simulační čas)?" answers="opakovaná transfúze|dlouhodobé krevní ztráty|knockout genu pro hepcidin" correctoptions="true|false|false" explanations="ano, z předchozího textu, hemosideróza je způsobená dlouhodobě zvýšenou koncentrací železa v séru (např. opakovanými transfúzemi) a jeho následná kumulace v orgánech a tkáních|ne|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+
+
+
 
 * Vyzkoušejte si, jak reagují hladiny/koncentrace na neregulovaný příjem železa z potravy (ztráta zpětné vazby).
 * Vyzkoušejte si simulaci malabsorpce.
 * Vyzkoušejte si, jak se mění hladiny/koncentrace HEP, Fpn a Tf v závislosti na knock-out Fpn genů pro různé orgánové systémy.
+
 <!--bdl-chartjs-time id="id10" width="400" height="200" fromid="idfmi" labels="fe duo in ser" initialdata="" refindex="16" refvalues="1" maxdata="1024"></bdl-chartjs-time>
 <bdl-chartjs-time id="id11" width="300" height="200" fromid="idfmi" labels="duoin" initialdata="" refindex="13" refvalues="1" maxdata="1024"></bdl-chartjs-time>
 <bdl-chartjs-time id="id12" width="300" height="200" fromid="idfmi" labels="mrna" initialdata="" refindex="14" refvalues="1" maxdata="1024"></bdl-chartjs-time>
