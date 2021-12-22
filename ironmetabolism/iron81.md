@@ -167,7 +167,7 @@ V simulátoru nasimulujeme stav hemochromatózy.
 
 <bdl-quiz question="1. Jak v rámci možností modelu nasimulujete stav hemochromatózy?" answers="opakovaná transfúze|dlouhodobé krevní ztráty|knockout genu pro hepcidin" correctoptions="false|false|true" explanations="ne|ne|ano, z předchozího textu, hemochromatóza je způsobená neregulovaným příjmem železa z enterocytu, např. v poruše regulace hepcidinu" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 
-<bdl-quiz question="2. z předchozího úkolu nastavte parametr, který simuuje hemochromatózu a nechte simulaci běžet aspoň 2 dny (48 h simulační čas). Jaké jsou hodnoty koncentrací obou typů iontů železa v enterocytu?" answers="zvýšené|snížené" correctoptions="true|false" explanations="ne|ano, ze simulace by měli být hodnoty koncentrací Fe v enterocytu normální až snížené oproti normované hodnotě 1.0, hemochromatóza se projevuje kumulací železa ve tkáních díky neregulované absorpci" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="2. z předchozího úkolu nastavte parametr, který simuluje hemochromatózu a nechte simulaci běžet aspoň 2 dny (48 h simulační čas). Jaké jsou hodnoty koncentrací obou typů iontů železa v enterocytu?" answers="zvýšené|normální až snížené" correctoptions="false|true" explanations="ne|ano, ze simulace by měli být hodnoty koncentrací Fe v enterocytu normální až snížené oproti normované hodnotě 1.0, hemochromatóza se projevuje kumulací železa ve tkáních díky neregulované absorpci" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 
 
 
