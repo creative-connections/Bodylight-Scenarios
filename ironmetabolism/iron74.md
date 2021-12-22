@@ -1,10 +1,3 @@
-
-
-
-<bdl-quiz question="Jak reaguje hladina hepcidinu na opakovanou krevní transfúzi a proč?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Jak reaguje hladina hepcidinu na opakovaný odběr krve a proč?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Jaký patologický stav může způsobit malabsorpci železa a k jakému klinickému obrazu to může vést?" answers="A|B" correctoptions="true|false" explanations="a|b" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-
 <style>
 img[alt^="image"] {max-width:20px;}
 img[alt^="bigimage"] {  max-height:60px}
