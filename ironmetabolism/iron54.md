@@ -111,7 +111,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 * Vyzkoušejte si, jak ovlivňuje hladina železa koncentraci hepcidinu.
 
 <bdl-quiz question="Co způsobí genový knock-out hepcidinu a proč?" answers="zvýšený tok železa z enterocytu do krve|snížený tok železa z enterocytu do krve" correctoptions="true|false" explanations="ano, ztratí se zpětnovazební regulace aktivity ferroportinu, čímž se může dočasně zvýšit příjem železa do krva|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Pokud omezíme příjem železa na minimum, jaká bude reakce organismu a jak se změní koncentrace/množství DMT1, Fpn a Hepcidinu?" answers="zvýší se počt membránových proteinů a sníží se hladina hepcidinu|sníží se počet membránových proteinů a zvýší se hladina hepcidinu" correctoptions="true|false" explanations="ano" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="Pokud omezíme příjem železa na minimum, jaká bude reakce organismu a jak se změní koncentrace/množství DMT1, Fpn a Hepcidinu?" answers="zvýší se počt membránových proteinů a sníží se hladina hepcidinu|sníží se počet membránových proteinů a zvýší se hladina hepcidinu" correctoptions="true|false" explanations="ano|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 <bdl-quiz question="Pokud provedeme genový knock-out enterocytárního Fpn, jaký vliv to bude mít na hladinu hepcidinu?" answers="hladina hepcidinu se zvýší|hladina hepcidinu se sníží" correctoptions="false|true" explanations="ne, hladina se nezvýší, naopak sníží neboť je regulována přímo koncentrací železa, které je také nižší|ano" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 
 </div>
