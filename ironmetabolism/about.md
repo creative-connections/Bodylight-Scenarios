@@ -6,13 +6,15 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 | | |
 |--:|--|
 | **Scénář, text, matematický model:** | RNDr. Arnošt Mládek, Ph.D. |
-| **Technologie a simulátory:** | Mgr. Tomáš Kulhánek, Ph.D. |
-| | Ing. Jan Šilar, Ph.D. |
-| | Ing. Filip Ježek, Ph.D. |
-| | Bc. David Polák |
+| **Implementace simulátoru:** | Mgr. Tomáš Kulhánek, Ph.D. |
 | **Grafické prvky, interaktivní animace:** | Martin Brož, DiS. |
 | **Odborní garanti:** | Doc. MUDr. Jiří Kofránek, CSc. |
 | | Prof. MUDr. Martin Vokurka, CSc. |
+| **Technologie in-browser simulátorů:** | Mgr. Tomáš Kulhánek, Ph.D. |
+| | Ing. Jan Šilar, Ph.D. |
+| | Ing. Filip Ježek, Ph.D. |
+| | Bc. David Polák |
+
 
 # Reference
 **Fyziologie, strukturní biologie**
