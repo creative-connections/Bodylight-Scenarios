@@ -20,8 +20,9 @@
     * [6. Zánět a zánětlivá reakce](#iron6.md)    
       * [6.1 Simulace zánětu](#iron62.md)
     * [7. Ztráty a příjmy krve](#iron7.md)
-      * [7.2 Vliv příjmu krve na metabolismus železa](#iron72.md)
-      * [7.3 Simulace ztrát a příjmů železa](#iron73.md)
+      * [7.2 Vliv transfúze a krvácení\n na metabolismus železa](#iron72.md)
+      * [7.3 Simulace ztráty železa](#iron73.md)
+      * [7.3 Simulace příjmů železa](#iron74.md)
     * [8.1 Komplexní simulace](#iron8.md)
     * [8.2 Komplexní simulace 2](#iron81.md)
   * [2. Metabolismus železa v játrech](#liver/index.md)
@@ -35,3 +36,4 @@
     * [liver/iron24role](#liver/iron24role.md)
     * [liver/iron25sim](#liver/iron25sim.md)
   * [O simulátoru](#about.md)
+
