@@ -15,7 +15,7 @@ img[alt^="ztraty"] {max-width:200px;}
 *[TIBC]: total iron binding capacity
 *[FEP]: free erythrocyte protoporphyrin
 
-## Ztráty krve
+## Nedostatek železa
 Dlouhodobý nedostatek železa vede k nejčastějšímu typu anémie **sideropenické anémii** - a to z důvodu nedostatečné syntézy hemoglobinu (mikrocytární anémie). 
 
 Ztráty železa (nejčastěji prostřednictvím ztrát krve), které v modelu simulujeme kontinuálním odběrem krve regulovatelnou rychlostí, mohou nastat z různých příčin které se liší v závislosti na věkové skupině. 
