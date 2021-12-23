@@ -167,7 +167,7 @@ V simulátoru nasimulujeme stav hemosiderózy
 
 <bdl-quiz question="1. Jak v rámci možností modelu nasimulujete stav hemosiderózy?" answers="opakovaná transfúze|dlouhodobé krevní ztráty|knockout genu pro hepcidin" correctoptions="true|false|false" explanations="ano, z předchozího textu, hemosideróza je způsobená dlouhodobě zvýšenou koncentrací železa v séru (např. opakovanými transfúzemi) a jeho následná kumulace v orgánech a tkáních|ne|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 
-<bdl-quiz question="2. z předchozího úkolu nastavte parametr, který simuuje hemosiderózu a nechte simulaci běžet aspoň 2 dny (48 h simulační čas). Jaké jsou hodnoty koncentrací obou typů iontů železa v enterocytu?" answers="zvýšené|snížené" correctoptions="true|false|false" explanations="ano, ze simulace by měli být hodnoty výrazně zvýšené oproti normované hodnotě 1.0, hemosideróza se projevuje kumulací železa v orgánech a tkáních|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="2. z předchozího úkolu nastavte parametr, který simuluje hemosiderózu a nechte simulaci běžet aspoň 2 dny (48 h simulační čas). Jaké jsou hodnoty koncentrací obou typů iontů železa v enterocytu?" answers="zvýšené|snížené" correctoptions="true|false|false" explanations="ano, ze simulace by měli být hodnoty výrazně zvýšené oproti normované hodnotě 1.0, hemosideróza se projevuje kumulací železa v orgánech a tkáních|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 
 
 </div>
