@@ -8,7 +8,8 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 *[RES]: reticuloendothelial system
 *[HFE]: High FE 2 gene for human homeostatic iron protein 
-*{GIT]: gastrointestinal tract 
+*[GIT]: gastrointestinal tract 
+
 ![hemochromatoza](hemochromatoza.png)
 
 **Obrázek HEMOCHROMATÓZA** schéma vlivu hemochromatózy na různé tkáně
