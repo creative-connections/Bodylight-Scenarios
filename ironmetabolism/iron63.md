@@ -134,13 +134,13 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <div class="w3-small" style="line-height: 1.2">
 
 
-<bdl-quiz question="Pokud provedeme knock-out genu pro hepcidin, bude zachovaná účinnost reakce na injekci LPS?" answers="Částečně|Ne" correctoptions="true|false" explanations="ano, je zachován vliv na redukci aktivity genu pro Fpn|nesprávná odpověď" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="4. Pokud provedeme knock-out genu pro hepcidin, bude zachovaná účinnost reakce na injekci LPS?" answers="Částečně|Ne" correctoptions="true|false" explanations="ano, je zachován vliv na redukci aktivity genu pro Fpn|nesprávná odpověď" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 
-<bdl-quiz question="Pokud provedeme knock-out genu pro Fpn, bude zachovaná účínnost reakce na injekci LPS?" answers="Částečně|Ne" correctoptions="true|false" explanations="ano, díky zachované redukci hepcidinem|nesprávná odpověď" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="5. Zapněte gen hepcidinu a proveďte reset simulace tlačítkem <i class='fa fa-refresh'></i>. Pokud provedeme knock-out genu pro Fpn (gen pro hepcidin je aktivní), bude zachovaná účínnost reakce na injekci LPS?" answers="Částečně|Ne" correctoptions="true|false" explanations="ano, díky zachované redukci hepcidinem|nesprávná odpověď" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 
-<bdl-quiz question="Jaké následky může mít dlouhodobý zánět (stran metabolismu železa)?" answers="nedostatek železa pro jiné procesy, např. snížená produkce nových erytrocytů, anémie, ...|nadbytek železa a s možnost vzniku hemochromatózy" correctoptions="true|false" explanations="ano, simulace ukazuje dlouhodobý nedostatek nedostatek železa pro jiné metabolické procesy|ne, viz předchozí kapitola" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="6. Jaké následky může mít dlouhodobý zánět (stran metabolismu železa)?" answers="nedostatek železa pro jiné procesy, např. snížená produkce nových erytrocytů, anémie, ...|nadbytek železa a s možnost vzniku hemochromatózy" correctoptions="true|false" explanations="ano, simulace ukazuje dlouhodobý nedostatek nedostatek železa pro jiné metabolické procesy|ne, viz předchozí kapitola" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 
-<bdl-quiz question="Jaký má LPS dopad na vstřebávání železa v duodenu? Má smysl zvyšovat příjem železa potravou?" answers="Má nepřímý vliv. Zvýšený příjem železa v potravě může pomoci v rekonvalescenci|Má přímý vliv. Nemá smysl zvyšovat příjem železa." correctoptions="true|false" explanations="ano, LPS nemá přímý dopad na vstřebávání železa ale na jeho přenos z enterocytu, tj. nepřímo. Zvyšovat příjem železa má mírný vliv při pozdější rekonvalescenci.|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="7. Jaký má LPS dopad na vstřebávání železa v duodenu? Má smysl zvyšovat příjem železa potravou?" answers="Má nepřímý vliv. Zvýšený příjem železa v potravě může pomoci v rekonvalescenci|Má přímý vliv. Nemá smysl zvyšovat příjem železa." correctoptions="true|false" explanations="ano, LPS nemá přímý dopad na vstřebávání železa ale na jeho přenos z enterocytu, tj. nepřímo. Zvyšovat příjem železa má mírný vliv při pozdější rekonvalescenci.|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 </div>
 
 </div>
