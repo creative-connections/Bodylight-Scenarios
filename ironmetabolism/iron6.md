@@ -23,6 +23,7 @@ Obrázek **A**: Molekulární struktura prozánětlivého interleukinu 6 (IL-6)
 <br/>
 <br/>
 <br/>
+
 ## Zánětlivá reakce 
 Už v 60. letech minulého století popsal Finch fylogeneticky velmi starou obrannou reakci zadržení železa při napadení organismu nepřítelem, například mikroby. Smyslem této evolučně konzervované reakce je zamezit mikrobům přístup k železu, které by ho mohly využít jako růstový faktor. Analogicky jako k nepřátelskému organismu přistupuje tělo k nádorové buňce a snaží se jí zabránit přístupu k železu, které je nezbytné pro metabolické pochody. Zatímco u primitivních organismů je deplece železa zajištěna vazbou na vhodný bílkovinný nosič, u vyšší organismů je železo deponováno do specializovaných buněk, makrofágů. Finchem objevená obranná reakce těla je způsobena hepcidinem, resp. zvýšením jeho produkce při mikrobiálním zánětu. Podobnou reakci nicméně tělo vyvolá i při chronických zánětlivých procesech autoimunitního původu v rámci systémových chorob nebo v případě onkologických onemocnění. Zvýšená syntéza hepcidinu v uvedených patologických stavech je zprostředkována především interleukinem 6 (IL-6) a tumor nekrotizujícím faktorem (TNF), cytokiny produkovanými při při zánětech a maligních nádorech. Bližší popis mechanismu zvýšení exprese hepcidinu v reakci na IL-6 je uveden v sekci pro hepatocyt.
 
