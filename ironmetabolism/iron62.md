@@ -118,31 +118,27 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 <bdl-fmi id="idfmi" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.02" guid="{ff6d8a55-f24a-4855-bbf0-86edcafe471e}" valuereferences="637534208,637534209,100663315,16777260,33554448,33554449,637534228,905969688,637534231,16777271,16777272,16777267,637534233,637534237,33554439,33554443,637534230,637534257,33554447,637534229,637534236,33554434,33554432,16777266,33554436,637534267,637534263" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate,Fpn_duo_knockout,Fpn_duo_in_1,Fpn_duo_in,Fpn_duo_mRNA,Fpn_duo,Fe_duo_out_ser,Fe_ser_in_duo,Fe_ser,Fe_duo_in_ser,Fpn_duo_out_2,LPS,hep,hep_knockout,Il6,Il6_in,hep_in" inputs="id1,16777260,1,1;id4,16777267,1,1;id5,16777266,1,1,t;id6,33554434,1,1,t" inputlabels="Fe_food,Fpn_duo_knockout,hep_knockout,LPS" showtime="1" showtimemultiply="3600"></bdl-fmi>
 
+<div class="w3-panel w3-border">
+
 ||| 
 |-------------|-------|
 | Koncentrace železa v potravě [$\frac{\mu g}{h}$] | <bdl-range id="id1" title="" min="0" max="1000" default="219" maxlength="5" step="1"></bdl-range> |
 | Knockout genu pro ferroportin(Fpn) | <bdl-checkbox id="id4" titlemin="gen Fpn je knockoutován" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
 | Knockout genu pro hepcidin | <bdl-checkbox id="id5" titlemin="gen pro hepcidin je knockoutován" titlemax="gen pro expresi hepcidinu je aktivní" default="true"></bdl-checkbox>  |
 | LPS injekce jednorázová 1$\mu$g | <bdl-buttonparams title="LPS injekce" ids="id6" values="1" fromid="idfmi"> </bdl-buttonparams>  |
+</div>
+
+**Úkoly** spusťte simulaci a vyzkoušejte si reakci organismu na akutní a chronickou bakteriální infekci podle instrukcí níže a zpdpovězte otázky.
 
 <div class="w3-small" style="line-height: 1.2">
 
-<bdl-quiz question="Vyzkoušejte si, jaká je reakce organismu na přítomnost bakteriální infekce (jednorázová injekce LPS)." answers="A" correctoptions="true" explanations="IL6 se zvýší dočasně přesáhne hodnotu 7 po 3 hodinách na to reaguje produkce hepcidinu asi 3x nad normu vrcholí po 7 hodinách. Zároveň LPS dočasně redukuje expresi Fpn, sníží se přenos železa z enterocytu do krve, tím se sníží koncentrace Fe v krvi (až 5x méně oproti normě po 12 hodinách). Během 24 hodin se vše normalizuje" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Vyzkoušejte si, jaké bude mít následky dlouhodobý (chronický) zánět (opakovaná injekce LPS)" answers="A" correctoptions="true" explanations="IL6 se zvýší záleží na počtu opakování, ale může přesáhnout hodnotu 20 a více. Hepcidin reguluje přenos železa z enterocytu do krve dlouhodoběji, tím se snížuje koncentrace Fe v krvi dlouhodobě(až na 0.15 oproti normě)" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="1. Jaká je reakce organismu na akutní bakteriální infekci (stiskněte jednou tlačítko ´LPS injekce´ - jednorázová injekce LPS)?" answers="IL6 se zvýší dočasně. Se spožděním několika hodin se koncentrace hepcidinu taktéž zvýší. Po 12 hodinách je hladina železa v séru výrazně nižší. Po ěč hodinách se vše opět vrací k normálu|IL6 se zvýší trvaleji. Hepcidin reguluje přenos železa dlouhodoběji a koncentrace Fe v krvi je dlouhodobě nízká" correctoptions="true|false" explanations="ano, IL6 se zvýší, Zároveň LPS dočasně redukuje expresi Fpn, spolu s hepcidinem se výrazněji se sníží přenos železa z enterocytu do krve. Během 24 hodin se vše normalizuje|ne, toto se děje spíš při chronickém zánětu" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+
+<bdl-quiz question="2. Jaké bude mít následky dlouhodobý (chronický) zánět (opakovaná injekce LPS)" answers="IL6 se zvýší dočasně. Se spožděním několika hodin se koncentrace hepcidinu taktéž zvýší. Po 12 hodinách je hladina železa v séru výrazně nižší. Po ěč hodinách se vše opět vrací k normálu|IL6 se zvýší trvaleji. Hepcidin reguluje přenos železa dlouhodoběji a koncentrace Fe v krvi je dlouhodobě nízká" correctoptions="false|true" explanations="ne, toto se děje spíš při akutním zánětu|ano, IL6 se zvýší záleží na počtu opakování. Hepcidin reguluje přenos železa z enterocytu do krve dlouhodoběji, tím se snížuje koncentrace Fe v krvi dlouhodobě až o řád oproti normě s důsledky pro jiné orgány." buttontitle="zkontrolovat odpověď"></bdl-quiz>
+
+<bdl-quiz question="3. Jakými cestami ovlivňuje endotoxin metabolismus železa (které vlivy se objeví při stisknutí tlačítka LPS injekce)?" answers="přímá redukce aktivity genu pro Fpn. Zvýšení produkce hepcidinu|přímá stimulace aktivity genu pro Fpn. Snížení produkce hepcidinu" correctoptions="true|false" explanations="ano|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 
 
-<!--bdl-chartjs-time id="id10" width="400" height="200" fromid="idfmi" labels="fe duo in ser" initialdata="" refindex="16" refvalues="1" maxdata="1024"></bdl-chartjs-time>
-<bdl-chartjs-time id="id11" width="300" height="200" fromid="idfmi" labels="duoin" initialdata="" refindex="13" refvalues="1" maxdata="1024"></bdl-chartjs-time>
-<bdl-chartjs-time id="id12" width="300" height="200" fromid="idfmi" labels="mrna" initialdata="" refindex="14" refvalues="1" maxdata="1024"></bdl-chartjs-time>
-<bdl-chartjs-time id="id13" width="300" height="200" fromid="idfmi" labels="duo" initialdata="" refindex="15" refvalues="1" maxdata="1024"></bdl-chartjs-time>
-<bdl-chartjs-time id="id14" width="300" height="200" fromid="idfmi" labels="Fe_duo_out_ser" initialdata="" refindex="16" refvalues="1" maxdata="1024"></bdl-chartjs-time>
-<bdl-chartjs-time id="id13" width="300" height="200" fromid="idfmi" labels="koncentrace Fe v krvi" initialdata="" refindex="18" refvalues="1" maxdata="1024" xlabel="čas (hodiny)" ylabel="množství orientační (ug)"></bdl-chartjs-time-->
-
-<bdl-quiz question="Jakými cestami ovlivňuje endotoxin metabolismus železa?" answers="A" correctoptions="true" explanations="přímá redukce aktivity genu pro Fpn. Zvýšení produkce hepcidinu." buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Pokud provedeme knock-out genu pro hepcidin, bude zachovaná účinnost LPS?" answers="Ano|Částečně|Ne" correctoptions="false|true|false" explanations="-|přes částečnou redukci aktivity genu pro Fpn|-" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Pokud provedeme knock-out genu pro Fpn, bude zachovaná účínnost LPS?" answers="Ano|Částečně|Ne" correctoptions="false|true|false" explanations="-|částečně přes redukci hepcidinem|-" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Jaké následky může mít dlouhodobý zánět (stran metabolismu železa)?" answers="A" correctoptions="true" explanations="Nedostatek železa pro jiné metabolické procesy" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Jaký má LPS dopad na vstřebávání železa v duodenu? Má smysl zvyšovat příjem železa potravou?" answers="A" correctoptions="true" explanations="LPS nemá přímý dopad na vstřebávání železa. Zvyšovat příjem železa má mírný vliv při pozdější rekonvalescenci." buttontitle="zkontrolovat odpověď"></bdl-quiz>
 </div>
 
 </div>
