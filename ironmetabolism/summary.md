@@ -21,7 +21,7 @@
       * [6.1 Simulace zánětu](#iron62.md)
       * [6.1 Simulace zánětu 2](#iron63.md)
     * [7. Ztráty a příjmy krve](#iron7.md)
-      * [7.2 Vliv transfúze a krvácení\n na metabolismus železa](#iron72.md)
+      * [7.2 Vliv transfúze a krvácení](#iron72.md)
       * [7.3 Simulace ztráty železa](#iron73.md)
       * [7.3 Simulace příjmů železa](#iron74.md)
     * [8.1 Komplexní simulace](#iron8.md)
