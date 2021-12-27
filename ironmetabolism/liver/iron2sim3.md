@@ -73,9 +73,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 Vyzkoušejte si, co způsobí v hepatocytech malabsorpce železa v duodenu.
 
 <bdl-quiz question="Spusťte simulaci a nastavte simulovanou malabsorpci na 0.5 (50% vstřebatelného železa není absorbováno). Co se stane s množstvím železa v hepatocytu?" answers="množství železa v poolu i ve ferroportinu začne stoupat|množství železa začne klesat" correctoptions="false|true" explanations="ne, sledujte indikátory množství železa v hepatocytu|ano"></bdl-quiz>
-<bdl-quiz question="Pokračujte v simulaci a zvyšte množství železa v potravě na dvojnásobek (tj. 438). Jak reaguje množství železa v hepatocytu?" answers="množství dále klesá|množství železa se normalizuje, blíží 1.0" correctoptions="false|true" explanations="ne, sledujte indikátory množství železa v hepatocytu|ano"></bdl-quiz>
-
-
+<bdl-quiz question="Pokračujte v simulaci a zvyšte množství železa v potravě na dvojnásobek (tj. 438). Jak reaguje množství železa v hepatocytu?" answers="množství železa přestane klesat, nebo už jen málo|množství železa stoupá a normalizuje s u hodnoty 1.0" correctoptions="true|false" explanations="ano, míra malabsorpce a míra železa v potravě nejsou přímo úměrné, dvojnásobný příjem nekompenzuje plně ztráty železa způsobené malabsorpcí, ale jen částečně|ne"></bdl-quiz>
 
 <!--
 * Vyzkoušejte si, jak reaguje hepatocyt množstvím DMT1 (míra otevření kanálu) na množství železa v játrech
