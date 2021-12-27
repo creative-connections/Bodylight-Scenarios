@@ -32,5 +32,6 @@
       * [2.1.4 Skladování železa](#liver/index2skladovani.md)
       * [2.1.5 Simulace skladování 1](#liver/iron2sim.md)
       * [2.1.6 Simulace skladování 2](#liver/iron2sim2.md)
+      * [2.1.7 Simulace skladování 3](#liver/iron2sim3.md)
   * [O simulátoru](#about.md)
 
