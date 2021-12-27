@@ -52,6 +52,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 <button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
 <!-- hidden input  - buttonparams must be before fmi component - or input with id must be created explicitly -->
+
 <input id="id6" value="" type="number" style="display:none"/>
 
 <bdl-fmi id="idfmi" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="1" guid="{ff6d8a55-f24a-4855-bbf0-86edcafe471e}" valuereferences="637534208,637534244,33554450,33554447,33554451,637534242,637534243" valuelabels="Fe_liv,Fe_liv_in_ser,Fe_liv_2,Fe_ser,Fe_liv_3,Fe_liv_to_ferritin,Fe_liv_from_ferritin" inputs="id1,16777260,1,1;id10,16777265,1,1,t;id11,16777262,1,1,t" inputlabels="Fe_food,unregulated_absorption,malabsorption" showtime="1" showtimemultiply="3600"></bdl-fmi>
