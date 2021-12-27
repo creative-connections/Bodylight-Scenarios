@@ -50,7 +50,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 
 </div>
-<div class="w3-col s12 m4 l4 w3-justify w3-tiny">
+<div class="w3-col s12 m4 l4 w3-justify w3-small">
 
 <button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
 <!-- hidden input  - buttonparams must be before fmi component - or input with id must be created explicitly -->
