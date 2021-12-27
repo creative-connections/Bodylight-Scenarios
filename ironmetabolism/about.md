@@ -19,6 +19,9 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 # Reference
 **Fyziologie, strukturní biologie**
 
+Matematický model metabolismu železa byl verifikován podle experimentů převážně na myších. Aproximace na humánní fyziologii byla provedena v simulátorech a v textu
+s ohledem k výše zmíněným datům z experimentů. Uvedené absolutní vstupní hodnoty příjmů a ztrát železa jsou reálné pro fyziologii člověka. Ostatní hodnoty jsou v simulátorech relativní.
+
   1. Enculescu M, Metzendorf C, Sparla R, Hahnel M, Bode J, et al. (2017) Modelling Systemic Iron Regulation during Dietary Iron Overload and Acute Inflammation: Role of Hepcidin-Independent Mechanisms. PLOS Computational Biology 13(1): e1005322. https://doi.org/10.1371/journal.pcbi.1005322
   2. Kemna EH, Tjalsma H, Willems HL, Swinkels DW (January 2008). "Hepcidin: from discovery to differential diagnosis". Haematologica. 93 (1): 90–7. doi: https://doi.org/10.3324/haematol.11705 
   3. Bento, I., Peixoto, C., Zaitsev, V. N. & Lindley, P. F. (2007). Ceruloplasmin revisited: structural and functional roles of various metal cation-binding sites.  Acta Cryst. D63, 240-248. https://doi.org/10.1107/S090744490604947X
