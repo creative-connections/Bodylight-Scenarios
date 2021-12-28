@@ -1,7 +1,8 @@
 <div class="w3-row">
 <div class="w3-half w3-center">
 
-![hepaticstructure](Hepatic_structure2.svg)
+![Hepatic structure](Hepatic_structure2.svg)
+
 
 **Obrázek: schematické rozmístění jaterních buněk**
 
