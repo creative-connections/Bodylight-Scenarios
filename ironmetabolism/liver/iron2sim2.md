@@ -18,7 +18,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranzova1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranzova2_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="2" aname="children.1.Merak7_anim" amin="0" amax="99" fmin="0" fmax="40"></bdl-bind2a>
-<bdl-bind2a findex="3" aname="children.1.children.265.FeTransferin_anim" amin="0" amax="99" fmin="0" fmax="3"></bdl-bind2a>
+<bdl-bind2a findex="3" aname="children.1.children.265.FeTransferin_anim" amin="0" amax="159" fmin="0.5" fmax="2.5"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranova2_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.ModraSipka2_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.ModraSipka1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
@@ -62,7 +62,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 |-------------|-------|
 | množství železa v potravě [$\frac{\mu g}{h}$] | <bdl-range id="id1" title="" min="0" max="1000" default="219" step="1"></bdl-range> |
 | Malabsorpce | <bdl-range id="id11" title="" min="0" max="1" default="0" step="0.1"></bdl-range>  |
-| Regulace DMT1 | <bdl-checkbox id="id10" titlemin="absorpce je fyziologicky regulovaná" titlemax="absorpce není neregulovaná" default="false"></bdl-checkbox>  |
+| Regulace DMT1 v duodenu | <bdl-checkbox id="id10" titlemin="absorpce je fyziologicky regulovaná" titlemax="absorpce není regulovaná" default="false"></bdl-checkbox>  |
 
 </div>
 
