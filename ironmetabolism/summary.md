@@ -23,6 +23,7 @@
     * [1.7. Ztráty a příjmy krve](#iron7.md)
       * [1.7.2 Vliv transfúze a krvácení](#iron72.md)
       * [1.7.3 Simulace ztráty železa](#iron73.md)
+      * [iron74](#iron74.md)
     * [1.8.1 Komplexní simulace](#iron8.md)
     * [1.8.2 Komplexní simulace 2](#iron81.md)
   * [2. Železo v játrech(v přípravě)](#liver/index.md)
