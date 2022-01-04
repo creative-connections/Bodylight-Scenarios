@@ -154,7 +154,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 | Knockout genu pro FPN v duodenu | <bdl-checkbox id="id4" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
 | Knockout genu pro hepcidin | <bdl-checkbox id="id5" titlemin="gen pro hepcidin je knockoutován (neaktivní)" titlemax="gen pro expresi hepcidinu je aktivní" default="true"></bdl-checkbox>  |
 | LPS injekce jednorázová 1ug při stisknutí | <bdl-buttonparams title="LPS injekce" ids="id6" values="1" fromid="idfmi"></bdl-buttonparams>  |
-| Krevní ztráty, krvácení | <bdl-range id="id7" title="" min="0" max="10" default="0" step="1"></bdl-range>  $\frac{ml}{h}$ |
+| Krevní ztráty, krvácení | <bdl-range id="id7" title="" min="0" max="1" default="0" step="0.1"></bdl-range>  $\frac{ml}{h}$ |
 | Příjem krve z transfúze  | <bdl-range id="id8" title="" min="0" max="10" default="0" step="1"></bdl-range> $\frac{ml}{h}$ |
 | Knockout genu pro FPN v játrech | <bdl-checkbox id="idliv" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
 | Knockout genu pro FPN ve slezině | <bdl-checkbox id="idspl" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
@@ -163,12 +163,13 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 **Úkoly** 
 
-V simulátoru nasimulujeme stav hemosiderózy
+V simulátoru nasimulujeme stav systémové hemosiderózy jako sekundární důsledek léčby jiné nemoci.
 
-<bdl-quiz question="1. Jak v rámci možností modelu nasimulujete stav hemosiderózy?" answers="opakovaná transfúze|dlouhodobé krevní ztráty|knockout genu pro hepcidin" correctoptions="true|false|false" explanations="ano, z předchozího textu, hemosideróza je způsobená dlouhodobě zvýšenou koncentrací železa v séru (např. opakovanými transfúzemi) a jeho následná kumulace v orgánech a tkáních|ne|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="1. Jak v rámci možností modelu nasimulujete stav hemosiderózy?" answers="opakovaná transfúze|dlouhodobé krevní ztráty|knockout genu pro hepcidin" correctoptions="true|false|false" explanations="ano, z předchozího textu, systémová hemosideróza je způsobená dlouhodobě zvýšenou koncentrací železa v séru např. opakovanými transfúzemi a jeho následná kumulace v orgánech a tkáních|ne|nepřesně, knockout genu pro hepcidin je typický pro hemochromatózu" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 
-<bdl-quiz question="2. z předchozího úkolu nastavte parametr, který simuluje hemosiderózu a nechte simulaci běžet aspoň 2 dny (48 h simulační čas). Jaké jsou hodnoty koncentrací obou typů iontů železa v enterocytu?" answers="zvýšené|snížené" correctoptions="true|false|false" explanations="ano, ze simulace by měli být hodnoty výrazně zvýšené oproti normované hodnotě 1.0, hemosideróza se projevuje kumulací železa v orgánech a tkáních|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="2. z předchozího úkolu nastavte parametr, který navodí hemosiderózu a nechte simulaci běžet aspoň 2 dny (48 h simulační čas). Jaké jsou hodnoty koncentrací obou typů iontů železa v enterocytu?" answers="zvýšené|snížené" correctoptions="true|false" explanations="ano, ze simulace by měli být hodnoty výrazně zvýšené oproti normované hodnotě 1.0, hemosideróza se projevuje kumulací železa v orgánech a tkáních|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 
+<bdl-quiz question="3. zkuste z možností vybrat nejvhodnější kompenzaci hemosiderózy." answers="opakované krevní odběry, nebo snížit transfúzi krve|dieta se sníženým obsahem železa|terapie chelating agents - vážou železo tak, že se nevstřebá, nebo se vyloučí močí" correctoptions="false|false|true" explanations="opakované odběry krve mohou snížit koncentraci železa, ale v tomto případě jdou proti primární léčbě transfúze|dieta má jen menší efekt pro tento stav|asi nejlepší volba v tomto případě, v praxi se asi použije kombinace výše zmíněných možností" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 
 </div>
 </div>

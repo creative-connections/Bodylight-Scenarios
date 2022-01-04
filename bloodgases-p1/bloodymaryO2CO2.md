@@ -24,6 +24,3 @@
 <div class="w3-third">
 
 </div></div>
-
-
-

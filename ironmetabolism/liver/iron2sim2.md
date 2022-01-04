@@ -45,6 +45,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a findex="1" aname="children.1.children.171.PrechodUvnitrVehicle_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.children.171.SipkaHneda1Vehicle_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.children.171.SipkaHneda2Vehicle_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<!--bdl-chartjs-time width="300" height="200" fromid="idfmi" labels="Fe2 in liv,Fe in ser,Fe3 in liv,Fe2-Fe3,Fe3-Fe2" initialdata="" refindex="2" refvalues="5" maxdata="4096"></bdl-chartjs-time-->
 
 </div>
 <div class="w3-col s12 m4 l4 w3-justify w3-small">
@@ -67,10 +68,10 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 **Úkoly**
 
-Vyzkoušejte si, jak se mění tok železa do jater v závislosti na koncentraci holoTf podle instrukcí níže a zodpovězte otázky.
+Vyzkoušejte si, jak reaguje hepatocyt množstvím DMT1 (míra otevření kanálu) na množství železa v játrech.
 
-<bdl-quiz question="Spusťte simulaci a zvyšte koncentraci železa v potravě z hodnoty 219 na 1000. Co se dějě s množstvím železa v pohotovém poolu a ve ferritinu jaterní buňky?" answers="koncentrace se zvýší v poolu i ferritinu (nad normovanou hodnotu 1.0) | koncentrace se sníží v poolu i fe verritinu (pod normovano hodnotu 1.0)" correctoptions="true|false" explanations="ano|ne, sledujte červený a fialový indikátor v hepatocytu"></bdl-quiz>
-<bdl-quiz question="Snižte koncentraci železa v potravě na normu 219. Simulace je zrychlená (během 1 s se odsimuluje asi 1 den metabolismu). Jak dlouho se normalizují hodnoty koncentrací železa v játrech?" answers="během dnů | během týdnů až měsíců" correctoptions="false|true" explanations="ne, sledujte indikátor času u tlačítek simulátoru|ano, normalizace trvá týdny až měsíce"></bdl-quiz>
+<bdl-quiz question="Spusťte simulaci a snižte koncentraci železa v potravě z hodnoty 219 na 0. Jak reaguje DMT1?" answers="DMT1 se otevírá|DMT1 se zavírá" correctoptions="true|false" explanations="ano, množství železa v hepatocytu klesá a proto množství DMT1 se zvyšuje (vizualizováno jako otevírání DMT1 kanálu)|ne, sledujte kanál DMT1 v hepatocytu"></bdl-quiz>
+<bdl-quiz question="Zvyšte koncentraci železa v potravě na 1000. Jak reaguje DMT1?" answers="DMT1 se otevírá|DMT1 se zavírá" correctoptions="false|true" explanations="ne, sledujte chování kanálu DMT1 v hepatocytu|ano, množství železa v hepatocytu stoupá a proto množství DMT1 se snižuje (vizualizováno jako zavírání DMT1 kanálu)"></bdl-quiz>
 
 
 

@@ -45,34 +45,35 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a findex="1" aname="children.1.children.171.PrechodUvnitrVehicle_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.children.171.SipkaHneda1Vehicle_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.children.171.SipkaHneda2Vehicle_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<!--bdl-chartjs-time width="300" height="200" fromid="idfmi" labels="Fe2 in liv,Fe in ser,Fe3 in liv,Fe2-Fe3,Fe3-Fe2" initialdata="" refindex="2" refvalues="5" maxdata="4096"></bdl-chartjs-time-->
 
 </div>
 <div class="w3-col s12 m4 l4 w3-justify w3-small">
 
 <button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
 <!-- hidden input  - buttonparams must be before fmi component - or input with id must be created explicitly -->
+
 <input id="id6" value="" type="number" style="display:none"/>
 
 <bdl-fmi id="idfmi" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="1" guid="{ff6d8a55-f24a-4855-bbf0-86edcafe471e}" valuereferences="637534208,637534244,33554450,33554447,33554451,637534242,637534243" valuelabels="Fe_liv,Fe_liv_in_ser,Fe_liv_2,Fe_ser,Fe_liv_3,Fe_liv_to_ferritin,Fe_liv_from_ferritin" inputs="id1,16777260,1,1;id10,16777265,1,1,t;id11,16777262,1,1,t" inputlabels="Fe_food,unregulated_absorption,malabsorption" showtime="1" showtimemultiply="3600"></bdl-fmi>
+
 
 <div class="w3-border w3-panel">
 
 ||| 
 |-------------|-------|
 | množství železa v potravě [$\frac{\mu g}{h}$] | <bdl-range id="id1" title="" min="0" max="1000" default="219" step="1"></bdl-range> |
-| Malabsorpce | <bdl-range id="id11" title="" min="0" max="1" default="0" step="0.1"></bdl-range>  |
+| Malabsorpce v duodenu (0-úplná malabsorpce,1-norma)| <bdl-range id="id11" title="" min="0" max="1" default="1" step="0.1"></bdl-range>  |
 | Regulace DMT1 v duodenu | <bdl-checkbox id="id10" titlemin="absorpce je fyziologicky regulovaná" titlemax="absorpce není regulovaná" default="false"></bdl-checkbox>  |
 
 </div>
 
 **Úkoly**
 
-Vyzkoušejte si, jak se mění tok železa do jater v závislosti na koncentraci holoTf podle instrukcí níže a zodpovězte otázky.
+Vyzkoušejte si, k čemu povede hypotetický neregulovaný příjem železa z potravy do organismu.
 
-<bdl-quiz question="Spusťte simulaci a zvyšte koncentraci železa v potravě z hodnoty 219 na 1000. Co se dějě s množstvím železa v pohotovém poolu a ve ferritinu jaterní buňky?" answers="koncentrace se zvýší v poolu i ferritinu (nad normovanou hodnotu 1.0) | koncentrace se sníží v poolu i fe verritinu (pod normovano hodnotu 1.0)" correctoptions="true|false" explanations="ano|ne, sledujte červený a fialový indikátor v hepatocytu"></bdl-quiz>
-<bdl-quiz question="Snižte koncentraci železa v potravě na normu 219. Simulace je zrychlená (během 1 s se odsimuluje asi 1 den metabolismu). Jak dlouho se normalizují hodnoty koncentrací železa v játrech?" answers="během dnů | během týdnů až měsíců" correctoptions="false|true" explanations="ne, sledujte indikátor času u tlačítek simulátoru|ano, normalizace trvá týdny až měsíce"></bdl-quiz>
-
-
+<bdl-quiz question="Spusťte simulaci a zaškrtněte neregulovaný příjem železa z potravy. Co se stane s množstvím železa v hepatocytu?" answers="množství železa v poolu i ve ferroportinu začne stoupat|množství železa začne klesat" correctoptions="true|false" explanations="ano|ne, sledujte indikátory množství železa v hepatocytu"></bdl-quiz>
+<bdl-quiz question="Pokračujte v simulaci a snižte množství železa v potravě na minimum. Jak reaguje množství železa v hepatocytu?" answers="množství železa přestane stoupat, tímto lze kompenzovat|množství železa stoupá" correctoptions="true|false" explanations="ano, neregulovaná absorpce kanálem DMT1 je možno kompenzovat sníženým pžísunem železa v potravě, případně cílenou malabsorpcí|ne"></bdl-quiz>
 
 <!--
 * Vyzkoušejte si, jak reaguje hepatocyt množstvím DMT1 (míra otevření kanálu) na množství železa v játrech

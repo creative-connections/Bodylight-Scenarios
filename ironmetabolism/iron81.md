@@ -154,7 +154,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 | Knockout genu pro FPN v duodenu | <bdl-checkbox id="id4" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
 | Knockout genu pro hepcidin | <bdl-checkbox id="id5" titlemin="gen pro hepcidin je knockoutován (neaktivní)" titlemax="gen pro expresi hepcidinu je aktivní" default="true"></bdl-checkbox>  |
 | LPS injekce jednorázová 1ug při stisknutí | <bdl-buttonparams title="LPS injekce" ids="id6" values="1" fromid="idfmi"></bdl-buttonparams>  |
-| Krevní ztráty, krvácení | <bdl-range id="id7" title="" min="0" max="10" default="0" step="1"></bdl-range>  $\frac{ml}{h}$ |
+| Krevní ztráty, krvácení | <bdl-range id="id7" title="" min="0" max="1" default="0" step="0.1"></bdl-range>  $\frac{ml}{h}$ |
 | Příjem krve z transfúze  | <bdl-range id="id8" title="" min="0" max="10" default="0" step="1"></bdl-range> $\frac{ml}{h}$ |
 | Knockout genu pro FPN v játrech | <bdl-checkbox id="idliv" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
 | Knockout genu pro FPN ve slezině | <bdl-checkbox id="idspl" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
@@ -163,11 +163,11 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 **Úkoly** 
 
-V simulátoru nasimulujeme stav hemochromatózy.
+V simulátoru nasimulujeme stav hereditární hemochromatózy.
 
-<bdl-quiz question="1. Jak v rámci možností modelu nasimulujete stav hemochromatózy?" answers="opakovaná transfúze|dlouhodobé krevní ztráty|knockout genu pro hepcidin" correctoptions="false|false|true" explanations="ne|ne|ano, z předchozího textu, hemochromatóza je způsobená neregulovaným příjmem železa z enterocytu, např. v poruše regulace hepcidinu" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="1. Jak v rámci možností modelu nasimulujete stav hereditární hemochromatózy?" answers="opakovaná transfúze|dlouhodobé krevní ztráty|knockout genu pro hepcidin" correctoptions="false|false|true" explanations="ne|ne|ano, z předchozího textu, hemochromatóza je způsobená neregulovaným příjmem železa z enterocytu, např. díky poruše regulace hepcidinu" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 
-<bdl-quiz question="2. z předchozího úkolu nastavte parametr, který simuluje hemochromatózu a nechte simulaci běžet aspoň 2 dny (48 h simulační čas). Jaké jsou hodnoty koncentrací obou typů iontů železa v enterocytu?" answers="zvýšené|normální až snížené" correctoptions="false|true" explanations="ne|ano, ze simulace by měli být hodnoty koncentrací Fe v enterocytu normální až snížené oproti normované hodnotě 1.0, hemochromatóza se projevuje kumulací železa ve tkáních díky neregulované absorpci" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="2. z předchozího úkolu nastavte parametr, který simuluje hemochromatózu a nechte simulaci běžet aspoň 2 dny (48 h simulační čas). Jaké jsou hodnoty koncentrací obou typů iontů železa v enterocytu?" answers="zvýšené|normální až snížené" correctoptions="false|true" explanations="ne|ano, ze simulace by měli být hodnoty koncentrací Fe v enterocytu normální až snížené oproti normované hodnotě 1.0, hemochromatóza se projevuje kumulací železa ve tkáních díky neregulované absorpci v duodenu" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 
 
 
