@@ -1,4 +1,7 @@
 
+<div class="w3-row">
+<div class="w3-twothird">
+
 <bdl-animate-adobe src="Cast1.js" width="800" height="600" name="Cast1" fromid="idfmi" responsive="true"></bdl-animate-adobe>
 <bdl-bind2a-text findex="660" aname="children.0.Cast1_CtvCO2_text" prefix="Ca CO2:" suffix=" ml CO2/l"></bdl-bind2a-text>
 <bdl-bind2a-text findex="659" aname="children.0.Cast1_CtvO2_text" prefix="Ca O2: " suffix=" ml O2/l"></bdl-bind2a-text>
@@ -28,6 +31,19 @@
 <bdl-bind2a findex="663" aname="children.0.Cast1_ModraSipka1_anim" amin="0" amax="99" fmin="0" fmax="0.0002"></bdl-bind2a>
 <bdl-bind2a findex="663" aname="children.0.Cast1_CervenySvazek_anim" amin="0" amax="99" fmin="0" fmax="0.0002"></bdl-bind2a>
 <bdl-bind2a findex="663" aname="children.0.Cast1_ModrySvazek_anim" amin="0" amax="99" fmin="0" fmax="0.0002"></bdl-bind2a>
+
+</div>
+<div class="w3-third">
+
+<bdl-range id="id15" title="cardiac output [ml/min]" min="2000" max="20000" default="5400" step="1" maxlength="2"></bdl-range>
+
+
+
+
+
+
+</div>
+</div>
 
 
 
