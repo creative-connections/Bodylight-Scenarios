@@ -26,11 +26,7 @@
 
 <bdl-range id="id15" title="Cardiac output ml/min" min="0" max="25000" default="5400" step="100" maxlength="5"></bdl-range>
 
-
-
 <bdl-range id="id19" title="Pulonary shunt fractions %" min="1" max="60" default="2" step="1" maxlength="10"></bdl-range>
-
-
 
 Cardiac outpu <bdl-value fromid="idfmi" refindex="663" convertors="6e7,1,0"></bdl-value> ml/min
 
