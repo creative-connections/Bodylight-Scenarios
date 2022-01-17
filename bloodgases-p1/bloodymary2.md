@@ -19,6 +19,11 @@
 <bdl-chartjs-barplot  fromid="idfmi"  refindex="7"  extremelimits="0,75" labels="pCO2" normallimits="40,55"  initialdata="40"  convertors="1,133.322" responsive="true"></bdl-chartjs-barplot>
 <bdl-chartjs-barplot fromid="idfmi"  refindex="8"  extremelimits="7,8" labels="     pH" normallimits="7.3,7.4"  initialdata="7.4"  convertors="1,1" responsive="true"></bdl-chartjs-barplot>
 
+
+
+
+
+
 </div>
 <div class="w3-rest w3-right-align">
 
@@ -44,11 +49,10 @@
 
 <bdl-range id="id3" title="tělesná teplota [°C]" min="35" max="42" default="37" step="0.1" maxlength="4"></bdl-range>
 
-
-
+<bdl-bind2a-text findex="5" aname="children.0.Cast1_O2_litry1_text" prefix="O2: " suffix="l/min"></bdl-bind2a-text>
 
 </div>
 </div>
 
+</div></div>
 
-<bdl-animate-adobe src="Prutok1_26_04_2021.js" width="800" height="600" name="Prutok1_26_04_2021" fromid="idfmi"></bdl-animate-adobe>
