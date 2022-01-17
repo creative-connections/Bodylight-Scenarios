@@ -3269,7 +3269,7 @@
     <ScalarVariable
       name="vAi.Vt"
       valueReference="234881081"
-      description="dechovÃ½ objem"
+      description="dechový objem"
       variability="tunable">
       <Real
         declaredType="Physiolibrary.Types.RealIO.VolumeInput"/>
@@ -3278,7 +3278,7 @@
     <ScalarVariable
       name="vAi.Vd"
       valueReference="234881080"
-      description="objem mrtvÃ©ho prostoru"
+      description="objem mrtvého prostoru"
       variability="tunable">
       <Real
         declaredType="Physiolibrary.Types.RealIO.VolumeInput"/>
