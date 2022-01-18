@@ -1,3 +1,6 @@
+<div class="w3-row">
+<div class="w3-threequarter">
+
 <bdl-animate-adobe src="Casti3.js" width="800" height="600" name="Casti3" fromid="idfmi" responsive="true"></bdl-animate-adobe>
 <bdl-bind2a-text findex="800" aname="children.0.Cast3_Rest_PvCO2_text" convertor="1,133.322" prefix="PvCO2: " suffix=" mmHg" fixed="0"></bdl-bind2a-text>
 <bdl-bind2a-text findex="806" aname="children.0.Cast3_Rest_SvO2_Procenta_text" convertor="100,1" prefix="SvO2: " suffix=" %" fixed="1"></bdl-bind2a-text>
@@ -61,12 +64,34 @@
 <bdl-bind2a-text findex="744" aname="children.0.Cast3_Rest_O2ER_Procenta3_text" convertor="100,1" prefix="O2ER: " suffix=" %" fixed="1"></bdl-bind2a-text>
 <bdl-bind2a-text findex="735" aname="children.0.Cast3_Muscle_O2ER_Procenta2_text" convertor="100,1" prefix="O2ER: " suffix=" %" fixed="1"></bdl-bind2a-text>
 <bdl-bind2a-text findex="741" aname="children.0.Cast3_Kidney_O2ER_Procenta1_text" convertor="100,1" prefix="O2ER: " suffix=" %"></bdl-bind2a-text>
-<bdl-bind2a findex="812" aname="children.0.Cast3_ModrySvazek3_anim" amin="0" amax="99" fmin="0" fmax="0.0001"></bdl-bind2a>
-<bdl-bind2a findex="811" aname="children.0.Cast3_CervenySvazek3_anim" amin="0" amax="99" fmin="0" fmax="0.0001"></bdl-bind2a>
-<bdl-bind2a findex="808" aname="children.0.Cast3_ModrySvazek1_anim" amin="0" amax="99" fmin="0" fmax="0.0001"></bdl-bind2a>
+<bdl-bind2a findex="781" aname="children.0.children.58.Cast3_O2CervenaSipka3_anim" amin="0" amax="99" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="779" aname="children.0.children.57.Cast3_O2CervenaSipka2_anim" amin="0" amax="99" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="718" aname="children.0.children.56.Cast1_O2CervenaSipka1_anim" amin="0" amax="99" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="809" aname="children.0.Cast3_ModrySvazek3_anim" amin="0" amax="99" fmin="0" fmax="0.0001"></bdl-bind2a>
+<bdl-bind2a findex="809" aname="children.0.Cast3_CervenySvazek3_anim" amin="0" amax="99" fmin="0" fmax="0.0001"></bdl-bind2a>
+<bdl-bind2a findex="807" aname="children.0.Cast3_ModrySvazek1_anim" amin="0" amax="99" fmin="0" fmax="0.0001"></bdl-bind2a>
 <bdl-bind2a findex="807" aname="children.0.Cast3_CervenySvazek1_anim" amin="0" amax="99" fmin="0" fmax="0.0001"></bdl-bind2a>
-<bdl-bind2a findex="810" aname="children.0.Cast3_ModrySvazek2_anim" amin="0" amax="99" fmin="0" fmax="0.0001"></bdl-bind2a>
-<bdl-bind2a findex="809" aname="children.0.Cast3_CervenySvazek2_anim" amin="0" amax="99" fmin="0" fmax="0.0001"></bdl-bind2a>
+<bdl-bind2a findex="808" aname="children.0.Cast3_ModrySvazek2_anim" amin="0" amax="99" fmin="0" fmax="0.0001"></bdl-bind2a>
+<bdl-bind2a findex="808" aname="children.0.Cast3_CervenySvazek2_anim" amin="0" amax="99" fmin="0" fmax="0.0001"></bdl-bind2a>
+
+
+
+
+</div>
+<div class="w3-quarter">
+cardiac output [ml/min]:<br/>
+<bdl-range id="id15" title="" min="2000" max="20000" default="5400" step="1" maxlength="2"></bdl-range>
+
+oxygen production rate <br/>
+<bdl-range id="id12" title="" min="0" max="4000" default="250" step="1"></bdl-range>
+
+respiratory quotient <br/>
+<bdl-range id="id11" title="" min="0" max="1" default="0.85" step="0.01"></bdl-range>
+
+<bdl-chartjs-time width="300" height="500" fromid="idfmi" labels="" initialdata="" refindex="807" refvalues="3"></bdl-chartjs-time>
+
+</div>
+</div>
 
 
 
