@@ -37,14 +37,17 @@
 mol/sec => ml/min 60000*22.3916=1343496
 -->
 
+
 </div>
 <div class="w3-third">
 
 <bdl-range id="id15" title="cardiac output [ml/min]" min="2000" max="20000" default="5400" step="1" maxlength="2"></bdl-range>
 
-<bdl-range id="id12" title="oxygen production rate" min="0" max="4000" default="250" step="1"></bdl-range>
+<bdl-range id="id12" title="oxygen production rate" min="0" max="900" default="250" step="1"></bdl-range>
 
 <bdl-range id="id11" title="respiratory quotient" min="0" max="1" default="0.85" step="0.01"></bdl-range>
+
+<bdl-chartjs-time width="300" height="560" fromid="idfmi" labels="" initialdata="" refindex="810" refvalues="1"></bdl-chartjs-time>
 
 </div>
 </div>
