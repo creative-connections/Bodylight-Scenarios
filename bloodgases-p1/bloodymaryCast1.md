@@ -37,7 +37,7 @@
 
 <!--
 1 mmol O2/CO2 STPD (760 mmHg, 0°C) = 22.3916 ml
-mol/sec --> ml/min 60000*22.3916=1343496
+mol/sec => ml/min 60000*22.3916=1343496
 
 -->
 
@@ -71,6 +71,10 @@ mol/sec --> ml/min 60000*22.3916=1343496
 <bdl-range id="12" title="oxygen production rate" min="0" max="4000" default="250" step="1"></bdl-range>
 
 <bdl-range id="id13" title="respiratory quotient" min="0" max="1" default="0.85" step="0.01"></bdl-range>
+
+
+
+
 
 </div>
 </div>
