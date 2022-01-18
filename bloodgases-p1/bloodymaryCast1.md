@@ -32,49 +32,19 @@
 <bdl-bind2a findex="649" aname="children.0.Cast1_CervenySvazek_anim" amin="0" amax="99" fmin="0" fmax="0.0002"></bdl-bind2a>
 <bdl-bind2a findex="649" aname="children.0.Cast1_ModrySvazek_anim" amin="0" amax="99" fmin="0" fmax="0.0002"></bdl-bind2a>
 
-
-
-
 <!--
 1 mmol O2/CO2 STPD (760 mmHg, 0°C) = 22.3916 ml
 mol/sec => ml/min 60000*22.3916=1343496
-
 -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </div>
 <div class="w3-third">
 
 <bdl-range id="id15" title="cardiac output [ml/min]" min="2000" max="20000" default="5400" step="1" maxlength="2"></bdl-range>
 
-<bdl-range id="12" title="oxygen production rate" min="0" max="4000" default="250" step="1"></bdl-range>
+<bdl-range id="id12" title="oxygen production rate" min="0" max="4000" default="250" step="1"></bdl-range>
 
-<bdl-range id="id13" title="respiratory quotient" min="0" max="1" default="0.85" step="0.01"></bdl-range>
-
-
-
-
+<bdl-range id="id11" title="respiratory quotient" min="0" max="1" default="0.85" step="0.01"></bdl-range>
 
 </div>
 </div>
