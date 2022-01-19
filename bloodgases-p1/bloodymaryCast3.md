@@ -44,16 +44,16 @@
 <bdl-bind2a-text findex="766" aname="children.0.Cast3_VDO2_text" convertor="1343496,1" suffix=" ml O2/min" fixed="0"></bdl-bind2a-text>
 <bdl-bind2a-text findex="765" aname="children.0.Cast3_MO2_text" convertor="1343496,1" prefix="VO2: " suffix=" ml/min" fixed="0"></bdl-bind2a-text>
 <bdl-bind2a-text findex="764" aname="children.0.Cast3_MCO2_text" convertor="1343496,1" prefix="VCO2: " suffix=" ml/min" fixed="0"></bdl-bind2a-text>
-<bdl-bind2a-text findex="763" aname="children.0.Cast3_Q_text" convertor="60000,1" prefix="Q: " suffix=" ml/min" fixed="0"></bdl-bind2a-text>
+<bdl-bind2a-text findex="763" aname="children.0.Cast3_Q_text" convertor="60000000,1" prefix="Q: " suffix=" ml/min" fixed="0"></bdl-bind2a-text>
 <bdl-bind2a-text findex="762" aname="children.0.Cast3_Rest_MCO2_text" convertor="1343496,1" prefix="VCO2: " suffix=" ml/min"></bdl-bind2a-text>
 <bdl-bind2a-text findex="761" aname="children.0.Cast3_Rest_MO2_text" convertor="1343496,1" prefix="VO2: " suffix=" ml/min" fixed="0"></bdl-bind2a-text>
 <bdl-bind2a-text findex="760" aname="children.0.Cast3_Muscle_MCO2_text" convertor="1343496,1" prefix="VCO2: " suffix=" ml/min" fixed="0"></bdl-bind2a-text>
 <bdl-bind2a-text findex="759" aname="children.0.Cast3_Muscle_MO2_text" convertor="1343496,1" prefix="VO2: " suffix=" ml/min" fixed="0"></bdl-bind2a-text>
 <bdl-bind2a-text findex="758" aname="children.0.Cast3_Kidney_MCO2_text" convertor="1343496,1" prefix="VCO2: " suffix=" ml/min" fixed="0"></bdl-bind2a-text>
 <bdl-bind2a-text findex="757" aname="children.0.Cast3_Kidney_MO2_text" convertor="1343496,1" prefix="VO2: " suffix=" ml/min" fixed="1"></bdl-bind2a-text>
-<bdl-bind2a-text findex="756" aname="children.0.Cast3_Rest_Q_text" convertor="60000,1" prefix="Q: " suffix=" ml/min" fixed="0"></bdl-bind2a-text>
-<bdl-bind2a-text findex="755" aname="children.0.Cast3_Muscle_Q_text" convertor="60000,1" prefix="Q: " suffix=" ml/min" fixed="0"></bdl-bind2a-text>
-<bdl-bind2a-text findex="754" aname="children.0.Cast3_Kidney_Q_text" convertor="60000,1" prefix="Q: " suffix=" ml/min" fixed="0"></bdl-bind2a-text>
+<bdl-bind2a-text findex="756" aname="children.0.Cast3_Rest_Q_text" convertor="60000000,1" prefix="Q: " suffix=" ml/min" fixed="0"></bdl-bind2a-text>
+<bdl-bind2a-text findex="755" aname="children.0.Cast3_Muscle_Q_text" convertor="60000000,1" prefix="Q: " suffix=" ml/min" fixed="0"></bdl-bind2a-text>
+<bdl-bind2a-text findex="754" aname="children.0.Cast3_Kidney_Q_text" convertor="60000000,1" prefix="Q: " suffix=" ml/min" fixed="0"></bdl-bind2a-text>
 <bdl-bind2a-text findex="753" aname="children.0.Cast3_Rest_Q_procenta_text" convertor="100,1" prefix="Q: " suffix=" %" fixed="1"></bdl-bind2a-text>
 <bdl-bind2a-text findex="752" aname="children.0.Cast3_Muscle_Q_procenta_text" convertor="100,1" prefix="Q: " suffix=" %" fixed="1"></bdl-bind2a-text>
 <bdl-bind2a-text findex="751" aname="children.0.Cast3_Kidney_Q_procenta_text" convertor="100,1" prefix="Q: " suffix=" %" fixed="1"></bdl-bind2a-text>
@@ -73,6 +73,7 @@
 <bdl-bind2a findex="807" aname="children.0.Cast3_CervenySvazek1_anim" amin="0" amax="99" fmin="0" fmax="0.0001"></bdl-bind2a>
 <bdl-bind2a findex="808" aname="children.0.Cast3_ModrySvazek2_anim" amin="0" amax="99" fmin="0" fmax="0.0001"></bdl-bind2a>
 <bdl-bind2a findex="808" aname="children.0.Cast3_CervenySvazek2_anim" amin="0" amax="99" fmin="0" fmax="0.0001"></bdl-bind2a>
+
 
 
 
