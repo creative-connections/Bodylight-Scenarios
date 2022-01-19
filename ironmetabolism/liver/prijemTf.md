@@ -7,8 +7,8 @@ img[alt^="image"] {max-width:20px;}
 <div class="w3-row">
 <div class="w3-half w3-center">
 
-**A:** ![imagetfr1](imgtfr1.png) 
-**B:** ![schematfr1](schematfr1.png)
+**A:** ![Tf](imgtfr1.png) 
+**B:** ![Tf-TfR](schematfr1.png)
 
 **Obrázek Tf-TfR**. **A**: ikona transferinového receptoru
 **B**: schéma transferinového receptoru s navazujícím se transferinem.
@@ -18,9 +18,12 @@ img[alt^="image"] {max-width:20px;}
 
 <b style="vertical-align:top;">E:</b>![schemaendocyt](schemaendocyt.png)
 
-**Obrázek STEAP3** Opakování (interaktivní obrázek viz [4.1 Transferin receptor](#iron41.md)) **C.** ikona pro metaloreduktázu v dalším simulátoru a
-**D.** schéma redukce Fe<sup>3+</sup> na Fe<sup>2+</sup> metaloreduktázou na membráně endocytotického váčku.
-**E.** schéma endocytotického váčku.
+**Obrázek STEAP3**
+**C**: STEAP3 reduktáza,
+**D**: schéma redukce Fe<sup>3+</sup> na Fe<sup>2+</sup> reduktázou STEAP3 na membráně endocytotického váčku,
+**E**: schéma endocytotického váčku.
+
+
 
 </div>
 <div class="w3-half w3-justify">
@@ -47,9 +50,9 @@ Za podmínek nízkého obsahu železa se překládá více TfR1, což vede ke zv
 
 Internalizace holo-Tf do endocytických vezikul iniciuje uvolňení železa z Tf snížením pH uvnitř endozomu. Železité ionty se následně redukují na dvojmocné železo endozomální reduktázou. 
 
-Bylo zjištěno, že transmembránový protein __STEAP3__ ![image0](imgmetaloreduktaza.png) představuje klíčovou reduktázu v endosomu. Mutace v genu pro STEAP3 vedou k mikrocytární anémii. STEAP3 je vysoce exprimován v hematopoetických buňkách, jeho role v jiných typech buněk není jasná. Existují další tři členové STEAP rodiny (STEAP1, STEAP2 a STEP4), kteří také vykazují redukční aktivitu.
+Bylo zjištěno, že transmembránový protein __STEAP3__ ![image0](imgmetaloreduktaza.png) představuje klíčovou reduktázu v endosomu, mutace v genu pro STEAP3 vedou k mikrocytární anémii. STEAP3 je vysoce exprimován v hematopoetických buňkách, jeho role v jiných typech buněk není jasná. Existují další tři varianty enzymů STEAP rodiny (STEAP1, STEAP2 a STEP4), které také vykazují redukční aktivitu.
 
-Dvojmocné železo ![image1](image1.jpg) je poté transportováno do cytosolu pomocí DMT1, který je kromě lokalizace na v kartáčovém lemu buněk tenkého střeva pozorován na endozomech. Je zajímavé, že myši, které postrádají DMT1, jsou stále schopné akumulovat jaterní železo, což naznačuje, že DMT1 není nezbytný pro absorpci železa vázaného na Tf nebo jiné transportéry mají nadbytečnou roli. ZIP14, člen rodiny kovových transportérů ZIP, je také lokalizován v endozomech a je důležitý pro přesun železa z endocytového kompartmentu do cytosolu. Po transportu železa do cytosolu se Tf a TfRl recyklují zpět do oběhu, respektive do buněčné membrány.
+Dvojmocné železo ![image1](image1.jpg) je poté transportováno z endosomu do cytosolu pomocí __DMT1__ ![image5](image5.jpg), který je kromě kartáčovém lemu buněk tenkého střeva lokalizován v membráně endosomu. Je zajímavé, že myši postrádající DMT1 jsou stále schopné akumulovat jaterní železo, což naznačuje, že DMT1 není nezbytný pro absorpci železa vázaného na Tf. Po transportu železa do cytosolu se Tf a TfRl recyklují zpět do oběhu, respektive do buněčné membrány.
 
 </div>
 </div>
