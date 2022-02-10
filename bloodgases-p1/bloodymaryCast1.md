@@ -40,7 +40,7 @@ mol/sec => ml/min 60000*22.3916=1343496
 </div>
 <div class="w3-third">
 
-<bdl-value id="maxo2" fromid="idfmi" refindex="768" convertor="Math.round(x*1343496/1.5 /100)*100" dataevent="true" ></bdl-value>
+<bdl-value id="maxo2" fromid="idfmi" refindex="768" convertor="Math.round(x*1343496/2 /100)*100" dataevent="true" ></bdl-value>
 
 <bdl-range id="id15" title="cardiac output [ml/min]" min="2000" max="20000" default="5400" step="1" maxlength="2"></bdl-range>
 
