@@ -17,6 +17,14 @@
 </div>
 <div class="w3-third">
 
+Arteriální krev: pO<sub>2</sub> <bdl-value fromid="idfmi" refindex="619" convertor="1,133.322"></bdl-value> pCO<sub>2</sub> <bdl-value fromid="idfmi" refindex="641" convertor="1,133.322"></bdl-value><bdl-buttonparams title="set" ids="id1,id2" values="40.04,105.8"></bdl-buttonparams>
+
+
+Venózní krev: pO<sub>2</sub> <bdl-value fromid="idfmi" refindex="659" convertor="1,133.322"></bdl-value> pCO<sub>2</sub> <bdl-value fromid="idfmi" refindex="660" convertor="1,133.322"></bdl-value> <bdl-buttonparams title="set" ids="id1,id2" values="47.11,40.56"></bdl-buttonparams>
+
+
+
+
 <bdl-range id="id1" title="pCO2 [mmHg]" min="1" max="80" default="40" step="1" maxlength="2"></bdl-range>
 
 <bdl-range id="id2" title="pO2 [mmHg]" min="1" max="150" default="100" step="1" maxlength="3"></bdl-range>
