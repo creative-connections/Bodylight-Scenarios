@@ -64,6 +64,19 @@
 <bdl-bind2a-text findex="744" aname="children.0.Cast3_Rest_O2ER_Procenta3_text" convertor="100,1" prefix="O2ER: " suffix=" %" fixed="1"></bdl-bind2a-text>
 <bdl-bind2a-text findex="735" aname="children.0.Cast3_Muscle_O2ER_Procenta2_text" convertor="100,1" prefix="O2ER: " suffix=" %" fixed="1"></bdl-bind2a-text>
 <bdl-bind2a-text findex="741" aname="children.0.Cast3_Kidney_O2ER_Procenta1_text" convertor="100,1" prefix="O2ER: " suffix=" %"></bdl-bind2a-text>
+<bdl-bind2a findex="788" aname="children.0.children.71.Cast3_CO2ModraSipka4_anim" amin="0" amax="99"  ></bdl-bind2a>
+<bdl-bind2a findex="816" aname="children.0.children.70.Cast3_CO2ModraSipka3_anim" amin="0" amax="99" ></bdl-bind2a>
+<bdl-bind2a findex="755" aname="children.0.children.69.Cast3_CO2ModraSipka2_anim" amin="0" amax="99"  ></bdl-bind2a>
+<bdl-bind2a findex="722" aname="children.0.children.68.Cast1_CO2ModraSipka1_anim" amin="0" amax="99"  ></bdl-bind2a>
+<bdl-bind2a findex="756" aname="children.0.Cast3_CervenaSipka3_anim" amin="0" amax="99"  ></bdl-bind2a>
+<bdl-bind2a findex="755" aname="children.0.Cast3_CervenaSipka2_anim" amin="0" amax="99"  ></bdl-bind2a>
+<bdl-bind2a findex="756" aname="children.0.Cast3_ModraSipka3_anim" amin="0" amax="99"  ></bdl-bind2a>
+<bdl-bind2a findex="755" aname="children.0.Cast3_ModraSipka2_anim" amin="0" amax="99"  ></bdl-bind2a>
+<bdl-bind2a findex="712" aname="children.0.Cast3_ModraSipka1_anim" amin="0" amax="99"  ></bdl-bind2a>
+<bdl-bind2a findex="756" aname="children.0.Cast3_ModraSipka0_anim" amin="0" amax="99"  ></bdl-bind2a>
+<bdl-bind2a findex="712" aname="children.0.Cast3_CervenaSipka1_anim" amin="0" amax="99"  ></bdl-bind2a>
+<bdl-bind2a findex="649" aname="children.0.Cast3_CervenaSipka0_anim" amin="0" amax="99"  ></bdl-bind2a>
+<bdl-bind2a findex="737" aname="children.0.children.59.Cast3_O2CervenaSipka4_anim" amin="0" amax="99"  ></bdl-bind2a>
 <bdl-bind2a findex="781" aname="children.0.children.58.Cast3_O2CervenaSipka3_anim" amin="0" amax="99" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a findex="779" aname="children.0.children.57.Cast3_O2CervenaSipka2_anim" amin="0" amax="99" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a findex="718" aname="children.0.children.56.Cast1_O2CervenaSipka1_anim" amin="0" amax="99" fmin="0" fmax="1"></bdl-bind2a>
@@ -73,10 +86,6 @@
 <bdl-bind2a findex="807" aname="children.0.Cast3_CervenySvazek1_anim" amin="0" amax="99" fmin="0" fmax="0.0001"></bdl-bind2a>
 <bdl-bind2a findex="808" aname="children.0.Cast3_ModrySvazek2_anim" amin="0" amax="99" fmin="0" fmax="0.0001"></bdl-bind2a>
 <bdl-bind2a findex="808" aname="children.0.Cast3_CervenySvazek2_anim" amin="0" amax="99" fmin="0" fmax="0.0001"></bdl-bind2a>
-
-
-
-
 
 </div>
 <div class="w3-quarter">
@@ -89,50 +98,6 @@ oxygen production rate <br/>
 respiratory quotient <br/>
 <bdl-range id="id11" title="" min="0" max="1" default="0.85" step="0.01"></bdl-range>
 
-<bdl-chartjs-time width="300" height="500" fromid="idfmi" labels="" initialdata="" refindex="807" refvalues="3"></bdl-chartjs-time>
 
 </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
