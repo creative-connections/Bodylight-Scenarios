@@ -43,6 +43,7 @@ function handleComplete(evt,comp) {
 function playSound(id, loop) {
 	return createjs.Sound.play(id, createjs.Sound.INTERRUPT_EARLY, 0, 0, loop);
 }
+myinit();
 </script>
 <div>
 <div id="animation_container" style="background-color:rgba(222, 231, 233, 1.00); width:800px; height:600px">
@@ -51,7 +52,7 @@ function playSound(id, loop) {
 		</div>
 	</div>
 <script>
-myinit();
+
 </script>	
 </div>
 
