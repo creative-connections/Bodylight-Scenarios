@@ -1,4 +1,11 @@
 <script src="04_Fe_výskyt_HTML5 Canvas.js?1581502201829"></script>
+
+<div>
+<div id="animation_container" style="background-color:rgba(222, 231, 233, 1.00); width:800px; height:600px">
+		<canvas id="canvas" width="800" height="600" style="position: absolute; display: block; background-color:rgba(222, 231, 233, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:800px; height:600px; position: absolute; left: 0px; top: 0px; display: block;">
+		</div>
+	</div>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function myinit() {
@@ -44,15 +51,7 @@ function playSound(id, loop) {
 	return createjs.Sound.play(id, createjs.Sound.INTERRUPT_EARLY, 0, 0, loop);
 }
 myinit();
-</script>
-<div>
-<div id="animation_container" style="background-color:rgba(222, 231, 233, 1.00); width:800px; height:600px">
-		<canvas id="canvas" width="800" height="600" style="position: absolute; display: block; background-color:rgba(222, 231, 233, 1.00);"></canvas>
-		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:800px; height:600px; position: absolute; left: 0px; top: 0px; display: block;">
-		</div>
-	</div>
-<script>
-
 </script>	
+
 </div>
 
