@@ -4,7 +4,7 @@
 Pro animaci systoly a diastoly stiskněte:
 <bdl-animate-control id="id4" speedfactor="50" segments="14;29" segmentlabels="systola;diastola"></bdl-animate-control>
 
-<bdl-animate-gif fromid="id4" src="heart.gif"></bdl-animate-gif>
+<bdl-animate-gif fromid="id4" src="heart.gif"  width=600></bdl-animate-gif>
 
 </div>
 <div class="w3-half">
