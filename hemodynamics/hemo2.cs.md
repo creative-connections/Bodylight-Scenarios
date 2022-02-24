@@ -1,5 +1,14 @@
 <div class="w3-row">
-<div class="w3-col s12 l4">
+<div class="w3-half">
+
+Stiskněte tlačítko pro animaci systoly a diastoly:
+
+<bdl-animate-control id="id4" speedfactor="20" segments="3;5;14;17;29" segmentlabels="4b plnění atriální systola;1 systola komor - isovolumická kontrakce;2 systola komor - ejekce;3 isovolumická relaxace;4a plnění"></bdl-animate-control>
+
+<bdl-animate-gif fromid="id4" src="heart.gif" width=600></bdl-animate-gif>
+
+</div>
+<div class="w3-half">
 
 ## Srdeční cyklus 2
 
@@ -7,28 +16,12 @@ Protože srdeční síně a komory nekontrahují současně, fáze srdečního c
 lze detailněji rozdělit na
 
 
-- (1) isovolumická kontrakce 
-    - první zvuk tepu srdce, způsoben zavřením mitrální a trikuspidální chlopní       
-- (2) ejekce
-    - otevírají se aortální a pulmonární chlopně
-    - krev z levé komory proudí přes aortální chlopeň do tělního oběhu
-    - krev z pravé komory proudí přes pulmonární chlopeň do plicního oběhu
-- (3) isovolumická relaxace 
-    - druhý zvuk tepu srdce,  způsoben zavřením aortální a pulmonární chlopní
-- (4) plnění - krev plní síň a komoru
-    - otevírají se mitrální a trikuspidální chlopně
+- (1) **isovolumická kontrakce** - první zvuk tepu srdce, způsoben zavřením mitrální a trikuspidální chlopní       
+- (2) **ejekce** - otevírají se aortální a pulmonární chlopně - krev z levé komory proudí přes aortální chlopeň do tělního oběhu - krev z pravé komory proudí přes pulmonární chlopeň do plicního oběhu
+- (3) **isovolumická relaxace** - druhý zvuk tepu srdce,  způsoben zavřením aortální a pulmonární chlopní
+- (4) **plnění** - krev plní síň a komoru - otevírají se mitrální a trikuspidální chlopně
     - (4a) plnění - diastola atrií (síní)
     - (4b) plnění - systola atrií (síní)
-
-</div>
-<div class="w3-col s12 l8">
-Stiskněte tlačítko pro animaci systoly a diastoly:
-
-<bdl-animate-control id="id4" speedfactor="20" segments="3;5;14;17;29" segmentlabels="4b plnění atriální systola;1 systola komor - isovolumická kontrakce;2 systola komor - ejekce;3 isovolumická relaxace;4a plnění"></bdl-animate-control>
-
-<bdl-animate-gif fromid="id4" src="heart.gif" width=600></bdl-animate-gif>
-</div>
-</div>
 
 <bdl-quiz question="Druhý zvuk tepu srdce je způsoben:"
   answers="uzavřením mitrální a trikuspidální chlopně|
@@ -39,3 +32,6 @@ Stiskněte tlačítko pro animaci systoly a diastoly:
   otevření chlopní negeneruje výrazný slyšitelný zvuk|
   druhý zvuk tepu srdce, způsoben zavřením aortální a pulmonární chlopní">
 </bdl-quiz> 
+
+</div>
+</div>
