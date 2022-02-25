@@ -3,7 +3,7 @@
     * [2 Fáze srdečního cyklu](#hemo2.cs.md)
     * [3 elektrické události<br/>během srdečního cyklu](#hemo2ekg.cs.md)
     * [4 Objem v levé komoře](#hemo3.cs.md)
-    * [4.a  Animace chlopní](#hemo3.cs.md)
+    * [4.a  Animace chlopní](#hemo30.cs.md)
     * [5 Objem v pravé komoře](#hemo31.cs.md)
     * [6 Tlaky v levé komoře](#hemo4.cs.md)
     * [7 Tlaky v pravé komoře](#hemo41.cs.md)
@@ -14,4 +14,5 @@
     * [12 Defekty Septa PV diagramy](#hemoseptumdefects.cs.md)      
     * [Model hemodynamiky Burkhoff](#hemodynamicsburkhoff.cs.md)
     * [Model hemodynamiky Meurs](#hemodynamicsmeurs.cs.md)
+
 
