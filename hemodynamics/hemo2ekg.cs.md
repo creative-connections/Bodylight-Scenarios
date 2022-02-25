@@ -31,7 +31,7 @@ Elektrokardiogram (EKG) během srdečního cyklu ukáže tyto události:
 - (1) isovolumická kontrakce 
     - konec QRS komplexu a S-T segment - systola komor
 - (2) ejekce
-    - na konci začíná T vlna - způsobí repolarizaci komor
+    - na konci začíná T vlna - repolarizace komor
 - (3) isovolumická relaxace - konec T vlny 
 - (4) plnění - krev plní síň a komoru
     - otevírají se mitrální a trikuspidální chlopně
