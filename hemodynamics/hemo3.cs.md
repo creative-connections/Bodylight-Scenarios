@@ -1,24 +1,6 @@
 <div class="w3-row">
-<div class="w3-col s12 l4">
+<div class="w3-half">
 
-## Srdeční cyklus 3 objem v levé komoře
-
-Objemy během srdečního cyklu:
-
-
-- (1) isovolumická kontrakce 
-    - objem v obou komorách se nemění       
-- (2) ejekce
-    - objem v obou komorách se snižuje
-- (3) isovolumická relaxace 
-    - objem v obou komorách se nemění
-- (4) plnění - krev plní síň a komoru
-    - oběm krve v komorách se postupně zvyšuje
-    - (4a) plnění - diastola atrií (síní)
-    - (4b) plnění - systola atrií (síní) - rychlost  
-
-</div>
-<div class="w3-col s12 l4">
 
 <bdl-fmi id="id4" src="BurkhoffFMI.js" 
          fminame="Cardiovascular_Model_Burkhoff_HemodynamicsBurkhoff_0shallow"
@@ -29,7 +11,7 @@ Objemy během srdečního cyklu:
          fstepsize="0.002"
          showcontrols="false"></bdl-fmi>
          
-Stiskněte tlačítko pro animaci systoly a diastoly:
+Stiskněte tlačítko pro simulaci podle fází srdečního cyklu:
 
 <bdl-animate-control 
 id="id5" 
@@ -40,24 +22,23 @@ segmentlabels="4b plnění atriální systola;1 systola komor - isovolumická ko
 segmentcond="6,eq,0;7,eq,1;7,eq,0;6,eq,1;5,gt,100000" 
 simsegments="70;120;175;260;380"></bdl-animate-control> 
 
-<bdl-animate-gif fromid="id5" src="heart.gif" width=400></bdl-animate-gif>
+<bdl-animate-gif fromid="id5" src="heart.gif" width=600></bdl-animate-gif>
+
 </div>
-<div class="w3-col s12 l4">
+<div class="w3-half">
+
 Objem krve v levé komoře:
 
 <bdl-chartjs-time
    id="id11"  
-   width="400"  
-   height="300"  
+   width="500"  
+   height="200"  
    fromid="id4"  
    labels="Left Ventricle Volume" refindex="0"  refvalues="1"
       ylabel="objem (ml)"
       xlabel="čas (s)"
       convertors="1000000,1"  throttle="50"></bdl-chartjs-time>
   
-</div>
-</div>
-
 <bdl-quiz question="Z grafu odečtěte kolik krve se vypudí z levé komory během ejekční fáze:"
   answers="asi 77 ml|
            asi 5 l|
@@ -67,4 +48,7 @@ Objem krve v levé komoře:
   Za minutu srdce vypudí asi 5 l krve, ale během jedné fáze 77 ml.|
   151 ml je maximální náplň krve v levé komoře, ale vypudí se 'jen' 77 ml.">
 </bdl-quiz> 
+
+</div>
+</div>
 
