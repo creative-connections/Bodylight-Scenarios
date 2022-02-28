@@ -8,7 +8,7 @@ Stiskněte tlačítko pro simulaci podle fází srdečního cyklu:
 
 <bdl-animate-control id="id5" fromid="idfmi" speedfactor="20" segments="3;5;14;17;29" segmentlabels="4b plnění atriální systola;1 systola komor - isovolumická kontrakce;2 systola komor - ejekce;3 isovolumická relaxace;4a plnění" segmentcond="6,eq,0;7,eq,1;7,eq,0;6,eq,1;5,gt,100000" simsegments="70;120;175;260;380"></bdl-animate-control> 
 
-<bdl-animate-adobe src="Faze_srdce.js" width="600" height="600" name="Faze_srdce" fromid="idfmi"></bdl-animate-adobe>
+<bdl-animate-adobe src="Faze_srdce.js" width="600" height="600" name="Faze_srdce" fromid="id5"></bdl-animate-adobe>
 
 <bdl-bind2a findex="10" aname="children.0.AtriumRight_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="6" aname="children.0.ValveMV_anim" amin="99" amax="0" fmin="0" fmax="1"></bdl-bind2a>
