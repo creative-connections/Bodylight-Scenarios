@@ -27,7 +27,9 @@ simsegments="70;120;175;260;380"></bdl-animate-control>
 </div>
 <div class="w3-half">
 
-Objem krve v levé komoře. End-diastolický objem je maximální objem krve v komoře. Systolický objem je objem krve vypuzení z komory během systoly.
+Objem krve v levé komoře. 
+1. End-diastolický objem - maximální objem krve v komoře
+2. Systolický objem - objem krve vypuzený z komory během systoly
 
 <bdl-chartjs-time
    id="id11"  
@@ -38,15 +40,16 @@ Objem krve v levé komoře. End-diastolický objem je maximální objem krve v k
       ylabel="objem (ml)"
       xlabel="čas (s)"
       convertors="1000000,1"  throttle="50"></bdl-chartjs-time>
-  
-<bdl-quiz question="Z grafu odečtěte kolik krve se vypudí z levé komory během ejekční fáze-tj. jaký je systolický objem:"
-  answers="asi 77 ml|
-           asi 5 l|
-           asi 151 ml"
+
+**Úkoly**  
+<bdl-quiz question="Pusťte simulaci a z grafu odečtěte EDO a SO:"
+  answers="EDO = 151ml, SO = 77 ml|
+           EDO = 77 ml, SO = 151 ml|
+           EDO = 151ml, SO = 74 ml"
   correctoptions="true|false|false"           
   explanations="Ano. Systolický objem je asi 77 ml krve (151ml - 74ml).|
-  Ne. 5 l krve je zbruha minutový objem srdce - tj. kolik krve srdce přepumpuje za minutu.|
-  Ne. 151 ml je maximální náplň krve v levé komoře, jinak též end-diastolický objem.">
+  Ne. |
+  Ne. 151 ml je maximální náplň krve v levé komoře, ale 74 ml je minimální náplň. Vypudí se tedy 151-74=77">
 </bdl-quiz> 
 
 </div>
