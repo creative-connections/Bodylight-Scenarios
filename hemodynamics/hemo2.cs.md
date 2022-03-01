@@ -27,7 +27,7 @@ lze detailněji rozdělit na
 2. sledujte zavírání/otvírání chlopní. Podle textu a animace zodpovězte:
 <bdl-quiz question="Druhý zvuk tepu srdce se vyskytne"
   answers="na začátku 1. fáze uzavřením mitrální a trikuspidální chlopně|
-           otevřením aortální a pulmonární chlopně|
+           na začátku 2. otevřením aortální a pulmonární chlopně|
            na začátku 3. fáze uzavřením aortální a pulmonární chlopně"
   correctoptions="false|false|true"           
   explanations="první zvuk tepu srdce, způsoben zavřením mitrální a trikuspidální chlopní|
