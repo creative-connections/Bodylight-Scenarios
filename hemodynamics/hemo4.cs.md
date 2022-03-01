@@ -1,62 +1,49 @@
 <div class="w3-row">
-<div class="w3-col s12 l4">
+<div class="w3-half">
 
-## Srdeční cyklus 4 tlaky v levé komoře
 
-Tlaky během srdečního cyklu:
-
-- (1) isovolumická kontrakce 
-    - tlak krve se díky kontrakci zvyšuje       
-- (2) ejekce
-    - tlak krve v levé komoře dosáhne tlaku v aortě a chlopeň se mechanicky otevírá
-- (3) isovolumická relaxace 
-    - tlak v komoře klesne pod tlak v aortě, chlopeň se mechanicky zavře a tlak se dále snižuje
-- (4) plnění - krev plní síň a komoru    
-    - (4a) plnění - diastola atrií - tlak v komoře je nižší, krev teče dovnitř
-    - (4b) plnění - systola atrií - tlak v komoře se mírně zvýší   
-
-</div>
-<div class="w3-col s12 l4">
-
-<bdl-fmi id="id4" src="BurkhoffFMI.js" 
-         fminame="Cardiovascular_Model_Burkhoff_HemodynamicsBurkhoff_0shallow"
-         tolerance="0.000001" starttime="0" guid="{b5629132-3ba6-4153-87c2-f3ff108e1920}"
-         valuereferences="33554435,33554438,637534265,637534241,637534290,16777312,637534466,637534294,637534268"
-         valuelabels="Left Ventricle Volume,Right Ventricle Volume,Pressure in Left Ventricle,Pressure in Aorta, Pressure in Left Atria, Heart Rate, LA elastance,MV open, AOV open"         
-         controlid="id5"
-         fstepsize="0.002"
-         showcontrols="false"></bdl-fmi>
+<bdl-fmi id="idfmi" src="BurkhoffFMI.js" fminame="Cardiovascular_Model_Burkhoff_HemodynamicsBurkhoff_0shallow" tolerance="0.000001" starttime="0" guid="{b5629132-3ba6-4153-87c2-f3ff108e1920}" valuereferences="33554435,637534265,637534241,637534290,16777312,637534466,637534294,637534268,33554438,33554436,33554437,637534348,637534374" valuelabels="Left Ventricle Volume,Pressure in Left Ventricle,Pressure in Aorta, Pressure in Left Atria, Heart Rate, LA elastance,MV open, AOV open,RV.volume,LA.volume,RA.volume,TV.open,PV.open" controlid="id5" fstepsize="0.002" showcontrols="false"></bdl-fmi>
          
-Stiskněte tlačítko pro animaci systoly a diastoly:
+Stiskněte tlačítko pro simulaci podle fází srdečního cyklu:
 
-<bdl-animate-control 
-id="id5" 
-fromid="id4" 
-speedfactor="20" 
-segments="3;5;14;17;29" 
-segmentlabels="4b plnění atriální systola;1 systola komor - isovolumická kontrakce;2 systola komor - ejekce;3 isovolumická relaxace;4a plnění" 
-segmentcond="7,eq,0;8,eq,1;8,eq,0;7,eq,1;6,gt,100000" 
-simsegments="70;120;175;260;380"></bdl-animate-control> 
+<bdl-animate-control id="id5" fromid="idfmi" speedfactor="20" segments="3;5;14;17;29" segmentlabels="4b plnění atriální systola;1 systola komor - isovolumická kontrakce;2 systola komor - ejekce;3 isovolumická relaxace;4a plnění" segmentcond="6,eq,0;7,eq,1;7,eq,0;6,eq,1;5,gt,100000" simsegments="70;120;175;260;380"></bdl-animate-control> 
 
-<bdl-animate-gif fromid="id5" src="heart.gif" width=400></bdl-animate-gif>
+<bdl-animate-adobe src="Faze_srdce.js" width="600" height="600" name="Faze_srdce" fromid="id5" fmuid="idfmi"></bdl-animate-adobe>
+
+
+<bdl-bind2a findex="10" aname="children.0.AtriumRight_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="6" aname="children.0.ValveMV_anim" amin="99" amax="0" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="7" aname="children.0.ValveAOV_anim" amin="0" amax="99" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="12" aname="children.0.ValvePV_anim" amin="0" amax="99" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="11" aname="children.0.ValveTV_anim" amin="99" amax="0" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="9" aname="children.0.AtriumLeft_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="0" aname="children.0.ventricles.ventriclesTotal.VentricleLeft_anim" amin="99" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="8" aname="children.0.ventricles.ventriclesTotal.children.0.VentricleRight_anim" amin="99" amax="0"></bdl-bind2a>
+
+
 </div>
-<div class="w3-col s12 l4">
-Tlak krve v levé komoře a aortě:
+<div class="w3-half">
+
+
+1. **isovolumická kontrakce** - tlak krve se díky kontrakci zvyšuje          
+2. **ejekce** - tlak krve v levé komoře dosáhne tlaku v aortě a chlopeň se mechanicky otevírá
+3. **isovolumická relaxace** - tlak v komoře klesne pod tlak v aortě, chlopeň se mechanicky zavře a tlak se dále snižuje
+4. **plnění** - krev plní síň a komoru - otevírají se mitrální a trikuspidální chlopně
+   - (4a) plnění - diastola atrií (síní) - tlak v komoře je nižší, krev teče dovnitř
+   - (4b) plnění - systola atrií (síní) - tlak v komoře se mírně zvýší kontrakcí síně
+
 
 <bdl-chartjs-time
    id="id11"  
    width="400"  
    height="300"  
-   fromid="id4"  
-   labels="Left Ventricle Pressure, Aorta Pressure" 
-   refindex="2"  refvalues="2"
+   fromid="idfmi"  
+   labels="Left Ventricle Pressure, Aorta Pressure, Left Atria Pressure" 
+   refindex="1"  refvalues="3"
    ylabel="tlak (mmHg)"
      xlabel="čas (s)"
-     convertors="0.00750062,1;0.00750062,1" throttle="50"></bdl-chartjs-time>
+     convertors="0.00750062,1;0.00750062,1;0.00750062,1" throttle="50"></bdl-chartjs-time>
   
-</div>
-</div>
-
 <bdl-quiz question="Jaký je diastolický (minimální) tlak v aortě během srdeční fáze"
   answers="asi 68 mmHg|
            asi 108 mmHg|
@@ -66,4 +53,10 @@ Tlak krve v levé komoře a aortě:
   108 mmHg je systolický (maximální) tlak v aortě.|
   124 mmHg je systolický (maximální) tlak v levé komoře.">
 </bdl-quiz> 
+
+</div>
+</div>
+
+
+
 
