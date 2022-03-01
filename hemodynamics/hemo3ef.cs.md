@@ -27,7 +27,7 @@ simsegments="70;120;175;260;380"></bdl-animate-control>
 </div>
 <div class="w3-half">
 
-Ejekční frakce je podíl systolického objemu a end-diastolického objemu.
+Ejekční frakce je podíl systolického objemu a end-diastolického objemu. EF = SV / EDV 
 
 <bdl-chartjs-time
    id="id11"  
@@ -38,11 +38,12 @@ Ejekční frakce je podíl systolického objemu a end-diastolického objemu.
       ylabel="objem (ml)"
       xlabel="čas (s)"
       convertors="1000000,1"  throttle="50"></bdl-chartjs-time>
-      
-EF = SV / EDV = <br /> <input id="sv" type="number"/> / <input id="edv" type="number"/> <button onclick="document.getElementById('ef').innerHTML = parseFloat(document.getElementById('sv').value) / parseFloat(document.getElementById('edv').value) ">=</button> <span id="ef"></span>
 
-  
-<bdl-quiz question="Kolik je ejekční frakce srdce podle této simulace:"
+**Úkoly:**
+1. Spusťte simulaci, odečtěte hodnoty SV a EDV
+2.  hodnoty SV a EDV doplňte do výpočtu níže a stiskněte rovnítko
+3.  EF = <input id="sv" type="number" style="width:7ch"/> / <input id="edv" type="number" style="width:7ch"/> <button onclick="document.getElementById('ef').innerHTML = (parseFloat(document.getElementById('sv').value) / parseFloat(document.getElementById('edv').value)).toFixed(2) ">=</button> <span id="ef">...</span>
+4. Kolik je ejekční frakce srdce podle této simulace: <bdl-quiz question=""
   answers="asi 0.51, tj. 51%|
            asi 0.41, tj. 41%|
            asi 0.31, tj. 31%"
