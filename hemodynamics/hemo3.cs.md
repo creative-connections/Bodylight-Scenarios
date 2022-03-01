@@ -40,8 +40,9 @@ Objem krve v levé komoře.
       ylabel="objem (ml)"
       xlabel="čas (s)"
       convertors="1000000,1"  throttle="50"></bdl-chartjs-time>
-  
-<bdl-quiz question="Z grafu odečtěte EDO a SO:"
+
+**Úkoly**  
+<bdl-quiz question="Pusťte simulaci a z grafu odečtěte EDO a SO:"
   answers="EDO = 151ml, SO = 77 ml|
            EDO = 77 ml, SO = 151 ml|
            EDO = 151ml, SO = 74 ml"
