@@ -24,7 +24,9 @@ Stiskněte tlačítko pro simulaci podle fází srdečního cyklu:
 </div>
 <div class="w3-half">
 
-Objem krve v levé komoře:
+Objem krve v levé komoře. 
+1. End-diastolický objem - maximální objem krve v komoře
+2. Systolický objem - objem krve vypuzený z komory během systoly
 
 <bdl-chartjs-time id="id11" width="500" height="200" fromid="idfmi" labels="Left Ventricle Volume" refindex="0" refvalues="1" ylabel="objem (ml)" xlabel="čas (s)" convertors="1000000,1" throttle="50"></bdl-chartjs-time>
   
