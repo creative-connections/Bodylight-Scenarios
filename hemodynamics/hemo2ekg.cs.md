@@ -27,25 +27,26 @@ Stiskněte tlačítko pro animaci:
 
 Elektrokardiogram (EKG) během srdečního cyklu ukáže tyto události:
 
-
-- (1) isovolumická kontrakce 
+1. isovolumická kontrakce 
     - konec QRS komplexu a S-T segment - systola komor
-- (2) ejekce
+2. ejekce
     - na konci začíná T vlna - repolarizace komor
-- (3) isovolumická relaxace - konec T vlny 
-- (4) plnění - krev plní síň a komoru
-    - otevírají se mitrální a trikuspidální chlopně
+3. isovolumická relaxace - konec T vlny 
+4. plnění - krev plní síň a komoru
     - (4a) plnění - depolarizace atrií (síní) na konci nastává P vlna
     - (4b) plnění - P-Q segment systola atrií (síní), na konci této fáze nastává začátek QRS komplexu
 
-<bdl-quiz question="QRS komplex předchází a způsobí:"
-  answers="systolu síní|
-           systolu komor|
-           diastolu komor"
-  correctoptions="false|true|false"           
-  explanations="systole síní předchází P vlna|
-  QRS komplex předchází systole komor|
-  T vlna souvisí s repolarizací a relaxací komor">
+**Úkoly**
+1. pusťte animaci synchronizovanou s EKG pod ním.
+2. sledujte fáze a zodpovězte:
+<bdl-quiz question="Kdy končí začíná QRS komplex:"
+  answers="ve fázi 4b|
+           ve fázi 1|
+           ve fázi 2"
+  correctoptions="true|false|false"           
+explanations="ano. Na konci 4b fáze začíná QRS komplex, způsobí systolu komor v další fázi|
+  ne. Zde QRS komplex končí.|
+  ne. Zde se vyskytuje T vlna.">
 </bdl-quiz> 
 
 </div>
