@@ -3,7 +3,6 @@
     * [2 Fáze srdečního cyklu](#hemo2.cs.md)
     * [3 elektrické události<br/>během srdečního cyklu](#hemo2ekg.cs.md)
     * [4 Objem v levé komoře](#hemo3.cs.md)
-    * [4.a  Animace chlopní](#hemo30.cs.md)
     * [Ejekční frakce](#hemo3ef.cs.md)
     * [5 Objem v pravé komoře](#hemo31.cs.md)
     * [6 Tlaky v levé komoře](#hemo4.cs.md)
