@@ -27,7 +27,9 @@ simsegments="70;120;175;260;380"></bdl-animate-control>
 </div>
 <div class="w3-half">
 
-Objem krve v levé komoře. End-diastolický objem je maximální objem krve v komoře. Systolický objem je objem krve vypuzení z komory během systoly.
+Objem krve v levé komoře. 
+1. End-diastolický objem je maximální objem krve v komoře. 
+Systolický objem je objem krve vypuzení z komory během systoly.
 
 <bdl-chartjs-time
    id="id11"  
