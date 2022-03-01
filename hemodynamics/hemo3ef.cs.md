@@ -27,8 +27,7 @@ simsegments="70;120;175;260;380"></bdl-animate-control>
 </div>
 <div class="w3-half">
 
-Ejekční frakce je podíl systolického objemu a end-diastolického objemu
-Objem krve v levé komoře:
+Ejekční frakce je podíl systolického objemu a end-diastolického objemu.
 
 <bdl-chartjs-time
    id="id11"  
