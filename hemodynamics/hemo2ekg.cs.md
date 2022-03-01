@@ -39,7 +39,7 @@ Elektrokardiogram (EKG) během srdečního cyklu ukáže tyto události:
 **Úkoly**
 1. pusťte animaci synchronizovanou s EKG pod ním.
 2. sledujte fáze a zodpovězte:
-<bdl-quiz question="Kdy končí začíná QRS komplex:"
+<bdl-quiz question="Kdy začíná QRS komplex:"
   answers="ve fázi 4b|
            ve fázi 1|
            ve fázi 2"
