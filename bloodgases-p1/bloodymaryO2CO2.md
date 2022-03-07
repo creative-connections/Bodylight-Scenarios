@@ -1,7 +1,7 @@
 <div class="w3-row">
 <div class="w3-twothird">
 
-<bdl-chartjs-fixed-xy width="600" height="200" fromid="idfmi" labels="" initialdata="" refindex="0" refvalues="101" xrefindex="101" xrefvalues="101" xtofixed="0" convertors="0.00750061683,1;1,1" xlabel="pO2 [mmHg]" ylabel="ctO2 [mmol/l]" maxdata="5" xrefpointindex="405" refpointindex="407"></bdl-chartjs-fixed-xy>
+<bdl-chartjs-fixed-xy width="600" height="200" fromid="idfmi" labels="" initialdata="" refindex="0" refvalues="101" xrefindex="101" xrefvalues="101" xtofixed="0" convertors="0.00750061683,1;1,1" xlabel="pO2 [mmHg]" ylabel="ctO2 [mmol/l]" maxdata="10" xrefpointindex="405" refpointindex="407"></bdl-chartjs-fixed-xy>
 
 </div>
 <div class="w3-third">
@@ -14,7 +14,7 @@
 
 <div class="w3-row">
 <div class="w3-twothird">
-<bdl-chartjs-fixed-xy width="600" height="200" fromid="idfmi" labels="" initialdata="" refindex="202" refvalues="101" xrefindex="303" xrefvalues="101" xtofixed="0" convertors="0.00750061683,1;1,1" xlabel="pCO2 [mmHg]" ylabel="ctCO2 [mmol/l]" maxdata="5" xrefpointindex="404" refpointindex="406" min="0" max="35"></bdl-chartjs-fixed-xy>
+<bdl-chartjs-fixed-xy width="600" height="200" fromid="idfmi" labels="" initialdata="" refindex="202" refvalues="101" xrefindex="303" xrefvalues="101" xtofixed="0" convertors="0.00750061683,1;1,1" xlabel="pCO2 [mmHg]" ylabel="ctCO2 [mmol/l]" maxdata="10" xrefpointindex="404" refpointindex="406" min="0" max="35"></bdl-chartjs-fixed-xy>
 
 </div>
 <div class="w3-third">
