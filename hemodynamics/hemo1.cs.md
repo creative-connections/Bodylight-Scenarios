@@ -34,3 +34,5 @@ Pro animaci systoly a diastoly stiskněte:
 </div>
 
 
+
+
