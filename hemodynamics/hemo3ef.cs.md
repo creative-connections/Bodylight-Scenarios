@@ -27,11 +27,15 @@ simsegments="70;120;175;260;380"></bdl-animate-control>
 </div>
 <div class="w3-half">
 
+Objem krve v levé komoře. 
+1. End-diastolický objem - maximální objem krve v komoře
+2. Systolický objem - objem krve vypuzený z komory během systoly
+
 Ejekční frakce je podíl systolického objemu a end-diastolického objemu. EF = SV / EDV 
 
 <bdl-chartjs-time
    id="id11"  
-   width="500"  
+   width="600"  
    height="200"  
    fromid="id4"  
    labels="Left Ventricle Volume" refindex="0"  refvalues="1"
@@ -52,6 +56,15 @@ Ejekční frakce je podíl systolického objemu a end-diastolického objemu. EF 
   Ne|
   Ne">
 </bdl-quiz> 
+5. Zařaďte do kategorie <bdl-quiz question=""
+  answers="abnormální > 75%|
+           normální 51-75%|
+           hraniční 41-50%|
+           snížená <40%    
+           "
+  correctoptions="false|true|false|false"           
+  explanations="Ne.|Ano.|Ne.|Ne">
+</bdl-quiz>
 
 </div>
 </div>
