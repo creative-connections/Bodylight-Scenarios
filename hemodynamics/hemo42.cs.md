@@ -1,9 +1,6 @@
 <div class="w3-row">
 <div class="w3-col s12 l4">
 
-## Srdeční cyklus mechanické vlastnosti v obou komorách a síních
-
-
 <bdl-fmi id="id4" mode="" src="BurkhoffFMI.js" fminame="Cardiovascular_Model_Burkhoff_HemodynamicsBurkhoff_0shallow" tolerance="0.000001" starttime="0" fstepsize="0.02" guid="{b5629132-3ba6-4153-87c2-f3ff108e1920}" valuereferences="33554435,637534265,637534241,637534290,16777312,637534466,637534294,637534268,637534345,637534371,637534323,33554438,33554436,33554437,637534348,637534374,16777310,16777306,16777302,16777298" valuelabels="Left Ventricle Volume,Pressure in Left Ventricle,Pressure in Aorta, Pressure in Left Atria, Heart Rate, LA elastance,MV open, AOV open,Pressure in Right Ventricle,Pressure in Right Arterie,Pressure in Right Atria,Right Ventricle Volume,LA.volume,RA.volume,TV.open,PV.open,LVElastance.Ees,LAElastance.Ees,RVElastance.Ees,RAElastance.Ees" inputs="id1,16777312,1,60,t;idlve,16777310,2.053e+8,100,t;idlve,16777306,3.333e+7,100,t;idlve,16777302,5.066e+7,100,t;idlve,16777298,2.666e+7,100,t" inputlabels="heartRate.k,LVElastance.Ees,LAElastance.Ees,RVElastance.Ees,RAElastance.Ees"></bdl-fmi>
 
 
@@ -24,7 +21,6 @@ Stiskněte tlačítko pro animaci systoly a diastoly:
 
 Srdeční frekvence <bdl-range id="id1" title="(1/min)" min="40" max="200" default="60" step="1"></bdl-range>
 Inotropie <bdl-range id="idlve" title="(%)" min="50" max="200" default="100" step="0.1"></bdl-range>
-<bdl-chartjs-time width="300" height="200" fromid="id4" labels="" initialdata="" refindex="16" refvalues="4"></bdl-chartjs-time>
 
 
 </div>
