@@ -31,18 +31,12 @@ aplikovat negativní inotropní agent: <bdl-buttonparams title="Nifedipin 20mg" 
 
 </div>
 <div class="w3-col l4">
-Tlaky v levé komoře
-
-<bdl-chartjs-time id="id11" width="500" height="300" fromid="id4" maxdata="192" labels="Left Ventricle Pressure, Aorta Pressure, Pressure in Left Atria" refindex="1" refvalues="3" ylabel="tlak (mmHg)" xlabel="čas (s)" convertors="0.00750062,1;0.00750062,1;0.00750062,1" throttle="0"></bdl-chartjs-time>
-     
-Objem krve v levé komoře
-
-<bdl-chartjs-time id="id11" width="500" height="300" fromid="id4" maxdata="192" labels="Left Ventricle Volume" refindex="0" refvalues="1" ylabel="objem (ml)" xlabel="čas (s)" convertors="1000000,1" throttle="0"></bdl-chartjs-time>
+<bdl-chartjs-time id="id11" width="400" height="300" fromid="id4" maxdata="192" labels="Left Ventricle Pressure, Aorta Pressure, Pressure in Left Atria" refindex="1" refvalues="3" ylabel="tlak (mmHg)" xlabel="čas (s)" convertors="0.00750062,1;0.00750062,1;0.00750062,1" throttle="0"></bdl-chartjs-time>
+<bdl-chartjs-time id="id11" width="400" height="300" fromid="id4" maxdata="192" labels="Left Ventricle Volume" refindex="0" refvalues="1" ylabel="objem (ml)" xlabel="čas (s)" convertors="1000000,1" throttle="0"></bdl-chartjs-time>
   
 </div>
 <div class="w3-col l4">
-PV diagram:
-<bdl-chartjs-xy id="id10" width="500" height="600" fromid="id4" labels="tlak, objem" initialdata="" refindex="0" refvalues="2" maxdata="1024" convertors="0.00750062,1;1000000,1"></bdl-chartjs-xy>
+<bdl-chartjs-xy id="id10" width="400" height="600" fromid="id4" labels="tlak, objem" initialdata="" refindex="0" refvalues="2" maxdata="1024" convertors="0.00750062,1;1000000,1"></bdl-chartjs-xy>
 
 </div>
 </div>
