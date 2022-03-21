@@ -21,14 +21,12 @@ Srdeční frekvence <bdl-range id="id1" title="(1/min)" min="40" max="200" defau
 
 Inotropie <bdl-range id="idlve" title="(%)" min="50" max="200" default="100" step="0.1"></bdl-range>
 
-pozitivní inotropní agent - léčivo DIGOXIN<bdl-buttonparams title="Digoxin 0.125mg" ids="idlve" values="120"></bdl-buttonparams>
+aplikovat pozitivní inotropní agent: <bdl-buttonparams title="Digoxin 0.125mg" ids="idlve" values="120"></bdl-buttonparams>
 
-negativní inotropní agent - léčivo NIFEDIPIN<bdl-buttonparams title="Nifedipin 20mg" ids="idlve" values="70"></bdl-buttonparams>
+aplikovat negativní inotropní agent: <bdl-buttonparams title="Nifedipin 20mg" ids="idlve" values="70"></bdl-buttonparams>
 
 
-*[DIGOXIN]: Digoxin je příklad pozitivního inotropního agenta - je srdeční glykosid obsažený v listech náprstníku vlnatého (Digitalis lanata ). Digoxin zlepšuje funkci srdce jako pumpy tím, že zesiluje sílu stahu srdečního svalu a zpomaluje jeho tepovou frekvenci. Zlepšuje se prokrvení ledvin, zvyšuje se tvorba moči, což pomáhá odstranit z organismu nadbytek vody, která se hromadí jako důsledek selhání srdce. Léčebný účinek se projeví snížením únavy, dušnosti, zmenšením otoků dolních končetin a zvýšením fyzické výkonnosti.
-
-*[NIFEDIPIN]: Nifedipin je příklad negativního inotropního agenta - je to účinná látka patřící do skupiny léků tzv. blokátory vápníkových kanálů. Zabraňuje průniku vápníku do buněk srdečního svalu a hladké svaloviny srdečních tepen. Rozšiřuje periferní cévy a snižuje vaskulární rezistenci. Omezením srdeční práce se snižuje přímo spotřeba kyslíku. Poptávka po kyslíku klesá také nepřímo, díky zmenšení námahy pro srdeční sval. Toto má za následek snížení krevního tlaku. Předchází a ulevuje od bolesti na hrudi způsobované nedostatečným zásobením srdečního svalu kyslíkem.
+*[DIGOXIN]: Digoxin je příklad pozitivního inotropního agenta - je srdeční glykosid obsažený v listech náprstníku vlnatého (Digitalis lanata ). Digoxin zlepšuje funkci srdce jako pumpy tím, že zesiluje sílu stahu srdečního svalu a zpomaluje jeho tepovou frekvenci. Zlepšuje se prokrvení ledvin, zvyšuje se tvorba moči, což pomáhá odstranit z organismu nadbytek vody, která se hromadí jako důsledek selhání srdce. Léčebný účinek se projeví snížením únavy, dušnosti, zmenšením otoků dolních končetin a zvýšením fyzické výkonnosti.:IPIN]: Nifedipin je příklad negativního inotropního agenta - je to účinná látka patřící do skupiny léků tzv. blokátory vápníkových kanálů. Zabraňuje průniku vápníku do buněk srdečního svalu a hladké svaloviny srdečních tepen. Rozšiřuje periferní cévy a snižuje vaskulární r:. Omezením srdeční práce se snižuje přímo spotřeba kyslíku. Poptávka po kyslíku klesá také nepřímo, díky zmenšení námahy pro srdeční sval. Toto má za následek snížení krevního tlaku. Předchází a ulevuje od bolesti na hrudi způsobované nedostatečným zásobením srdečního svalu kyslíkem.
 
 
 </div>
