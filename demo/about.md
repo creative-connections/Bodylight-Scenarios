@@ -21,5 +21,8 @@ J Med Internet Res 2019;21(7):e14160
 URL: https://www.jmir.org/2019/7/e14160
 DOI: 10.2196/14160
   3. Kulhánek T, Kofránek J, OpenModelica & ModProd 2022 Workshop, [presentation, pptx](https://filedn.com/lHGc7w3H4jOpIe46u1nPt57/papers/Kulhanek-ModprodWorkshop2022-Bodylight.pptx)
-  4. Bodylight documentation, tutorials, other demos: https://bodylight.physiome.cz
+
+# Bodylight 
+
+We call technology behind in-browser simulators as 'BODYLIGHT'. See documentation, tutorials and further demos at <a href="https://bodylight.physiome.cz" class="w3-button w3-theme-d1">bodylight.physiome.cz</a>
    
