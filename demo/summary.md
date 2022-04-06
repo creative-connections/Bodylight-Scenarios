@@ -14,7 +14,7 @@
 <hr/>
 
   * [Nefron](#nefron1.md)
-  * [Simulator of Nefron][nefron2](#nefron2.md)
+  * [Simulator of Nefron](#nefron2.md)
 
 <hr/>
 
