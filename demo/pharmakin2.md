@@ -1,1 +1,1 @@
-<iframe src="pharmakin.html" width="1080" height="700"></iframe>
+<iframe src="pharmakin.html" width="1400" height="1000"></iframe>
