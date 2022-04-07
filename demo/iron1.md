@@ -15,7 +15,7 @@ fig 2. screencast of model simulator showing effect of LPS injection (mimics bac
 
 # Iron metabolism in duodenum
 
-The ironmetabolism simulator is based on the model described in [1-4]. 
+The ironmetabolism simulator is based on the model described in [1-4]. The simulator is used in more detailed educational material app (in Czech language only) [^1].
 
 
 <div class="w3-small">
@@ -30,6 +30,9 @@ The ironmetabolism simulator is based on the model described in [1-4].
   
   [4] Lipocalin 2: An Emerging Player in Iron Homeostasis and Inflammation Xia Xiao, Beng San Yeoh, Matam Vijay-Kumar Annual Review of Nutrition 2017 37:1, 103-130 https://doi.org/10.1146/annurev-nutr-071816-064559 
 </div>
+
+[^1]: https://bodylight.physiome.cz/Bodylight-Scenarios/ironmetabolism/
+
 
 </div>
 </div>
