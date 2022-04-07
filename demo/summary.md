@@ -7,6 +7,10 @@
 
   * [Iron Metabolism](#iron1.md)
   * [Simulator of Iron Metabolism](#iron2.md)
+  * [iron2a](#iron2a.md)
+  * [iron3](#iron3.md)
+  * [iron4](#iron4.md)
+
 <hr/>
 
   * [Pharmacokinetics](#pharmakin1.md)
