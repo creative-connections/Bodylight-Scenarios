@@ -22,7 +22,7 @@ URL: https://www.jmir.org/2019/7/e14160
 DOI: 10.2196/14160
   3. Kulhánek T, Kofránek J, OpenModelica & ModProd 2022 Workshop, [presentation, pptx](https://filedn.com/lHGc7w3H4jOpIe46u1nPt57/papers/Kulhanek-ModprodWorkshop2022-Bodylight.pptx)
 
-# Bodylight 
+# Technologies 
 
-We call technology behind in-browser simulators as 'BODYLIGHT'. See documentation, tutorials and further demos at <a href="https://bodylight.physiome.cz" class="w3-button w3-theme-d1">bodylight.physiome.cz</a>
+We call technology behind in-browser simulators as 'BODYLIGHT'. It allows to compile mathematical models expressed in Modelica language into WebAssembly language executable in browsers without any other plugins or extension. It also allows easy integration of  animation created by Adobe Animate to bind with simulation and text into rich interactive document publishable as web application. See documentation, tutorials and further demos at <a href="https://bodylight.physiome.cz" class="w3-button w3-theme-d1">bodylight.physiome.cz</a>
    
