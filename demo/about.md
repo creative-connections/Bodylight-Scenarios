@@ -24,5 +24,5 @@ DOI: 10.2196/14160
 
 # Technologies 
 
-We call technology behind in-browser simulators as 'BODYLIGHT'. It allows to compile mathematical models expressed in Modelica language into WebAssembly language executable in browsers without any other plugins or extension. It also allows easy integration of  animation created by Adobe Animate to bind with simulation and text into rich interactive document publishable as web application. See documentation, tutorials and further demos at <a href="https://bodylight.physiome.cz" class="w3-button w3-theme-d1">bodylight.physiome.cz</a>
+We call technology behind in-browser simulators as 'BODYLIGHT'. It allows to compile mathematical models expressed in Modelica language into WebAssembly language executable in browsers without any other plugins or extension. It also allows easy integration of  animation created by Adobe Animate to bind with simulation and text into rich interactive document publishable as web application. See further documentation, tutorials and further demos at <a href="https://bodylight.physiome.cz" class="w3-button w3-theme-d1">bodylight.physiome.cz</a>
    
