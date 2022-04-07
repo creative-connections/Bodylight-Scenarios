@@ -7,9 +7,9 @@
 
   * [Iron Metabolism](#iron1.md)
   * [Simulator of Iron Metabolism](#iron2.md)
-  * [iron2a](#iron2a.md)
-  * [iron3](#iron3.md)
-  * [iron4](#iron4.md)
+  * [Molecular Structure Demo](#iron2a.md)
+  * [Molecular Structure - Hepcidine](#iron3.md)
+  * [Molecular Structure - Ferritin](#iron4.md)
 
 <hr/>
 
