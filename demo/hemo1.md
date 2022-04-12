@@ -1,5 +1,3 @@
-
-
 <div class="w3-row">
 <div class="w3-half">
 
