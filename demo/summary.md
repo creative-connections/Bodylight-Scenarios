@@ -1,31 +1,18 @@
   * [Demo Introduction](#index.md)
-<hr/>  
-
   * [Hemodynamics](#hemo1.md)
-  * [Simulator of Hemodynamics](#hemo2.md)
-<hr/>
-
+    * [Simulator of Hemodynamics](#hemo2.md)
   * [Circulation](#circulation1.md)
-  * [Simulator of Circulation](#circulation2.md)
-<hr/>
-
-
+    * [Simulator of Circulation](#circulation2.md)
   * [Iron Metabolism](#iron1.md)
-  * [Simulator of Iron Metabolism](#iron2.md)
-<hr/>
-
+    * [Simulator of Iron Metabolism](#iron2.md)
   * [Nefron](#nefron1.md)
-  * [Simulator of Nefron](#nefron2.md)
-<hr/>
-
-
+    * [Simulator of Nefron](#nefron2.md)
   * [Pharmacokinetics](#pharmakin1.md)
-  * [Simulator of Pharmacokinetics](#pharmakin2.md)
-<hr/>
-
+    * [Simulator of Pharmacokinetics](#pharmakin2.md)
   * [Molecular Structure Visualisation](#iron2a.md)
-  * [Molecular Structure - Hepcidine](#iron3.md)
-  * [Molecular Structure - Ferritin](#iron4.md)
-<hr/>
-
+    * [Molecular Structure - Hepcidine](#iron3.md)
+    * [Molecular Structure - Ferritin](#iron4.md)
+  * [Virtual patient 3D anatomy](#virtualpatient1.md)
+    * [Simulator in VR/AR](#virtualpatient2.md) 
   * [Authors and References](#about.md)
+
