@@ -1,4 +1,4 @@
-# Development of T cells - central tolerance
+# Development of T cells - positive and negative selection to central tolerance
 
 <bdl-animate-adobe src="Imuno1.js" width="800" height="600" name="Animace_HTML5Canvas_v260422" responsive="true" fromid="id1" playafterstart="true"></bdl-animate-adobe><bdl-animate-adobe-control id="id1"></bdl-animate-adobe-control>
 
