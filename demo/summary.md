@@ -14,7 +14,9 @@
     * [Molecular Structure - Ferritin](#iron4.md)
   * [Virtual patient 3D anatomy](#virtualpatient1.md)
     * [Simulator in VR/AR](#virtualpatient2.md) 
-  * [Imunity](#imuno0.md)
-    * [Central imunity demo](#imuno1.md)
+  * [Imunity](#imuno.md)
+    * [Central imunity - animated GIF](#imuno0.md)
+    * [Central imunity - animation](#imuno1.md)
+  * [Dehydratation](#dehydratation.md)
+    *  [Dehydratation - animation](#dehydratation2.md)
   * [Authors and References](#about.md)
-
