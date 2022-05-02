@@ -18,6 +18,7 @@
 </div>
 Srdeční frekvence <bdl-range id="id1" title="(1/min)" min="40" max="200" default="60" step="1"></bdl-range>
 
+<bdl-sound-on-increase thresholdvalue="1e-6" fromid="id4" refindex="7" freq="440" volume="0.1"></bdl-sound-on-increase>
 
 Inotropie <bdl-range id="idlve" title="(%)" min="50" max="200" default="100" step="0.1"></bdl-range>
 
