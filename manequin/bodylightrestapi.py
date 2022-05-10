@@ -1,6 +1,7 @@
 from flask import Flask, jsonify, request, make_response
 #from flask import response
 
+# default values of parameters
 musclepressure = 100
 rate = 17
 blendduration = 50 #%
@@ -8,7 +9,8 @@ timestep = 1 #s
 resistance = 5
 compliance = 7
 peep = 3
-#readonly
+
+# default value of some variable - readonly
 import time
 import math
 volume = 3 #between 1.5 and 4.5
@@ -19,6 +21,7 @@ def test_generate_volume_value():
 
 app = Flask(__name__)
 
+# this function adds headers need to be present for CORS request/response exchange
 def _build_cors_preflight_response():
     response = make_response()
     response.headers.add("Access-Control-Allow-Origin", "*")
@@ -26,7 +29,10 @@ def _build_cors_preflight_response():
     response.headers.add('Access-Control-Allow-Methods', "*")
     return response
 
-
+# this function generates default response and optionally updates the value sent by post request
+# for GET request it will return the value - in JSONify from
+# for POST request it will parse the body of post in json (expected to be json form) and returns expected response - usually the same body
+# or what was updated
 def default_response(value):
     if request.method == 'OPTIONS':
         #print('option')
@@ -45,6 +51,7 @@ def default_response(value):
         response.headers.add('Access-Control-Allow-Origin','*')
         return value, response
 
+# specific method to return current volume
 @app.route('/volume', methods=['GET','OPTIONS']) #POST is not allowed
 def volumeget():
     global volume
@@ -53,7 +60,7 @@ def volumeget():
     volume, myresponse = default_response(volume)
     return myresponse
 
-
+# specific method to return musclepressure, POST request will also update the value
 @app.route('/musclepressure', methods=['GET','OPTIONS','POST'])
 def musclepressureget():
     global musclepressure
@@ -95,6 +102,7 @@ def peepget():
     peep, myresponse = default_response(peep)
     return myresponse
 
+#general call to get/update all values in one call
 @app.route('/', methods=['GET','OPTIONS','POST'])
 def index():
     global musclepressure
