@@ -8,7 +8,7 @@ Either connect manequin in the local network, or launch the bodylightrestapi.py 
 
 ## Demo section
 
-This section is visualised only if the bodylight.js web components are registered (see https://bodylight.physiome.cz/Bodylight-docs/reference/).
+This section is visualised only if the bodylight.js web components are registered (e.g. via index.html) (see https://bodylight.physiome.cz/Bodylight-docs/reference/).
 
 <bdl-remote-value manequinurl="http://localhost:5000/" fetchinterval="500" id="id4"></bdl-remote-value>
 <bdl-chartjs-time id="id11" width="400" height="300" fromid="id4" refindex="7" refvalue="1" ></bdl-chartjs-time>
