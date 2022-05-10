@@ -124,7 +124,7 @@ def index():
                }
     myvalue, myresponse = default_response(myvalue)
 
-    # TODO POST will change myvalue - it needs to be translated back to individual values
+    # POST will change myvalue - it needs to be translated back to individual values
     # musclepressure = myvalue['musclepressure']
     # ...
     if request.method == 'POST':
