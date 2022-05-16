@@ -21,4 +21,7 @@
     * [Central imunity - animation](#imuno1.md)
   * [Dehydratation](#dehydratation.md)
     *  [Dehydratation - animation](#dehydratation2.md)
+  * [Virtual Patient Images for Case Report](#vp0.md)
+    *  [VP images in context (CZ only)](#vp1.md)
+    *  [VP interactive image](#vp2.md)
   * [Authors and References](#about.md)
