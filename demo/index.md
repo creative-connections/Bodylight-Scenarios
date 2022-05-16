@@ -6,7 +6,8 @@
 ## Our goals
 
 * Improve healthcare and medicine with mathematical models of human physiology and models of effects of medical devices and drug treatment
-* Commercialize scientific and technology result
+* Use scientific and technology result in clinical praxis and better education.
+
 
 ## What you can do here in this demo
 
