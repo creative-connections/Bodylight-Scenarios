@@ -24,4 +24,10 @@
   * [Virtual Patient Images for Case Report](#vp0.md)
     *  [VP images in context (CZ only)](#vp1.md)
     *  [VP interactive image](#vp2.md)
+    *  [VP2 images](#vp2img.md)
+    *  [VP2 images in context (CZ only)](#vp2context.md)
+    *  [VP2 animation -kidney surgery](#vp2interactive.md) 
+    *  [VP2 animation -blood control](#vp2anim2control.md)
+    *  [VP2 animation -complication](#vp2anim3complication.md)
   * [Authors and References](#about.md)
+
