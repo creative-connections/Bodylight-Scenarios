@@ -21,4 +21,3 @@ Following pages was inspired by the case reports presented in LAURIE project htt
 </div></div>
 
 
-Following pages shows some of the graphics with context (CZ only):
