@@ -136,5 +136,7 @@ def index():
         compliance = myvalue['compliance']
         peep = myvalue['peep']
 
-    return myresponse
-    #return 'Available endpoints /musclepressure /rate /blendduration /timestep /resistance /compliance /peep'
+    # return myresponse
+    # return 'Available endpoints /musclepressure /rate /blendduration /timestep /resistance /compliance /peep'
+    a = ['radek 1','radek 2'];
+    return '<html><body><pre>'+a.join('\n')+'</pre></body></html>'
