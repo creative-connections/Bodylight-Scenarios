@@ -30,5 +30,7 @@
     * [VP2 animation -kidney surgery](#vp2interactive.md) 
     * [VP2 animation -blood control](#vp2anim2control.md)
     * [VP2 animation -complication](#vp2anim3complication.md)
+  * [Manequin demo](#man1.md)
+    * [Manequin control](#man2.md)
+    * [Manequin with ECMO sim](#man3.md)
   * [Authors and References](#about.md)
-  
