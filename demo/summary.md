@@ -32,5 +32,6 @@
     * [VP2 animation -complication](#vp2anim3complication.md)
   * [Manequin demo](#man1.md)
     * [Manequin control](#man2.md)
-    * [Manequin with ECMO sim](#man3.md)
+    * [demo ECMO simulator](#man3.md)
+    * [Manequin controlled by ECMO simulator](#man4.md)
   * [Authors and References](#about.md)
