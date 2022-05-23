@@ -9,7 +9,7 @@
 * Based on plausible and scientifically verified mathematical models of human physiology and drugs
 * Use standard technology stack (Modelica, FMU, WebAssembly, HTML, ...)
 * No need of server or cloud - delivered as in-browser simulators
-
+* 
 
 
 ## What you can do here in this demo
