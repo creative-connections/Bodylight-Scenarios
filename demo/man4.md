@@ -1,6 +1,3 @@
-# Manequin controlled by model
-
-Required HW manequin available through local network, modify endpoints if needed. 
 <bdl-remote-value remoteurl="http://patf-lab06.lf1.cuni.cz:5000/lungsim" interval="1000" id="lungsim" inputs="rate;muscle_pressure;blend_duration;compliance;peep;resistance;run"></bdl-remote-value>
 <bdl-remote-value remoteurl="http://patf-lab06.lf1.cuni.cz:5000/cardiohelp" interval="1000" id="cardiohelp" inputs="p_art;p_ven;temp;dot_v"></bdl-remote-value>
 <bdl-remote-value remoteurl="http://patf-lab06.lf1.cuni.cz:5000/manequin" interval="1000" id="manequin"></bdl-remote-value>
@@ -13,6 +10,9 @@ Required HW manequin available through local network, modify endpoints if needed
 
 ![body](body.png)
 
+<bdl-chartjs-time id="id11" width="500" height="150" fromid="lungsim" refindex="7" refvalues="1" labels="tidal volume"></bdl-chartjs-time>
+
+
 </div>
 <div class="w3-third w3-tiny">
 
@@ -24,6 +24,12 @@ Human simulator <bdl-checkbox id="run" default="true" titlemin="STOPPED" titlema
 <bdl-range id="peep" min="4" max="8" default="5" title="Initial pressure [cmH2O]"></bdl-range><br/>
 <bdl-range id="resistance" min="8" max="150" default="35" title="Resistance [cmH2O/(l.s)]"></bdl-range><br/>
 
+</div>
+</div>
+
+<div class="w3-row">
+<div class="w3-third">
+
 ## **Patient state**
 
 <bdl-buttonparams title="Set physiologic values" ids="id1,id2,id3,rate,id5,id6,id8,id9" values="0.02,1.25,1.25,17,500,150,0,0"></bdl-buttonparams>
@@ -34,6 +40,9 @@ Human simulator <bdl-checkbox id="run" default="true" titlemin="STOPPED" titlema
 <bdl-range id="rate" min="0" max="100" default="17" step="0.5" title="breath rate [1/min]"></bdl-range><br/>
 <bdl-range id="id5" title="Breath volume [ml]" min="300" max="2500" default="500" step="100" maxlength="8" ids2="muscle_pressure" convertors="1,50"></bdl-range>
 
+</div>
+<div class="w3-third">
+
 ### Oxygenation params
 
 <bdl-range id="id6" title="Death space volume [ml]" min="0" max="2500" default="150" step="10" maxlength="8"></bdl-range>
@@ -41,6 +50,8 @@ Human simulator <bdl-checkbox id="run" default="true" titlemin="STOPPED" titlema
 <bdl-range id="id1" title="Fraction of P-L shunts [0-1]" min="0" max="1" default="0.02" step="0.02" maxlength="8"></bdl-range>id
 
 <bdl-buttonparams title="Set respiration failure" ids="id1,rate,id5,id6" values="0.2,17,500,300"></bdl-buttonparams>
+</div>
+<div class="w3-third">
 
 ### Heart params
 <bdl-range id="id2" title="Power of left heart (StarlingLeft)" min="0" max="1.5" default="1.25" step="0.125" maxlength="8"></bdl-range>
@@ -49,20 +60,19 @@ Human simulator <bdl-checkbox id="run" default="true" titlemin="STOPPED" titlema
 
 <bdl-buttonparams title="Set cardiac failure" ids="id2,id3" values="0.5,0.5"></bdl-buttonparams>
 
-</div>
-</div>
-
-<bdl-chartjs-time id="id11" width="600" height="150" fromid="lungsim" refindex="7" refvalues="1" labels="tidal volume"></bdl-chartjs-time>
+</div></div>
 
 </div>
 <div class="w3-half">
 
 <div class="w3-row">
-<div class="w3-third">
+<div class="w3-twothird">
 
 ![cardiohelp](cardiohelp.jpg)
+
+<bdl-chartjs-time id="id12" width="500" height="150" fromid="cardiohelp" refindex="5" refvalues="1" labels="RPM" maxdata="86400"></bdl-chartjs-time>
 </div>
-<div class="w3-twothird w3-tiny">
+<div class="w3-third w3-tiny">
 
 bubble_connected:<bdl-value fromid="cardiohelp" refindex="0" throttle="0"></bdl-value><br/>
 dot_v:<bdl-value fromid="cardiohelp" refindex="1" throttle="0"></bdl-value><br/>
@@ -96,7 +106,6 @@ o2_connected:<bdl-value fromid="manequin" refindex="2" throttle="0"></bdl-value>
 </div>
 </div>
 
-<bdl-chartjs-time id="id12" width="600" height="150" fromid="cardiohelp" refindex="5" refvalues="1" labels="RPM" maxdata="86400"></bdl-chartjs-time>
 
 </div>
 </div>
@@ -109,20 +118,20 @@ o2_connected:<bdl-value fromid="manequin" refindex="2" throttle="0"></bdl-value>
 <bdl-fmi id="idfmi" mode="" src="modelECMO_ECMOSimNoReg.js" fminame="modelECMO_ECMOSimNoReg" tolerance="0.000001" starttime="0" fstepsize="0.1" guid="{1dfd8846-2f82-40f8-8b34-bd76b3a3c1ea}" valuereferences="905971254,905971208,905972945,905972991,905970845,905970846,905969984,905970441,905970885,905973162,905973946,905970848,905972838,100666550,905973350,905974145,905973985,905971304,637535866,905969981,905970438,905970882,905971135" valuelabels="pO2Arteries.partialPressure,pCO2Arteries.partialPressure,pO2Veins.partialPressure,pCO2Veins.partialPressure,Tissue.chemicalSolution.bloodGases.pO2,Tissue.chemicalSolution.bloodGases.pCO2,Arteries.chemicalSolution.bloodGases.sO2,Veins.chemicalSolution.bloodGases.sO2,Tissue.chemicalSolution.bloodGases.sO2,pH_Arteries.pH,pH_Veins.pH,Tissue.chemicalSolution.bloodGases.pH,flowMeasureCardiacOutput.volumeFlowRate,MinuteVolume.SolutionFlow,flowMeasureAlveols.volumeFlowRate,flowMeasureECMO.volumeFlowRate,flowMeasureSweep.volumeFlowRate,pressureArterial.pressure,PressureVeins.pressure,Arteries.chemicalSolution.bloodGases.cHCO3,Veins.chemicalSolution.bloodGases.cHCO3,Tissue.chemicalSolution.bloodGases.cHCO3,pO2_tissue.temperature" inputs="id1,16777223,1,1,0;id2,16777224,1,7998000,0;id3,16777225,1,7998000,0;rate,16777226,1,60,0;id5,16777227,1,1000000,0;id6,16777228,1,1000000,0;id7,16777232,1,1,0;id8,16777233,1,1,0;id9,16777234,1,60000000,0;id10,16777235,1,1,0" inputlabels="Shunts,StarlingLeft,StarlingRight,RR,TV,DV,VAV,RPM,SWEEP,FiO2"></bdl-fmi>
 
 
-#### Parcial pressure of blood gases[mmHg]
+#### Parcial pressure of blood gases [mmHg]
 <bdl-chartjs-time id="id11" width="360" height="240" fromid="idfmi" labels="Arterial pO2, Arterial pCO2, Venous pO2, Venous pCO2,Mixed pO2,Mixed pCO2" initialdata="" refindex="0" refvalues="6" convertors="x*0.00750061683;x*0.00750061683;x*0.00750061683;x*0.00750061683;x*0.00750061683;x*0.00750061683"></bdl-chartjs-time>
 
-#### Oxygen saturation in segments[%]
+#### $O_2$ saturation in segments[%]
 <bdl-chartjs-time id="id12" width="360" height="240" fromid="idfmi" labels="Arterial sO2, Venous sO2,Mixed sO2" initialdata="" refindex="6" refvalues="3" convertors="x*100;x*100;x*100"></bdl-chartjs-time>
 
 </div>
 <div class="w3-third">
 
 
-#### pH of blood in segments [-]
+#### $p_H$ of blood in segments
 <bdl-chartjs-time id="id12" width="360" height="240" fromid="idfmi" labels="Arterial pH,Venous pH,Mixed pH" initialdata="" refindex="9" refvalues="3"></bdl-chartjs-time>
 
-#### Flow in segments [l/min]
+#### Flow in segments [$\frac{l}{min}$]
 <bdl-chartjs-time id="id12" width="360" height="240" fromid="idfmi" labels="Minute cardiac output,Minute ventilation rate, Alveolar ventilation, Flowrate of blood through ECMO, Sweep" initialdata="" refindex="12" refvalues="5" convertors="x*60000;x*60000;x*60000;x*60000;x*60000"></bdl-chartjs-time>
 
 </div>
@@ -132,7 +141,7 @@ o2_connected:<bdl-value fromid="manequin" refindex="2" throttle="0"></bdl-value>
 #### Blood pressure [mmHg]
 <bdl-chartjs-time id="id12" width="360" height="240" fromid="idfmi" labels="Mean arterial pressure, Venous pressure" initialdata="" refindex="17" refvalues="2" convertors="x*0.00750061683; x*0.00750061683"></bdl-chartjs-time>
 
-### Concentration of HCO3 [mmol/l]
+### Concentration of $HCO_3^-$ [$\frac{mmol}{l}$]
 <bdl-chartjs-time id="id12" width="360" height="240" fromid="idfmi" labels="Arteriak HCO3,Venous HCO3,Mixed HCO3" initialdata="" refindex="19" refvalues="3" convertors=""></bdl-chartjs-time>
 
 temperature: <bdl-value id="temperaturemodel" fromid="idfmi" refindex="22" convertor="1,1,-272.15"></bdl-value><bdl-bind2previous fromid="temperaturemodel" toid="temp"></bdl-bind2previous>
