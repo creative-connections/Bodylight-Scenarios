@@ -1,3 +1,4 @@
+
 <bdl-remote-value remoteurl="http://patf-lab06.lf1.cuni.cz:5000/lungsim" interval="1000" id="lungsim" inputs="rate;muscle_pressure;blend_duration;compliance;peep;resistance;run"></bdl-remote-value>
 <bdl-remote-value remoteurl="http://patf-lab06.lf1.cuni.cz:5000/cardiohelp" interval="1000" id="cardiohelp" inputs="p_art;p_ven;temp;dot_v"></bdl-remote-value>
 <bdl-remote-value remoteurl="http://patf-lab06.lf1.cuni.cz:5000/manequin" interval="1000" id="manequin"></bdl-remote-value>
@@ -78,9 +79,9 @@ bubble_connected:<bdl-value fromid="cardiohelp" refindex="0" throttle="0"></bdl-
 dot_v:<bdl-value fromid="cardiohelp" refindex="1" throttle="0"></bdl-value><br/>
 <bdl-range id="dot_v" min="0" max="1600" default="100" step="1" title="dot_v [l/min]"></bdl-range><br/>
 oxi_connected:<bdl-value fromid="cardiohelp" refindex="2" throttle="0"></bdl-value><br/>
-<bdl-range id="p_art" min="0" max="160" default="100" step="1" title="p_art [mmHg]"></bdl-range><br/>
+<bdl-range id="p_art" min="0" max="160" default="100" step="1" title="p_art [mmHg]" ids2="p_art" convertors="1,133.322" fromid="idfmi" refindex="17"></bdl-range><br/>
 <bdl-value fromid="cardiohelp" refindex="3" throttle="0"></bdl-value><br/>
-<bdl-range id="p_ven" min="0" max="160" default="20" step="1" title="p_ven [mmHg]"></bdl-range><br/>
+<bdl-range id="p_ven" min="0" max="160" default="20" step="1" title="p_ven [mmHg]" ids2="p_art" convertors="1,133.322" fromid="idfmi" refindex="18"></bdl-range><br/>
 <bdl-value fromid="cardiohelp" refindex="4" throttle="0"></bdl-value><br/>
 rpm: <bdl-value fromid="cardiohelp" refindex="5" throttle="0"></bdl-value><br/>
 <bdl-range id="temp" min="20" max="42" default="37" step="0.1" title="temp [deg C]"></bdl-range><br/>
@@ -93,7 +94,7 @@ o2_connected:<bdl-value fromid="manequin" refindex="2" throttle="0"></bdl-value>
 
 <bdl-range id="id7" title="ECMO setting: 0 - VV; 1 - VA" min="0" max="1" default="0" step="1" maxlength="4"></bdl-range>
 
-<bdl-range id="id8" title="rotation of ECMO [rot/min]" min="0" max="5000" default="0" step="250" maxlength="8"></bdl-range>
+<bdl-range id="id8" title="rotation of ECMO [rpm]" min="0" max="5000" default="0" step="50" fromid="cardiohelp" refindex="5"></bdl-range>
 
 <bdl-range id="id9" title="Sweep (volume of gases going through ECMO)[ml/min]" min="0" max="8000" default="0" step="250" maxlength="8"></bdl-range>
 
