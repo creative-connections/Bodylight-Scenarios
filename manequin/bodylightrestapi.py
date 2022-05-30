@@ -29,7 +29,9 @@ import math
 volume = 3 #between 1.5 and 4.5
 def test_generate_volume_value():
     global volume
-    volume = peep + (math.sin(time.time())) * 1.5 # some test volume values between 1.5 and 4.5
+    global muscle_pressure
+    global compliance
+    volume =  muscle_pressure * compliance # some test volume values between 1.5 and 4.5
     return volume
 
 app = Flask(__name__)
