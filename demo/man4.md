@@ -75,10 +75,10 @@ Human simulator <bdl-checkbox id="run" default="true" titlemin="STOPPED" titlema
 </div>
 <div class="w3-third w3-tiny">
 
-bubble_connected:<bdl-value fromid="cardiohelp" refindex="0" throttle="0"></bdl-value><br/>
+<bdl-value-boolean fromid="cardiohelp" refindex="0" throttle="0" valuetrue="BUBBLE CONNECTED" valuefalse="bubble disconnected"></bdl-value-boolean><br/>
 dot_v:<bdl-value fromid="cardiohelp" refindex="1" throttle="0"></bdl-value><br/>
 <bdl-range id="dot_v" min="0" max="1600" default="100" step="1" title="dot_v [l/min]"></bdl-range><br/>
-oxi_connected:<bdl-value fromid="cardiohelp" refindex="2" throttle="0"></bdl-value><br/>
+<bdl-value-boolean fromid="cardiohelp" refindex="2" throttle="0" valuetrue="OXY CONNECTED" valuefalse="oxy disconnected"></bdl-value-boolean><br/>
 <bdl-range id="p_art" min="0" max="160" default="100" step="1" title="p_art [mmHg]" ids2="p_art" convertors="1,133.322" fromid="idfmi" refindex="17"></bdl-range><br/>
 <bdl-value fromid="cardiohelp" refindex="3" throttle="0"></bdl-value><br/>
 <bdl-range id="p_ven" min="0" max="160" default="20" step="1" title="p_ven [mmHg]" ids2="p_art" convertors="1,133.322" fromid="idfmi" refindex="18"></bdl-range><br/>
@@ -86,9 +86,9 @@ oxi_connected:<bdl-value fromid="cardiohelp" refindex="2" throttle="0"></bdl-val
 rpm: <bdl-value fromid="cardiohelp" refindex="5" throttle="0"></bdl-value><br/>
 <bdl-range id="temp" min="20" max="42" default="37" step="0.1" title="temp [deg C]"></bdl-range><br/>
 <bdl-value fromid="cardiohelp" refindex="6" throttle="0"></bdl-value><br/>
-canula_connected:<bdl-value fromid="manequin" refindex="0" throttle="0"></bdl-value><br/>
-ecmo_connected:<bdl-value fromid="manequin" refindex="1" throttle="0"></bdl-value><br/>
-o2_connected:<bdl-value fromid="manequin" refindex="2" throttle="0"></bdl-value><br/>
+<bdl-value-boolean fromid="manequin" refindex="0" throttle="0" valuetrue="CANULA CONNECTED" valuefalse="canula disconnected"></bdl-value-boolean><br/>
+<bdl-value-boolean fromid="manequin" refindex="1" throttle="0" valuetrue="ECMO CONNECTED" valuefalse="ecmo disconnected"></bdl-value-boolean><br/>
+<bdl-value-boolean fromid="manequin" refindex="2" throttle="0" valuetrue="O2 CONNECTED" valuefalse="O2 disconnected"></bdl-value-boolean><br/>
 
 ## **ECMO**
 
