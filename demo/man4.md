@@ -39,7 +39,7 @@ Human simulator <bdl-checkbox id="run" default="true" titlemin="STOPPED" titlema
 
 <!--bdl-range id="id4" title="Breath rate [1/min]" min="0" max="40" default="17" step="1" maxlength="8"></bdl-range-->
 <bdl-range id="rate" min="0" max="100" default="17" step="0.5" title="breath rate [1/min]"></bdl-range><br/>
-<bdl-range id="id5" title="Breath volume [ml]" min="100" max="2500" default="500" step="1" maxlength="8" ids2="muscle_pressure" convertors="1,50" fromid="lungsim" refindex="7"></bdl-range>
+<bdl-range id="id5" title="Breath volume [ml]" min="100" max="2500" default="500" step="1" maxlength="8" convertors="1,50" fromid="lungsim" refindex="7"></bdl-range>
 
 </div>
 <div class="w3-third">
