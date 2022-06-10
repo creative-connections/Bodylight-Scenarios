@@ -34,4 +34,5 @@
     * [Manequin control](#man2.md)
     * [demo ECMO simulator](#man3.md)
     * [Manequin controlled by ECMO simulator](#man4.md)
+    * [Manequin controlled by ECMO simulator simplified](#man5.md)
   * [Authors and References](#about.md)
