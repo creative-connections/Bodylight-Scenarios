@@ -20,9 +20,9 @@ Heart rate:<bdl-range id="id1" title="(1/min)" min="40" max="200" default="80" s
 
 Cardiac inotropy:<bdl-range id="idlve" title="(%)" min="50" max="200" default="100" step="0.1"></bdl-range>
 
-Apply positive inotropy agent: <bdl-buttonparams title="Digoxin 0.125mg" ids="idlve" values="120"></bdl-buttonparams>
+Apply positive inotropy agent: <bdl-buttonparams title="Digoxin 0.125mg" ids="idlve,id1" values="120,60"></bdl-buttonparams>
 
-Apply negative inotropy agent: <bdl-buttonparams title="Nifedipin 20mg" ids="idlve" values="70"></bdl-buttonparams>
+Apply negative inotropy agent: <bdl-buttonparams title="Nifedipin 20mg" ids="idlve,id1" values="70,90"></bdl-buttonparams>
 
 </div>
 <div class="w3-col l4">
