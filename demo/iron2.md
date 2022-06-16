@@ -112,7 +112,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 </div>
 <div class="w3-col s12 m5 l5 w3-justify" style="line-height: 1.3">
 
-<button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
+<button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Show Legend</button>
 <!-- hidden input - buttonparams must be before fmi component - or input with id must be created explicitly -->
 <input id="id6" value="" type="number" style="display:none" />
 
@@ -122,21 +122,21 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 ||| 
 |-------------|-------|
-| Koncentrace železa v potravě [$\frac{\mu g}{h}$] | <bdl-range id="id1" title="" min="0" max="1000" default="219" maxlength="5" step="1"></bdl-range> |
-| Knockout genu pro ferroportin(Fpn) | <bdl-checkbox id="id4" titlemin="gen Fpn je knockoutován" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
-| Knockout genu pro hepcidin | <bdl-checkbox id="id5" titlemin="gen pro hepcidin je knockoutován" titlemax="gen pro expresi hepcidinu je aktivní" default="true"></bdl-checkbox>  |
-| LPS injekce jednorázová 1$\mu$g | <bdl-buttonparams title="LPS injekce" ids="id6" values="1" fromid="idfmi"> </bdl-buttonparams>  |
+| Iron concentration in food [$\frac{\mu g}{h}$] | <bdl-range id="id1" title="" min="0" max="1000" default="219" maxlength="5" step="1"></bdl-range> |
+| Knockout of gene for ferroportin(Fpn) | <bdl-checkbox id="id4" titlemin="Fpn is knocked out" titlemax="Fpn is active" default="true"></bdl-checkbox>  |
+| Knockout of genu for hepcidin | <bdl-checkbox id="id5" titlemin="gene is knocked out" titlemax="gene is active" default="true"></bdl-checkbox>  |
+| LPS injection 1$\mu$g | <bdl-buttonparams title="presss to give LPS injection" ids="id6" values="1" fromid="idfmi"> </bdl-buttonparams>  |
 </div>
 
-**Úkoly** spusťte simulaci a vyzkoušejte si reakci organismu na akutní a chronickou bakteriální infekci podle instrukcí níže a zodpovězte otázky.
+**Tasks**: start simulation and see the reaction of organism regarding iron metabolism on acute or chronic bacterial infection imitated by LPS injection. Follow instructions bellow.
 
 <div class="w3-small" style="line-height: 1.2">
 
-<bdl-quiz question="1. Jaká je reakce organismu na akutní bakteriální infekci. (jednorázová injekce LPS = stiskněte jednou tlačítko ´LPS injekce´ - )?" answers="LPS přímo a rychle redukuje aktivitu Fpn. IL6 se zvýší dočasně. Se spožděním několika hodin se koncentrace hepcidinu taktéž zvýší. Po 12 hodinách je hladina železa v séru výrazně nižší. Po ěč hodinách se vše opět vrací k normálu|IL6 se zvýší trvaleji. Hepcidin reguluje přenos železa dlouhodoběji a koncentrace Fe v krvi je dlouhodobě nízká" correctoptions="true|false" explanations="ano, IL6 se zvýší, Zároveň LPS dočasně redukuje expresi Fpn, spolu s hepcidinem se výrazněji se sníží přenos železa z enterocytu do krve. Během 24 hodin se vše normalizuje|ne, toto se děje spíš při chronickém zánětu" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="1. What is the reaction on acute bacterial infection? (Press the LPS injection once and see the effect and choose single answer)" answers="LPS directly reduces Fpn activity, LPS cause that IL6 concentration increases multiple times for temporary. Hepcidine concentration increase with a slight delay. After 12 h (simulated time) is iron concentration in serum between 0.2 and 0.3 of normal values. After 24 hours all is normalized.|IL6 concentration remains multiplied longer time. Hepcidine regulates iron intake for longer time and iron concentration in serum remains low." correctoptions="true|false" explanations="yes, IL6 incresase, LPS temporary reduces expression of FPN directly. After 24 hours all is normal|no" buttontitle="check answers"></bdl-quiz>
 
-<bdl-quiz question="2. Jaké bude mít následky dlouhodobý (chronický) zánět (opakovaná injekce LPS)" answers="IL6 se zvýší dočasně. Se spožděním několika hodin se koncentrace hepcidinu taktéž zvýší. Po 12 hodinách je hladina železa v séru výrazně nižší. Po ěč hodinách se vše opět vrací k normálu|IL6 se zvýší trvaleji. Hepcidin reguluje přenos železa dlouhodoběji a koncentrace Fe v krvi je dlouhodobě nízká" correctoptions="false|true" explanations="ne, toto se děje spíš při akutním zánětu|ano, IL6 se zvýší záleží na počtu opakování. Hepcidin reguluje přenos železa z enterocytu do krve dlouhodoběji, tím se snížuje koncentrace Fe v krvi dlouhodobě až o řád oproti normě s důsledky pro jiné orgány." buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="2. What is the reaction on chronic bacterial infection? (Press the LPS injection multiple times, e.g. every 2 simulated hours)" answers="LPS directly reduces Fpn activity, LPS cause that IL6 concentration increases multiple times for temporary. Hepcidine concentration increase with a slight delay. After 12 h (simulated time) is iron concentration in serum between 0.2 and 0.3 of normal values. After 24 hours all is normalized.|IL6 concentration remains multiplied longer time. Hepcidine regulates iron intake for longer time and iron concentration in serum remains low." correctoptions="false|true" explanations="no, this is reaction to acute infection|yes, IL6 increases. Hepcidin regulates iron intake to serum, and iron concentraion is low almost to 0.1 of norm or bellow." buttontitle="check answers"></bdl-quiz>
 
-<bdl-quiz question="3. Jakými cestami ovlivňuje endotoxin metabolismus železa (které vlivy se objeví při stisknutí tlačítka LPS injekce)?" answers="přímá redukce aktivity genu pro Fpn. Zvýšení produkce hepcidinu|přímá stimulace aktivity genu pro Fpn. Snížení produkce hepcidinu" correctoptions="true|false" explanations="ano|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz question="3. What are the pathways LPS regulates (what appears during LPS injection)?" answers="reduction of gene for FPN|increase of IL6 and consequently increase of hepcidine|both, direct reduction of gene for FPN and indirect increase of hepcidine via increase of IL6 production" correctoptions="false|false|true" explanations="no|no|yes" buttontitle="check answers"></bdl-quiz>
 
 
 </div>
