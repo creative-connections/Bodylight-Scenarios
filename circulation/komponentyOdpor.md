@@ -3,7 +3,7 @@
 <div class="w3-row">
 <div class="w3-half">
 
-Vyzkoušejte měnit veličiny $R$ a tlaku na vstupu $P_{in}$
+Vyzkoušejte měnit veličiny $R$ a tlaku na vstupu $P_{in}$ cévního řečiště. (Výchozí hodnoty jsou pro normální systémovou rezistenci s průtokem 5 $l/min$)
 
 <bdl-range id="id1" title="R - rezistence" min="0.5" max="3.5" default="1.9" step="0.1"></bdl-range> $\frac{mmHg.s.m^2}{ml}$
 
