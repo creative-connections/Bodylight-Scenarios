@@ -3,6 +3,8 @@
 <div class="w3-row">
 <div class="w3-half">
 
+Vyzkoušejte si měnit elasticitu (tuhost) cévy a objem.
+
 </div>
 <div class="w3-half">
 
