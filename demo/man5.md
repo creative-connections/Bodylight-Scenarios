@@ -42,7 +42,7 @@
 <div class="w3-row">
 <div class="w3-third">
 
-## **Patient state v2.1a**
+## **Patient state v2.2**
 
 <bdl-buttonparams title="Set physiologic values" ids="id1,id2,id3,rate,id5,id6,id8,id9" values="0.02,1.25,1.25,17,500,150,0,0"></bdl-buttonparams>
 
@@ -131,7 +131,7 @@ rpm: <bdl-value fromid="cardiohelp" refindex="5" throttle="0"></bdl-value><br/>
 <div class="w3-row">
 <div class="w3-third">
 
-<bdl-fmi id="idfmi" mode="" src="modelECMO_ECMOSimNoReg.js" fminame="modelECMO_ECMOSimNoReg" tolerance="0.000001" starttime="0" fstepsize="0.1" guid="{1dfd8846-2f82-40f8-8b34-bd76b3a3c1ea}" valuereferences="905971254,905971208,905972945,905972991,905970845,905970846,905969984,905970441,905970885,905973162,905973946,905970848,905972838,100666550,905973350,905974145,905973985,905971304,637535866,905969981,905970438,905970882,905971135" valuelabels="pO2Arteries.partialPressure,pCO2Arteries.partialPressure,pO2Veins.partialPressure,pCO2Veins.partialPressure,Tissue.chemicalSolution.bloodGases.pO2,Tissue.chemicalSolution.bloodGases.pCO2,Arteries.chemicalSolution.bloodGases.sO2,Veins.chemicalSolution.bloodGases.sO2,Tissue.chemicalSolution.bloodGases.sO2,pH_Arteries.pH,pH_Veins.pH,Tissue.chemicalSolution.bloodGases.pH,flowMeasureCardiacOutput.volumeFlowRate,MinuteVolume.SolutionFlow,flowMeasureAlveols.volumeFlowRate,flowMeasureECMO.volumeFlowRate,flowMeasureSweep.volumeFlowRate,pressureArterial.pressure,PressureVeins.pressure,Arteries.chemicalSolution.bloodGases.cHCO3,Veins.chemicalSolution.bloodGases.cHCO3,Tissue.chemicalSolution.bloodGases.cHCO3,pO2_tissue.temperature" inputs="id1,16777223,1,1,0;id2,16777224,1,7998000,0;id3,16777225,1,7998000,0;rate,16777226,1,60,0;id5,16777227,1,1000000,0;id6,16777228,1,1000000,0;id7,16777232,1,1,0;id8,16777233,1,1,0;id9,16777234,1,60000000,0;id10,16777235,1,1,0" inputlabels="Shunts,StarlingLeft,StarlingRight,RR,TV,DV,VAV,RPM,SWEEP,FiO2"></bdl-fmi>
+<bdl-fmi id="idfmi" mode="" src="modelECMO_ECMOSimNoReg.js" fminame="modelECMO_ECMOSimNoReg" tolerance="0.000001" starttime="0" fstepsize="1" guid="{1dfd8846-2f82-40f8-8b34-bd76b3a3c1ea}" valuereferences="905971254,905971208,905972945,905972991,905970845,905970846,905969984,905970441,905970885,905973162,905973946,905970848,905972838,100666550,905973350,905974145,905973985,905971304,637535866,905969981,905970438,905970882,905971135" valuelabels="pO2Arteries.partialPressure,pCO2Arteries.partialPressure,pO2Veins.partialPressure,pCO2Veins.partialPressure,Tissue.chemicalSolution.bloodGases.pO2,Tissue.chemicalSolution.bloodGases.pCO2,Arteries.chemicalSolution.bloodGases.sO2,Veins.chemicalSolution.bloodGases.sO2,Tissue.chemicalSolution.bloodGases.sO2,pH_Arteries.pH,pH_Veins.pH,Tissue.chemicalSolution.bloodGases.pH,flowMeasureCardiacOutput.volumeFlowRate,MinuteVolume.SolutionFlow,flowMeasureAlveols.volumeFlowRate,flowMeasureECMO.volumeFlowRate,flowMeasureSweep.volumeFlowRate,pressureArterial.pressure,PressureVeins.pressure,Arteries.chemicalSolution.bloodGases.cHCO3,Veins.chemicalSolution.bloodGases.cHCO3,Tissue.chemicalSolution.bloodGases.cHCO3,pO2_tissue.temperature" inputs="id1,16777223,1,1,0;id2,16777224,1,7998000,0;id3,16777225,1,7998000,0;rate,16777226,1,60,0;id5,16777227,1,1000000,0;id6,16777228,1,1000000,0;id7,16777232,1,1,0;id8,16777233,1,1,0;id9,16777234,1,60000000,0;id10,16777235,1,1,0" inputlabels="Shunts,StarlingLeft,StarlingRight,RR,TV,DV,VAV,RPM,SWEEP,FiO2"></bdl-fmi>
 
 
 #### Parcial pressure of blood gases [mmHg]
