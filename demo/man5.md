@@ -29,7 +29,7 @@
 <bdl-range id="resistance" min="8" max="150" default="35" title="Resistance [cmH2O/(l.s)]"></bdl-range><br/>
 </div>
 
-<bdl-buttonparams title="Normal breathing" ids="blend_duration,compliance,muscle_pressure,peep,resistance,rate" values="4,50,11,5,35,17"></bdl-buttonparams>
+<bdl-buttonparams title="Normal breathing" ids="blend_duration,compliance,muscle_pressure,peep,resistance,rate" values="4,50,33,5,35,17"></bdl-buttonparams>
 
 <bdl-buttonparams title="Type 1 hypoxenic" ids="blend_duration,compliance,muscle_pressure,peep,resistance,rate" values="4,30,14,5,39,30"></bdl-buttonparams>
 
@@ -42,7 +42,7 @@
 <div class="w3-row">
 <div class="w3-third">
 
-## **Patient state**
+## **Patient state v2.0**
 
 <bdl-buttonparams title="Set physiologic values" ids="id1,id2,id3,rate,id5,id6,id8,id9" values="0.02,1.25,1.25,17,500,150,0,0"></bdl-buttonparams>
 
