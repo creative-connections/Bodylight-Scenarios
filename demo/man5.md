@@ -104,6 +104,7 @@ rpm: <bdl-value fromid="cardiohelp" refindex="5" throttle="0"></bdl-value><br/>
 <bdl-value-boolean fromid="manequin" refindex="2" throttle="0" valuetrue="O2 CONNECTED" valuefalse="O2 disconnected"></bdl-value-boolean><br/>
 <bdl-value-boolean fromid="cardiohelp" refindex="2" throttle="0" valuetrue="OXY CONNECTED" valuefalse="oxy disconnected"></bdl-value-boolean><br/>
 <bdl-chartjs-time id="id12" width="200" height="150" fromid="cardiohelp" refindex="5" refvalues="1" labels="RPM" maxdata="86400"></bdl-chartjs-time>
+
 ## **ECMO**
 <div class="w3-hide">
 <bdl-range id="id7" title="ECMO setting: 0 - VV; 1 - VA" min="0" max="1" default="0" step="1" maxlength="4"></bdl-range>
