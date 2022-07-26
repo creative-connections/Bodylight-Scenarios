@@ -9,6 +9,8 @@
     * [Simulator of Nefron](#nefron2.md)
   * [Pharmacokinetics](#pharmakin1.md)
     * [Simulator of Pharmacokinetics](#pharmakin2.md)
+  * [Glucose Insuline](#glucoseinsulin1.md)
+    * [Simulator of Glucose Insuline](#glucoseinsulin2.md)
   * [Molecular Structure Visualisation](#iron2a.md)
     * [Molecular Structure - Hepcidine](#iron3.md)
     * [Molecular Structure - Ferritin](#iron4.md)
