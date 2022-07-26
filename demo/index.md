@@ -1,17 +1,14 @@
 <div class="w3-center">
 
 # Creative Physiome
+## interactive digital textbooks with simulators
+
 </div>
 
-## Our goals
-
-* Improve healthcare and medicine with simulators
-* Based on plausible and scientifically verified mathematical models of human physiology and drugs
-* Use standard technology stack (Modelica, FMU, WebAssembly, HTML, ...)
-* No need of server or cloud - delivered as in-browser simulators
-* 
-
-
-## What you can do here in this demo
+### What you can do here in this demo
+1. Each topic contains introductory page and simulation/animation page. Navigate using panel or buttons bellow
+2. Start/stop simulator with buttons. A step can be done as well.
+3. Change parameters, see behavior change in simulation instantly.
+4. 3D macromolecular structure can be viewed by clicking and dragging in interactive image
 
 <bdl-carousel images="navigationleft.gif|navigationbottom.gif|simulatorstartstop.gif|3dstructure.gif" infos="Each topic contains introductory page and simulation/animation page. Navigate using panel| Got to previous or next page using buttons below each page. | Start/stop simulator with buttons. A step can be done as well|3D macromolecular structure can be viewed by clicking and dragging in interactive image" interval="20"></bdl-carousel>
