@@ -1,4 +1,4 @@
-﻿/* W3PRO.CSS 4.10 February 2018 by Jan Egil and Borge Refsnes */
+/* W3PRO.CSS 4.10 February 2018 by Jan Egil and Borge Refsnes */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
@@ -141,7 +141,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-padding-32{padding-top:32px!important;padding-bottom:32px!important}.w3-padding-48{padding-top:48px!important;padding-bottom:48px!important}
 .w3-padding-64{padding-top:64px!important;padding-bottom:64px!important}
 .w3-left{float:left!important}.w3-right{float:right!important}
-.w3-button:hover{color:#000!important;background-color:#ccc!important}
+.w3-button:hover{color:#F6A713!important;background-color:transparent!important}
 .w3-transparent,.w3-hover-none:hover{background-color:transparent!important}
 .w3-hover-none:hover{box-shadow:none!important}
 Footer
