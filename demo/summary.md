@@ -18,6 +18,7 @@
     * [Cas9 structure bounded](#crisprcas2.md)
   * [Virtual patient 3D anatomy](#virtualpatient1.md)
     * [Simulator in VR/AR](#virtualpatient2.md) 
+    * [Respiratory model, VR ICU demo](#virtualpatient3.md)
   * [Imunity](#imuno.md)
     * [Central imunity - animated GIF](#imuno0.md)
     * [Central imunity - animation](#imuno1.md)
