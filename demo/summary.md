@@ -18,7 +18,7 @@
     * [Cas9 structure bounded](#crisprcas2.md)
   * [Virtual patient 3D anatomy](#virtualpatient1.md)
     * [Simulator in VR/AR](#virtualpatient2.md) 
-    * [Respiratory model, VR ICU demo](#virtualpatient4.md)
+    * [Respiratory model, VR demo](#virtualpatient4.md)
   * [Imunity](#imuno.md)
     * [Central imunity - animated GIF](#imuno0.md)
     * [Central imunity - animation](#imuno1.md)
@@ -39,4 +39,3 @@
     * [Manequin controlled by ECMO simulator](#man4.md)
     * [Manequin controlled by ECMO simulator simplified](#man5.md)
   * [Authors and References](#about.md)
-
