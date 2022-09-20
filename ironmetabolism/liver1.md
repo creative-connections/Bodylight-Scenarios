@@ -28,6 +28,3 @@ Modelica models exported to FMU and compiled by Bodylight FMU Compiler can be im
 
 ## Charts
 Plotly, Chartjs and Dygraph libraries are supported use `<bdl-chartjs-time></bdl-chartjs-time>` or `<bdl-plotly></bdl-plotly>` or `<bdl-dygraph></bdl-dygraph>` components.
-
-## Animated GIF
-Animated GIF can be imported, component `bdl-animate-gif` can handle animation and controls animation per each frame.
