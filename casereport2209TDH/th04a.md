@@ -7,7 +7,8 @@ Dotaz do pléna: jste lékařem UP, RZP vám veze ženu 26 let s dýchacími pot
 
 ?: podle jakého algoritmu budete vyšetřovat? 
 
-A - chrapot, oteklý jazyk
+<span class="w3-orange w3-xlarge w3-padding w3-margin">
+A - chrapot, oteklý jazyk</span>
 
 </div>
 <div class="w3-half">
