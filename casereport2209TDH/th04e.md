@@ -7,15 +7,20 @@ Dotaz do pléna: jste lékařem UP, RZP vám veze ženu 26 let s dýchacími pot
 
 ?: podle jakého algoritmu budete vyšetřovat? 
 
-A - chrapot, oteklý jazyk
+<div class="w3-orange w3-xlarge w3-padding w3-margin">
+A - chrapot, oteklý jazyk</div>
 
-B – dyspnoe, tachypnoe 26/min
+<div class="w3-red w3-xlarge w3-padding w3-margin">
+B – dyspnoe, tachypnoe 26/min</div>
 
-C – Krevní tlak 85/50
+<div class="w3-green w3-xlarge w3-padding w3-margin">
+C – Krevní tlak 85/50, Pulz 130/min, pravidelný, závratě</div>
 
-D – GCS 15
+<div class="w3-light-blue w3-xlarge w3-padding w3-margin">
+D – GCS 15, strach</div>
 
-E – kopřivka
+<div class="w3-purple w3-xlarge w3-padding w3-margin">
+E – kopřivka</div>
 
 THM: Kdekoli se vyšetřuje, vždy ABCDE (check list pro důležitost)
 Napojení na monitor během vyšetření. Odběry: BioChem (KO, koagulace, ionty, CRP, Astrup – doplnit Roman), 
