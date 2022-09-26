@@ -22,7 +22,7 @@ Proč k nim dochází?
 <div class="w3-half">
 
 
-![slide_4_schema_abcde](slide_4_schema_abcde.jpg)
+![slide_4_schema_abcdeV2_0](slide_4_schema_abcdeV2_0.jpg)
 
 
 </div>
