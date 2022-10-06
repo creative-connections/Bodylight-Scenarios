@@ -5,10 +5,14 @@
   <title>e-golem online</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.ico">
-  <!-- imported CSS are concatenated and added automatically -->
-  <script defer src="bodylightweb.bundle.js"></script></head>
-<script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
-<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
+  <!-- firebase ui prepare after implemented -->
+  <!--script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" /-->
+
+  <script src="bodylightweb.bundle.js"></script>
+</head>
 <body aurelia-app="main">
 <bd-header1></bd-header1>
 <bd-body>
@@ -25,12 +29,15 @@
 </bd-body>
 
 
-<bd-panels title="Available topics and scenarios">
-  <bd-panel href="hemodynamics/" icon="img/PostavaObeh.png" title="Hemodynamics">Cardiovascular hemodynamics</bd-panel>
+<bd-panels title="Available textbooks with simulators">
+  <bd-panel href="hemodynamics/" icon="img/PostavaObeh.png" title="Hemodynamics">Cardiovascular hemodynamics<br/>&nbsp;</bd-panel>
   <bd-panel href="ironmetabolism/" icon="img/Zelezo.png" title="Iron&nbsp;Metabolism">Physiology of iron digestion<br/>liver and spleen usage</bd-panel>
-  <bd-panel href="bloodgases/" icon="img/vymenaPlynu.png" title="Blood&nbsp;Gases">physiology of acid base balance</bd-panel>
-  <bd-panel href="https://physiome.cz/apps/circulation_en/index.html" icon="img/Obeh.png" title="Circulation">Non-pulsatile cardiovascular physiology</bd-panel>
-  <bd-panel href="https://www.physiome.cz/apps/Nephron/0_index.html" icon="img/Postava3.png" title="Kidney&nbsp;nefron">Physiology in parts of nefron</bd-panel>
+  <bd-panel href="bloodgases/" icon="img/vymenaPlynu.png" title="Blood&nbsp;Gases">physiology of acid base balance<br/>&nbsp;</bd-panel>
+</bd-panels>
+<bd-panels title="Demo simulators">
+<bd-panel href="https://physiome.cz/apps/circulation_en/index.html" icon="img/Obeh.png" title="Circulation">Non-pulsatile<br/> cardiovascular physiology</bd-panel>
+<bd-panel href="https://www.physiome.cz/apps/Nephron/0_index.html" icon="img/Postava3.png" title="Kidney&nbsp;nefron">Physiology in parts of nefron<br/>&nbsp;</bd-panel>
+  <bd-panel href="demo/" icon="img/Kostra.png" title="Demo">demonstration in multiple<br/> areas of medicine</bd-panel>
 </bd-panels>
 <bd-infopanel href="" icon="img/simulatordevices.jpg" title="Web, iOS and Android version">
   e-Golem comes in web version. iOS and Android version will come soon.
