@@ -7,11 +7,3 @@
  <bdl-panel href="k3_01.md" title="Muž 30-let" icon="slide_21_predel_v2_small2.jpg"></bdl-panel>
 </bdl-panels>
 </div>
-
-
-
-
-
-
-
-
