@@ -1,4 +1,4 @@
-V následujících obrazovkách se vyskytují kazuistiky se simulátory
+# Virtualní pacienti se simulátory
 
 <bd-panels title="Kazuistiky">
  <bd-panel href="k1_01.md" title="1. Dušnost"></bd-panel>
