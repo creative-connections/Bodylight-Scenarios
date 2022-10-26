@@ -1,5 +1,5 @@
-* [Kazuistika 60 muž ABR](#index.md)
-  * [k1-01](#k1-01.md)
+* [Kazuistiky](#index.md)
+* [Kazuistika 60 muž ABR](#k1-01.md)
   * [k1-02](#k1-02.md)
   * [k1-03](#k1-03.md)
   * [k1-04](#k1-04.md)
@@ -7,3 +7,4 @@
   * [k1-06](#k1-06.md)
   * [k1-07](#k1-07.md)
   * [k1-08](#k1-08.md)
+
