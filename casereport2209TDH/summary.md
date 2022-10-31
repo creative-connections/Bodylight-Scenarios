@@ -3,6 +3,7 @@
   * [03 Scéna](#th03.md)
   * [03a Scéna carousel](#th03a.md)
   * [03b Scéna tváře](#th03face.md)
+  * [03 Scéna animace](#th03b.md)
   * [04 Uzel 1 ABCDE](#th04.md)
   * [04 Uzel 1 A](#th04a.md)
   * [04 Uzel 1 B](#th04b.md)
