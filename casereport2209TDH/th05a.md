@@ -29,7 +29,15 @@ Nebere antikoncepci.
 </div>
 <div class="w3-half">
 
-![slide_2-3_komiks_05_skvrny](slide_2-3_komiks_05_skvrny.jpg)
+
+<bdl-animate-control 
+id="idanimate" 
+speedfactor="1" 
+allowcontinuous="true"></bdl-animate-control> 
+
+<bdl-animate-adobe src="slide_5_animace.js" width="800" height="600" name="Animace" fromid="idanimate" responsive="true"></bdl-animate-adobe>
+
+
 
 
 
