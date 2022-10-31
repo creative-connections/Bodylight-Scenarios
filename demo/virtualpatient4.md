@@ -25,7 +25,7 @@ respiratory model
 
 API to VR
 
-<bdl-remote-value remoteurl="http://localhost:8080/vrapi" interval="1000" id="vrapi" inputs="volume"></bdl-remote-value>
+<bdl-remote-value remoteurl="http://localhost:8080/vrapi" interval="2000" id="vrapi" inputs="volume"></bdl-remote-value>
 
 Data to be send outside:
 
