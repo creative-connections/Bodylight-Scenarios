@@ -11,6 +11,7 @@
   * [04 Uzel 1 E](#th04e.md)
   * [05 Odebrání anamnézy](#th05.md)
   * [05a anamnéza](#th05a.md)
+  * [05b anamnéza](#th05b.md)
   * [06 Co může být](#th06.md)
   * [07 Závěr](#th07.md)
   * [07a Závěr](#th07a.md)
