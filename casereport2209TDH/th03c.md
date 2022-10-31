@@ -1,7 +1,7 @@
 <title>Odchod</title>
 <!-- write your code here -->
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<script src="Odchod.js?1666630114515"></script>
+<script src="slide_2_3_animace.js?1666630114515"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
@@ -44,11 +44,10 @@ function handleComplete(evt,comp) {
 }
 </script>
 <!-- write your code here -->
-</head>
-<body onload="init();" style="margin:0px;">
+<div onload="init();" style="margin:0px;">
 	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:850px; height:650px">
 		<canvas id="canvas" width="850" height="650" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
 		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:850px; height:650px; position: absolute; left: 0px; top: 0px; display: block;">
 		</div>
 	</div>
-</body>
+</div>
