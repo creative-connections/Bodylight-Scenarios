@@ -30,16 +30,7 @@ Nebere antikoncepci.
 <div class="w3-half">
 
 
-<bdl-animate-control 
-id="idanimate" 
-speedfactor="1" 
-allowcontinuous="true"></bdl-animate-control> 
-
-<bdl-animate-adobe src="slide_5_animace.js" width="800" height="600" name="Animace" fromid="idanimate" responsive="true"></bdl-animate-adobe>
-
-
-
-
+![slide_5_static](slide_5_static.png)
 
 </div>
 </div>
