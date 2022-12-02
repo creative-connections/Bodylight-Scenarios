@@ -7,7 +7,7 @@
   * [k1-06](#k1-06.md)
   * [k1-07](#k1-07.md)
   * [k1-08](#k1-08.md)
-
+  * [k1-09](#k1-09.md)
 * [Kazuistika 60 muž ABR](#k2-01.md)
 * [Kazuistika 30 žena](#k3-01.md)
 * [Kazuistika 30 muž](#k4-01.md)
