@@ -2,11 +2,12 @@
 
 <div class="w3-row">
 <div class="w3-half">
-Patient state: <bdl-buttonparams title="Normal" ids="idshunts,iddeadspace" values="2,150"></bdl-buttonparams> <bdl-buttonparams title="Moderate respiration failure" ids="idshunts,iddeadspace" values="38,400"></bdl-buttonparams> 
+Simulation control: <bdl-fmi id="idfmi" mode="continuous" src="modelECMORespiratoryVR_ECMOSimNoRegVentilatorVC2.js" fminame="modelECMORespiratoryVR_ECMOSimNoRegVentilatorVC2" tolerance="0.000001" starttime="0" fstepsize="0.2" guid="{aaeae02b-c9e5-470a-87e3-e69bab281c5f}" valuereferences="637538905,905970443,905969986,905970887,905970406,905969949,905970850,16777229,16777230,16777691,16777692,16777693,16777223,100663306,16777224,16777225" valuelabels="lungs.volume,Veins.chemicalSolution.bloodGases.sO2,Arteries.chemicalSolution.bloodGases.sO2,Tissue.chemicalSolution.bloodGases.sO2,Veins.chemicalSolution.bloodGases.pH,Arteries.chemicalSolution.bloodGases.pH,Tissue.chemicalSolution.bloodGases.pH,RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.Eratio,ventilatorSCMV.pause,AirO2,AirN2,AirCO2,AirH2O" inputs="idrate,16777229,1,60,t;idtv,16777230,1,1000000,t;idiratio,16777691,1,1,t;ideratio,16777692,1,1,t;idpause,16777693,1,100,t;ido2,16777223,1,100,t;idco2,16777224,1,100,t;idh2o,16777225,1,100,t;idshunts,16777226,1,100,t;iddeadspace,16777231,1,1000000,t" inputlabels="RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.Eratio,ventilatorSCMV.pause,AirO2,AirCO2,AirH2O,Shunts,DV"></bdl-fmi>
+Patient state: <br/>
+<bdl-buttonparams title="Normal" ids="idshunts,iddeadspace" values="2,150"></bdl-buttonparams> <bdl-buttonparams title="Moderate respiration failure" ids="idshunts,iddeadspace" values="38,400"></bdl-buttonparams> 
 <bdl-buttonparams title="Severe failure" ids="idshunts,iddeadspace" values="58,450"></bdl-buttonparams>
 
-
-Ventilated gas: <bdl-buttonparams title="Normal" ids="ido2,idco2,idh2o" values="21,0.03,6"></bdl-buttonparams>
+Ventilated gas: <br/><bdl-buttonparams title="Normal" ids="ido2,idco2,idh2o" values="21,0.03,6"></bdl-buttonparams>
 <bdl-buttonparams title="O2 40%" ids="ido2,idco2,idh2o" values="40,0.03,6"></bdl-buttonparams>
 <bdl-buttonparams title="O2 60%" ids="ido2,idco2,idh2o" values="60,0.03,6"></bdl-buttonparams>
 
@@ -18,7 +19,7 @@ Ventilated gas: <bdl-buttonparams title="Normal" ids="ido2,idco2,idh2o" values="
 <bdl-range id="idh2o" title="CO2 %" min="0" max="10" default="6" step="0.1"></bdl-range>
 </div>
 
-Model of respiratory supported by mechanical ventilator:<br/>
+Mechanical ventilator setting:<br/>
 <bdl-range id="idrate" title="Breathing rate (1/min)" min="1" max="120" default="12" step="1" fromid="vrapi" refindex="0"></bdl-range>
 <!--bdl-range id="idmuscle" title="Breathing force (%)" min="10" max="400" default="100" step="1" fromid="vrapi" refindex="0"></bdl-range-->
 <bdl-range id="idtv" title="Vt - tidal volume (ml)" min="200" max="1000" default="500" step="1" fromid="vrapi" refindex="1"></bdl-range>
@@ -32,7 +33,7 @@ Set I:E ratio
 <bdl-buttonparams title="2:1" ids="idiratio,ideratio" values="2,1"></bdl-buttonparams>
 <bdl-buttonparams title="3:2" ids="idiratio,ideratio" values="3,2"></bdl-buttonparams></br>
 <bdl-range id="idpause" title="pause (%)" min="0" max="70" default="25" step="1" fromid="vrapi" refindex="4"></bdl-range>
-<bdl-fmi id="idfmi" mode="continuous" src="modelECMORespiratoryVR_ECMOSimNoRegVentilatorVC2.js" fminame="modelECMORespiratoryVR_ECMOSimNoRegVentilatorVC2" tolerance="0.000001" starttime="0" fstepsize="0.2" guid="{aaeae02b-c9e5-470a-87e3-e69bab281c5f}" valuereferences="637538905,905970443,905969986,905970887,905970406,905969949,905970850,16777229,16777230,16777691,16777692,16777693,16777223,100663306,16777224,16777225" valuelabels="lungs.volume,Veins.chemicalSolution.bloodGases.sO2,Arteries.chemicalSolution.bloodGases.sO2,Tissue.chemicalSolution.bloodGases.sO2,Veins.chemicalSolution.bloodGases.pH,Arteries.chemicalSolution.bloodGases.pH,Tissue.chemicalSolution.bloodGases.pH,RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.Eratio,ventilatorSCMV.pause,AirO2,AirN2,AirCO2,AirH2O" inputs="idrate,16777229,1,60,t;idtv,16777230,1,1000000,t;idiratio,16777691,1,1,t;ideratio,16777692,1,1,t;idpause,16777693,1,100,t;ido2,16777223,1,100,t;idco2,16777224,1,100,t;idh2o,16777225,1,100,t;idshunts,16777226,1,100,t;iddeadspace,16777231,1,1000000,t" inputlabels="RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.Eratio,ventilatorSCMV.pause,AirO2,AirCO2,AirH2O,Shunts,DV"></bdl-fmi>
+
 
 
 <!--bdl-fmi id="idfmi" mode="continuous" src="MinimalRespiration.js" fminame="MinimalRespiration" tolerance="0.000001" starttime="0" fstepsize="0.2" guid="{d0393898-9a87-4ac9-904f-355fd73a976f}" valuereferences="637536225,905969702,905969728,16777228,16777223" valuelabels="lungs.volume,pCO2.partialPressure,pO2.partialPressure,Pmin,RespiratoryRate" inputs="idrate,16777223,1,60,t;idmuscle,16777228,-1000,100,t" inputlabels="RespirationRate,Pmin" fpslimit="5"></bdl-fmi-->
