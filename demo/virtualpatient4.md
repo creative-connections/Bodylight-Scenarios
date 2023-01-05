@@ -5,27 +5,24 @@
 Simulation control: <bdl-fmi id="idfmi" mode="continuous" src="modelECMORespiratoryVR_ECMOSimNoRegVentilatorVC2.js" fminame="modelECMORespiratoryVR_ECMOSimNoRegVentilatorVC2" tolerance="0.000001" starttime="0" fstepsize="0.2" guid="{aaeae02b-c9e5-470a-87e3-e69bab281c5f}" valuereferences="637538905,905970443,905969986,905970887,905970406,905969949,905970850,16777229,16777230,16777691,16777692,16777693,16777223,100663306,16777224,16777225" valuelabels="lungs.volume,Veins.chemicalSolution.bloodGases.sO2,Arteries.chemicalSolution.bloodGases.sO2,Tissue.chemicalSolution.bloodGases.sO2,Veins.chemicalSolution.bloodGases.pH,Arteries.chemicalSolution.bloodGases.pH,Tissue.chemicalSolution.bloodGases.pH,RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.Eratio,ventilatorSCMV.pause,AirO2,AirN2,AirCO2,AirH2O" inputs="idrate,16777229,1,60,t;idtv,16777230,1,1000000,t;idiratio,16777691,1,1,t;ideratio,16777692,1,1,t;idpause,16777693,1,100,t;ido2,16777223,1,100,t;idco2,16777224,1,100,t;idh2o,16777225,1,100,t;idshunts,16777226,1,100,t;iddeadspace,16777231,1,1000000,t" inputlabels="RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.Eratio,ventilatorSCMV.pause,AirO2,AirCO2,AirH2O,Shunts,DV"></bdl-fmi>
 Patient state: <br/>
 <bdl-buttonparams title="Normal" ids="idshunts,iddeadspace" values="2,150"></bdl-buttonparams> <bdl-buttonparams title="Moderate respiration failure" ids="idshunts,iddeadspace" values="38,400"></bdl-buttonparams> 
-<bdl-buttonparams title="Severe failure" ids="idshunts,iddeadspace" values="58,450"></bdl-buttonparams>
-
+<bdl-buttonparams title="Severe failure" ids="idshunts,iddeadspace" values="58,450"></bdl-buttonparams><br/>
 Ventilated gas: <br/><bdl-buttonparams title="Normal" ids="ido2,idco2,idh2o" values="21,0.03,6"></bdl-buttonparams>
 <bdl-buttonparams title="O2 40%" ids="ido2,idco2,idh2o" values="40,0.03,6"></bdl-buttonparams>
 <bdl-buttonparams title="O2 60%" ids="ido2,idco2,idh2o" values="60,0.03,6"></bdl-buttonparams>
-
 <div class="w3-hide">
 <bdl-range id="iddeadspace" title="dead space" min="100" max="4500" default="150"></bdl-range>
 <bdl-range id="idshunts" title="L-V shunts %" min="5" max="95" default="2"></bdl-range>
 <bdl-range id="ido2" title="O2 %" min="5" max="80" default="21"></bdl-range>
 <bdl-range id="idco2" title="CO2 %" min="0" max="10" default="0.03" step="0.01"></bdl-range>
 <bdl-range id="idh2o" title="CO2 %" min="0" max="10" default="6" step="0.1"></bdl-range>
-</div>
-
+</div><br/>
 Mechanical ventilator setting:<br/>
-<bdl-range id="idrate" title="Breathing rate (1/min)" min="1" max="120" default="12" step="1" fromid="vrapi" refindex="0"></bdl-range>
+<bdl-range id="idrate" title="Breathing rate (1/min)" min="1" max="120" default="12" step="1" fromid="vrapi" refindex="0"></bdl-range><br/>
 <!--bdl-range id="idmuscle" title="Breathing force (%)" min="10" max="400" default="100" step="1" fromid="vrapi" refindex="0"></bdl-range-->
-<bdl-range id="idtv" title="Vt - tidal volume (ml)" min="200" max="1000" default="500" step="1" fromid="vrapi" refindex="1"></bdl-range>
+<bdl-range id="idtv" title="Vt - tidal volume (ml)" min="200" max="1000" default="500" step="1" fromid="vrapi" refindex="1"></bdl-range><br/>
 <div class="w3-hide">
 <bdl-range id="idiratio" min="1" max="4" default="1" step="1"fromid="vrapi" refindex="2"></bdl-range>
-<bdl-range id="ideratio" min="1" max="9" default="4" step="1" fromid="vrapi" refindex="3"></bdl-range>
+<bdl-range id="ideratio" min="1" max="9" default="1" step="1" fromid="vrapi" refindex="3"></bdl-range>
 </div>
 Set I:E ratio 
 <bdl-buttonparams title="1:1" ids="idiratio,ideratio" values="1,1"></bdl-buttonparams>
