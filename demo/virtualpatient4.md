@@ -58,7 +58,7 @@ Data to be sent to VR:<br/>
 </div>
 <div class="w3-twothird">
 
-Data that can be changed from VR:
+Data that can be changed from VR:<br/>
 <bdl-chartjs-time width="300" height="100" fromid="idfmi" labels="RR" initialdata="0" refindex="7" refvalues="1"></bdl-chartjs-time>
 <bdl-chartjs-time width="300" height="100" fromid="idfmi" labels="Vt (mandatory tidal volume)" initialdata="" refindex="8" refvalues="1"></bdl-chartjs-time>
 <bdl-chartjs-time width="300" height="100" fromid="idfmi" labels="I,E ratio" initialdata="" refindex="9" refvalues="2"></bdl-chartjs-time>
