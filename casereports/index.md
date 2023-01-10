@@ -7,6 +7,4 @@
  <bdl-panel href="#k4-01.md" title="Muž 30-let" icon="slide_21_predel_v2_small2.jpg"></bdl-panel>
 </bdl-panels>
 </div>
-<bdl-range id="id1" title="" min="0" max="10" default="5" step="1"></bdl-range>
-<bdl-range id="id1" title="" min="0" max="10" default="5" step="1"></bdl-range>
-<bdl-range min="10" max="100" default="10" step="1"></bdl-range>
+
