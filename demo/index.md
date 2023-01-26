@@ -1,7 +1,7 @@
 <div class="w3-center">
 
-# Creative Physiome
-## interactive digital textbooks with simulators
+# eGolem.online
+## interactive digital textbook with simulators
 
 </div>
 
