@@ -49,7 +49,7 @@ Set I:E ratio
 <div class="w3-half">
 
 API to VR
-<bdl-remote-value remoteurl="http://localhost:5000/vrapi" interval="1000" id="vrapi" inputs="volume;sO2"></bdl-remote-value>
+<bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval="1000" id="vrapi" inputs="volume;sO2"></bdl-remote-value>
 
 ![body](body.png)
 <div class="w3-hide">
