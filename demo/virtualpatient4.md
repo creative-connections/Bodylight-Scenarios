@@ -56,7 +56,7 @@ Set I:E ratio
 <div class="w3-half">
 
 API to VR
-<bdl-remote-value remoteurl="http://localhost:5000/vrapi" interval="2000" id="vrapi" inputs="volume;sO2"></bdl-remote-value>
+<bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval="2000" id="vrapi" inputs="volume;sO2"></bdl-remote-value>
 
 <div class="w3-hide">
 Data to be sent to VR: 
@@ -75,7 +75,7 @@ sO2:<bdl-range id="sO2" min="0" max="1" default="0" step="0.01" title="so2"  fro
 </div>
 <div class="w3-card w3-third w3-red w3-xlarge">
 
-&nbsp;  RR: <bdl-value fromid="idfmi" refindex="7" convertor="60,1"></bdl-value> <span class="w3-small">l/min</span>
+&nbsp;  RR: <bdl-value fromid="idfmi" refindex="7" convertor="60,1"></bdl-value> <span class="w3-small">1/min</span>
 </div>
 
 Ventilator parameters:
