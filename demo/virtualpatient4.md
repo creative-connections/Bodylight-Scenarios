@@ -2,25 +2,20 @@
 # Respiratory failure and artificial breathing 
 <div class="w3-row">
 <div class="w3-half">
-<div class="w3-left w3-small">v3.3&nbsp;</div>
-
-Simulation control: <bdl-fmi id="idfmi" mode="continuous" src="modelECMORespiratoryVR_ECMOSimNoRegVentilatorVC4.js" fminame="modelECMORespiratoryVR_ECMOSimNoRegVentilatorVC4" tolerance="0.001" starttime="0" fstepsize="0.2" fpslimit="5" guid="{35ce3a9c-e1e3-4664-9848-4222b949f268}" valuereferences="637537985,905970425,905969984,905970853,905970388,905969947,905970816,16777229,16777230,16777583,16777584,16777585,16777223,100663306,16777224,16777225,905970386" valuelabels="lungs.volume,Veins.chemicalSolution.bloodGases.sO2,Arteries.chemicalSolution.bloodGases.sO2,Tissue.chemicalSolution.bloodGases.sO2,Veins.chemicalSolution.bloodGases.pH,Arteries.chemicalSolution.bloodGases.pH,Tissue.chemicalSolution.bloodGases.pH,RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.Eratio,ventilatorSCMV.pause,AirO2,AirN2,AirCO2,AirH2O,Veins.chemicalSolution.bloodGases.pCO2" inputs="idrate,16777229,1,60,t;idtv,16777230,1,1000000,t;idiratio,16777583,1,1,t;ideratio,16777584,1,1,t;idpause,16777585,1,100,t;ido2,16777223,1,100,t;idco2,16777224,1,100,t;idh2o,16777225,1,100,t;idshunts,16777226,1,100,t;iddeadspace,16777231,1,1000000,t" inputlabels="RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.Eratio,ventilatorSCMV.pause,AirO2,AirCO2,AirH2O,Shunts,DV"></bdl-fmi>
+<div class="w3-left w3-small">v3.4&nbsp;</div>
+Simulation control: <bdl-fmi id="idfmi" mode="continuous" src="modelECMORespiratoryVR_ECMOSimNoRegVentilatorVC7.js" fminame="modelECMORespiratoryVR_ECMOSimNoRegVentilatorVC7" tolerance="0.001" starttime="0" fstepsize="0.2" fpslimit="5" guid="{4ff782cc-a28a-4d15-8d50-071add5d8f2b}" valuereferences="637537985,905970425,905969984,905970853,905970388,905969947,905970816,16777229,16777230,16777583,16777584,16777585,16777223,100663306,16777224,16777225,905970386" valuelabels="lungs.volume,Veins.chemicalSolution.bloodGases.sO2,Arteries.chemicalSolution.bloodGases.sO2,Tissue.chemicalSolution.bloodGases.sO2,Veins.chemicalSolution.bloodGases.pH,Arteries.chemicalSolution.bloodGases.pH,Tissue.chemicalSolution.bloodGases.pH,RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.Eratio,ventilatorSCMV.pause,AirO2,AirN2,AirCO2,AirH2O,Veins.chemicalSolution.bloodGases.pCO2" inputs="idrate,16777229,1,60,t;idtv,16777230,1,1000000,t;idiratio,16777583,1,1,t;ideratio,16777584,1,1,t;idpause,16777585,1,100,-0.01,t;ido2,16777223,1,100,t;idco2,16777224,1,100,t;idh2o,16777225,1,100,t;idshunts,16777226,1,100,t;iddeadspace,16777231,1,1000000,t" inputlabels="RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.Eratio,ventilatorSCMV.pause,AirO2,AirCO2,AirH2O,Shunts,DV"></bdl-fmi>
 
 Patient state: <br/>
 <bdl-buttonparams title="Normal" ids="idshunts,iddeadspace" values="2,150" fromid="vrapi" thresholdvalue="0" refindex="5" ></bdl-buttonparams> 
 <bdl-buttonparams title="Moderate respiration failure" ids="idshunts,iddeadspace" values="38,400" fromid="vrapi" refindex="5" thresholdvalue="1"></bdl-buttonparams> 
 <bdl-buttonparams title="Severe failure" ids="idshunts,iddeadspace" values="58,450" fromid="vrapi" refindex="5" thresholdvalue="2"></bdl-buttonparams><br/>
 <bdl-range id="patientstate" title="patient state" min="0" max="3" step="1" default="1" fromid="vrapi" refindex="5"></bdl-range>
+
 <div class="w3-hide">
-
-
 Ventilated gas: <!--bdl-buttonparams title="Normal" ids="ido2,idco2,idh2o" values="21,0.03,6"></bdl-buttonparams>
 <bdl-buttonparams title="O2 40%" ids="ido2,idco2,idh2o" values="40,0.03,6"></bdl-buttonparams>
 <bdl-buttonparams title="O2 60%" ids="ido2,idco2,idh2o" values="60,0.03,6"></bdl-buttonparams-->
 <bdl-range id="ido2" title="O2 %" min="5" max="93" default="21" fromid="vrapi" refindex="4"></bdl-range><br/>
-</div>
-
-<div class="w3-hide">
 <bdl-range id="iddeadspace" title="dead space" min="100" max="4500" default="400"></bdl-range>
 <bdl-range id="idshunts" title="L-V shunts %" min="5" max="95" default="38"></bdl-range>
 <bdl-range id="idco2" title="CO2 %" min="0" max="10" default="0.03" step="0.01"></bdl-range>
@@ -50,8 +45,7 @@ Set I:E ratio
 
 
 <bdl-chartjs-time width="300" height="150" fromid="idfmi" labels="lungs volume"  refindex="0" refvalues="1"></bdl-chartjs-time>
-<bdl-chartjs-time width="300" height="150" fromid="idfmi" labels="sO2 veins,sO2 arteries,sO2 tissues" refindex="1" refvalues="3"></bdl-chartjs-time>
-
+<bdl-chartjs-time width="300" height="150" fromid="idfmi" labels="sO2 veins,sO2 arteries,sO2 tissues" refindex="1" refvalues="3" throttle="1000"></bdl-chartjs-time>
 
 </div>
 <div class="w3-half">
@@ -79,16 +73,15 @@ sO2:<bdl-range id="sO2" min="0" max="1" default="0" step="0.01" title="so2"  fro
 &nbsp;  RR: <bdl-value fromid="idfmi" refindex="7" convertor="60,1"></bdl-value> <span class="w3-small">1/min</span>
 </div>
 
-Ventilator parameters:
+<bdl-chartjs-time width="150" height="90" fromid="idfmi" labels="RR" initialdata="0" refindex="7" refvalues="1" throttle="1000"></bdl-chartjs-time>
+<bdl-chartjs-time width="150" height="90" fromid="idfmi" labels="Vt" initialdata="" refindex="8" refvalues="1" throttle="1000"></bdl-chartjs-time>
+<bdl-chartjs-time width="150" height="90" fromid="idfmi" labels="I,E ratio" initialdata="" refindex="9" refvalues="2" throttle="1000"></bdl-chartjs-time>
+<bdl-chartjs-time width="150" height="90" fromid="idfmi" labels="pause %" initialdata="" refindex="11" refvalues="1" throttle="1000"></bdl-chartjs-time>
+<bdl-chartjs-time width="150" height="90" fromid="idfmi" labels="O2 %" initialdata="" refindex="12" refvalues="1" convertors="100,1" throttle="1000"></bdl-chartjs-time>
 
-
-<bdl-chartjs-time width="300" height="90" fromid="idfmi" labels="RR" initialdata="0" refindex="7" refvalues="1"></bdl-chartjs-time>
-<bdl-chartjs-time width="300" height="90" fromid="idfmi" labels="Vt (mandatory tidal volume)" initialdata="" refindex="8" refvalues="1"></bdl-chartjs-time>
-<bdl-chartjs-time width="300" height="90" fromid="idfmi" labels="I,E ratio" initialdata="" refindex="9" refvalues="2"></bdl-chartjs-time>
-<bdl-chartjs-time width="300" height="90" fromid="idfmi" labels="pause %" initialdata="" refindex="11" refvalues="1"></bdl-chartjs-time>
-<bdl-chartjs-time width="300" height="90" fromid="idfmi" labels="O2 %" initialdata="" refindex="12" refvalues="1" convertors="100,1"></bdl-chartjs-time>
 </div>
 </div>
+
 
 </div>
 </div>
