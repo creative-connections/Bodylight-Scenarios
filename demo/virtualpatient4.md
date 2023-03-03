@@ -26,7 +26,7 @@ API to VR
 <div class="w3-quarter">
 <div class="w3-card w3-third w3-text-aqua w3-large">
 
-&nbsp;RR<span class="w3-xlarge"><bdl-value fromid="idfmi" refindex="7" convertor="60,1"></bdl-value></span>&nbsp;<span class="w3-small">1/min</span>
+&nbsp;RR<b class="w3-xxlarge"><bdl-value fromid="idfmi" refindex="7" convertor="60,1"></bdl-value></b>&nbsp;<span class="w3-small">1/min</span>
 </div>
 
 </div>
@@ -49,7 +49,7 @@ API to VR
 <div class="w3-quarter">
 <div class="w3-card w3-third w3-text-yellow w3-large">
 
-&nbsp;spO<sub>2</sub><span class="w3-xlarge"><bdl-value fromid="idfmi" refindex="2" convertor="100,1"></bdl-value></span>&nbsp;<span class="w3-small">%</span>
+&nbsp;spO<sub>2</sub><b class="w3-xxlarge"><bdl-value fromid="idfmi" refindex="2" convertor="100,1"></bdl-value></b>&nbsp;<span class="w3-small">%</span>
 </div>
 
 </div>
@@ -59,7 +59,7 @@ API to VR
 <div class="w3-quarter">
 <div class="w3-card w3-third w3-text-green w3-large">
 
-&nbsp;  p<sub>H</sub><span class="w3-xlarge"><bdl-value fromid="idfmi" refindex="4"></bdl-value></span>
+&nbsp;  p<sub>H</sub><b class="w3-xxlarge"><bdl-value fromid="idfmi" refindex="4"></bdl-value></b>
 </div>
 </div>
 </div>
