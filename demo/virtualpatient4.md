@@ -11,7 +11,6 @@ API to VR
 <div class="w3-row">
 
 
-
 </div>
 </div>
 </div>
@@ -20,44 +19,42 @@ API to VR
 <div class="w3-row">
 
 </div><div class="w3-row">
-<div class="w3-threequarter">
+<div class="w3-twothird">
 <bdl-chartjs-time width="700" height="120" fromid="idfmi" labels="lungs volume"  refindex="0" refvalues="1" minichart="true" colorindex=5></bdl-chartjs-time>
 </div>
-<div class="w3-quarter">
-<div class="w3-card w3-third w3-text-aqua w3-large">
+<div class="w3-third">
+<div class="w3-card w3-third w3-text-aqua w3-large" style="white-space:nowrap">
 
-&nbsp;RR<b class="w3-xxlarge"><bdl-value fromid="idfmi" refindex="7" convertor="60,1"></bdl-value></b>&nbsp;<span class="w3-small">1/min</span>
+&nbsp;RR&nbsp;<b class="w3-xxlarge"><bdl-value fromid="idfmi" refindex="7" convertor="60,1"></bdl-value></b>&nbsp;<span class="w3-small">1/min</span>
 </div>
 
 </div>
 </div><div class="w3-row">
-<div class="w3-threequarter">
+<div class="w3-twothird">
 <div class="w3-row">
-<div class="w3-row">
-<div class="w3-half">
 <!--div style="transform:scale(0.5);transform-origin: 0 0"-->
-<bdl-sachart fromid="idfmi" refindex="4,16" convertors="1,1,0;1,133.322" width="300" height="200"></bdl-sachart>
+<bdl-sachart fromid="idfmi" refindex="4,16" convertors="1,1,0;1,133.322" width="400" height="200" class="w3-left"></bdl-sachart>
 <!--/div-->
 
-</div>
-<div class="w3-half">
-<bdl-chartjs-time width="300" height="120" fromid="idfmi" labels="sO2 veins,sO2 arteries,sO2 tissues" refindex="1" refvalues="3" throttle="1000" minichart="true" colorindex="3" maxdata="4096"></bdl-chartjs-time>
-</div>
-</div>
+<bdl-chartjs-time width="300" height="200" fromid="idfmi" labels="sO2 veins,sO2 arteries,sO2 tissues" refindex="1" refvalues="3" throttle="1000" minichart="true" colorindex="3" maxdata="4096" ></bdl-chartjs-time>
+
+
 </div>
 </div>
-<div class="w3-quarter">
-<div class="w3-card w3-third w3-text-yellow w3-large">
+<div class="w3-third">
+<div class="w3-card w3-third w3-text-yellow w3-large" style="white-space:nowrap">
 
 &nbsp;spO<sub>2</sub><b class="w3-xxlarge"><bdl-value fromid="idfmi" refindex="2" convertor="100,1"></bdl-value></b>&nbsp;<span class="w3-small">%</span>
 </div>
 
 </div>
-<div class="w3-threequarter">
+<div class="w3-twothird">
 &nbsp;
+<bdl-chartjs-time width="700" height="150" fromid="idfmi" labels="pH veins,pH arteries,pH mixed" refindex="4" refvalues="3" throttle="1000" minichart="true" colorindex="0" maxdata="4096" ></bdl-chartjs-time>
+
 </div>
-<div class="w3-quarter">
-<div class="w3-card w3-third w3-text-green w3-large">
+<div class="w3-third">
+<div class="w3-card w3-third w3-text-green w3-large" style="white-space:nowrap">
 
 &nbsp;  p<sub>H</sub><b class="w3-xxlarge"><bdl-value fromid="idfmi" refindex="4"></bdl-value></b>
 </div>
