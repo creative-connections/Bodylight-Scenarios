@@ -68,7 +68,7 @@ API to VR
 <button class="w3-button w3-blue" onclick="document.getElementById('vcontrols').style.display='block'">Ventilator controls</button>
 
 <div style="display:none" id="vcontrols" class="w3-card">
-<button class="w3-button w3-red" onclick="document.getElementById('vcontrols').style.display='none'">X</button>
+<button class="w3-button w3-red" onclick="document.getElementById('vcontrols').style.display='none'" title="close controls">X</button>
 
 Data to be sent to VR: 
 volume:<bdl-range id="volume" title="Lung volume (m3)" min="0.0001" max="0.01" default="0.002" step="0.000001" fromid="idfmi" refindex="0"></bdl-range>
