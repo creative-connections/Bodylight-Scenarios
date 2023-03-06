@@ -1,9 +1,7 @@
 <div class="w3-row">
 <div class="w3-half">
 <div class="w3-left w3-small">v3.5&nbsp;</div>
-Simulation control: <bdl-fmi id="idfmi" mode="continuous" src="modelECMORespiratoryVR_ECMOSimNoRegVentilatorVC8.js" fminame="modelECMORespiratoryVR_ECMOSimNoRegVentilatorVC8" tolerance="0.001" starttime="0" fstepsize="0.2" fpslimit="5" guid="{df14b810-b76e-4be8-bc34-be8fcb02ed2e}" valuereferences="637537985,905970425,905969984,905970853,905970388,905969947,905970816,16777229,16777230,16777583,16777584,16777585,16777223,100663306,16777224,16777225,905970386,637538038,637537985" valuelabels="lungs.volume,Veins.chemicalSolution.bloodGases.sO2,Arteries.chemicalSolution.bloodGases.sO2,Tissue.chemicalSolution.bloodGases.sO2,Veins.chemicalSolution.bloodGases.pH,Arteries.chemicalSolution.bloodGases.pH,Tissue.chemicalSolution.bloodGases.pH,RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.Eratio,ventilatorSCMV.pause,AirO2,AirN2,AirCO2,AirH2O,Veins.chemicalSolution.bloodGases.pCO2,expiration.q_in.p,lungs.volume" inputs="idrate,16777229,1,60,t;idtv,16777230,1,1000000,t;idiratio,16777583,1,1,t;ideratio,16777584,1,1,t;idpause,16777585,1,100,0,t;ido2,16777223,1,100,t;idco2,16777224,1,100,t;idh2o,16777225,1,100,t;idshunts,16777226,1,100,t;iddeadspace,16777231,1,1000000,t;idexp,16777587,1,1000000,t" inputlabels="RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.Eratio,ventilatorSCMV.pause,AirO2,AirCO2,AirH2O,Shunts,DV,expirationConductance.k"></bdl-fmi>
-
-
+Simulation control: <bdl-fmi id="idfmi" mode="continuous" src="modelECMORespiratoryVR_ECMOSimNoRegVentilatorVC8.js" fminame="modelECMORespiratoryVR_ECMOSimNoRegVentilatorVC8" tolerance="0.0001" starttime="0" fstepsize="0.2" fpslimit="5" guid="{df14b810-b76e-4be8-bc34-be8fcb02ed2e}" valuereferences="637537985,905970425,905969984,905970853,905970388,905969947,905970816,16777229,16777230,16777583,16777584,16777585,16777223,100663306,16777224,16777225,905970386,637538038,637537985" valuelabels="lungs.volume,Veins.chemicalSolution.bloodGases.sO2,Arteries.chemicalSolution.bloodGases.sO2,Tissue.chemicalSolution.bloodGases.sO2,Veins.chemicalSolution.bloodGases.pH,Arteries.chemicalSolution.bloodGases.pH,Tissue.chemicalSolution.bloodGases.pH,RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.Eratio,ventilatorSCMV.pause,AirO2,AirN2,AirCO2,AirH2O,Veins.chemicalSolution.bloodGases.pCO2,expiration.q_in.p,lungs.volume" inputs="idrate,16777229,1,60,t;idtv,16777230,1,1000000,t;idiratio,16777583,1,1,t;ideratio,16777584,1,1,t;idpause,16777585,1,100,0,t;ido2,16777223,1,100,t;idco2,16777224,1,100,t;idh2o,16777225,1,100,t;idshunts,16777226,1,100,t;iddeadspace,16777231,1,1000000,t;idexp,16777587,1,1000000,t" inputlabels="RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.Eratio,ventilatorSCMV.pause,AirO2,AirCO2,AirH2O,Shunts,DV,expirationConductance.k"></bdl-fmi>
 
 </div>
 <div class="w3-half">
@@ -20,7 +18,7 @@ API to VR
 
 </div><div class="w3-row">
 <div class="w3-threequarter">
-&nbsp;<bdl-chartjs-time width="850" height="240" fromid="idfmi" labels="lungs volume"  refindex="0" refvalues="1" minichart="true" colorindex=5 initialdata="0,0.01;0.0023,0.0023"></bdl-chartjs-time>
+&nbsp;<bdl-chartjs-time width="850" height="200" fromid="idfmi" labels="lungs volume"  refindex="0" refvalues="1" minichart="true" colorindex=5 initialdata="0,0.01;0.0023,0.0023"></bdl-chartjs-time>
 </div>
 <div class="w3-quarter">
 <div class="w3-card w3-text-aqua w3-large" style="white-space:nowrap">
@@ -32,7 +30,7 @@ API to VR
 </div><div class="w3-row">
 <div class="w3-threequarter">
 <div class="w3-row">
-&nbsp;<bdl-chartjs-time width="850" height="240" fromid="idfmi" labels="sO2 veins,sO2 arteries,sO2 tissues" refindex="1" refvalues="3" throttle="1000" colorindex="3" minichart="true" maxdata="4096" initialdata="0,0.01;0.98,0.98;0.98,0.98;0.98,0.98"></bdl-chartjs-time>
+&nbsp;<bdl-chartjs-time width="850" height="200" fromid="idfmi" labels="sO2 veins,sO2 arteries,sO2 tissues" refindex="1" refvalues="3" throttle="1000" colorindex="3" minichart="true" maxdata="4096" initialdata="0,0.01;0.98,0.98;0.98,0.98;0.98,0.98"></bdl-chartjs-time>
 
 
 </div>
@@ -52,7 +50,7 @@ API to VR
 
 </div>
 <div class="w3-threequarter">
-&nbsp;<bdl-chartjs-time width="850" height="240" fromid="idfmi" labels="pH veins,pH arteries,pH mixed" refindex="4" refvalues="3" throttle="1000"  colorindex="0" maxdata="4096" minichart="true" initialdata="0,0.01;7.4,7.4;7.4,7.4;7.4,7.4"></bdl-chartjs-time>
+&nbsp;<bdl-chartjs-time width="850" height="200" fromid="idfmi" labels="pH veins,pH arteries,pH mixed" refindex="4" refvalues="3" throttle="1000"  colorindex="0" maxdata="4096" minichart="true" initialdata="0,0.01;7.4,7.4;7.4,7.4;7.4,7.4"></bdl-chartjs-time>
 
 </div>
 <div class="w3-quarter">
@@ -75,8 +73,10 @@ API to VR
 </div>
 
 <div class="w3-quarter">
+<div style="max-width:250px;">
 <bdl-animate-adobe src="Plice.js" width="150" height="150" name="Plice" fromid="idfmi" responsive="true"></bdl-animate-adobe>
 <bdl-bind2a findex="0" aname="PliceAnimace_anim" amin="0" amax="30" fmin="0.0023" fmax="0.0033"></bdl-bind2a>
+</div>
 </div>
 <div class="w3-quarter">
 
