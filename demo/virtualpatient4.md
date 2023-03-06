@@ -14,7 +14,7 @@ API to VR
 </div>
 </div>
 
-<div class="w3-black w3-sans">
+<div class="w3-black w3-sans-serif">
 <div class="w3-row">
 
 </div><div class="w3-row">
