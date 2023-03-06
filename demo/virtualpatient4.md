@@ -12,49 +12,65 @@ API to VR
 </div>
 </div>
 
-<div class="w3-black">
+<div class="w3-black w3-sans">
 <div class="w3-row">
 
 </div><div class="w3-row">
-<div class="w3-twothird">
-<bdl-chartjs-time width="700" height="120" fromid="idfmi" labels="lungs volume"  refindex="0" refvalues="1" minichart="true" colorindex=5></bdl-chartjs-time>
+<div class="w3-threequarter">
+&nbsp;<bdl-chartjs-time width="850" height="240" fromid="idfmi" labels="lungs volume"  refindex="0" refvalues="1" minichart="true" colorindex=5 initialdata="0,0.01;0.0023,0.0023"></bdl-chartjs-time>
 </div>
-<div class="w3-third">
-<div class="w3-card w3-third w3-text-aqua w3-large" style="white-space:nowrap">
+<div class="w3-quarter">
+<div class="w3-card w3-text-aqua w3-large" style="white-space:nowrap">
 
 &nbsp;RR&nbsp;<b class="w3-xxlarge"><bdl-value fromid="idfmi" refindex="7" convertor="60,1"></bdl-value></b>&nbsp;<span class="w3-small">1/min</span>
 </div>
 
 </div>
 </div><div class="w3-row">
-<div class="w3-twothird">
+<div class="w3-threequarter">
 <div class="w3-row">
-<!--div style="transform:scale(0.5);transform-origin: 0 0"-->
-<bdl-sachart fromid="idfmi" refindex="4,16" convertors="1,1,0;1,133.322" width="400" height="200" class="w3-left"></bdl-sachart>
-<!--/div-->
-
-<bdl-chartjs-time width="300" height="200" fromid="idfmi" labels="sO2 veins,sO2 arteries,sO2 tissues" refindex="1" refvalues="3" throttle="1000" minichart="true" colorindex="3" maxdata="4096" ></bdl-chartjs-time>
+&nbsp;<bdl-chartjs-time width="850" height="240" fromid="idfmi" labels="sO2 veins,sO2 arteries,sO2 tissues" refindex="1" refvalues="3" throttle="1000" minichart="true" colorindex="3" maxdata="4096" initialdata="0,0.01;0.9,0.9;0.9,0.9;0.9,0.9"></bdl-chartjs-time>
 
 
 </div>
 </div>
-<div class="w3-third">
-<div class="w3-card w3-third w3-text-yellow w3-large" style="white-space:nowrap">
+<div class="w3-quarter">
+<div class="w3-card" style="white-space:nowrap">
+<div class="w3-text-yellow w3-large">
+&nbsp;spO<sub>2</sub>art<b class="w3-xxlarge"><bdl-value fromid="idfmi" refindex="2" convertor="100,1"></bdl-value></b>&nbsp;<span class="w3-small">%</span><br/></div>
 
-&nbsp;spO<sub>2</sub><b class="w3-xxlarge"><bdl-value fromid="idfmi" refindex="2" convertor="100,1"></bdl-value></b>&nbsp;<span class="w3-small">%</span>
+<div class="w3-text-purple w3-large">
+&nbsp;spO<sub>2</sub>mix<b class=""><bdl-value fromid="idfmi" refindex="3" convertor="100,1"></bdl-value></b>&nbsp;<span class="w3-small">%</span>
+</div>
+<div class="w3-text-aqua w3-large">
+&nbsp;spO<sub>2</sub>ven<b class=""><bdl-value fromid="idfmi" refindex="3" convertor="100,1"></bdl-value></b>&nbsp;<span class="w3-small">%</span>
+</div>
 </div>
 
 </div>
-<div class="w3-twothird">
-&nbsp;
-<bdl-chartjs-time width="700" height="150" fromid="idfmi" labels="pH veins,pH arteries,pH mixed" refindex="4" refvalues="3" throttle="1000" minichart="true" colorindex="0" maxdata="4096" ></bdl-chartjs-time>
+<div class="w3-threequarter">
+&nbsp;<bdl-chartjs-time width="850" height="240" fromid="idfmi" labels="pH veins,pH arteries,pH mixed" refindex="4" refvalues="3" throttle="1000"  colorindex="0" maxdata="4096" initialdata="0,0.01;7.4,7.4;7.4,7.4;7.4,7.4"></bdl-chartjs-time>
 
 </div>
-<div class="w3-third">
-<div class="w3-card w3-third w3-text-green w3-large" style="white-space:nowrap">
+<div class="w3-quarter">
+<div class="w3-card w3-text-green w3-large" style="white-space:nowrap">
 
 &nbsp;  p<sub>H</sub><b class="w3-xxlarge"><bdl-value fromid="idfmi" refindex="4"></bdl-value></b>
 </div>
+</div>
+<div class="w3-threequarter">
+<div class="w3-row">
+<div class="w3-half">
+<bdl-sachart fromid="idfmi" refindex="4,16" convertors="1,1,0;1,133.322" width="400" height="250" class="w3-left"></bdl-sachart>
+</div>
+
+<div class="w3-third" style="margin-left:50px">
+<bdl-animate-adobe src="Plice.js" width="150" height="150" name="Plice" fromid="idfmi" responsive="true"></bdl-animate-adobe>
+<bdl-bind2a findex="0" aname="PliceAnimace_anim" amin="0" amax="30" fmin="0.0023" fmax="0.0033"></bdl-bind2a>
+
+</div>
+</div>
+
 </div>
 </div>
 </div>
@@ -84,7 +100,7 @@ Ventilated gas: <!--bdl-buttonparams title="Normal" ids="ido2,idco2,idh2o" value
 <bdl-range id="idh2o" title="H2O %" min="0" max="10" default="6" step="0.1"></bdl-range>
 
 Mechanical ventilator setting:<br/>
-<bdl-range id="idrate" title="Breathing rate (1/min)" min="1" max="120" default="17" step="1" fromid="vrapi" refindex="3"></bdl-range><br/>
+<bdl-range id="idrate" title="Breathing rate (1/min)" min="1" max="60" default="17" step="1" fromid="vrapi" refindex="3"></bdl-range><br/>
 <!--bdl-range id="idmuscle" title="Breathing force (%)" min="10" max="400" default="100" step="1" fromid="vrapi" refindex="0"></bdl-range-->
 <bdl-range id="idtv" title="Vt - tidal volume (ml)" min="200" max="1000" default="500" step="1" fromid="vrapi" refindex="2"></bdl-range><br/>
 <div class="w3-hide">
