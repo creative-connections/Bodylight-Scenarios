@@ -13,11 +13,11 @@ API to VR
 </div>
 </div>
 
-<div class="w3-black w3-sans-serif" style="max-width:1080">
+<div class="w3-black w3-sans-serif w3-card" style="max-width:1080px">
 <div class="w3-row">
 </div><div class="w3-row">
 <div class="w3-threequarter">
-&nbsp;<bdl-chartjs-time width="850" height="150" fromid="idfmi" labels="lungs volume"  refindex="0" refvalues="1" minichart="true" colorindex=5 initialdata="0,0.01;0.0023,0.0023"></bdl-chartjs-time>
+&nbsp;<bdl-chartjs-time width="750" height="150" fromid="idfmi" labels="lungs volume"  refindex="0" refvalues="1" minichart="true" colorindex=5 initialdata="0,0.01;0.0023,0.0023"></bdl-chartjs-time>
 </div>
 <div class="w3-quarter">
 <div class="w3-card w3-text-aqua w3-large" style="white-space:nowrap">
@@ -27,7 +27,7 @@ API to VR
 </div><div class="w3-row">
 <div class="w3-threequarter">
 <div class="w3-row">
-&nbsp;<bdl-chartjs-time width="850" height="150" fromid="idfmi" labels="sO2 veins,sO2 arteries,sO2 tissues" refindex="1" refvalues="3" throttle="1000" colorindex="3" minichart="true" maxdata="4096" initialdata="0,0.01;0.98,0.98;0.98,0.98;0.98,0.98"></bdl-chartjs-time>
+&nbsp;<bdl-chartjs-time width="750" height="150" fromid="idfmi" labels="sO2 veins,sO2 arteries,sO2 tissues" refindex="1" refvalues="3" throttle="1000" colorindex="3" minichart="true" maxdata="4096" initialdata="0,0.01;0.98,0.98;0.98,0.98;0.98,0.98"></bdl-chartjs-time>
 
 </div>
 </div>
@@ -46,7 +46,7 @@ API to VR
 
 </div>
 <div class="w3-threequarter">
-&nbsp;<bdl-chartjs-time width="850" height="200" fromid="idfmi" labels="pH veins,pH arteries,pH mixed" refindex="4" refvalues="3" throttle="1000"  colorindex="0" maxdata="4096" minichart="true" initialdata="0,0.01;7.4,7.4;7.4,7.4;7.4,7.4"></bdl-chartjs-time>
+&nbsp;<bdl-chartjs-time width="750" height="200" fromid="idfmi" labels="pH veins,pH arteries,pH mixed" refindex="4" refvalues="3" throttle="1000"  colorindex="0" maxdata="4096" minichart="true" initialdata="0,0.01;7.4,7.4;7.4,7.4;7.4,7.4"></bdl-chartjs-time>
 
 </div>
 <div class="w3-quarter">
@@ -69,7 +69,7 @@ API to VR
 </div>
 
 <div class="w3-quarter">
-<div style="max-width:250px;">
+<div style="max-width:200px;margin-left:50px">
 <bdl-animate-adobe src="Plice.js" width="150" height="150" name="Plice" fromid="idfmi" responsive="true"></bdl-animate-adobe>
 <bdl-bind2a findex="0" aname="PliceAnimace_anim" amin="0" amax="30" fmin="0.0023" fmax="0.0033"></bdl-bind2a>
 </div>
