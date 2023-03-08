@@ -13,25 +13,21 @@ API to VR
 </div>
 </div>
 
-<div class="w3-black w3-sans-serif">
+<div class="w3-black w3-sans-serif" style="max-width:1080">
 <div class="w3-row">
-
 </div><div class="w3-row">
 <div class="w3-threequarter">
-&nbsp;<bdl-chartjs-time width="850" height="200" fromid="idfmi" labels="lungs volume"  refindex="0" refvalues="1" minichart="true" colorindex=5 initialdata="0,0.01;0.0023,0.0023"></bdl-chartjs-time>
+&nbsp;<bdl-chartjs-time width="850" height="150" fromid="idfmi" labels="lungs volume"  refindex="0" refvalues="1" minichart="true" colorindex=5 initialdata="0,0.01;0.0023,0.0023"></bdl-chartjs-time>
 </div>
 <div class="w3-quarter">
 <div class="w3-card w3-text-aqua w3-large" style="white-space:nowrap">
-
 &nbsp;RR&nbsp;<b class="w3-xxxlarge"><bdl-value fromid="idfmi" refindex="7" convertor="60,1"></bdl-value></b>&nbsp;<span class="w3-small">1/min</span>
 </div>
-
 </div>
 </div><div class="w3-row">
 <div class="w3-threequarter">
 <div class="w3-row">
-&nbsp;<bdl-chartjs-time width="850" height="200" fromid="idfmi" labels="sO2 veins,sO2 arteries,sO2 tissues" refindex="1" refvalues="3" throttle="1000" colorindex="3" minichart="true" maxdata="4096" initialdata="0,0.01;0.98,0.98;0.98,0.98;0.98,0.98"></bdl-chartjs-time>
-
+&nbsp;<bdl-chartjs-time width="850" height="150" fromid="idfmi" labels="sO2 veins,sO2 arteries,sO2 tissues" refindex="1" refvalues="3" throttle="1000" colorindex="3" minichart="true" maxdata="4096" initialdata="0,0.01;0.98,0.98;0.98,0.98;0.98,0.98"></bdl-chartjs-time>
 
 </div>
 </div>
