@@ -65,7 +65,7 @@ API to VR
 </div>
 <div class="w3-row">
 <div class="w3-quarter">
-<bdl-sachart fromid="idfmi" refindex="4,16" convertors="1,1,0;1,133.322" width="300" height="250" class="w3-left"></bdl-sachart>
+<bdl-sachart fromid="idfmi" refindex="4,16" convertors="1,1,0;1,133.322" width="300" height="250" minichart="true" class="w3-left"></bdl-sachart>
 </div>
 
 <div class="w3-quarter">
