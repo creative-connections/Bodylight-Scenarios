@@ -1,4 +1,7 @@
-{ "circulation-title": "Circulation",
+{ 
+"select-lang": "Select Language Localization",
+"confirm": "Confirm",
+"circulation-title": "Circulation",
 "circulation-text":
 "Next section covers physiology of blood circulation and pathophysiology of some diseases." 
 }
