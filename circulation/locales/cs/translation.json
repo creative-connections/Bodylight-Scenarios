@@ -1,4 +1,7 @@
-{ "circulation-title": "Cirkulace (CZ)",
+{
+"select-lang": "Vyberte jazyk lokalizace",
+"confirm": "Potvrdit",
+"circulation-title": "Cirkulace (CZ)",
 "circulation-text":
 "V následujícím textu je postupně vysvětlena fyziologie cirkulace a některé patofyziologické jevy vyskytující se při některých onemocněních. (CZ)" 
 }
