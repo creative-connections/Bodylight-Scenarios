@@ -611,7 +611,9 @@ package Frvs
     connect(simpleCirculationChip.SV_Volume, SA_VplusSV_V.u1) annotation(Line(points = {{-81.9, -42.325}, {-115, -42.325}, {-115, -101.5}}, color = {0, 0, 127}, smooth = Smooth.None));
     connect(simpleCirculationChip.SA_Volume, SA_VplusSV_V.u2) annotation(Line(points = {{73.9, -42.325}, {78, -42.325}, {78, -94}, {-106, -94}, {-106, -101.5}}, color = {0, 0, 127}, smooth = Smooth.None));
     connect(simpleCirculationChip.PA_Volume, PA_VplusPV_V.u2) annotation(Line(points = {{-81.9, 69.325}, {-131, 69.325}, {-131, 117}, {-76.8, 117}, {-76.8, 125.4}}, color = {0, 0, 127}, smooth = Smooth.None));
-    connect(simpleCirculationChip.PV_Pressure, PA_VplusPV_V.u1) annotation(Line(points = {{73.9, 49.025}, {83, 49.025}, {83, 128}, {-50, 128}, {-50, 117}, {-67.2, 117}, {-67.2, 125.4}}, color = {0, 0, 127}, smooth = Smooth.None));
+    connect(simpleCirculationChip.PV_Volume, PA_VplusPV_V.u1) annotation(Line(points={{73.9,
+            69.325},{83,69.325},{83,128},{-50,128},{-50,117},{-67.2,117},{-67.2,
+            125.4}},                                                                                                                                                                    color = {0, 0, 127}, smooth = Smooth.None));
     connect(bloodVolume1.v1, simpleCirculationChip.PA_UnstressedVolume) annotation(Line(points={{57.0123,
             -118.8},{57.0123,-87},{-127,-87},{-127,105},{-90,105},{-90,89.625},
             {-81.9,89.625}},                                                                                                                                                                                color = {0, 0, 127}, smooth = Smooth.None));
@@ -670,53 +672,84 @@ package Frvs
     Modelica.Blocks.Interfaces.RealOutput SA_Pressure annotation(Placement(transformation(rotation = 0, extent = {{80, -60}, {90, -50}}), iconTransformation(extent = {{80, -60}, {90, -50}})));
     Modelica.Blocks.Interfaces.RealOutput PV_Pressure annotation(Placement(transformation(rotation = 0, extent = {{80, 50}, {90, 60}}), iconTransformation(extent = {{80, 50}, {90, 60}})));
   equation
-    connect(RightHeart.refBloodVolume, SystemVeins.Volume) annotation(Line(points = {{-90, 13}, {-100, 13}, {-100, -65}, {-95.538, -65}, {-95.538, -60.3277}}, color = {0, 0, 127}, smooth = Smooth.None));
+    connect(RightHeart.refBloodVolume, SystemVeins.Volume) annotation(Line(points={{-90,13},
+            {-100,13},{-100,-65},{-95.538,-65},{-95.538,-60.3277}},                                                                                            color = {0, 0, 127}, smooth = Smooth.None));
     connect(PlumonaryArteries.bloodFlow, RightHeart.Outflow) annotation(Line(visible = true, origin = {-74.838, 44.2012}, points = {{3.32539, 9.1006}, {-9.162, 9.1006}, {-9.162, -13.2012}}, thickness = 1));
     connect(PlumonaryArteries.bloodFlow, TotalPulmonaryResistance.Inflow) annotation(Line(points = {{-71.5126, 53.3018}, {-51.7563, 53.3018}, {-51.7563, 76}, {-39, 76}}, color = {0, 0, 0}, thickness = 1, smooth = Smooth.None));
     connect(TotalPulmonaryResistance.Outflow, PlumonaryVeins.bloodFlow) annotation(Line(visible = true, origin = {13.312, 60.228}, points = {{-32.312, 15.772}, {7.0698, 15.772}, {7.0698, -10.7721}, {7.19771, -10.7721}}, thickness = 1));
-    connect(LeftHeart.Inflow, PlumonaryVeins.bloodFlow) annotation(Line(visible = true, origin = {39.2422, 45.1881}, points = {{7.7578, -12.1881}, {7.7578, 3.9602}, {-18.7325, 3.9602}, {-18.7325, 4.2678}}, thickness = 1));
+    connect(LeftHeart.Inflow, PlumonaryVeins.bloodFlow) annotation(Line(visible = true, origin = {39.2422, 45.1881}, points={{7.7578,
+            -12.1881},{7.7578,3.9602},{-18.7325,3.9602},{-18.7325,4.2678}},                                                                                                                                   thickness = 1));
     connect(LeftHeart.Outflow, bloodFlowMeter1.Inflow) annotation(Line(points = {{47, 13}, {47.5, 13}, {47.5, -4}}, color = {0, 0, 0}, smooth = Smooth.None, thickness = 1));
-    connect(bloodFlowMeter1.Outflow, SystemArteries.bloodFlow) annotation(Line(points = {{47.5, -15}, {46.5126, -15}, {46.5126, -54.2238}}, color = {0, 0, 0}, thickness = 1, smooth = Smooth.None));
-    connect(SA_SR.Inflow, SystemArteries.bloodFlow) annotation(Line(points = {{18, -56.5}, {33, -56.5}, {33, -54.2238}, {46.5126, -54.2238}}, color = {0, 0, 0}, thickness = 1, smooth = Smooth.None));
+    connect(bloodFlowMeter1.Outflow, SystemArteries.bloodFlow) annotation(Line(points={{47.5,
+            -15},{46.5126,-15},{46.5126,-54.2238}},                                                                                         color = {0, 0, 0}, thickness = 1, smooth = Smooth.None));
+    connect(SA_SR.Inflow, SystemArteries.bloodFlow) annotation(Line(points={{18,
+            -56.5},{33,-56.5},{33,-54.2238},{46.5126,-54.2238}},                                                                              color = {0, 0, 0}, thickness = 1, smooth = Smooth.None));
     connect(SA_SR.Outflow, TotalSystemicResistance.Inflow) annotation(Line(points = {{7, -56.5}, {-5, -56.5}, {-5, -54}, {-17, -54}}, color = {0, 0, 0}, thickness = 1, smooth = Smooth.None));
     connect(SystemVeins.bloodFlow, TotalSystemicResistance.Outflow) annotation(Line(visible = true, origin = {-50.8688, -50.9218}, points = {{-37.1818, -2.6087}, {1.2579, -3.0782}, {13.8688, -3.0782}}, thickness = 1));
     connect(bloodFlowMeter.Inflow, SystemVeins.bloodFlow) annotation(Line(visible = true, origin = {-85.591, -29.7621}, points = {{-2.909, 23.7621}, {-2.909, 1.0876}, {-2.9089, -23.7684}, {-2.45961, -23.7684}}, thickness = 1));
     connect(bloodFlowMeter.Outflow, RightHeart.Inflow) annotation(Line(points = {{-88.5, 5}, {-84, 5}, {-84, 11}}, color = {0, 0, 0}, thickness = 1, smooth = Smooth.None));
     connect(totalBloodVolume.bloodFlowConnector, SystemVeins.bloodFlow) annotation(Line(points = {{-58.67, -13.05}, {-64.1, -13.05}, {-64.1, -53.5305}, {-88.0506, -53.5305}}, color = {0, 0, 0}, thickness = 1, smooth = Smooth.None));
-    connect(PlumonaryArteries.Volume, totalBloodVolume.u) annotation(Line(points = {{-79, 46.5046}, {-79, 35}, {-65, 35}, {-65, 7}, {-65.3, 7}, {-65.3, 0.25}}, color = {0, 0, 127}, smooth = Smooth.None));
-    connect(totalBloodVolume.u2, SystemArteries.Volume) annotation(Line(points = {{-55.61, -0.51}, {-55.61, 12}, {27, 12}, {27, -75}, {54, -75}, {54, -61.0209}}, color = {0, 0, 127}, smooth = Smooth.None));
-    connect(totalBloodVolume.u3, SystemVeins.Volume) annotation(Line(points = {{-51.36, -0.51}, {-51.36, 20}, {0, 20}, {0, -65}, {-95.538, -65}, {-95.538, -60.3277}}, color = {0, 0, 127}, smooth = Smooth.None));
+    connect(PlumonaryArteries.Volume, totalBloodVolume.u) annotation(Line(points={{-79,
+            46.5046},{-79,35},{-65,35},{-65,7},{-65.3,7},{-65.3,0.25}},                                                                                         color = {0, 0, 127}, smooth = Smooth.None));
+    connect(totalBloodVolume.u2, SystemArteries.Volume) annotation(Line(points={{-55.61,
+            -0.51},{-55.61,12},{27,12},{27,-75},{54,-75},{54,-61.0209}},                                                                                          color = {0, 0, 127}, smooth = Smooth.None));
+    connect(totalBloodVolume.u3, SystemVeins.Volume) annotation(Line(points={{-51.36,
+            -0.51},{-51.36,20},{0,20},{0,-65},{-95.538,-65},{-95.538,-60.3277}},                                                                                       color = {0, 0, 127}, smooth = Smooth.None));
     connect(LH_StarlingSlope, LeftHeart.StarlingSlope) annotation(Line(points = {{85, 25}, {85, 23}, {74, 23}, {56, 23}}, color = {0, 0, 127}));
-    connect(PV_Compliance, PlumonaryVeins.Compliance) annotation(Line(points = {{85, 85}, {26.4918, 85}, {26.4918, 58.1005}}, color = {0, 0, 127}));
-    connect(PV_Volume, PlumonaryVeins.Volume) annotation(Line(points = {{85, 75}, {54, 75}, {54, 42.6587}, {27.9971, 42.6587}}, color = {0, 0, 127}));
+    connect(PV_Compliance, PlumonaryVeins.Compliance) annotation(Line(points={{85,85},
+            {26.4917,85},{26.4917,58.1005}},                                                                                  color = {0, 0, 127}));
+    connect(PV_Volume, PlumonaryVeins.Volume) annotation(Line(points={{85,75},{
+            54,75},{54,42.6587},{27.9971,42.6587}},                                                                             color = {0, 0, 127}));
     connect(RH_StarlingSlope, RightHeart.StarlingSlope) annotation(Line(points = {{-105, 25}, {-105, 25}, {-105, 21}, {-93, 21}}, color = {0, 0, 127}));
-    connect(SA_Compliance, SystemArteries.Compliance) annotation(Line(points = {{85, -25}, {52.4947, -25}, {52.4947, -45.5792}}, color = {0, 0, 127}));
-    connect(SA_StressedVolume, SystemArteries.StressedVolume) annotation(Line(points = {{85, -45}, {85, -64.0209}, {47, -64.0209}}, color = {0, 0, 127}));
-    connect(SA_UnstressedVolume, SystemArteries.UnstressedVolume) annotation(Line(points = {{85, -15}, {41.4947, -15}, {41.4947, -45.0792}}, color = {0, 0, 127}));
-    connect(SV_Compliance, SystemVeins.Compliance) annotation(Line(points = {{-105, -25}, {-94.0326, -25}, {-94.0326, -44.8859}}, color = {0, 0, 127}));
-    connect(SV_StressedVolume, SystemVeins.StressedVolume) annotation(Line(points = {{-105, -45}, {-105, -63.3277}, {-88.538, -63.3277}}, color = {0, 0, 127}));
-    connect(SV_UnstressedVolume, SystemVeins.UnstressedVolume) annotation(Line(points = {{-105, -15}, {-105, -15}, {-105, -44.3859}, {-83.0326, -44.3859}}, color = {0, 0, 127}));
-    connect(SV_Volume, SystemVeins.Volume) annotation(Line(points = {{-105, -35}, {-105, -35}, {-105, -60.3277}, {-95.538, -60.3277}}, color = {0, 0, 127}));
-    connect(TPR_BloodResistance, TotalPulmonaryResistance.BloodResistance) annotation(Line(points = {{-29, 120}, {-29, 85.2569}}, color = {0, 0, 127}));
-    connect(TSR_BloodResistance, TotalSystemicResistance.BloodResistance) annotation(Line(points = {{-27, -80}, {-27, -63.2569}}, color = {0, 0, 127}));
+    connect(SA_Compliance, SystemArteries.Compliance) annotation(Line(points={{85,-25},
+            {52.4947,-25},{52.4947,-45.5792}},                                                                                   color = {0, 0, 127}));
+    connect(SA_StressedVolume, SystemArteries.StressedVolume) annotation(Line(points={{85,-45},
+            {85,-64.0209},{47,-64.0209}},                                                                                           color = {0, 0, 127}));
+    connect(SA_UnstressedVolume, SystemArteries.UnstressedVolume) annotation(Line(points={{85,-15},
+            {41.4947,-15},{41.4947,-45.0792}},                                                                                               color = {0, 0, 127}));
+    connect(SV_Compliance, SystemVeins.Compliance) annotation(Line(points={{-105,
+            -25},{-94.0326,-25},{-94.0326,-44.8859}},                                                                             color = {0, 0, 127}));
+    connect(SV_StressedVolume, SystemVeins.StressedVolume) annotation(Line(points={{-105,
+            -45},{-105,-63.3277},{-88.538,-63.3277}},                                                                                     color = {0, 0, 127}));
+    connect(SV_UnstressedVolume, SystemVeins.UnstressedVolume) annotation(Line(points={{-105,
+            -15},{-105,-15},{-105,-44.3859},{-83.0326,-44.3859}},                                                                                           color = {0, 0, 127}));
+    connect(SV_Volume, SystemVeins.Volume) annotation(Line(points={{-105,-35},{
+            -105,-35},{-105,-60.3277},{-95.538,-60.3277}},                                                                             color = {0, 0, 127}));
+    connect(TPR_BloodResistance, TotalPulmonaryResistance.BloodResistance) annotation(Line(points={{-29,120},
+            {-29,85.2569}},                                                                                                       color = {0, 0, 127}));
+    connect(TSR_BloodResistance, TotalSystemicResistance.BloodResistance) annotation(Line(points={{-27,-80},
+            {-27,-63.2569}},                                                                                                      color = {0, 0, 127}));
     connect(LH_BloodFlowPerMin, bloodFlowMeter1.BloodFlowPerMin) annotation(Line(points = {{85, 15}, {85, -9.72}, {72, -9.72}, {52.96, -9.72}}, color = {0, 0, 127}));
     connect(TBV_BloodVolume, totalBloodVolume.BloodVolume) annotation(Line(points = {{-54, -80}, {-54, -48}, {-54.42, -48}, {-54.42, -12.48}}, color = {0, 0, 127}));
-    connect(PlumonaryArteries.UnstressedVolume, PA_UnstressedVolume) annotation(Line(points = {{-66.4947, 62.4464}, {-66.4947, 95}, {-105, 95}}, color = {0, 0, 127}, smooth = Smooth.None));
-    connect(PlumonaryArteries.Compliance, PA_Compliance) annotation(Line(points = {{-77.4947, 61.9464}, {-77.4947, 85}, {-105, 85}}, color = {0, 0, 127}, smooth = Smooth.None));
-    connect(PlumonaryArteries.Volume, PA_Volume) annotation(Line(points = {{-79, 46.5046}, {-86, 46.5046}, {-86, 75}, {-105, 75}}, color = {0, 0, 127}, smooth = Smooth.None));
-    connect(PlumonaryArteries.StressedVolume, PA_StressedVolume) annotation(Line(points = {{-72, 43.5046}, {-90, 43.5046}, {-90, 65}, {-105, 65}}, color = {0, 0, 127}, smooth = Smooth.None));
-    connect(PlumonaryArteries.Pressure, PA_Pressure) annotation(Line(points = {{-65, 46.0425}, {-65, 39}, {-96, 39}, {-96, 55}, {-105, 55}}, color = {0, 0, 127}, smooth = Smooth.None));
+    connect(PlumonaryArteries.UnstressedVolume, PA_UnstressedVolume) annotation(Line(points={{
+            -66.4947,62.4464},{-66.4947,95},{-105,95}},                                                                                          color = {0, 0, 127}, smooth = Smooth.None));
+    connect(PlumonaryArteries.Compliance, PA_Compliance) annotation(Line(points={{
+            -77.4947,61.9464},{-77.4947,85},{-105,85}},                                                                              color = {0, 0, 127}, smooth = Smooth.None));
+    connect(PlumonaryArteries.Volume, PA_Volume) annotation(Line(points={{-79,
+            46.5046},{-86,46.5046},{-86,75},{-105,75}},                                                                            color = {0, 0, 127}, smooth = Smooth.None));
+    connect(PlumonaryArteries.StressedVolume, PA_StressedVolume) annotation(Line(points={{-72,
+            43.5046},{-90,43.5046},{-90,65},{-105,65}},                                                                                            color = {0, 0, 127}, smooth = Smooth.None));
+    connect(PlumonaryArteries.Pressure, PA_Pressure) annotation(Line(points={{-65,
+            46.0425},{-65,39},{-96,39},{-96,55},{-105,55}},                                                                                  color = {0, 0, 127}, smooth = Smooth.None));
     connect(bloodFlowMeter.BloodFlowPerMin, RH_BloodFlowPerMin) annotation(Line(points = {{-93.96, -0.28}, {-100.48, -0.28}, {-100.48, 7}, {-114, 7}}, color = {0, 0, 127}, smooth = Smooth.None));
-    connect(SystemVeins.Pressure, SV_Pressure) annotation(Line(points = {{-81.538, -60.7898}, {-81.538, -55}, {-105, -55}}, color = {0, 0, 127}, smooth = Smooth.None));
+    connect(SystemVeins.Pressure, SV_Pressure) annotation(Line(points={{-81.538,
+            -60.7898},{-81.538,-55},{-105,-55}},                                                                            color = {0, 0, 127}, smooth = Smooth.None));
     connect(SA_StressedVolume, SA_StressedVolume) annotation(Line(points = {{85, -45}, {84, -45}, {84, -26}, {83, -26}, {83, -45}, {85, -45}}, color = {0, 0, 127}, smooth = Smooth.None));
-    connect(SystemArteries.Volume, SA_Volume) annotation(Line(points = {{54, -61.0209}, {70, -61.0209}, {70, -35}, {85, -35}}, color = {0, 0, 127}, smooth = Smooth.None));
-    connect(SystemArteries.Pressure, SA_Pressure) annotation(Line(points = {{40, -61.4831}, {40, -55}, {85, -55}}, color = {0, 0, 127}, smooth = Smooth.None));
-    connect(PlumonaryVeins.StressedVolume, PV_StressedVolume) annotation(Line(points = {{20.9971, 39.6587}, {78, 39.6587}, {78, 65}, {85, 65}}, color = {0, 0, 127}, smooth = Smooth.None));
-    connect(PlumonaryVeins.Pressure, PV_Pressure) annotation(Line(points = {{13.9971, 42.1966}, {13.9971, 55}, {85, 55}}, color = {0, 0, 127}, smooth = Smooth.None));
-    connect(LeftHeart.refBloodVolume, PlumonaryVeins.Volume) annotation(Line(points = {{53, 31}, {60, 31}, {60, 43}, {27.9971, 43}, {27.9971, 42.6587}}, color = {0, 0, 127}, smooth = Smooth.None));
-    connect(totalBloodVolume.u1, PlumonaryVeins.Volume) annotation(Line(points = {{-59.86, -0.32}, {-59.86, 25}, {27.9971, 25}, {27.9971, 42.6587}}, color = {0, 0, 127}, smooth = Smooth.None));
+    connect(SystemArteries.Volume, SA_Volume) annotation(Line(points={{54,
+            -61.0209},{70,-61.0209},{70,-35},{85,-35}},                                                                        color = {0, 0, 127}, smooth = Smooth.None));
+    connect(SystemArteries.Pressure, SA_Pressure) annotation(Line(points={{40,
+            -61.4831},{40,-55},{85,-55}},                                                                          color = {0, 0, 127}, smooth = Smooth.None));
+    connect(PlumonaryVeins.StressedVolume, PV_StressedVolume) annotation(Line(points={{20.9971,
+            39.6587},{78,39.6587},{78,65},{85,65}},                                                                                             color = {0, 0, 127}, smooth = Smooth.None));
+    connect(PlumonaryVeins.Pressure, PV_Pressure) annotation(Line(points={{13.9971,
+            42.1966},{13.9971,55},{85,55}},                                                                               color = {0, 0, 127}, smooth = Smooth.None));
+    connect(LeftHeart.refBloodVolume, PlumonaryVeins.Volume) annotation(Line(points={{53,31},
+            {60,31},{60,43},{27.9971,43},{27.9971,42.6587}},                                                                                             color = {0, 0, 127}, smooth = Smooth.None));
+    connect(totalBloodVolume.u1, PlumonaryVeins.Volume) annotation(Line(points={{-59.86,
+            -0.32},{-59.86,25},{27.9971,25},{27.9971,42.6587}},                                                                                      color = {0, 0, 127}, smooth = Smooth.None));
     connect(TBV_DesiredBloodVolume, totalBloodVolume.DesiredBloodVolume) annotation(Line(points = {{-41, -80}, {-41, -61}, {-46, -61}, {-46, -8.3}, {-50.68, -8.3}}, color = {0, 0, 127}, smooth = Smooth.None));
-    connect(PlumonaryVeins.UnstressedVolume, PV_UnstressedVolume) annotation(Line(points = {{15.4918, 58.6005}, {15.4918, 95}, {85, 95}}, color = {0, 0, 127}, smooth = Smooth.None));
+    connect(PlumonaryVeins.UnstressedVolume, PV_UnstressedVolume) annotation(Line(points={{15.4917,
+            58.6005},{15.4917,95},{85,95}},                                                                                               color = {0, 0, 127}, smooth = Smooth.None));
     annotation(Diagram(coordinateSystem(extent = {{-110, -80}, {90, 120}}, preserveAspectRatio = false, grid = {1, 1}), graphics), Icon(coordinateSystem(extent = {{-110, -80}, {90, 120}}, preserveAspectRatio = false, grid = {1, 1}), graphics={  Rectangle(extent = {{-106, 115}, {85, -75}}, lineColor = {0, 0, 255},
               fillPattern =                                                                                                    FillPattern.Solid, fillColor = {255, 170, 170}), Text(extent = {{-98, 95}, {-30, 94}}, lineColor = {0, 0, 255}, fontSize = 8, textString = "PA_UnstressedVolume",
               horizontalAlignment =                                                                                                    TextAlignment.Left), Text(extent = {{-98, 84.5}, {-30, 84}}, lineColor = {0, 0, 255}, fontSize = 8, textString = "PA_Compliance",
