@@ -3,10 +3,10 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   fmiVersion="2.0"
   modelName="Frvs.SimpleCirculationSurfaceChip"
-  guid="{3887f849-6a8f-4315-82d4-bb29683e5d59}"
+  guid="{d1eaaf2a-6d5e-4113-9f66-e83bf4165a17}"
   description="Simple cirtculation with unstressed volumes"
   generationTool="Dymola Version 2021x (64-bit), 2020-10-09"
-  generationDateAndTime="2023-01-10T13:27:28Z"
+  generationDateAndTime="2023-03-19T08:04:38Z"
   variableNamingConvention="structured"
   numberOfEventIndicators="12">
   <CoSimulation
@@ -277,7 +277,7 @@
     <!-- Index for next variable = 28 -->
     <ScalarVariable
       name="SA_VplusSV_V.u1"
-      valueReference="637534238"
+      valueReference="637534237"
       description="Connector of Real input signal 1">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealInput"/>
@@ -896,7 +896,7 @@
     <!-- Index for next variable = 98 -->
     <ScalarVariable
       name="PA_VplusPV_V.u1"
-      valueReference="637534233"
+      valueReference="33554433"
       description="Connector of Real input signal 1">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealInput"/>
@@ -912,7 +912,7 @@
     <!-- Index for next variable = 100 -->
     <ScalarVariable
       name="PA_VplusPV_V.y"
-      valueReference="905969690"
+      valueReference="905969689"
       description="Connector of Real output signal">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
@@ -938,42 +938,42 @@
     <!-- Index for next variable = 103 -->
     <ScalarVariable
       name="simpleCirculationChip.RightHeart.Inflow.Q"
-      valueReference="637534235"
+      valueReference="637534234"
       description="blood inflow in ml/sec">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 104 -->
     <ScalarVariable
       name="simpleCirculationChip.RightHeart.Inflow.Pressure"
-      valueReference="637534262"
+      valueReference="637534261"
       description="Pressure in torr">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 105 -->
     <ScalarVariable
       name="simpleCirculationChip.RightHeart.Outflow.Q"
-      valueReference="637534236"
+      valueReference="637534235"
       description="blood flow outflow in ml/sec">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 106 -->
     <ScalarVariable
       name="simpleCirculationChip.RightHeart.Outflow.Pressure"
-      valueReference="637534260"
+      valueReference="637534259"
       description="Pressure in torr">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 107 -->
     <ScalarVariable
       name="simpleCirculationChip.RightHeart.PressureDrop"
-      valueReference="905969693"
+      valueReference="905969692"
       description="Pressure in torr">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 108 -->
     <ScalarVariable
       name="simpleCirculationChip.RightHeart.BloodFlow"
-      valueReference="637534235"
+      valueReference="637534234"
       description="ml/sec">
       <Real/>
     </ScalarVariable>
@@ -1014,7 +1014,7 @@
     <!-- Index for next variable = 113 -->
     <ScalarVariable
       name="simpleCirculationChip.RightHeart.refBloodVolume"
-      valueReference="637534238"
+      valueReference="637534237"
       description="ml">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealInput"/>
@@ -1022,7 +1022,7 @@
     <!-- Index for next variable = 114 -->
     <ScalarVariable
       name="simpleCirculationChip.RightHeart.doPump"
-      valueReference="637534239"
+      valueReference="637534238"
       variability="discrete">
       <Boolean/>
     </ScalarVariable>
@@ -1044,7 +1044,7 @@
     <!-- Index for next variable = 117 -->
     <ScalarVariable
       name="simpleCirculationChip.PlumonaryArteries.bloodFlow.Pressure"
-      valueReference="637534260"
+      valueReference="637534259"
       description="blood pressure in torr">
       <Real/>
     </ScalarVariable>
@@ -1075,7 +1075,7 @@
     <!-- Index for next variable = 121 -->
     <ScalarVariable
       name="simpleCirculationChip.PlumonaryArteries.Pressure"
-      valueReference="637534260">
+      valueReference="637534259">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
     </ScalarVariable>
@@ -1099,7 +1099,7 @@
     <!-- Index for next variable = 124 -->
     <ScalarVariable
       name="simpleCirculationChip.PlumonaryArteries.StressedVolume"
-      valueReference="637534256"
+      valueReference="637534255"
       description="Stressed volume in ml">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
@@ -1107,42 +1107,42 @@
     <!-- Index for next variable = 125 -->
     <ScalarVariable
       name="simpleCirculationChip.TotalPulmonaryResistance.Inflow.Q"
-      valueReference="637534240"
+      valueReference="637534239"
       description="blood inflow in ml/sec">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 126 -->
     <ScalarVariable
       name="simpleCirculationChip.TotalPulmonaryResistance.Inflow.Pressure"
-      valueReference="637534260"
+      valueReference="637534259"
       description="Pressure in torr">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 127 -->
     <ScalarVariable
       name="simpleCirculationChip.TotalPulmonaryResistance.Outflow.Q"
-      valueReference="637534241"
+      valueReference="637534240"
       description="blood flow outflow in ml/sec">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 128 -->
     <ScalarVariable
       name="simpleCirculationChip.TotalPulmonaryResistance.Outflow.Pressure"
-      valueReference="637534233"
+      valueReference="637534263"
       description="Pressure in torr">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 129 -->
     <ScalarVariable
       name="simpleCirculationChip.TotalPulmonaryResistance.PressureDrop"
-      valueReference="637534242"
+      valueReference="637534241"
       description="Pressure in torr">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 130 -->
     <ScalarVariable
       name="simpleCirculationChip.TotalPulmonaryResistance.BloodFlow"
-      valueReference="637534240"
+      valueReference="637534239"
       description="ml/sec">
       <Real/>
     </ScalarVariable>
@@ -1164,7 +1164,7 @@
     <!-- Index for next variable = 133 -->
     <ScalarVariable
       name="simpleCirculationChip.PlumonaryVeins.bloodFlow.Pressure"
-      valueReference="637534233"
+      valueReference="637534263"
       description="blood pressure in torr">
       <Real/>
     </ScalarVariable>
@@ -1195,7 +1195,7 @@
     <!-- Index for next variable = 137 -->
     <ScalarVariable
       name="simpleCirculationChip.PlumonaryVeins.Pressure"
-      valueReference="637534233">
+      valueReference="637534263">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
     </ScalarVariable>
@@ -1219,7 +1219,7 @@
     <!-- Index for next variable = 140 -->
     <ScalarVariable
       name="simpleCirculationChip.PlumonaryVeins.StressedVolume"
-      valueReference="637534257"
+      valueReference="637534256"
       description="Stressed volume in ml">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
@@ -1227,42 +1227,42 @@
     <!-- Index for next variable = 141 -->
     <ScalarVariable
       name="simpleCirculationChip.LeftHeart.Inflow.Q"
-      valueReference="637534243"
+      valueReference="637534242"
       description="blood inflow in ml/sec">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 142 -->
     <ScalarVariable
       name="simpleCirculationChip.LeftHeart.Inflow.Pressure"
-      valueReference="637534233"
+      valueReference="637534263"
       description="Pressure in torr">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 143 -->
     <ScalarVariable
       name="simpleCirculationChip.LeftHeart.Outflow.Q"
-      valueReference="637534244"
+      valueReference="637534243"
       description="blood flow outflow in ml/sec">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 144 -->
     <ScalarVariable
       name="simpleCirculationChip.LeftHeart.Outflow.Pressure"
-      valueReference="637534263"
+      valueReference="637534262"
       description="Pressure in torr">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 145 -->
     <ScalarVariable
       name="simpleCirculationChip.LeftHeart.PressureDrop"
-      valueReference="905969701"
+      valueReference="905969700"
       description="Pressure in torr">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 146 -->
     <ScalarVariable
       name="simpleCirculationChip.LeftHeart.BloodFlow"
-      valueReference="637534243"
+      valueReference="637534242"
       description="ml/sec">
       <Real/>
     </ScalarVariable>
@@ -1303,7 +1303,7 @@
     <!-- Index for next variable = 151 -->
     <ScalarVariable
       name="simpleCirculationChip.LeftHeart.refBloodVolume"
-      valueReference="637534246"
+      valueReference="637534245"
       description="ml">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealInput"/>
@@ -1311,7 +1311,7 @@
     <!-- Index for next variable = 152 -->
     <ScalarVariable
       name="simpleCirculationChip.LeftHeart.doPump"
-      valueReference="637534247"
+      valueReference="637534246"
       variability="discrete">
       <Boolean/>
     </ScalarVariable>
@@ -1326,35 +1326,35 @@
     <!-- Index for next variable = 154 -->
     <ScalarVariable
       name="simpleCirculationChip.bloodFlowMeter1.Inflow.Q"
-      valueReference="637534243"
+      valueReference="637534242"
       description="blood inflow in ml/sec">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 155 -->
     <ScalarVariable
       name="simpleCirculationChip.bloodFlowMeter1.Inflow.Pressure"
-      valueReference="637534263"
+      valueReference="637534262"
       description="Pressure in torr">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 156 -->
     <ScalarVariable
       name="simpleCirculationChip.bloodFlowMeter1.Outflow.Q"
-      valueReference="637534244"
+      valueReference="637534243"
       description="blood flow outflow in ml/sec">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 157 -->
     <ScalarVariable
       name="simpleCirculationChip.bloodFlowMeter1.Outflow.Pressure"
-      valueReference="637534263"
+      valueReference="637534262"
       description="Pressure in torr">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 158 -->
     <ScalarVariable
       name="simpleCirculationChip.bloodFlowMeter1.PressureDrop"
-      valueReference="100663336"
+      valueReference="100663335"
       description="Pressure in torr"
       variability="constant">
       <Real start="0"/>
@@ -1362,7 +1362,7 @@
     <!-- Index for next variable = 159 -->
     <ScalarVariable
       name="simpleCirculationChip.bloodFlowMeter1.BloodFlow"
-      valueReference="637534243"
+      valueReference="637534242"
       description="ml/sec">
       <Real/>
     </ScalarVariable>
@@ -1383,7 +1383,7 @@
     <!-- Index for next variable = 162 -->
     <ScalarVariable
       name="simpleCirculationChip.SystemArteries.bloodFlow.Pressure"
-      valueReference="637534263"
+      valueReference="637534262"
       description="blood pressure in torr">
       <Real/>
     </ScalarVariable>
@@ -1414,7 +1414,7 @@
     <!-- Index for next variable = 166 -->
     <ScalarVariable
       name="simpleCirculationChip.SystemArteries.Pressure"
-      valueReference="637534263">
+      valueReference="637534262">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
     </ScalarVariable>
@@ -1438,7 +1438,7 @@
     <!-- Index for next variable = 169 -->
     <ScalarVariable
       name="simpleCirculationChip.SystemArteries.StressedVolume"
-      valueReference="637534258"
+      valueReference="637534257"
       description="Stressed volume in ml">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
@@ -1446,35 +1446,35 @@
     <!-- Index for next variable = 170 -->
     <ScalarVariable
       name="simpleCirculationChip.SA_SR.Inflow.Q"
-      valueReference="637534249"
+      valueReference="637534248"
       description="blood inflow in ml/sec">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 171 -->
     <ScalarVariable
       name="simpleCirculationChip.SA_SR.Inflow.Pressure"
-      valueReference="637534263"
+      valueReference="637534262"
       description="Pressure in torr">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 172 -->
     <ScalarVariable
       name="simpleCirculationChip.SA_SR.Outflow.Q"
-      valueReference="637534250"
+      valueReference="637534249"
       description="blood flow outflow in ml/sec">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 173 -->
     <ScalarVariable
       name="simpleCirculationChip.SA_SR.Outflow.Pressure"
-      valueReference="637534263"
+      valueReference="637534262"
       description="Pressure in torr">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 174 -->
     <ScalarVariable
       name="simpleCirculationChip.SA_SR.PressureDrop"
-      valueReference="100663339"
+      valueReference="100663338"
       description="Pressure in torr"
       variability="constant">
       <Real start="0"/>
@@ -1482,56 +1482,56 @@
     <!-- Index for next variable = 175 -->
     <ScalarVariable
       name="simpleCirculationChip.SA_SR.BloodFlow"
-      valueReference="637534249"
+      valueReference="637534248"
       description="ml/sec">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 176 -->
     <ScalarVariable
       name="simpleCirculationChip.SA_SR.BloodFlowPerMin"
-      valueReference="905969708">
+      valueReference="905969707">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
     </ScalarVariable>
     <!-- Index for next variable = 177 -->
     <ScalarVariable
       name="simpleCirculationChip.TotalSystemicResistance.Inflow.Q"
-      valueReference="637534249"
+      valueReference="637534248"
       description="blood inflow in ml/sec">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 178 -->
     <ScalarVariable
       name="simpleCirculationChip.TotalSystemicResistance.Inflow.Pressure"
-      valueReference="637534263"
+      valueReference="637534262"
       description="Pressure in torr">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 179 -->
     <ScalarVariable
       name="simpleCirculationChip.TotalSystemicResistance.Outflow.Q"
-      valueReference="637534250"
+      valueReference="637534249"
       description="blood flow outflow in ml/sec">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 180 -->
     <ScalarVariable
       name="simpleCirculationChip.TotalSystemicResistance.Outflow.Pressure"
-      valueReference="637534262"
+      valueReference="637534261"
       description="Pressure in torr">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 181 -->
     <ScalarVariable
       name="simpleCirculationChip.TotalSystemicResistance.PressureDrop"
-      valueReference="637534253"
+      valueReference="637534252"
       description="Pressure in torr">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 182 -->
     <ScalarVariable
       name="simpleCirculationChip.TotalSystemicResistance.BloodFlow"
-      valueReference="637534249"
+      valueReference="637534248"
       description="ml/sec">
       <Real/>
     </ScalarVariable>
@@ -1553,7 +1553,7 @@
     <!-- Index for next variable = 185 -->
     <ScalarVariable
       name="simpleCirculationChip.SystemVeins.bloodFlow.Pressure"
-      valueReference="637534262"
+      valueReference="637534261"
       description="blood pressure in torr">
       <Real/>
     </ScalarVariable>
@@ -1584,7 +1584,7 @@
     <!-- Index for next variable = 189 -->
     <ScalarVariable
       name="simpleCirculationChip.SystemVeins.Pressure"
-      valueReference="637534262">
+      valueReference="637534261">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
     </ScalarVariable>
@@ -1608,7 +1608,7 @@
     <!-- Index for next variable = 192 -->
     <ScalarVariable
       name="simpleCirculationChip.SystemVeins.StressedVolume"
-      valueReference="637534259"
+      valueReference="637534258"
       description="Stressed volume in ml">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
@@ -1616,35 +1616,35 @@
     <!-- Index for next variable = 193 -->
     <ScalarVariable
       name="simpleCirculationChip.bloodFlowMeter.Inflow.Q"
-      valueReference="637534235"
+      valueReference="637534234"
       description="blood inflow in ml/sec">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 194 -->
     <ScalarVariable
       name="simpleCirculationChip.bloodFlowMeter.Inflow.Pressure"
-      valueReference="637534262"
+      valueReference="637534261"
       description="Pressure in torr">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 195 -->
     <ScalarVariable
       name="simpleCirculationChip.bloodFlowMeter.Outflow.Q"
-      valueReference="637534236"
+      valueReference="637534235"
       description="blood flow outflow in ml/sec">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 196 -->
     <ScalarVariable
       name="simpleCirculationChip.bloodFlowMeter.Outflow.Pressure"
-      valueReference="637534262"
+      valueReference="637534261"
       description="Pressure in torr">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 197 -->
     <ScalarVariable
       name="simpleCirculationChip.bloodFlowMeter.PressureDrop"
-      valueReference="100663342"
+      valueReference="100663341"
       description="Pressure in torr"
       variability="constant">
       <Real start="0"/>
@@ -1652,14 +1652,14 @@
     <!-- Index for next variable = 198 -->
     <ScalarVariable
       name="simpleCirculationChip.bloodFlowMeter.BloodFlow"
-      valueReference="637534235"
+      valueReference="637534234"
       description="ml/sec">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 199 -->
     <ScalarVariable
       name="simpleCirculationChip.bloodFlowMeter.BloodFlowPerMin"
-      valueReference="905969717">
+      valueReference="905969716">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
     </ScalarVariable>
@@ -1687,21 +1687,21 @@
     <!-- Index for next variable = 203 -->
     <ScalarVariable
       name="simpleCirculationChip.totalBloodVolume.u3"
-      valueReference="637534238">
+      valueReference="637534237">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealInput"/>
     </ScalarVariable>
     <!-- Index for next variable = 204 -->
     <ScalarVariable
       name="simpleCirculationChip.totalBloodVolume.bloodFlowConnector.Q"
-      valueReference="637534255"
+      valueReference="637534254"
       description="blood flow ml/sec">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 205 -->
     <ScalarVariable
       name="simpleCirculationChip.totalBloodVolume.bloodFlowConnector.Pressure"
-      valueReference="637534262"
+      valueReference="637534261"
       description="blood pressure in torr">
       <Real/>
     </ScalarVariable>
@@ -1745,7 +1745,7 @@
     <!-- Index for next variable = 211 -->
     <ScalarVariable
       name="simpleCirculationChip.PA_StressedVolume"
-      valueReference="637534256">
+      valueReference="637534255">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
     </ScalarVariable>
@@ -1775,7 +1775,7 @@
     <!-- Index for next variable = 215 -->
     <ScalarVariable
       name="simpleCirculationChip.PV_StressedVolume"
-      valueReference="637534257">
+      valueReference="637534256">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
     </ScalarVariable>
@@ -1813,7 +1813,7 @@
     <!-- Index for next variable = 220 -->
     <ScalarVariable
       name="simpleCirculationChip.SA_StressedVolume"
-      valueReference="637534258">
+      valueReference="637534257">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
     </ScalarVariable>
@@ -1843,7 +1843,7 @@
     <!-- Index for next variable = 224 -->
     <ScalarVariable
       name="simpleCirculationChip.SV_StressedVolume"
-      valueReference="637534259">
+      valueReference="637534258">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
     </ScalarVariable>
@@ -1858,7 +1858,7 @@
     <!-- Index for next variable = 226 -->
     <ScalarVariable
       name="simpleCirculationChip.SV_Volume"
-      valueReference="637534238">
+      valueReference="637534237">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
     </ScalarVariable>
@@ -1903,35 +1903,35 @@
     <!-- Index for next variable = 232 -->
     <ScalarVariable
       name="simpleCirculationChip.PA_Pressure"
-      valueReference="637534260">
+      valueReference="637534259">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
     </ScalarVariable>
     <!-- Index for next variable = 233 -->
     <ScalarVariable
       name="simpleCirculationChip.RH_BloodFlowPerMin"
-      valueReference="905969717">
+      valueReference="905969716">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
     </ScalarVariable>
     <!-- Index for next variable = 234 -->
     <ScalarVariable
       name="simpleCirculationChip.SV_Pressure"
-      valueReference="637534262">
+      valueReference="637534261">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
     </ScalarVariable>
     <!-- Index for next variable = 235 -->
     <ScalarVariable
       name="simpleCirculationChip.SA_Pressure"
-      valueReference="637534263">
+      valueReference="637534262">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
     </ScalarVariable>
     <!-- Index for next variable = 236 -->
     <ScalarVariable
       name="simpleCirculationChip.PV_Pressure"
-      valueReference="637534233">
+      valueReference="637534263">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
     </ScalarVariable>
@@ -1946,7 +1946,7 @@
     <!-- Index for next variable = 238 -->
     <ScalarVariable
       name="TotalStressedVolume.u[1]"
-      valueReference="637534256"
+      valueReference="637534255"
       description="Connector of Real input signals">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealInput"/>
@@ -1954,7 +1954,7 @@
     <!-- Index for next variable = 239 -->
     <ScalarVariable
       name="TotalStressedVolume.u[2]"
-      valueReference="637534259"
+      valueReference="637534258"
       description="Connector of Real input signals">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealInput"/>
@@ -1962,7 +1962,7 @@
     <!-- Index for next variable = 240 -->
     <ScalarVariable
       name="TotalStressedVolume.u[3]"
-      valueReference="637534258"
+      valueReference="637534257"
       description="Connector of Real input signals">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealInput"/>
@@ -1970,7 +1970,7 @@
     <!-- Index for next variable = 241 -->
     <ScalarVariable
       name="TotalStressedVolume.u[4]"
-      valueReference="637534257"
+      valueReference="637534256"
       description="Connector of Real input signals">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealInput"/>
