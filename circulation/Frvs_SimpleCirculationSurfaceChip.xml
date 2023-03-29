@@ -3,10 +3,10 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   fmiVersion="2.0"
   modelName="Frvs.SimpleCirculationSurfaceChip"
-  guid="{719b1037-bc54-47f8-9877-ede7d446f126}"
+  guid="{f9b906af-311e-49c7-aeff-54723fcc7fb3}"
   description="Simple cirtculation with unstressed volumes"
   generationTool="Dymola Version 2021x (64-bit), 2020-10-09"
-  generationDateAndTime="2023-03-23T15:27:39Z"
+  generationDateAndTime="2023-03-28T10:10:14Z"
   variableNamingConvention="structured"
   numberOfEventIndicators="12">
   <CoSimulation
@@ -2018,6 +2018,31 @@
       causality="parameter"
       variability="tunable">
       <Real start="1"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 247 -->
+    <ScalarVariable
+      name="CIRight.u1"
+      valueReference="905969716"
+      description="Connector of Real input signal 1">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 248 -->
+    <ScalarVariable
+      name="CIRight.u2"
+      valueReference="100663305"
+      description="Connector of Real input signal 2"
+      variability="tunable">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 249 -->
+    <ScalarVariable
+      name="CIRight.y"
+      valueReference="905969721"
+      description="Connector of Real output signal">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
     </ScalarVariable>
   </ModelVariables>
   <ModelStructure>
