@@ -3,10 +3,10 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   fmiVersion="2.0"
   modelName="Frvs.SimpleCirculationSurfaceChip"
-  guid="{f9b906af-311e-49c7-aeff-54723fcc7fb3}"
+  guid="{bd19ad9c-5b98-4ab9-bc89-2a62d5632373}"
   description="Simple cirtculation with unstressed volumes"
   generationTool="Dymola Version 2021x (64-bit), 2020-10-09"
-  generationDateAndTime="2023-03-28T10:10:14Z"
+  generationDateAndTime="2023-03-30T07:40:52Z"
   variableNamingConvention="structured"
   numberOfEventIndicators="12">
   <CoSimulation
@@ -1094,7 +1094,7 @@
       valueReference="16777248"
       causality="parameter"
       variability="fixed">
-      <Real start="690"/>
+      <Real start="329.79"/>
     </ScalarVariable>
     <!-- Index for next variable = 124 -->
     <ScalarVariable
@@ -1214,7 +1214,7 @@
       valueReference="16777249"
       causality="parameter"
       variability="fixed">
-      <Real start="545"/>
+      <Real start="625.21"/>
     </ScalarVariable>
     <!-- Index for next variable = 140 -->
     <ScalarVariable
@@ -1433,7 +1433,7 @@
       valueReference="16777253"
       causality="parameter"
       variability="fixed">
-      <Real start="634"/>
+      <Real start="586.15"/>
     </ScalarVariable>
     <!-- Index for next variable = 169 -->
     <ScalarVariable
@@ -1603,7 +1603,7 @@
       valueReference="16777254"
       causality="parameter"
       variability="fixed">
-      <Real start="3115"/>
+      <Real start="3443.56"/>
     </ScalarVariable>
     <!-- Index for next variable = 192 -->
     <ScalarVariable
