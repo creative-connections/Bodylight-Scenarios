@@ -71,10 +71,10 @@
 <bdl-bind2a findex="17" aname="children.7.HorniHladina_anim" amin="0" amax="99" fmin="0" fmax="7" convertor="1,1000"></bdl-bind2a>
 <bdl-bind2a findex="26" aname="children.7.SpodniHladina_anim" amin="0" amax="99" fmin="0" fmax="7" convertor="1,1000"></bdl-bind2a>
 <bdl-bind2a findex="17" aname="children.7.Pruziny_anim" amin="0" amax="99" fmin="0" fmax="7" convertor="1,1000"></bdl-bind2a>
-<bdl-bind2a findex="6" aname="ValecModrySpodni_anim" amin="99" amax="0" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a findex="5" aname="ValecModryHorni_anim" amin="99" amax="0" fmin="8" fmax="32"></bdl-bind2a>
-<bdl-bind2a findex="4" aname="ValecCervenySpodni_anim" amin="99" amax="0" fmin="60" fmax="180"></bdl-bind2a>
-<bdl-bind2a findex="3" aname="ValecCervenyHorni_anim" amin="99" amax="0" fmin="4" fmax="20"></bdl-bind2a>
+<bdl-bind2a findex="6" aname="ValecModrySpodni_anim" amin="99" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="5" aname="ValecModryHorni_anim" amin="99" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="4" aname="ValecCervenySpodni_anim" amin="99" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="3" aname="ValecCervenyHorni_anim" amin="99" amax="0"></bdl-bind2a>
 <bdl-bind2a findex="-1" aname="lspump_checkbox.children.1.LSSipka1_anim" amin="0" amax="99" fmin="0" fmax="99" convertor="x * 20 % 100"></bdl-bind2a>
 <bdl-bind2a findex="-1" aname="lspump_checkbox.children.1.LSSipka2_anim" amin="0" amax="99" fmin="0" fmax="99" convertor="x * 20 % 100"></bdl-bind2a>
 <bdl-bind2a findex="-1" aname="pspump_checkbox.children.1.PSSipka1_anim" amin="0" amax="99" fmin="0" fmax="99" convertor="x * 20 % 100"></bdl-bind2a>
