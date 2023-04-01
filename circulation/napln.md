@@ -5,11 +5,11 @@
 
 # 1. náplň
 
-<bdl-quiz id="q1" question="1. Spárujte termíny objemu krve s odpovídající definicí" terms="objem krve|elastický objem (stressed volume)|neelastický objem (unstressed volume)v" answers="celkový objem krve v cirkulaci, v srdci, tepnách a žílách|objem, na nejž působí elastické vlastnosti tepen a žil a který má vliv na tlakové vlastnosti|celkový objem v žilách tepnách, na než nemají vliv elastické vlastnosti cév, nemá vliv na tlak as" type="match"></bdl-quiz>
+<bdl-quiz id="q1" question="1.1 Spárujte termíny objemu krve s odpovídající definicí" terms="objem krve|elastický objem (stressed volume)|neelastický objem (unstressed volume)v" answers="celkový objem krve v cirkulaci, v srdci, tepnách a žílách|objem, na nejž působí elastické vlastnosti tepen a žil a který má vliv na tlakové vlastnosti|celkový objem v žilách tepnách, na než nemají vliv elastické vlastnosti cév, nemá vliv na tlak as" type="match"></bdl-quiz>
 
-<bdl-quiz id="q2" question="2. Spusťte simulaci a přiřaďte normální (obvyklé) hodnoty k veličinám" terms="celkový objem krve|elastický objem (stressed volume)|neelastický objem (unstressed volume)" answers="přibližně 5 <i>l</i> | přibližně 1.5l| přibližně 3.5l" type="match"></bdl-quiz>
+<bdl-quiz id="q2" question="1.2 Spusťte simulaci a přiřaďte normální (obvyklé) hodnoty k veličinám" terms="celkový objem krve|elastický objem (stressed volume)|neelastický objem (unstressed volume)" answers="přibližně 5 <i>l</i> | přibližně 1.5l| přibližně 3.5l" type="match"></bdl-quiz>
 
-<bdl-quiz id="q3" question="3. V simulaci změňte váhu a výšku postavy. Sledujte BMI a přiřaďte co se děje" terms="zvýšená váha a výška - zachované BMI|snížená váha a snížená výška - zachováno BMI" answers="Zvýšený objem krve | snížený objem krve" type="match"></bdl-quiz>
+<bdl-quiz id="q3" question="1.3 V simulaci změňte váhu a výšku postavy. Sledujte BMI a přiřaďte co se děje" terms="zvýšená váha a výška - zachované BMI|snížená váha a snížená výška - zachováno BMI" answers="Zvýšený objem krve | snížený objem krve" type="match"></bdl-quiz>
 
 <bdl-quiz-control ids="q1,q2,q3"></bdl-quiz-control>
 
