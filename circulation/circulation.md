@@ -8,7 +8,6 @@
 <!--bdl-chartjs-time width="80" height="100" fromid="idfmi" labels="" initialdata="0" refindex="1" refvalues="1" style="position: absolute;top: 21vw;left: 55%;" minichart="true" colorindex="1" convertors="60,1000" throttle="1000" maxdata="4096"></bdl-chartjs-time-->
 
 <bdl-animate-adobe src="ObehovySystem.js" name="ObehovySystem" fromid="idfmi" responsive="true" width="1532" height="913" id="idadobe"></bdl-animate-adobe>
-<bdl-bind2a findex="9" aname="weight_range" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a-text findex="19" aname="anorm_text" convertor="1,1000" fixed="2"></bdl-bind2a-text>
 <bdl-bind2a-text findex="22" aname="height_text" fixed="0"></bdl-bind2a-text>
 <bdl-bind2a-text findex="23" aname="weight_text" fixed="0"></bdl-bind2a-text>
@@ -42,31 +41,31 @@
 <bdl-bind2a-text findex="16" aname="a_text" convertor="1,1000" fixed="2"></bdl-bind2a-text>
 <bdl-bind2a-text findex="45" aname="lspump_checkbox.s_text" fixed="2"></bdl-bind2a-text>
 <bdl-bind2a-text findex="44" aname="pspump_checkbox.l_text" fixed="2"></bdl-bind2a-text>
-<bdl-bind2a findex="43" aname="tvar_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="43" aname="tvar_anim" amin="99" amax="0"></bdl-bind2a>
 <bdl-bind2a findex="20" aname="telo_anim" amin="0" amax="99" fmin="16.5" fmax="40"></bdl-bind2a>
-<bdl-bind2a findex="41" aname="HorniModry_anim.ModreRozsireniHP_anim.TahModryHorniPravy_anim" amin="99" amax="0"></bdl-bind2a>
-<bdl-bind2a findex="40" aname="HorniModry_anim.ModreRozsireniHP_anim" amin="99" amax="0"></bdl-bind2a>
-<bdl-bind2a findex="41" aname="HorniModry_anim.ModreRozsireniHL_anim.TahModryHorniLevy_anim" amin="99" amax="0"></bdl-bind2a>
-<bdl-bind2a findex="40" aname="HorniModry_anim.ModreRozsireniHL_anim" amin="99" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="41" aname="HorniModry_anim.ModreRozsireniHP_anim.TahModryHorniPravy_anim" amin="99" amax="1"></bdl-bind2a>
+<bdl-bind2a findex="40" aname="HorniModry_anim.ModreRozsireniHP_anim" amin="99" amax="1"></bdl-bind2a>
+<bdl-bind2a findex="41" aname="HorniModry_anim.ModreRozsireniHL_anim.TahModryHorniLevy_anim" amin="99" amax="1"></bdl-bind2a>
+<bdl-bind2a findex="40" aname="HorniModry_anim.ModreRozsireniHL_anim" amin="99" amax="1"></bdl-bind2a>
 <bdl-bind2a findex="39" aname="HorniModry_anim" amin="99" amax="0"></bdl-bind2a>
-<bdl-bind2a findex="38" aname="SpodniModra_anim.ModreRozsireniSP_anim.TahModraSpodniPravy_anim" amin="99" amax="0"></bdl-bind2a>
-<bdl-bind2a findex="37" aname="SpodniModra_anim.ModreRozsireniSP_anim" amin="99" amax="0"></bdl-bind2a>
-<bdl-bind2a findex="38" aname="SpodniModra_anim.ModreRozsireniSL_anim.TahModraSpodniLevy_anim" amin="99" amax="0"></bdl-bind2a>
-<bdl-bind2a findex="37" aname="SpodniModra_anim.ModreRozsireniSL_anim" amin="99" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="38" aname="SpodniModra_anim.ModreRozsireniSP_anim.TahModraSpodniPravy_anim" amin="99" amax="1"></bdl-bind2a>
+<bdl-bind2a findex="37" aname="SpodniModra_anim.ModreRozsireniSP_anim" amin="99" amax="1"></bdl-bind2a>
+<bdl-bind2a findex="38" aname="SpodniModra_anim.ModreRozsireniSL_anim.TahModraSpodniLevy_anim" amin="99" amax="1"></bdl-bind2a>
+<bdl-bind2a findex="37" aname="SpodniModra_anim.ModreRozsireniSL_anim" amin="99" amax="1"></bdl-bind2a>
 <bdl-bind2a findex="36" aname="SpodniModra_anim" amin="99" amax="0"></bdl-bind2a>
-<bdl-bind2a findex="35" aname="SpodniCervena_anim.CerveneRozsireniPSP_anim.TahCervenySpodniPravy_anim" amin="99" amax="0"></bdl-bind2a>
-<bdl-bind2a findex="33" aname="SpodniCervena_anim.CerveneRozsireniPSP_anim" amin="99" amax="0"></bdl-bind2a>
-<bdl-bind2a findex="35" aname="SpodniCervena_anim.CerveneRozsireniPSL_anim.TahCervenySpodniLevy_anim" amin="99" amax="0"></bdl-bind2a>
-<bdl-bind2a findex="33" aname="SpodniCervena_anim.CerveneRozsireniPSL_anim" amin="99" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="35" aname="SpodniCervena_anim.CerveneRozsireniPSP_anim.TahCervenySpodniPravy_anim" amin="99" amax="1"></bdl-bind2a>
+<bdl-bind2a findex="33" aname="SpodniCervena_anim.CerveneRozsireniPSP_anim" amin="99" amax="1"></bdl-bind2a>
+<bdl-bind2a findex="35" aname="SpodniCervena_anim.CerveneRozsireniPSL_anim.TahCervenySpodniLevy_anim" amin="99" amax="1"></bdl-bind2a>
+<bdl-bind2a findex="33" aname="SpodniCervena_anim.CerveneRozsireniPSL_anim" amin="99" amax="1"></bdl-bind2a>
 <bdl-bind2a findex="34" aname="SpodniCervena_anim" amin="99" amax="0"></bdl-bind2a>
-<bdl-bind2a findex="36" aname="RS_anim" amin="0" amax="99"></bdl-bind2a>
-<bdl-bind2a findex="39" aname="RP_anim" amin="0" amax="99"></bdl-bind2a>
-<bdl-bind2a findex="32" aname="PlniciTlak2_anim" amin="99" amax="0"></bdl-bind2a>
-<bdl-bind2a findex="31" aname="PlniciTlak1_anim" amin="99" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="10" aname="RS_anim" amin="99" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="9" aname="RP_anim" amin="99" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="32" aname="PlniciTlak2_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="31" aname="PlniciTlak1_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="8" aname="HorniCervena_anim.CerveneRozsireniHP_anim.TahCerveneHorniPravy_anim" amin="99" amax="0"></bdl-bind2a>
-<bdl-bind2a findex="29" aname="HorniCervena_anim.CerveneRozsireniHP_anim" amin="99" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="29" aname="HorniCervena_anim.CerveneRozsireniHP_anim" amin="99" amax="1"></bdl-bind2a>
 <bdl-bind2a findex="30" aname="HorniCervena_anim.CerveneRozsireniHL_anim.TahCerveneHorniLevy_anim" amin="99" amax="0"></bdl-bind2a>
-<bdl-bind2a findex="29" aname="HorniCervena_anim.CerveneRozsireniHL_anim" amin="99" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="29" aname="HorniCervena_anim.CerveneRozsireniHL_anim" amin="99" amax="1"></bdl-bind2a>
 <bdl-bind2a findex="8" aname="HorniCervena_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="26" aname="children.7.Obrys_anim" amin="0" amax="99" fmin="0" fmax="7" convertor="1,1000"></bdl-bind2a>
 <bdl-bind2a findex="17" aname="children.7.HorniHladina_anim" amin="0" amax="99" fmin="0" fmax="7" convertor="1,1000"></bdl-bind2a>
