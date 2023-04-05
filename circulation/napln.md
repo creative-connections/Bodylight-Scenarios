@@ -9,7 +9,7 @@
 
 <bdl-quiz id="q2" question="1.2 Spusťte simulaci a přiřaďte normální (obvyklé) hodnoty k veličinám" terms="celkový objem krve|elastický objem (stressed volume)|neelastický objem (unstressed volume)" answers="přibližně 5 <i>l</i> | přibližně 1.5l| přibližně 3.5l" type="match"></bdl-quiz>
 
-<bdl-quiz id="q3" question="1.3 V simulaci změňte váhu a výšku postavy. Sledujte BMI a přiřaďte co se děje" terms="zvýšená váha a výška - zachované BMI|snížená váha a snížená výška - zachováno BMI" answers="Zvýšený objem krve | snížený objem krve" type="match"></bdl-quiz>
+<bdl-quiz id="q3" question="1.3 Změňte váhu a výšku pacienta dle instrukcí a přiřaďte" terms="Výška 197 cm, váha 100 kg| Výška 168, váha 71 kg|Výška 168, váha 95 kg" answers="BMI=25, srdeční index 2.7, objem krve 6.6 <i>l</i>|BMI=25, srdeční index 2.7, objem krve 4.62<i>l</i>|BMI=34, srdeční index 2.7, objem krve 5.4<i>l</i>" type="match"></bdl-quiz>
 
 <bdl-quiz-control ids="q1,q2,q3"></bdl-quiz-control>
 
