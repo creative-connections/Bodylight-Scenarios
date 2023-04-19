@@ -40,7 +40,7 @@ __Tabulka zkratek__
 *[IRE]: Iron Response Element
 *[IRP]: Iron Regulatory Proteins
 
-<bdl-quiz question="V principu existují tři způsoby příjmu železa játry. Vyberte hlavní a přiřaďte ostatní k patologiím:"
+<bdl-quiz question="Úkol: V principu existují tři způsoby příjmu železa játry. Vyberte hlavní a přiřaďte ostatní k patologiím:"
 	  type="match"
 	  terms="Příjem železa vázaného na Tf | Příjem železa nevázaného na Tf, tzv. NTBI | Příjem železa asociovaného s hemem/hemoglobinem"
 	  answers="Nejvíce se uplatňující mechanismus | zanedbatelný v normě, hlavní při přetížení organismu železem  | zanedbatelný v normě, při hemolýze důležitý mechanismus">
