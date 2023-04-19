@@ -67,12 +67,8 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 **Úkoly**
 
-Vyzkoušejte si, jak se mění tok železa do jater v závislosti na koncentraci holoTf podle instrukcí níže a zodpovězte otázky.
-
-<bdl-quiz question="Spusťte simulaci a zvyšte koncentraci železa v potravě z hodnoty 219 na 1000. Co se dějě s množstvím železa v pohotovém poolu a ve ferritinu jaterní buňky?" answers="koncentrace se zvýší v poolu i ferritinu (nad normovanou hodnotu 1.0) | koncentrace se sníží v poolu i fe verritinu (pod normovano hodnotu 1.0)" correctoptions="true|false" explanations="ano|ne, sledujte červený a fialový indikátor v hepatocytu"></bdl-quiz>
+<bdl-quiz question="Spusťte simulaci a zvyšte koncentraci železa v potravě z hodnoty 219 na 1000. Co se děje s množstvím železa v pohotovém poolu a ve ferritinu jaterní buňky?" answers="koncentrace se zvýší v poolu i ferritinu (nad normovanou hodnotu 1.0) | koncentrace se sníží v poolu i fe verritinu (pod normovano hodnotu 1.0)" correctoptions="true|false" explanations="ano|ne, sledujte červený a fialový indikátor v hepatocytu"></bdl-quiz>
 <bdl-quiz question="Snižte koncentraci železa v potravě na normu 219. Simulace je zrychlená (během 1 s se odsimuluje asi 1 den metabolismu). Jak dlouho se normalizují hodnoty koncentrací železa v játrech?" answers="během dnů | během týdnů až měsíců" correctoptions="false|true" explanations="ne, sledujte indikátor času u tlačítek simulátoru|ano, normalizace trvá týdny až měsíce"></bdl-quiz>
-
-
 
 <!--
 * Vyzkoušejte si, jak reaguje hepatocyt množstvím DMT1 (míra otevření kanálu) na množství železa v játrech
