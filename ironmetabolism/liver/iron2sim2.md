@@ -50,7 +50,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 </div>
 <div class="w3-col s12 m4 l4 w3-justify w3-small">
 
-<button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
+<button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz<br/> legendu</button>
 <!-- hidden input  - buttonparams must be before fmi component - or input with id must be created explicitly -->
 <input id="id6" value="" type="number" style="display:none"/>
 
@@ -68,10 +68,8 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 **Úkoly**
 
-Vyzkoušejte si, jak reaguje hepatocyt množstvím DMT1 (míra otevření kanálu) na množství železa v játrech.
-
-<bdl-quiz question="Spusťte simulaci a snižte koncentraci železa v potravě z hodnoty 219 na 0. Jak reaguje DMT1?" answers="DMT1 se otevírá|DMT1 se zavírá" correctoptions="true|false" explanations="ano, množství železa v hepatocytu klesá a proto množství DMT1 se zvyšuje (vizualizováno jako otevírání DMT1 kanálu)|ne, sledujte kanál DMT1 v hepatocytu"></bdl-quiz>
-<bdl-quiz question="Zvyšte koncentraci železa v potravě na 1000. Jak reaguje DMT1?" answers="DMT1 se otevírá|DMT1 se zavírá" correctoptions="false|true" explanations="ne, sledujte chování kanálu DMT1 v hepatocytu|ano, množství železa v hepatocytu stoupá a proto množství DMT1 se snižuje (vizualizováno jako zavírání DMT1 kanálu)"></bdl-quiz>
+<bdl-quiz question="1.Spusťte simulaci a snižte koncentraci železa v potravě z hodnoty 219 na 0. Jak reaguje DMT1?" answers="DMT1 se otevírá|DMT1 se zavírá" correctoptions="true|false" explanations="ano, množství železa v hepatocytu klesá a proto množství DMT1 se zvyšuje (vizualizováno jako otevírání DMT1 kanálu)|ne, sledujte kanál DMT1 v hepatocytu"></bdl-quiz>
+<bdl-quiz question="2.Zvyšte koncentraci železa v potravě na 1000. Jak reaguje DMT1?" answers="DMT1 se otevírá|DMT1 se zavírá" correctoptions="false|true" explanations="ne, sledujte chování kanálu DMT1 v hepatocytu|ano, množství železa v hepatocytu stoupá a proto množství DMT1 se snižuje (vizualizováno jako zavírání DMT1 kanálu)"></bdl-quiz>
 
 
 
