@@ -32,7 +32,7 @@ __Tabulka zkratek__
 * __IRP__: Iron Regulatory Proteins
 </div>
 </div>
-<div class="w3-half w3-justify">
+<div class="w3-half">
 
 *[Tf]: Transferin
 *[NTBI]: Non-Transferrin Bound Iron
@@ -40,13 +40,13 @@ __Tabulka zkratek__
 *[IRE]: Iron Response Element
 *[IRP]: Iron Regulatory Proteins
 
-V principu existují tři způsoby příjmu železa játry:
+<bdl-quiz question="V principu existují tři způsoby příjmu železa játry. Vyberte hlavní a přiřaďte ostatní k patologiím:"
+	  type="match"
+	  terms="Příjem železa vázaného na Tf | Příjem železa nevázaného na Tf, tzv. NTBI | Příjem železa asociovaného s hemem/hemoglobinem"
+	  answers="Nejvíce se uplatňující mechanismus | zanedbatelný v normě, hlavní při přetížení organismu železem  | zanedbatelný v normě, při hemolýze důležitý mechanismus">
+</bdl-quiz>
 
- 1. __Příjem železa vázaného na Tf__
- 2. Příjem železa nevázaného na Tf, tzv. NTBI (non-transferrin bound iron)
- 3. Příjem železa asociovaného s hemem/hemoglobinem
-
-Nejvíce se uplatňuje mechanismus první.
+<div class="w3-justify">
 
 ### 1. Příjem železa vázaného na Tf
 
@@ -61,7 +61,7 @@ Internalizace holo-Tf do endocytických vezikul iniciuje uvolňení železa z Tf
 Bylo zjištěno, že transmembránový protein __STEAP3__ ![image0](imgmetaloreduktaza.png) představuje klíčovou reduktázu v endosomu, mutace v genu pro STEAP3 vedou k mikrocytární anémii. STEAP3 je vysoce exprimován v hematopoetických buňkách, jeho role v jiných typech buněk není jasná. Existují další tři varianty enzymů STEAP rodiny (STEAP1, STEAP2 a STEP4), které také vykazují redukční aktivitu.
 
 Dvojmocné železo ![image1](image1.jpg) je poté transportováno z endosomu do cytosolu pomocí __DMT1__ ![image5](image5.jpg), který je kromě kartáčovém lemu buněk tenkého střeva lokalizován v membráně endosomu. Je zajímavé, že myši postrádající DMT1 jsou stále schopné akumulovat jaterní železo, což naznačuje, že DMT1 není nezbytný pro absorpci železa vázaného na Tf. Po transportu železa do cytosolu se Tf a TfRl recyklují zpět do oběhu, respektive do buněčné membrány.
-
+</div>
 </div>
 </div>
 
