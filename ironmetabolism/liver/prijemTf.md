@@ -22,9 +22,15 @@ img[alt^="image"] {max-width:20px;}
 **C**: STEAP3 reduktáza,
 **D**: schéma redukce Fe<sup>3+</sup> na Fe<sup>2+</sup> reduktázou STEAP3 na membráně endocytotického váčku,
 **E**: schéma endocytotického váčku.
+<div class="w3-justify">
 
-
-
+__Tabulka zkratek__
+* __Tf__: Transferin
+* __NTBI__: Non-Transferrin Bound Iron
+* __TfR1__: Transferin Receptor 1
+* __IRE__: Iron Response Element
+* __IRP__: Iron Regulatory Proteins
+</div>
 </div>
 <div class="w3-half w3-justify">
 
@@ -34,11 +40,13 @@ img[alt^="image"] {max-width:20px;}
 *[IRE]: Iron Response Element
 *[IRP]: Iron Regulatory Proteins
 
-V principu existují tři způsoby příjmu železa játry (nejvíce se uplatňuje mechanismus první):
+V principu existují tři způsoby příjmu železa játry:
 
  1. __Příjem železa vázaného na Tf__
  2. Příjem železa nevázaného na Tf, tzv. NTBI (non-transferrin bound iron)
  3. Příjem železa asociovaného s hemem/hemoglobinem
+
+Nejvíce se uplatňuje mechanismus první.
 
 ### 1. Příjem železa vázaného na Tf
 
