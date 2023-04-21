@@ -13,11 +13,12 @@ Protože volné intracelulární železo je toxické, většina železa v buňk�
 
 <bdl-quiz question="Přiřaďte:"
 	  type="match"
-	  terms="Ferritin | Hemosiderin"
-	  answers="Protein, který skladuje Fe<sup>3+</sup> při normálních koncentracích | nerozpustný komplex složený z degradovaného ferritinu a velkých řetězců hydroxidu železitého">
+	  terms="Volné železo <img src='image10.jpg' style='max-height:60px'></img> | Ferritin <img src='imageferritin.png' style='max-height:60px'></img> | Hemosiderin"
+	  answers="Fe<sup>2+</sup> vstupující do buňky bez ohledu na zdroj je součástí stejného intracelulárního poolu|Protein, který skladuje většinu Fe<sup>3+</sup> kvůli toxicitě volného železa | Během silného přetížení železem dojde ke kompletní saturaci ferritinu a zvyšuje se skladování v této formě. Je to nerozpustný komplex složený z degradovaného ferritinu a velkých řetězců hydroxidu železitého.">
 </bdl-quiz>
 
-Během silného přetížení železem dojde ke kompletní saturaci ferritinu a zvyšuje se skladování ve formě hemosiderinu. Železo uložené v hemosiderinu je, na rozdíl od ferritinu, špatně mobilizovatelné.
+Železo uložené v hemosiderinu je, na rozdíl od ferritinu, špatně mobilizovatelné.
+
 </div>
 </div>
 </div>
