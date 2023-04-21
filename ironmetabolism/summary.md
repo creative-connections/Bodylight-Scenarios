@@ -32,6 +32,4 @@
     * [2.3 Příjem železa: Hem](#liver/prijemHem.md)
       * [2.4.1 Skladování železa](#liver/index2skladovani.md)
       * [2.4.2 Simulace skladování 1](#liver/iron2sim.md)
-      * [2.4.3 Simulace skladování 2](#liver/iron2sim2.md)
-      * [2.4.4 Simulace skladování 3](#liver/iron2sim3.md)
   * [O simulátoru](#about.md)
