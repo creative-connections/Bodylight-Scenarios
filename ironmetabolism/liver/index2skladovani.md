@@ -11,13 +11,27 @@ Bez ohledu na zdroj, železo které vstupuje do hepatocytu se stává součást�
 
 Protože volné intracelulární železo je toxické, většina železa v buňkách je uložena ve ferritinu (viz. duodenum). V játrech mohou všechny typy buněk uchovávat železo, ale za normálních podmínek představují hlavní úložné místo hepatocyty.
 
-<bdl-quiz question="Přiřaďte:"
+<bdl-quiz id="q1" question="Přiřaďte:"
 	  type="match"
 	  terms="Volné železo <img src='image10.jpg' style='max-height:60px'></img> | Ferritin <img src='imageferritin.png' style='max-height:60px'></img> | Hemosiderin"
-	  answers="Fe<sup>2+</sup> vstupující do buňky bez ohledu na zdroj je součástí stejného intracelulárního poolu|Protein, který skladuje většinu Fe<sup>3+</sup> kvůli toxicitě volného železa | Během silného přetížení železem dojde ke kompletní saturaci ferritinu a zvyšuje se skladování v této formě. Je to nerozpustný komplex složený z degradovaného ferritinu a velkých řetězců hydroxidu železitého.">
+	  answers="Fe<sup>2+</sup> vstupující do buňky bez ohledu na zdroj je součástí stejného intracelulárního poolu.|skladuje většinu Fe<sup>3+</sup> kvůli toxicitě volného železa | Je to nerozpustný komplex složený z degradovaného ferritinu a velkých řetězců hydroxidu železitého.">
 </bdl-quiz>
-
-Železo uložené v hemosiderinu je, na rozdíl od ferritinu, špatně mobilizovatelné.
+<bdl-quiz id="q2" question="Přiřaďte:"
+	  type="match"
+	  terms="Ferritin <img src='imageferritin.png' style='max-height:60px'></img> | Hemosiderin"
+	  answers="skladuje většinu Fe<sup>3+</sup> a uvolňuje ho řízeně dle metabolických potřeb buňky | Během silného přetížení železem dojde ke kompletní saturaci ferritinu a zvyšuje se skladování v této formě. Velmi špatně se uvolňuje železo pro potřeby metabolismu.">
+</bdl-quiz>
+<bdl-quiz id="q3" question="Přiřaďte:"
+	  type="match"
+	  terms="Ferritin <img src='imageferritin.png' style='max-height:60px'></img> | Hemosiderin"
+	  answers="Vyskytuje se v buňkách i v plasmě| Jen v buňkách">
+</bdl-quiz>
+<bdl-quiz id="q4" question="Přiřaďte:"
+	  type="match"
+	  terms="Ferritin <img src='imageferritin.png' style='max-height:60px'></img> | Hemosiderin"
+	  answers="Hlavně v hepatocytech, srdečních buňkách, makrofágách| Hlavně v makrofázích, gliových buňkách, epitelu jater, ledvin a buňkách retikuloendoteliálního systému">
+</bdl-quiz>
+<bdl-quiz-control ids="q1,q2,q3,q4"></bdl-quiz-control>
 
 </div>
 </div>
