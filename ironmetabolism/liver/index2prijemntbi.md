@@ -1,8 +1,6 @@
 <div class="w3-row">
 <div class="w3-half w3-center">
 
-
-
 <bdl-pdb-pdbe-molstar id="pdb2h35" molecule-id="3cmp" hide-controls="true" height="500px" show-ions="FE" assembly-id="1"></bdl-pdb-pdbe-molstar>
 **Obrázek Lipokalin 2** 3D molekulární struktura Lcn2 s vyznačeným atomem železa (fialová sféra ve struktuře). Je sekretován imunitními buňkami (neutrofily) a epitelními buňkami.
 
@@ -29,7 +27,13 @@ V případech silného přetížení organismu železem překročí hladina žel
 
 Lipokalin 2 (Lcn2) je multifunkční protein, který má vlastnosti sekvestrující železo a je rozhodující při vazbě na siderofory a při omezování dostupnosti železa pro patogenní bakterie. Některé výzkumy naznačují, že Lcn2 může mediovat absorpci NTBI.
 
-Dále existuje SCARA5 - feritinový receptor, který zprostředkovává absorpci NTBI do ledvin. Jeho úloha pro vychytávání NBTI v játrech však není jasná.
+Dále existuje SCARA5 - feritinový receptor, který zprostředkovává absorpci NTBI do ledvin. Jeho úloha pro vychytávání NTBI v játrech však není jasná.
+
+<bdl-quiz id="q1" question="Přiřaďte odpovídající popisy k "
+	  type="match"
+	  terms="sekvestrace | siderofor | chelátor | hemochromatóza"
+	  answers="zachytávání nějaké látky | látka vážící a přenášející železo | lék k vyvazování a následnému vylučování některých kovů | nemoc způsobená nadměrným vstřebáváním železa ve střevě a jeho hromaděním v orgánech">
+</bdl-quiz>
 
 </div>
 </div>
