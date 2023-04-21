@@ -2,7 +2,7 @@
 <div class="w3-half">
 
 ![hepatocytsimulator](hepatocytsimulator.png)
-**Obrázek** schématické znázornění buňky hepatocytu a její interakce s přenosem železa z krevní kapiláry. Na následující stránce je schéma interaktivní.
+**Obrázek** schématické znázornění buňky hepatocytu a její interakce s přenosem železa z krevní kapiláry. Na následující stránce je schéma interaktivní se simulátorem
 </div>
 <div class="w3-half">
 <div class="w3-justify w3-margin-left">
