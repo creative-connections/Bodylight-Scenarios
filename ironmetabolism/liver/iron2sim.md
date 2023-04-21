@@ -8,7 +8,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 *[holoTf]: Transferin - saturovaný - s navázanými ionty železa
 
 <div class="w3-row">
-<div class="w3-col s12 m8 l8">
+<div class="w3-col s12 m7 l7">
 
 <bdl-animate-adobe src="Hepatocyt_2_FinalObrazovka1.js" width="800" height="600" name="Hepatocyt_2_FinalObrazovka1" fromid="idfmi" responsive="true"></bdl-animate-adobe>
 <bdl-bind2a-text findex="4" aname="children.1.Hodnota8_text" convertor="1,57.717"></bdl-bind2a-text>
@@ -47,7 +47,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a findex="1" aname="children.1.children.171.SipkaHneda2Vehicle_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 
 </div>
-<div class="w3-col s12 m4 l4 w3-justify w3-small">
+<div class="w3-col s12 m5 l5 w3-justify w3-small">
 
 <button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
 <!-- hidden input  - buttonparams must be before fmi component - or input with id must be created explicitly -->
@@ -85,12 +85,12 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 	  terms="Snižení malabsorpce na 0.7 | Snížení malabsorpce na 0.4 | Snížení malabsorpce na 0.1"
 	  answers="Koncentrace v hepatocytu v poolu i ve feritinu zhruba 0.8  a v plasmě 0.9| Koncentrace v hepatocytu v poolu i ve feritinu zhruba 0.6 a v plasmě 0.8|Koncentrace v hepatocytu v poolu i ve feritinu zhruba 0.2 a v plasmě 0.4">
 </bdl-quiz>
-<bdl-quiz id="q3" question="Pokračujte v simulaci a normalizujte koncentraci železa v potravě na normu 219 a poté postupujte a přiřaďte co pozorujete."
+<bdl-quiz id="q4" question="Pokračujte v simulaci a normalizujte koncentraci železa v potravě na normu 219 a malabsorpci na normu (1). Postupujte a přiřaďte "
 	  type="match"
-	  terms="Snižení malabsorpce na 0.7 | Snížení malabsorpce na 0.4 | Snížení malabsorpce na 0.1"
-	  answers="Koncentrace v hepatocytu v poolu i ve feritinu zhruba 0.8  a v plasmě 0.9| Koncentrace v hepatocytu v poolu i ve feritinu zhruba 0.6 a v plasmě 0.8|Koncentrace v hepatocytu v poolu i ve feritinu zhruba 0.2 a v plasmě 0.4">
+	  terms="Vypněte regulaci DMT1 v duodenu a snižte množství železa v potravě na 100 | Vypněte regulaci DMT1 v duodenu a snižte množství železa v potravě na 44"
+	  answers="Koncentrace v hepatocytu v poolu nekontrolovaně stoupá v plasmě stoupá | Koncentrace v hepatocytu i v plasmě se udržuje, případně pomalu klesá k normě.">
 </bdl-quiz>
-<bdl-quiz-control ids="q1,q2,q3"></bdl-quiz-control>
+<bdl-quiz-control ids="q1,q2,q3,q4"></bdl-quiz-control>
 
 <!--
 * Vyzkoušejte si, jak reaguje hepatocyt množstvím DMT1 (míra otevření kanálu) na množství železa v játrech
