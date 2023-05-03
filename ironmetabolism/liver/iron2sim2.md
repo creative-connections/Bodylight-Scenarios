@@ -68,10 +68,11 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 **Úkoly**
 
-<bdl-quiz question="1.Spusťte simulaci a snižte koncentraci železa v potravě z hodnoty 219 na 0. Jak reaguje DMT1?" answers="DMT1 se otevírá|DMT1 se zavírá" correctoptions="true|false" explanations="ano, množství železa v hepatocytu klesá a proto množství DMT1 se zvyšuje (vizualizováno jako otevírání DMT1 kanálu)|ne, sledujte kanál DMT1 v hepatocytu"></bdl-quiz>
-<bdl-quiz question="2.Zvyšte koncentraci železa v potravě na 1000. Jak reaguje DMT1?" answers="DMT1 se otevírá|DMT1 se zavírá" correctoptions="false|true" explanations="ne, sledujte chování kanálu DMT1 v hepatocytu|ano, množství železa v hepatocytu stoupá a proto množství DMT1 se snižuje (vizualizováno jako zavírání DMT1 kanálu)"></bdl-quiz>
-
-
+<bdl-quiz question="Spusťte simulaci, upravte parametr a přiřaďte co pozorujete."
+	  type="match"
+	  terms="snižte množství železa v potravě na 0 | zvyšte množství železa v potravě na 1000"
+	  answers="DMT1 se otevírá, množství železa v hepatocytu klesá | DMT1 se zavírá, množství železa v hepatocytu stoupá">
+</bdl-quiz>
 
 <!--
 * Vyzkoušejte si, jak reaguje hepatocyt množstvím DMT1 (míra otevření kanálu) na množství železa v játrech
