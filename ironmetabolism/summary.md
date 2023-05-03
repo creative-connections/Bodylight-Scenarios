@@ -33,6 +33,5 @@
       * [2.1.4 Skladování železa](#liver/index2skladovani.md)
       * [2.1.5 Simulace skladování](#liver/iron2sim.md)
     * [2.2 Export železa](#liver/iron23export.md) 
-      * [2.2.1 Export železa 2](#liver/iron23export2.md) 
-      * [2.2.1 Export železa 2](#liver/iron23export.md) 
+      * [liver/iron24role](#liver/iron24role.md)
   * [O simulátoru](#about.md)
