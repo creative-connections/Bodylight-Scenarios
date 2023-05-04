@@ -58,7 +58,8 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 <button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
 
-<bdl-fmi id="idfmi" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.001" guid="{ff6d8a55-f24a-4855-bbf0-86edcafe471e}" valuereferences="637534208,637534209,100663315,16777260,33554448,33554449,637534228,905969688,637534231,16777271,16777272" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate" inputs="id1,16777260,1,1;id2,16777271,1,1;id3,16777272,1,1" inputlabels="Fe_food,to_ferritin_rate,from_ferritin_rate" showtime="1" showtimemultiply="3600" ></bdl-fmi>
+<bdl-fmi id="idfmi" mode="" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.01" fpslimit="5" guid="{9aa10b27-427c-44c9-a381-5815d5706331}" valuereferences="637534208,637534209,100663316,16777260,33554448,33554449,637534229,905969689,637534232,16777271,100663313" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate" inputs="id1,16777260,1,1;id2,16777271,1,1;id3,100663313,1,1" inputlabels="Fe_food,to_ferritin_rate,from_ferritin_rate" showtime="true" showtimemultiply="3600"></bdl-fmi>
+
 
 Regulace příjmu Fe a příjmu a výdeje Fe do/z ferritinu. Regulace příjmu a výdeje do/z ferritinu v buňce je v tomto simulátoru umělá, ve skutečnosti je rovnovážná konstanta daná. Simulace je zrychlená, simulace odsimuluje jednotky minut, během reálné 1 sekundy.
 
