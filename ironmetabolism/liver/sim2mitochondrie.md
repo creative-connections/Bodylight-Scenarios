@@ -38,9 +38,6 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a findex="7" aname="children.1.SemaforFpn_anim" amin="0" amax="19" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a findex="2" aname="children.1.CervenaSipka7_anim" amin="0" amax="159"></bdl-bind2a>
 
-
-
-
 </div>
 <div class="w3-col s12 m4 l4 w3-justify w3-small">
 
@@ -95,9 +92,9 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 </div>
 
 <div id="legenda" class="w3-card w3-small w3-padding" style="display:none;z-index:1;position:absolute;top:20px;right:10px;width:500px;background-color:white">
-
-<button class="w3-button w3-theme w3-right" onclick="document.getElementById('legenda').style.display='none'">Skryj legendu <i class="fa fa-close"/> </button>
-
+legenda
+<button class="w3-button w3-theme w3-right" onclick="document.getElementById('legenda').style.display='none'">Skryj legendu <i class="fa fa-close"></i> </button>
+button
 
 |Schéma|Popis/funkce|
 |---|---|
@@ -127,5 +124,6 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 |![imageferroportin](smallferroportin.png)|Ferroportin|Ferroportin|
 |![imagetfr1](imgtfr1.png)|TfR1|Transferinový receptor 1|
 |![imageschemasteap3](imgmetaloreduktaza.png)| STEAP3 | Metaloreduktáza |
-
+konec legendy
 </div>
+
