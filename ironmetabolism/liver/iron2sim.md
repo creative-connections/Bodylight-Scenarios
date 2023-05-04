@@ -10,7 +10,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <div class="w3-row">
 <div class="w3-col s12 m7 l7">
 
-<bdl-animate-adobe src="Hepatocyt_2_FinalObrazovka1.js" width="800" height="600" name="Hepatocyt_2_FinalObrazovka1" fromid="idfmi" responsive="true"></bdl-animate-adobe>
+<bdl-animate-adobe src="HepatocytFinalObrazovka02.js" width="800" height="600" name="HepatocytFinalObrazovka02" fromid="idfmi" responsive="true"></bdl-animate-adobe>
 <bdl-bind2a-text findex="4" aname="children.1.Hodnota8_text" convertor="1,57.717"></bdl-bind2a-text>
 <bdl-bind2a-text findex="3" aname="children.1.Hodnota3_text" convertor="1,1.513"></bdl-bind2a-text>
 <bdl-bind2a-text findex="2" aname="children.1.Hodnota7_text" convertor="1,19.24"></bdl-bind2a-text>
@@ -53,7 +53,8 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <!-- hidden input  - buttonparams must be before fmi component - or input with id must be created explicitly -->
 <input id="id6" value="" type="number" style="display:none"/>
 
-<bdl-fmi id="idfmi" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="1" guid="{ff6d8a55-f24a-4855-bbf0-86edcafe471e}" valuereferences="637534208,637534244,33554450,33554447,33554451,637534242,637534243" valuelabels="Fe_liv,Fe_liv_in_ser,Fe_liv_2,Fe_ser,Fe_liv_3,Fe_liv_to_ferritin,Fe_liv_from_ferritin" inputs="id1,16777260,1,1;id10,16777265,1,1,t;id11,16777262,1,1,t" inputlabels="Fe_food,unregulated_absorption,malabsorption" showtime="1" showtimemultiply="3600"></bdl-fmi>
+<bdl-fmi id="idfmi" mode="" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="2" fpslimit="60" guid="{9aa10b27-427c-44c9-a381-5815d5706331}" valuereferences="637534208,637534245,33554450,33554447,33554451,637534243,637534244" valuelabels="Fe_liv,Fe_liv_in_ser,Fe_liv_2,Fe_ser,Fe_liv_3,Fe_liv_to_ferritin,Fe_liv_from_ferritin" inputs="id1,16777260,1,1;id10,16777265,1,1,t;id11,16777262,1,1,t" inputlabels="Fe_food,unregulated_absorption,malabsorption" showtime="true" showtimemultiply="3600"></bdl-fmi>
+
 
 <div class="w3-border w3-panel">
 
