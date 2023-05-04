@@ -34,4 +34,5 @@
       * [2.1.5 Simulace skladování](#liver/iron2sim.md)
     * [2.2 Export železa](#liver/iron23export.md) 
       * [2.2.1 Role mitochondrií](#liver/iron24role.md)
+      * [2.2.2 Role mitochondrií](#liver/mitochondrie2.md)
   * [O simulátoru](#about.md)
