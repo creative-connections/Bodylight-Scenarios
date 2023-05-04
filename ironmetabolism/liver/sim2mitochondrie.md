@@ -8,9 +8,9 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 *[holoTf]: Transferin - saturovaný - s navázanými ionty železa
 
 <div class="w3-row">
-<div class="w3-col s12 m7 l7">
+<div class="w3-col s12 m8 l8">
 
-<bdl-animate-adobe src="Hepatocyt_2_FinalObrazovka1.js" width="800" height="600" name="Hepatocyt_2_FinalObrazovka1" fromid="idfmi" responsive="true"></bdl-animate-adobe>
+<bdl-animate-adobe src="Hepatocyt_2_FinalObrazovka3.js" width="800" height="600" name="Hepatocyt_2_FinalObrazovka3" fromid="idfmi" responsive="true"></bdl-animate-adobe>
 <bdl-bind2a-text findex="4" aname="children.1.Hodnota8_text" convertor="1,57.717"></bdl-bind2a-text>
 <bdl-bind2a-text findex="3" aname="children.1.Hodnota3_text" convertor="1,1.513"></bdl-bind2a-text>
 <bdl-bind2a-text findex="2" aname="children.1.Hodnota7_text" convertor="1,19.24"></bdl-bind2a-text>
@@ -18,50 +18,48 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranzova1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranzova2_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="2" aname="children.1.Merak7_anim" amin="0" amax="99" fmin="0" fmax="40"></bdl-bind2a>
-<bdl-bind2a findex="3" aname="children.1.children.265.FeTransferin_anim" amin="0" amax="159" fmin="0.5" fmax="2.5"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranova2_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.ModraSipka2_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.ModraSipka1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.CervenaSipka6_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.CervenaSipka1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranova1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a findex="1" aname="children.1.ZlutyVodikVnitrniCervenyKanal_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a findex="1" aname="children.1.ZlutyVodikVnejsiCervenyKanal_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a findex="1" aname="children.1.CervenaSipka4_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a findex="1" aname="children.1.SipkaFialovaCervenaVnejsi_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a findex="1" aname="children.1.KanalCerveny_anim" amin="0" amax="99" fmin="2" fmax="8"></bdl-bind2a>
-<bdl-bind2a findex="2" aname="children.1.Fe2Skupina_anim" amin="159" amax="0" fmin="6" fmax="61"></bdl-bind2a>
-<bdl-bind2a findex="4" aname="children.1.Fe3Skupina_anim" amin="0" amax="159" fmin="18" fmax="147"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.ZlutyVodikVnitrniCervenyKanal_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.ZlutyVodikVnejsiCervenyKanal_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.CervenaSipka4_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.SipkaFialovaCervenaVnejsi_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.KanalCerveny_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.1.Fe2Skupina_anim" amin="159" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="4" aname="children.1.Fe3Skupina_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="6" aname="children.1.SipkaFialovaCervena1_anim" amin="0" amax="159" fmin="18" fmax="147"></bdl-bind2a>
 <bdl-bind2a findex="5" aname="children.1.SipkaCervenoFialova1_anim" amin="0" amax="159" fmin="18" fmax="147"></bdl-bind2a>
 <bdl-bind2a findex="4" aname="children.1.Merak8_anim" amin="0" amax="99" fmin="0" fmax="114"></bdl-bind2a>
 <bdl-bind2a findex="3" aname="children.1.Merak3_anim" amin="0" amax="99" fmin="0.5" fmax="3"></bdl-bind2a>
-<bdl-bind2a findex="1" aname="children.1.children.171.OranzovaSipkaSpodniVehicle_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a findex="1" aname="children.1.children.171.KanalZlutyVehicle_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a findex="1" aname="children.1.children.171.SipkaCervenaHUvnitrVehicle_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a findex="1" aname="children.1.children.171.SipkaZlutaHUvnitrVehicle_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a findex="1" aname="children.1.children.171.KanalCervenyVehicle2_anim" amin="0" amax="99" fmin="2" fmax="8"></bdl-bind2a>
-<bdl-bind2a findex="1" aname="children.1.children.171.SipkaZlutaHUvnitrVehicle_anim_1" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a findex="1" aname="children.1.children.171.PrechodUvnitrVehicle_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a findex="1" aname="children.1.children.171.SipkaHneda1Vehicle_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a findex="1" aname="children.1.children.171.SipkaHneda2Vehicle_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="7" aname="children.1.SemaforFpn_anim" amin="0" amax="19" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.1.CervenaSipka7_anim" amin="0" amax="159"></bdl-bind2a>
+
+
+
 
 </div>
-<div class="w3-col s12 m5 l5 w3-justify w3-small">
+<div class="w3-col s12 m4 l4 w3-justify w3-small">
 
 <button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
 <!-- hidden input  - buttonparams must be before fmi component - or input with id must be created explicitly -->
 <input id="id6" value="" type="number" style="display:none"/>
 
-<bdl-fmi id="idfmi" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="1" guid="{ff6d8a55-f24a-4855-bbf0-86edcafe471e}" valuereferences="637534208,637534244,33554450,33554447,33554451,637534242,637534243" valuelabels="Fe_liv,Fe_liv_in_ser,Fe_liv_2,Fe_ser,Fe_liv_3,Fe_liv_to_ferritin,Fe_liv_from_ferritin" inputs="id1,16777260,1,1;id10,16777265,1,1,t;id11,16777262,1,1,t" inputlabels="Fe_food,unregulated_absorption,malabsorption" showtime="1" showtimemultiply="3600"></bdl-fmi>
+<bdl-fmi id="idfmi" mode="" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.1" fpslimit="60" guid="{9aa10b27-427c-44c9-a381-5815d5706331}" valuereferences="637534208,637534245,33554450,33554447,33554451,637534243,637534244,16777268" valuelabels="Fe_liv,Fe_liv_in_ser,Fe_liv_2,Fe_ser,Fe_liv_3,Fe_liv_to_ferritin,Fe_liv_from_ferritin,Fpn_liv_knockout" inputs="id1,16777260,1,1;idfpnliv,16777268,1,1,t" inputlabels="Fe_food,Fpn_liv_knockout" showtime="true" showtimemultiply="3600"></bdl-fmi>
+
+
+
+
 
 <div class="w3-border w3-panel">
 
 ||| 
 |-------------|-------|
 | množství železa v potravě [$\frac{\mu g}{h}$] | <bdl-range id="id1" title="" min="0" max="1000" default="219" step="1"></bdl-range> |
-| Malabsorpce (1-norma) | <bdl-range id="id11" title="" min="0" max="1" default="1" step="0.1"></bdl-range>  |
-| Regulace DMT1 v duodenu | <bdl-checkbox id="id10" titlemin="absorpce je fyziologicky regulovaná" titlemax="absorpce není regulovaná" default="false"></bdl-checkbox>  |
+| Knockout genu pro FPN | <bdl-checkbox id="idfpnliv" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
 
 </div>
 
@@ -70,25 +68,13 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <!--bdl-quiz question="Spusťte simulaci a zvyšte koncentraci železa v potravě z hodnoty 219 na 1000. Co se děje s množstvím železa v pohotovém poolu a ve ferritinu jaterní buňky?" answers="koncentrace se zvýší v poolu i ferritinu (nad normovanou hodnotu 1.0) | koncentrace se sníží v poolu i fe verritinu (pod normovano hodnotu 1.0)" correctoptions="true|false" explanations="ano|ne, sledujte červený a fialový indikátor v hepatocytu"></bdl-quiz>
 <bdl-quiz question="Snižte koncentraci železa v potravě na normu 219. Simulace je zrychlená (během 1 s se odsimuluje asi 1 den metabolismu). Jak dlouho se normalizují hodnoty koncentrací železa v játrech?" answers="během dnů | během týdnů až měsíců" correctoptions="false|true" explanations="ne, sledujte indikátor času u tlačítek simulátoru|ano, normalizace trvá týdny až měsíce"></bdl-quiz-->
 
-<bdl-quiz id="q1" question="Spusťte simulaci, upravte parametr a přiřaďte co pozorujete."
-	  type="match"
-	  terms="snižte množství železa v potravě na 0 | zvyšte množství železa v potravě na 1000"
-	  answers="DMT1 se otevírá, množství železa v hepatocytu klesá | DMT1 se zavírá, množství železa v hepatocytu stoupá">
+<bdl-quiz id="q1" question="Spusťte simulaci, upravte parametr a přiřaďte co pozorujete." type="match" terms="snižte množství železa v potravě na 0 | zvyšte množství železa v potravě na 1000" answers="DMT1 se otevírá, množství železa v hepatocytu klesá | DMT1 se zavírá, množství železa v hepatocytu stoupá">
 </bdl-quiz>
-<bdl-quiz id="q2" question="Pokračujte v simulaci a normalizujte koncentraci železa v potravě na normu 219 aspoň po dobu 10 s a poté postupujte a přiřaďte co pozorujete."
-	  type="match"
-	  terms="Snižte koncentraci železa v potravě na normu 219 | Zvyšte koncentraci železa v potravě z hodnoty 219 na 1000"
-	  answers="během týdnů až měsíců se normalizují hodnoty koncentrací železa v játrech| během dnů se koncentrace se zvýší v poolu i ferritinu (nad normovanou hodnotu 1.0)">
+<bdl-quiz id="q2" question="Pokračujte v simulaci a normalizujte koncentraci železa v potravě na normu 219 aspoň po dobu 10 s a poté postupujte a přiřaďte co pozorujete." type="match" terms="Snižte koncentraci železa v potravě na normu 219 | Zvyšte koncentraci železa v potravě z hodnoty 219 na 1000" answers="během týdnů až měsíců se normalizují hodnoty koncentrací železa v játrech| během dnů se koncentrace se zvýší v poolu i ferritinu (nad normovanou hodnotu 1.0)">
 </bdl-quiz>
-<bdl-quiz id="q3" question="Pokračujte v simulaci a normalizujte koncentraci železa v potravě na normu 219 a poté postupujte a přiřaďte co pozorujete."
-	  type="match"
-	  terms="Snižení malabsorpce na 0.7 | Snížení malabsorpce na 0.4 | Snížení malabsorpce na 0.1"
-	  answers="Koncentrace v hepatocytu v poolu i ve feritinu zhruba 0.8  a v plasmě 0.9| Koncentrace v hepatocytu v poolu i ve feritinu zhruba 0.6 a v plasmě 0.8|Koncentrace v hepatocytu v poolu i ve feritinu zhruba 0.2 a v plasmě 0.4">
+<bdl-quiz id="q3" question="Pokračujte v simulaci a normalizujte koncentraci železa v potravě na normu 219 a poté postupujte a přiřaďte co pozorujete." type="match" terms="Snižení malabsorpce na 0.7 | Snížení malabsorpce na 0.4 | Snížení malabsorpce na 0.1" answers="Koncentrace v hepatocytu v poolu i ve feritinu zhruba 0.8  a v plasmě 0.9| Koncentrace v hepatocytu v poolu i ve feritinu zhruba 0.6 a v plasmě 0.8|Koncentrace v hepatocytu v poolu i ve feritinu zhruba 0.2 a v plasmě 0.4">
 </bdl-quiz>
-<bdl-quiz id="q4" question="Pokračujte v simulaci a normalizujte koncentraci železa v potravě na normu 219 a malabsorpci na normu (1). Postupujte a přiřaďte "
-	  type="match"
-	  terms="Vypněte regulaci DMT1 v duodenu a snižte množství železa v potravě na 100 | Vypněte regulaci DMT1 v duodenu a snižte množství železa v potravě na 44"
-	  answers="Koncentrace v hepatocytu v poolu nekontrolovaně stoupá v plasmě stoupá | Koncentrace v hepatocytu i v plasmě se udržuje, případně pomalu klesá k normě.">
+<bdl-quiz id="q4" question="Pokračujte v simulaci a normalizujte koncentraci železa v potravě na normu 219 a malabsorpci na normu (1). Postupujte a přiřaďte " type="match" terms="Vypněte regulaci DMT1 v duodenu a snižte množství železa v potravě na 100 | Vypněte regulaci DMT1 v duodenu a snižte množství železa v potravě na 44" answers="Koncentrace v hepatocytu v poolu nekontrolovaně stoupá v plasmě stoupá | Koncentrace v hepatocytu i v plasmě se udržuje, případně pomalu klesá k normě.">
 </bdl-quiz>
 <bdl-quiz-control ids="q1,q2,q3,q4"></bdl-quiz-control>
 
@@ -110,7 +96,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 <div id="legenda" class="w3-card w3-small w3-padding" style="display:none;z-index:1;position:absolute;top:20px;right:10px;width:500px;background-color:white">
 
-<button class="w3-button w3-theme w3-right" onclick="document.getElementById('legenda').style.display='none'">Skryj legendu <i class="fa fa-close"></i> </button>
+<button class="w3-button w3-theme w3-right" onclick="document.getElementById('legenda').style.display='none'">Skryj legendu <i class="fa fa-close"/> </button>
 
 
 |Schéma|Popis/funkce|
