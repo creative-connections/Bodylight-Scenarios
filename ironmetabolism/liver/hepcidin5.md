@@ -1,15 +1,11 @@
 <div class="w3-row">
-<div class="w3-half">
+<div class="w3-col s12 m6 l6">
 
-
-<bdl-pdb-pdbe-molstar id="pdb4e68" molecule-id="4e68" hide-controls="true" height="350px" assembly-id="1" visual-style="cartoon"></bdl-pdb-pdbe-molstar>
-
-**Obrázek STAT3B protein navázán na dsDNA** 3D molekulární struktura STAT3 proteinu v buněčném jádru, kde moduluje transkripci cílových genů.
 
 ![simliver](simliver.png)
 
 </div>
-<div class="w3-half w3-padding w3-justify">
+<div class="w3-col s12 m6 l6 w3-padding w3-justify">
 
 # Hypoxická a erytropoetická dráha
 
