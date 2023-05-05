@@ -75,19 +75,6 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 </bdl-quiz>
 <bdl-quiz-control ids="q1,q2,q3,q4"></bdl-quiz-control>
 
-<!--
-* Vyzkoušejte si, jak reaguje hepatocyt množstvím DMT1 (míra otevření kanálu) na množství železa v játrech
-* Vyzkoušejte si, co způsobí malabsorpce železa
-* Vyzkoušejte si, k čemu povede hypotetický neregulovaný příjem železa z potravy do organismu.
-
-* V jakých formách je železo uloženo/skladováno v hepatocytu?
-* Odkud pochází energie nutná k transportu železa do hepatocytu prostřednictvím DMT1?
-* K jaké chemické reakci dochází v endocytickém váčku?
-* Co je endocytóza obecně a co ji v případě příjmu železa do hepatocytu iniciuje?
-* Jaký je hlavní mechanismu příjmu železa do jater?
-* Jaké jsou sekundární mechanismy příjmu železa do jater a při jakých stavech hrají signifikantní roli?-->
-
-
 </div>
 </div>
 
