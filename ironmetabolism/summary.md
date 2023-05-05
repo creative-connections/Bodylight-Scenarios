@@ -40,5 +40,5 @@
     * [2.3 Tvorba hepcidinu](#liver/hepcidine.md)
       * [2.3.1 Tvorba hepcidinu 2](#liver/hepcidine2.md)
       * [2.3.2 BMP/SMAD signalizační kaskáda](#liver/hepcidine3.md)
-
+      * [2.3.3 IL-6/STAT inflamatorní kaskáda](#liver/hepcidine4.md)
   * [O simulátoru](#about.md)
