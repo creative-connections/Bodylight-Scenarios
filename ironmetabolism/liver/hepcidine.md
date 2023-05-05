@@ -12,7 +12,7 @@
 </div>
 <div class="w3-half w3-justify w3-padding">
 
-# Tvorba hepcidinu, BMP/SMAD signální kaskáda a IL-6/STAT inflamatorní dráha
+# Tvorba hepcidinu
 
 Hepcidin je antimikrobiální peptid složený z 25 aminokyselin, který je produkován v hepatocytech a vylučován do krevního oběhu. Hepcidin je překládán jako pro-protein s 84 aminokyselinami a štěpen pro-hormonální konvertázou furinem za vzniku aktivního peptidu. 
    
