@@ -36,4 +36,7 @@
       * [2.2.1 Role mitochondrií](#liver/iron24role.md)
       * [2.2.2 Role mitochondrií](#liver/mitochondrie2.md)
       * [2.2.3 Simulace exportu](#liver/sim2mitochondrie.md)
+      * [2.2.4 Simulace exportu 2](#liver/sim2mitochondrie2.md)
+    * [2.3 Tvorba hepcidinu](#liver/hepcidine.md)
+    *  [2.3.1 Tvorba hepcidinu 2](#liver/hepcidine2.md)
   * [O simulátoru](#about.md)
