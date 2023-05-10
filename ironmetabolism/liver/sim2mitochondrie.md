@@ -13,30 +13,68 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-animate-adobe src="Hepatocyt_2_FinalObrazovka3.js" width="800" height="600" name="Hepatocyt_2_FinalObrazovka3" fromid="idfmi" responsive="true"></bdl-animate-adobe>
 <bdl-bind2a-text findex="4" aname="children.1.Hodnota8_text" convertor="1,57.717"></bdl-bind2a-text>
 <bdl-bind2a-text findex="3" aname="children.1.Hodnota3_text" convertor="1,1.513"></bdl-bind2a-text>
+<bdl-bind2a-text findex="10" aname="children.1.Hodnota6_text"></bdl-bind2a-text>
 <bdl-bind2a-text findex="2" aname="children.1.Hodnota7_text" convertor="1,19.24"></bdl-bind2a-text>
+<bdl-bind2a findex="12" aname="children.1.FialovaSipkaTransferin_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.CervenaSipka5_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="10" aname="children.1.Merak6_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranzova1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="12" aname="children.1.CervenaSipka3_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="12" aname="children.1.CervenaSipka2_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranzova2_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="4" aname="children.1.children.376.Fe3SkupinaMitochondrie1_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.1.children.376.KanalSedy_anim" amin="159" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.1.children.376.MitochondrieSipkaCervena1_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.1.children.376.MitochondrieSipkaCervena2_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="2" aname="children.1.Merak7_anim" amin="0" amax="99" fmin="0" fmax="40"></bdl-bind2a>
+<bdl-bind2a findex="3" aname="children.1.children.365.FeTransferin_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranova2_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="9" aname="children.1.SipkaRuzova1_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="4" aname="children.1.Fe3SkupinaMitochondrie2_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.ModraSipka2_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.ModraSipka1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.CervenaSipka6_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.CervenaSipka1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranova1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.1.KanalSedy2_anim" amin="159" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.1.MitochondrieSipkaCervena3_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.1.MitochondrieSipkaCervena4_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.ZlutyVodikVnitrniCervenyKanal_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.ZlutyVodikVnejsiCervenyKanal_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.CervenaSipka4_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.SipkaFialovaCervenaVnejsi_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="12" aname="children.1.SipkaPrechodFe2Fe3_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="11" aname="children.1.KanalFialovy_anim" amin="99" amax="0"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.KanalCerveny_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="2" aname="children.1.Fe2Skupina_anim" amin="159" amax="0"></bdl-bind2a>
 <bdl-bind2a findex="4" aname="children.1.Fe3Skupina_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="6" aname="children.1.SipkaFialovaCervena1_anim" amin="0" amax="159" fmin="18" fmax="147"></bdl-bind2a>
 <bdl-bind2a findex="5" aname="children.1.SipkaCervenoFialova1_anim" amin="0" amax="159" fmin="18" fmax="147"></bdl-bind2a>
 <bdl-bind2a findex="4" aname="children.1.Merak8_anim" amin="0" amax="99" fmin="0" fmax="114"></bdl-bind2a>
-<bdl-bind2a findex="3" aname="children.1.Merak3_anim" amin="0" amax="99" fmin="0.5" fmax="3"></bdl-bind2a>
+<bdl-bind2a findex="3" aname="children.1.Merak3_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="8" aname="children.1.SipkaRuzova2_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.173.OranzovaSipkaSpodniVehicle_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.173.KanalZlutyVehicle_anim" amin="159" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.173.SipkaCervenaHUvnitrVehicle_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.173.SipkaZlutaHUvnitrVehicle_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.173.KanalCervenyVehicle2_anim" amin="99" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.173.SipkaZlutaHUvnitrVehicle_anim_1" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.173.PrechodUvnitrVehicle_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.173.SipkaHneda1Vehicle_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.173.SipkaHneda2Vehicle_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="7" aname="children.1.SemaforFpn_anim" amin="0" amax="19" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a findex="2" aname="children.1.CervenaSipka7_anim" amin="0" amax="159"></bdl-bind2a>
+
+
+
+<div class="w3-small w3-justify w3-theme-l4">Trendy a dynamika simulovaného systému odpovídají fyziologii člověka, ale veškeré absolutní hodnoty vygenerované simulátorem jsou pouze orientační.</div>
+
+
+
+
+
+
+
 
 </div>
 <div class="w3-col s12 m4 l4 w3-justify w3-small">
@@ -45,7 +83,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <!-- hidden input  - buttonparams must be before fmi component - or input with id must be created explicitly -->
 <input id="id6" value="" type="number" style="display:none"/>
 
-<bdl-fmi id="idfmi" mode="" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.1" fpslimit="60" guid="{9aa10b27-427c-44c9-a381-5815d5706331}" valuereferences="637534208,637534245,33554450,33554447,33554451,637534243,637534244,16777268" valuelabels="Fe_liv,Fe_liv_in_ser,Fe_liv_2,Fe_ser,Fe_liv_3,Fe_liv_to_ferritin,Fe_liv_from_ferritin,Fpn_liv_knockout" inputs="id1,16777260,1,1;idfpnliv,16777268,1,1,t" inputlabels="Fe_food,Fpn_liv_knockout" showtime="true" showtimemultiply="3600"></bdl-fmi>
+<bdl-fmi id="idfmi" mode="" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.1" fpslimit="60" guid="{9aa10b27-427c-44c9-a381-5815d5706331}" valuereferences="637534208,637534245,33554450,33554447,33554451,637534243,637534244,16777268,637534253,637534251,33554437,33554441,637534246" valuelabels="Fe_liv,Fe_liv_in_ser,Fe_liv_2,Fe_ser,Fe_liv_3,Fe_liv_to_ferritin,Fe_liv_from_ferritin,Fpn_liv_knockout,Fpn_liv_mRNA_in,Fpn_liv_in,Fpn_liv_mRNA,Fpn_liv,Fe_liv_out_ser" inputs="id1,16777260,1,1;idfpnliv,16777268,1,1,t" inputlabels="Fe_food,Fpn_liv_knockout"></bdl-fmi>
 
 
 
@@ -69,8 +107,8 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 </bdl-quiz>
 <bdl-quiz id="q2" question="Pokračujte v simulaci a normalizujte koncentraci železa v potravě na normu 219 a přiřaďte" type="match" terms="aktivujte hypotetický genový knockout pro Fpn | gen pro Fpn je aktivní (knockout není aktivován)" answers="během hodin se koncentrace se zvýší v poolu i ferritinu (nad normovanou hodnotu 1.0)|během dnů a týdnů se koncentrace železa v poolu i ferritinu normalizuje na hodnoty kolem 1.0">
 </bdl-quiz>
-<bdl-quiz id="q3" question="Sledujte vývoj saturace transferrinu a přiřaďte (postupujte v pořadí 1. a pak 2. úkolem)" type="match" terms="1. Vypněte gen pro Fpn, vyčkejte na saturaci v poolu i feritinu překročí hodnotu 4  | 2.Zapněte gen pro Fpn, dochází k vyrovnání koncentrace železa na hodnotu 1" answers="<img src='imagetransferrin.png' alt='imagetransferrin' style='float:left'/> Saturace transferrin klesá pod hodnotu 0.7| <img src='imagetransferrin.png' alt='imagetransferrin' style='float:left'/> Saturace transferrin dočasně v séru překračuje hodnotu 1">
-</bdl-quiz>
+<!--bdl-quiz id="q3" question="Sledujte vývoj saturace transferrinu a přiřaďte (postupujte v pořadí 1. a pak 2. úkolem)" type="match" terms="1. Vypněte gen pro Fpn, vyčkejte na saturaci v poolu i feritinu překročí hodnotu 4  | 2.Zapněte gen pro Fpn, dochází k vyrovnání koncentrace železa na hodnotu 1" answers="<img src='imagetransferrin.png' alt='imagetransferrin' style='float:left'/> Saturace transferrin klesá pod hodnotu 0.7| <img src='imagetransferrin.png' alt='imagetransferrin' style='float:left'/> Saturace transferrin dočasně v séru překračuje hodnotu 1">
+</bdl-quiz-->
 <bdl-quiz id="q4" question="Vyzkoušejte si, jak se mění obsah železa v mitochondriích v závislosti na obsahu železa v cytozolu." type="match" terms="Saturace v cytozolu nízká | Saturace v cytozolu vysoká" answers="Saturace v mitochondriích klesá | Saturace v mitochondriích stoupá">
 </bdl-quiz>
 <bdl-quiz-control ids="q1,q2,q3,q4"></bdl-quiz-control>
@@ -80,7 +118,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 <div id="legenda" class="w3-card w3-small w3-padding" style="display:none;z-index:1;position:absolute;top:20px;right:10px;width:500px;background-color:white">
 legenda
-<button class="w3-button w3-theme w3-right" onclick="document.getElementById('legenda').style.display='none'">Skryj legendu <i class="fa fa-close"></i> </button>
+<button class="w3-button w3-theme w3-right" onclick="document.getElementById('legenda').style.display='none'">Skryj legendu <i class="fa fa-close"/> </button>
 button
 
 |Schéma|Popis/funkce|
