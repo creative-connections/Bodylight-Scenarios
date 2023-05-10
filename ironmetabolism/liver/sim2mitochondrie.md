@@ -67,7 +67,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 
 
-<div class="w3-small w3-justify w3-theme-l4">Trendy a dynamika simulovaného systému odpovídají fyziologii člověka, ale veškeré absolutní hodnoty vygenerované simulátorem jsou pouze orientační.</div>
+<div class="w3-small w3-justify w3-theme-l4">Trendy a dynamika simulovaného systému odpovídají fyziologii člověka, veškeré absolutní hodnoty vygenerované simulátorem jsou pouze orientační.</div>
 
 
 
