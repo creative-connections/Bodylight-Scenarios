@@ -79,11 +79,11 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 </div>
 <div class="w3-col s12 m4 l4 w3-justify w3-small">
 
-<button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
+<button class="w3-right w3-button w3-theme-d4" onclick="document.getElementById('legenda').style.display='block'"><i class="fa fa-info-circle"></i></button>
 <!-- hidden input  - buttonparams must be before fmi component - or input with id must be created explicitly -->
 <input id="id6" value="" type="number" style="display:none"/>
 
-<bdl-fmi id="idfmi" mode="" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.1" fpslimit="60" guid="{9aa10b27-427c-44c9-a381-5815d5706331}" valuereferences="637534208,637534245,33554450,33554447,33554451,637534243,637534244,16777268,637534253,637534251,33554437,33554441,637534246" valuelabels="Fe_liv,Fe_liv_in_ser,Fe_liv_2,Fe_ser,Fe_liv_3,Fe_liv_to_ferritin,Fe_liv_from_ferritin,Fpn_liv_knockout,Fpn_liv_mRNA_in,Fpn_liv_in,Fpn_liv_mRNA,Fpn_liv,Fe_liv_out_ser" inputs="id1,16777260,1,1;idfpnliv,16777268,1,1,t" inputlabels="Fe_food,Fpn_liv_knockout"></bdl-fmi>
+<bdl-fmi id="idfmi" mode="" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.1" fpslimit="60" guid="{9aa10b27-427c-44c9-a381-5815d5706331}" valuereferences="637534208,637534245,33554450,33554447,33554451,637534243,637534244,16777268,637534253,637534251,33554437,33554441,637534246" valuelabels="Fe_liv,Fe_liv_in_ser,Fe_liv_2,Fe_ser,Fe_liv_3,Fe_liv_to_ferritin,Fe_liv_from_ferritin,Fpn_liv_knockout,Fpn_liv_mRNA_in,Fpn_liv_in,Fpn_liv_mRNA,Fpn_liv,Fe_liv_out_ser" inputs="id1,16777260,1,1;idfpnliv,16777268,1,1,t" inputlabels="Fe_food,Fpn_liv_knockout" showtime="1" showtimemultiply="3600"></bdl-fmi>
 
 
 
@@ -118,7 +118,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 <div id="legenda" class="w3-card w3-small w3-padding" style="display:none;z-index:1;position:absolute;top:20px;right:10px;width:500px;background-color:white">
 legenda
-<button class="w3-button w3-theme w3-right" onclick="document.getElementById('legenda').style.display='none'">Skryj legendu <i class="fa fa-close"/> </button>
+<button class="w3-button w3-theme w3-right" onclick="document.getElementById('legenda').style.display='none'">Skryj legendu <i class="fa fa-close"></i> </button>
 button
 
 |Schéma|Popis/funkce|
