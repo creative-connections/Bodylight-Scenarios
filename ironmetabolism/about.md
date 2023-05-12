@@ -17,7 +17,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 # Vyloučení odpovědnosti
 
-Trendy a dynamika simulovaného systému odpovídají fyziologii člověka, veškeré absolutní hodnoty vygenerované simulátorem jsou pouze orientační. Matematický model metabolismu železa byl verifikován podle experimentů převážně na myších. Uvedené absolutní vstupní hodnoty příjmů a ztrát železa jsou reálné pro fyziologii člověka. Ostatní hodnoty jsou v simulátorech uváděny jen jako relativní. Aproximace na humánní fyziologii byla provedena v simulátorech a v textus ohledem k výše zmíněným datům z experimentů. 
+Trendy a dynamika simulovaného systému odpovídají fyziologii člověka, veškeré absolutní hodnoty vygenerované simulátorem jsou pouze orientační. Matematický model metabolismu železa byl verifikován podle experimentů převážně na myších. Uvedené absolutní vstupní hodnoty příjmů a ztrát železa jsou reálné pro fyziologii člověka. Ostatní hodnoty jsou v simulátorech uváděny jen jako relativní. Aproximace na humánní fyziologii byla provedena v simulátorech a v textu s ohledem k zmíněným datům z experimentů.
 
 # Reference
 **Fyziologie, strukturní biologie**
