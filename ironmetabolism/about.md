@@ -15,12 +15,12 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 | | Ing. Filip Ježek, Ph.D. |
 | | Bc. David Polák |
 
+# Vyloučení odpovědnosti
+
+Trendy a dynamika simulovaného systému odpovídají fyziologii člověka, veškeré absolutní hodnoty vygenerované simulátorem jsou pouze orientační. Matematický model metabolismu železa byl verifikován podle experimentů převážně na myších. Uvedené absolutní vstupní hodnoty příjmů a ztrát železa jsou reálné pro fyziologii člověka. Ostatní hodnoty jsou v simulátorech uváděny jen jako relativní. Aproximace na humánní fyziologii byla provedena v simulátorech a v textus ohledem k výše zmíněným datům z experimentů. 
 
 # Reference
 **Fyziologie, strukturní biologie**
-
-Matematický model metabolismu železa byl verifikován podle experimentů převážně na myších. Aproximace na humánní fyziologii byla provedena v simulátorech a v textu
-s ohledem k výše zmíněným datům z experimentů. Uvedené absolutní vstupní hodnoty příjmů a ztrát železa jsou reálné pro fyziologii člověka. Ostatní hodnoty jsou v simulátorech relativní.
 
   1. Enculescu M, Metzendorf C, Sparla R, Hahnel M, Bode J, et al. (2017) Modelling Systemic Iron Regulation during Dietary Iron Overload and Acute Inflammation: Role of Hepcidin-Independent Mechanisms. PLOS Computational Biology 13(1): e1005322. https://doi.org/10.1371/journal.pcbi.1005322
   2. Kemna EH, Tjalsma H, Willems HL, Swinkels DW (January 2008). "Hepcidin: from discovery to differential diagnosis". Haematologica. 93 (1): 90–7. doi: https://doi.org/10.3324/haematol.11705 
