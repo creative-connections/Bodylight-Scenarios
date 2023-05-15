@@ -1,7 +1,7 @@
 <div class="w3-row">
 <div class="w3-half w3-center">
 
-Obr. kostní dřeň 2
+![spleencellsim](spleencellsim.png)
 
 </div>
 <div class="w3-half w3-justify w3-padding">
