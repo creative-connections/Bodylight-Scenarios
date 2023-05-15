@@ -1,6 +1,8 @@
 <div class="w3-row">
 <div class="w3-half w3-center">
 
+![othercellsim](othercellsim.png)
+
 Obr. simulator
 
 </div>
@@ -12,8 +14,6 @@ V první části jsme si vysvětlili metabolismus železa v duodenálním entero
 
 Proč je železo důležité pro obecnou buňku a na kterých procesech se podílí?
 Která organela má nejvyšší koncentraci železa v buňce?
-
-
 
 </div>
 </div>
