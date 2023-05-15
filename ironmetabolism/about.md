@@ -37,6 +37,7 @@ Development of In-Browser Simulators for Medical Education: Introduction of a No
 J Med Internet Res 2019;21(7):e14160
 URL: https://www.jmir.org/2019/7/e14160
 DOI: 10.2196/14160
+  * Tomas Kulhanek, & Jiri Kofranek. (2022). Bodylight.js-Components open-source software library to enable FMU and Modelica simulation on the web. Software. Zenodo. https://doi.org/10.5281/zenodo.4575354
 
 
 
