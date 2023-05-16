@@ -1,7 +1,15 @@
 <div class="w3-row">
 <div class="w3-half w3-center">
 
-Obr. kostní dřeň
+<br/>
+<br/>
+<br/>
+<br/>
+
+<div class="sketchfab-embed-wrapper" style="width:100%; height:500px"> <iframe title="Internal Bone Structure" style="width:100%;height:100%" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/a3e37470cb91407caf00f668db2177bb/embed?autostart=1"> </iframe> </div>
+
+Obr. 3D model kosti, kostní dřeň. Originál viz https://skfb.ly/oqEtU
+
 
 
 </div>
