@@ -38,18 +38,15 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a findex="7" aname="children.1.SemaforFpn_anim" amin="0" amax="19" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a findex="2" aname="children.1.CervenaSipka7_anim" amin="0" amax="159"></bdl-bind2a>
 
+<div class="w3-small w3-justify w3-theme-l4">Trendy a dynamika simulovaného systému odpovídají fyziologii člověka, veškeré absolutní hodnoty vygenerované simulátorem jsou pouze orientační.</div>
 </div>
 <div class="w3-col s12 m4 l4 w3-justify w3-small">
 
-<button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
+<button class="w3-right w3-button w3-theme-d4" onclick="document.getElementById('legenda').style.display='block'"><i class="fa fa-info-circle"></i></button>
 <!-- hidden input  - buttonparams must be before fmi component - or input with id must be created explicitly -->
 <input id="id6" value="" type="number" style="display:none"/>
 
 <bdl-fmi id="idfmi" mode="" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.1" fpslimit="60" guid="{9aa10b27-427c-44c9-a381-5815d5706331}" valuereferences="637534208,637534245,33554450,33554447,33554451,637534243,637534244,16777268" valuelabels="Fe_liv,Fe_liv_in_ser,Fe_liv_2,Fe_ser,Fe_liv_3,Fe_liv_to_ferritin,Fe_liv_from_ferritin,Fpn_liv_knockout" inputs="id1,16777260,1,1;idfpnliv,16777268,1,1,t" inputlabels="Fe_food,Fpn_liv_knockout" showtime="true" showtimemultiply="3600"></bdl-fmi>
-
-
-
-
 
 <div class="w3-border w3-panel">
 
@@ -76,7 +73,7 @@ Nyní již bez kvízu.
 </div>
 
 <div id="legenda" class="w3-card w3-small w3-padding" style="display:none;z-index:1;position:absolute;top:20px;right:10px;width:500px;background-color:white">
-legenda
+
 <button class="w3-button w3-theme w3-right" onclick="document.getElementById('legenda').style.display='none'">Skryj legendu <i class="fa fa-close"></i> </button>
 button
 
@@ -108,6 +105,5 @@ button
 |![imageferroportin](smallferroportin.png)|Ferroportin|Ferroportin|
 |![imagetfr1](imgtfr1.png)|TfR1|Transferinový receptor 1|
 |![imageschemasteap3](imgmetaloreduktaza.png)| STEAP3 | Metaloreduktáza |
-konec legendy
 </div>
 
