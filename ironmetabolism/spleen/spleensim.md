@@ -8,13 +8,13 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 Obr. simulator
 <bdl-animate-adobe src="BunkaSlezinaObrazovka1.js" width="800" height="600" name="BunkaSlezinaObrazovka1" fromid="idfmi" responsive="true"></bdl-animate-adobe>
-<bdl-bind2a-text findex="11" aname="children.0.Hodnota7_text"></bdl-bind2a-text>
-<bdl-bind2a-text findex="12" aname="children.0.Hodnota3_text"></bdl-bind2a-text>
-<bdl-bind2a-text findex="11" aname="children.0.Hodnota1_text"></bdl-bind2a-text>
-<bdl-bind2a-text findex="4" aname="children.0.Hodnota2_text"></bdl-bind2a-text>
-<bdl-bind2a-text findex="7" aname="children.0.Hodnota6_text"></bdl-bind2a-text>
-<bdl-bind2a-text findex="10" aname="children.0.Hodnota5_text"></bdl-bind2a-text>
-<bdl-bind2a-text findex="9" aname="children.0.Hodnota4_text"></bdl-bind2a-text>
+<bdl-bind2a-text findex="11" aname="children.0.Hodnota7_text" convertor="1,0.665" precision="3"></bdl-bind2a-text>
+<bdl-bind2a-text findex="12" aname="children.0.Hodnota3_text" fixed="1"></bdl-bind2a-text>
+<bdl-bind2a-text findex="11" aname="children.0.Hodnota1_text" convertor="1,0.665" precision="3"></bdl-bind2a-text>
+<bdl-bind2a-text findex="4" aname="children.0.Hodnota2_text" convertor="1,1.5"></bdl-bind2a-text>
+<bdl-bind2a-text findex="7" aname="children.0.Hodnota6_text" convertor="1,0.9"></bdl-bind2a-text>
+<bdl-bind2a-text findex="10" aname="children.0.Hodnota5_text" convertor="1,4.4"></bdl-bind2a-text>
+<bdl-bind2a-text findex="9" aname="children.0.Hodnota4_text" convertor="1,13.3"></bdl-bind2a-text>
 <bdl-bind2a findex="26" aname="children.0.children.355.MerakSemaforu5_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="3" aname="children.0.children.355.MerakSemaforu4_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="25" aname="children.0.children.355.MerakSemaforu3_anim" amin="0" amax="159"></bdl-bind2a>
@@ -46,7 +46,7 @@ Obr. simulator
 <bdl-bind2a findex="6" aname="children.0.KapackaFeFialovaSipkaOut_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="13" aname="children.0.StrikackaModra_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="11" aname="children.0.merak7_anim" amin="0" amax="99"></bdl-bind2a>
-<bdl-bind2a findex="12" aname="children.0.Merak3_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="12" aname="children.0.Merak3_anim" amin="0" amax="99" fmin="0" fmax="700"></bdl-bind2a>
 <bdl-bind2a findex="11" aname="children.0.Merak1_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="10" aname="children.0.Merak5_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="9" aname="children.0.Fe3SkupinaMitochondrie_anim" amin="0" amax="159"></bdl-bind2a>
@@ -81,8 +81,6 @@ Obr. simulator
 
 
 
-
-
 </div>
 <div class="w3-third w3-justify w3-padding w3-small">
 
@@ -90,7 +88,7 @@ Obr. simulator
 <!-- hidden input  - buttonparams sets this input value explicitly, then it is read by fmi component -->
 <input id="idlps" value="" type="number" style="display:none"/>
 
-<bdl-fmi id="idfmi" mode="" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.05" fpslimit="10" guid="{9aa10b27-427c-44c9-a381-5815d5706331}" valuereferences="637534275,637534274,637534276,33554442,33554447,637534264,16777264,33554438,16777261,33554453,33554452,33554432,33554436,33554434,16777269,637534273,637534272,637534281,637534283,637534268,16777266,16777267,16777268,16777270,33554443,33554441,33554444" valuelabels="Fe_spl_in_bm,Fe_spl_in_RBC,Fe_spl_out_ser,Fpn_spl,Fe_ser,hep_in,transfusion,Fpn_spl_mRNA,bleeding,Fe_spl_3,Fe_spl_2,hep,Il6,LPS,Fpn_spl_knockout,Fe_spl_from_ferritin,Fe_spl_to_ferritin,Fpn_spl_in,Fpn_spl_mRNA_in,Il6_in,hep_knockout,Fpn_duo_knockout,Fpn_liv_knockout,Fpn_res_knockout,Fpn_duo,Fpn_liv,Fpn_res" inputs="id1,16777260,1,1;idfpnliv,16777268,1,1,t;idhep,16777266,1,1,t;idlps,33554434,1,1,t;id11,16777262,1,1,t;id10,16777265,1,1,t;idspl,16777269,1,1,t;idres,16777270,1,1,t;id7,16777261,1,1,t;id8,16777264,1,1,t" inputlabels="Fe_food,Fpn_liv_knockout,hep_knockout,LPS,malabsorption,unregulated_absorption,Fpn_spl_knockout,Fpn_res_knockout,bleeding,transfusion"></bdl-fmi>
+<bdl-fmi id="idfmi" mode="" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.05" fpslimit="10" guid="{9aa10b27-427c-44c9-a381-5815d5706331}" valuereferences="637534275,637534274,637534276,33554442,33554447,637534264,16777264,33554438,16777261,33554453,33554452,33554432,33554436,33554434,16777269,637534273,637534272,637534281,637534283,637534268,16777266,16777267,16777268,16777270,33554443,33554441,33554444" valuelabels="Fe_spl_in_bm,Fe_spl_in_RBC,Fe_spl_out_ser,Fpn_spl,Fe_ser,hep_in,transfusion,Fpn_spl_mRNA,bleeding,Fe_spl_3,Fe_spl_2,hep,Il6,LPS,Fpn_spl_knockout,Fe_spl_from_ferritin,Fe_spl_to_ferritin,Fpn_spl_in,Fpn_spl_mRNA_in,Il6_in,hep_knockout,Fpn_duo_knockout,Fpn_liv_knockout,Fpn_res_knockout,Fpn_duo,Fpn_liv,Fpn_res" inputs="id1,16777260,1,1;idfpnliv,16777268,1,1,t;idhep,16777266,1,1,t;idlps,33554434,1,1,t;id11,16777262,1,1,t;id10,16777265,1,1,t;idspl,16777269,1,1,t;idres,16777270,1,1,t;id7,16777261,1,1,t;id8,16777264,1,1,t" inputlabels="Fe_food,Fpn_liv_knockout,hep_knockout,LPS,malabsorption,unregulated_absorption,Fpn_spl_knockout,Fpn_res_knockout,bleeding,transfusion" showtime="true" showtimemultiply="3600"></bdl-fmi>
 
 
 
