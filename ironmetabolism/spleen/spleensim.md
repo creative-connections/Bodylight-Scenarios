@@ -44,7 +44,7 @@ Obr. simulator
 <bdl-bind2a findex="14" aname="children.0.SemaforRuzovaRna_anim" amin="0" amax="10"></bdl-bind2a>
 <bdl-bind2a findex="8" aname="children.0.StrikackaFeFialovaSipkaIn_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="6" aname="children.0.KapackaFeFialovaSipkaOut_anim" amin="0" amax="159"></bdl-bind2a>
-<bdl-bind2a findex="13" aname="children.0.StrikackaModra_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="13" aname="children.0.StrikackaModra_anim" amin="0" amax="29" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a findex="11" aname="children.0.merak7_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="12" aname="children.0.Merak3_anim" amin="0" amax="99" fmin="0" fmax="700"></bdl-bind2a>
 <bdl-bind2a findex="11" aname="children.0.Merak1_anim" amin="0" amax="99"></bdl-bind2a>
@@ -78,6 +78,7 @@ Obr. simulator
 <bdl-bind2a findex="0" aname="children.0.KanalZluty_anim" amin="159" amax="0"></bdl-bind2a>
 <bdl-bind2a findex="0" aname="children.0.SipkaHneda2_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="0" aname="children.0.SipkaHneda1_anim" amin="0" amax="159"></bdl-bind2a>
+
 
 
 
