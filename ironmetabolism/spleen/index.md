@@ -6,9 +6,7 @@
 <br/>
 <br/>
 
-<div class="sketchfab-embed-wrapper" style="width:100%; height:500px"> <iframe title="Internal Bone Structure" style="width:100%;height:100%" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/a3e37470cb91407caf00f668db2177bb/embed?autostart=1"> </iframe> </div>
-
-Obr. 3D model kosti, kostní dřeň. Originál viz https://skfb.ly/oqEtU
+<bdl-animate-adobe src="ZelezoHotove.js" width="800" height="600" name="ZelezoHotove" fromid="idfmi" responsive="true" playafterstart="true"></bdl-animate-adobe>
 
 
 
