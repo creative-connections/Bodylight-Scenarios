@@ -1,7 +1,9 @@
 <div class="w3-row">
 <div class="w3-half w3-center">
 
-Obr. kostní dřeň 3
+![anemie_textura](anemie_textura.jpg)
+
+Obr. anémie
 
 </div>
 <div class="w3-half w3-justify w3-padding">
