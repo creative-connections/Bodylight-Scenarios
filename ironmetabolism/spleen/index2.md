@@ -1,7 +1,9 @@
 <div class="w3-row">
 <div class="w3-half w3-center">
 
-Obr. kostní dřeň 2
+![KostniDrenH](KostniDrenH.jpg)
+
+Obr. kostní dřeň
 
 </div>
 <div class="w3-half w3-justify w3-padding">
