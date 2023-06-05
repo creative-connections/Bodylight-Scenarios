@@ -1,7 +1,8 @@
 <div class="w3-row">
 <div class="w3-half w3-center">
 
-![spleencellsim](spleencellsim.png)
+
+![SlezinaH](SlezinaH.jpg)
 
 </div>
 <div class="w3-half w3-justify w3-padding">
