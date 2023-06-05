@@ -1,14 +1,14 @@
 <div class="w3-row">
 <div class="w3-twothird w3-center">
 
-<bdl-animate-adobe src="ZelezoKulataBunkaFinal2.js" width="800" height="600" name="ZelezoKulataBunkaFinal2" fromid="0" responsive="true"></bdl-animate-adobe>
-<bdl-bind2a-text findex="5" aname="children.0.Hodnota1_text"></bdl-bind2a-text>
-<bdl-bind2a-text findex="4" aname="children.0.Hodnota2_text"></bdl-bind2a-text>
-<bdl-bind2a-text findex="0" aname="children.0.Hodnota3_text"></bdl-bind2a-text>
-<bdl-bind2a-text findex="27" aname="children.0.Hodnota6_text"></bdl-bind2a-text>
-<bdl-bind2a-text findex="23" aname="children.0.Hodnota5_text"></bdl-bind2a-text>
-<bdl-bind2a-text findex="17" aname="children.0.Hodnota7_text"></bdl-bind2a-text>
-<bdl-bind2a-text findex="22" aname="children.0.Hodnota4_text"></bdl-bind2a-text>
+<bdl-animate-adobe src="ZelezoKulataBunkaFinal2.js" width="800" height="600" name="ZelezoKulataBunkaFinal2" fromid="idfmi" responsive="true"></bdl-animate-adobe>
+<bdl-bind2a-text findex="5" aname="children.0.Hodnota1_text" convertor="1,100,0.001" fixed="1"></bdl-bind2a-text>
+<bdl-bind2a-text findex="4" aname="children.0.Hodnota2_text" convertor="1,0.7"></bdl-bind2a-text>
+<bdl-bind2a-text findex="0" aname="children.0.Hodnota3_text" convertor="1,1.5"></bdl-bind2a-text>
+<bdl-bind2a-text findex="27" aname="children.0.Hodnota6_text" convertor="1,0.9"></bdl-bind2a-text>
+<bdl-bind2a-text findex="23" aname="children.0.Hodnota5_text" convertor="1,350.1"></bdl-bind2a-text>
+<bdl-bind2a-text findex="17" aname="children.0.Hodnota7_text" convertor="1,1.6"></bdl-bind2a-text>
+<bdl-bind2a-text findex="22" aname="children.0.Hodnota4_text" convertor="1,116.7"></bdl-bind2a-text>
 <bdl-bind2a findex="3" aname="children.0.StrikackaFeFialovaSipkaIn_anim" amin="0" amax="159" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a findex="2" aname="children.0.KapackaFeFialovaSipkaOut_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="21" aname="children.0.SipkaCervenaFialovyKanal2_anim" amin="0" amax="159"></bdl-bind2a>
@@ -84,6 +84,10 @@
 <bdl-bind2a findex="16" aname="children.0.SipkaHneda2_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="16" aname="children.0.SipkaHneda1_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="15" aname="children.0.children.278.SipkaRuzova2RNA_anim" amin="0" amax="159"></bdl-bind2a>
+
+
+
+
 
 
 
