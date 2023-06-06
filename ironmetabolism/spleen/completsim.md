@@ -42,7 +42,7 @@
 <bdl-bind2a findex="4" aname="children.0.JatraZlutaCaraHepcidin_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="21" aname="children.0.SrdceKanalFialovy_anim" amin="99" amax="0"></bdl-bind2a>
 <bdl-bind2a findex="11" aname="children.0.SrdceSemafor_anim" amin="0" amax="8" fmin="0" fmax="1"></bdl-bind2a>
-<bdl-bind2a findex="LPS" aname="children.0.StrikackaModra_anim" amin="0" amax="29" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="6" aname="children.0.StrikackaModra_anim" amin="0" amax="29" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a findex="17" aname="children.0.merakPopelnice2_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="33" aname="children.0.merakPopelnice1_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="0" aname="children.0.CevaTransferinMerak_anim" amin="0" amax="99"></bdl-bind2a>
