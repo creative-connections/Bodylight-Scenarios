@@ -38,7 +38,6 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a findex="7" aname="children.1.SemaforFpn_anim" amin="0" amax="19" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a findex="2" aname="children.1.CervenaSipka7_anim" amin="0" amax="159"></bdl-bind2a>
 
-<div class="w3-small w3-justify w3-theme-l4">Trendy a dynamika simulovaného systému odpovídají fyziologii člověka, veškeré absolutní hodnoty vygenerované simulátorem jsou pouze orientační.</div>
 </div>
 <div class="w3-col s12 m4 l4 w3-justify w3-small">
 
