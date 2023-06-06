@@ -25,7 +25,7 @@ Obr. simulator
 <bdl-bind2a findex="22" aname="children.0.children.355.Semafor3_anim" amin="0" amax="10"></bdl-bind2a>
 <bdl-bind2a findex="21" aname="children.0.children.355.Semafor2_anim" amin="0" amax="10"></bdl-bind2a>
 <bdl-bind2a findex="20" aname="children.0.children.355.Semafor1_anim" amin="0" amax="10"></bdl-bind2a>
-<bdl-bind2a findex="8" aname="children.0.StrikackaCervena_anim" amin="0" amax="29"></bdl-bind2a>
+<bdl-bind2a-play findex="8" aname="children.0.StrikackaCervena_anim" amin="0" amax="29"></bdl-bind2a-play>
 <bdl-bind2a findex="0" aname="children.0.KanalCerveny2_anim" amin="159" amax="0"></bdl-bind2a>
 <bdl-bind2a findex="2" aname="children.0.SipkaCerven11_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="10" aname="children.0.SipkaCerven8_anim" amin="0" amax="159"></bdl-bind2a>
@@ -56,14 +56,14 @@ Obr. simulator
 <bdl-bind2a findex="10" aname="children.0.Fe2Skupina_anim" amin="159" amax="0"></bdl-bind2a>
 <bdl-bind2a findex="9" aname="children.0.merak4_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="9" aname="children.0.Fe3Skupina_anim" amin="0" amax="159"></bdl-bind2a>
-<bdl-bind2a findex="6" aname="children.0.KapackaJehlaFe_anim" amin="0" amax="9"></bdl-bind2a>
+<bdl-bind2a-play findex="6" aname="children.0.KapackaJehlaFe_anim" amin="0" amax="9"></bdl-bind2a-play>
 <bdl-bind2a findex="0" aname="children.0.SipkaModra3_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="0" aname="children.0.SipkaCerven13_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="4" aname="children.0.Merak2_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="7" aname="children.0.Merak6_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="8" aname="children.0.KapackaFeMale_anim" amin="0" amax="9"></bdl-bind2a>
-<bdl-bind2a findex="6" aname="children.0.ZelezoVelkeKapacka_anim" amin="0" amax="159"></bdl-bind2a>
-<bdl-bind2a findex="6" aname="children.0.children.90.children.59.Kapka1_anim" amin="0" amax="20"></bdl-bind2a>
+<bdl-bind2a-play findex="6" aname="children.0.ZelezoVelkeKapacka_anim" amin="0" amax="159"></bdl-bind2a-play>
+<bdl-bind2a-play findex="6" aname="children.0.children.90.children.59.Kapka1_anim" amin="0" amax="20"></bdl-bind2a-play>
 <bdl-bind2a findex="5" aname="children.0.SipkaRuzovaZluta_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="4" aname="children.0.children.87.FeTransferin_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="3" aname="children.0.KanalFialovy_anim" amin="159" amax="0"></bdl-bind2a>
