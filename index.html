@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>e-golem online</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="favicon.ico">  
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BQLQED00TM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <link rel="icon" href="favicon.ico">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BQLQED00TM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-BQLQED00TM');
-</script>
+    gtag('config', 'G-BQLQED00TM');
+  </script>
   <!-- firebase ui prepare after implemented >
   <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-auth-compat.js"></script>
@@ -22,54 +23,90 @@
 
   <script src="bodylightweb.bundle.js"></script>
 </head>
+
 <body aurelia-app="main" style="max-width:1920px;margin:auto">
-<bd-header1></bd-header1>
-<bd-body>  
-  <!--h1 class="w3-center" t="welcome"></h1-->
-  <br/>
-  <bd-bodyleft>
-    
+  <bd-header1 indexlink="index.html" aboutlink="about.html" demolink="demo/index.html"></bd-header1>
+  <a id="register-login"></a>
+  <bd-body>
+    <br />
+    <bd-bodyleft>      
+      <bd-center-panel title="eGolem.online"
+        subtitle="" img="img/Logo_golem.svg" imgwidth="100px" width="80%" spaceafter="false"> in digital textbook of medical physiology and with interactive animation
+        driven by scientifically verified mathematical models. See our <a href="demo/"
+          class="w3-button w3-theme-l1 w3-large w3-margin-right" t="[title]demo-title" >DEMO</a></bd-center-panel>      
+      <br />
+    </bd-bodyleft>
+    <bd-bodyright>        
+      <bd-loginfb></bd-loginfb>
+    </bd-bodyright>
+  </bd-body>
 
-    <span t="welcome-text"></span>
-    <br/>
-    <br/>          
-
-    <a href="demo/" class="w3-button w3-theme-l1 w3-large w3-left w3-margin-right" t="[title]demo-title">DEMO</a>
-
-    <div class="w3-padding-left w3-margin-left" t="demo-text"></div>
-  <br/>
-  <p>
-  </p>
-    
-
-  </bd-bodyleft>
-  <bd-bodyright>        
-    <bd-loginfb></bd-loginfb>
-  </bd-bodyright>
-</bd-body>
-
-<bd-panels t="[title]panel1-title">
   <bd-auth-no-content>
-    <div class="w3-theme-l4">
-      <span t="not-logged-text"></span>
-    </div>
+    <div style="margin:240px!important"></div>
+    <bd-center-panel title="Digital textbook" subtitle="with interactive elements" href=""
+      img="img/egolemonline.gif"></bd-center-panel>
+    <bd-center-panel title="Animation of organs driven by model"
+      subtitle="you can change parameter or apply a drug and see immediate effect" href=""
+      img="img/hemomodelsim.gif"></bd-center-panel>
+    <bd-center-panel title="Animation of cells driven by model"
+      subtitle="change interactively and see effects" href="" img="img/ironmetabolism.gif"></bd-center-panel>
+    <bd-center-panel title="Animation of whole body driven by model"
+      subtitle="to comprehend complex physiology knowledge" href="" img="img/bloodgases.gif"></bd-center-panel>
+    <bd-center-panel title="" subtitle="Visualisation is driven by mathematical model scientifically verified and published"
+      href="" img="img/heartanimation.gif"></bd-center-panel>
+    <bd-center-panel title="" subtitle="Complex problems are explained in game-like scenarios" href=""
+      img="img/hepcidineanim.gif"></bd-center-panel>
+    <bd-center-panel title="" subtitle="Comprehend physiology, pathophysiology and clinical physiology" href=""
+      img="img/cardiacoutputeffect.gif"></bd-center-panel>
+
+    <bd-center-panel title="Delivered as" subtitle="web app, mobile/tablet app" href=""
+      img="img/simulatordevices.jpg"></bd-center-panel>
+    <bd-center-panel title="Virtual reality experience" subtitle="" href=""
+      img="img/virtualpatient.gif"></bd-center-panel>
+    <bd-center-panel title="Control of physical mannequin" subtitle=" and mockup of medical device" href=""
+      img="img/mannequinsimulator.gif"></bd-center-panel>
+    <bd-center-panel title="See our interactive" subtitle="" href="demo/index.html" img="">
+      <div class="w3-button w3-theme-l1">DEMO</div>
+    </bd-center-panel>
+    <bd-center-panel title="Powered by Bodylight.js<sup>open-source</sup> technology with true in-browser experience."
+      subtitle="no server, no plugin, no addons needed." href="https://bodylight.physiome.cz"
+      img="img/bodylight_logo_text.svg" imgwidth="250px"></bd-center-panel>
+    <bd-center-panel title="Access further digital textbook"
+      subtitle="after registration. Limited number of topics are available." href=""><a href="#register-login"
+        class="w3-button w3-theme-l4">go to register or login section</a></bd-center-panel>
   </bd-auth-no-content>
 
-  <br/>  
-  <bd-panel href="ironmetabolism/" icon="img/Zelezo.png" title="&nbsp;Iron&nbsp;Metabolism&nbsp;">Physiology of digestion of iron ions&nbsp;&nbsp;&nbsp;&nbsp;<br/>and its usage in organs(CZ beta)</bd-panel>
-  <bd-panel href="hemodynamics/" icon="img/PostavaObeh.png" title="Hemodynamics">Cardiovascular hemodynamics (CZ alpha)<br/>&nbsp;</bd-panel>
-  <bd-panel href="bloodgases/" icon="img/vymenaPlynu.png" title="Blood&nbsp;Gases">physiology of acid base balance&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp; work in progress(CZ alpha)</bd-panel>
-  <bd-panel href="circulation/" icon="img/Obeh.png" title="Circulation">Nonpulsatile circulation (CZ alpha)<br/>&nbsp;</bd-panel>
-</bd-panels>
-<bd-panels t="[title]other-simulators">
-  <br/>
-  <bd-panel2 href="casereports/" icon="img/Kostra.png" title="Case Reports">(CZ)<br/>&nbsp;<br/></bd-panel2>
-  <bd-panel2 href="https://physiome.cz/apps/circulation_en/index.html" icon="img/Obeh.png" title="Circulation">Non-pulsatile<br/> cardiovascular physiology (EN)</bd-panel2>
-  <bd-panel2 href="https://www.physiome.cz/apps/Nephron/0_index.html" icon="img/Postava3.png" title="Kidney&nbsp;nefron">Physiology in parts of nefron<br/>&nbsp; (EN)</bd-panel2>
-</bd-panels>
-<bd-infopanel href="" icon="img/simulatordevices.jpg" title="Web, iOS and Android version">
-  e-Golem comes in web version. iOS and Android version will come soon.
-</bd-infopanel>
-<bd-footer1></bd-footer1>
+  <bd-auth-yes-content>
+    <bd-panels t="[title]panel1-title">
+      <br />
+      <bd-panel href="hemodynamics/" icon="img/PostavaObeh.png" title="Hemodynamics">Cardiovascular hemodynamics
+        (CZ)<br />&nbsp;</bd-panel>
+      <bd-panel href="ironmetabolism/" icon="img/Zelezo.png" title="&nbsp;Iron&nbsp;Metabolism&nbsp;">Physiology of iron
+        digestion (CZ)&nbsp;&nbsp;&nbsp;&nbsp;<br />liver and spleen usage(CZ)</bd-panel>
+      <bd-panel href="bloodgases/" icon="img/vymenaPlynu.png" title="Blood&nbsp;Gases">physiology of acid base
+        balance&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp; work in progress(CZ)</bd-panel>
+      <bd-panel href="circulation/" icon="img/Obeh.png" title="Circulation">Nonpulsatile circulation (CZ)<br />work in
+          progress&nbsp;</bd-panel>
+    </bd-panels>
+    <bd-panels t="[title]other-simulators">
+      <br />
+      <bd-panel href="casereports/" icon="img/Kostra.png" title="Case Reports">(CZ)<br />&nbsp;<br /></bd-panel>
+      <bd-panel href="https://physiome.cz/apps/circulation_en/index.html" icon="img/Obeh.png"
+        title="Circulation">Non-pulsatile<br /> cardiovascular physiology (EN)</bd-panel>
+      <bd-panel href="https://www.physiome.cz/apps/Nephron/0_index.html" icon="img/Postava3.png"
+        title="Kidney&nbsp;nefron">Physiology in parts of nefron<br />&nbsp; (EN)</bd-panel>
+    </bd-panels>
+    <bd-infopanel href="" icon="img/simulatordevices.jpg" title="Web, iOS and Android version">
+      Web app: <a href="https://egolem.online"
+        class="w3-button w3-theme-l1">egolem.online</a> <br />
+      Android: <a
+        href="https://play.google.com/apps/internaltest/4701297074243151561"
+        class="w3-button w3-theme-l1">play.google.com</a>
+      <br />
+      iOS version: <span class="w3-theme-l4">in construction</span>
+    </bd-infopanel>
+  </bd-auth-yes-content>
+  <bd-footer1></bd-footer1>
 </body>
+
 </html>
