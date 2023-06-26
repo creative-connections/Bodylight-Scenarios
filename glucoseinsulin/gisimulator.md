@@ -8,12 +8,6 @@
 <bdl-fmi id="idfmi" mode="continuous" src="Metabolism_GlucoseInsulin_Models_GIRegulationComponent.js" fminame="Metabolism_GlucoseInsulin_Models_GIRegulationComponent" tolerance="0.001" starttime="0" fstepsize="360" fpslimit="10" guid="{27b77776-9fac-46c5-9a3f-9c5961d2e919}" valuereferences="335544322,335544321,637534222,335544320,905969685" valuelabels="glucoseConcMmolL,insulinConc,renalLoss.inflow.q,glucoseConc,to_pmolperL.y" inputs="id1,16777226,1,3600000000,t;id2,16777227,1,1,t;id3,16777225,1,3600000000,t;id4,16777222,1,1,t;id5,16777223,1,1,t;id6,16777229,1,1,t;id7,16777219,1,3600000000,t;id8,16777231,1,1,t;id9,33554434,1,1000,t;id11,16777233,1,1,t" inputlabels="renalLoss.desiredFlowRate,renalLoss.threshold,tissueUtilization.desiredFlowRate,insulinProduction.beta_mu,insulinProduction.phi,tissueUtilizationInsulinDependent.Nu_permu,glucoseProduction.desiredFlowRate,kgperm3tommolperl.k,glucosePortion.ingestAmmount,glucosePortion.ingestRate"></bdl-fmi>
 
 **2. set DM type**
-<div class="w3-tiny">
-<bdl-range id="id4" title="insulin production (beta) [ml.mU/mg.h]" min="10" max="2860" default="1430" step="10"></bdl-range>
-
-<bdl-range id="id6" title="tissueUtilization Insulin Dependent (nu) [ml/h/mU]" min="1400" max="239000" default="139000" step="100"></bdl-range> </div>
-
-
 
 <bdl-buttonparams title="DM 1. type" ids="id4,id6" values="14,139000" fromid="idfmi"> </bdl-buttonparams>
 <bdl-buttonparams title="DM 2. type" ids="id4,id6" values="1430,1400" fromid="idfmi"> </bdl-buttonparams>
@@ -21,10 +15,9 @@
 
 **3. administer sugar - meal**
 
-<bdl-buttonparams title="glucose ingest 10g (teaspoon or 1dc coke)" ids="id9" values="10" fromid="idfmi"> </bdl-buttonparams>
-<bdl-buttonparams title="glucose ingest 50g (meal)" ids="id9" values="50" fromid="idfmi"> </bdl-buttonparams>
-<bdl-buttonparams title="glucose ingest 100g (1l coke)" ids="id9" values="100" fromid="idfmi"> </bdl-buttonparams>
-
+<bdl-buttonparams title="10g (teaspoon)" ids="id9" values="10" fromid="idfmi"> </bdl-buttonparams>
+<bdl-buttonparams title="50g (meal)" ids="id9" values="50" fromid="idfmi"> </bdl-buttonparams>
+<bdl-buttonparams title="100g (1l coke)" ids="id9" values="100" fromid="idfmi"> </bdl-buttonparams>
 
 **4. change other params manually**
 
@@ -34,11 +27,11 @@
 
 <bdl-range id="id3" title="tissueUtilization [ml/h]" min="300" max="24700" default="2470" step="10"></bdl-range>
 
-<!--bdl-range id="id4" title="insulin production (beta) [ml.mU/mg.h]" min="10" max="2860" default="1430" step="10"></bdl-range-->
+<bdl-range id="id4" title="insulin production (beta) [ml.mU/mg.h]" min="10" max="2860" default="1430" step="10"></bdl-range>
 
 <bdl-range id="id5" title="insulin production threshold (phi) [mg/ml]" min="0.2" max="1" default="0.51" step="0.01"></bdl-range>
 
-<!--bdl-range id="id6" title="tissueUtilization Insulin Dependent (nu) [ml/h/mU]" min="13900" max="239000" default="139000" step="100"></bdl-range-->
+<bdl-range id="id6" title="tissueUtilization Insulin Dependent (nu) [ml/h/mU]" min="13900" max="239000" default="139000" step="100"></bdl-range>
 
 <bdl-range id="id7" title="glucose Production Rate [mg/h]" min="800" max="86000" default="8400" step="100"></bdl-range>
 
