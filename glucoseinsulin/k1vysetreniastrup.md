@@ -16,7 +16,9 @@ ASTRUP vstupní:
 </div>
 <div class="w3-half">
 
-<bdl-sachart fromid="idfmi" refindex="9,3" convertors="1,1,0;1,133.322" pH="7.14" pCO2="18.75" width="600" height="600"></bdl-sachart> 
+<bdl-sachart fromid="idfmi" refindex="9,3" convertors="1,1,0;1,133.322" pH="7.14" pCO2="18.75" width="600" height="600" p-h="7.14" p-c-o2="18.75"></bdl-sachart> 
+
+
 
 
 </div>
