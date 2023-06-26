@@ -3,9 +3,11 @@
 
 Diff. rozpočet leukocytů:
 
-Neutrofily 8,9 10na9/L (norma 2,0 - 7,0)
+|veličina | hodnota| rozptyl normy|
+|----|------------|------------|
+| Neutrofily | 8,9 e+9/L| (norma 2,0 - 7,0) |
+| Lymfocyty | 0,8 e+9/L | (norma 0,8 – 4,0) |
 
-Lymfocyty 0,8 10na9/L (norma 0,8 – 4,0)
 
 Monocyty, Eosinofily a basofily v normě
 
