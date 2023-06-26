@@ -1,6 +1,7 @@
 <div class="w3-row">
 <div class="w3-half">
 
+<div class="w3-khaki w3-xlarge w3-padding w3-margin">
 Biochemie vstupně:
 
 |veličina | hodnota| rozptyl normy|
@@ -19,7 +20,7 @@ Biochemie vstupně:
 | Glykemie |  48,4 mmol/l | [3,9..5,6] |
 | CRP | 58 mg/l | [0..10] |
  
- 
+</div> 
 
 </div>
 <div class="w3-half">
