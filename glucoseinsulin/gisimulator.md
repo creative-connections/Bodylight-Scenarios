@@ -1,5 +1,5 @@
 <div class="w3-row">
-<div class="w3-third">
+<div class="w3-half">
 
 # Glucose Insulin metabolism
 
@@ -11,13 +11,13 @@
 <div class="w3-tiny">
 <bdl-range id="id4" title="insulin production (beta) [ml.mU/mg.h]" min="10" max="2860" default="1430" step="10"></bdl-range>
 
-<bdl-range id="id6" title="tissueUtilization Insulin Dependent (nu) [ml/h/mU]" min="13900" max="239000" default="139000" step="100"></bdl-range> </div>
+<bdl-range id="id6" title="tissueUtilization Insulin Dependent (nu) [ml/h/mU]" min="1400" max="239000" default="139000" step="100"></bdl-range> </div>
 
 
 
-<bdl-buttonparams title="DM 1. type" ids="id4,id6" values="10,139000" fromid="idfmi"> </bdl-buttonparams>
-
-<bdl-buttonparams title="DM 2. type" ids="id4,id6" values="1430,13900" fromid="idfmi"> </bdl-buttonparams>
+<bdl-buttonparams title="DM 1. type" ids="id4,id6" values="14,139000" fromid="idfmi"> </bdl-buttonparams>
+<bdl-buttonparams title="DM 2. type" ids="id4,id6" values="1430,1400" fromid="idfmi"> </bdl-buttonparams>
+<bdl-buttonparams title="normal" ids="id4,id6" values="1430,139000" fromid="idfmi"> </bdl-buttonparams>
 
 **3. administer sugar - meal**
 
@@ -26,7 +26,8 @@
 <bdl-buttonparams title="glucose ingest 100g (1l coke)" ids="id9" values="100" fromid="idfmi"> </bdl-buttonparams>
 
 
-**4. change params manually**
+**4. change other params manually**
+
 <bdl-range id="id1" title="renalLoss [ml/h]" min="6000" max="72000" default="7200" step="100"></bdl-range>
 
 <bdl-range id="id2" title="renalLoss threshold [mg/ml]" min="0.25" max="5" default="3.8" step="0.05"  initdefault="true"></bdl-range> <!--was 2.5 -->
@@ -45,13 +46,13 @@
 
 
 </div>
-<div class="w3-twothird">
+<div class="w3-half">
 
-<bdl-chartjs-time width="800" height="200" fromid="idfmi" labels="glucose [mmol/l]" initialdata="" refindex="0" refvalues="1" throttle="100" timedenom="3600" maxdata="512"></bdl-chartjs-time> <bdl-value fromid="idfmi" refindex="0" default="0" class="w3-xxlarge w3-right w3-blue" throttle="1000"></bdl-value>
+<bdl-chartjs-time width="550" height="200" fromid="idfmi" labels="glucose [mmol/l]" initialdata="" refindex="0" refvalues="1" throttle="100" timedenom="3600" maxdata="512"></bdl-chartjs-time> <bdl-value fromid="idfmi" refindex="0" default="0" class="w3-xxlarge w3-right w3-blue" throttle="1000"></bdl-value>
 
-<bdl-chartjs-time width="800" height="200" fromid="idfmi" labels="insulin [pmol/L]" initialdata="" refindex="4" refvalues="1" throttle="100" timedenom="3600" maxdata="512" colorindex=1></bdl-chartjs-time> <bdl-value fromid="idfmi" refindex="4" default="0"  class="w3-xxlarge w3-right w3-red" throttle="1000"></bdl-value>
+<bdl-chartjs-time width="550" height="200" fromid="idfmi" labels="insulin [pmol/L]" initialdata="" refindex="4" refvalues="1" throttle="100" timedenom="3600" maxdata="512" colorindex=1></bdl-chartjs-time> <bdl-value fromid="idfmi" refindex="4" default="0"  class="w3-xxlarge w3-right w3-red" throttle="1000"></bdl-value>
 
-<bdl-chartjs-time width="800" height="200" fromid="idfmi" labels="renal loss [g/h]" initialdata="" refindex="2" refvalues="1" throttle="100"  maxdata="512" colorindex=2 convertors="3600000,1" timedenom="3600"></bdl-chartjs-time> <bdl-value fromid="idfmi" refindex="2" default="0"  class="w3-xxlarge w3-right w3-green" throttle="1000" convertor="3600000,1"></bdl-value>
+<bdl-chartjs-time width="550" height="200" fromid="idfmi" labels="renal loss [g/h]" initialdata="" refindex="2" refvalues="1" throttle="100"  maxdata="512" colorindex=2 convertors="3600000,1" timedenom="3600"></bdl-chartjs-time> <bdl-value fromid="idfmi" refindex="2" default="0"  class="w3-xxlarge w3-right w3-green" throttle="1000" convertor="3600000,1"></bdl-value>
 
 
 
