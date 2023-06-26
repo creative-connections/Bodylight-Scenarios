@@ -1,6 +1,5 @@
   * [index.md](#index.md)
-  * [Kazuistika 1]
-    * [K1 - úvod](#k1uvod.md) 
+  * [Kazuistika 1](#k1uvod.md) 
     * [k1subj](#k1subj.md)
     * [k1obj](#k1obj.md)
     * [k1transport](#k1transport.md)
@@ -13,5 +12,5 @@
     * [k1vysetreni7](#k1vysetreni7.md)
     * [k1vysetreni8](#k1vysetreni8.md)
     * [k1vysetreni9](#k1vysetreni9.md)
-  * [Simulátory] (#gisimulator0.md)
+  * [Simulátory](#gisimulator0.md)
     * [gisimulator.md](#gisimulator.md)
