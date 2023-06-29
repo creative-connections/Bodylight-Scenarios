@@ -12,5 +12,11 @@
     * [k1vysetreni7](#k1vysetreni7.md)
     * [k1vysetreni8](#k1vysetreni8.md)
     * [k1vysetreni9](#k1vysetreni9.md)
+    * [k1vysetreniDiff](#k1vysetreniDiff.md)
+    * [k1vysetrenibiochemie](#k1vysetrenibiochemie.md)
+    * [k1vysetreniastrup](#k1vysetreniastrup.md)
+    * [k1vysetreniastrup2](#k1vysetreniastrup2.md)
+    * [k1dychani](#k1dychani.md)
+
   * [Simulátory](#gisimulator0.md)
     * [gisimulator.md](#gisimulator.md)
