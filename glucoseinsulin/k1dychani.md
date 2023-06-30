@@ -18,6 +18,9 @@ Simulace a management léčby:
 
 <bdl-chartjs-time id="id11" width="500" height="150" fromid="lungsim" refindex="7" refvalues="1" labels="tidal volume"></bdl-chartjs-time>
 
+<bdl-value fromid="cardiohelp" refindex="1"></bdl-value>
+
+
 </div>
 <div class="w3-half">
 
