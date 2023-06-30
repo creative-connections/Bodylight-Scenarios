@@ -12,8 +12,10 @@ Simulace a management léčby:
 <bdl-range id="resistance" min="8" max="150" default="35" title="Resistance [cmH2O/(l.s)]"></bdl-range><br/>
 <bdl-range id="dot_v" min="0" max="150" default="0" title="Helper - use for state"></bdl-range><br/>
 </div>
-<bdl-buttonparams title="normální dýchání" ids="blend_duration,compliance,muscle_pressure,peep,resistance,rate,dot_v" values='4,50,33,5,35,17,"k1vysetreniastrup.md"'></bdl-buttonparams>
-<bdl-buttonparams title="Kussmaulovo dýchání" ids="blend_duration,compliance,muscle_pressure,peep,resistance,rate,dot_v" values='4,50,55,5,15,17,"k1dychani.md"'></bdl-buttonparams>
+<bdl-buttonparams title="normální dýchání" ids="blend_duration,compliance,muscle_pressure,peep,resistance,rate" values='4,50,33,5,35,17,"k1vysetreniastrup.md"'></bdl-buttonparams>
+<bdl-buttonparams title="Kussmaulovo dýchání" ids="blend_duration,compliance,muscle_pressure,peep,resistance,rate" values='4,50,55,5,15,17'></bdl-buttonparams>
+<bdl-buttonparams title="SA nomogram" ids="dot_v" values='"k1vysetreniastrup.md"'></bdl-buttonparams>
+<bdl-buttonparams title="EN nomogram" ids="dot_v" values='"k1vysetreniastrup2.md"'></bdl-buttonparams>
 
 <bdl-chartjs-time id="id11" width="500" height="150" fromid="lungsim" refindex="7" refvalues="1" labels="tidal volume"></bdl-chartjs-time>
 
