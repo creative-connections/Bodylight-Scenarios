@@ -2,7 +2,6 @@
 <div class="w3-half">
 
 Simulace a management léčby:
-
 **Human simulator <bdl-checkbox id="run" default="true" titlemin="STOPPED" titlemax="RUNNING"></bdl-checkbox><br/>**
 <!--bdl-range id="rate" min="0" max="100" default="7" step="0.5" title="breath rate [1/min]"></bdl-range><br/-->
 <div class="w3-hide">
