@@ -17,6 +17,5 @@
     * [k1vysetreniastrup](#k1vysetreniastrup.md)
     * [k1vysetreniastrup2](#k1vysetreniastrup2.md)
     * [k1dychani](#k1dychani.md)
-
   * [Simulátory](#gisimulator0.md)
     * [gisimulator.md](#gisimulator.md)
