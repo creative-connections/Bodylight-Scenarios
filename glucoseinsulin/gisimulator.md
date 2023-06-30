@@ -37,15 +37,14 @@
 
 <bdl-range id="id11" title="glucose ingest rate" min="0.0001" max="0.001" default="0.0005" step="0.0001" initdefault="true"></bdl-range>
 
-
 </div>
 <div class="w3-half">
 
-<bdl-chartjs-time width="550" height="200" fromid="idfmi" labels="glucose [mmol/l]" initialdata="" refindex="0" refvalues="1" throttle="100" timedenom="3600" maxdata="512"></bdl-chartjs-time> <bdl-value fromid="idfmi" refindex="0" default="0" class="w3-xxlarge w3-right w3-blue" throttle="1000"></bdl-value>
+<bdl-chartjs-time width="400" height="200" fromid="idfmi" labels="glucose [mmol/l]" initialdata="" refindex="0" refvalues="1" throttle="100" timedenom="3600" maxdata="512"></bdl-chartjs-time> <bdl-value fromid="idfmi" refindex="0" default="0" class="w3-xxlarge w3-right w3-blue" throttle="1000"></bdl-value>
 
-<bdl-chartjs-time width="550" height="200" fromid="idfmi" labels="insulin [pmol/L]" initialdata="" refindex="4" refvalues="1" throttle="100" timedenom="3600" maxdata="512" colorindex=1></bdl-chartjs-time> <bdl-value fromid="idfmi" refindex="4" default="0"  class="w3-xxlarge w3-right w3-red" throttle="1000"></bdl-value>
+<bdl-chartjs-time width="400" height="200" fromid="idfmi" labels="insulin [pmol/L]" initialdata="" refindex="4" refvalues="1" throttle="100" timedenom="3600" maxdata="512" colorindex=1></bdl-chartjs-time> <bdl-value fromid="idfmi" refindex="4" default="0"  class="w3-xxlarge w3-right w3-red" throttle="1000"></bdl-value>
 
-<bdl-chartjs-time width="550" height="200" fromid="idfmi" labels="renal loss [g/h]" initialdata="" refindex="2" refvalues="1" throttle="100"  maxdata="512" colorindex=2 convertors="3600000,1" timedenom="3600"></bdl-chartjs-time> <bdl-value fromid="idfmi" refindex="2" default="0"  class="w3-xxlarge w3-right w3-green" throttle="1000" convertor="3600000,1"></bdl-value>
+<bdl-chartjs-time width="400" height="200" fromid="idfmi" labels="renal loss [g/h]" initialdata="" refindex="2" refvalues="1" throttle="100"  maxdata="512" colorindex=2 convertors="3600000,1" timedenom="3600"></bdl-chartjs-time> <bdl-value fromid="idfmi" refindex="2" default="0"  class="w3-xxlarge w3-right w3-green" throttle="1000" convertor="3600000,1"></bdl-value>
 
 
 
