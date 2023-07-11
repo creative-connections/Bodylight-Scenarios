@@ -30,6 +30,5 @@ Simulace a management léčby:
 <span class="w3-tiny"><a href="https://patf-lab06.lf1.cuni.cz:5000/manequin" target="_blank">visit and enable self-signed cert: https://patf-lab06.lf1.cuni.cz:5000/manequin</a></span>
 ![body](body.png)
 
-
 </div>
 </div>
