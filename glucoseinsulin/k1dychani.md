@@ -10,7 +10,7 @@ Simulace a management léčby:
 <bdl-range id="muscle_pressure" min="0" max="100" default="33" title="Muscle Pressure [cmH2O]"></bdl-range><br/>
 <bdl-range id="peep" min="4" max="8" default="5" title="Initial pressure [cmH2O]"></bdl-range><br/>
 <bdl-range id="resistance" min="8" max="150" default="35" title="Resistance [cmH2O/(l.s)]"></bdl-range><br/>
-<bdl-range id="status" min="0" max="150" default="" title="Helper - use for state"></bdl-range><br/>
+<!--bdl-range id="status" min="0" max="150" default="" title="Helper - use for state"></bdl-range><br/-->
 </div>
 <bdl-buttonparams title="normální dýchání" ids="blend_duration,compliance,muscle_pressure,peep,resistance,rate,status" values='4,50,33,5,35,17,"k1vysetreniastrup.md"'></bdl-buttonparams>
 <bdl-buttonparams title="Kussmaulovo dýchání" ids="blend_duration,compliance,muscle_pressure,peep,resistance,rate,status" values='4,50,50,5,15,25,"index.md"'></bdl-buttonparams>
