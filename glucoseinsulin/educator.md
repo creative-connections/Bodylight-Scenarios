@@ -8,7 +8,6 @@
 <bdl-buttonparams title="EN nomogram" ids="status" values='"k1vysetreniastrup2.md"'></bdl-buttonparams>
 <bdl-buttonparams title="Vysetreni" ids="status" values='"k1vysetreni9.md"'></bdl-buttonparams>
 <bdl-buttonparams title="Vysetreni diff" ids="status" values='"k1vysetreniDiff.md"'></bdl-buttonparams>
-<bdl-buttonparams title="Vysetreni biochemie" ids="dot_v" values='"k1vysetrenibiochemie.md"'></bdl-buttonparams>
-<bdl-buttonparams title="figurina" ids="dot_v" values='"k1dychani.md"'></bdl-buttonparams>
-<bdl-buttonparams title="simulator" ids="dot_v" values='"gisimulator.md"'></bdl-buttonparams>
-
+<bdl-buttonparams title="Vysetreni biochemie" ids="status" values='"k1vysetrenibiochemie.md"'></bdl-buttonparams>
+<bdl-buttonparams title="figurina" ids="status" values='"k1dychani.md"'></bdl-buttonparams>
+<bdl-buttonparams title="simulator" ids="status" values='"gisimulator.md"'></bdl-buttonparams>
