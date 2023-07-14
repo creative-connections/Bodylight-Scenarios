@@ -85,7 +85,8 @@ package Frvs
       annotation(Icon(coordinateSystem(extent = {{-100.0, -100.0}, {100.0, 100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10}), graphics={  Ellipse(visible = true, origin = {2.9379, 0.0}, fillColor = {255, 176, 245},
                 fillPattern =                                                                                                    FillPattern.Solid, extent = {{-102.9379, -100.0}, {102.9379, 100.0}}), Text(visible = true, origin = {9.6519, -67.3553}, extent = {{-148.0, -81.0}, {152.0, -41.0}}, textString = "%name", fontName = "Arial"), Text(visible = true, origin = {-54.9161, 60.0},
                 fillPattern =                                                                                                    FillPattern.Solid, extent = {{-7.8409, -8.8149}, {7.8409, 8.8149}}, textString = "C", fontName = "Arial"), Text(visible = true, origin = {54.895, 62.8415},
-                fillPattern =                                                                                                    FillPattern.Solid, extent = {{-7.8409, -8.8149}, {7.8409, 8.8149}}, textString = "V", fontName = "Arial")}), Diagram(coordinateSystem(extent = {{-148.5, -105.0}, {148.5, 105.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {5, 5}), graphics = {Ellipse(visible = true, origin = {-6.4193, -3.4427}, fillColor = {255, 170, 255}, fillPattern = FillPattern.Solid, extent = {{-56.4193, -53.4427}, {56.4193, 53.4427}}), Line(visible = true, origin = {-58.569, -53.082}, points = {{8.569, 15.3789}, {-8.569, -15.3789}}), Line(visible = true, origin = {32.5, -59.1432}, points = {{-7.5, 10.8568}, {7.5, -10.8568}}), Line(visible = true, origin = {0.0156, 59.0651}, points = {{0.0, 9.0651}, {0.0, -9.0651}}), Line(visible = true, origin = {-35.0, 56.084}, points = {{0.0, 13.916}, {0.0, -13.916}}), Line(visible = true, origin = {-10.0, -65.0}, points = {{0.0, 7.5}, {0.0, -7.5}})}));
+                fillPattern =                                                                                                    FillPattern.Solid, extent = {{-7.8409, -8.8149}, {7.8409, 8.8149}}, textString = "V", fontName = "Arial")}), Diagram(coordinateSystem(extent = {{-148.5, -105.0}, {148.5, 105.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {5, 5}), graphics={  Ellipse(visible = true, origin = {-6.4193, -3.4427}, fillColor = {255, 170, 255},
+                fillPattern =                                                                                                                                                                                                        FillPattern.Solid, extent = {{-56.4193, -53.4427}, {56.4193, 53.4427}}), Line(visible = true, origin = {-58.569, -53.082}, points = {{8.569, 15.3789}, {-8.569, -15.3789}}), Line(visible = true, origin = {32.5, -59.1432}, points = {{-7.5, 10.8568}, {7.5, -10.8568}}), Line(visible = true, origin = {0.0156, 59.0651}, points = {{0.0, 9.0651}, {0.0, -9.0651}}), Line(visible = true, origin = {-35.0, 56.084}, points = {{0.0, 13.916}, {0.0, -13.916}}), Line(visible = true, origin = {-10.0, -65.0}, points = {{0.0, 7.5}, {0.0, -7.5}})}));
     end BloodElasticCompartment;
 
     model HeartPump
@@ -562,6 +563,10 @@ package Frvs
     Modelica.Blocks.Math.Add PA_VplusPV_V "Sum of PA and PV volumes in [ml] " annotation(Placement(transformation(extent = {{-8, 8}, {8, -8}}, rotation = 90, origin = {-72, 135})));
     SimpleCirculationChip simpleCirculationChip annotation(Placement(transformation(rotation = 0, extent = {{-86, -88}, {78, 115}})));
     Modelica.Blocks.Math.Sum TotalStressedVolume(nin = 4) annotation(Placement(transformation(extent = {{-5.5, -5.5}, {5.5, 5.5}}, rotation = 270, origin = {-75.5, -112.5})));
+    Modelica.Blocks.Math.Division CIRight annotation (Placement(transformation(
+          extent={{5,5},{-5,-5}},
+          rotation=180,
+          origin={143,-37})));
   equation
     connect(bw.y, BMI.weight) annotation(Line(points = {{135.35, -117.5}, {132.675, -117.5}, {132.675, -125.6}, {128.6, -125.6}}, color = {0, 0, 127}, smooth = Smooth.None));
     connect(bh.y, BMI.height) annotation(Line(points = {{136.4, -140}, {133, -140}, {133, -133.4}, {128.6, -133.4}}, color = {0, 0, 127}, smooth = Smooth.None));
@@ -627,20 +632,26 @@ package Frvs
     connect(simpleCirculationChip.SA_StressedVolume, TotalStressedVolume.u[3]) annotation(Line(points = {{73.9, -52.475}, {83, -52.475}, {83, -105.9}, {-75.225, -105.9}}, color = {0, 0, 127}, smooth = Smooth.None));
     connect(simpleCirculationChip.PV_StressedVolume, TotalStressedVolume.u[4]) annotation(Line(points = {{73.9, 59.175}, {80, 59.175}, {80, -103}, {-74.675, -103}, {-74.675, -105.9}}, color = {0, 0, 127}, smooth = Smooth.None));
     connect(TotalStressedVolume.y, TotalUnstressedVolume.u2) annotation(Line(points = {{-75.5, -118.55}, {-75.5, -122.775}, {-77.2, -122.775}, {-77.2, -127.1}}, color = {0, 0, 127}, smooth = Smooth.None));
-    annotation(Diagram(coordinateSystem(extent = {{-150, -150}, {150, 150}}, preserveAspectRatio = false, initialScale = 0.1, grid = {1, 1}), graphics), Icon(coordinateSystem(preserveAspectRatio = true, extent = {{-150, -150}, {150, 150}}, grid = {1, 1}, initialScale = 0.1)));
+    connect(simpleCirculationChip.RH_BloodFlowPerMin, CIRight.u1) annotation (
+        Line(points={{-89.28,0.305},{131,0.305},{131,-34},{137,-34}}, color={0,
+            0,127}));
+    connect(CIRight.u2, bodySurface.bodySurface) annotation (Line(points={{137,
+            -40},{137,-57},{128,-57},{128,-58},{127.75,-58},{127.75,-88.505}},
+          color={0,0,127}));
+    annotation(Diagram(coordinateSystem(extent = {{-150, -150}, {150, 150}}, preserveAspectRatio = false, initialScale = 0.1, grid = {1, 1})),           Icon(coordinateSystem(preserveAspectRatio = true, extent = {{-150, -150}, {150, 150}}, grid = {1, 1}, initialScale = 0.1)));
   end SimpleCirculationSurfaceChip;
 
   model SimpleCirculationChip
     Parts.HeartPump RightHeart(pump = false) annotation(Placement(transformation(extent = {{-10, -10}, {10, 10}}, rotation = 90, origin = {-84, 21})));
-    Parts.BloodElasticCompartment PlumonaryArteries(InitialVolume = 370 / 1.9031365319240374) annotation(Placement(visible = true, transformation(origin = {-72, 53.3018}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = 0)));
+    Parts.BloodElasticCompartment PlumonaryArteries(InitialVolume=329.79)                     annotation(Placement(visible = true, transformation(origin = {-72, 53.3018}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = 0)));
     Parts.VariableBloodResistor TotalPulmonaryResistance annotation(Placement(transformation(extent = {{-39, 66}, {-19, 86}})));
-    Parts.BloodElasticCompartment PlumonaryVeins(InitialVolume = 700 / 1.9031365319240374) annotation(Placement(visible = true, transformation(origin = {20.9971, 49.4559}, extent = {{10.0, -10.0}, {-10.0, 10.0}}, rotation = 0)));
+    Parts.BloodElasticCompartment PlumonaryVeins(InitialVolume=625.21)                     annotation(Placement(visible = true, transformation(origin = {20.9971, 49.4559}, extent = {{10.0, -10.0}, {-10.0, 10.0}}, rotation = 0)));
     Parts.HeartPump LeftHeart(pump = false) annotation(Placement(transformation(extent = {{-10, -10}, {10, 10}}, rotation = 270, origin = {47, 23})));
     Parts.BloodFlowMeter bloodFlowMeter1 annotation(Placement(transformation(extent = {{-5.5, 6.5}, {5.5, -6.5}}, rotation = 270, origin = {47.5, -9.5})));
-    Parts.BloodElasticCompartment SystemArteries(InitialVolume = 670 / 1.9031365319240374) annotation(Placement(visible = true, transformation(origin = {47, -54.2238}, extent = {{10.0, -10.0}, {-10.0, 10.0}}, rotation = 0)));
+    Parts.BloodElasticCompartment SystemArteries(InitialVolume=586.15)                     annotation(Placement(visible = true, transformation(origin = {47, -54.2238}, extent = {{10.0, -10.0}, {-10.0, 10.0}}, rotation = 0)));
     Parts.BloodFlowMeter SA_SR annotation(Placement(transformation(extent = {{-5.5, 6.5}, {5.5, -6.5}}, rotation = 180, origin = {12.5, -56.5})));
     Parts.VariableBloodResistor TotalSystemicResistance annotation(Placement(transformation(extent = {{-10, -10}, {10, 10}}, rotation = 180, origin = {-27, -54})));
-    Parts.BloodElasticCompartment SystemVeins(InitialVolume = 3900 / 1.9031365319240374) annotation(Placement(visible = true, transformation(origin = {-88.538, -53.5305}, extent = {{10.0, 10.0}, {-10.0, -10.0}}, rotation = 180)));
+    Parts.BloodElasticCompartment SystemVeins(InitialVolume=3443.56)                     annotation(Placement(visible = true, transformation(origin = {-88.538, -53.5305}, extent = {{10.0, 10.0}, {-10.0, -10.0}}, rotation = 180)));
     Parts.BloodFlowMeter bloodFlowMeter annotation(Placement(transformation(extent = {{-5.5, 6.5}, {5.5, -6.5}}, rotation = 90, origin = {-88.5, -0.5})));
     Parts.TotalBloodVolume totalBloodVolume annotation(Placement(transformation(extent = {{-9.5, 8.5}, {9.5, -8.5}}, rotation = 270, origin = {-58.5, -4.5})));
     Modelica.Blocks.Interfaces.RealInput LH_StarlingSlope annotation(Placement(transformation(rotation = 0, extent = {{90, 20}, {80, 30}}), iconTransformation(extent = {{90, 20}, {80, 30}})));
