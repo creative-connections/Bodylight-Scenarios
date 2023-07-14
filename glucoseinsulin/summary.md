@@ -11,3 +11,5 @@
     * [k1dychani](#k1dychani.md)
   * [Simulátory](#gisimulator0.md)
     * [gisimulator.md](#gisimulator.md)
+  * [Management léčby](#k1lecba.md)
+    * [k1lecbakrystaloidy](#k1lecbakrystaloidy.md)
