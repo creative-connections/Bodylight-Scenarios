@@ -20,7 +20,7 @@ ASTRUP vstupní:
 </div>
 <div class="w3-half">
 
-![Acid-base_nomogramK1](Acid-base_nomogramK1.svg)
+![Acid-base_nomogramK1](k1dm1/Acid-base_nomogramK1.svg)
 
 </div>
 </div>
