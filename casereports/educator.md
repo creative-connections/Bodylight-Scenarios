@@ -6,11 +6,12 @@
 <span id="status"></span>
 </div>
 
+<bdl-buttonparams title="0. Uvod" ids="status" values='"k1dm1/k1uvod.md"'></bdl-buttonparams>
 <bdl-buttonparams title="1. Subj" ids="status" values='"k1dm1/k1subj.md"'></bdl-buttonparams>
 <bdl-buttonparams title="2. Obj" ids="status" values='"k1dm1/k1obj.md"'></bdl-buttonparams>
 <bdl-buttonparams title="3. Transport" ids="status" values='"k1dm1/k1transport.md"'></bdl-buttonparams>
 <bdl-buttonparams title="4 a. Vysetreni laborator" ids="status" values='"k1dm1/k1vysetreni9.md"'></bdl-buttonparams>
-<bdl-buttonparams title="4 b. Vysetreni diff" ids="status" values='"k1dm1/k1vysetrenidiff.md"'></bdl-buttonparams>
+<bdl-buttonparams title="4 b. Vysetreni diff" ids="status" values='"k1dm1/k1vysetreniDiff.md"'></bdl-buttonparams>
 <bdl-buttonparams title="4 c. Vysetreni biochemie" ids="status" values='"k1dm1/k1vysetrenibiochemie.md"'></bdl-buttonparams>
 <bdl-buttonparams title="5 a. Astrup SA" ids="status" values='"k1dm1/k1vysetreniastrup.md"'></bdl-buttonparams>
 <bdl-buttonparams title="5 b. Astrup EN" ids="status" values='"k1dm1/k1vysetreniastrup2.md"'></bdl-buttonparams>
