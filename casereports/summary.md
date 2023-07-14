@@ -11,7 +11,7 @@
 * [Kazuistika 60 muž ABR](#k2-01.md)
 * [Kazuistika 30 žena](#k3-01.md)
 * [Kazuistika 30 muž](#k4-01.md)
-* [Kazuistika 45 muž)(#k1dm1/index.md)
+* [Kazuistika 42 muž](#k1dm1/index.md)
   * [Kazuistika 1](#k1dm1/k1uvod.md) 
   * [k1subj](#k1dm1/k1subj.md)
   * [k1obj](#k1dm1/k1obj.md)
