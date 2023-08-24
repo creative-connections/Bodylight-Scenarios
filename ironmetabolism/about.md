@@ -5,9 +5,10 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 | | |
 |--:|--|
-| **Scénář, text, matematický model:** | RNDr. Arnošt Mládek, Ph.D. |
-| **Implementace simulátoru:** | Mgr. Tomáš Kulhánek, Ph.D. |
+| **Scénář, text, matematický model, simulátor:** | RNDr. Arnošt Mládek, Ph.D. |
+| | Mgr. Tomáš Kulhánek, Ph.D. |
 | **Grafické prvky, interaktivní animace:** | Martin Brož, DiS. |
+|  | Klára Svobodová, DiS. |
 | **Odborní garanti:** | Doc. MUDr. Jiří Kofránek, CSc. |
 | | Prof. MUDr. Martin Vokurka, CSc. |
 | **Technologie in-browser simulátorů:** | Mgr. Tomáš Kulhánek, Ph.D. |
