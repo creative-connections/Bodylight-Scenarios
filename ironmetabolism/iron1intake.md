@@ -3,13 +3,24 @@
 
 ![ironFOOD](ironFOOD.png)
 <br />__Obrázek FOOD__. Obsah hemového a nehemového železa ve vybraných potravinách a míra jeho absorpce v tenkém střevu.
+
+Primárním zdrojem železa je maso, nejvíce pak červené maso a vnitřnosti, relativně vyšší podíl železa má i některá zelenina, např. sojové boby (Obrázek FOOD).
 </div>
 <div class="w3-half">
 <div class="w3-margin w3-justify">
 
-Železo má několik klíčových funkcí ve fyziologii organismu. Je součástí hemové prostetické skupiny cytochromů a zajišťuje přenos kyslíku v hemoglobinu a myoglobinu. Železo se v potravě nachází ve dvou formách: __hemové__ a __nehemové__. Obě formy železa jsou vstřebávány odlišnými mechanismy. Celková absorpce železa je relativně nízká, vstřebá se až 20% železa obsaženého v potravě v závislosti na jejím charakteru (Obrázek FOOD). Hemové železo se obecně vstřebává efektivněji než nehemové. Celkové zásoby železa v organismu závisí téměř výhradně na jeho absorpci v trávícím traktu neboť __neexistuje regulovatelný způsob jeho exkrece z těla__. S výjimkou žen v období menstruace, které vyžadují o ~ 50% více dietárního železa, ztráty železa jsou minimální. Ke ztrátám dochází především deskvamací buněk epidermis nebo zánikem a odlupováním buněk gastrointestinálních sliznic. Primárním zdrojem železa je maso, nejvíce pak červené maso a vnitřnosti, relativně vyšší podíl železa má i některá zelenina, např. sojové boby (Obrázek FOOD). 
+*[cytochromů]: Cytochromy jsou skupinou proteinů s molekulou hemu. | Cytochromy jsou skupinou proteinů s molekulou hemu podobně jako hemoglobin. V medicíně jsou nejvíce důležité Cytochromy P450 podílející se jako katalyzátory metabolických reakcí. | https://www.wikiskripta.eu/w/Cytochrom_P450
 
+*[prostetické skupiny]: Prostetická skupina je nebílkovinná část proteinů. | Prostetická skupina je nebílkovinná část proteinů, enzymů která umožňuje jeho katalytický účinek. Prostetická skupina je nejčastěji na enzym pevně vázána kovalentní vazbou. Enzym s navázanou prostetickou skupinou se nazývá holoenzym a má katalytickou funkci. Enzym tvořený pouze bílkovinnou složkou bez prostetické skupiny se nazývá apoenzym a nemá katalytickou funkci. | https://cs.wikipedia.org/wiki/Prostetick%C3%A1_skupina
+
+## Potrava a vstřebávání
+
+Železo se v potravě nachází ve dvou formách: __hemové__ a __nehemové__.  Obě formy železa jsou vstřebávány odlišnými mechanismy. Hemové železo se obecně vstřebává efektivněji než nehemové. 
+
+Celková absorpce železa je relativně nízká, vstřebá se až 20% železa obsaženého v potravě v závislosti na jejím charakteru (Obrázek FOOD). 
+ 
 Doporučená denní dávka železa je ~ 10 mg/den u mužů a 15 mg/den u žen v reprodukčním období. Z tohoto množství se do organismu vstřebá přibližně 1-2 mg/den, nevyužitý zbytek odchází stolicí. 
+
 </div>
 <bdl-quiz 
 question="Které z následujících porcí jídel je nejhodnotnější pro příjem železa." 
