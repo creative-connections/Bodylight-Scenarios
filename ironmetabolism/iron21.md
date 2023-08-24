@@ -6,6 +6,9 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <div class="w3-row">
 <div class="w3-col s12 m7 l7">
 
+<bdl-fmi id="idfmi" mode="" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.01" fpslimit="5" guid="{9aa10b27-427c-44c9-a381-5815d5706331}" valuereferences="637534208,637534209,100663316,16777260,33554448,33554449,637534229,905969689,637534232,16777271,100663313" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate" inputs="id1,16777260,1,1;id2,16777271,1,1;id3,100663313,1,1" inputlabels="Fe_food,to_ferritin_rate,from_ferritin_rate" showtime="true" showtimemultiply="3600"></bdl-fmi>
+
+
 <bdl-animate-adobe src="DuodenumFinalObrazovka2.js" width="824" height="824" name="DuodenumFinalObrazovka2" fromid="idfmi" responsive="true"></bdl-animate-adobe>
 <bdl-bind2a findex="3" aname="children.0.SipkaCervena1_anim" amin="0" amax="159" fmin="0" fmax="1000"></bdl-bind2a>
 <bdl-bind2a findex="3" aname="Merak1_anim" amin="0" amax="99" fmin="0" fmax="1000"></bdl-bind2a>
@@ -44,21 +47,28 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 <button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
 
-<bdl-fmi id="idfmi" mode="" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.01" fpslimit="5" guid="{9aa10b27-427c-44c9-a381-5815d5706331}" valuereferences="637534208,637534209,100663316,16777260,33554448,33554449,637534229,905969689,637534232,16777271,100663313" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate" inputs="id1,16777260,1,1;id2,16777271,1,1;id3,100663313,1,1" inputlabels="Fe_food,to_ferritin_rate,from_ferritin_rate" showtime="true" showtimemultiply="3600"></bdl-fmi>
+**Úkoly:**
+  - Nastartujte simulátor
+  - Regulujte ručně příjem do ferritinu a výdej železa z feritinu
+  - Můžete nastavit i dietární příjem železa v potravě
+  - Odpovězte na otázky:
 
 
-Regulace příjmu Fe a příjmu a výdeje Fe do/z ferritinu. Regulace příjmu a výdeje do/z ferritinu v buňce je v tomto simulátoru umělá, ve skutečnosti je rovnovážná konstanta daná. Simulace je zrychlená, simulace odsimuluje jednotky minut, během reálné 1 sekundy.
-
-||| 
+|Parametry|| 
 |-------------:|-------|
 | Koncentrace železa v potravě | <bdl-range id="id1" title="" min="0" max="1000" default="219" step="1" listenkey="true"></bdl-range> $\frac{\mu g}{h}$ |
 | Přítok železa do ferritinu v buňce | <bdl-range id="id2" title="" min="0" max="10" default="3" step="0.1"></bdl-range>  |
 | Odtok železa z ferritinu v buňce | <bdl-range id="id3" title="" min="0" max="10" default="0.3" step="0.1"></bdl-range>  |
 
-<bdl-quiz question="Jak se mění rovnováha mezi množstvím železa ve ferritinu (Fe3+) a v pohotovém poolu (Fe2+)?" answers="zvýšený Fe3+ svýší i koncentraci Fe2+|zvýšený Fe3+ sníží koncentraci Fe2+" correctoptions="true|false" explanations="|" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Jak vypočítáme rovnovážnou konstantu?" answers="podíl koncentrací|součin koncentrací" correctoptions="true|false" explanations="Ano|Ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Která rychlostní konstanta bude větší a jaký stav bude buňka preferovat? A proč?" answers="1. Přítok železa do ferritinu. |2. Odtok železa z ferritinu." correctoptions="true|false" explanations="vyšší koncentrace Fe2+ je pro buňku toxická. Buňka se snaží tedy ukládat železo do ferritinu|Odtok železa z ferritinu udržuje buňka nižší."  buttontitle="zkontrolovat odpověď"></bdl-quiz>
+**Otázky**
 
+<bdl-quiz id="q1" type="choice2" question="Jak se mění rovnováha mezi množstvím železa ve ferritinu (Fe3+) a v pohotovém poolu (Fe2+)?" answers="zvýšený Fe3+ svýší i koncentraci Fe2+|zvýšený Fe3+ sníží koncentraci Fe2+" correctoptions="true|false" explanations="|" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+
+<bdl-quiz id="q2" type="choice2" question="Jak vypočítáme rovnovážnou konstantu?" answers="podíl koncentrací|součin koncentrací" correctoptions="true|false" explanations="Ano|Ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+
+<bdl-quiz id="q3" type="choice2" question="Která rychlostní konstanta bude větší a jaký stav bude buňka preferovat? A proč?" answers="1. Přítok železa do ferritinu. |2. Odtok železa z ferritinu." correctoptions="true|false" explanations="vyšší koncentrace Fe2+ je pro buňku toxická. Buňka evolučně preferuje ukládání železa do ferritinu.|vyšší koncentrace Fe2+ je pro buňku toxická. Buňka evolučně preferuje ukládání železa do ferritinu."  buttontitle="zkontrolovat odpověď"></bdl-quiz>
+
+<bdl-quiz-control ids="q1,q2,q3"></bdl-quiz-control>
 </div>
 </div>
 
