@@ -10,9 +10,11 @@
 <div class="w3-half w3-justify">
 <div class="w3-margin-left">
 
+## Hemosiderin
+
 Druhou zásobní formou železa je **hemosiderin**, který vzniká agregací a postupnou degradací molekul ferritinu v lyzozomech při nadbytečném sycení cytozolu železem. Hemosiderin je ve srovnání s ferritinem větší, viditelný ve světelném mikroskopu (granulární pigment rezavě hnědé barvy) a jeho vazebná kapacita pro železo je rovněž vyšší. Železo se z hemosiderinu však uvolňuje obtížněji než z ferritinu.
 
-<bdl-quiz type="match" question="Přiřaďte k proteinu jeho vlastnosti" terms="ferritin|hemosideron" answers="menší pro buňku dostupná zásoba železa|větší pro buňku hůře dostupná zásoba železa" ></bdl-quiz>
+<bdl-quiz type="match" question="Přiřaďte k proteinu jeho vlastnosti" terms="ferritin|hemosideron" answers="menší protein, pro buňku dobře dostupná zásoba železa|větší proteinový komplex, pro buňku ale hůře dostupná zásoba železa" ></bdl-quiz>
 
 </div>
 </div>
