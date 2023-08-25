@@ -6,7 +6,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 <div class="w3-row">
 <div class="w3-col s12 m7 l7">
-
+<bdl-fmi id="idfmi" mode="" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.65" fpslimit="5" guid="{9aa10b27-427c-44c9-a381-5815d5706331}" valuereferences="637534208,637534209,100663316,16777260,33554448,33554449,637534229,905969689,637534232,16777271,100663313,16777267,637534234,637534238,33554439,33554443,637534231,637534258,33554447" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate,Fpn_duo_knockout,Fpn_duo_in_1,Fpn_duo_in,Fpn_duo_mRNA,Fpn_duo,Fe_duo_out_ser,Fe_ser_in_duo,Fe_ser" inputs="id1,16777260,1,1;id4,16777267,1,1" inputlabels="Fe_food,Fpn_duo_knockout" showtime="1" showtimemultiply="3600"></bdl-fmi>
 <bdl-animate-adobe src="DuodenumFinalObrazovka3.js" width="824" height="824" name="DuodenumFinalObrazovka3" fromid="idfmi" responsive="true"></bdl-animate-adobe>
 
 <!--prijem-->
@@ -81,21 +81,19 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 <button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
 
-<bdl-fmi id="idfmi" mode="" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.65" fpslimit="5" guid="{9aa10b27-427c-44c9-a381-5815d5706331}" valuereferences="637534208,637534209,100663316,16777260,33554448,33554449,637534229,905969689,637534232,16777271,100663313,16777267,637534234,637534238,33554439,33554443,637534231,637534258,33554447" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate,Fpn_duo_knockout,Fpn_duo_in_1,Fpn_duo_in,Fpn_duo_mRNA,Fpn_duo,Fe_duo_out_ser,Fe_ser_in_duo,Fe_ser" inputs="id1,16777260,1,1;id4,16777267,1,1" inputlabels="Fe_food,Fpn_duo_knockout" showtime="1" showtimemultiply="3600"></bdl-fmi>
-
-
-Regulace příjmu Fe a ukládání do ferritinu a výdeje z enterocytu. Vyzkoušejte v simulátoru a zodpovězte otázky. Simulace (1s &asymp; 1h).
-||| 
+**Úkoly:**
+  1. Nastartujte simulátor.
+  2. Regulujte ručně dietární příjem železa v potravě.
+  3. Vyzkoušejte genový knockout ferrportinu a jeho efekt na výdej železa.
+  4. Odpovězte na otázku níže.
+  
+|Parametry|| 
 |-------------|-------|
 | Koncentrace železa v potravě | <bdl-range id="id1" title="" min="0" max="1000" default="219" step="1"></bdl-range> $\frac{\mu g}{h}$  |
 | Knockout genu pro ferroportin(Fpn) | <bdl-checkbox id="id4" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
 
-
-* Vyzkoušejte si, jak reaguje počet Fpn transportérů (míra otevření) na množství železa v buňce.
-* Vyzkoušejte si hypotetický genový knockout pro Fpn.
-* Sledujte vývoj saturace transferinu (~ množství železa v séru) se změnou příjmu železa v potravě
-
-<bdl-quiz question="Co má za následek genový knockout Fpn? Jak se změní koncentrace železa v enterocytu a v séru?" answers="Počet ferroportinu v membráně se sníží. Železo se hromadí v enterocytu a jeho množství v séru klesá|Počet ferroportinu se v membraně zvýší. Železo se transportuje z enterocytu do krve" correctoptions="true|false" explanations="správná odpověď na tuto otázku|nesprávná odpověď. Toto se děje pokud je gen aktivní."  buttontitle="zkontrolovat odpověď"></bdl-quiz>
+**Otázka**
+<bdl-quiz type="choice2" question="Co má za následek genový knockout Fpn? Jak se změní koncentrace železa v enterocytu a v séru?" answers="Počet ferroportinu v membráně se sníží. Železo se hromadí v enterocytu a jeho množství v séru klesá|Počet ferroportinu se v membraně zvýší. Železo se transportuje z enterocytu do krve" correctoptions="true|false" explanations="správná odpověď na tuto otázku|nesprávná odpověď. Toto se děje pokud je gen aktivní."  buttontitle="zkontrolovat odpověď"></bdl-quiz>
 
 </div>
 </div>
