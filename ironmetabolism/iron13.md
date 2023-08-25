@@ -7,6 +7,8 @@ img[alt^="bigimage"] {  max-height:60px}
 
 <div class="w3-col s12 m7 l7">
 
+<bdl-fmi id="idfmi" mode="" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.05" fpslimit="5" guid="{9aa10b27-427c-44c9-a381-5815d5706331}" valuereferences="637534208,637534209,100663316,16777260,33554448,33554449,637534229,905969689,637534232,16777271,100663313" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate" inputs="id1,16777260,1,1" inputlabels="Fe_food" showtime="true" showtimemultiply="3600"></bdl-fmi>
+
 <bdl-animate-adobe src="DuodenumFinalObrazovka1.js" width="800" height="800" name="DuodenumFinalObrazovka1" fromid="idfmi" responsive="true"></bdl-animate-adobe>
 <!--prijem-->
 <bdl-bind2a findex="3" aname="children.0.SipkaCervena1_anim" amin="0" amax="159" fmin="0" fmax="1000"></bdl-bind2a>
@@ -53,22 +55,22 @@ img[alt^="bigimage"] {  max-height:60px}
 
 <button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
 
-<bdl-fmi id="idfmi" mode="" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.05" fpslimit="5" guid="{9aa10b27-427c-44c9-a381-5815d5706331}" valuereferences="637534208,637534209,100663316,16777260,33554448,33554449,637534229,905969689,637534232,16777271,100663313" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate" inputs="id1,16777260,1,1" inputlabels="Fe_food" showtime="true" showtimemultiply="3600"></bdl-fmi>
+**Úkoly:**
+  1. Nastartujte simulátor
+  2. Simulace je zrychlená, simulace odsimuluje desítky minut, během reálné 1 sekundy.
+  3. Regulujte ručně dietární příjem železa v potravě
+  4. Odpovězte na otázky:
 
-
-
-|parametr|hodnota| 
+|Parametr| | 
 |-------------|-------|
 | Koncentrace železa v potravě  | <bdl-range id="id1" title="" min="0" max="1000" default="219" step="1"></bdl-range> $\frac{\mu g}{h}$ |
 
 <br/>
 
-Simulátor spusťte/zastavte tlačítky níže a zkuste zodpovědět otázky. Během simulace můžete měnit **parametr**: koncentrace železa v potravě, tj. kolik mikrogramů železa se vstřebá za hodinu. Tlačítkem vpravo zobrazíte legendu. Vedle simulačních tlačítek je zobrazen i simulační čas  v hodinách:minutách:sekundách. Simulace je zrychlená, simulace odsimuluje desítky minut, během reálné 1 sekundy.
-
-**Kontrolní otázky**, vyzkoušejte v simulátoru a zodpovězte:
-<bdl-quiz question="Sledujte reakci DMT1 a přenašeče hemu v reakci na množství železa v enterocytu a v potravě" answers="DMT1 se rozšíří při poklesu Fe2+ | DMT1 se zúží při poklesu Fe2+" correctoptions="true|false" explanations="pool Fe2+ inhibuje DMT1|pool Fe2+ inhibuje DMT1, při poklesu Fe2+ se rozšíří" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Proč dochází k zpětné inhibici transportérů železa v závislosti na obsahu železa v buňce?" answers="aby se železo nehromadilo v buňce| Železo se ztrácí konstantí rychlostí" correctoptions="true|false" explanations="Ano, buňka si tak reguluje příjem železa pokud je ho uvnitř buňky dost.|je sice pravda, ale nevysvětluje otázku." buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="V jakém případě dochází k vyšším ztrátám vstřebaného železa a proč?" answers="Při krvácení, železo je součást hemoglobinu v krvi|Pití čaje, snižuje vstřebávání železa" correctoptions="true|false" explanations="Ano|Pití čaje může inhibovat vstřebávání železa, ale nemá výrazný vliv na ztráty již vstřebaného železa." buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz id="q1" question="Sledujte reakci DMT1 a přenašeče hemu v reakci na množství železa v enterocytu a v potravě" answers="DMT1 se rozšíří při poklesu Fe2+ | DMT1 se zúží při poklesu Fe2+" correctoptions="true|false" explanations="pool Fe2+ inhibuje DMT1|pool Fe2+ inhibuje DMT1, při poklesu Fe2+ se rozšíří" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz id="q2" question="Proč dochází k zpětné inhibici transportérů železa v závislosti na obsahu železa v buňce?" answers="aby se železo nehromadilo v buňce| Železo se ztrácí konstantí rychlostí" correctoptions="true|false" explanations="Ano, buňka si tak reguluje příjem železa pokud je ho uvnitř buňky dost.|je sice pravda, ale nevysvětluje otázku." buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz id="q3" question="V jakém případě dochází k vyšším ztrátám vstřebaného železa a proč?" answers="Při krvácení, železo je součást hemoglobinu v krvi|Pití čaje, snižuje vstřebávání železa" correctoptions="true|false" explanations="Ano|Pití čaje může inhibovat vstřebávání železa, ale nemá výrazný vliv na ztráty již vstřebaného železa." buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz-control ids="q1,q2,q3"></bdl-quiz-control>
 </div>
 </div>
 
