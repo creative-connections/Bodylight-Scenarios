@@ -7,6 +7,7 @@
     * [1.2 Nehemové železo](#iron11.md)
       * [1.2.1 Nehemové železo 2](#iron11a.md)
       * [1.2.2 Hemové železo](#iron12.md)
+      * [1.2.2 Hemové železo 2](#iron12-a.md)
       * [1.2.3 Simulace příjmu železa](#iron13.md)
     * [1.3. Buněčná zásoba železa](#iron2.md)
       * [1.3.2 Ferritin](#iron2-a0.md)  
