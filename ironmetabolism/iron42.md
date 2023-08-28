@@ -5,7 +5,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 </style>
 <div class="w3-row">
 <div class="w3-col s12 m7 l7">
-
+<bdl-fmi id="idfmi" mode="" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.1" fpslimit="60" guid="{9aa10b27-427c-44c9-a381-5815d5706331}" valuereferences="637534208,637534209,100663316,16777260,33554448,33554449,637534229,905969689,637534232,16777271,100663313,16777267,637534234,637534238,33554439,33554443,637534231,637534258,33554447,637534230" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate,Fpn_duo_knockout,Fpn_duo_in_1,Fpn_duo_in,Fpn_duo_mRNA,Fpn_duo,Fe_duo_out_ser,Fe_ser_in_duo,Fe_ser,Fe_duo_in_ser" inputs="id1,16777260,1,1;id4,16777267,1,1" inputlabels="Fe_food,Fpn_duo_knockout"></bdl-fmi>
 
 <bdl-animate-adobe src="DuodenumFinalObrazovka4.js" width="824" height="824" name="DuodenumFinalObrazovka4" fromid="idfmi" responsive="true"></bdl-animate-adobe>
 
@@ -93,14 +93,17 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 <button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
 
-<bdl-fmi id="idfmi" mode="" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.1" fpslimit="60" guid="{9aa10b27-427c-44c9-a381-5815d5706331}" valuereferences="637534208,637534209,100663316,16777260,33554448,33554449,637534229,905969689,637534232,16777271,100663313,16777267,637534234,637534238,33554439,33554443,637534231,637534258,33554447,637534230" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate,Fpn_duo_knockout,Fpn_duo_in_1,Fpn_duo_in,Fpn_duo_mRNA,Fpn_duo,Fe_duo_out_ser,Fe_ser_in_duo,Fe_ser,Fe_duo_in_ser" inputs="id1,16777260,1,1;id4,16777267,1,1" inputlabels="Fe_food,Fpn_duo_knockout"></bdl-fmi>
-
-
-||| 
+**Úkoly:**
+  1. Nastartujte simulátor.
+  2. Regulujte parametry dle otázek
+  3. Odpovězte na otázky níže.
+  
+|Parametry|| 
 |-------------|-------|
 | Koncentrace železa v potravě [$\frac{\mu g}{h}$] | <bdl-range id="id1" title="" min="0" max="1000" default="219" maxlength="5" step="1"></bdl-range> |
 | Knockout genu pro ferroportin(Fpn) | <bdl-checkbox id="id4" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
 
+**Otázky**
 
 <!--bdl-chartjs-time id="id10" width="400" height="200" fromid="idfmi" labels="fe duo out ser" initialdata="" refindex="19" refvalues="1" maxdata="1024"></bdl-chartjs-time>
 <bdl-chartjs-time id="id10" width="400" height="200" fromid="idfmi" labels="fe duo in ser" initialdata="" refindex="16" refvalues="1" maxdata="1024"></bdl-chartjs-time>
@@ -110,11 +113,11 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-chartjs-time id="id14" width="300" height="200" fromid="idfmi" labels="Fe_duo_out_ser" initialdata="" refindex="16" refvalues="1" maxdata="1024"></bdl-chartjs-time>
 <bdl-chartjs-time id="id13" width="300" height="200" fromid="idfmi" labels="koncentrace Fe v krvi" initialdata="" refindex="18" refvalues="1" maxdata="1024" xlabel="čas (hodiny)" ylabel="množství orientační (ug)"></bdl-chartjs-time-->
 
-<bdl-quiz question="Vyzkoušejte si, jak se mění tok železa do enterocytu v závislosti na množství železa v plazmě." answers="Vyšší množství železa v plasmě zvýší tok do enterocytu.|Vyšší množství železa v plasmě sníží tok do enterocytu." correctoptions="true|false" explanations="Toto je správné. Ze simulace je vidět.|Toto je špatně. Ze simulace je vidět." buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Proč je potřeba ATP k přenosu protonu do endocytického váčku?" answers="Potřeba energie pro přenos proti gradientu|Potřeba redukce železa." correctoptions="true|false" explanations="Toto je správná odpověď.|Tato odpověď neodpovídá na danou otázku." buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Z jakého důvodu jsou protony transportovány do váčku?" answers="Symport Fe a H+|Udržuje eletrkochemický gradient" correctoptions="true|false" explanations="Toto je správná odpověď.|Tato odpověď neodpovídá na danou otázku." buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Pro redukci železa na Fe2+ je potřeba donor elektronu. Která molekula je dárcem a kde vzniká?" answers="ATP|ADP" correctoptions="true|false" explanations="ano|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-
+<bdl-quiz id="q1" type="choice2" question="Vyzkoušejte si, jak se mění tok železa do enterocytu v závislosti na množství železa v plazmě." answers="Vyšší množství železa v plasmě zvýší tok do enterocytu.|Vyšší množství železa v plasmě sníží tok do enterocytu." correctoptions="true|false" explanations="Toto je správné. Ze simulace je vidět.|Toto je špatně. Ze simulace je vidět." buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz id="q2" type="choice2" question="Proč je potřeba ATP k přenosu protonu do endocytického váčku?" answers="Potřeba energie pro přenos proti gradientu|Potřeba redukce železa." correctoptions="true|false" explanations="Toto je správná odpověď.|Tato odpověď neodpovídá na danou otázku." buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz id="q3" type="choice2" question="Z jakého důvodu jsou protony transportovány do váčku?" answers="Symport Fe a H+|Udržuje eletrkochemický gradient" correctoptions="true|false" explanations="Toto je správná odpověď.|Tato odpověď neodpovídá na danou otázku." buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz id="q4" type="choice2" question="Pro redukci železa na Fe2+ je potřeba donor elektronu. Která molekula je dárcem a kde vzniká?" answers="ATP|ADP" correctoptions="true|false" explanations="ano|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz-control ids="q1,q2,q3,q4"></bdl-quiz-control>
 </div>
 </div>
 
