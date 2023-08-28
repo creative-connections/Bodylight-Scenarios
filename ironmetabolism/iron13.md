@@ -65,8 +65,8 @@ img[alt^="bigimage"] {  max-height:60px}
 |-------------|-------|
 | Koncentrace železa v potravě  | <bdl-range id="id1" title="" min="0" max="1000" default="219" step="1"></bdl-range> $\frac{\mu g}{h}$ |
 
-<br/>
 
+**Otázky**
 <bdl-quiz id="q1" question="Sledujte reakci DMT1 a přenašeče hemu v reakci na množství železa v enterocytu a v potravě" answers="DMT1 se rozšíří při poklesu Fe2+ | DMT1 se zúží při poklesu Fe2+" correctoptions="true|false" explanations="pool Fe2+ inhibuje DMT1|pool Fe2+ inhibuje DMT1, při poklesu Fe2+ se rozšíří" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 <bdl-quiz id="q2" question="Proč dochází k zpětné inhibici transportérů železa v závislosti na obsahu železa v buňce?" answers="aby se železo nehromadilo v buňce| Železo se ztrácí konstantí rychlostí" correctoptions="true|false" explanations="Ano, buňka si tak reguluje příjem železa pokud je ho uvnitř buňky dost.|je sice pravda, ale nevysvětluje otázku." buttontitle="zkontrolovat odpověď"></bdl-quiz>
 <bdl-quiz id="q3" question="V jakém případě dochází k vyšším ztrátám vstřebaného železa a proč?" answers="Při krvácení, železo je součást hemoglobinu v krvi|Pití čaje, snižuje vstřebávání železa" correctoptions="true|false" explanations="Ano|Pití čaje může inhibovat vstřebávání železa, ale nemá výrazný vliv na ztráty již vstřebaného železa." buttontitle="zkontrolovat odpověď"></bdl-quiz>
