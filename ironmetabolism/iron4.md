@@ -16,11 +16,6 @@ Aby mohl transferin dopravit železité ionty na místo určení, musí daná bu
 
 Existuje i jeho homologní varianta, transferinový receptor 2 (TfR2), který slouží jako senzor hladiny na transferin vázaného železa v plazmě. Exprese nízko-afinitního TfR2 je výrazně nižší a je omezena pouze na specializované tkáně jako například hepatocyty nebo erytroblasty. 
 
-**B:** ![imagetfr1](imgtfr1.png) 
-**C:** ![schematfr1](schematfr1.png)
-
-**B** ikona transferrin receptoru v dalším simulátoru **C** schéma transferrin receptoru s navazujícím se transferrinem na membráně enterocytu.
-
 
 </div>
 </div>
