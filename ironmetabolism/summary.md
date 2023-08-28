@@ -21,7 +21,6 @@
       * [1.4.3 Simulace příjmu a výdeje železa z enterocytu](#iron32.md)
     * [1.5. Přenos železa z krve](#iron4.md)
       * [1.5.1 Přenos železa z krve](#iron4-a.md)
-      * [1.5.2 Transferin receptor](#iron41.md)
       * [1.5.3 Simulace vlivu ferroportinu](#iron42.md)
     * [1.6. Hepcidin a jeho role](#iron5.md)    
       * [1.6.1 Regulace exprese hepcidinu](#iron52.md)
