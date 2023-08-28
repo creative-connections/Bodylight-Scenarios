@@ -48,20 +48,21 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
 
 **Úkoly:**
-  - Nastartujte simulátor
-  - Regulujte ručně příjem do ferritinu a výdej železa z feritinu
-  - Můžete nastavit i dietární příjem železa v potravě
-  - Odpovězte na otázky:
+  1. Nastartujte simulátor
+  2. Regulujte příjem/výdej železa z ferritinu
+  3. Můžete nastavit dietární příjem železa
+  4. Odpovězte na otázky:
 
+<div class="w3-small">
 
 |Parametry|| 
 |-------------:|-------|
 | Koncentrace železa v potravě | <bdl-range id="id1" title="" min="0" max="1000" default="219" step="1" listenkey="true"></bdl-range> $\frac{\mu g}{h}$ |
 | Přítok železa do ferritinu v buňce | <bdl-range id="id2" title="" min="0" max="10" default="3" step="0.1"></bdl-range>  |
 | Odtok železa z ferritinu v buňce | <bdl-range id="id3" title="" min="0" max="10" default="0.3" step="0.1"></bdl-range>  |
+</div>
 
 **Otázky**
-
 <bdl-quiz id="q1" type="choice2" question="Jak se mění rovnováha mezi množstvím železa ve ferritinu (Fe3+) a v pohotovém poolu (Fe2+)?" answers="zvýšený Fe3+ svýší i koncentraci Fe2+|zvýšený Fe3+ sníží koncentraci Fe2+" correctoptions="true|false" explanations="|" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 
 <bdl-quiz id="q2" type="choice2" question="Jak vypočítáme rovnovážnou konstantu?" answers="podíl koncentrací|součin koncentrací" correctoptions="true|false" explanations="Ano|Ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
