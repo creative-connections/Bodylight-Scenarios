@@ -83,8 +83,8 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 **Úkoly:**
   1. Nastartujte simulátor.
-  2. Regulujte ručně dietární příjem železa v potravě.
-  3. Vyzkoušejte genový knockout ferrportinu a jeho efekt na výdej železa.
+  2. Regulujte dietární příjem železa v potravě.
+  3. Zapněte/vypněte genový knockout ferroportinu
   4. Odpovězte na otázku níže.
   
 |Parametry|| 
