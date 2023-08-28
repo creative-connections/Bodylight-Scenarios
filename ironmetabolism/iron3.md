@@ -10,8 +10,6 @@
 <div class="w3-half">
 <div class="w3-margin-left w3-justify">
 
-## Ferroportin
-
 Primární funkcí duodenálních enterocytů není železo skladovat (tuto funkci zastávají především hepatocyty v játrech), ale dopravit jej do krve, prostřednictvím které se železo dále transportuje k buňkám celého těla. 
 
 Železo je přenášeno z enterocytů do intersticiálního prostoru pouze ve své dvojmocné formě Fe<sup>2+</sup>, z pohotového poolu, prostřednictvím transmembránového přenašeče **ferroportinu (Fpn)**, který se nachází na bazolaterální části plazmatické membrány. 
