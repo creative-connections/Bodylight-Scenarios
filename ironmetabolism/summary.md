@@ -29,6 +29,7 @@
       * [1.6.4 Erytropoietin a hepcidin](#iron53.md)
       * [1.6.5 Simulace vlivu hepcidinu](#iron54.md)
     * [1.7. Zánět a zánětlivá reakce](#iron6.md)    
+      * [1.7. Zánět a zánětlivá reakce 2](#iron6-a.md)    
       * [1.7.1 Simulace zánětu](#iron62.md)
       * [1.7.1 Simulace zánětu 2](#iron63.md)
     * [1.8. Nedostatek železa](#iron7.md)
