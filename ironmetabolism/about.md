@@ -42,3 +42,4 @@ DOI: 10.2196/14160
 
 
 
+Mechanismus účinku hepcidinu spočívá ve snížení koncentrace feroportinových exportérů. 
