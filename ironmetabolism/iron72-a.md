@@ -9,6 +9,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 *[RES]: reticuloendothelial system
 *[HFE]: High FE 2 gene for human homeostatic iron protein 
 *[GIT]: gastrointestinal tract 
+*[hemolýzy]: Hemolýza - rozpad červených krvinek | Hemolýza je rozpad červených krvinek provázený uvolněním krevního barviva — hemoglobinu. | https://www.wikiskripta.eu/w/Hemol%C3%BDza
 
 ![hemochromatoza](hemochromatoza.png)
 
@@ -19,11 +20,9 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <div class="w3-half">
 <div class="w3-justify w3-margin-left">
 
+### Hemosideróza
 
-### Systémová hemosideróza
-
-K systémové akumulaci hemosiderinu (především v orgánech RES, tj. slezina, játra, kostní dřeň) dochází v důsledku chronické hemolýzy při hemolytických anémiích, po opakovaných krevních transfuzích z různých důvodů, ale také při parenterálním podávání přípravků obsahujících železo. Postižené orgány jsou rezavě pigmentované, hemosiderin je deponován primárně ve tkáňových makrofázích (játra).
-
+K systémové akumulaci hemosiderinu (především v orgánech RES, tj. slezina, játra, kostní dřeň) dochází nejčastěji v důsledku chronické hemolýzy při hemolytických anémiích, po opakovaných krevních transfuzích z různých důvodů, ale také při parenterálním podávání přípravků obsahujících železo. Postižené orgány jsou rezavě pigmentované, hemosiderin je deponován primárně ve tkáňových makrofázích (játra). Při hemosideróze nejsou známky toxicity železa v buňkách.
 
 </div>
 </div>
