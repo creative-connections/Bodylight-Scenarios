@@ -6,6 +6,8 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <div class="w3-row">
 <div class="w3-col s12 m7 l7">
 
+<bdl-fmi id="idfmi" mode="" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.25" fpslimit="6" guid="{9aa10b27-427c-44c9-a381-5815d5706331}" valuereferences="637534208,637534209,100663316,16777260,33554448,33554449,637534229,905969689,637534232,16777271,100663313,16777267,637534234,637534238,33554439,33554443,637534231,637534258,33554447,637534230,637534237,33554432,16777266" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate,Fpn_duo_knockout,Fpn_duo_in_1,Fpn_duo_in,Fpn_duo_mRNA,Fpn_duo,Fe_duo_out_ser,Fe_ser_in_duo,Fe_ser,Fe_duo_in_ser,Fpn_duo_out_2,hep,hep_knockout" inputs="id1,16777260,1,1;id4,16777267,1,1;id5,16777266,1,1,t" inputlabels="Fe_food,Fpn_duo_knockout,hep_knockout" showtime="true" showtimemultiply="3600"></bdl-fmi>
+
 <bdl-animate-adobe src="DuodenumFinalObrazovka5.js" width="824" height="824" name="DuodenumFinalObrazovka5" fromid="idfmi" responsive="true"></bdl-animate-adobe>
 
 <bdl-bind2a findex="3" aname="SipkaCervena1_anim" amin="0" amax="100" fmin="1" fmax="1000"></bdl-bind2a>
@@ -97,24 +99,25 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 <button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
 
-<bdl-fmi id="idfmi" mode="" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.25" fpslimit="6" guid="{9aa10b27-427c-44c9-a381-5815d5706331}" valuereferences="637534208,637534209,100663316,16777260,33554448,33554449,637534229,905969689,637534232,16777271,100663313,16777267,637534234,637534238,33554439,33554443,637534231,637534258,33554447,637534230,637534237,33554432,16777266" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate,Fpn_duo_knockout,Fpn_duo_in_1,Fpn_duo_in,Fpn_duo_mRNA,Fpn_duo,Fe_duo_out_ser,Fe_ser_in_duo,Fe_ser,Fe_duo_in_ser,Fpn_duo_out_2,hep,hep_knockout" inputs="id1,16777260,1,1;id4,16777267,1,1;id5,16777266,1,1,t" inputlabels="Fe_food,Fpn_duo_knockout,hep_knockout" showtime="true" showtimemultiply="3600"></bdl-fmi>
+**Úkoly:**
+  1. Nastartujte simulátor.
+  2. Vyzkoušejte si, jak ovlivňuje hladina hepcidinu koncentraci feroportinu v mebráně enterocytu.
+  3. Vyzkoušejte si, jaké má následky genový knock-out pro hepcidin.
+  4. Vyzkoušejte si, jak ovlivňuje hladina železa koncentraci hepcidinu.
+  5. Odpovězte na otázky níže.
 
-
-||| 
+|Parametry|| 
 |-------------|-------|
 | Koncentrace železa v potravě [$\frac{\mu g}{h}$] | <bdl-range id="id1" title="" min="0" max="1000" default="219" maxlength="5" step="1"></bdl-range> |
 | Knockout genu pro ferroportin(Fpn) | <bdl-checkbox id="id4" titlemin="gen Fpn je knockoutován" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
 | Knockout genu pro hepcidin | <bdl-checkbox id="id5" titlemin="gen pro hepcidin je knockoutován" titlemax="gen pro expresi hepcidinu je aktivní" default="true"></bdl-checkbox>  |
 
+**Otázky**
 
-* Vyzkoušejte si, jak ovlivňuje hladina hepcidinu koncentraci feroportinu v mebráně enterocytu.
-* Vyzkoušejte si, jaké má následky genový knock-out pro hepcidin.
-* Vyzkoušejte si, jak ovlivňuje hladina železa koncentraci hepcidinu.
-
-<bdl-quiz question="Co způsobí genový knock-out hepcidinu a proč?" answers="zvýšený tok železa z enterocytu do krve|snížený tok železa z enterocytu do krve" correctoptions="true|false" explanations="ano, ztratí se zpětnovazební regulace aktivity ferroportinu, čímž se může dočasně zvýšit příjem železa do krva|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Pokud omezíme příjem železa na minimum, jaká bude reakce organismu a jak se změní koncentrace/množství DMT1, Fpn a Hepcidinu?" answers="zvýší se počt membránových proteinů a sníží se hladina hepcidinu|sníží se počet membránových proteinů a zvýší se hladina hepcidinu" correctoptions="true|false" explanations="ano|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="Pokud provedeme genový knock-out enterocytárního Fpn, jaký vliv to bude mít na hladinu hepcidinu?" answers="hladina hepcidinu se zvýší|hladina hepcidinu se sníží" correctoptions="false|true" explanations="ne, hladina se nezvýší, naopak sníží neboť je regulována přímo koncentrací železa, které je také nižší|ano" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-
+<bdl-quiz id="q1" type="choice2" question="Co způsobí genový knock-out hepcidinu a proč?" answers="zvýšený tok železa z enterocytu do krve|snížený tok železa z enterocytu do krve" correctoptions="true|false" explanations="ano, ztratí se zpětnovazební regulace aktivity ferroportinu, čímž se může dočasně zvýšit příjem železa do krva|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz id="q2" type="choice2" question="Pokud omezíme příjem železa na minimum, jaká bude reakce organismu a jak se změní koncentrace/množství DMT1, Fpn a Hepcidinu?" answers="zvýší se počt membránových proteinů a sníží se hladina hepcidinu|sníží se počet membránových proteinů a zvýší se hladina hepcidinu" correctoptions="true|false" explanations="ano|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz id="q3" type="choice2" question="Pokud provedeme genový knock-out enterocytárního Fpn, jaký vliv to bude mít na hladinu hepcidinu?" answers="hladina hepcidinu se zvýší|hladina hepcidinu se sníží" correctoptions="false|true" explanations="ne, hladina se nezvýší, naopak sníží neboť je regulována přímo koncentrací železa, které je také nižší|ano" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz-control ids="q1,q2,q3"></bdl-quiz-control>
 </div>
 </div>
 
