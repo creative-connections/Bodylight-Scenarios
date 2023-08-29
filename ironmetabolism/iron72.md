@@ -23,7 +23,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 ## Nadbytek železa
     
 Nadbytek železa v organismu vede k jiným patologickým stavům. Obecný mechanismus souvisí s nadměrnou depozicí železa v tkáních. Excesivní a dlouhodobá přítomnost iontů železa ve formě hemosiderinu je pro tkáň toxická. Železo katalyzuje tvorbu hydroxylových radikálů (viz. výše), což jednak způsobuje poškozování parenchymatózních buněk, jednak indukuje intersticiální fibrotizaci v orgánech, která v játrech může vyústit do jaterní cirhózy. Nadměrné množství hemosiderinu může vést i k poškozování DNA a ke zvýšenému riziku maligní transformace. Pro ilustraci uveďme dva příklady poškození:
-  * systémová hemosideróza
+  * hemosideróza
   * hemochromatóza
 
 </div>
