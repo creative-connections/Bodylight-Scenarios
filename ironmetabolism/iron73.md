@@ -6,7 +6,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 <div class="w3-row">
 <div class="w3-col s12 m7 l7">
-
+<bdl-fmi id="idfmi" mode="" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.2" fpslimit="60" guid="{9aa10b27-427c-44c9-a381-5815d5706331}" valuereferences="637534208,637534209,100663316,16777260,33554448,33554449,637534229,905969689,637534232,16777271,100663313,16777267,637534234,637534238,33554439,33554443,637534231,637534258,33554447,637534230,637534237,33554434,33554432,16777266,33554436,637534268,637534264,16777261,16777264" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate,Fpn_duo_knockout,Fpn_duo_in_1,Fpn_duo_in,Fpn_duo_mRNA,Fpn_duo,Fe_duo_out_ser,Fe_ser_in_duo,Fe_ser,Fe_duo_in_ser,Fpn_duo_out_2,LPS,hep,hep_knockout,Il6,Il6_in,hep_in,bleeding,transfusion" inputs="id1,16777260,1,1;id4,16777267,1,1;id5,16777266,1,1,t;id6,33554434,1,1,t;id7,16777261,1,1,t;id8,16777264,1,1,t" inputlabels="Fe_food,Fpn_duo_knockout,hep_knockout,LPS,bleeding,transfusion"></bdl-fmi>
 <bdl-animate-adobe src="DuodenumFinalObrazovka7.js" width="824" height="824" name="DuodenumFinalObrazovka7" fromid="idfmi" responsive="true"></bdl-animate-adobe>
 
 <bdl-bind2a findex="3" aname="SipkaCervena1_anim" amin="0" amax="100" fmin="1" fmax="1000"></bdl-bind2a>
@@ -120,16 +120,17 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <div class="w3-col s12 m5 l5 w3-justify">
 
 <button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
+
+**Úkoly:**
+  1. Nastartujte simulátor.
+  2. Vyzkoušejte si, jak reaguje organismus na ztráty železa pří ztrátě krve, krvácení. 
+  3. Regulujte parametry dle otázek
+  4. Odpovězte na otázky níže.
+
 <!-- hidden input - either buttonparams must be before fmi component - or hidden input with id must be created explicitly - buttonparams will refer to it -->
 <input id="id6" value="" type="number" style="display:none" />
 
-<bdl-fmi id="idfmi" mode="" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.2" fpslimit="60" guid="{9aa10b27-427c-44c9-a381-5815d5706331}" valuereferences="637534208,637534209,100663316,16777260,33554448,33554449,637534229,905969689,637534232,16777271,100663313,16777267,637534234,637534238,33554439,33554443,637534231,637534258,33554447,637534230,637534237,33554434,33554432,16777266,33554436,637534268,637534264,16777261,16777264" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate,Fpn_duo_knockout,Fpn_duo_in_1,Fpn_duo_in,Fpn_duo_mRNA,Fpn_duo,Fe_duo_out_ser,Fe_ser_in_duo,Fe_ser,Fe_duo_in_ser,Fpn_duo_out_2,LPS,hep,hep_knockout,Il6,Il6_in,hep_in,bleeding,transfusion" inputs="id1,16777260,1,1;id4,16777267,1,1;id5,16777266,1,1,t;id6,33554434,1,1,t;id7,16777261,1,1,t;id8,16777264,1,1,t" inputlabels="Fe_food,Fpn_duo_knockout,hep_knockout,LPS,bleeding,transfusion"></bdl-fmi>
-
-
-
-<div class="w3-panel w3-border">
-
-||| 
+|Parametry|| 
 |-------------|-------|
 | Koncentrace železa v potravě | <bdl-range id="id1" title="" min="0" max="2500" default="219" step="1"></bdl-range> $\frac{\mu g}{h}$ |
 | Knockout genu pro ferroportin(Fpn) | <bdl-checkbox id="id4" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
@@ -137,16 +138,16 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 | LPS injekce jednorázová 1$\mu$g při stisknutí | <bdl-buttonparams title="LPS injekce" ids="id6" values="1" fromid="idfmi"></bdl-buttonparams> 1$\mu$g |
 | Krevní ztráty, krvácení | <bdl-range id="id7" title="" min="0" max="1" default="0" step="0.1"></bdl-range>  $\frac{ml}{h}$ |
 | Příjem krve z transfúze  | <bdl-range id="id8" title="" min="0" max="10" default="0" step="1"></bdl-range> $\frac{ml}{h}$ |
-</div>
 
-**Úkoly:**
+**Otázky:**
 
-V následující simulaci si vyzkoušíte, jak reaguje organismus na ztráty železa pří ztrátě krve, krvácení. Zároveň se pokusíte udržet fyziologickou hladinu sérového železa regulací příjmu železa v potravě.
-
-<bdl-quiz question="1. Pusťte simulaci a nastavte krevní ztráty na hodnotu 1ml/h. Jak se změní množství železa v séru (dolní fialový indikátor)?" answers="sníží se (pod normovanou hodnotu 1.0)|zvýší se (nad  normovanou hodnotu 1.0)" correctoptions="true|false" explanations="ano, při krvácení se snižuje i koncentrace/množství železa v séru|ne, sledujte hodnotu v dolním fialovém indikátoru" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="2. Pokračujte v simulaci s krevní ztrátou na hodnotě 1ml/h. A zkuste zvýšit či snížit příjem železa v potravě. Co se musí udělat, aby se kompenzoval stav z úkolu 1?" answers="snížit příjem železa v potravě|zvýšit příjem železa v potravě nad 1000 ug/h" correctoptions="false|true" explanations="ne, snížením příjmu železa se nekompenzují ztráty|ano, zvýšení příjmu železa kompenzuje ztráty železa krvácením" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz question="3. Jak reaguje hladina hepcidinu (žlutý indikátor)na krevní ztráty a proč?" answers="hladina se zvýší nad 1.0|hladina se snížuje pod 1" correctoptions="false|true" explanations="ne, sledujte hodnotu v dolním žlutém indikátoru|ano, hladina hepcidinu se sníží, tím méně inhibuje přenos železa z enterocytu přes ferroportin" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-
+<bdl-quiz id="q1" type="choice2" question="1/6. Pusťte simulaci a nastavte krevní ztráty na hodnotu 1ml/h. Jak se změní množství železa v séru (dolní fialový indikátor)?" answers="sníží se (pod normovanou hodnotu 1.0)|zvýší se (nad  normovanou hodnotu 1.0)" correctoptions="true|false" explanations="ano, při krvácení se snižuje i koncentrace/množství železa v séru|ne, sledujte hodnotu v dolním fialovém indikátoru" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz id="q2" type="choice2" question="2/6. Pokračujte v simulaci s krevní ztrátou na hodnotě 1ml/h. A zkuste zvýšit či snížit příjem železa v potravě. Co se musí udělat, aby se kompenzoval stav z úkolu 1?" answers="snížit příjem železa v potravě|zvýšit příjem železa v potravě nad 1000 ug/h" correctoptions="false|true" explanations="ne, snížením příjmu železa se nekompenzují ztráty|ano, zvýšení příjmu železa kompenzuje ztráty železa krvácením" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz id="q3" type="choice2" question="3/6. Jak reaguje hladina hepcidinu (žlutý indikátor)na krevní ztráty a proč?" answers="hladina se zvýší nad 1.0|hladina se snížuje pod 1" correctoptions="false|true" explanations="ne, sledujte hodnotu v dolním žlutém indikátoru|ano, hladina hepcidinu se sníží, tím méně inhibuje přenos železa z enterocytu přes ferroportin" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz id="q4" type="choice2" question="4/6. Pusťte simulaci a nastavte příjem krve z transfuze na hodnotu 10ml/h. Jak se změní množství železa v séru (dolní fialový indikátor)?" answers="sníží se (pod normovanou hodnotu 1.0)|zvýší se (nad  normovanou hodnotu 1.0)" correctoptions="false|true" explanations="ne, při transfúzi se nesnižuje  koncentrace/množství železa v séru|ano, při transfúzi se zvyšuje množství železa v séru" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz id="q5" type="choice2" question="5/6. Pokračujte v simulaci. A zkuste zvýšit či snížit příjem železa v potravě. Co se musí udělat, aby se kompenzoval stav z úkolu 1?" answers="snížit příjem železa v potravě|zvýšit příjem železa v potravě nad 1000 ug/h" correctoptions="true|false" explanations="ano, snížením příjmu železa se částečně kompenzuje zvýšený příjem železa po krevní transfúzi|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz id="q6" type="choice2" question="6/6. Jak reaguje hladina hepcidinu (žlutý indikátor)na transfuzi a proč?" answers="hladina se zvýší nad 1.0, protože hepcidin je přímo regulován koncentrací železa v séru|hladina se sníží pod 1" correctoptions="true|false" explanations="ano|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz-control ids="q1,q2,q3,q4,q5,q6"></bdl-quiz-control>
 </div>
 </div>
 <div id="legenda" class="w3-card w3-small w3-padding" style="display:none;z-index:1;position:absolute;top:20px;right:10px;width:500px;background-color:white">
