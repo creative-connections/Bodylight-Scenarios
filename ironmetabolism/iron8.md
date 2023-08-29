@@ -6,7 +6,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 <div class="w3-row">
 <div class="w3-col s12 m7 l7">
-
+<bdl-fmi id="idfmi" mode="" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="1" fpslimit="60" guid="{9aa10b27-427c-44c9-a381-5815d5706331}" valuereferences="637534208,637534209,100663316,16777260,33554448,33554449,637534229,905969689,637534232,16777271,100663313,16777267,637534234,637534238,33554439,33554443,637534231,637534258,33554447,637534230,637534237,33554434,33554432,16777266,16777268,16777269,16777270,33554441,33554442,33554444,33554436,637534268,637534264,16777261,16777264" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate,Fpn_duo_knockout,Fpn_duo_in_1,Fpn_duo_in,Fpn_duo_mRNA,Fpn_duo,Fe_duo_out_ser,Fe_ser_in_duo,Fe_ser,Fe_duo_in_ser,Fpn_duo_out_2,LPS,hep,hep_knockout,Fpn_liv_knockout,Fpn_spl_knockout,Fpn_res_knockout,Fpn_liv,Fpn_spl,Fpn_res,Il6,Il6_in,hep_in,bleeding,transfusion" inputs="id1,16777260,1,1;id4,16777267,1,1;id5,16777266,1,1,t;id6,33554434,1,1,t;id7,16777261,1,1,t;id8,16777264,1,1,t;idliv,16777268,1,1,t;idspl,16777269,1,1,t;idres,16777270,1,1,t" inputlabels="Fe_food,Fpn_duo_knockout,hep_knockout,LPS,bleeding,transfusion,Fpn_liv_knockout,Fpn_spl_knockout,Fpn_res_knockout" showtime="true" showtimemultiply="3600"></bdl-fmi>
 <bdl-animate-adobe src="DuodenumFinalObrazovka8.js" width="824" height="824" name="DuodenumFinalObrazovka8" fromid="idfmi" responsive="true"></bdl-animate-adobe>
 
 
@@ -140,12 +140,16 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <div class="w3-col s12 m5 l5 w3-justify">
 
 <button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
+
+
+**Úkoly:**
+  1. Nastartujte simulátor.
+  2. Regulujte parametry.
+  3. Podle otázek níže nasimulujete stavy systémové hemosiderózy jako sekundární důsledek léčby jiné nemoci.
+  4. Odpovězte na otázky níže.
+  
 <!-- hidden input  - buttonparams must be before fmi component - or input with id must be created explicitly -->
 <input id="id6" value="" type="number" style="display:none" />
-
-<bdl-fmi id="idfmi" mode="" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="1" fpslimit="60" guid="{9aa10b27-427c-44c9-a381-5815d5706331}" valuereferences="637534208,637534209,100663316,16777260,33554448,33554449,637534229,905969689,637534232,16777271,100663313,16777267,637534234,637534238,33554439,33554443,637534231,637534258,33554447,637534230,637534237,33554434,33554432,16777266,16777268,16777269,16777270,33554441,33554442,33554444,33554436,637534268,637534264,16777261,16777264" valuelabels="Fe_liv,Fe_spl,Fe_duo_intake,Fe_food,Fe_duo_2,Fe_duo_3,Fe_duo_in_food,Fe_duo_unused,Fe_duo_out_loss,to_ferritin_rate,from_ferritin_rate,Fpn_duo_knockout,Fpn_duo_in_1,Fpn_duo_in,Fpn_duo_mRNA,Fpn_duo,Fe_duo_out_ser,Fe_ser_in_duo,Fe_ser,Fe_duo_in_ser,Fpn_duo_out_2,LPS,hep,hep_knockout,Fpn_liv_knockout,Fpn_spl_knockout,Fpn_res_knockout,Fpn_liv,Fpn_spl,Fpn_res,Il6,Il6_in,hep_in,bleeding,transfusion" inputs="id1,16777260,1,1;id4,16777267,1,1;id5,16777266,1,1,t;id6,33554434,1,1,t;id7,16777261,1,1,t;id8,16777264,1,1,t;idliv,16777268,1,1,t;idspl,16777269,1,1,t;idres,16777270,1,1,t" inputlabels="Fe_food,Fpn_duo_knockout,hep_knockout,LPS,bleeding,transfusion,Fpn_liv_knockout,Fpn_spl_knockout,Fpn_res_knockout" showtime="true" showtimemultiply="3600"></bdl-fmi>
-
-
 
 <div class="w3-panel w3-border">
 
@@ -162,15 +166,14 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 | Knockout genu pro FPN ve | <bdl-checkbox id="idres" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox> |  
 </div>
 
-**Úkoly** 
+**Otázky** 
 
-V simulátoru nasimulujeme stav systémové hemosiderózy jako sekundární důsledek léčby jiné nemoci.
-
-<bdl-quiz question="1. Jak v rámci možností modelu nasimulujete stav hemosiderózy?" answers="opakovaná transfúze|dlouhodobé krevní ztráty|knockout genu pro hepcidin" correctoptions="true|false|false" explanations="ano, z předchozího textu, systémová hemosideróza je způsobená dlouhodobě zvýšenou koncentrací železa v séru např. opakovanými transfúzemi a jeho následná kumulace v orgánech a tkáních|ne|nepřesně, knockout genu pro hepcidin je typický pro hemochromatózu" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-
-<bdl-quiz question="2. z předchozího úkolu nastavte parametr, který navodí hemosiderózu a nechte simulaci běžet aspoň 2 dny (48 h simulační čas). Jaké jsou hodnoty koncentrací obou typů iontů železa v enterocytu?" answers="zvýšené|snížené" correctoptions="true|false" explanations="ano, ze simulace by měli být hodnoty výrazně zvýšené oproti normované hodnotě 1.0, hemosideróza se projevuje kumulací železa v orgánech a tkáních|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-
-<bdl-quiz question="3. zkuste z možností vybrat nejvhodnější kompenzaci hemosiderózy." answers="opakované krevní odběry, nebo snížit transfúzi krve|dieta se sníženým obsahem železa|terapie chelating agents - vážou železo tak, že se nevstřebá, nebo se vyloučí močí" correctoptions="false|false|true" explanations="opakované odběry krve mohou snížit koncentraci železa, ale v tomto případě jdou proti primární léčbě transfúze|dieta má jen menší efekt pro tento stav|asi nejlepší volba v tomto případě, v praxi se asi použije kombinace výše zmíněných možností" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz id="q1" type="choice2" question="1/5. Jak v rámci možností modelu nasimulujete stav hemosiderózy?" answers="opakovaná transfúze|dlouhodobé krevní ztráty|knockout genu pro hepcidin" correctoptions="true|false|false" explanations="ano, z předchozího textu, systémová hemosideróza je způsobená dlouhodobě zvýšenou koncentrací železa v séru např. opakovanými transfúzemi a jeho následná kumulace v orgánech a tkáních|ne|nepřesně, knockout genu pro hepcidin je typický pro hemochromatózu" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz id="q2" type="choice2" question="2/5. z předchozího úkolu nastavte parametr, který navodí hemosiderózu a nechte simulaci běžet aspoň 2 dny (48 h simulační čas). Jaké jsou hodnoty koncentrací obou typů iontů železa v enterocytu?" answers="zvýšené|snížené" correctoptions="true|false" explanations="ano, ze simulace by měli být hodnoty výrazně zvýšené oproti normované hodnotě 1.0, hemosideróza se projevuje kumulací železa v orgánech a tkáních|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz id="q3" type="choice2" question="3/5. zkuste z možností vybrat nejvhodnější kompenzaci hemosiderózy." answers="opakované krevní odběry, nebo snížit transfúzi krve|dieta se sníženým obsahem železa|terapie chelating agents - vážou železo tak, že se nevstřebá, nebo se vyloučí močí" correctoptions="false|false|true" explanations="opakované odběry krve mohou snížit koncentraci železa, ale v tomto případě jdou proti primární léčbě transfúze|dieta má jen menší efekt pro tento stav|asi nejlepší volba v tomto případě, v praxi se asi použije kombinace výše zmíněných možností" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz id="q4" type="choice2" question="4/5. Jak v rámci možností modelu nasimulujete stav hereditární hemochromatózy?" answers="opakovaná transfúze|dlouhodobé krevní ztráty|knockout genu pro hepcidin" correctoptions="false|false|true" explanations="ne|ne|ano, z předchozího textu, hemochromatóza je způsobená neregulovaným příjmem železa z enterocytu, např. díky poruše regulace hepcidinu" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz id="q5" type="choice2" question="5/5. dle předchozího úkolu nastavte parametr, který simuluje hemochromatózu (knockout genu hepcidinu) a nechte simulaci běžet aspoň 2 dny (48 h simulační čas). Jaké jsou hodnoty koncentrací obou typů iontů železa v enterocytu?" answers="zvýšené|normální až snížené" correctoptions="false|true" explanations="ne|ano, ze simulace by měli být hodnoty koncentrací Fe v enterocytu normální až snížené oproti normované hodnotě 1.0, hemochromatóza se projevuje kumulací železa ve tkáních díky neregulované absorpci v duodenu" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz-control ids="q1,q2,q3,q4,q5"></bdl-quiz-control>
 
 </div>
 </div>
