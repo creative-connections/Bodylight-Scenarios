@@ -22,15 +22,15 @@ __Tabulka zkratek__
 
 
 
-### 2. Příjem železa nevázaného na Tf, tzv. NTBI (non-transferrin bound iron)
+### 2. Příjem železa nevázaného na transferrin, tzv. NTBI
 
 *[Tf]: Transferin
 *[NTBI]: non-transferrin bound iron
 *[TfR1]: transferin receptor 1
-*[IRE]: iron response element - smyčka na mRNA, která funguje jako čidlo koncentrace železa efektivně zajišťující represi translace mRNA v případě, kdy je v buňce železa nedostatek.
-*[IRP]: iron regulatory proteins - se naváží na IRE smyčku a zablokují tak posun ribozomu podél mRNA
-*[DMT1]: divalent metal transporter 1 - transportér divalentních kovů
-*[Lcn2]: lipokalin 2 - multifunkční protein může sekvestrovat železo nevázané na transferin.
+*[IRE]: iron response element | iron response element je smyčka na mRNA, která funguje jako čidlo koncentrace železa efektivně zajišťující represi translace mRNA v případě, kdy je v buňce železa nedostatek. | https://en.wikipedia.org/wiki/Iron_response_element
+*[IRP]: iron regulatory proteins | iron regulatory proteins se naváží na IRE smyčku a zablokují tak posun ribozomu podél mRNA | 
+*[DMT1]: divalent metal transporter 1 | transportér divalentních kovů
+*[Lcn2]: lipokalin 2 | multifunkční protein může sekvestrovat železo nevázané na transferin.
 
 V případech silného přetížení organismu železem překročí hladina železa kapacitu Tf a v plazmě je pak větší poměr nevázaného železa. NTBI je vázán řadou neproteinových ligandů včetně citrátu, který je pravděpodobně převládající formou plazmatického NTBI nalezeného při hemochromatóze. NTBI je účinně absorbováno hepatocyty, příjem není regulován přebytkem železa v játrech, jak je pozorováno u železa vázaného na Tf prostřednictvím systému IRE/IRP. Bylo prokázáno, že existuje několik mechanismů, které přispívají k vychytávání NTBI, včetně DMT1 a ZIP14 vázaných na membránu. Kromě toho je několik dalších mechanismů schopných transportu NTBI do buněk. Například vápníkové kanály typu L usnadňují transport NTBI do srdečních myocytů, blokátory kalciového kanálu pak inhibují absorpci NTBI do srdce. 
 
