@@ -40,6 +40,7 @@
     * [1.9 Komplexní simulace](#iron8.md)
   * [2. Železo v játrech](#liver/index.md)
     * [2.1 Příjem železa: Tf](#liver/prijemTf.md)
+      * [2.1.1 Příjem železa: Tf 2](#liver/prijemTf-a.md)
       * [2.1.2 Příjem železa: NTBI](#liver/prijemNTBI.md)
       * [2.1.3 Příjem železa: Hem](#liver/prijemHem.md)
       * [2.1.4 Skladování železa](#liver/index2skladovani.md)
