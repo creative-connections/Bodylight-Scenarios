@@ -16,15 +16,7 @@ img[alt^="image"] {max-width:20px;}
 **C**: STEAP3 reduktáza,
 **D**: schéma redukce Fe<sup>3+</sup> na Fe<sup>2+</sup> reduktázou STEAP3 na membráně endocytotického váčku,
 **E**: schéma endocytotického váčku.
-<div class="w3-justify">
 
-__Tabulka zkratek__
-* __Tf__: Transferin
-* __NTBI__: Non-Transferrin Bound Iron
-* __TfR1__: Transferin Receptor 1
-* __IRE__: Iron Response Element
-* __IRP__: Iron Regulatory Proteins
-</div>
 </div>
 <div class="w3-half">
 
@@ -42,6 +34,13 @@ Bylo zjištěno, že transmembránový protein __STEAP3__ ![image0](imgmetalored
 
 Dvojmocné železo ![image1](image1.jpg) je poté transportováno z endosomu do cytosolu pomocí __DMT1__ ![image5](image5.jpg), který je kromě kartáčovém lemu buněk tenkého střeva lokalizován v membráně endosomu. Je zajímavé, že myši postrádající DMT1 jsou stále schopné akumulovat jaterní železo, což naznačuje, že DMT1 není nezbytný pro absorpci železa vázaného na Tf. Po transportu železa do cytosolu se Tf a TfRl recyklují zpět do oběhu, respektive do buněčné membrány.
 
+<bdl-quiz question="Vyberte, který popis nejvíce odpovídá příjmu železa vázaného na Tf"
+	  type="choice2"
+    answers="Zásadní mechanismus v normě | zanedbatelný v normě, ale hlavní při přetížení organismu železem | zanedbatelný v normě, ale důležitý při hemolýze"
+    correctoptions="true|false|false" 
+buttontitle="zkontrolovat odpověď"
+explanations="ano.|ne. toto odpovídá mechanismu NTBI, viz dále.|ne. při hemolýze je důležitý mechanismus příjmu železa v hemu, viz dále.">
+</bdl-quiz>
 
 
 </div>
