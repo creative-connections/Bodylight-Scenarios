@@ -2,7 +2,7 @@
 <div class="w3-half">
 
 ![hepatocytsimulator](hepatocytsimulator.png)
-**Obrázek** schématické znázornění buňky hepatocytu a její interakce s přenosem železa z krevní kapiláry. Na následující stránce je schéma interaktivní se simulátorem
+**Obrázek** schématické znázornění buňky hepatocytu a její interakce s přenosem železa z krevní kapiláry. Hlavní mechanismus přes Tf. Vedlejší mechanismus přes DMT1. 
 </div>
 <div class="w3-half">
 <div class="w3-justify w3-margin-left">
@@ -11,10 +11,10 @@ Bez ohledu na zdroj, železo které vstupuje do hepatocytu se stává součást�
 
 Protože volné intracelulární železo je toxické, většina železa v buňkách je uložena ve ferritinu (viz. duodenum). V játrech mohou všechny typy buněk uchovávat železo, ale za normálních podmínek představují hlavní úložné místo hepatocyty.
 
-<bdl-quiz id="q1" question="Přiřaďte:"
+<bdl-quiz id="q1" question="Z předchozího textu přiřaďte k proteinu či komplexu jeho funkci:"
 	  type="match"
 	  terms="Volné železo <img src='image10.jpg' style='max-height:60px'></img> | Ferritin <img src='imageferritin.png' style='max-height:60px'></img> | Hemosiderin"
-	  answers="Fe<sup>2+</sup> vstupující do buňky bez ohledu na zdroj je součástí stejného intracelulárního poolu.|skladuje většinu Fe<sup>3+</sup> kvůli toxicitě volného železa | Je to nerozpustný komplex složený z degradovaného ferritinu a velkých řetězců hydroxidu železitého.">
+	  answers="je intracelulární zásoba železa Fe<sup>2+</sup> k okamžitému použití pro syntézu a další reakce.|skladuje většinu Fe<sup>3+</sup> v případě nedostatku v buňce je železo postupně uvolňováno. | Je to nerozpustný komplex složený z degradovaného ferritinu a velkých řetězců hydroxidu železitého.">
 </bdl-quiz>
 <bdl-quiz id="q2" question="Přiřaďte:"
 	  type="match"
