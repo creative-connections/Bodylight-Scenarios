@@ -1,7 +1,12 @@
 <div class="w3-row">
 <div class="w3-half">
-<div class="w3-left w3-small">v3.5&nbsp;</div>
-Simulation control: <bdl-fmi id="idfmi" mode="continuous" src="modelECMORespiratoryVR_ECMOSimNoRegVentilatorVC8.js" fminame="modelECMORespiratoryVR_ECMOSimNoRegVentilatorVC8" tolerance="0.0001" starttime="0" fstepsize="0.2" fpslimit="5" guid="{df14b810-b76e-4be8-bc34-be8fcb02ed2e}" valuereferences="637537985,905970425,905969984,905970853,905970388,905969947,905970816,16777229,16777230,16777583,16777584,16777585,16777223,100663306,16777224,16777225,905970386" valuelabels="lungs.volume,Veins.chemicalSolution.bloodGases.sO2,Arteries.chemicalSolution.bloodGases.sO2,Tissue.chemicalSolution.bloodGases.sO2,Veins.chemicalSolution.bloodGases.pH,Arteries.chemicalSolution.bloodGases.pH,Tissue.chemicalSolution.bloodGases.pH,RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.Eratio,ventilatorSCMV.pause,AirO2,AirN2,AirCO2,AirH2O,Veins.chemicalSolution.bloodGases.pCO2" inputs="idrate,16777229,1,60,t;idtv,16777230,1,1000000,t;idiratio,16777583,1,1,t;ideratio,16777584,1,1,t;idpause,16777585,1,100,0,t;ido2,16777223,1,100,t;idco2,16777224,1,100,t;idh2o,16777225,1,100,t;idshunts,16777226,1,100,t;iddeadspace,16777231,1,1000000,t" inputlabels="RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.Eratio,ventilatorSCMV.pause,AirO2,AirCO2,AirH2O,Shunts,DV"></bdl-fmi>
+<div class="w3-left w3-small">v3.6&nbsp;</div>
+Simulation control: <!--bdl-fmi id="idfmi" mode="continuous" src="modelECMORespiratoryVR_ECMOSimNoRegVentilatorVC8.js" fminame="modelECMORespiratoryVR_ECMOSimNoRegVentilatorVC8" tolerance="0.0001" starttime="0" fstepsize="0.2" fpslimit="5" guid="{df14b810-b76e-4be8-bc34-be8fcb02ed2e}" valuereferences="637537985,905970425,905969984,905970853,905970388,905969947,905970816,16777229,16777230,16777583,16777584,16777585,16777223,100663306,16777224,16777225,905970386" valuelabels="lungs.volume,Veins.chemicalSolution.bloodGases.sO2,Arteries.chemicalSolution.bloodGases.sO2,Tissue.chemicalSolution.bloodGases.sO2,Veins.chemicalSolution.bloodGases.pH,Arteries.chemicalSolution.bloodGases.pH,Tissue.chemicalSolution.bloodGases.pH,RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.Eratio,ventilatorSCMV.pause,AirO2,AirN2,AirCO2,AirH2O,Veins.chemicalSolution.bloodGases.pCO2" inputs="idrate,16777229,1,60,t;idtv,16777230,1,1000000,t;idiratio,16777583,1,1,t;ideratio,16777584,1,1,t;idpause,16777585,1,100,0,t;ido2,16777223,1,100,t;idco2,16777224,1,100,t;idh2o,16777225,1,100,t;idshunts,16777226,1,100,t;iddeadspace,16777231,1,1000000,t" inputlabels="RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.Eratio,ventilatorSCMV.pause,AirO2,AirCO2,AirH2O,Shunts,DV"></bdl-fmi-->
+<bdl-fmi id="idfmi" mode="continuous" src="modelECMORespiratoryVR_BloodGasesTransport_BloodyMary.js" fminame="modelECMORespiratoryVR_BloodGasesTransport_BloodyMary" tolerance="0.000001" starttime="0" fstepsize="0.2" fpslimit="5" guid="{a838e000-bd6f-47da-a2ad-19d11c90b296}" valuereferences="637540285,905975957,369104075,905975679,905975954,905974984,905975678,16777507,16777505,16777538,16777539,16777540,16777311,100663310,16777312,16777313,905975956,335544320,905973120,905973121" valuelabels="lungVentilatorSCMVAndRespiratoryCenter.lungs.volume,venous.sO2,arterial.sO2,tissueUnit[1].sO2,venous.pH,arterial.pH,tissueUnit[1].pH,lungVentilatorSCMVAndRespiratoryCenter.RR,lungVentilatorSCMVAndRespiratoryCenter.TV,lungVentilatorSCMVAndRespiratoryCenter.ventilatorSCMV.Iratio,lungVentilatorSCMVAndRespiratoryCenter.ventilatorSCMV.Eratio,lungVentilatorSCMVAndRespiratoryCenter.ventilatorSCMV.pause,AirO2,AirN2,AirCO2,AirH2O,venous.pCO2,plethy,bloodHemodynamics.arterialPressure.systolic,bloodHemodynamics.arterialPressure.diastolic" inputs="idrate,16777223,1,60,f;idtv,16777505,1,1000000,t;idiratio,16777538,1,1,t;ideratio,16777539,1,1,t;idpause,16777540,1,100,t;ido2,16777311,1,100,t;idco2,16777312,1,100,t;idh2o,16777313,1,100,t;idshunts,16777227,1,100,t;iddeadspace,16777225,1,1000000,t" inputlabels="RR,lungVentilatorSCMVAndRespiratoryCenter.TV,lungVentilatorSCMVAndRespiratoryCenter.ventilatorSCMV.Iratio,lungVentilatorSCMVAndRespiratoryCenter.ventilatorSCMV.Eratio,lungVentilatorSCMVAndRespiratoryCenter.ventilatorSCMV.pause,AirO2,AirCO2,AirH2O,cShuntFrac,DV"></bdl-fmi>
+
+
+
+
 </div>
 <div class="w3-half">
 
@@ -41,7 +46,7 @@ API to VR
 
 </div>
 <div class="w3-half">
-<bdl-chartjs-time width="300" height="120" fromid="idfmi" labels="sO2 veins,sO2 arteries,sO2 tissues" refindex="1" refvalues="3" throttle="1000" minichart="true" colorindex="3" maxdata="4096"></bdl-chartjs-time>
+<bdl-chartjs-time width="400" height="60" fromid="idfmi" labels="sO2 arteries" refindex="17" refvalues="1" throttle="1000" minichart="true" colorindex="4" maxdata="128"></bdl-chartjs-time>
 </div>
 </div>
 </div>
@@ -50,6 +55,11 @@ API to VR
 <div class="w3-card w3-third w3-text-yellow w3-large">
 
 &nbsp;spO<sub>2</sub><span class="w3-xlarge"><bdl-value fromid="idfmi" refindex="2" convertor="100,1"></bdl-value></span>&nbsp;<span class="w3-small">%</span>
+
+&nbsp;sys<span class="w3-xlarge"><bdl-value fromid="idfmi" refindex="18" convertor="1,133.322"></bdl-value></span>&nbsp;<span class="w3-small">mmHg</span>
+
+&nbsp;dia<span class="w3-xlarge"><bdl-value fromid="idfmi" refindex="19" convertor="1,133.322"></bdl-value></span>&nbsp;<span class="w3-small">mmHg</span>
+
 </div>
 
 </div>
