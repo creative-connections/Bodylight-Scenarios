@@ -19,6 +19,7 @@
   * [Virtual patient 3D anatomy](#virtualpatient1.md)
     * [Simulator in VR/AR](#virtualpatient2.md) 
     * [Respiratory model, VR demo](#virtualpatient4.md)
+    * [Respiratory model co, VR demo](#virtualpatient4-co.md)
     * [Respiratory model 2, VR demo](#virtualpatient5.md)
   * [Imunity](#imuno.md)
     * [Central imunity - animated GIF](#imuno0.md)
