@@ -9,6 +9,10 @@
 
 <bdl-fmi id="ventilator" showcontrols="false" controlid="controlbuttons2" mode="continuous" src="modelECMORespiratoryVR_BloodGasesTransport_LungVentilatorSCMV2.js" fminame="modelECMORespiratoryVR_BloodGasesTransport_LungVentilatorSCMV2" tolerance="0.000001" starttime="0" fstepsize="0.2" fpslimit="5" guid="{b66a2d5f-da7b-467d-8a17-46196aa6e7ac}" valuereferences="637534431,637534478,16777227,16777225,16777249,16777250,16777251" valuelabels="expiration.q_in.p,lungs.volume,RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.Eratio,ventilatorSCMV.pause" inputs="idrate,16777227,1,60,t;idtv,16777225,1,1000000,t;idiratio,16777249,1,1,t;idpause,16777251,1,100,t;ideratio,16777250,1,1,t" inputlabels="RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.pause,ventilatorSCMV.Eratio"></bdl-fmi>
 
+<bdl-fmi id="hemodynamics" showcontrols="false" controlid="controlbuttons2" mode="continuous" src="modelECMORespiratoryVR_BloodGasesTransport_MeursModel2011_Hemodynamics.js" fminame="modelECMORespiratoryVR_BloodGasesTransport_MeursModel2011_Hemodynamics" tolerance="0.000001" starttime="0" fstepsize="0.2" fpslimit="5" guid="{52b4d2a1-3431-4b87-8d43-9867283f2d47}" valuereferences="905970324,905970177,905970178" valuelabels="EithaPressure.pressure,arterialPressure.systolic,arterialPressure.diastolic" inputs="" inputlabels=""></bdl-fmi>
+
+
+
 </div>
 <div class="w3-half">
 
@@ -29,10 +33,10 @@ API to VR
 <div class="w3-card w3-text-aqua w3-large" style="white-space:nowrap">
 &nbsp;RR&nbsp;<b class="w3-xxxlarge"><bdl-value fromid="ventilator" refindex="2" convertor="60,1"></bdl-value></b>&nbsp;<span class="w3-small">1/min</span>
 <div class="w3-text-blue w3-large">
-&nbsp;sys<b class=""><bdl-value fromid="idfmi" refindex="11" convertor="1,133.322"></bdl-value></b>&nbsp;<span class="w3-small">mmHg</span>
+&nbsp;sys<b class=""><bdl-value fromid="hemodynamics" refindex="1" convertor="1,133.322"></bdl-value></b>&nbsp;<span class="w3-small">mmHg</span>
 </div>
 <div class="w3-text-red w3-large">
-&nbsp;dia<b class=""><bdl-value fromid="idfmi" refindex="11" convertor="1,133.322"></bdl-value></b>&nbsp;<span class="w3-small">mmHg</span>
+&nbsp;dia<b class=""><bdl-value fromid="hemodynamics" refindex="2" convertor="1,133.322"></bdl-value></b>&nbsp;<span class="w3-small">mmHg</span>
 </div>
 
 </div>
@@ -40,7 +44,7 @@ API to VR
 </div><div class="w3-row">
 <div class="w3-threequarter">
 <div class="w3-row">
-&nbsp;<bdl-chartjs-time width="750" height="60" fromid="idfmi" labels="sO2 arteries" refindex="11" refvalues="1" throttle="100" colorindex="4" minichart="true" maxdata="128" initialdata="0,0.01;0.98,0.98"></bdl-chartjs-time>
+&nbsp;<bdl-chartjs-time width="750" height="60" fromid="hemodynamics" labels="pulsatile sO2" refindex="0" refvalues="1" throttle="100" colorindex="4" minichart="true" initialdata="0,0.01;0.98,0.98"></bdl-chartjs-time>
 
 </div>
 </div>
