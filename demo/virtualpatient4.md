@@ -1,25 +1,11 @@
-<div class="w3-row">
-<div class="w3-half">
-<div class="w3-left w3-small">v3.8a&nbsp;</div>
+<div class="w3-blue" style="position: absolute">
+<span class="w3-small">v3.8a&nbsp;</span>
 <!--bdl-fmi id="idfmi" mode="continuous" src="modelECMORespiratoryVR_ECMOSimNoRegVentilatorVC8.js" fminame="modelECMORespiratoryVR_ECMOSimNoRegVentilatorVC8" tolerance="0.0001" starttime="0" fstepsize="0.2" fpslimit="5" guid="{df14b810-b76e-4be8-bc34-be8fcb02ed2e}" valuereferences="637537985,905970425,905969984,905970853,905970388,905969947,905970816,16777229,16777230,16777583,16777584,16777585,16777223,100663306,16777224,16777225,905970386,637538038,637537985" valuelabels="lungs.volume,Veins.chemicalSolution.bloodGases.sO2,Arteries.chemicalSolution.bloodGases.sO2,Tissue.chemicalSolution.bloodGases.sO2,Veins.chemicalSolution.bloodGases.pH,Arteries.chemicalSolution.bloodGases.pH,Tissue.chemicalSolution.bloodGases.pH,RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.Eratio,ventilatorSCMV.pause,AirO2,AirN2,AirCO2,AirH2O,Veins.chemicalSolution.bloodGases.pCO2,expiration.q_in.p,lungs.volume" inputs="idrate,16777229,1,60,t;idtv,16777230,1,1000000,t;idiratio,16777583,1,1,t;ideratio,16777584,1,1,t;idpause,16777585,1,100,0,t;ido2,16777223,1,100,t;idco2,16777224,1,100,t;idh2o,16777225,1,100,t;idshunts,16777226,1,100,t;iddeadspace,16777231,1,1000000,t;idexp,16777587,1,1000000,t" inputlabels="RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.Eratio,ventilatorSCMV.pause,AirO2,AirCO2,AirH2O,Shunts,DV,expirationConductance.k"></bdl-fmi-->
 <bdl-animate-control id="controlbuttons2" controlfmi="true" showstep="false"></bdl-animate-control>
 <bdl-fmi id="idfmi" showcontrols="false" controlid="controlbuttons2" mode="continuous" src="modelECMORespiratoryVR_BloodGasesTransport_BloodyMaryPPG.js" fminame="modelECMORespiratoryVR_BloodGasesTransport_BloodyMaryPPG" tolerance="0.000001" starttime="0" fstepsize="0.1" fpslimit="10" guid="{135691d3-d2dd-455a-9cee-6772a67e2f41}" valuereferences="905975214,369103423,905975027,905975211,905974332,905975026,16777311,100663310,16777312,16777313,905975213,335544320" valuelabels="venous.sO2,arterial.sO2,tissueUnit[1].sO2,venous.pH,arterial.pH,tissueUnit[1].pH,AirO2,AirN2,AirCO2,AirH2O,venous.pCO2,plethy" inputs="idrate,16777223,1,60,f;ido2,16777311,1,100,t;idco2,16777312,1,100,t;idh2o,16777313,1,100,t;idshunts,16777227,1,100,t;iddeadspace,16777225,1,1000000,t" inputlabels="RR,AirO2,AirCO2,AirH2O,cShuntFrac,DV"></bdl-fmi>
-
 <bdl-fmi id="ventilator" showcontrols="false" controlid="controlbuttons2" mode="continuous" src="modelECMORespiratoryVR_BloodGasesTransport_LungVentilatorSCMV2.js" fminame="modelECMORespiratoryVR_BloodGasesTransport_LungVentilatorSCMV2" tolerance="0.000001" starttime="0" fstepsize="0.1" fpslimit="10" guid="{b66a2d5f-da7b-467d-8a17-46196aa6e7ac}" valuereferences="637534431,637534478,16777227,16777225,16777249,16777250,16777251" valuelabels="expiration.q_in.p,lungs.volume,RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.Eratio,ventilatorSCMV.pause" inputs="idrate,16777227,1,60,t;idtv,16777225,1,1000000,t;idiratio,16777249,1,1,t;idpause,16777251,1,100,t;ideratio,16777250,1,1,t" inputlabels="RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.pause,ventilatorSCMV.Eratio"></bdl-fmi>
-
-<bdl-fmi id="hemodynamics" showcontrols="false" controlid="controlbuttons2" mode="continuous" src="modelECMORespiratoryVR_BloodGasesTransport_MeursModel2011_Hemodynamics.js" fminame="modelECMORespiratoryVR_BloodGasesTransport_MeursModel2011_Hemodynamics" tolerance="0.000001" starttime="0" fstepsize="0.05" fpslimit="20" guid="{916766d8-bb6d-4c1a-89a8-95db4b372444}" valuereferences="905970347,905970189,905970190,33554460" valuelabels="EithaPressure.pressure,arterialPressure.systolic,arterialPressure.diastolic,Ecg.ecg" inputs="" inputlabels=""></bdl-fmi>
-
-
-
-
-
-</div>
-<div class="w3-half">
-
-API to VR
-<bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval="2000" id="vrapi" inputs="volume;sO2"></bdl-remote-value>
-
-
+<bdl-fmi id="hemodynamics" showcontrols="false" controlid="controlbuttons2" mode="continuous" src="modelECMORespiratoryVR_BloodGasesTransport_MeursModel2011_Hemodynamics.js" fminame="modelECMORespiratoryVR_BloodGasesTransport_MeursModel2011_Hemodynamics" tolerance="0.000001" starttime="0" fstepsize="0.05" fpslimit="20" guid="{7a886f2e-e438-4ec4-b4cc-ff82d67590c8}" valuereferences="905970347,905970189,905970190,33554460,637534710" valuelabels="EithaPressure.pressure,arterialPressure.systolic,arterialPressure.diastolic,Ecg.ecg,currentHeartReat.y" inputs="" inputlabels=""></bdl-fmi>
+API to VR <bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval="2000" id="vrapi" inputs="volume;sO2"></bdl-remote-value>
 </div>
 </div>
 <div class="w3-black w3-sans-serif w3-card" style="max-width:1366px">
@@ -33,11 +19,14 @@ API to VR
 <div class="w3-quarter">
 <div class="w3-card w3-text-aqua w3-large" style="white-space:nowrap">
 &nbsp;RR&nbsp;<b class="w3-xxxlarge"><bdl-value fromid="ventilator" refindex="2" convertor="60,1"></bdl-value></b>&nbsp;<span class="w3-small">1/min</span>
+<div class="w3-text-orange w3-large">
+&nbsp;HR<b class="w3-xxxlarge"><bdl-value fromid="hemodynamics" refindex="4" convertor="60,1" precision="2"></bdl-value></b>&nbsp;<span class="w3-small">1/min</span>
+</div>
 <div class="w3-text-blue w3-large">
-&nbsp;sys<b class=""><bdl-value fromid="hemodynamics" refindex="1" convertor="1,133.322"></bdl-value></b>&nbsp;<span class="w3-small">mmHg</span>
+&nbsp;sys<b class=""><bdl-value fromid="hemodynamics" refindex="1" convertor="1,133.322" precision="3"></bdl-value></b>&nbsp;<span class="w3-small">mmHg</span>
 </div>
 <div class="w3-text-red w3-large">
-&nbsp;dia<b class=""><bdl-value fromid="hemodynamics" refindex="2" convertor="1,133.322"></bdl-value></b>&nbsp;<span class="w3-small">mmHg</span>
+&nbsp;dia<b class=""><bdl-value fromid="hemodynamics" refindex="2" convertor="1,133.322" precision="3"></bdl-value></b>&nbsp;<span class="w3-small">mmHg</span>
 </div>
 
 </div>
