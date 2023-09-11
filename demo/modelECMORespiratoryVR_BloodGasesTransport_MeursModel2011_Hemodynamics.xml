@@ -3,12 +3,12 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   fmiVersion="2.0"
   modelName="modelECMORespiratoryVR.BloodGasesTransport.MeursModel2011.Hemodynamics"
-  guid="{916766d8-bb6d-4c1a-89a8-95db4b372444}"
+  guid="{7a5f9ef2-3ed7-48a3-9d99-2dd65457d9f3}"
   version="1"
   generationTool="Dymola Version 2023x Refresh 1, 2023-04-12"
-  generationDateAndTime="2023-09-05T17:36:03Z"
+  generationDateAndTime="2023-09-11T10:49:14Z"
   variableNamingConvention="structured"
-  numberOfEventIndicators="102">
+  numberOfEventIndicators="104">
   <ModelExchange
     modelIdentifier="modelECMORespiratoryVR_BloodGasesTransport_MeursModel2011_Hemodynamics"
     completedIntegratorStepNotNeeded="true"
@@ -43,7 +43,11 @@
         s="-1"/>
     </Unit>
     <Unit
-      name="1"/>
+      name="1">
+      <DisplayUnit
+        name="%"
+        factor="100.0"/>
+    </Unit>
     <Unit
       name="A">
       <BaseUnit A="1"/>
@@ -316,6 +320,14 @@
         nominal="4186.8"/>
     </SimpleType>
     <SimpleType
+      name="Physiolibrary.Types.Fraction">
+      <Real
+        quantity="Fraction"
+        unit="1"
+        displayUnit="%"
+        nominal="0.01"/>
+    </SimpleType>
+    <SimpleType
       name="Physiolibrary.Types.Frequency">
       <Real
         quantity="Frequency"
@@ -400,14 +412,15 @@
         nominal="0.001"/>
     </SimpleType>
     <SimpleType
-      name="Physiolibrary.Types.RealIO.FrequencyInput">
+      name="Physiolibrary.Types.RealIO.FractionOutput">
       <Real
-        quantity="Frequency"
-        unit="Hz"
-        displayUnit="1/min"/>
+        quantity="Fraction"
+        unit="1"
+        displayUnit="%"
+        nominal="0.01"/>
     </SimpleType>
     <SimpleType
-      name="Physiolibrary.Types.RealIO.FrequencyOutput">
+      name="Physiolibrary.Types.RealIO.FrequencyInput">
       <Real
         quantity="Frequency"
         unit="Hz"
@@ -509,6 +522,46 @@
         unit="m3/s"
         displayUnit="ml/min"
         nominal="1.6666666666666667E-08"/>
+    </SimpleType>
+    <SimpleType
+      name="Modelica.Blocks.Types.Extrapolation">
+      <Enumeration>
+        <Item name="HoldLastPoint"
+          value="1"
+          description="Hold the first/last table point outside of the table scope"/>
+        <Item name="LastTwoPoints"
+          value="2"
+          description="Extrapolate by using the derivative at the first/last table points outside of the table scope"/>
+        <Item name="Periodic"
+          value="3"
+          description="Repeat the table scope periodically"/>
+        <Item name="NoExtrapolation"
+          value="4"
+          description="Extrapolation triggers an error"/>
+      </Enumeration>
+    </SimpleType>
+    <SimpleType
+      name="Modelica.Blocks.Types.Smoothness">
+      <Enumeration>
+        <Item name="LinearSegments"
+          value="1"
+          description="Linear interpolation of table points"/>
+        <Item name="ContinuousDerivative"
+          value="2"
+          description="Akima spline interpolation of table points (such that the first derivative is continuous)"/>
+        <Item name="ConstantSegments"
+          value="3"
+          description="Piecewise constant interpolation of table points (the value from the previous abscissa point is returned)"/>
+        <Item name="MonotoneContinuousDerivative1"
+          value="4"
+          description="Fritsch-Butland spline interpolation (such that the monotonicity is preserved and the first derivative is continuous)"/>
+        <Item name="MonotoneContinuousDerivative2"
+          value="5"
+          description="Steffen spline interpolation of table points (such that the monotonicity is preserved and the first derivative is continuous)"/>
+        <Item name="ModifiedContinuousDerivative"
+          value="6"
+          description="Modified Akima spline interpolation of table points (such that the first derivative is continuous and shortcomings of the original Akima method are avoided)"/>
+      </Enumeration>
     </SimpleType>
     <SimpleType
       name="Modelica.Fluid.Types.Dynamics">
@@ -788,7 +841,7 @@
     <!-- Index for next variable = 27 -->
     <ScalarVariable
       name="Epa.q_in[1].m_flow"
-      valueReference="637534747"
+      valueReference="637534757"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -800,7 +853,7 @@
     <!-- Index for next variable = 28 -->
     <ScalarVariable
       name="Epa.q_in[1].p"
-      valueReference="637534748"
+      valueReference="637534758"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -813,7 +866,7 @@
     <!-- Index for next variable = 29 -->
     <ScalarVariable
       name="Epa.q_in[1].h_outflow"
-      valueReference="637534749"
+      valueReference="637534759"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -825,7 +878,7 @@
     <!-- Index for next variable = 30 -->
     <ScalarVariable
       name="Epa.q_in[2].m_flow"
-      valueReference="637534750"
+      valueReference="637534760"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -837,7 +890,7 @@
     <!-- Index for next variable = 31 -->
     <ScalarVariable
       name="Epa.q_in[2].p"
-      valueReference="637534748"
+      valueReference="637534758"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -850,7 +903,7 @@
     <!-- Index for next variable = 32 -->
     <ScalarVariable
       name="Epa.q_in[2].h_outflow"
-      valueReference="637534751"
+      valueReference="637534761"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -946,7 +999,7 @@
     <!-- Index for next variable = 43 -->
     <ScalarVariable
       name="Epa.volume"
-      valueReference="637534752">
+      valueReference="637534762">
       <Real
         declaredType="Physiolibrary.Types.Volume"/>
     </ScalarVariable>
@@ -962,7 +1015,7 @@
     <!-- Index for next variable = 45 -->
     <ScalarVariable
       name="Epa.pressure"
-      valueReference="637534748">
+      valueReference="637534758">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
     </ScalarVariable>
@@ -1065,7 +1118,7 @@
     <!-- Index for next variable = 56 -->
     <ScalarVariable
       name="Epa.excessVolume"
-      valueReference="637534753"
+      valueReference="637534763"
       description="Additional cavity volume (=fluid volume + internal space volume), that generate pressure">
       <Real
         declaredType="Physiolibrary.Types.Volume"/>
@@ -1073,7 +1126,7 @@
     <!-- Index for next variable = 57 -->
     <ScalarVariable
       name="Epa.fluidVolume"
-      valueReference="637534752">
+      valueReference="637534762">
       <Real
         declaredType="Physiolibrary.Types.RealIO.VolumeOutput"/>
     </ScalarVariable>
@@ -1121,7 +1174,7 @@
     <!-- Index for next variable = 62 -->
     <ScalarVariable
       name="Epa.relative_pressure"
-      valueReference="905970210">
+      valueReference="905970220">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
     </ScalarVariable>
@@ -1211,7 +1264,7 @@
     <!-- Index for next variable = 73 -->
     <ScalarVariable
       name="Rpp.q_in.m_flow"
-      valueReference="637534759"
+      valueReference="637534769"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -1222,7 +1275,7 @@
     <!-- Index for next variable = 74 -->
     <ScalarVariable
       name="Rpp.q_in.p"
-      valueReference="637534748"
+      valueReference="637534758"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -1235,7 +1288,7 @@
     <!-- Index for next variable = 75 -->
     <ScalarVariable
       name="Rpp.q_in.h_outflow"
-      valueReference="637534755"
+      valueReference="637534765"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -1247,7 +1300,7 @@
     <!-- Index for next variable = 76 -->
     <ScalarVariable
       name="Rpp.q_out.m_flow"
-      valueReference="637534747"
+      valueReference="637534757"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -1258,7 +1311,7 @@
     <!-- Index for next variable = 77 -->
     <ScalarVariable
       name="Rpp.q_out.p"
-      valueReference="637534756"
+      valueReference="637534766"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -1271,7 +1324,7 @@
     <!-- Index for next variable = 78 -->
     <ScalarVariable
       name="Rpp.q_out.h_outflow"
-      valueReference="637534749"
+      valueReference="637534759"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -1283,7 +1336,7 @@
     <!-- Index for next variable = 79 -->
     <ScalarVariable
       name="Rpp.massFlowRate"
-      valueReference="637534759"
+      valueReference="637534769"
       description="Mass flow">
       <Real
         declaredType="Physiolibrary.Types.MassFlowRate"/>
@@ -1291,7 +1344,7 @@
     <!-- Index for next variable = 80 -->
     <ScalarVariable
       name="Rpp.volumeFlowRate"
-      valueReference="637534757"
+      valueReference="637534767"
       description="Volume flow">
       <Real
         declaredType="Physiolibrary.Types.VolumeFlowRate"/>
@@ -1299,7 +1352,7 @@
     <!-- Index for next variable = 81 -->
     <ScalarVariable
       name="Rpp.dp"
-      valueReference="905970214"
+      valueReference="905970224"
       description="Pressure gradient">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
@@ -1398,7 +1451,7 @@
     <!-- Index for next variable = 92 -->
     <ScalarVariable
       name="Epv.q_in[1].m_flow"
-      valueReference="637534759"
+      valueReference="637534769"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -1409,7 +1462,7 @@
     <!-- Index for next variable = 93 -->
     <ScalarVariable
       name="Epv.q_in[1].p"
-      valueReference="637534756"
+      valueReference="637534766"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -1422,7 +1475,7 @@
     <!-- Index for next variable = 94 -->
     <ScalarVariable
       name="Epv.q_in[1].h_outflow"
-      valueReference="637534755"
+      valueReference="637534765"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -1434,7 +1487,7 @@
     <!-- Index for next variable = 95 -->
     <ScalarVariable
       name="Epv.q_in[2].m_flow"
-      valueReference="637534760"
+      valueReference="637534770"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -1446,7 +1499,7 @@
     <!-- Index for next variable = 96 -->
     <ScalarVariable
       name="Epv.q_in[2].p"
-      valueReference="637534756"
+      valueReference="637534766"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -1459,7 +1512,7 @@
     <!-- Index for next variable = 97 -->
     <ScalarVariable
       name="Epv.q_in[2].h_outflow"
-      valueReference="637534761"
+      valueReference="637534771"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -1555,7 +1608,7 @@
     <!-- Index for next variable = 108 -->
     <ScalarVariable
       name="Epv.volume"
-      valueReference="637534762">
+      valueReference="637534772">
       <Real
         declaredType="Physiolibrary.Types.Volume"/>
     </ScalarVariable>
@@ -1571,7 +1624,7 @@
     <!-- Index for next variable = 110 -->
     <ScalarVariable
       name="Epv.pressure"
-      valueReference="637534756">
+      valueReference="637534766">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
     </ScalarVariable>
@@ -1674,7 +1727,7 @@
     <!-- Index for next variable = 121 -->
     <ScalarVariable
       name="Epv.excessVolume"
-      valueReference="637534763"
+      valueReference="637534773"
       description="Additional cavity volume (=fluid volume + internal space volume), that generate pressure">
       <Real
         declaredType="Physiolibrary.Types.Volume"/>
@@ -1682,7 +1735,7 @@
     <!-- Index for next variable = 122 -->
     <ScalarVariable
       name="Epv.fluidVolume"
-      valueReference="637534762">
+      valueReference="637534772">
       <Real
         declaredType="Physiolibrary.Types.RealIO.VolumeOutput"/>
     </ScalarVariable>
@@ -1730,7 +1783,7 @@
     <!-- Index for next variable = 127 -->
     <ScalarVariable
       name="Epv.relative_pressure"
-      valueReference="905970220">
+      valueReference="905970230">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
     </ScalarVariable>
@@ -1820,7 +1873,7 @@
     <!-- Index for next variable = 138 -->
     <ScalarVariable
       name="Rlain.q_in.m_flow"
-      valueReference="637534771"
+      valueReference="637534781"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -1831,7 +1884,7 @@
     <!-- Index for next variable = 139 -->
     <ScalarVariable
       name="Rlain.q_in.p"
-      valueReference="637534756"
+      valueReference="637534766"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -1844,7 +1897,7 @@
     <!-- Index for next variable = 140 -->
     <ScalarVariable
       name="Rlain.q_in.h_outflow"
-      valueReference="637534765"
+      valueReference="637534775"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -1856,7 +1909,7 @@
     <!-- Index for next variable = 141 -->
     <ScalarVariable
       name="Rlain.q_out.m_flow"
-      valueReference="637534760"
+      valueReference="637534770"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -1867,7 +1920,7 @@
     <!-- Index for next variable = 142 -->
     <ScalarVariable
       name="Rlain.q_out.p"
-      valueReference="637534766"
+      valueReference="637534776"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -1880,7 +1933,7 @@
     <!-- Index for next variable = 143 -->
     <ScalarVariable
       name="Rlain.q_out.h_outflow"
-      valueReference="637534761"
+      valueReference="637534771"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -1892,7 +1945,7 @@
     <!-- Index for next variable = 144 -->
     <ScalarVariable
       name="Rlain.massFlowRate"
-      valueReference="637534771"
+      valueReference="637534781"
       description="Mass flow">
       <Real
         declaredType="Physiolibrary.Types.MassFlowRate"/>
@@ -1900,7 +1953,7 @@
     <!-- Index for next variable = 145 -->
     <ScalarVariable
       name="Rlain.volumeFlowRate"
-      valueReference="637534767"
+      valueReference="637534777"
       description="Volume flow">
       <Real
         declaredType="Physiolibrary.Types.VolumeFlowRate"/>
@@ -1908,7 +1961,7 @@
     <!-- Index for next variable = 146 -->
     <ScalarVariable
       name="Rlain.dp"
-      valueReference="905970224"
+      valueReference="905970234"
       description="Pressure gradient">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
@@ -2007,7 +2060,7 @@
     <!-- Index for next variable = 157 -->
     <ScalarVariable
       name="LeftAtrium.q_in[1].m_flow"
-      valueReference="637534769"
+      valueReference="637534779"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -2019,7 +2072,7 @@
     <!-- Index for next variable = 158 -->
     <ScalarVariable
       name="LeftAtrium.q_in[1].p"
-      valueReference="637534766"
+      valueReference="637534776"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -2032,7 +2085,7 @@
     <!-- Index for next variable = 159 -->
     <ScalarVariable
       name="LeftAtrium.q_in[1].h_outflow"
-      valueReference="637534770"
+      valueReference="637534780"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -2044,7 +2097,7 @@
     <!-- Index for next variable = 160 -->
     <ScalarVariable
       name="LeftAtrium.q_in[2].m_flow"
-      valueReference="637534771"
+      valueReference="637534781"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -2055,7 +2108,7 @@
     <!-- Index for next variable = 161 -->
     <ScalarVariable
       name="LeftAtrium.q_in[2].p"
-      valueReference="637534766"
+      valueReference="637534776"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -2068,7 +2121,7 @@
     <!-- Index for next variable = 162 -->
     <ScalarVariable
       name="LeftAtrium.q_in[2].h_outflow"
-      valueReference="637534765"
+      valueReference="637534775"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -2164,7 +2217,7 @@
     <!-- Index for next variable = 173 -->
     <ScalarVariable
       name="LeftAtrium.volume"
-      valueReference="637534772">
+      valueReference="637534782">
       <Real
         declaredType="Physiolibrary.Types.Volume"/>
     </ScalarVariable>
@@ -2180,7 +2233,7 @@
     <!-- Index for next variable = 175 -->
     <ScalarVariable
       name="LeftAtrium.pressure"
-      valueReference="637534766">
+      valueReference="637534776">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
     </ScalarVariable>
@@ -2283,7 +2336,7 @@
     <!-- Index for next variable = 186 -->
     <ScalarVariable
       name="LeftAtrium.excessVolume"
-      valueReference="637534773"
+      valueReference="637534783"
       description="Additional cavity volume (=fluid volume + internal space volume), that generate pressure">
       <Real
         declaredType="Physiolibrary.Types.Volume"/>
@@ -2291,7 +2344,7 @@
     <!-- Index for next variable = 187 -->
     <ScalarVariable
       name="LeftAtrium.fluidVolume"
-      valueReference="637534772">
+      valueReference="637534782">
       <Real
         declaredType="Physiolibrary.Types.RealIO.VolumeOutput"/>
     </ScalarVariable>
@@ -2339,7 +2392,7 @@
     <!-- Index for next variable = 192 -->
     <ScalarVariable
       name="LeftAtrium.relative_pressure"
-      valueReference="905970230">
+      valueReference="905970240">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
     </ScalarVariable>
@@ -2370,14 +2423,14 @@
     <!-- Index for next variable = 196 -->
     <ScalarVariable
       name="LeftAtrium.d_sigmoid"
-      valueReference="905970231">
+      valueReference="905970241">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
     </ScalarVariable>
     <!-- Index for next variable = 197 -->
     <ScalarVariable
       name="LeftAtrium.c_sigmoid"
-      valueReference="905970232">
+      valueReference="905970242">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
     </ScalarVariable>
@@ -2400,7 +2453,7 @@
     <!-- Index for next variable = 200 -->
     <ScalarVariable
       name="LeftAtrium.c"
-      valueReference="637534777">
+      valueReference="637534787">
       <Real
         declaredType="Physiolibrary.Types.HydraulicCompliance"/>
     </ScalarVariable>
@@ -2426,7 +2479,7 @@
     <!-- Index for next variable = 203 -->
     <ScalarVariable
       name="LeftAtrium.elastance"
-      valueReference="637534795">
+      valueReference="637534805">
       <Real
         declaredType="Physiolibrary.Types.RealIO.HydraulicElastanceInput"/>
     </ScalarVariable>
@@ -2480,7 +2533,7 @@
     <!-- Index for next variable = 209 -->
     <ScalarVariable
       name="LeftVentricle.q_in[1].m_flow"
-      valueReference="637534778"
+      valueReference="637534788"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -2491,7 +2544,7 @@
     <!-- Index for next variable = 210 -->
     <ScalarVariable
       name="LeftVentricle.q_in[1].p"
-      valueReference="637534779"
+      valueReference="637534789"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -2504,7 +2557,7 @@
     <!-- Index for next variable = 211 -->
     <ScalarVariable
       name="LeftVentricle.q_in[1].h_outflow"
-      valueReference="637534780"
+      valueReference="637534790"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -2516,7 +2569,7 @@
     <!-- Index for next variable = 212 -->
     <ScalarVariable
       name="LeftVentricle.q_in[2].m_flow"
-      valueReference="637534781"
+      valueReference="637534791"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -2528,7 +2581,7 @@
     <!-- Index for next variable = 213 -->
     <ScalarVariable
       name="LeftVentricle.q_in[2].p"
-      valueReference="637534779"
+      valueReference="637534789"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -2541,7 +2594,7 @@
     <!-- Index for next variable = 214 -->
     <ScalarVariable
       name="LeftVentricle.q_in[2].h_outflow"
-      valueReference="637534782"
+      valueReference="637534792"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -2637,7 +2690,7 @@
     <!-- Index for next variable = 225 -->
     <ScalarVariable
       name="LeftVentricle.volume"
-      valueReference="637534783">
+      valueReference="637534793">
       <Real
         declaredType="Physiolibrary.Types.Volume"/>
     </ScalarVariable>
@@ -2653,7 +2706,7 @@
     <!-- Index for next variable = 227 -->
     <ScalarVariable
       name="LeftVentricle.pressure"
-      valueReference="637534779">
+      valueReference="637534789">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
     </ScalarVariable>
@@ -2756,7 +2809,7 @@
     <!-- Index for next variable = 238 -->
     <ScalarVariable
       name="LeftVentricle.excessVolume"
-      valueReference="637534784"
+      valueReference="637534794"
       description="Additional cavity volume (=fluid volume + internal space volume), that generate pressure">
       <Real
         declaredType="Physiolibrary.Types.Volume"/>
@@ -2764,7 +2817,7 @@
     <!-- Index for next variable = 239 -->
     <ScalarVariable
       name="LeftVentricle.fluidVolume"
-      valueReference="637534783">
+      valueReference="637534793">
       <Real
         declaredType="Physiolibrary.Types.RealIO.VolumeOutput"/>
     </ScalarVariable>
@@ -2812,7 +2865,7 @@
     <!-- Index for next variable = 244 -->
     <ScalarVariable
       name="LeftVentricle.relative_pressure"
-      valueReference="905970241">
+      valueReference="905970251">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
     </ScalarVariable>
@@ -2843,14 +2896,14 @@
     <!-- Index for next variable = 248 -->
     <ScalarVariable
       name="LeftVentricle.d_sigmoid"
-      valueReference="905970242">
+      valueReference="905970252">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
     </ScalarVariable>
     <!-- Index for next variable = 249 -->
     <ScalarVariable
       name="LeftVentricle.c_sigmoid"
-      valueReference="905970243">
+      valueReference="905970253">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
     </ScalarVariable>
@@ -2873,7 +2926,7 @@
     <!-- Index for next variable = 252 -->
     <ScalarVariable
       name="LeftVentricle.c"
-      valueReference="637534788">
+      valueReference="637534798">
       <Real
         declaredType="Physiolibrary.Types.HydraulicCompliance"/>
     </ScalarVariable>
@@ -2899,14 +2952,14 @@
     <!-- Index for next variable = 255 -->
     <ScalarVariable
       name="LeftVentricle.elastance"
-      valueReference="637534796">
+      valueReference="637534806">
       <Real
         declaredType="Physiolibrary.Types.RealIO.HydraulicElastanceInput"/>
     </ScalarVariable>
     <!-- Index for next variable = 256 -->
     <ScalarVariable
       name="AorticValve.q_in.m_flow"
-      valueReference="637534791"
+      valueReference="637534801"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -2917,7 +2970,7 @@
     <!-- Index for next variable = 257 -->
     <ScalarVariable
       name="AorticValve.q_in.p"
-      valueReference="637534779"
+      valueReference="637534789"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -2930,7 +2983,7 @@
     <!-- Index for next variable = 258 -->
     <ScalarVariable
       name="AorticValve.q_in.h_outflow"
-      valueReference="637534789"
+      valueReference="637534799"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -2942,7 +2995,7 @@
     <!-- Index for next variable = 259 -->
     <ScalarVariable
       name="AorticValve.q_out.m_flow"
-      valueReference="637534781"
+      valueReference="637534791"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -2953,7 +3006,7 @@
     <!-- Index for next variable = 260 -->
     <ScalarVariable
       name="AorticValve.q_out.p"
-      valueReference="637534790"
+      valueReference="637534800"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -2966,7 +3019,7 @@
     <!-- Index for next variable = 261 -->
     <ScalarVariable
       name="AorticValve.q_out.h_outflow"
-      valueReference="637534782"
+      valueReference="637534792"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -2978,7 +3031,7 @@
     <!-- Index for next variable = 262 -->
     <ScalarVariable
       name="AorticValve.massFlowRate"
-      valueReference="637534791"
+      valueReference="637534801"
       description="Mass flow">
       <Real
         declaredType="Physiolibrary.Types.MassFlowRate"/>
@@ -2986,7 +3039,7 @@
     <!-- Index for next variable = 263 -->
     <ScalarVariable
       name="AorticValve.volumeFlowRate"
-      valueReference="637534792"
+      valueReference="637534802"
       description="Volume flow">
       <Real
         declaredType="Physiolibrary.Types.VolumeFlowRate"/>
@@ -2994,7 +3047,7 @@
     <!-- Index for next variable = 264 -->
     <ScalarVariable
       name="AorticValve.dp"
-      valueReference="637534793"
+      valueReference="637534803"
       description="Pressure gradient">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
@@ -3011,7 +3064,7 @@
     <!-- Index for next variable = 266 -->
     <ScalarVariable
       name="AorticValve.open"
-      valueReference="637534704"
+      valueReference="637534714"
       description="Switching state"
       variability="discrete"
       initial="approx">
@@ -3020,7 +3073,7 @@
     <!-- Index for next variable = 267 -->
     <ScalarVariable
       name="AorticValve.passableVariable"
-      valueReference="637534794"
+      valueReference="637534804"
       description="Auxiliary variable for actual position on the ideal diode characteristic">
       <Real
         unit="1"/>
@@ -3121,7 +3174,7 @@
     <!-- Index for next variable = 278 -->
     <ScalarVariable
       name="LAtrialElastance.Tas"
-      valueReference="637534705"
+      valueReference="637534715"
       variability="discrete">
       <Real
         declaredType="Physiolibrary.Types.Time"/>
@@ -3129,7 +3182,7 @@
     <!-- Index for next variable = 279 -->
     <ScalarVariable
       name="LAtrialElastance.T0"
-      valueReference="637534706"
+      valueReference="637534716"
       variability="discrete">
       <Real
         declaredType="Physiolibrary.Types.Time"/>
@@ -3137,7 +3190,7 @@
     <!-- Index for next variable = 280 -->
     <ScalarVariable
       name="LAtrialElastance.Tvs"
-      valueReference="905970163"
+      valueReference="905970173"
       variability="discrete">
       <Real
         declaredType="Physiolibrary.Types.Time"/>
@@ -3168,7 +3221,7 @@
     <!-- Index for next variable = 283 -->
     <ScalarVariable
       name="LAtrialElastance.HP"
-      valueReference="637534708"
+      valueReference="637534718"
       description="heart period"
       variability="discrete">
       <Real
@@ -3177,14 +3230,14 @@
     <!-- Index for next variable = 284 -->
     <ScalarVariable
       name="LAtrialElastance.b"
-      valueReference="637534709"
+      valueReference="637534719"
       variability="discrete">
       <Boolean/>
     </ScalarVariable>
     <!-- Index for next variable = 285 -->
     <ScalarVariable
       name="LAtrialElastance.HR"
-      valueReference="637534710"
+      valueReference="637534720"
       description="heart rate"
       variability="discrete">
       <Real
@@ -3193,7 +3246,7 @@
     <!-- Index for next variable = 286 -->
     <ScalarVariable
       name="LAtrialElastance.Et"
-      valueReference="637534795"
+      valueReference="637534805"
       description="elasticity">
       <Real
         declaredType="Physiolibrary.Types.RealIO.HydraulicElastanceOutput"/>
@@ -3231,7 +3284,7 @@
     <!-- Index for next variable = 290 -->
     <ScalarVariable
       name="LVentricularElastance.Tas"
-      valueReference="637534711"
+      valueReference="637534721"
       variability="discrete">
       <Real
         declaredType="Physiolibrary.Types.Time"/>
@@ -3239,7 +3292,7 @@
     <!-- Index for next variable = 291 -->
     <ScalarVariable
       name="LVentricularElastance.T0"
-      valueReference="637534712"
+      valueReference="637534722"
       variability="discrete">
       <Real
         declaredType="Physiolibrary.Types.Time"/>
@@ -3247,7 +3300,7 @@
     <!-- Index for next variable = 292 -->
     <ScalarVariable
       name="LVentricularElastance.Tvs"
-      valueReference="637534713"
+      valueReference="637534723"
       variability="discrete">
       <Real
         declaredType="Physiolibrary.Types.Time"/>
@@ -3278,7 +3331,7 @@
     <!-- Index for next variable = 295 -->
     <ScalarVariable
       name="LVentricularElastance.HP"
-      valueReference="637534714"
+      valueReference="637534724"
       description="heart period"
       variability="discrete">
       <Real
@@ -3287,14 +3340,14 @@
     <!-- Index for next variable = 296 -->
     <ScalarVariable
       name="LVentricularElastance.b"
-      valueReference="637534715"
+      valueReference="637534725"
       variability="discrete">
       <Boolean/>
     </ScalarVariable>
     <!-- Index for next variable = 297 -->
     <ScalarVariable
       name="LVentricularElastance.HR"
-      valueReference="637534710"
+      valueReference="637534720"
       description="heart rate"
       variability="discrete">
       <Real
@@ -3303,7 +3356,7 @@
     <!-- Index for next variable = 298 -->
     <ScalarVariable
       name="LVentricularElastance.Et"
-      valueReference="637534796"
+      valueReference="637534806"
       description="ventricular elasticity">
       <Real
         declaredType="Physiolibrary.Types.RealIO.HydraulicElastanceOutput"/>
@@ -3311,7 +3364,7 @@
     <!-- Index for next variable = 299 -->
     <ScalarVariable
       name="LVentricularElastance.Et0"
-      valueReference="637534797"
+      valueReference="637534807"
       description="normalized ventricular elasticity (0..1)">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealOutput"
@@ -3320,7 +3373,7 @@
     <!-- Index for next variable = 300 -->
     <ScalarVariable
       name="LVentricularElastance.HeartInterval"
-      valueReference="637534798"
+      valueReference="637534808"
       description="eapsed time">
       <Real
         declaredType="Physiolibrary.Types.RealIO.TimeOutput"/>
@@ -3365,7 +3418,7 @@
     <!-- Index for next variable = 305 -->
     <ScalarVariable
       name="MitralValve.q_in.m_flow"
-      valueReference="637534778"
+      valueReference="637534788"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -3376,7 +3429,7 @@
     <!-- Index for next variable = 306 -->
     <ScalarVariable
       name="MitralValve.q_in.p"
-      valueReference="637534766"
+      valueReference="637534776"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -3389,7 +3442,7 @@
     <!-- Index for next variable = 307 -->
     <ScalarVariable
       name="MitralValve.q_in.h_outflow"
-      valueReference="637534780"
+      valueReference="637534790"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -3401,7 +3454,7 @@
     <!-- Index for next variable = 308 -->
     <ScalarVariable
       name="MitralValve.q_out.m_flow"
-      valueReference="637534769"
+      valueReference="637534779"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -3412,7 +3465,7 @@
     <!-- Index for next variable = 309 -->
     <ScalarVariable
       name="MitralValve.q_out.p"
-      valueReference="637534779"
+      valueReference="637534789"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -3425,7 +3478,7 @@
     <!-- Index for next variable = 310 -->
     <ScalarVariable
       name="MitralValve.q_out.h_outflow"
-      valueReference="637534770"
+      valueReference="637534780"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -3437,7 +3490,7 @@
     <!-- Index for next variable = 311 -->
     <ScalarVariable
       name="MitralValve.massFlowRate"
-      valueReference="637534778"
+      valueReference="637534788"
       description="Mass flow">
       <Real
         declaredType="Physiolibrary.Types.MassFlowRate"/>
@@ -3445,7 +3498,7 @@
     <!-- Index for next variable = 312 -->
     <ScalarVariable
       name="MitralValve.volumeFlowRate"
-      valueReference="637534799"
+      valueReference="637534809"
       description="Volume flow">
       <Real
         declaredType="Physiolibrary.Types.VolumeFlowRate"/>
@@ -3453,7 +3506,7 @@
     <!-- Index for next variable = 313 -->
     <ScalarVariable
       name="MitralValve.dp"
-      valueReference="637534800"
+      valueReference="637534810"
       description="Pressure gradient">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
@@ -3470,7 +3523,7 @@
     <!-- Index for next variable = 315 -->
     <ScalarVariable
       name="MitralValve.open"
-      valueReference="637534716"
+      valueReference="637534726"
       description="Switching state"
       variability="discrete"
       initial="approx">
@@ -3479,7 +3532,7 @@
     <!-- Index for next variable = 316 -->
     <ScalarVariable
       name="MitralValve.passableVariable"
-      valueReference="637534801"
+      valueReference="637534811"
       description="Auxiliary variable for actual position on the ideal diode characteristic">
       <Real
         unit="1"/>
@@ -3627,7 +3680,7 @@
     <!-- Index for next variable = 332 -->
     <ScalarVariable
       name="Eitha.q_in[1].m_flow"
-      valueReference="100663890"
+      valueReference="100663900"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -3638,7 +3691,7 @@
     <!-- Index for next variable = 333 -->
     <ScalarVariable
       name="Eitha.q_in[1].p"
-      valueReference="637534790"
+      valueReference="637534800"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -3651,7 +3704,7 @@
     <!-- Index for next variable = 334 -->
     <ScalarVariable
       name="Eitha.q_in[1].h_outflow"
-      valueReference="637534803"
+      valueReference="637534813"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -3676,7 +3729,7 @@
     <!-- Index for next variable = 336 -->
     <ScalarVariable
       name="Eitha.q_in[2].p"
-      valueReference="637534790"
+      valueReference="637534800"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -3689,7 +3742,7 @@
     <!-- Index for next variable = 337 -->
     <ScalarVariable
       name="Eitha.q_in[2].h_outflow"
-      valueReference="905970260"
+      valueReference="905970270"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -3701,7 +3754,7 @@
     <!-- Index for next variable = 338 -->
     <ScalarVariable
       name="Eitha.q_in[3].m_flow"
-      valueReference="637534791"
+      valueReference="637534801"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -3712,7 +3765,7 @@
     <!-- Index for next variable = 339 -->
     <ScalarVariable
       name="Eitha.q_in[3].p"
-      valueReference="637534790"
+      valueReference="637534800"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -3725,7 +3778,7 @@
     <!-- Index for next variable = 340 -->
     <ScalarVariable
       name="Eitha.q_in[3].h_outflow"
-      valueReference="637534789"
+      valueReference="637534799"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -3750,7 +3803,7 @@
     <!-- Index for next variable = 342 -->
     <ScalarVariable
       name="Eitha.q_in[4].p"
-      valueReference="637534790"
+      valueReference="637534800"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -3763,7 +3816,7 @@
     <!-- Index for next variable = 343 -->
     <ScalarVariable
       name="Eitha.q_in[4].h_outflow"
-      valueReference="905970261"
+      valueReference="905970271"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -3859,14 +3912,14 @@
     <!-- Index for next variable = 354 -->
     <ScalarVariable
       name="Eitha.volume"
-      valueReference="637534806">
+      valueReference="637534816">
       <Real
         declaredType="Physiolibrary.Types.Volume"/>
     </ScalarVariable>
     <!-- Index for next variable = 355 -->
     <ScalarVariable
       name="der(Eitha.volume)"
-      valueReference="637534807">
+      valueReference="637534817">
       <Real
         unit="m3/s"
         derivative="354"/>
@@ -3883,7 +3936,7 @@
     <!-- Index for next variable = 357 -->
     <ScalarVariable
       name="Eitha.pressure"
-      valueReference="637534790">
+      valueReference="637534800">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
     </ScalarVariable>
@@ -3986,7 +4039,7 @@
     <!-- Index for next variable = 368 -->
     <ScalarVariable
       name="Eitha.excessVolume"
-      valueReference="637534808"
+      valueReference="637534818"
       description="Additional cavity volume (=fluid volume + internal space volume), that generate pressure">
       <Real
         declaredType="Physiolibrary.Types.Volume"/>
@@ -3994,7 +4047,7 @@
     <!-- Index for next variable = 369 -->
     <ScalarVariable
       name="der(Eitha.excessVolume)"
-      valueReference="637534809"
+      valueReference="637534819"
       description="der(Additional cavity volume (=fluid volume + internal space volume), that generate pressure)">
       <Real
         unit="m3/s"
@@ -4003,7 +4056,7 @@
     <!-- Index for next variable = 370 -->
     <ScalarVariable
       name="Eitha.fluidVolume"
-      valueReference="637534806">
+      valueReference="637534816">
       <Real
         declaredType="Physiolibrary.Types.RealIO.VolumeOutput"/>
     </ScalarVariable>
@@ -4051,7 +4104,7 @@
     <!-- Index for next variable = 375 -->
     <ScalarVariable
       name="Eitha.relative_pressure"
-      valueReference="905970266">
+      valueReference="905970276">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
     </ScalarVariable>
@@ -4199,7 +4252,7 @@
     <!-- Index for next variable = 392 -->
     <ScalarVariable
       name="Eetha.q_in[1].p"
-      valueReference="637534811"
+      valueReference="637534821"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -4212,7 +4265,7 @@
     <!-- Index for next variable = 393 -->
     <ScalarVariable
       name="Eetha.q_in[1].h_outflow"
-      valueReference="637534812"
+      valueReference="637534822"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -4224,7 +4277,7 @@
     <!-- Index for next variable = 394 -->
     <ScalarVariable
       name="Eetha.q_in[2].m_flow"
-      valueReference="637534813"
+      valueReference="637534823"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -4236,7 +4289,7 @@
     <!-- Index for next variable = 395 -->
     <ScalarVariable
       name="Eetha.q_in[2].p"
-      valueReference="637534811"
+      valueReference="637534821"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -4249,7 +4302,7 @@
     <!-- Index for next variable = 396 -->
     <ScalarVariable
       name="Eetha.q_in[2].h_outflow"
-      valueReference="637534814"
+      valueReference="637534824"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -4274,7 +4327,7 @@
     <!-- Index for next variable = 398 -->
     <ScalarVariable
       name="Eetha.q_in[3].p"
-      valueReference="637534811"
+      valueReference="637534821"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -4287,7 +4340,7 @@
     <!-- Index for next variable = 399 -->
     <ScalarVariable
       name="Eetha.q_in[3].h_outflow"
-      valueReference="905970271"
+      valueReference="905970281"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -4383,7 +4436,7 @@
     <!-- Index for next variable = 410 -->
     <ScalarVariable
       name="Eetha.volume"
-      valueReference="637534816">
+      valueReference="637534826">
       <Real
         declaredType="Physiolibrary.Types.Volume"/>
     </ScalarVariable>
@@ -4399,7 +4452,7 @@
     <!-- Index for next variable = 412 -->
     <ScalarVariable
       name="Eetha.pressure"
-      valueReference="637534811">
+      valueReference="637534821">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
     </ScalarVariable>
@@ -4501,7 +4554,7 @@
     <!-- Index for next variable = 423 -->
     <ScalarVariable
       name="Eetha.excessVolume"
-      valueReference="637534817"
+      valueReference="637534827"
       description="Additional cavity volume (=fluid volume + internal space volume), that generate pressure">
       <Real
         declaredType="Physiolibrary.Types.Volume"/>
@@ -4509,7 +4562,7 @@
     <!-- Index for next variable = 424 -->
     <ScalarVariable
       name="Eetha.fluidVolume"
-      valueReference="637534816">
+      valueReference="637534826">
       <Real
         declaredType="Physiolibrary.Types.RealIO.VolumeOutput"/>
     </ScalarVariable>
@@ -4557,7 +4610,7 @@
     <!-- Index for next variable = 429 -->
     <ScalarVariable
       name="Eetha.relative_pressure"
-      valueReference="905970274">
+      valueReference="905970284">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
     </ScalarVariable>
@@ -4669,7 +4722,7 @@
     <!-- Index for next variable = 442 -->
     <ScalarVariable
       name="inertia.q_in.p"
-      valueReference="637534790"
+      valueReference="637534800"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -4682,7 +4735,7 @@
     <!-- Index for next variable = 443 -->
     <ScalarVariable
       name="inertia.q_in.h_outflow"
-      valueReference="637534812"
+      valueReference="637534822"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -4694,7 +4747,7 @@
     <!-- Index for next variable = 444 -->
     <ScalarVariable
       name="inertia.q_out.m_flow"
-      valueReference="100663890"
+      valueReference="100663900"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -4705,7 +4758,7 @@
     <!-- Index for next variable = 445 -->
     <ScalarVariable
       name="inertia.q_out.p"
-      valueReference="637534819"
+      valueReference="637534829"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -4718,7 +4771,7 @@
     <!-- Index for next variable = 446 -->
     <ScalarVariable
       name="inertia.q_out.h_outflow"
-      valueReference="637534803"
+      valueReference="637534813"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -4738,7 +4791,7 @@
     <!-- Index for next variable = 448 -->
     <ScalarVariable
       name="inertia.volumeFlowRate"
-      valueReference="905970276"
+      valueReference="905970286"
       description="Volume flow">
       <Real
         declaredType="Physiolibrary.Types.VolumeFlowRate"/>
@@ -4746,7 +4799,7 @@
     <!-- Index for next variable = 449 -->
     <ScalarVariable
       name="inertia.dp"
-      valueReference="905970277"
+      valueReference="905970287"
       description="Pressure gradient">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
@@ -4786,7 +4839,7 @@
     <!-- Index for next variable = 453 -->
     <ScalarVariable
       name="Retha.q_in.m_flow"
-      valueReference="100663890"
+      valueReference="100663900"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -4797,7 +4850,7 @@
     <!-- Index for next variable = 454 -->
     <ScalarVariable
       name="Retha.q_in.p"
-      valueReference="637534811"
+      valueReference="637534821"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -4810,7 +4863,7 @@
     <!-- Index for next variable = 455 -->
     <ScalarVariable
       name="Retha.q_in.h_outflow"
-      valueReference="637534803"
+      valueReference="637534813"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -4833,7 +4886,7 @@
     <!-- Index for next variable = 457 -->
     <ScalarVariable
       name="Retha.q_out.p"
-      valueReference="637534819"
+      valueReference="637534829"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -4846,7 +4899,7 @@
     <!-- Index for next variable = 458 -->
     <ScalarVariable
       name="Retha.q_out.h_outflow"
-      valueReference="637534812"
+      valueReference="637534822"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -4858,7 +4911,7 @@
     <!-- Index for next variable = 459 -->
     <ScalarVariable
       name="Retha.massFlowRate"
-      valueReference="100663890"
+      valueReference="100663900"
       description="Mass flow">
       <Real
         declaredType="Physiolibrary.Types.MassFlowRate"/>
@@ -4866,7 +4919,7 @@
     <!-- Index for next variable = 460 -->
     <ScalarVariable
       name="Retha.volumeFlowRate"
-      valueReference="637534822"
+      valueReference="637534832"
       description="Volume flow">
       <Real
         declaredType="Physiolibrary.Types.VolumeFlowRate"/>
@@ -4874,7 +4927,7 @@
     <!-- Index for next variable = 461 -->
     <ScalarVariable
       name="Retha.dp"
-      valueReference="905970279"
+      valueReference="905970289"
       description="Pressure gradient">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
@@ -4926,7 +4979,7 @@
     <!-- Index for next variable = 467 -->
     <ScalarVariable
       name="Rsart.q_in.m_flow"
-      valueReference="637534834"
+      valueReference="637534844"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -4937,7 +4990,7 @@
     <!-- Index for next variable = 468 -->
     <ScalarVariable
       name="Rsart.q_in.p"
-      valueReference="637534811"
+      valueReference="637534821"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -4950,7 +5003,7 @@
     <!-- Index for next variable = 469 -->
     <ScalarVariable
       name="Rsart.q_in.h_outflow"
-      valueReference="637534824"
+      valueReference="637534834"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -4962,7 +5015,7 @@
     <!-- Index for next variable = 470 -->
     <ScalarVariable
       name="Rsart.q_out.m_flow"
-      valueReference="637534813"
+      valueReference="637534823"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -4973,7 +5026,7 @@
     <!-- Index for next variable = 471 -->
     <ScalarVariable
       name="Rsart.q_out.p"
-      valueReference="637534825"
+      valueReference="637534835"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -4986,7 +5039,7 @@
     <!-- Index for next variable = 472 -->
     <ScalarVariable
       name="Rsart.q_out.h_outflow"
-      valueReference="637534814"
+      valueReference="637534824"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -4998,7 +5051,7 @@
     <!-- Index for next variable = 473 -->
     <ScalarVariable
       name="Rsart.massFlowRate"
-      valueReference="637534834"
+      valueReference="637534844"
       description="Mass flow">
       <Real
         declaredType="Physiolibrary.Types.MassFlowRate"/>
@@ -5006,7 +5059,7 @@
     <!-- Index for next variable = 474 -->
     <ScalarVariable
       name="Rsart.volumeFlowRate"
-      valueReference="637534826"
+      valueReference="637534836"
       description="Volume flow">
       <Real
         declaredType="Physiolibrary.Types.VolumeFlowRate"/>
@@ -5014,7 +5067,7 @@
     <!-- Index for next variable = 475 -->
     <ScalarVariable
       name="Rsart.dp"
-      valueReference="905970283"
+      valueReference="905970293"
       description="Pressure gradient">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
@@ -5066,7 +5119,7 @@
     <!-- Index for next variable = 481 -->
     <ScalarVariable
       name="Rsven.q_in.m_flow"
-      valueReference="637534828"
+      valueReference="637534838"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -5078,7 +5131,7 @@
     <!-- Index for next variable = 482 -->
     <ScalarVariable
       name="Rsven.q_in.p"
-      valueReference="637534825"
+      valueReference="637534835"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -5091,7 +5144,7 @@
     <!-- Index for next variable = 483 -->
     <ScalarVariable
       name="Rsven.q_in.h_outflow"
-      valueReference="637534829"
+      valueReference="637534839"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -5103,7 +5156,7 @@
     <!-- Index for next variable = 484 -->
     <ScalarVariable
       name="Rsven.q_out.m_flow"
-      valueReference="637534835"
+      valueReference="637534845"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -5114,7 +5167,7 @@
     <!-- Index for next variable = 485 -->
     <ScalarVariable
       name="Rsven.q_out.p"
-      valueReference="637534830"
+      valueReference="637534840"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -5127,7 +5180,7 @@
     <!-- Index for next variable = 486 -->
     <ScalarVariable
       name="Rsven.q_out.h_outflow"
-      valueReference="637534831"
+      valueReference="637534841"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -5139,7 +5192,7 @@
     <!-- Index for next variable = 487 -->
     <ScalarVariable
       name="Rsven.massFlowRate"
-      valueReference="637534828"
+      valueReference="637534838"
       description="Mass flow">
       <Real
         declaredType="Physiolibrary.Types.MassFlowRate"/>
@@ -5147,7 +5200,7 @@
     <!-- Index for next variable = 488 -->
     <ScalarVariable
       name="Rsven.volumeFlowRate"
-      valueReference="637534832"
+      valueReference="637534842"
       description="Volume flow">
       <Real
         declaredType="Physiolibrary.Types.VolumeFlowRate"/>
@@ -5155,7 +5208,7 @@
     <!-- Index for next variable = 489 -->
     <ScalarVariable
       name="Rsven.dp"
-      valueReference="905970289"
+      valueReference="905970299"
       description="Pressure gradient">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
@@ -5254,7 +5307,7 @@
     <!-- Index for next variable = 500 -->
     <ScalarVariable
       name="Est.q_in[1].m_flow"
-      valueReference="637534834"
+      valueReference="637534844"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -5265,7 +5318,7 @@
     <!-- Index for next variable = 501 -->
     <ScalarVariable
       name="Est.q_in[1].p"
-      valueReference="637534825"
+      valueReference="637534835"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -5278,7 +5331,7 @@
     <!-- Index for next variable = 502 -->
     <ScalarVariable
       name="Est.q_in[1].h_outflow"
-      valueReference="637534824"
+      valueReference="637534834"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -5290,7 +5343,7 @@
     <!-- Index for next variable = 503 -->
     <ScalarVariable
       name="Est.q_in[2].m_flow"
-      valueReference="637534835"
+      valueReference="637534845"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -5301,7 +5354,7 @@
     <!-- Index for next variable = 504 -->
     <ScalarVariable
       name="Est.q_in[2].p"
-      valueReference="637534825"
+      valueReference="637534835"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -5314,7 +5367,7 @@
     <!-- Index for next variable = 505 -->
     <ScalarVariable
       name="Est.q_in[2].h_outflow"
-      valueReference="637534831"
+      valueReference="637534841"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -5339,7 +5392,7 @@
     <!-- Index for next variable = 507 -->
     <ScalarVariable
       name="Est.q_in[3].p"
-      valueReference="637534825"
+      valueReference="637534835"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -5352,7 +5405,7 @@
     <!-- Index for next variable = 508 -->
     <ScalarVariable
       name="Est.q_in[3].h_outflow"
-      valueReference="905970292"
+      valueReference="905970302"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -5448,7 +5501,7 @@
     <!-- Index for next variable = 519 -->
     <ScalarVariable
       name="Est.volume"
-      valueReference="637534837">
+      valueReference="637534847">
       <Real
         declaredType="Physiolibrary.Types.Volume"/>
     </ScalarVariable>
@@ -5464,7 +5517,7 @@
     <!-- Index for next variable = 521 -->
     <ScalarVariable
       name="Est.pressure"
-      valueReference="637534825">
+      valueReference="637534835">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
     </ScalarVariable>
@@ -5566,7 +5619,7 @@
     <!-- Index for next variable = 532 -->
     <ScalarVariable
       name="Est.excessVolume"
-      valueReference="637534838"
+      valueReference="637534848"
       description="Additional cavity volume (=fluid volume + internal space volume), that generate pressure">
       <Real
         declaredType="Physiolibrary.Types.Volume"/>
@@ -5574,7 +5627,7 @@
     <!-- Index for next variable = 533 -->
     <ScalarVariable
       name="Est.fluidVolume"
-      valueReference="637534837">
+      valueReference="637534847">
       <Real
         declaredType="Physiolibrary.Types.RealIO.VolumeOutput"/>
     </ScalarVariable>
@@ -5622,7 +5675,7 @@
     <!-- Index for next variable = 538 -->
     <ScalarVariable
       name="Est.relative_pressure"
-      valueReference="905970295">
+      valueReference="905970305">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
     </ScalarVariable>
@@ -5713,7 +5766,7 @@
     <!-- Index for next variable = 549 -->
     <ScalarVariable
       name="Rethv.q_in.m_flow"
-      valueReference="637534840"
+      valueReference="637534850"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -5725,7 +5778,7 @@
     <!-- Index for next variable = 550 -->
     <ScalarVariable
       name="Rethv.q_in.p"
-      valueReference="637534830"
+      valueReference="637534840"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -5738,7 +5791,7 @@
     <!-- Index for next variable = 551 -->
     <ScalarVariable
       name="Rethv.q_in.h_outflow"
-      valueReference="637534841"
+      valueReference="637534851"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -5750,7 +5803,7 @@
     <!-- Index for next variable = 552 -->
     <ScalarVariable
       name="Rethv.q_out.m_flow"
-      valueReference="637534857"
+      valueReference="637534867"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -5761,7 +5814,7 @@
     <!-- Index for next variable = 553 -->
     <ScalarVariable
       name="Rethv.q_out.p"
-      valueReference="637534842"
+      valueReference="637534852"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -5774,7 +5827,7 @@
     <!-- Index for next variable = 554 -->
     <ScalarVariable
       name="Rethv.q_out.h_outflow"
-      valueReference="637534843"
+      valueReference="637534853"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -5786,7 +5839,7 @@
     <!-- Index for next variable = 555 -->
     <ScalarVariable
       name="Rethv.massFlowRate"
-      valueReference="637534840"
+      valueReference="637534850"
       description="Mass flow">
       <Real
         declaredType="Physiolibrary.Types.MassFlowRate"/>
@@ -5794,7 +5847,7 @@
     <!-- Index for next variable = 556 -->
     <ScalarVariable
       name="Rethv.volumeFlowRate"
-      valueReference="637534844"
+      valueReference="637534854"
       description="Volume flow">
       <Real
         declaredType="Physiolibrary.Types.VolumeFlowRate"/>
@@ -5802,7 +5855,7 @@
     <!-- Index for next variable = 557 -->
     <ScalarVariable
       name="Rethv.dp"
-      valueReference="905970301"
+      valueReference="905970311"
       description="Pressure gradient">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
@@ -5854,7 +5907,7 @@
     <!-- Index for next variable = 563 -->
     <ScalarVariable
       name="Rrain.q_in.m_flow"
-      valueReference="637534846"
+      valueReference="637534856"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -5866,7 +5919,7 @@
     <!-- Index for next variable = 564 -->
     <ScalarVariable
       name="Rrain.q_in.p"
-      valueReference="637534842"
+      valueReference="637534852"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -5879,7 +5932,7 @@
     <!-- Index for next variable = 565 -->
     <ScalarVariable
       name="Rrain.q_in.h_outflow"
-      valueReference="637534847"
+      valueReference="637534857"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -5891,7 +5944,7 @@
     <!-- Index for next variable = 566 -->
     <ScalarVariable
       name="Rrain.q_out.m_flow"
-      valueReference="637534852"
+      valueReference="637534862"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -5902,7 +5955,7 @@
     <!-- Index for next variable = 567 -->
     <ScalarVariable
       name="Rrain.q_out.p"
-      valueReference="637534848"
+      valueReference="637534858"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -5915,7 +5968,7 @@
     <!-- Index for next variable = 568 -->
     <ScalarVariable
       name="Rrain.q_out.h_outflow"
-      valueReference="637534849"
+      valueReference="637534859"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -5927,7 +5980,7 @@
     <!-- Index for next variable = 569 -->
     <ScalarVariable
       name="Rrain.massFlowRate"
-      valueReference="637534846"
+      valueReference="637534856"
       description="Mass flow">
       <Real
         declaredType="Physiolibrary.Types.MassFlowRate"/>
@@ -5935,7 +5988,7 @@
     <!-- Index for next variable = 570 -->
     <ScalarVariable
       name="Rrain.volumeFlowRate"
-      valueReference="637534850"
+      valueReference="637534860"
       description="Volume flow">
       <Real
         declaredType="Physiolibrary.Types.VolumeFlowRate"/>
@@ -5943,7 +5996,7 @@
     <!-- Index for next variable = 571 -->
     <ScalarVariable
       name="Rrain.dp"
-      valueReference="905970307"
+      valueReference="905970317"
       description="Pressure gradient">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
@@ -6042,7 +6095,7 @@
     <!-- Index for next variable = 582 -->
     <ScalarVariable
       name="Eithv.q_in[1].m_flow"
-      valueReference="637534840"
+      valueReference="637534850"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -6053,7 +6106,7 @@
     <!-- Index for next variable = 583 -->
     <ScalarVariable
       name="Eithv.q_in[1].p"
-      valueReference="637534842"
+      valueReference="637534852"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -6066,7 +6119,7 @@
     <!-- Index for next variable = 584 -->
     <ScalarVariable
       name="Eithv.q_in[1].h_outflow"
-      valueReference="637534841"
+      valueReference="637534851"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -6078,7 +6131,7 @@
     <!-- Index for next variable = 585 -->
     <ScalarVariable
       name="Eithv.q_in[2].m_flow"
-      valueReference="637534852"
+      valueReference="637534862"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -6089,7 +6142,7 @@
     <!-- Index for next variable = 586 -->
     <ScalarVariable
       name="Eithv.q_in[2].p"
-      valueReference="637534842"
+      valueReference="637534852"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -6102,7 +6155,7 @@
     <!-- Index for next variable = 587 -->
     <ScalarVariable
       name="Eithv.q_in[2].h_outflow"
-      valueReference="637534849"
+      valueReference="637534859"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -6127,7 +6180,7 @@
     <!-- Index for next variable = 589 -->
     <ScalarVariable
       name="Eithv.q_in[3].p"
-      valueReference="637534842"
+      valueReference="637534852"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -6140,7 +6193,7 @@
     <!-- Index for next variable = 590 -->
     <ScalarVariable
       name="Eithv.q_in[3].h_outflow"
-      valueReference="905970309"
+      valueReference="905970319"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -6236,7 +6289,7 @@
     <!-- Index for next variable = 601 -->
     <ScalarVariable
       name="Eithv.volume"
-      valueReference="637534854">
+      valueReference="637534864">
       <Real
         declaredType="Physiolibrary.Types.Volume"/>
     </ScalarVariable>
@@ -6252,7 +6305,7 @@
     <!-- Index for next variable = 603 -->
     <ScalarVariable
       name="Eithv.pressure"
-      valueReference="637534842">
+      valueReference="637534852">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
     </ScalarVariable>
@@ -6355,7 +6408,7 @@
     <!-- Index for next variable = 614 -->
     <ScalarVariable
       name="Eithv.excessVolume"
-      valueReference="637534855"
+      valueReference="637534865"
       description="Additional cavity volume (=fluid volume + internal space volume), that generate pressure">
       <Real
         declaredType="Physiolibrary.Types.Volume"/>
@@ -6363,7 +6416,7 @@
     <!-- Index for next variable = 615 -->
     <ScalarVariable
       name="Eithv.fluidVolume"
-      valueReference="637534854">
+      valueReference="637534864">
       <Real
         declaredType="Physiolibrary.Types.RealIO.VolumeOutput"/>
     </ScalarVariable>
@@ -6411,7 +6464,7 @@
     <!-- Index for next variable = 620 -->
     <ScalarVariable
       name="Eithv.relative_pressure"
-      valueReference="905970312">
+      valueReference="905970322">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
     </ScalarVariable>
@@ -6548,7 +6601,7 @@
     <!-- Index for next variable = 636 -->
     <ScalarVariable
       name="Eethv.q_in[1].m_flow"
-      valueReference="637534828"
+      valueReference="637534838"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -6559,7 +6612,7 @@
     <!-- Index for next variable = 637 -->
     <ScalarVariable
       name="Eethv.q_in[1].p"
-      valueReference="637534830"
+      valueReference="637534840"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -6572,7 +6625,7 @@
     <!-- Index for next variable = 638 -->
     <ScalarVariable
       name="Eethv.q_in[1].h_outflow"
-      valueReference="637534829"
+      valueReference="637534839"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -6584,7 +6637,7 @@
     <!-- Index for next variable = 639 -->
     <ScalarVariable
       name="Eethv.q_in[2].m_flow"
-      valueReference="637534857"
+      valueReference="637534867"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -6595,7 +6648,7 @@
     <!-- Index for next variable = 640 -->
     <ScalarVariable
       name="Eethv.q_in[2].p"
-      valueReference="637534830"
+      valueReference="637534840"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -6608,7 +6661,7 @@
     <!-- Index for next variable = 641 -->
     <ScalarVariable
       name="Eethv.q_in[2].h_outflow"
-      valueReference="637534843"
+      valueReference="637534853"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -6633,7 +6686,7 @@
     <!-- Index for next variable = 643 -->
     <ScalarVariable
       name="Eethv.q_in[3].p"
-      valueReference="637534830"
+      valueReference="637534840"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -6646,7 +6699,7 @@
     <!-- Index for next variable = 644 -->
     <ScalarVariable
       name="Eethv.q_in[3].h_outflow"
-      valueReference="905970314"
+      valueReference="905970324"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -6742,7 +6795,7 @@
     <!-- Index for next variable = 655 -->
     <ScalarVariable
       name="Eethv.volume"
-      valueReference="637534859">
+      valueReference="637534869">
       <Real
         declaredType="Physiolibrary.Types.Volume"/>
     </ScalarVariable>
@@ -6758,7 +6811,7 @@
     <!-- Index for next variable = 657 -->
     <ScalarVariable
       name="Eethv.pressure"
-      valueReference="637534830">
+      valueReference="637534840">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
     </ScalarVariable>
@@ -6860,7 +6913,7 @@
     <!-- Index for next variable = 668 -->
     <ScalarVariable
       name="Eethv.excessVolume"
-      valueReference="637534860"
+      valueReference="637534870"
       description="Additional cavity volume (=fluid volume + internal space volume), that generate pressure">
       <Real
         declaredType="Physiolibrary.Types.Volume"/>
@@ -6868,7 +6921,7 @@
     <!-- Index for next variable = 669 -->
     <ScalarVariable
       name="Eethv.fluidVolume"
-      valueReference="637534859">
+      valueReference="637534869">
       <Real
         declaredType="Physiolibrary.Types.RealIO.VolumeOutput"/>
     </ScalarVariable>
@@ -6916,7 +6969,7 @@
     <!-- Index for next variable = 674 -->
     <ScalarVariable
       name="Eethv.relative_pressure"
-      valueReference="905970317">
+      valueReference="905970327">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
     </ScalarVariable>
@@ -7054,7 +7107,7 @@
     <!-- Index for next variable = 690 -->
     <ScalarVariable
       name="RightAtrium.q_in[1].m_flow"
-      valueReference="637534862"
+      valueReference="637534872"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -7066,7 +7119,7 @@
     <!-- Index for next variable = 691 -->
     <ScalarVariable
       name="RightAtrium.q_in[1].p"
-      valueReference="637534848"
+      valueReference="637534858"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -7079,7 +7132,7 @@
     <!-- Index for next variable = 692 -->
     <ScalarVariable
       name="RightAtrium.q_in[1].h_outflow"
-      valueReference="637534863"
+      valueReference="637534873"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -7091,7 +7144,7 @@
     <!-- Index for next variable = 693 -->
     <ScalarVariable
       name="RightAtrium.q_in[2].m_flow"
-      valueReference="637534846"
+      valueReference="637534856"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -7102,7 +7155,7 @@
     <!-- Index for next variable = 694 -->
     <ScalarVariable
       name="RightAtrium.q_in[2].p"
-      valueReference="637534848"
+      valueReference="637534858"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -7115,7 +7168,7 @@
     <!-- Index for next variable = 695 -->
     <ScalarVariable
       name="RightAtrium.q_in[2].h_outflow"
-      valueReference="637534847"
+      valueReference="637534857"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -7211,7 +7264,7 @@
     <!-- Index for next variable = 706 -->
     <ScalarVariable
       name="RightAtrium.volume"
-      valueReference="637534864">
+      valueReference="637534874">
       <Real
         declaredType="Physiolibrary.Types.Volume"/>
     </ScalarVariable>
@@ -7227,7 +7280,7 @@
     <!-- Index for next variable = 708 -->
     <ScalarVariable
       name="RightAtrium.pressure"
-      valueReference="637534848">
+      valueReference="637534858">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
     </ScalarVariable>
@@ -7330,7 +7383,7 @@
     <!-- Index for next variable = 719 -->
     <ScalarVariable
       name="RightAtrium.excessVolume"
-      valueReference="637534865"
+      valueReference="637534875"
       description="Additional cavity volume (=fluid volume + internal space volume), that generate pressure">
       <Real
         declaredType="Physiolibrary.Types.Volume"/>
@@ -7338,7 +7391,7 @@
     <!-- Index for next variable = 720 -->
     <ScalarVariable
       name="RightAtrium.fluidVolume"
-      valueReference="637534864">
+      valueReference="637534874">
       <Real
         declaredType="Physiolibrary.Types.RealIO.VolumeOutput"/>
     </ScalarVariable>
@@ -7386,7 +7439,7 @@
     <!-- Index for next variable = 725 -->
     <ScalarVariable
       name="RightAtrium.relative_pressure"
-      valueReference="905970322">
+      valueReference="905970332">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
     </ScalarVariable>
@@ -7417,14 +7470,14 @@
     <!-- Index for next variable = 729 -->
     <ScalarVariable
       name="RightAtrium.d_sigmoid"
-      valueReference="905970323">
+      valueReference="905970333">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
     </ScalarVariable>
     <!-- Index for next variable = 730 -->
     <ScalarVariable
       name="RightAtrium.c_sigmoid"
-      valueReference="905970324">
+      valueReference="905970334">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
     </ScalarVariable>
@@ -7447,7 +7500,7 @@
     <!-- Index for next variable = 733 -->
     <ScalarVariable
       name="RightAtrium.c"
-      valueReference="637534869">
+      valueReference="637534879">
       <Real
         declaredType="Physiolibrary.Types.HydraulicCompliance"/>
     </ScalarVariable>
@@ -7473,7 +7526,7 @@
     <!-- Index for next variable = 736 -->
     <ScalarVariable
       name="RightAtrium.elastance"
-      valueReference="637534884">
+      valueReference="637534894">
       <Real
         declaredType="Physiolibrary.Types.RealIO.HydraulicElastanceInput"/>
     </ScalarVariable>
@@ -7527,7 +7580,7 @@
     <!-- Index for next variable = 742 -->
     <ScalarVariable
       name="RightVentricle.q_in[1].m_flow"
-      valueReference="637534870"
+      valueReference="637534880"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -7538,7 +7591,7 @@
     <!-- Index for next variable = 743 -->
     <ScalarVariable
       name="RightVentricle.q_in[1].p"
-      valueReference="637534871"
+      valueReference="637534881"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -7551,7 +7604,7 @@
     <!-- Index for next variable = 744 -->
     <ScalarVariable
       name="RightVentricle.q_in[1].h_outflow"
-      valueReference="637534872"
+      valueReference="637534882"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -7563,7 +7616,7 @@
     <!-- Index for next variable = 745 -->
     <ScalarVariable
       name="RightVentricle.q_in[2].m_flow"
-      valueReference="637534880"
+      valueReference="637534890"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -7574,7 +7627,7 @@
     <!-- Index for next variable = 746 -->
     <ScalarVariable
       name="RightVentricle.q_in[2].p"
-      valueReference="637534871"
+      valueReference="637534881"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -7587,7 +7640,7 @@
     <!-- Index for next variable = 747 -->
     <ScalarVariable
       name="RightVentricle.q_in[2].h_outflow"
-      valueReference="637534873"
+      valueReference="637534883"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -7683,7 +7736,7 @@
     <!-- Index for next variable = 758 -->
     <ScalarVariable
       name="RightVentricle.volume"
-      valueReference="637534874">
+      valueReference="637534884">
       <Real
         declaredType="Physiolibrary.Types.Volume"/>
     </ScalarVariable>
@@ -7699,7 +7752,7 @@
     <!-- Index for next variable = 760 -->
     <ScalarVariable
       name="RightVentricle.pressure"
-      valueReference="637534871">
+      valueReference="637534881">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
     </ScalarVariable>
@@ -7802,7 +7855,7 @@
     <!-- Index for next variable = 771 -->
     <ScalarVariable
       name="RightVentricle.excessVolume"
-      valueReference="637534875"
+      valueReference="637534885"
       description="Additional cavity volume (=fluid volume + internal space volume), that generate pressure">
       <Real
         declaredType="Physiolibrary.Types.Volume"/>
@@ -7810,7 +7863,7 @@
     <!-- Index for next variable = 772 -->
     <ScalarVariable
       name="RightVentricle.fluidVolume"
-      valueReference="637534874">
+      valueReference="637534884">
       <Real
         declaredType="Physiolibrary.Types.RealIO.VolumeOutput"/>
     </ScalarVariable>
@@ -7858,7 +7911,7 @@
     <!-- Index for next variable = 777 -->
     <ScalarVariable
       name="RightVentricle.relative_pressure"
-      valueReference="905970332">
+      valueReference="905970342">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
     </ScalarVariable>
@@ -7889,14 +7942,14 @@
     <!-- Index for next variable = 781 -->
     <ScalarVariable
       name="RightVentricle.d_sigmoid"
-      valueReference="905970333">
+      valueReference="905970343">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
     </ScalarVariable>
     <!-- Index for next variable = 782 -->
     <ScalarVariable
       name="RightVentricle.c_sigmoid"
-      valueReference="905970334">
+      valueReference="905970344">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
     </ScalarVariable>
@@ -7919,7 +7972,7 @@
     <!-- Index for next variable = 785 -->
     <ScalarVariable
       name="RightVentricle.c"
-      valueReference="637534879">
+      valueReference="637534889">
       <Real
         declaredType="Physiolibrary.Types.HydraulicCompliance"/>
     </ScalarVariable>
@@ -7945,14 +7998,14 @@
     <!-- Index for next variable = 788 -->
     <ScalarVariable
       name="RightVentricle.elastance"
-      valueReference="637534885">
+      valueReference="637534895">
       <Real
         declaredType="Physiolibrary.Types.RealIO.HydraulicElastanceInput"/>
     </ScalarVariable>
     <!-- Index for next variable = 789 -->
     <ScalarVariable
       name="PulmonaryValve.q_in.m_flow"
-      valueReference="637534750"
+      valueReference="637534760"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -7963,7 +8016,7 @@
     <!-- Index for next variable = 790 -->
     <ScalarVariable
       name="PulmonaryValve.q_in.p"
-      valueReference="637534871"
+      valueReference="637534881"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -7976,7 +8029,7 @@
     <!-- Index for next variable = 791 -->
     <ScalarVariable
       name="PulmonaryValve.q_in.h_outflow"
-      valueReference="637534751"
+      valueReference="637534761"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -7988,7 +8041,7 @@
     <!-- Index for next variable = 792 -->
     <ScalarVariable
       name="PulmonaryValve.q_out.m_flow"
-      valueReference="637534880"
+      valueReference="637534890"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -7999,7 +8052,7 @@
     <!-- Index for next variable = 793 -->
     <ScalarVariable
       name="PulmonaryValve.q_out.p"
-      valueReference="637534748"
+      valueReference="637534758"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -8012,7 +8065,7 @@
     <!-- Index for next variable = 794 -->
     <ScalarVariable
       name="PulmonaryValve.q_out.h_outflow"
-      valueReference="637534873"
+      valueReference="637534883"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -8024,7 +8077,7 @@
     <!-- Index for next variable = 795 -->
     <ScalarVariable
       name="PulmonaryValve.massFlowRate"
-      valueReference="637534750"
+      valueReference="637534760"
       description="Mass flow">
       <Real
         declaredType="Physiolibrary.Types.MassFlowRate"/>
@@ -8032,7 +8085,7 @@
     <!-- Index for next variable = 796 -->
     <ScalarVariable
       name="PulmonaryValve.volumeFlowRate"
-      valueReference="637534881"
+      valueReference="637534891"
       description="Volume flow">
       <Real
         declaredType="Physiolibrary.Types.VolumeFlowRate"/>
@@ -8040,7 +8093,7 @@
     <!-- Index for next variable = 797 -->
     <ScalarVariable
       name="PulmonaryValve.dp"
-      valueReference="637534882"
+      valueReference="637534892"
       description="Pressure gradient">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
@@ -8057,7 +8110,7 @@
     <!-- Index for next variable = 799 -->
     <ScalarVariable
       name="PulmonaryValve.open"
-      valueReference="637534717"
+      valueReference="637534727"
       description="Switching state"
       variability="discrete"
       initial="approx">
@@ -8066,7 +8119,7 @@
     <!-- Index for next variable = 800 -->
     <ScalarVariable
       name="PulmonaryValve.passableVariable"
-      valueReference="637534883"
+      valueReference="637534893"
       description="Auxiliary variable for actual position on the ideal diode characteristic">
       <Real
         unit="1"/>
@@ -8167,7 +8220,7 @@
     <!-- Index for next variable = 811 -->
     <ScalarVariable
       name="RAtrialElastance.Tas"
-      valueReference="637534718"
+      valueReference="637534728"
       variability="discrete">
       <Real
         declaredType="Physiolibrary.Types.Time"/>
@@ -8175,7 +8228,7 @@
     <!-- Index for next variable = 812 -->
     <ScalarVariable
       name="RAtrialElastance.T0"
-      valueReference="637534719"
+      valueReference="637534729"
       variability="discrete">
       <Real
         declaredType="Physiolibrary.Types.Time"/>
@@ -8183,7 +8236,7 @@
     <!-- Index for next variable = 813 -->
     <ScalarVariable
       name="RAtrialElastance.Tvs"
-      valueReference="905970176"
+      valueReference="905970186"
       variability="discrete">
       <Real
         declaredType="Physiolibrary.Types.Time"/>
@@ -8214,7 +8267,7 @@
     <!-- Index for next variable = 816 -->
     <ScalarVariable
       name="RAtrialElastance.HP"
-      valueReference="637534721"
+      valueReference="637534731"
       description="heart period"
       variability="discrete">
       <Real
@@ -8223,14 +8276,14 @@
     <!-- Index for next variable = 817 -->
     <ScalarVariable
       name="RAtrialElastance.b"
-      valueReference="637534722"
+      valueReference="637534732"
       variability="discrete">
       <Boolean/>
     </ScalarVariable>
     <!-- Index for next variable = 818 -->
     <ScalarVariable
       name="RAtrialElastance.HR"
-      valueReference="637534710"
+      valueReference="637534720"
       description="heart rate"
       variability="discrete">
       <Real
@@ -8239,7 +8292,7 @@
     <!-- Index for next variable = 819 -->
     <ScalarVariable
       name="RAtrialElastance.Et"
-      valueReference="637534884"
+      valueReference="637534894"
       description="elasticity">
       <Real
         declaredType="Physiolibrary.Types.RealIO.HydraulicElastanceOutput"/>
@@ -8277,7 +8330,7 @@
     <!-- Index for next variable = 823 -->
     <ScalarVariable
       name="RVentricularElastance.Tas"
-      valueReference="637534723"
+      valueReference="637534733"
       variability="discrete">
       <Real
         declaredType="Physiolibrary.Types.Time"/>
@@ -8285,7 +8338,7 @@
     <!-- Index for next variable = 824 -->
     <ScalarVariable
       name="RVentricularElastance.T0"
-      valueReference="637534724"
+      valueReference="637534734"
       variability="discrete">
       <Real
         declaredType="Physiolibrary.Types.Time"/>
@@ -8293,7 +8346,7 @@
     <!-- Index for next variable = 825 -->
     <ScalarVariable
       name="RVentricularElastance.Tvs"
-      valueReference="637534725"
+      valueReference="637534735"
       variability="discrete">
       <Real
         declaredType="Physiolibrary.Types.Time"/>
@@ -8324,7 +8377,7 @@
     <!-- Index for next variable = 828 -->
     <ScalarVariable
       name="RVentricularElastance.HP"
-      valueReference="637534726"
+      valueReference="637534736"
       description="heart period"
       variability="discrete">
       <Real
@@ -8333,14 +8386,14 @@
     <!-- Index for next variable = 829 -->
     <ScalarVariable
       name="RVentricularElastance.b"
-      valueReference="637534727"
+      valueReference="637534737"
       variability="discrete">
       <Boolean/>
     </ScalarVariable>
     <!-- Index for next variable = 830 -->
     <ScalarVariable
       name="RVentricularElastance.HR"
-      valueReference="637534710"
+      valueReference="637534720"
       description="heart rate"
       variability="discrete">
       <Real
@@ -8349,7 +8402,7 @@
     <!-- Index for next variable = 831 -->
     <ScalarVariable
       name="RVentricularElastance.Et"
-      valueReference="637534885"
+      valueReference="637534895"
       description="ventricular elasticity">
       <Real
         declaredType="Physiolibrary.Types.RealIO.HydraulicElastanceOutput"/>
@@ -8357,7 +8410,7 @@
     <!-- Index for next variable = 832 -->
     <ScalarVariable
       name="RVentricularElastance.Et0"
-      valueReference="637534886"
+      valueReference="637534896"
       description="normalized ventricular elasticity (0..1)">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealOutput"
@@ -8366,7 +8419,7 @@
     <!-- Index for next variable = 833 -->
     <ScalarVariable
       name="RVentricularElastance.HeartInterval"
-      valueReference="637534887"
+      valueReference="637534897"
       description="eapsed time">
       <Real
         declaredType="Physiolibrary.Types.RealIO.TimeOutput"/>
@@ -8411,7 +8464,7 @@
     <!-- Index for next variable = 838 -->
     <ScalarVariable
       name="TricuspidValve.q_in.m_flow"
-      valueReference="637534870"
+      valueReference="637534880"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -8422,7 +8475,7 @@
     <!-- Index for next variable = 839 -->
     <ScalarVariable
       name="TricuspidValve.q_in.p"
-      valueReference="637534848"
+      valueReference="637534858"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -8435,7 +8488,7 @@
     <!-- Index for next variable = 840 -->
     <ScalarVariable
       name="TricuspidValve.q_in.h_outflow"
-      valueReference="637534872"
+      valueReference="637534882"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -8447,7 +8500,7 @@
     <!-- Index for next variable = 841 -->
     <ScalarVariable
       name="TricuspidValve.q_out.m_flow"
-      valueReference="637534862"
+      valueReference="637534872"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -8458,7 +8511,7 @@
     <!-- Index for next variable = 842 -->
     <ScalarVariable
       name="TricuspidValve.q_out.p"
-      valueReference="637534871"
+      valueReference="637534881"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -8471,7 +8524,7 @@
     <!-- Index for next variable = 843 -->
     <ScalarVariable
       name="TricuspidValve.q_out.h_outflow"
-      valueReference="637534863"
+      valueReference="637534873"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -8483,7 +8536,7 @@
     <!-- Index for next variable = 844 -->
     <ScalarVariable
       name="TricuspidValve.massFlowRate"
-      valueReference="637534870"
+      valueReference="637534880"
       description="Mass flow">
       <Real
         declaredType="Physiolibrary.Types.MassFlowRate"/>
@@ -8491,7 +8544,7 @@
     <!-- Index for next variable = 845 -->
     <ScalarVariable
       name="TricuspidValve.volumeFlowRate"
-      valueReference="637534888"
+      valueReference="637534898"
       description="Volume flow">
       <Real
         declaredType="Physiolibrary.Types.VolumeFlowRate"/>
@@ -8499,7 +8552,7 @@
     <!-- Index for next variable = 846 -->
     <ScalarVariable
       name="TricuspidValve.dp"
-      valueReference="637534889"
+      valueReference="637534899"
       description="Pressure gradient">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
@@ -8516,7 +8569,7 @@
     <!-- Index for next variable = 848 -->
     <ScalarVariable
       name="TricuspidValve.open"
-      valueReference="637534728"
+      valueReference="637534738"
       description="Switching state"
       variability="discrete"
       initial="approx">
@@ -8525,7 +8578,7 @@
     <!-- Index for next variable = 849 -->
     <ScalarVariable
       name="TricuspidValve.passableVariable"
-      valueReference="637534890"
+      valueReference="637534900"
       description="Auxiliary variable for actual position on the ideal diode characteristic">
       <Real
         unit="1"/>
@@ -8625,26 +8678,6 @@
     </ScalarVariable>
     <!-- Index for next variable = 860 -->
     <ScalarVariable
-      name="HeartRate.k"
-      valueReference="16777359"
-      description="Constant Frequency output value"
-      causality="parameter"
-      variability="tunable">
-      <Real
-        declaredType="Physiolibrary.Types.Frequency"
-        start="1.2"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 861 -->
-    <ScalarVariable
-      name="HeartRate.y"
-      valueReference="234881167"
-      description="Frequency constant"
-      variability="tunable">
-      <Real
-        declaredType="Physiolibrary.Types.RealIO.FrequencyOutput"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 862 -->
-    <ScalarVariable
       name="EithaPressure.port.m_flow"
       valueReference="100663750"
       description="Mass flow rate from the connection point into the component"
@@ -8656,10 +8689,10 @@
         max="100000.0"
         start="0.0"/>
     </ScalarVariable>
-    <!-- Index for next variable = 863 -->
+    <!-- Index for next variable = 861 -->
     <ScalarVariable
       name="EithaPressure.port.p"
-      valueReference="637534790"
+      valueReference="637534800"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -8669,7 +8702,7 @@
         max="100000000.0"
         nominal="100000.0"/>
     </ScalarVariable>
-    <!-- Index for next variable = 864 -->
+    <!-- Index for next variable = 862 -->
     <ScalarVariable
       name="EithaPressure.port.h_outflow"
       valueReference="100663751"
@@ -8683,7 +8716,7 @@
         nominal="100000.0"
         start="-15891570.530726617"/>
     </ScalarVariable>
-    <!-- Index for next variable = 865 -->
+    <!-- Index for next variable = 863 -->
     <ScalarVariable
       name="EithaPressure.GetAbsolutePressure"
       valueReference="100663752"
@@ -8691,15 +8724,15 @@
       variability="constant">
       <Boolean start="false"/>
     </ScalarVariable>
-    <!-- Index for next variable = 866 -->
+    <!-- Index for next variable = 864 -->
     <ScalarVariable
       name="EithaPressure.pressure"
-      valueReference="905970347"
+      valueReference="905970357"
       description="Pressure">
       <Real
         declaredType="Physiolibrary.Types.RealIO.PressureOutput"/>
     </ScalarVariable>
-    <!-- Index for next variable = 867 -->
+    <!-- Index for next variable = 865 -->
     <ScalarVariable
       name="EethaPressure.port.m_flow"
       valueReference="100663753"
@@ -8712,10 +8745,10 @@
         max="100000.0"
         start="0.0"/>
     </ScalarVariable>
-    <!-- Index for next variable = 868 -->
+    <!-- Index for next variable = 866 -->
     <ScalarVariable
       name="EethaPressure.port.p"
-      valueReference="637534811"
+      valueReference="637534821"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -8725,7 +8758,7 @@
         max="100000000.0"
         nominal="100000.0"/>
     </ScalarVariable>
-    <!-- Index for next variable = 869 -->
+    <!-- Index for next variable = 867 -->
     <ScalarVariable
       name="EethaPressure.port.h_outflow"
       valueReference="100663754"
@@ -8739,7 +8772,7 @@
         nominal="100000.0"
         start="-15891570.530726617"/>
     </ScalarVariable>
-    <!-- Index for next variable = 870 -->
+    <!-- Index for next variable = 868 -->
     <ScalarVariable
       name="EethaPressure.GetAbsolutePressure"
       valueReference="100663755"
@@ -8747,15 +8780,15 @@
       variability="constant">
       <Boolean start="false"/>
     </ScalarVariable>
-    <!-- Index for next variable = 871 -->
+    <!-- Index for next variable = 869 -->
     <ScalarVariable
       name="EethaPressure.pressure"
-      valueReference="905970348"
+      valueReference="905970358"
       description="Pressure">
       <Real
         declaredType="Physiolibrary.Types.RealIO.PressureOutput"/>
     </ScalarVariable>
-    <!-- Index for next variable = 872 -->
+    <!-- Index for next variable = 870 -->
     <ScalarVariable
       name="EstPressure.port.m_flow"
       valueReference="100663756"
@@ -8768,10 +8801,10 @@
         max="100000.0"
         start="0.0"/>
     </ScalarVariable>
-    <!-- Index for next variable = 873 -->
+    <!-- Index for next variable = 871 -->
     <ScalarVariable
       name="EstPressure.port.p"
-      valueReference="637534825"
+      valueReference="637534835"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -8781,7 +8814,7 @@
         max="100000000.0"
         nominal="100000.0"/>
     </ScalarVariable>
-    <!-- Index for next variable = 874 -->
+    <!-- Index for next variable = 872 -->
     <ScalarVariable
       name="EstPressure.port.h_outflow"
       valueReference="100663757"
@@ -8795,7 +8828,7 @@
         nominal="100000.0"
         start="-15891570.530726617"/>
     </ScalarVariable>
-    <!-- Index for next variable = 875 -->
+    <!-- Index for next variable = 873 -->
     <ScalarVariable
       name="EstPressure.GetAbsolutePressure"
       valueReference="100663758"
@@ -8803,15 +8836,15 @@
       variability="constant">
       <Boolean start="false"/>
     </ScalarVariable>
-    <!-- Index for next variable = 876 -->
+    <!-- Index for next variable = 874 -->
     <ScalarVariable
       name="EstPressure.pressure"
-      valueReference="905970349"
+      valueReference="905970359"
       description="Pressure">
       <Real
         declaredType="Physiolibrary.Types.RealIO.PressureOutput"/>
     </ScalarVariable>
-    <!-- Index for next variable = 877 -->
+    <!-- Index for next variable = 875 -->
     <ScalarVariable
       name="EethvPressure.port.m_flow"
       valueReference="100663759"
@@ -8824,10 +8857,10 @@
         max="100000.0"
         start="0.0"/>
     </ScalarVariable>
-    <!-- Index for next variable = 878 -->
+    <!-- Index for next variable = 876 -->
     <ScalarVariable
       name="EethvPressure.port.p"
-      valueReference="637534830"
+      valueReference="637534840"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -8837,7 +8870,7 @@
         max="100000000.0"
         nominal="100000.0"/>
     </ScalarVariable>
-    <!-- Index for next variable = 879 -->
+    <!-- Index for next variable = 877 -->
     <ScalarVariable
       name="EethvPressure.port.h_outflow"
       valueReference="100663760"
@@ -8851,7 +8884,7 @@
         nominal="100000.0"
         start="-15891570.530726617"/>
     </ScalarVariable>
-    <!-- Index for next variable = 880 -->
+    <!-- Index for next variable = 878 -->
     <ScalarVariable
       name="EethvPressure.GetAbsolutePressure"
       valueReference="100663761"
@@ -8859,15 +8892,15 @@
       variability="constant">
       <Boolean start="false"/>
     </ScalarVariable>
-    <!-- Index for next variable = 881 -->
+    <!-- Index for next variable = 879 -->
     <ScalarVariable
       name="EethvPressure.pressure"
-      valueReference="905970350"
+      valueReference="905970360"
       description="Pressure">
       <Real
         declaredType="Physiolibrary.Types.RealIO.PressureOutput"/>
     </ScalarVariable>
-    <!-- Index for next variable = 882 -->
+    <!-- Index for next variable = 880 -->
     <ScalarVariable
       name="EithvPressure.port.m_flow"
       valueReference="100663762"
@@ -8880,10 +8913,10 @@
         max="100000.0"
         start="0.0"/>
     </ScalarVariable>
-    <!-- Index for next variable = 883 -->
+    <!-- Index for next variable = 881 -->
     <ScalarVariable
       name="EithvPressure.port.p"
-      valueReference="637534842"
+      valueReference="637534852"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -8893,7 +8926,7 @@
         max="100000000.0"
         nominal="100000.0"/>
     </ScalarVariable>
-    <!-- Index for next variable = 884 -->
+    <!-- Index for next variable = 882 -->
     <ScalarVariable
       name="EithvPressure.port.h_outflow"
       valueReference="100663763"
@@ -8907,7 +8940,7 @@
         nominal="100000.0"
         start="-15891570.530726617"/>
     </ScalarVariable>
-    <!-- Index for next variable = 885 -->
+    <!-- Index for next variable = 883 -->
     <ScalarVariable
       name="EithvPressure.GetAbsolutePressure"
       valueReference="100663764"
@@ -8915,396 +8948,17 @@
       variability="constant">
       <Boolean start="false"/>
     </ScalarVariable>
-    <!-- Index for next variable = 886 -->
+    <!-- Index for next variable = 884 -->
     <ScalarVariable
       name="EithvPressure.pressure"
-      valueReference="905970351"
+      valueReference="905970361"
       description="Pressure">
       <Real
         declaredType="Physiolibrary.Types.RealIO.PressureOutput"/>
     </ScalarVariable>
-    <!-- Index for next variable = 887 -->
+    <!-- Index for next variable = 885 -->
     <ScalarVariable
       name="power.q_in.m_flow"
-      valueReference="637534750"
-      description="Mass flow rate from the connection point into the component">
-      <Real
-        quantity="MassFlowRate.Water"
-        unit="kg/s"
-        min="-100000.0"
-        max="100000.0"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 888 -->
-    <ScalarVariable
-      name="power.q_in.p"
-      valueReference="637534748"
-      description="Thermodynamic pressure in the connection point">
-      <Real
-        quantity="Pressure"
-        unit="Pa"
-        displayUnit="bar"
-        min="0.0"
-        max="100000000.0"
-        nominal="100000.0"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 889 -->
-    <ScalarVariable
-      name="power.q_in.h_outflow"
-      valueReference="637534751"
-      description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
-      <Real
-        quantity="SpecificEnergy"
-        unit="J/kg"
-        min="-10000000000.0"
-        max="10000000000.0"
-        nominal="100000.0"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 890 -->
-    <ScalarVariable
-      name="power.q_out.m_flow"
-      valueReference="637534880"
-      description="Mass flow rate from the connection point into the component">
-      <Real
-        quantity="MassFlowRate.Water"
-        unit="kg/s"
-        min="-100000.0"
-        max="100000.0"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 891 -->
-    <ScalarVariable
-      name="power.q_out.p"
-      valueReference="637534748"
-      description="Thermodynamic pressure in the connection point">
-      <Real
-        quantity="Pressure"
-        unit="Pa"
-        displayUnit="bar"
-        min="0.0"
-        max="100000000.0"
-        nominal="100000.0"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 892 -->
-    <ScalarVariable
-      name="power.q_out.h_outflow"
-      valueReference="637534873"
-      description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
-      <Real
-        quantity="SpecificEnergy"
-        unit="J/kg"
-        min="-10000000000.0"
-        max="10000000000.0"
-        nominal="100000.0"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 893 -->
-    <ScalarVariable
-      name="power.massFlowRate"
-      valueReference="637534750"
-      description="Mass flow">
-      <Real
-        declaredType="Physiolibrary.Types.MassFlowRate"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 894 -->
-    <ScalarVariable
-      name="power.volumeFlowRate"
-      valueReference="637534896"
-      description="Volume flow">
-      <Real
-        declaredType="Physiolibrary.Types.VolumeFlowRate"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 895 -->
-    <ScalarVariable
-      name="power.dp"
-      valueReference="100663765"
-      description="Pressure gradient"
-      variability="constant">
-      <Real
-        declaredType="Physiolibrary.Types.Pressure"
-        start="0.0"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 896 -->
-    <ScalarVariable
-      name="power.density"
-      valueReference="100663766"
-      variability="constant">
-      <Real
-        declaredType="Modelica.Units.SI.Density"
-        start="1000"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 897 -->
-    <ScalarVariable
-      name="power.power"
-      valueReference="637534897"
-      description="Actual power">
-      <Real
-        declaredType="Physiolibrary.Types.RealIO.PowerOutput"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 898 -->
-    <ScalarVariable
-      name="power1.q_in.m_flow"
-      valueReference="637534846"
-      description="Mass flow rate from the connection point into the component">
-      <Real
-        quantity="MassFlowRate.Water"
-        unit="kg/s"
-        min="-100000.0"
-        max="100000.0"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 899 -->
-    <ScalarVariable
-      name="power1.q_in.p"
-      valueReference="637534848"
-      description="Thermodynamic pressure in the connection point">
-      <Real
-        quantity="Pressure"
-        unit="Pa"
-        displayUnit="bar"
-        min="0.0"
-        max="100000000.0"
-        nominal="100000.0"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 900 -->
-    <ScalarVariable
-      name="power1.q_in.h_outflow"
-      valueReference="637534847"
-      description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
-      <Real
-        quantity="SpecificEnergy"
-        unit="J/kg"
-        min="-10000000000.0"
-        max="10000000000.0"
-        nominal="100000.0"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 901 -->
-    <ScalarVariable
-      name="power1.q_out.m_flow"
-      valueReference="637534852"
-      description="Mass flow rate from the connection point into the component">
-      <Real
-        quantity="MassFlowRate.Water"
-        unit="kg/s"
-        min="-100000.0"
-        max="100000.0"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 902 -->
-    <ScalarVariable
-      name="power1.q_out.p"
-      valueReference="637534848"
-      description="Thermodynamic pressure in the connection point">
-      <Real
-        quantity="Pressure"
-        unit="Pa"
-        displayUnit="bar"
-        min="0.0"
-        max="100000000.0"
-        nominal="100000.0"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 903 -->
-    <ScalarVariable
-      name="power1.q_out.h_outflow"
-      valueReference="637534849"
-      description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
-      <Real
-        quantity="SpecificEnergy"
-        unit="J/kg"
-        min="-10000000000.0"
-        max="10000000000.0"
-        nominal="100000.0"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 904 -->
-    <ScalarVariable
-      name="power1.massFlowRate"
-      valueReference="637534846"
-      description="Mass flow">
-      <Real
-        declaredType="Physiolibrary.Types.MassFlowRate"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 905 -->
-    <ScalarVariable
-      name="power1.volumeFlowRate"
-      valueReference="637534898"
-      description="Volume flow">
-      <Real
-        declaredType="Physiolibrary.Types.VolumeFlowRate"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 906 -->
-    <ScalarVariable
-      name="power1.dp"
-      valueReference="100663768"
-      description="Pressure gradient"
-      variability="constant">
-      <Real
-        declaredType="Physiolibrary.Types.Pressure"
-        start="0.0"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 907 -->
-    <ScalarVariable
-      name="power1.density"
-      valueReference="100663769"
-      variability="constant">
-      <Real
-        declaredType="Modelica.Units.SI.Density"
-        start="1000"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 908 -->
-    <ScalarVariable
-      name="power1.power"
-      valueReference="637534899"
-      description="Actual power">
-      <Real
-        declaredType="Physiolibrary.Types.RealIO.PowerOutput"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 909 -->
-    <ScalarVariable
-      name="rightHeartPower.u"
-      valueReference="587202583"
-      description="Connector of Real input signal">
-      <Real
-        declaredType="Modelica.Blocks.Interfaces.RealInput"
-        unit="W"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 910 -->
-    <ScalarVariable
-      name="rightHeartPower.y"
-      valueReference="905970185"
-      description="Connector of Real output signal"
-      variability="discrete">
-      <Real
-        declaredType="Modelica.Blocks.Interfaces.RealOutput"
-        unit="W"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 911 -->
-    <ScalarVariable
-      name="rightHeartPower.f"
-      valueReference="16777360"
-      description="Base frequency"
-      causality="parameter"
-      variability="tunable">
-      <Real
-        declaredType="Modelica.Units.SI.Frequency"
-        displayUnit="1/min"
-        start="1.2"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 912 -->
-    <ScalarVariable
-      name="rightHeartPower.x0"
-      valueReference="16777361"
-      description="Start value of integrator state"
-      causality="parameter"
-      variability="fixed">
-      <Real
-        unit="J"
-        start="0"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 913 -->
-    <ScalarVariable
-      name="rightHeartPower.yGreaterOrEqualZero"
-      valueReference="100663771"
-      description="= true, if output y is guaranteed to be &gt;= 0 for the exact solution"
-      variability="constant">
-      <Boolean start="false"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 914 -->
-    <ScalarVariable
-      name="rightHeartPower.t0"
-      valueReference="100663772"
-      description="Start time of simulation"
-      causality="calculatedParameter"
-      variability="fixed">
-      <Real
-        declaredType="Modelica.Units.SI.Time"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 915 -->
-    <ScalarVariable
-      name="rightHeartPower.x"
-      valueReference="33554455"
-      description="Integrator state">
-      <Real
-        unit="J"
-        reinit="true"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 916 -->
-    <ScalarVariable
-      name="der(rightHeartPower.x)"
-      valueReference="587202583"
-      description="der(Integrator state)">
-      <Real
-        unit="W"
-        derivative="915"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 917 -->
-    <ScalarVariable
-      name="rightHeartPower.y_last"
-      valueReference="905970185"
-      description="Last sampled mean value"
-      variability="discrete">
-      <Real
-        unit="W"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 918 -->
-    <ScalarVariable
-      name="feedback.u1"
-      valueReference="637534897"
-      description="Commanded input">
-      <Real
-        declaredType="Modelica.Blocks.Interfaces.RealInput"
-        unit="W"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 919 -->
-    <ScalarVariable
-      name="feedback.u2"
-      valueReference="637534899"
-      description="Feedback input">
-      <Real
-        declaredType="Modelica.Blocks.Interfaces.RealInput"
-        unit="W"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 920 -->
-    <ScalarVariable
-      name="feedback.y"
-      valueReference="587202583">
-      <Real
-        declaredType="Modelica.Blocks.Interfaces.RealOutput"
-        unit="W"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 921 -->
-    <ScalarVariable
-      name="power2.q_in.m_flow"
-      valueReference="637534771"
-      description="Mass flow rate from the connection point into the component">
-      <Real
-        quantity="MassFlowRate.Water"
-        unit="kg/s"
-        min="-100000.0"
-        max="100000.0"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 922 -->
-    <ScalarVariable
-      name="power2.q_in.p"
-      valueReference="637534766"
-      description="Thermodynamic pressure in the connection point">
-      <Real
-        quantity="Pressure"
-        unit="Pa"
-        displayUnit="bar"
-        min="0.0"
-        max="100000000.0"
-        nominal="100000.0"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 923 -->
-    <ScalarVariable
-      name="power2.q_in.h_outflow"
-      valueReference="637534765"
-      description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
-      <Real
-        quantity="SpecificEnergy"
-        unit="J/kg"
-        min="-10000000000.0"
-        max="10000000000.0"
-        nominal="100000.0"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 924 -->
-    <ScalarVariable
-      name="power2.q_out.m_flow"
       valueReference="637534760"
       description="Mass flow rate from the connection point into the component">
       <Real
@@ -9313,10 +8967,10 @@
         min="-100000.0"
         max="100000.0"/>
     </ScalarVariable>
-    <!-- Index for next variable = 925 -->
+    <!-- Index for next variable = 886 -->
     <ScalarVariable
-      name="power2.q_out.p"
-      valueReference="637534766"
+      name="power.q_in.p"
+      valueReference="637534758"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -9326,9 +8980,9 @@
         max="100000000.0"
         nominal="100000.0"/>
     </ScalarVariable>
-    <!-- Index for next variable = 926 -->
+    <!-- Index for next variable = 887 -->
     <ScalarVariable
-      name="power2.q_out.h_outflow"
+      name="power.q_in.h_outflow"
       valueReference="637534761"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
@@ -9338,23 +8992,402 @@
         max="10000000000.0"
         nominal="100000.0"/>
     </ScalarVariable>
-    <!-- Index for next variable = 927 -->
+    <!-- Index for next variable = 888 -->
     <ScalarVariable
-      name="power2.massFlowRate"
-      valueReference="637534771"
+      name="power.q_out.m_flow"
+      valueReference="637534890"
+      description="Mass flow rate from the connection point into the component">
+      <Real
+        quantity="MassFlowRate.Water"
+        unit="kg/s"
+        min="-100000.0"
+        max="100000.0"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 889 -->
+    <ScalarVariable
+      name="power.q_out.p"
+      valueReference="637534758"
+      description="Thermodynamic pressure in the connection point">
+      <Real
+        quantity="Pressure"
+        unit="Pa"
+        displayUnit="bar"
+        min="0.0"
+        max="100000000.0"
+        nominal="100000.0"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 890 -->
+    <ScalarVariable
+      name="power.q_out.h_outflow"
+      valueReference="637534883"
+      description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
+      <Real
+        quantity="SpecificEnergy"
+        unit="J/kg"
+        min="-10000000000.0"
+        max="10000000000.0"
+        nominal="100000.0"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 891 -->
+    <ScalarVariable
+      name="power.massFlowRate"
+      valueReference="637534760"
       description="Mass flow">
       <Real
         declaredType="Physiolibrary.Types.MassFlowRate"/>
     </ScalarVariable>
-    <!-- Index for next variable = 928 -->
+    <!-- Index for next variable = 892 -->
     <ScalarVariable
-      name="power2.volumeFlowRate"
-      valueReference="637534900"
+      name="power.volumeFlowRate"
+      valueReference="637534906"
       description="Volume flow">
       <Real
         declaredType="Physiolibrary.Types.VolumeFlowRate"/>
     </ScalarVariable>
-    <!-- Index for next variable = 929 -->
+    <!-- Index for next variable = 893 -->
+    <ScalarVariable
+      name="power.dp"
+      valueReference="100663765"
+      description="Pressure gradient"
+      variability="constant">
+      <Real
+        declaredType="Physiolibrary.Types.Pressure"
+        start="0.0"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 894 -->
+    <ScalarVariable
+      name="power.density"
+      valueReference="100663766"
+      variability="constant">
+      <Real
+        declaredType="Modelica.Units.SI.Density"
+        start="1000"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 895 -->
+    <ScalarVariable
+      name="power.power"
+      valueReference="637534907"
+      description="Actual power">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.PowerOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 896 -->
+    <ScalarVariable
+      name="power1.q_in.m_flow"
+      valueReference="637534856"
+      description="Mass flow rate from the connection point into the component">
+      <Real
+        quantity="MassFlowRate.Water"
+        unit="kg/s"
+        min="-100000.0"
+        max="100000.0"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 897 -->
+    <ScalarVariable
+      name="power1.q_in.p"
+      valueReference="637534858"
+      description="Thermodynamic pressure in the connection point">
+      <Real
+        quantity="Pressure"
+        unit="Pa"
+        displayUnit="bar"
+        min="0.0"
+        max="100000000.0"
+        nominal="100000.0"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 898 -->
+    <ScalarVariable
+      name="power1.q_in.h_outflow"
+      valueReference="637534857"
+      description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
+      <Real
+        quantity="SpecificEnergy"
+        unit="J/kg"
+        min="-10000000000.0"
+        max="10000000000.0"
+        nominal="100000.0"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 899 -->
+    <ScalarVariable
+      name="power1.q_out.m_flow"
+      valueReference="637534862"
+      description="Mass flow rate from the connection point into the component">
+      <Real
+        quantity="MassFlowRate.Water"
+        unit="kg/s"
+        min="-100000.0"
+        max="100000.0"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 900 -->
+    <ScalarVariable
+      name="power1.q_out.p"
+      valueReference="637534858"
+      description="Thermodynamic pressure in the connection point">
+      <Real
+        quantity="Pressure"
+        unit="Pa"
+        displayUnit="bar"
+        min="0.0"
+        max="100000000.0"
+        nominal="100000.0"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 901 -->
+    <ScalarVariable
+      name="power1.q_out.h_outflow"
+      valueReference="637534859"
+      description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
+      <Real
+        quantity="SpecificEnergy"
+        unit="J/kg"
+        min="-10000000000.0"
+        max="10000000000.0"
+        nominal="100000.0"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 902 -->
+    <ScalarVariable
+      name="power1.massFlowRate"
+      valueReference="637534856"
+      description="Mass flow">
+      <Real
+        declaredType="Physiolibrary.Types.MassFlowRate"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 903 -->
+    <ScalarVariable
+      name="power1.volumeFlowRate"
+      valueReference="637534908"
+      description="Volume flow">
+      <Real
+        declaredType="Physiolibrary.Types.VolumeFlowRate"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 904 -->
+    <ScalarVariable
+      name="power1.dp"
+      valueReference="100663768"
+      description="Pressure gradient"
+      variability="constant">
+      <Real
+        declaredType="Physiolibrary.Types.Pressure"
+        start="0.0"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 905 -->
+    <ScalarVariable
+      name="power1.density"
+      valueReference="100663769"
+      variability="constant">
+      <Real
+        declaredType="Modelica.Units.SI.Density"
+        start="1000"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 906 -->
+    <ScalarVariable
+      name="power1.power"
+      valueReference="637534909"
+      description="Actual power">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.PowerOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 907 -->
+    <ScalarVariable
+      name="rightHeartPower.u"
+      valueReference="587202583"
+      description="Connector of Real input signal">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealInput"
+        unit="W"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 908 -->
+    <ScalarVariable
+      name="rightHeartPower.y"
+      valueReference="905970195"
+      description="Connector of Real output signal"
+      variability="discrete">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealOutput"
+        unit="W"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 909 -->
+    <ScalarVariable
+      name="rightHeartPower.f"
+      valueReference="16777359"
+      description="Base frequency"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Modelica.Units.SI.Frequency"
+        displayUnit="1/min"
+        start="1.2"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 910 -->
+    <ScalarVariable
+      name="rightHeartPower.x0"
+      valueReference="16777360"
+      description="Start value of integrator state"
+      causality="parameter"
+      variability="fixed">
+      <Real
+        unit="J"
+        start="0"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 911 -->
+    <ScalarVariable
+      name="rightHeartPower.yGreaterOrEqualZero"
+      valueReference="100663771"
+      description="= true, if output y is guaranteed to be &gt;= 0 for the exact solution"
+      variability="constant">
+      <Boolean start="false"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 912 -->
+    <ScalarVariable
+      name="rightHeartPower.t0"
+      valueReference="100663772"
+      description="Start time of simulation"
+      causality="calculatedParameter"
+      variability="fixed">
+      <Real
+        declaredType="Modelica.Units.SI.Time"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 913 -->
+    <ScalarVariable
+      name="rightHeartPower.x"
+      valueReference="33554455"
+      description="Integrator state">
+      <Real
+        unit="J"
+        reinit="true"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 914 -->
+    <ScalarVariable
+      name="der(rightHeartPower.x)"
+      valueReference="587202583"
+      description="der(Integrator state)">
+      <Real
+        unit="W"
+        derivative="913"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 915 -->
+    <ScalarVariable
+      name="rightHeartPower.y_last"
+      valueReference="905970195"
+      description="Last sampled mean value"
+      variability="discrete">
+      <Real
+        unit="W"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 916 -->
+    <ScalarVariable
+      name="feedback.u1"
+      valueReference="637534907"
+      description="Commanded input">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealInput"
+        unit="W"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 917 -->
+    <ScalarVariable
+      name="feedback.u2"
+      valueReference="637534909"
+      description="Feedback input">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealInput"
+        unit="W"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 918 -->
+    <ScalarVariable
+      name="feedback.y"
+      valueReference="587202583">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealOutput"
+        unit="W"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 919 -->
+    <ScalarVariable
+      name="power2.q_in.m_flow"
+      valueReference="637534781"
+      description="Mass flow rate from the connection point into the component">
+      <Real
+        quantity="MassFlowRate.Water"
+        unit="kg/s"
+        min="-100000.0"
+        max="100000.0"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 920 -->
+    <ScalarVariable
+      name="power2.q_in.p"
+      valueReference="637534776"
+      description="Thermodynamic pressure in the connection point">
+      <Real
+        quantity="Pressure"
+        unit="Pa"
+        displayUnit="bar"
+        min="0.0"
+        max="100000000.0"
+        nominal="100000.0"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 921 -->
+    <ScalarVariable
+      name="power2.q_in.h_outflow"
+      valueReference="637534775"
+      description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
+      <Real
+        quantity="SpecificEnergy"
+        unit="J/kg"
+        min="-10000000000.0"
+        max="10000000000.0"
+        nominal="100000.0"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 922 -->
+    <ScalarVariable
+      name="power2.q_out.m_flow"
+      valueReference="637534770"
+      description="Mass flow rate from the connection point into the component">
+      <Real
+        quantity="MassFlowRate.Water"
+        unit="kg/s"
+        min="-100000.0"
+        max="100000.0"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 923 -->
+    <ScalarVariable
+      name="power2.q_out.p"
+      valueReference="637534776"
+      description="Thermodynamic pressure in the connection point">
+      <Real
+        quantity="Pressure"
+        unit="Pa"
+        displayUnit="bar"
+        min="0.0"
+        max="100000000.0"
+        nominal="100000.0"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 924 -->
+    <ScalarVariable
+      name="power2.q_out.h_outflow"
+      valueReference="637534771"
+      description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
+      <Real
+        quantity="SpecificEnergy"
+        unit="J/kg"
+        min="-10000000000.0"
+        max="10000000000.0"
+        nominal="100000.0"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 925 -->
+    <ScalarVariable
+      name="power2.massFlowRate"
+      valueReference="637534781"
+      description="Mass flow">
+      <Real
+        declaredType="Physiolibrary.Types.MassFlowRate"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 926 -->
+    <ScalarVariable
+      name="power2.volumeFlowRate"
+      valueReference="637534910"
+      description="Volume flow">
+      <Real
+        declaredType="Physiolibrary.Types.VolumeFlowRate"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 927 -->
     <ScalarVariable
       name="power2.dp"
       valueReference="100663773"
@@ -9364,7 +9397,7 @@
         declaredType="Physiolibrary.Types.Pressure"
         start="0.0"/>
     </ScalarVariable>
-    <!-- Index for next variable = 930 -->
+    <!-- Index for next variable = 928 -->
     <ScalarVariable
       name="power2.density"
       valueReference="100663774"
@@ -9373,18 +9406,18 @@
         declaredType="Modelica.Units.SI.Density"
         start="1000"/>
     </ScalarVariable>
-    <!-- Index for next variable = 931 -->
+    <!-- Index for next variable = 929 -->
     <ScalarVariable
       name="power2.power"
-      valueReference="637534901"
+      valueReference="637534911"
       description="Actual power">
       <Real
         declaredType="Physiolibrary.Types.RealIO.PowerOutput"/>
     </ScalarVariable>
-    <!-- Index for next variable = 932 -->
+    <!-- Index for next variable = 930 -->
     <ScalarVariable
       name="power3.q_in.m_flow"
-      valueReference="637534791"
+      valueReference="637534801"
       description="Mass flow rate from the connection point into the component">
       <Real
         quantity="MassFlowRate.Water"
@@ -9392,10 +9425,10 @@
         min="-100000.0"
         max="100000.0"/>
     </ScalarVariable>
-    <!-- Index for next variable = 933 -->
+    <!-- Index for next variable = 931 -->
     <ScalarVariable
       name="power3.q_in.p"
-      valueReference="637534790"
+      valueReference="637534800"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -9405,46 +9438,46 @@
         max="100000000.0"
         nominal="100000.0"/>
     </ScalarVariable>
-    <!-- Index for next variable = 934 -->
+    <!-- Index for next variable = 932 -->
     <ScalarVariable
       name="power3.q_in.h_outflow"
-      valueReference="637534789"
+      valueReference="637534799"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
         unit="J/kg"
         min="-10000000000.0"
         max="10000000000.0"
+        nominal="100000.0"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 933 -->
+    <ScalarVariable
+      name="power3.q_out.m_flow"
+      valueReference="637534791"
+      description="Mass flow rate from the connection point into the component">
+      <Real
+        quantity="MassFlowRate.Water"
+        unit="kg/s"
+        min="-100000.0"
+        max="100000.0"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 934 -->
+    <ScalarVariable
+      name="power3.q_out.p"
+      valueReference="637534800"
+      description="Thermodynamic pressure in the connection point">
+      <Real
+        quantity="Pressure"
+        unit="Pa"
+        displayUnit="bar"
+        min="0.0"
+        max="100000000.0"
         nominal="100000.0"/>
     </ScalarVariable>
     <!-- Index for next variable = 935 -->
     <ScalarVariable
-      name="power3.q_out.m_flow"
-      valueReference="637534781"
-      description="Mass flow rate from the connection point into the component">
-      <Real
-        quantity="MassFlowRate.Water"
-        unit="kg/s"
-        min="-100000.0"
-        max="100000.0"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 936 -->
-    <ScalarVariable
-      name="power3.q_out.p"
-      valueReference="637534790"
-      description="Thermodynamic pressure in the connection point">
-      <Real
-        quantity="Pressure"
-        unit="Pa"
-        displayUnit="bar"
-        min="0.0"
-        max="100000000.0"
-        nominal="100000.0"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 937 -->
-    <ScalarVariable
       name="power3.q_out.h_outflow"
-      valueReference="637534782"
+      valueReference="637534792"
       description="Specific thermodynamic enthalpy close to the connection point if m_flow &lt; 0">
       <Real
         quantity="SpecificEnergy"
@@ -9453,23 +9486,23 @@
         max="10000000000.0"
         nominal="100000.0"/>
     </ScalarVariable>
-    <!-- Index for next variable = 938 -->
+    <!-- Index for next variable = 936 -->
     <ScalarVariable
       name="power3.massFlowRate"
-      valueReference="637534791"
+      valueReference="637534801"
       description="Mass flow">
       <Real
         declaredType="Physiolibrary.Types.MassFlowRate"/>
     </ScalarVariable>
-    <!-- Index for next variable = 939 -->
+    <!-- Index for next variable = 937 -->
     <ScalarVariable
       name="power3.volumeFlowRate"
-      valueReference="637534902"
+      valueReference="637534912"
       description="Volume flow">
       <Real
         declaredType="Physiolibrary.Types.VolumeFlowRate"/>
     </ScalarVariable>
-    <!-- Index for next variable = 940 -->
+    <!-- Index for next variable = 938 -->
     <ScalarVariable
       name="power3.dp"
       valueReference="100663776"
@@ -9479,7 +9512,7 @@
         declaredType="Physiolibrary.Types.Pressure"
         start="0.0"/>
     </ScalarVariable>
-    <!-- Index for next variable = 941 -->
+    <!-- Index for next variable = 939 -->
     <ScalarVariable
       name="power3.density"
       valueReference="100663777"
@@ -9488,15 +9521,15 @@
         declaredType="Modelica.Units.SI.Density"
         start="1000"/>
     </ScalarVariable>
-    <!-- Index for next variable = 942 -->
+    <!-- Index for next variable = 940 -->
     <ScalarVariable
       name="power3.power"
-      valueReference="637534903"
+      valueReference="637534913"
       description="Actual power">
       <Real
         declaredType="Physiolibrary.Types.RealIO.PowerOutput"/>
     </ScalarVariable>
-    <!-- Index for next variable = 943 -->
+    <!-- Index for next variable = 941 -->
     <ScalarVariable
       name="leftHeartPower.u"
       valueReference="587202584"
@@ -9505,20 +9538,20 @@
         declaredType="Modelica.Blocks.Interfaces.RealInput"
         unit="W"/>
     </ScalarVariable>
-    <!-- Index for next variable = 944 -->
+    <!-- Index for next variable = 942 -->
     <ScalarVariable
       name="leftHeartPower.y"
-      valueReference="905970186"
+      valueReference="905970196"
       description="Connector of Real output signal"
       variability="discrete">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealOutput"
         unit="W"/>
     </ScalarVariable>
-    <!-- Index for next variable = 945 -->
+    <!-- Index for next variable = 943 -->
     <ScalarVariable
       name="leftHeartPower.f"
-      valueReference="16777362"
+      valueReference="16777361"
       description="Base frequency"
       causality="parameter"
       variability="tunable">
@@ -9527,10 +9560,10 @@
         displayUnit="1/min"
         start="1.2"/>
     </ScalarVariable>
-    <!-- Index for next variable = 946 -->
+    <!-- Index for next variable = 944 -->
     <ScalarVariable
       name="leftHeartPower.x0"
-      valueReference="16777363"
+      valueReference="16777362"
       description="Start value of integrator state"
       causality="parameter"
       variability="fixed">
@@ -9538,7 +9571,7 @@
         unit="J"
         start="0"/>
     </ScalarVariable>
-    <!-- Index for next variable = 947 -->
+    <!-- Index for next variable = 945 -->
     <ScalarVariable
       name="leftHeartPower.yGreaterOrEqualZero"
       valueReference="100663779"
@@ -9546,7 +9579,7 @@
       variability="constant">
       <Boolean start="false"/>
     </ScalarVariable>
-    <!-- Index for next variable = 948 -->
+    <!-- Index for next variable = 946 -->
     <ScalarVariable
       name="leftHeartPower.t0"
       valueReference="100663780"
@@ -9556,7 +9589,7 @@
       <Real
         declaredType="Modelica.Units.SI.Time"/>
     </ScalarVariable>
-    <!-- Index for next variable = 949 -->
+    <!-- Index for next variable = 947 -->
     <ScalarVariable
       name="leftHeartPower.x"
       valueReference="33554456"
@@ -9565,43 +9598,43 @@
         unit="J"
         reinit="true"/>
     </ScalarVariable>
-    <!-- Index for next variable = 950 -->
+    <!-- Index for next variable = 948 -->
     <ScalarVariable
       name="der(leftHeartPower.x)"
       valueReference="587202584"
       description="der(Integrator state)">
       <Real
         unit="W"
-        derivative="949"/>
+        derivative="947"/>
     </ScalarVariable>
-    <!-- Index for next variable = 951 -->
+    <!-- Index for next variable = 949 -->
     <ScalarVariable
       name="leftHeartPower.y_last"
-      valueReference="905970186"
+      valueReference="905970196"
       description="Last sampled mean value"
       variability="discrete">
       <Real
         unit="W"/>
     </ScalarVariable>
-    <!-- Index for next variable = 952 -->
+    <!-- Index for next variable = 950 -->
     <ScalarVariable
       name="feedback1.u1"
-      valueReference="637534903"
+      valueReference="637534913"
       description="Commanded input">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealInput"
         unit="W"/>
     </ScalarVariable>
-    <!-- Index for next variable = 953 -->
+    <!-- Index for next variable = 951 -->
     <ScalarVariable
       name="feedback1.u2"
-      valueReference="637534901"
+      valueReference="637534911"
       description="Feedback input">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealInput"
         unit="W"/>
     </ScalarVariable>
-    <!-- Index for next variable = 954 -->
+    <!-- Index for next variable = 952 -->
     <ScalarVariable
       name="feedback1.y"
       valueReference="587202584">
@@ -9609,7 +9642,7 @@
         declaredType="Modelica.Blocks.Interfaces.RealOutput"
         unit="W"/>
     </ScalarVariable>
-    <!-- Index for next variable = 955 -->
+    <!-- Index for next variable = 953 -->
     <ScalarVariable
       name="arterialPressure.port.m_flow"
       valueReference="100663781"
@@ -9622,10 +9655,10 @@
         max="100000.0"
         start="0.0"/>
     </ScalarVariable>
-    <!-- Index for next variable = 956 -->
+    <!-- Index for next variable = 954 -->
     <ScalarVariable
       name="arterialPressure.port.p"
-      valueReference="637534790"
+      valueReference="637534800"
       description="Thermodynamic pressure in the connection point">
       <Real
         quantity="Pressure"
@@ -9635,7 +9668,7 @@
         max="100000000.0"
         nominal="100000.0"/>
     </ScalarVariable>
-    <!-- Index for next variable = 957 -->
+    <!-- Index for next variable = 955 -->
     <ScalarVariable
       name="arterialPressure.port.h_outflow"
       valueReference="100663782"
@@ -9649,10 +9682,10 @@
         nominal="100000.0"
         start="-15891570.530726617"/>
     </ScalarVariable>
-    <!-- Index for next variable = 958 -->
+    <!-- Index for next variable = 956 -->
     <ScalarVariable
       name="arterialPressure.MeasurementTime"
-      valueReference="16777364"
+      valueReference="16777363"
       description="Measurement time period"
       causality="parameter"
       variability="tunable">
@@ -9661,90 +9694,90 @@
         displayUnit="s"
         start="0.8333333333333334"/>
     </ScalarVariable>
-    <!-- Index for next variable = 959 -->
+    <!-- Index for next variable = 957 -->
     <ScalarVariable
       name="arterialPressure.diastolic"
-      valueReference="905970190"
+      valueReference="905970200"
       description="Diastolic pressure"
+      variability="discrete">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.PressureOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 958 -->
+    <ScalarVariable
+      name="arterialPressure.systolic"
+      valueReference="905970199"
+      description="Systolic pressure"
+      variability="discrete">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.PressureOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 959 -->
+    <ScalarVariable
+      name="arterialPressure.mean"
+      valueReference="905970201"
+      description="Mean pressure"
       variability="discrete">
       <Real
         declaredType="Physiolibrary.Types.RealIO.PressureOutput"/>
     </ScalarVariable>
     <!-- Index for next variable = 960 -->
     <ScalarVariable
-      name="arterialPressure.systolic"
-      valueReference="905970189"
-      description="Systolic pressure"
-      variability="discrete">
-      <Real
-        declaredType="Physiolibrary.Types.RealIO.PressureOutput"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 961 -->
-    <ScalarVariable
-      name="arterialPressure.mean"
-      valueReference="905970191"
-      description="Mean pressure"
-      variability="discrete">
-      <Real
-        declaredType="Physiolibrary.Types.RealIO.PressureOutput"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 962 -->
-    <ScalarVariable
       name="arterialPressure.b"
-      valueReference="905970187"
+      valueReference="905970197"
       variability="discrete">
       <Boolean/>
     </ScalarVariable>
-    <!-- Index for next variable = 963 -->
+    <!-- Index for next variable = 961 -->
     <ScalarVariable
       name="arterialPressure.t0"
-      valueReference="905970188"
+      valueReference="905970198"
       variability="discrete"
       initial="exact">
       <Real
         declaredType="Physiolibrary.Types.Time"
         start="0.0"/>
     </ScalarVariable>
-    <!-- Index for next variable = 964 -->
+    <!-- Index for next variable = 962 -->
     <ScalarVariable
       name="arterialPressure.systolicMeassured"
-      valueReference="905970189"
+      valueReference="905970199"
+      variability="discrete">
+      <Real
+        declaredType="Physiolibrary.Types.Pressure"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 963 -->
+    <ScalarVariable
+      name="arterialPressure.diastolicMeassured"
+      valueReference="905970200"
+      variability="discrete">
+      <Real
+        declaredType="Physiolibrary.Types.Pressure"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 964 -->
+    <ScalarVariable
+      name="arterialPressure.meanMeasured"
+      valueReference="905970201"
       variability="discrete">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
     </ScalarVariable>
     <!-- Index for next variable = 965 -->
     <ScalarVariable
-      name="arterialPressure.diastolicMeassured"
-      valueReference="905970190"
-      variability="discrete">
-      <Real
-        declaredType="Physiolibrary.Types.Pressure"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 966 -->
-    <ScalarVariable
-      name="arterialPressure.meanMeasured"
-      valueReference="905970191"
-      variability="discrete">
-      <Real
-        declaredType="Physiolibrary.Types.Pressure"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 967 -->
-    <ScalarVariable
       name="arterialPressure.pressure"
       valueReference="587202587">
       <Real
         declaredType="Physiolibrary.Types.Pressure"/>
     </ScalarVariable>
-    <!-- Index for next variable = 968 -->
+    <!-- Index for next variable = 966 -->
     <ScalarVariable
       name="der(arterialPressure.pressure)"
-      valueReference="637534904">
+      valueReference="637534914">
       <Real
         unit="Pa/s"
-        derivative="967"/>
+        derivative="965"/>
     </ScalarVariable>
-    <!-- Index for next variable = 969 -->
+    <!-- Index for next variable = 967 -->
     <ScalarVariable
       name="arterialPressure.diastolicRunning"
       valueReference="33554457">
@@ -9752,15 +9785,15 @@
         declaredType="Physiolibrary.Types.Pressure"
         reinit="true"/>
     </ScalarVariable>
-    <!-- Index for next variable = 970 -->
+    <!-- Index for next variable = 968 -->
     <ScalarVariable
       name="der(arterialPressure.diastolicRunning)"
       valueReference="587202585">
       <Real
         unit="Pa/s"
-        derivative="969"/>
+        derivative="967"/>
     </ScalarVariable>
-    <!-- Index for next variable = 971 -->
+    <!-- Index for next variable = 969 -->
     <ScalarVariable
       name="arterialPressure.systolicRunning"
       valueReference="33554458">
@@ -9768,15 +9801,15 @@
         declaredType="Physiolibrary.Types.Pressure"
         reinit="true"/>
     </ScalarVariable>
-    <!-- Index for next variable = 972 -->
+    <!-- Index for next variable = 970 -->
     <ScalarVariable
       name="der(arterialPressure.systolicRunning)"
       valueReference="587202586">
       <Real
         unit="Pa/s"
-        derivative="971"/>
+        derivative="969"/>
     </ScalarVariable>
-    <!-- Index for next variable = 973 -->
+    <!-- Index for next variable = 971 -->
     <ScalarVariable
       name="arterialPressure.pressureInt"
       valueReference="33554459">
@@ -9784,28 +9817,28 @@
         unit="Pa.s"
         reinit="true"/>
     </ScalarVariable>
-    <!-- Index for next variable = 974 -->
+    <!-- Index for next variable = 972 -->
     <ScalarVariable
       name="der(arterialPressure.pressureInt)"
       valueReference="587202587">
       <Real
         unit="Pa"
         nominal="100000.0"
-        derivative="973"/>
+        derivative="971"/>
     </ScalarVariable>
-    <!-- Index for next variable = 975 -->
+    <!-- Index for next variable = 973 -->
     <ScalarVariable
       name="uniformNoise.y"
-      valueReference="637534736"
+      valueReference="637534746"
       description="Connector of Real output signal"
       variability="discrete">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
     </ScalarVariable>
-    <!-- Index for next variable = 976 -->
+    <!-- Index for next variable = 974 -->
     <ScalarVariable
       name="uniformNoise.samplePeriod"
-      valueReference="16777365"
+      valueReference="16777364"
       description="Period for sampling the raw random numbers"
       causality="parameter"
       variability="tunable">
@@ -9813,7 +9846,7 @@
         declaredType="Modelica.Units.SI.Period"
         start="6"/>
     </ScalarVariable>
-    <!-- Index for next variable = 977 -->
+    <!-- Index for next variable = 975 -->
     <ScalarVariable
       name="uniformNoise.enableNoise"
       valueReference="100663783"
@@ -9821,46 +9854,46 @@
       variability="tunable">
       <Boolean/>
     </ScalarVariable>
-    <!-- Index for next variable = 978 -->
+    <!-- Index for next variable = 976 -->
     <ScalarVariable
       name="uniformNoise.y_off"
-      valueReference="16777366"
+      valueReference="16777365"
       description="Sets y = y_off if enableNoise=false (or time&lt;startTime, see below)"
       causality="parameter"
       variability="tunable">
       <Real start="0.0"/>
     </ScalarVariable>
-    <!-- Index for next variable = 979 -->
+    <!-- Index for next variable = 977 -->
     <ScalarVariable
       name="uniformNoise.useGlobalSeed"
-      valueReference="16777367"
+      valueReference="16777366"
       description="= true: use global seed, otherwise ignore it"
       causality="parameter"
       variability="fixed">
       <Boolean start="true"/>
     </ScalarVariable>
-    <!-- Index for next variable = 980 -->
+    <!-- Index for next variable = 978 -->
     <ScalarVariable
       name="uniformNoise.useAutomaticLocalSeed"
-      valueReference="16777368"
+      valueReference="16777367"
       description="= true: use automatic local seed, otherwise use fixedLocalSeed"
       causality="parameter"
       variability="fixed">
       <Boolean start="true"/>
     </ScalarVariable>
-    <!-- Index for next variable = 981 -->
+    <!-- Index for next variable = 979 -->
     <ScalarVariable
       name="uniformNoise.fixedLocalSeed"
-      valueReference="16777369"
+      valueReference="16777368"
       description="Local seed (any Integer number)"
       causality="parameter"
       variability="fixed">
       <Integer start="1"/>
     </ScalarVariable>
-    <!-- Index for next variable = 982 -->
+    <!-- Index for next variable = 980 -->
     <ScalarVariable
       name="uniformNoise.startTime"
-      valueReference="16777370"
+      valueReference="16777369"
       description="Start time for sampling the raw random numbers"
       causality="parameter"
       variability="tunable">
@@ -9868,7 +9901,7 @@
         declaredType="Modelica.Units.SI.Time"
         start="0.0"/>
     </ScalarVariable>
-    <!-- Index for next variable = 983 -->
+    <!-- Index for next variable = 981 -->
     <ScalarVariable
       name="uniformNoise.localSeed"
       valueReference="100663784"
@@ -9877,7 +9910,7 @@
       variability="fixed">
       <Integer/>
     </ScalarVariable>
-    <!-- Index for next variable = 984 -->
+    <!-- Index for next variable = 982 -->
     <ScalarVariable
       name="uniformNoise.actualGlobalSeed"
       valueReference="100663785"
@@ -9885,7 +9918,7 @@
       variability="fixed">
       <Integer/>
     </ScalarVariable>
-    <!-- Index for next variable = 985 -->
+    <!-- Index for next variable = 983 -->
     <ScalarVariable
       name="uniformNoise.generateNoise"
       valueReference="100663786"
@@ -9893,114 +9926,114 @@
       variability="tunable">
       <Boolean/>
     </ScalarVariable>
-    <!-- Index for next variable = 986 -->
+    <!-- Index for next variable = 984 -->
     <ScalarVariable
       name="uniformNoise.state[1]"
-      valueReference="637534737"
+      valueReference="637534747"
+      description="Internal state of random number generator"
+      variability="discrete">
+      <Integer/>
+    </ScalarVariable>
+    <!-- Index for next variable = 985 -->
+    <ScalarVariable
+      name="uniformNoise.state[2]"
+      valueReference="637534748"
+      description="Internal state of random number generator"
+      variability="discrete">
+      <Integer/>
+    </ScalarVariable>
+    <!-- Index for next variable = 986 -->
+    <ScalarVariable
+      name="uniformNoise.state[3]"
+      valueReference="637534749"
       description="Internal state of random number generator"
       variability="discrete">
       <Integer/>
     </ScalarVariable>
     <!-- Index for next variable = 987 -->
     <ScalarVariable
-      name="uniformNoise.state[2]"
-      valueReference="637534738"
+      name="uniformNoise.state[4]"
+      valueReference="637534750"
       description="Internal state of random number generator"
       variability="discrete">
       <Integer/>
     </ScalarVariable>
     <!-- Index for next variable = 988 -->
     <ScalarVariable
-      name="uniformNoise.state[3]"
-      valueReference="637534739"
-      description="Internal state of random number generator"
-      variability="discrete">
-      <Integer/>
-    </ScalarVariable>
-    <!-- Index for next variable = 989 -->
-    <ScalarVariable
-      name="uniformNoise.state[4]"
-      valueReference="637534740"
-      description="Internal state of random number generator"
-      variability="discrete">
-      <Integer/>
-    </ScalarVariable>
-    <!-- Index for next variable = 990 -->
-    <ScalarVariable
       name="uniformNoise.r"
-      valueReference="637534741"
+      valueReference="637534751"
       description="Random number according to the desired distribution"
       variability="discrete">
       <Real/>
     </ScalarVariable>
-    <!-- Index for next variable = 991 -->
+    <!-- Index for next variable = 989 -->
     <ScalarVariable
       name="uniformNoise.r_raw"
-      valueReference="637534742"
+      valueReference="637534752"
       description="Uniform random number in the range (0,1]"
       variability="discrete">
       <Real/>
     </ScalarVariable>
-    <!-- Index for next variable = 992 -->
+    <!-- Index for next variable = 990 -->
     <ScalarVariable
       name="uniformNoise.y_min"
-      valueReference="16777371"
+      valueReference="16777370"
       description="Lower limit of y"
       causality="parameter"
       variability="tunable">
       <Real start="-0.03"/>
     </ScalarVariable>
-    <!-- Index for next variable = 993 -->
+    <!-- Index for next variable = 991 -->
     <ScalarVariable
       name="uniformNoise.y_max"
-      valueReference="16777372"
+      valueReference="16777371"
       description="Upper limit of y"
       causality="parameter"
       variability="tunable">
       <Real start="0.03"/>
     </ScalarVariable>
-    <!-- Index for next variable = 994 -->
+    <!-- Index for next variable = 992 -->
     <ScalarVariable
       name="randomizedHeartRate.u1"
-      valueReference="637534736"
+      valueReference="637534746"
       description="Connector of Real input signal 1"
       variability="discrete">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealInput"/>
     </ScalarVariable>
-    <!-- Index for next variable = 995 -->
+    <!-- Index for next variable = 993 -->
     <ScalarVariable
       name="randomizedHeartRate.u2"
-      valueReference="234881167"
+      valueReference="100663787"
       description="Connector of Real input signal 2"
       variability="tunable">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealInput"
         unit="Hz"/>
     </ScalarVariable>
-    <!-- Index for next variable = 996 -->
+    <!-- Index for next variable = 994 -->
     <ScalarVariable
       name="randomizedHeartRate.y"
-      valueReference="637534743"
+      valueReference="637534753"
       description="Connector of Real output signal"
       variability="discrete">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealOutput"
         unit="Hz"/>
     </ScalarVariable>
-    <!-- Index for next variable = 997 -->
+    <!-- Index for next variable = 995 -->
     <ScalarVariable
       name="randomizedHeartRate.k1"
-      valueReference="16777373"
+      valueReference="16777372"
       description="Gain of input signal 1"
       causality="parameter"
       variability="tunable">
       <Real start="1"/>
     </ScalarVariable>
-    <!-- Index for next variable = 998 -->
+    <!-- Index for next variable = 996 -->
     <ScalarVariable
       name="randomizedHeartRate.k2"
-      valueReference="16777374"
+      valueReference="16777373"
       description="Gain of input signal 2"
       causality="parameter"
       variability="tunable">
@@ -10008,155 +10041,155 @@
         unit="1"
         start="1"/>
     </ScalarVariable>
-    <!-- Index for next variable = 999 -->
+    <!-- Index for next variable = 997 -->
     <ScalarVariable
       name="currentHeartReat.u1"
-      valueReference="637534743"
+      valueReference="637534753"
       description="Connector of first Real input signal"
       variability="discrete">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealInput"
         unit="Hz"/>
     </ScalarVariable>
-    <!-- Index for next variable = 1000 -->
+    <!-- Index for next variable = 998 -->
     <ScalarVariable
       name="currentHeartReat.u2"
-      valueReference="234881183"
+      valueReference="234881182"
       description="Connector of Boolean input signal"
       variability="tunable">
       <Boolean
         declaredType="Modelica.Blocks.Interfaces.BooleanInput"/>
     </ScalarVariable>
-    <!-- Index for next variable = 1001 -->
+    <!-- Index for next variable = 999 -->
     <ScalarVariable
       name="currentHeartReat.u3"
-      valueReference="234881167"
+      valueReference="100663787"
       description="Connector of second Real input signal"
       variability="tunable">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealInput"
         unit="Hz"/>
     </ScalarVariable>
-    <!-- Index for next variable = 1002 -->
+    <!-- Index for next variable = 1000 -->
     <ScalarVariable
       name="currentHeartReat.y"
-      valueReference="637534710"
+      valueReference="637534720"
       description="Connector of Real output signal"
       variability="discrete">
       <Real
         declaredType="Modelica.Blocks.Interfaces.RealOutput"
         unit="Hz"/>
     </ScalarVariable>
-    <!-- Index for next variable = 1003 -->
+    <!-- Index for next variable = 1001 -->
     <ScalarVariable
       name="randomizeHR.k"
-      valueReference="16777375"
+      valueReference="16777374"
       description="Constant output value"
       causality="parameter"
       variability="tunable">
       <Boolean start="true"/>
     </ScalarVariable>
-    <!-- Index for next variable = 1004 -->
+    <!-- Index for next variable = 1002 -->
     <ScalarVariable
       name="randomizeHR.y"
-      valueReference="234881183"
+      valueReference="234881182"
       description="Connector of Boolean output signal"
       variability="tunable">
       <Boolean
         declaredType="Modelica.Blocks.Interfaces.BooleanOutput"/>
     </ScalarVariable>
-    <!-- Index for next variable = 1005 -->
+    <!-- Index for next variable = 1003 -->
     <ScalarVariable
       name="Ecg.ecgwave[1]"
-      valueReference="637534905">
+      valueReference="637534915">
+      <Real/>
+    </ScalarVariable>
+    <!-- Index for next variable = 1004 -->
+    <ScalarVariable
+      name="Ecg.ecgwave[2]"
+      valueReference="637534916">
+      <Real/>
+    </ScalarVariable>
+    <!-- Index for next variable = 1005 -->
+    <ScalarVariable
+      name="Ecg.ecgwave[3]"
+      valueReference="637534917">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 1006 -->
     <ScalarVariable
-      name="Ecg.ecgwave[2]"
-      valueReference="637534906">
+      name="Ecg.ecgwave[4]"
+      valueReference="637534918">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 1007 -->
     <ScalarVariable
-      name="Ecg.ecgwave[3]"
-      valueReference="637534907">
+      name="Ecg.ecgwave[5]"
+      valueReference="637534919">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 1008 -->
     <ScalarVariable
-      name="Ecg.ecgwave[4]"
-      valueReference="637534908">
+      name="Ecg.dt[1]"
+      valueReference="637534920">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 1009 -->
     <ScalarVariable
-      name="Ecg.ecgwave[5]"
-      valueReference="637534909">
+      name="Ecg.dt[2]"
+      valueReference="637534921">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 1010 -->
     <ScalarVariable
-      name="Ecg.dt[1]"
-      valueReference="637534910">
+      name="Ecg.dt[3]"
+      valueReference="637534922">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 1011 -->
     <ScalarVariable
-      name="Ecg.dt[2]"
-      valueReference="637534911">
+      name="Ecg.dt[4]"
+      valueReference="637534923">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 1012 -->
     <ScalarVariable
-      name="Ecg.dt[3]"
-      valueReference="637534912">
+      name="Ecg.dt[5]"
+      valueReference="637534924">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 1013 -->
-    <ScalarVariable
-      name="Ecg.dt[4]"
-      valueReference="637534913">
-      <Real/>
-    </ScalarVariable>
-    <!-- Index for next variable = 1014 -->
-    <ScalarVariable
-      name="Ecg.dt[5]"
-      valueReference="637534914">
-      <Real/>
-    </ScalarVariable>
-    <!-- Index for next variable = 1015 -->
     <ScalarVariable
       name="Ecg.ecg"
       valueReference="33554460"
       initial="exact">
       <Real start="0.0"/>
     </ScalarVariable>
-    <!-- Index for next variable = 1016 -->
+    <!-- Index for next variable = 1014 -->
     <ScalarVariable
       name="der(Ecg.ecg)"
       valueReference="587202588">
-      <Real derivative="1015"/>
+      <Real derivative="1013"/>
     </ScalarVariable>
-    <!-- Index for next variable = 1017 -->
+    <!-- Index for next variable = 1015 -->
     <ScalarVariable
       name="Ecg.relt"
-      valueReference="637534915">
+      valueReference="637534925">
       <Real
         unit="1"/>
     </ScalarVariable>
-    <!-- Index for next variable = 1018 -->
+    <!-- Index for next variable = 1016 -->
     <ScalarVariable
       name="Ecg.T0"
-      valueReference="637534744"
+      valueReference="637534754"
       variability="discrete">
       <Real
         declaredType="Physiolibrary.Types.Time"/>
     </ScalarVariable>
-    <!-- Index for next variable = 1019 -->
+    <!-- Index for next variable = 1017 -->
     <ScalarVariable
       name="Ecg.HR_start"
-      valueReference="16777376"
+      valueReference="16777375"
       description="initial heart rate"
       causality="parameter"
       variability="fixed">
@@ -10164,185 +10197,417 @@
         declaredType="Physiolibrary.Types.Frequency"
         start="1.2"/>
     </ScalarVariable>
-    <!-- Index for next variable = 1020 -->
+    <!-- Index for next variable = 1018 -->
     <ScalarVariable
       name="Ecg.HP"
-      valueReference="637534745"
+      valueReference="637534755"
       description="heart period"
       variability="discrete">
       <Real
         declaredType="Modelica.Units.SI.Time"/>
     </ScalarVariable>
-    <!-- Index for next variable = 1021 -->
+    <!-- Index for next variable = 1019 -->
     <ScalarVariable
       name="Ecg.b"
-      valueReference="637534746"
+      valueReference="637534756"
       variability="discrete">
       <Boolean/>
     </ScalarVariable>
-    <!-- Index for next variable = 1022 -->
+    <!-- Index for next variable = 1020 -->
     <ScalarVariable
       name="Ecg.HR"
-      valueReference="637534710"
+      valueReference="637534720"
       description="heart rate"
       variability="discrete">
       <Real
         declaredType="Physiolibrary.Types.RealIO.FrequencyInput"/>
     </ScalarVariable>
-    <!-- Index for next variable = 1023 -->
+    <!-- Index for next variable = 1021 -->
     <ScalarVariable
       name="Ecg.A[1]"
-      valueReference="16777377"
+      valueReference="16777376"
       causality="parameter"
       variability="tunable">
       <Real start="3.6"/>
     </ScalarVariable>
-    <!-- Index for next variable = 1024 -->
+    <!-- Index for next variable = 1022 -->
     <ScalarVariable
       name="Ecg.A[2]"
-      valueReference="16777378"
+      valueReference="16777377"
       causality="parameter"
       variability="tunable">
       <Real start="-69.5"/>
     </ScalarVariable>
-    <!-- Index for next variable = 1025 -->
+    <!-- Index for next variable = 1023 -->
     <ScalarVariable
       name="Ecg.A[3]"
-      valueReference="16777379"
+      valueReference="16777378"
       causality="parameter"
       variability="tunable">
       <Real start="142.0"/>
     </ScalarVariable>
-    <!-- Index for next variable = 1026 -->
+    <!-- Index for next variable = 1024 -->
     <ScalarVariable
       name="Ecg.A[4]"
-      valueReference="16777380"
+      valueReference="16777379"
       causality="parameter"
       variability="tunable">
       <Real start="-105.0"/>
     </ScalarVariable>
-    <!-- Index for next variable = 1027 -->
+    <!-- Index for next variable = 1025 -->
     <ScalarVariable
       name="Ecg.A[5]"
-      valueReference="16777381"
+      valueReference="16777380"
       causality="parameter"
       variability="tunable">
       <Real start="4.0"/>
     </ScalarVariable>
-    <!-- Index for next variable = 1028 -->
+    <!-- Index for next variable = 1026 -->
     <ScalarVariable
       name="Ecg.B[1]"
-      valueReference="16777382"
+      valueReference="16777381"
       causality="parameter"
       variability="tunable">
       <Real start="0.24"/>
     </ScalarVariable>
-    <!-- Index for next variable = 1029 -->
+    <!-- Index for next variable = 1027 -->
     <ScalarVariable
       name="Ecg.B[2]"
-      valueReference="16777383"
+      valueReference="16777382"
       causality="parameter"
       variability="tunable">
       <Real start="0.1"/>
     </ScalarVariable>
-    <!-- Index for next variable = 1030 -->
+    <!-- Index for next variable = 1028 -->
     <ScalarVariable
       name="Ecg.B[3]"
+      valueReference="16777383"
+      causality="parameter"
+      variability="tunable">
+      <Real start="0.11"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 1029 -->
+    <ScalarVariable
+      name="Ecg.B[4]"
       valueReference="16777384"
       causality="parameter"
       variability="tunable">
       <Real start="0.11"/>
     </ScalarVariable>
-    <!-- Index for next variable = 1031 -->
-    <ScalarVariable
-      name="Ecg.B[4]"
-      valueReference="16777385"
-      causality="parameter"
-      variability="tunable">
-      <Real start="0.11"/>
-    </ScalarVariable>
-    <!-- Index for next variable = 1032 -->
+    <!-- Index for next variable = 1030 -->
     <ScalarVariable
       name="Ecg.B[5]"
-      valueReference="16777386"
+      valueReference="16777385"
       causality="parameter"
       variability="tunable">
       <Real start="0.42"/>
     </ScalarVariable>
-    <!-- Index for next variable = 1033 -->
+    <!-- Index for next variable = 1031 -->
     <ScalarVariable
       name="Ecg.d[1]"
-      valueReference="16777387"
+      valueReference="16777386"
       causality="parameter"
       variability="tunable">
-      <Real start="-69.5"/>
+      <Real start="290.5"/>
     </ScalarVariable>
-    <!-- Index for next variable = 1034 -->
+    <!-- Index for next variable = 1032 -->
     <ScalarVariable
       name="Ecg.d[2]"
-      valueReference="16777388"
+      valueReference="16777387"
       causality="parameter"
       variability="tunable">
       <Real start="-12.5"/>
     </ScalarVariable>
-    <!-- Index for next variable = 1035 -->
+    <!-- Index for next variable = 1033 -->
     <ScalarVariable
       name="Ecg.d[3]"
-      valueReference="16777389"
+      valueReference="16777388"
       causality="parameter"
       variability="tunable">
       <Real start="0.0"/>
     </ScalarVariable>
-    <!-- Index for next variable = 1036 -->
+    <!-- Index for next variable = 1034 -->
     <ScalarVariable
       name="Ecg.d[4]"
-      valueReference="16777390"
+      valueReference="16777389"
       causality="parameter"
       variability="tunable">
       <Real start="28.5"/>
     </ScalarVariable>
-    <!-- Index for next variable = 1037 -->
+    <!-- Index for next variable = 1035 -->
     <ScalarVariable
       name="Ecg.d[5]"
-      valueReference="16777391"
+      valueReference="16777390"
       causality="parameter"
       variability="tunable">
       <Real start="146.0"/>
     </ScalarVariable>
-    <!-- Index for next variable = 1038 -->
+    <!-- Index for next variable = 1036 -->
     <ScalarVariable
       name="Ecg.drad[1]"
-      valueReference="100663787"
+      valueReference="100663788"
+      variability="tunable">
+      <Real/>
+    </ScalarVariable>
+    <!-- Index for next variable = 1037 -->
+    <ScalarVariable
+      name="Ecg.drad[2]"
+      valueReference="100663789"
+      variability="tunable">
+      <Real/>
+    </ScalarVariable>
+    <!-- Index for next variable = 1038 -->
+    <ScalarVariable
+      name="Ecg.drad[3]"
+      valueReference="100663790"
       variability="tunable">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 1039 -->
     <ScalarVariable
-      name="Ecg.drad[2]"
-      valueReference="100663788"
+      name="Ecg.drad[4]"
+      valueReference="100663791"
       variability="tunable">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 1040 -->
     <ScalarVariable
-      name="Ecg.drad[3]"
-      valueReference="100663789"
+      name="Ecg.drad[5]"
+      valueReference="100663792"
       variability="tunable">
       <Real/>
     </ScalarVariable>
     <!-- Index for next variable = 1041 -->
     <ScalarVariable
-      name="Ecg.drad[4]"
-      valueReference="100663790"
+      name="sO2.k"
+      valueReference="16777391"
+      description="Constant Fraction output value"
+      causality="parameter"
       variability="tunable">
-      <Real/>
+      <Real
+        declaredType="Physiolibrary.Types.Fraction"
+        start="0.0098"/>
     </ScalarVariable>
     <!-- Index for next variable = 1042 -->
     <ScalarVariable
-      name="Ecg.drad[5]"
-      valueReference="100663791"
+      name="sO2.y"
+      valueReference="234881199"
+      description="Fraction constant"
+      variability="tunable">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.FractionOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 1043 -->
+    <ScalarVariable
+      name="convertSaturationToHeartRate.nout"
+      valueReference="100663793"
+      description="Number of outputs"
+      variability="constant">
+      <Integer start="1"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 1044 -->
+    <ScalarVariable
+      name="convertSaturationToHeartRate.u"
+      valueReference="234881199"
+      description="Connector of Real input signal"
+      variability="tunable">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealInput"
+        unit="1"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 1045 -->
+    <ScalarVariable
+      name="convertSaturationToHeartRate.y[1]"
+      valueReference="100663787"
+      description="Connector of Real output signals"
+      variability="tunable">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealOutput"
+        unit="Hz"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 1046 -->
+    <ScalarVariable
+      name="convertSaturationToHeartRate.tableOnFile"
+      valueReference="100663794"
+      description="= true, if table is defined on file or in function usertab"
+      variability="constant">
+      <Boolean start="false"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 1047 -->
+    <ScalarVariable
+      name="convertSaturationToHeartRate.table[1,1]"
+      valueReference="16777392"
+      description="Table matrix (grid = first column; e.g., table=[0, 0; 1, 1; 2, 4])"
+      causality="parameter"
+      variability="tunable">
+      <Real start="0.0"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 1048 -->
+    <ScalarVariable
+      name="convertSaturationToHeartRate.table[1,2]"
+      valueReference="16777393"
+      description="Table matrix (grid = first column; e.g., table=[0, 0; 1, 1; 2, 4])"
+      causality="parameter"
+      variability="tunable">
+      <Real start="0.03"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 1049 -->
+    <ScalarVariable
+      name="convertSaturationToHeartRate.table[2,1]"
+      valueReference="16777394"
+      description="Table matrix (grid = first column; e.g., table=[0, 0; 1, 1; 2, 4])"
+      causality="parameter"
+      variability="tunable">
+      <Real start="0.55"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 1050 -->
+    <ScalarVariable
+      name="convertSaturationToHeartRate.table[2,2]"
+      valueReference="16777395"
+      description="Table matrix (grid = first column; e.g., table=[0, 0; 1, 1; 2, 4])"
+      causality="parameter"
+      variability="tunable">
+      <Real start="0.03"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 1051 -->
+    <ScalarVariable
+      name="convertSaturationToHeartRate.table[3,1]"
+      valueReference="16777396"
+      description="Table matrix (grid = first column; e.g., table=[0, 0; 1, 1; 2, 4])"
+      causality="parameter"
+      variability="tunable">
+      <Real start="0.6"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 1052 -->
+    <ScalarVariable
+      name="convertSaturationToHeartRate.table[3,2]"
+      valueReference="16777397"
+      description="Table matrix (grid = first column; e.g., table=[0, 0; 1, 1; 2, 4])"
+      causality="parameter"
+      variability="tunable">
+      <Real start="3.0"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 1053 -->
+    <ScalarVariable
+      name="convertSaturationToHeartRate.table[4,1]"
+      valueReference="16777398"
+      description="Table matrix (grid = first column; e.g., table=[0, 0; 1, 1; 2, 4])"
+      causality="parameter"
+      variability="tunable">
+      <Real start="0.7"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 1054 -->
+    <ScalarVariable
+      name="convertSaturationToHeartRate.table[4,2]"
+      valueReference="16777399"
+      description="Table matrix (grid = first column; e.g., table=[0, 0; 1, 1; 2, 4])"
+      causality="parameter"
+      variability="tunable">
+      <Real start="2.0"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 1055 -->
+    <ScalarVariable
+      name="convertSaturationToHeartRate.table[5,1]"
+      valueReference="16777400"
+      description="Table matrix (grid = first column; e.g., table=[0, 0; 1, 1; 2, 4])"
+      causality="parameter"
+      variability="tunable">
+      <Real start="0.8"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 1056 -->
+    <ScalarVariable
+      name="convertSaturationToHeartRate.table[5,2]"
+      valueReference="16777401"
+      description="Table matrix (grid = first column; e.g., table=[0, 0; 1, 1; 2, 4])"
+      causality="parameter"
+      variability="tunable">
+      <Real start="1.5833333333333333"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 1057 -->
+    <ScalarVariable
+      name="convertSaturationToHeartRate.table[6,1]"
+      valueReference="16777402"
+      description="Table matrix (grid = first column; e.g., table=[0, 0; 1, 1; 2, 4])"
+      causality="parameter"
+      variability="tunable">
+      <Real start="0.9"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 1058 -->
+    <ScalarVariable
+      name="convertSaturationToHeartRate.table[6,2]"
+      valueReference="16777403"
+      description="Table matrix (grid = first column; e.g., table=[0, 0; 1, 1; 2, 4])"
+      causality="parameter"
+      variability="tunable">
+      <Real start="1.2"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 1059 -->
+    <ScalarVariable
+      name="convertSaturationToHeartRate.verboseRead"
+      valueReference="16777404"
+      description="= true, if info message that file is loading is to be printed"
+      causality="parameter"
+      variability="tunable">
+      <Boolean start="true"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 1060 -->
+    <ScalarVariable
+      name="convertSaturationToHeartRate.columns[1]"
+      valueReference="100663795"
+      description="Columns of table to be interpolated"
+      variability="constant">
+      <Integer start="2"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 1061 -->
+    <ScalarVariable
+      name="convertSaturationToHeartRate.smoothness"
+      valueReference="100663796"
+      description="Smoothness of table interpolation"
+      variability="constant">
+      <Enumeration
+        declaredType="Modelica.Blocks.Types.Smoothness"
+        start="1"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 1062 -->
+    <ScalarVariable
+      name="convertSaturationToHeartRate.extrapolation"
+      valueReference="100663797"
+      description="Extrapolation of data outside the definition range"
+      variability="constant">
+      <Enumeration
+        declaredType="Modelica.Blocks.Types.Extrapolation"
+        start="1"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 1063 -->
+    <ScalarVariable
+      name="convertSaturationToHeartRate.verboseExtrapolation"
+      valueReference="100663798"
+      description="= true, if warning messages are to be printed if table input is outside the definition range"
+      variability="constant">
+      <Boolean start="false"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 1064 -->
+    <ScalarVariable
+      name="convertSaturationToHeartRate.u_min"
+      valueReference="100663799"
+      description="Minimum abscissa value defined in table"
       variability="tunable">
       <Real/>
+    </ScalarVariable>
+    <!-- Index for next variable = 1065 -->
+    <ScalarVariable
+      name="convertSaturationToHeartRate.u_max"
+      valueReference="100663800"
+      description="Maximum abscissa value defined in table"
+      variability="tunable">
+      <Real/>
+    </ScalarVariable>
+    <!-- Index for next variable = 1066 -->
+    <ScalarVariable
+      name="convertSaturationToHeartRate.tableID.id"
+      valueReference="100663801"
+      variability="tunable">
+      <Integer/>
     </ScalarVariable>
   </ModelVariables>
   <ModelStructure>
@@ -10416,24 +10681,24 @@
       <Unknown index="766"
         dependencies="50 713 765"
         dependenciesKind="fixed fixed fixed"/>
-      <Unknown index="916"
+      <Unknown index="914"
         dependencies="50 608 713 765"
         dependenciesKind="fixed fixed fixed fixed"/>
-      <Unknown index="950"
+      <Unknown index="948"
         dependencies="115 180 232 362"
         dependenciesKind="fixed fixed fixed fixed"/>
+      <Unknown index="968"
+        dependencies="232 362 440 967"
+        dependenciesKind="fixed fixed fixed dependent"/>
       <Unknown index="970"
         dependencies="232 362 440 969"
         dependenciesKind="fixed fixed fixed dependent"/>
       <Unknown index="972"
-        dependencies="232 362 440 971"
-        dependenciesKind="fixed fixed fixed dependent"/>
-      <Unknown index="974"
         dependencies="362"
         dependenciesKind="fixed"/>
-      <Unknown index="1016"
-        dependencies="1015"
-        dependenciesKind="fixed"/>
+      <Unknown index="1014"
+        dependencies="1013"
+        dependenciesKind="dependent"/>
     </Derivatives>
     <InitialUnknowns>
       <Unknown index="4"
@@ -10577,24 +10842,30 @@
       <Unknown index="766"
         dependencies="5 53 54 55 61 72 716 717 718 724 768 769 770 776 803 809 810 815 820 821 826 827 834 836 852 858 859"
         dependenciesKind="dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent"/>
-      <Unknown index="914"
+      <Unknown index="912"
         dependencies=""
         dependenciesKind=""/>
-      <Unknown index="915"
-        dependencies="912"
+      <Unknown index="913"
+        dependencies="910"
         dependenciesKind="dependent"/>
-      <Unknown index="916"
+      <Unknown index="914"
         dependencies="5 53 54 55 61 72 576 611 612 613 619 630 716 717 718 724 768 769 770 776 803 809 810 815 820 821 826 827 834 836"
         dependenciesKind="dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent"/>
-      <Unknown index="948"
+      <Unknown index="946"
         dependencies=""
         dependenciesKind=""/>
-      <Unknown index="949"
-        dependencies="946"
+      <Unknown index="947"
+        dependencies="944"
         dependenciesKind="dependent"/>
-      <Unknown index="950"
+      <Unknown index="948"
         dependencies="5 118 119 120 126 137 151 183 184 185 191 235 236 237 243 270 276 277 282 287 288 293 294 301 303 365 366 367 374 385"
         dependenciesKind="dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent"/>
+      <Unknown index="967"
+        dependencies="5 365 366 367 374 385"
+        dependenciesKind="dependent dependent dependent dependent dependent dependent"/>
+      <Unknown index="968"
+        dependencies="5 235 236 237 243 270 276 277 293 294 301 303 365 366 367 374 385 451"
+        dependenciesKind="dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent"/>
       <Unknown index="969"
         dependencies="5 365 366 367 374 385"
         dependenciesKind="dependent dependent dependent dependent dependent dependent"/>
@@ -10602,22 +10873,16 @@
         dependencies="5 235 236 237 243 270 276 277 293 294 301 303 365 366 367 374 385 451"
         dependenciesKind="dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent"/>
       <Unknown index="971"
-        dependencies="5 365 366 367 374 385"
-        dependenciesKind="dependent dependent dependent dependent dependent dependent"/>
-      <Unknown index="972"
-        dependencies="5 235 236 237 243 270 276 277 293 294 301 303 365 366 367 374 385 451"
-        dependenciesKind="dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent"/>
-      <Unknown index="973"
         dependencies=""
         dependenciesKind=""/>
-      <Unknown index="974"
+      <Unknown index="972"
         dependencies="5 365 366 367 374 385"
         dependenciesKind="dependent dependent dependent dependent dependent dependent"/>
-      <Unknown index="983"
-        dependencies="980 981"
+      <Unknown index="981"
+        dependencies="978 979"
         dependenciesKind="dependent dependent"/>
-      <Unknown index="1016"
-        dependencies="1015 1019 1023 1024 1025 1026 1027 1028 1029 1030 1031 1032 1033 1034 1035 1036 1037"
+      <Unknown index="1014"
+        dependencies="1013 1017 1021 1022 1023 1024 1025 1026 1027 1028 1029 1030 1031 1032 1033 1034 1035"
         dependenciesKind="dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent"/>
     </InitialUnknowns>
   </ModelStructure>
