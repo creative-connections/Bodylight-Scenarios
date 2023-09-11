@@ -1,5 +1,5 @@
 <div class="w3-blue" style="position: absolute">
-<span class="w3-small">v3.11&nbsp;</span>
+<span class="w3-small">v3.12&nbsp;</span>
 <!--bdl-fmi id="idfmi" mode="continuous" src="modelECMORespiratoryVR_ECMOSimNoRegVentilatorVC8.js" fminame="modelECMORespiratoryVR_ECMOSimNoRegVentilatorVC8" tolerance="0.0001" starttime="0" fstepsize="0.2" fpslimit="5" guid="{df14b810-b76e-4be8-bc34-be8fcb02ed2e}" valuereferences="637537985,905970425,905969984,905970853,905970388,905969947,905970816,16777229,16777230,16777583,16777584,16777585,16777223,100663306,16777224,16777225,905970386,637538038,637537985" valuelabels="lungs.volume,Veins.chemicalSolution.bloodGases.sO2,Arteries.chemicalSolution.bloodGases.sO2,Tissue.chemicalSolution.bloodGases.sO2,Veins.chemicalSolution.bloodGases.pH,Arteries.chemicalSolution.bloodGases.pH,Tissue.chemicalSolution.bloodGases.pH,RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.Eratio,ventilatorSCMV.pause,AirO2,AirN2,AirCO2,AirH2O,Veins.chemicalSolution.bloodGases.pCO2,expiration.q_in.p,lungs.volume" inputs="idrate,16777229,1,60,t;idtv,16777230,1,1000000,t;idiratio,16777583,1,1,t;ideratio,16777584,1,1,t;idpause,16777585,1,100,0,t;ido2,16777223,1,100,t;idco2,16777224,1,100,t;idh2o,16777225,1,100,t;idshunts,16777226,1,100,t;iddeadspace,16777231,1,1000000,t;idexp,16777587,1,1000000,t" inputlabels="RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.Eratio,ventilatorSCMV.pause,AirO2,AirCO2,AirH2O,Shunts,DV,expirationConductance.k"></bdl-fmi-->
 <bdl-animate-control id="controlbuttons2" controlfmi="true" showstep="false"></bdl-animate-control>
 <!-- optimalized -O3 --><!--bdl-fmi id="idfmi" showcontrols="false" controlid="controlbuttons2" mode="continuous" src="modelECMORespiratoryVR_BloodGasesTransport_BloodyMaryPPG.js" fminame="modelECMORespiratoryVR_BloodGasesTransport_BloodyMaryPPG" tolerance="0.000001" starttime="0" fstepsize="0.1" fpslimit="10" guid="{135691d3-d2dd-455a-9cee-6772a67e2f41}" valuereferences="905975214,369103423,905975027,905975211,905974332,905975026,16777311,100663310,16777312,16777313,905975213,335544320" valuelabels="venous.sO2,arterial.sO2,tissueUnit[1].sO2,venous.pH,arterial.pH,tissueUnit[1].pH,AirO2,AirN2,AirCO2,AirH2O,venous.pCO2,plethy" inputs="idrate,16777223,1,60,f;ido2,16777311,1,100,t;idco2,16777312,1,100,t;idh2o,16777313,1,100,t;idshunts,16777227,1,100,t;iddeadspace,16777225,1,1000000,t" inputlabels="RR,AirO2,AirCO2,AirH2O,cShuntFrac,DV"></bdl-fmi-->
@@ -19,7 +19,7 @@ API to VR <bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval="20
 </div>
 <div class="w3-quarter">
 <div class="w3-card w3-text-aqua w3-large" style="white-space:nowrap">
-&nbsp;RR&nbsp;<b class="w3-xxxlarge"><bdl-value fromid="ventilator" refindex="8" convertor="60,1"></bdl-value></b>&nbsp;<span class="w3-small">1/min</span>
+&nbsp;RR&nbsp;<b class="w3-xxxlarge"><bdl-value fromid="ventilator" refindex="8" convertor="60,1" precision="2"></bdl-value></b>&nbsp;<span class="w3-small">1/min</span>
 <div class="w3-text-light-green w3-large">
 <br/>
 &nbsp;HR<b class="w3-xxxlarge"><bdl-value fromid="hemodynamics" refindex="4" convertor="60,1" precision="2"></bdl-value></b>&nbsp;<span class="w3-small">1/min</span>
@@ -40,7 +40,7 @@ API to VR <bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval="20
 <div class="w3-quarter">
 <div class="" style="white-space:nowrap">
 <div class="w3-text-yellow w3-large">
-&nbsp;spO<sub>2</sub><sup>art</sup><b class="w3-xxxlarge"><bdl-value fromid="idfmi" refindex="1" convertor="100,1" precision="2"></bdl-value></b>&nbsp;<span class="w3-small">%</span><br/></div>
+&nbsp;sO<sub>2</sub><sup>art</sup><b class="w3-xxxlarge"><bdl-value fromid="idfmi" refindex="1" convertor="100,1" precision="4"></bdl-value></b>&nbsp;<span class="w3-small">%</span><br/></div>
 </div>
 </div>
 <div class="w3-threequarter">
@@ -62,7 +62,7 @@ API to VR <bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval="20
 <br/>
 
 <bdl-animate-adobe src="Plice.js" width="150" height="150" name="Plice" fromid="ventilator" responsive="true"></bdl-animate-adobe>
-<bdl-bind2a findex="0" aname="PliceAnimace_anim" amin="0" amax="30" fmin="0.0023" fmax="0.0033"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="PliceAnimace_anim" amin="0" amax="15" fmin="0.0023" fmax="0.0033"></bdl-bind2a>
 
 </div>
 </div>
