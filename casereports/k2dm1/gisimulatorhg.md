@@ -9,7 +9,9 @@
 
 **2. set DM type**
 
-<bdl-buttonparams title="hyperins" ids="id4,id6" values="2860,139000" fromid="idfmi"> </bdl-buttonparams>
+<bdl-buttonparams title="hyperins 2x phi 1/2" ids="id4,id6,id5" values="2860,139000,0.3" fromid="idfmi"> </bdl-buttonparams>
+<bdl-buttonparams title="hyperins 4x phi 1/3" ids="id4,id6,id5" values="5720,139000,0.16" fromid="idfmi"> </bdl-buttonparams>
+
 <bdl-buttonparams title="normal" ids="id4,id6" values="1430,139000" fromid="idfmi"> </bdl-buttonparams>
 
 **3. administer sugar - meal**
@@ -26,9 +28,9 @@
 
 <bdl-range id="id3" title="tissueUtilization [ml/h]" min="300" max="24700" default="2470" step="10"></bdl-range>
 
-<bdl-range id="id4" title="insulin production (beta) [ml.mU/mg.h]" min="10" max="2860" default="1430" step="10"></bdl-range>
+<bdl-range id="id4" title="insulin production (beta) [ml.mU/mg.h]" min="10" max="28600" default="1430" step="10"></bdl-range>
 
-<bdl-range id="id5" title="insulin production threshold (phi) [mg/ml]" min="0.2" max="1" default="0.51" step="0.01"></bdl-range>
+<bdl-range id="id5" title="insulin production threshold (phi) [mg/ml]" min="0.1" max="1" default="0.51" step="0.01"></bdl-range>
 
 <bdl-range id="id6" title="tissueUtilization Insulin Dependent (nu) [ml/h/mU]" min="13900" max="239000" default="139000" step="100"></bdl-range>
 
