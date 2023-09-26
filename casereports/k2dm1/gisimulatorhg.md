@@ -5,9 +5,9 @@
 
 **1. start/stop simulation**
 
-<bdl-fmi id="idfmi" mode="continuous" src="Metabolism_GlucoseInsulin_Models_GIRegulationComponent.js" fminame="Metabolism_GlucoseInsulin_Models_GIRegulationComponent" tolerance="0.001" starttime="0" fstepsize="360" fpslimit="10" guid="{27b77776-9fac-46c5-9a3f-9c5961d2e919}" valuereferences="335544322,335544321,637534222,335544320,905969685" valuelabels="glucoseConcMmolL,insulinConc,renalLoss.inflow.q,glucoseConc,to_pmolperL.y" inputs="id1,16777226,1,3600000000,t;id2,16777227,1,1,t;id3,16777225,1,3600000000,t;id4,16777222,1,1,t;id5,16777223,1,1,t;id6,16777229,1,1,t;id7,16777219,1,3600000000,t;id8,16777231,1,1,t;id9,33554434,1,1000,t;id11,16777233,1,1,t" inputlabels="renalLoss.desiredFlowRate,renalLoss.threshold,tissueUtilization.desiredFlowRate,insulinProduction.beta_mu,insulinProduction.phi,tissueUtilizationInsulinDependent.Nu_permu,glucoseProduction.desiredFlowRate,kgperm3tommolperl.k,glucosePortion.ingestAmmount,glucosePortion.ingestRate"></bdl-fmi>
+<bdl-fmi id="idfmi" mode="continuous" src="Metabolism_GlucoseInsulin_Models_GIRegulationComponent.js" fminame="Metabolism_GlucoseInsulin_Models_GIRegulationComponent" tolerance="0.001" starttime="0" fstepsize="360" fpslimit="2" guid="{27b77776-9fac-46c5-9a3f-9c5961d2e919}" valuereferences="335544322,335544321,637534222,335544320,905969685" valuelabels="glucoseConcMmolL,insulinConc,renalLoss.inflow.q,glucoseConc,to_pmolperL.y" inputs="id1,16777226,1,3600000000,t;id2,16777227,1,1,t;id3,16777225,1,3600000000,t;id4,16777222,1,1,t;id5,16777223,1,1,t;id6,16777229,1,1,t;id7,16777219,1,3600000000,t;id8,16777231,1,1,t;id9,33554434,1,1000,t;id11,16777233,1,1,t" inputlabels="renalLoss.desiredFlowRate,renalLoss.threshold,tissueUtilization.desiredFlowRate,insulinProduction.beta_mu,insulinProduction.phi,tissueUtilizationInsulinDependent.Nu_permu,glucoseProduction.desiredFlowRate,kgperm3tommolperl.k,glucosePortion.ingestAmmount,glucosePortion.ingestRate"></bdl-fmi>
 
-**2. set DM type**
+**2. set pathology type**
 
 <bdl-buttonparams title="hyperins 2x phi 1/2" ids="id4,id6,id5" values="2860,139000,0.3" fromid="idfmi"> </bdl-buttonparams>
 <bdl-buttonparams title="hyperins 4x phi 1/3" ids="id4,id6,id5" values="5720,139000,0.16" fromid="idfmi"> </bdl-buttonparams>
