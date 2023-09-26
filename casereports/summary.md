@@ -23,7 +23,11 @@
   * [k1vysetreniastrup2](#k1dm1/k1vysetreniastrup2.md)
   * [k1dychani](#k1dm1/k1dychani.md)
   * [Simulátory](#k1dm1/gisimulator0.md)
-    * [gisimulator.md](#k1dm1/gisimulator.md)
+  * [gisimulator.md](#k1dm1/gisimulator.md)
   * [Management léčby](#k1dm1/k1lecba.md)
-    * [k1lecbakrystaloidy](#k1dm1/k1lecbakrystaloidy.md)
+  * [k1lecbakrystaloidy](#k1dm1/k1lecbakrystaloidy.md)
+* [Kazuistika 50 muž](#k2dm1/index.md)
+  * [Vyšetření 1](#k2dm1/vysetreni1.md)
+  * [Vyšetření 2](#k2dm1/vysetreni2.md)
+  * [Simulátor](#k2dm1/gisimulatorhg.md)
 
