@@ -70,52 +70,53 @@
     </head>
     <body>
         <div class="layout-wrapper">
-            <!-- <h2 style="padding-left: 20px;">
-                ROC curve demo
-            </h2> -->
             <div style="float:right;font-size: 10px">
                 <a style="background-color:#ddf7ff;color:#000;user-select: none;" title="switch language of controls to english" href="en_index.html">EN</a>|
                 <a style="background-color:#ddf7ff;color:#000;user-select: none;" title="přepnout jazyk tlačítek a dialogů na češtinu" href="index.html">CZ</a>
               </div>
             <h2 style="padding-left: 20px;">
-                Interaktivní ROC křivka
+                ROC curve demo
             </h2>
 
+            <!-- <h2 style="padding-left: 20px;">
+                Interaktivní ROC křivka
+            </h2> -->
+
             <div class="controls">
-                <!-- <label for="mean1">mean #1:</label><input id="mean1" type = "number" size = "5" value = "0" onchange="draw()">
+                <label for="mean1">mean #1:</label><input id="mean1" type = "number" size = "5" value = "0" onchange="draw()">
                 <label for="mean2">mean #2:</label><input id="mean2" type = "number" size = "5" value = "2" onchange="draw()">
                 <label for="var1">variance #1:</label><input id="var1" type = "number" size = "5" value = "4" onchange="draw()">
-                <label for="var2">variance #2:</label><input id="var2" type = "number" size = "5" value = "4" onchange="draw()"> -->
+                <label for="var2">variance #2:</label><input id="var2" type = "number" size = "5" value = "4" onchange="draw()">
 
-                <label for="mean1">Střední hodnota #1:</label><input id="mean1" type = "number" size = "5" value = "0" onchange="draw()">
+                <!-- <label for="mean1">Střední hodnota #1:</label><input id="mean1" type = "number" size = "5" value = "0" onchange="draw()">
                 <label for="mean2">Střední hodnota #2:</label><input id="mean2" type = "number" size = "5" value = "2" onchange="draw()">
                 <label for="var1">Rozptyl #1:</label><input id="var1" type = "number" size = "5" value = "4" onchange="draw()">
-                <label for="var2">Rozptyl #2:</label><input id="var2" type = "number" size = "5" value = "4" onchange="draw()">
+                <label for="var2">Rozptyl #2:</label><input id="var2" type = "number" size = "5" value = "4" onchange="draw()"> -->
 
             </div>
             <div id="renderer">
                 <!-- here all the plots will be rendered -->
             </div>
             <div style="padding: 20px;">
-                <!-- <h3>Instructions</h3> -->
-                <h3>Návod</h3>
-                <!-- <p>
-                    On the right plot: two compared distributions (for demonstration normal distributions were taken).
-                </p> -->
+                <h3>Instructions</h3>
+                <!-- <h3>Návod</h3> -->
                 <p>
-                    Na pravém grafu: dvě porovnávaná rozdělení (pro demonstraci byla vzata normální rozdělení).
+                    On the right plot: two compared distributions (for demonstration normal distributions were taken).
                 </p>
                 <!-- <p>
+                    Na pravém grafu: dvě porovnávaná rozdělení (pro demonstraci byla vzata normální rozdělení).
+                </p> -->
+                <p>
                     On the left plot: corresponding
                     <a href="https://www.wikiskripta.eu/w/ROC_k%C5%99ivka">ROC curve</a>
                     <!-- <a href="https://en.wikipedia.org/wiki/Receiver_operating_characteristic">ROC curve.</a>
-                </p> --> 
-                <p>
+                </p> 
+                <!-- <p>
                     Na levém grafu: odpovídající 
                     <a href="https://www.wikiskripta.eu/w/ROC_k%C5%99ivka">ROC křivka</a>
                     <!-- <a href="https://en.wikipedia.org/wiki/Receiver_operating_characteristic">ROC curve.</a> -->
-                </p>
-                <!-- <p>
+                <!-- </p> --> -->
+                <p>
                     Controls:
                 </p>
                 <ul>
@@ -125,8 +126,8 @@
                 <p>
                     Presentation according to Oleg Alenkin and Alex Rogozhnikov,
                     for detailed explanation see <a href="http://arogozhnikov.github.io/2015/10/05/roc-curve.html">this post</a>. <br />
-                </p> -->
-                <p>
+                </p>
+                <!-- <p>
                     Řízení:
                 </p>
                 <ul>
@@ -136,12 +137,12 @@
                 <p>
                     rezentace podle Olega Alenkina a Alexe Rogožnikova, 
                     podrobné vysvětlení viz <a href="http://arogozhnikov.github.io/2015/10/05/roc-curve.html">tento příspěvek</a>. <br />
-                </p>
+                </p> -->
 
             </div>
         </div>
         <script src="scripts/d3.min.js" charset="utf-8"></script>
 		<script src="scripts/jquery-2.1.4.js" charset="utf-8"></script>
-		<script src="scripts/roc_curve.js" charset="utf-8"></script>
+		<script src="scripts/en_roc_curve.js" charset="utf-8"></script>
     </body>
 </html>
