@@ -1,23 +1,16 @@
-<div class="w3-row">
-<div class="w3-half">
-<div class="w3-card-2 w3-margin">
-<bdl-carousel images="uvodnavigace.gif|uvodtlacitka.gif|uvodzkratka.gif|uvodsimulace.gif|uvodotazky.gif" infos=" Pro výběr konkrétní obrazovky použijte odkazy v levém panelu.| Pro navigaci zpět a vpřed použijte tlačítka v dolní liště. | V textu se vyskytují zkratky, (např. TIBC nebo FEP), jejich vysvětlení se objeví při najetí kurzoru myši na ni.| Na konci každé podkapitoly je simulátor s instrukcemi a interaktivními tlačítky, posuvníky.| V některých případech jsou v textu interaktivní otázky a možné odpovědi, tlačítkem lze zobrazit správné odpovědi." interval="20"></bdl-carousel>
+<div class="w3-center">
+
+# eGolem.online
+## interactive digital textbook with simulators
 
 </div>
 
-</div>
-<div class="w3-half wš=margin">
+### What you can do here in this demo
+1. Each topic contains introductory page and simulation/animation page. Navigate using panel or buttons bellow
+2. Start/stop simulator with buttons. A step can be done as well.
+3. Change parameters, see behavior change in simulation instantly.
+4. 3D macromolecular structure can be viewed by clicking and dragging in interactive image
+5. Some simulators work with HW mannequin and mockup of medical device.
 
-# Úvod
+<bdl-carousel images="navigationleft.gif|navigationbottom.gif|simulatorstartstop.gif|3dstructure.gif" infos="Each topic contains introductory page and simulation/animation page. Navigate using panel| Got to previous or next page using buttons below each page. | Start/stop simulator with buttons. A step can be done as well|3D macromolecular structure can be viewed by clicking and dragging in interactive image" interval="20"></bdl-carousel>
 
-*[Tfr]: transferrin
-
-Následující interaktivní text s grafikou, animacemi a simulacemi představuje hlavní moderní představy o metabolismu železa a jeho roli ve fyziologii a patofyziologii člověka.
-
-Jak se orientovat? Viz obrázek.
-
-Trendy a dynamika v následujících simulátorech odpovídají fyziologii člověka, podle nejnovějších vědeckých poznatků. Veškeré absolutní hodnoty vygenerované simulátorem jsou orientační.
-
-
-</div>
-</div>
