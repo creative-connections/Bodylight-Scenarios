@@ -1,11 +1,12 @@
 <style>
 tbody tr:nth-child(even){background-color:#f1f1f1}
 </style>
+# Metabolismus železa v 10.2023
 # Autoři
 
 | | |
 |--:|--|
-| **Scénář, text, matematický model, simulátor:** | RNDr. Arnošt Mládek, Ph.D. |
+| **Text, scénář, matematický model, simulátor:** | RNDr. Arnošt Mládek, Ph.D. |
 | | Mgr. Tomáš Kulhánek, Ph.D. |
 | **Grafické prvky, interaktivní animace:** | Martin Brož, DiS. |
 |  | Klára Svobodová, DiS. |
