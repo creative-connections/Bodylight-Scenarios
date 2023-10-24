@@ -116,7 +116,6 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 
 </div>
-
 **Úkoly**
 
 Bez kvízu.
@@ -132,8 +131,6 @@ Bez kvízu.
 * Co představují pSTAT a pSMAD a jaká je jejich funkce v buňce?
 * Jak reaguje hepatocyt na sníženou koncentraci sérového železa?
 * Na kolika úrovních blokuje LPS tvorbu hepcidinu?
-
-
 
 </div>
 </div>
