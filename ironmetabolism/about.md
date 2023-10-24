@@ -2,6 +2,7 @@
 tbody tr:nth-child(even){background-color:#f1f1f1}
 </style>
 # Metabolismus železa v 10.2023
+Digitální skripta za použití interaktivních prvků, animací a simulací.
 # Autoři
 
 | | |
