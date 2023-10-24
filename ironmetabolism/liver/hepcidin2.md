@@ -14,10 +14,19 @@
 
 # Tvorba hepcidinu 2
 
-Průlom nastal, když byl objeven receptor hepcidinu. Důkladnou in vitro analýzou bylo zjištěno, že hepcidin se váže na Fpn, což vede k jeho internalizaci a proteazomální degradaci. Syntéza hepcidinu je aktivována při zvýšeném množství železa v těle, což následně vede ke snížení jeho absorpce v duodenu s cílem normalizace hladin s plazmě. V případě nedostatku železa je syntéza hepcidinu naopak suprimována, což umožňuje transport většího množství železa z enterocytů do séra. Kromě toho je Fpn zvýšen také v makrofázích po erytrofagocytóze. Funkcí hepcidinu v této souvislosti je redukce transportu železa po jeho recyklaci ze stárnoucích červených krvinek. V případě nedostatku železa a snížené produkci hepcidinu dochází naopak k významnému zvýšení odtoku železa z makrofágů prostřednictvím Fpn. Kromě snížené hladiny železa v séru jsou hlavními represory exprese hepcidinu tkáňová hypoxie a erytropoéza. Tato vazba tak představuje spojení mezi homeostázou krevních plynů a hladinami železa. Jedním z hlavních aktivátorů exprese hepcidinu je zánět. To má za následek přechodné snížení hladiny železa v séru v průběhu infekce. Výzkum posledních deseti let prokázal důležitost hepcidinu jako hlavního regulátoru absorpce železa v duodenu a recyklace železa v červených krvinkách. Studium regulace exprese hepcidinu v játrech pak bylo klíčové pro pochopení regulace systémové homeostázy železa. V rámci prezentovaného modelu představujeme dvě signální kaskády, které se spolupodílejí na expresi hepcidinu: 
-- BMP/SMAD kaskáda a 
-- IL-6/STAT inflamatorní dráha. 
-- Třetí zásadní dráha regulující expresi hepcidinu je hypoxická a erytropoetická dráha, která však není součástí současné verze modelu a je popsaná pouze teoreticky. 
+Průlom nastal, když byl objeven receptor hepcidinu. Důkladnou in vitro analýzou bylo zjištěno, že hepcidin se váže na Fpn, což vede k jeho internalizaci a proteazomální degradaci. 
 
-</div>
-</div>
+<bdl-quiz id="q1" question="Přiřaďte související jevy"
+	  type="match"
+	  terms="Syntéza hepcidinu je aktivována | syntéza hepcidinu je suprimována"
+	  answers="při zvýšeném množství železa v těle, což následně vede ke snížení jeho absorpce v duodenu s cílem normalizace hladin s plazmě. | v případě nedostatku železa, což umožňuje transport většího množství železa z enterocytů do séra.">
+</bdl-quiz>
+<bdl-quiz id="q2" question="Přiřaďte související jevy"
+	  type="match"
+	  terms="Fpn je zvýšen v makrofázích po erytrofagocytóze | V případě nedostatku železa a snížené produkci hepcidinu dochází"
+	  answers="Funkcí hepcidinu v této souvislosti je redukce transportu železa po jeho recyklaci ze stárnoucích červených krvinek. | k významnému zvýšení odtoku železa z makrofágů prostřednictvím Fpn.">
+</bdl-quiz>
+<bdl-quiz-control ids="q1,q2"></bdl-quiz-control>
+
+
+Kromě snížené hladiny železa v séru jsou hlavními represory exprese hepcidinu tkáňová hypoxie a erytropoéza. Tato vazba tak představuje spojení mezi homeostázou krevních plynů a hladinami železa. 
