@@ -41,7 +41,4 @@ J Med Internet Res 2019;21(7):e14160
 URL: https://www.jmir.org/2019/7/e14160
 DOI: 10.2196/14160
   * Tomas Kulhanek, & Jiri Kofranek. (2022). Bodylight.js-Components open-source software library to enable FMU and Modelica simulation on the web. Software. Zenodo. https://doi.org/10.5281/zenodo.4575354
-
-
-
-Mechanismus účinku hepcidinu spočívá ve snížení koncentrace feroportinových exportérů. 
+  * Tomas Kulhanek, Arnost Mladek, Jiri Kofranek, Filip Jezek. (2023). Bodylight.js 2.0 - Web components for FMU simulation, visualisation and animation in standard web browser. Modelica Conference 2023 Aachen.
