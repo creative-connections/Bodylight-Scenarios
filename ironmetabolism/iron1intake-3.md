@@ -1,8 +1,8 @@
 <div class="w3-row">
 <div class="w3-half">
 
-![ironStore](ironStore.jpg)
-<br />__Obrázek__. Schéma zásob a skladování železa. zdroj https://www.wikiskripta.eu/index.php?curid=3196
+![DistribuceZeleza](DistribuceZeleza.png)
+<br />__Obrázek__. Schéma zásob a skladování železa.
 
 
 </div>
