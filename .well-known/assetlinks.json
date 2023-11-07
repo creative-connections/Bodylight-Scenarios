@@ -1,0 +1,10 @@
+[{
+ "relation": ["delegate_permission/common.handle_all_urls"],
+ "target": {
+   "namespace": "android_app",
+   "package_name": "cz.egolem.twa",
+   "sha256_cert_fingerprints": [
+     "FB:B8:9F:81:7F:12:D4:1B:B3:2E:83:57:5E:F2:2A:79:54:AA:18:02:EF:AB:7D:EC:B1:5B:D7:73:EC:F9:E2:4B"
+   ]
+ }
+}]
