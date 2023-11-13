@@ -2,9 +2,9 @@
 <div class="w3-row">
 <div class="w3-col m5">
 
-<bdl-chartjs-fixed-xy width="600" height="400" colorindex="6" fromid="idfmi" labels="" initialdata="" refindex="0" refvalues="101" xrefindex="101" xrefvalues="101" xtofixed="0" convertors="0.00750061683,1;1,1" xlabel="pO2 [mmHg]" ylabel="ctO2 [mmol/l]" maxdata="202" xrefpointindex="405" refpointindex="407" throttle="0"></bdl-chartjs-fixed-xy>
+<bdl-chartjs-fixed-xy width="600" height="400" colorindex="6" fromid="idfmi" labels="" initialdata="" refindex="0" refvalues="101" xrefindex="101" xrefvalues="101" xtofixed="0" convertors="0.00750061683,1;1,1" xlabel="pO2 [mmHg]" ylabel="ctO2 [mmol/l]" maxdata="1024" xrefpointindex="405" refpointindex="407" throttle="0"></bdl-chartjs-fixed-xy>
 
-<div style="margin-left:50px; width:550px">
+<div style="margin-left:50px; width:510px">
 <bdl-range  id="id2" title="" min="1" max="150" default="24" step="1" maxlength="3" showicons="false"></bdl-range>
 </div>
 Arteriální krev:pO<sub>2</sub> <bdl-value id="a1" fromid="idfmi" refindex="619" convertor="1,133.322" dataevent="true"></bdl-value> pCO<sub>2</sub> <bdl-value id="a2" fromid="idfmi" refindex="641" convertor="1,133.322" dataevent="true"></bdl-value><bdl-buttonparams id="a3" title="ukázat v grafu" ids="id1,id2" values="40,106"></bdl-buttonparams>
@@ -23,7 +23,7 @@ Arteriální krev:pO<sub>2</sub> <bdl-value id="a1" fromid="idfmi" refindex="619
 
 <bdl-chartjs-fixed-xy width="600" height="400" fromid="idfmi" labels="" initialdata="" refindex="202" refvalues="101" xrefindex="303" xrefvalues="101" xtofixed="0" convertors="0.00750061683,1;1,1" xlabel="pCO2 [mmHg]" ylabel="ctCO2 [mmol/l]" maxdata="202" xrefpointindex="404" refpointindex="406" min="0" max="35"  throttle="0"></bdl-chartjs-fixed-xy>
 
-<div style="margin-left:50px; width:550px">
+<div style="margin-left:50px; width:500px">
 <bdl-range id="id1" title="" min="1" max="80" default="35" step="1" maxlength="2" showicons="false"></bdl-range>
 </div>
 
