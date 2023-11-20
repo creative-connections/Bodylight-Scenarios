@@ -5,7 +5,8 @@
 <button class="w3-button"><i class="fa fa-square"></i></button>
 
 </div>
-<div id="qrcodediv" style="position:absolute;z-index:-1;right:1px" onclick="document.getElementById('qrcodediv').style.display='none';document.getElementById('qrcodebutton').style.display='block'">
+
+<div id="qrcodediv" style="position:absolute ;width:200px;height:200px;z-index:1;right:1px" onclick="document.getElementById('qrcodediv').style.display='none';document.getElementById('qrcodebutton').style.display='block'">
 
 ![qrcode](qrcode.png)
 
