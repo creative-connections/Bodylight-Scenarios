@@ -6,6 +6,11 @@ Jan, si před odjezdem změřil kontrolně pulzním oxymetrem hodnoty na sobě.
 
 Podle grafu vedle odhadněte jakou má koncentraci kyslíku v arteriální krvi.
 
+<div class="w3-xlarge w3-center">SpO<sub>2</sub> <b>97</b></div>
+
+
+
+
 </div>
 <div class="w3-half w3-center">
 
