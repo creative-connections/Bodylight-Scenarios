@@ -19,4 +19,4 @@
     * [Tkáně - 3 části](#bloodymaryCast3.md)
     * [Tkáně - 7 částí](#bloodymaryCast7.md)
   * [Model 2210 - přepočet koncentrací](#simpletissue.md)
-
+* [O tomto textu](#about.md) 
