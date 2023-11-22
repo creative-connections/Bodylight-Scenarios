@@ -1,5 +1,8 @@
-* [Vysokohorská nemoc 1](#pribeh1.md) 
-  * [Vysokohorská nemoc 2](#pribeh2.md) 
+* [Kazuistika VH1](#pribeh1.md) 
+  * [VH 2](#pribeh2.md)
+  * [VH 2a](#pribeh2a.md) 
+
+<!--
 * [Pomocné]
   * [Spotřeba O2CO2](#index.md) 
     * [Anemická hypoxie](#anemickahypoxie1.md)
@@ -20,3 +23,4 @@
     * [Tkáně - 7 částí](#bloodymaryCast7.md)
   * [Model 2210 - přepočet koncentrací](#simpletissue.md)
 * [O tomto textu](#about.md) 
+-->
