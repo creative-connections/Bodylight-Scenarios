@@ -2,30 +2,38 @@
 <div class="w3-half w3-justify">
 
 
-Jan, si před odjezdem změřil kontrolně pulzním oxymetrem hodnoty na sobě.
-
-Podle grafu vedle odhadněte jakou má koncentraci kyslíku v arteriální krvi.
+Jan, si před odjezdem změřil kontrolně pulzním oxymetrem hodnoty na sobě. Ukázala se mu hodnota:
 
 <div class="w3-xlarge w3-center">SpO<sub>2</sub> <b>97</b></div>
+
+Vpravo matematický model podle vědeckých poznatků počítá teoretické závislosti koncentrace, saturace a parciálních tlaků.
+
+Podle modelu určete
+
+<bdl-quiz id="q1" type="choice2" question="Pulzní oxymetr měří SpO2. V literatuře a laboratorně se stanovuje SaO2. Vyberte" answers="SpO2 a SaO2 jsou stejné hodnoty|SpO2 je saturace periferní krve, SaO2 se změří laboratorně z arteriální krve. Nicméně hodnoty SpO2 a SaO2 jsou téměř totožné a dají se zaměnit." correctoptions="false|true" explanations="ne|ano" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz id="q2" type="choice2" question="Nastavte v posuvníku takovou hondotu PO2, aby saturace ukazovala přibližně naměřenou hodnotu. Kolik je parciální tlak?" answers="96 mmHg|76 mmHg|56 mmHg" correctoptions="true|false|false" explanations="ano|ne|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz id="q3" type="choice2" question="Jaká je tedy koncentrace kyslíku v arteriální krvi? Viz disociační křivka vlevo dole" answers="9.1 mmol/l|7.1 mmol/l|5.1 mmol/l" correctoptions="true|false|false" explanations="ano|ne|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz id="q4" type="choice2" question="Jaká koncentrace  kyslíku je volně rozpuštěna v plasmě(nevázané na hemoglobin)" answers="0.14 mmol/l|0.9 mmol/l|0.4 mmol/l" correctoptions="true|false|false" explanations="ano|ne|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz id="q5" type="choice2" question="Jakou měrou se podílí volně rozpuštěný kyslík k celkové koncentraci kyslíku v krvi" answers="1.5 %|15%" correctoptions="true|false" explanations="ano 0.14/9.13 = 0.015 což je 1.5%|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz-control ids="q1,q2,q3,q4,q5"></bdl-quiz-control>
 
 
 
 
 </div>
-<div class="w3-half w3-center">
+<div class="w3-half">
 
 <bdl-chartjs-fixed-xy width="500" height="300" colorindex="6" fromid="idfmi" labels="" initialdata="" refindex="0" refvalues="101" xrefindex="101" xrefvalues="101" xtofixed="0" convertors="0.00750061683,1;100,9.4" xlabel="pO2 [mmHg]" ylabel="SaO2" maxdata="1024" xrefpointindex="405" refpointindex="407" throttle="0"></bdl-chartjs-fixed-xy>
 
-<div style="margin-left:50px; width:420px">
+<div style="margin-left:60px; width:420px">
 <bdl-range  id="id2" title="" min="1" max="150" default="24" step="1" maxlength="3" showicons="false"></bdl-range>
 </div>
 
 **Saturační křivka. Závislost parciálního tlaku a saturace hemoglobinu kyslíkem.**
 
+<bdl-chartjs-fixed-xy width="300" height="200" colorindex="6" fromid="idfmi" labels="" initialdata="" refindex="0" refvalues="101" xrefindex="101" xrefvalues="101" xtofixed="0" convertors="0.00750061683,1;1,1" xlabel="pO2 [mmHg]" ylabel="ct[O2] mmol/L" maxdata="1024" xrefpointindex="405" refpointindex="407" throttle="0"></bdl-chartjs-fixed-xy><bdl-chartjs-fixed-xy width="200" height="200" fromid="idfmi" labels="" initialdata="" refindex="408" refvalues="101" xrefindex="101" xrefvalues="101" xtofixed="0" convertors="0.00750061683,1;1,1" xlabel="pO2 [mmHg]" ylabel="cdO2 [mmol/l]" maxdata="5" xrefpointindex="405" refpointindex="610"  throttle="0"></bdl-chartjs-fixed-xy>
 
-<bdl-chartjs-fixed-xy width="200" height="200" fromid="idfmi" labels="" initialdata="" refindex="408" refvalues="101" xrefindex="101" xrefvalues="101" xtofixed="0" convertors="0.00750061683,1;1,1" xlabel="pO2 [mmHg]" ylabel="cdO2 [mmol/l]" maxdata="5" xrefpointindex="405" refpointindex="610"  throttle="0"></bdl-chartjs-fixed-xy>
-
-**Křivka. Závislost parciálního tlaku a volně rozpuštěsaturace hemoglobinu kyslíkem.**
+**Disociační křivky závislosti na parciálním tlaku kyslíku v krvi. Vlevo závislost celkové koncentrace kyslíku v arteriální krvi. Vpravo závislost volně rozpuštěného kyslíku nevázaného na hemoglobin v krevní plasmě.**
 
 
 Arteriální krev:pO<sub>2</sub> <bdl-value id="a1" fromid="idfmi" refindex="619" convertor="1,133.322" dataevent="true"></bdl-value> pCO<sub>2</sub> <bdl-value id="a2" fromid="idfmi" refindex="641" convertor="1,133.322" dataevent="true"></bdl-value><bdl-buttonparams id="a3" title="ukázat v grafu" ids="id1,id2" values="40,106"></bdl-buttonparams>
