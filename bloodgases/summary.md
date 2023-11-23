@@ -1,8 +1,9 @@
+* [Úvod](#index.md) 
 * [Kazuistika VH1](#pribeh1.md) 
-  * [VH 2](#pribeh2.md)
   * [VH 2a](#pribeh2a.md) 
 
 <!--
+  * [VH 2](#pribeh2.md)
 * [Pomocné]
   * [Spotřeba O2CO2](#index.md) 
     * [Anemická hypoxie](#anemickahypoxie1.md)
