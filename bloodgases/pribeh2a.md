@@ -6,12 +6,10 @@ Jan, si před odjezdem změřil kontrolně pulzním oxymetrem hodnoty na sobě. 
 
 <div class="w3-xlarge w3-center">SpO<sub>2</sub> <b>97</b></div>
 
-Interaktivní grafy podle matematického modelu ukazují teoretické závislosti koncentrace, saturace a parciálních tlaků.
+1. posuvníkem v interaktivním grafu vyhledejte odpovídající hodnoty
+2. odpovězte na otázky:
 
-&#x2250;
-
-
-<bdl-quiz id="q1" type="choice2" question="Pulzní oxymetr měří SpO2. V literatuře a laboratorně se stanovuje SaO2. Vyberte" answers="SpO2 a SaO2 jsou stejné hodnoty|SpO2 je saturace periferní krve, SaO2 se změří laboratorně z arteriální krve. Nicméně hodnoty SpO2 a SaO2 jsou téměř totožné a dají se zaměnit." correctoptions="false|true" explanations="ne|ano" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz id="q1" type="choice2" question="Pulzní oxymetr měří SpO2. Laboratorně se však stanovuje SaO2. " answers="SpO2 a SaO2 jsou stejné hodnoty|SpO2 je saturace periferní krve, SaO2 se změří laboratorně z arteriální krve. Nicméně hodnoty SpO2 a SaO2 jsou téměř totožné." correctoptions="false|true" explanations="ne|ano" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 <bdl-quiz id="q2" type="choice2" question="Nastavte v posuvníku takovou hondotu PO2, aby saturace ukazovala přibližně naměřenou hodnotu. Kolik je parciální tlak?" answers="&#x2250; 93 mmHg|&#x2250; 73 mmHg|&#x2250; 53 mmHg" correctoptions="true|false|false" explanations="ano|ne|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 <bdl-quiz id="q3" type="choice2" question="Jaká je tedy koncentrace kyslíku v arteriální krvi? Viz disociační křivka vlevo dole" answers="&#x2250; 8.2 mmol/l|&#x2250; 5.2 mmol/l|&#x2250; 3.2 mmol/l" correctoptions="true|false|false" explanations="ano|ne|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
 <bdl-quiz id="q4" type="choice2" question="Jaká koncentrace  kyslíku je volně rozpuštěna v plasmě(nevázané na hemoglobin)" answers="&#x2250; 0.13 mmol/l|&#x2250; 0.09 mmol/l|&#x2250; 0.05 mmol/l" correctoptions="true|false|false" explanations="ano|ne|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
@@ -34,11 +32,11 @@ Interaktivní grafy podle matematického modelu ukazují teoretické závislosti
 
 **Saturační křivka. Závislost parciálního tlaku a saturace hemoglobinu kyslíkem.**
 
-<bdl-chartjs-time width="300" height="150" fromid="idfmi" labels="ctO2" initialdata="" refindex="1" refvalues="1" maxdata="201" showrefpoint="true"></bdl-chartjs-time>
-<bdl-chartjs-time width="200" height="150" fromid="idfmi" labels="ctO2" initialdata="" refindex="6" refvalues="1" maxdata="201" showrefpoint="true"></bdl-chartjs-time>
+<bdl-chartjs-time width="300" height="150" fromid="idfmi" labels="ctO2" initialdata="" refindex="1" refvalues="1" maxdata="201" showrefpoint="true" ylabel="ctO2 [mmol/l]"></bdl-chartjs-time>
+<bdl-chartjs-time width="200" height="150" fromid="idfmi" labels="cdO2" ylabel="cdO2 [mmol/l]" initialdata="" refindex="6" refvalues="1" maxdata="201" showrefpoint="true"></bdl-chartjs-time>
 <!--bdl-chartjs-fixed-xy width="300" height="150" colorindex="6" fromid="idfmi" labels="" initialdata="" refindex="0" refvalues="101" xrefindex="101" xrefvalues="101" xtofixed="0" convertors="0.00750061683,1;1,1" xlabel="pO2 [mmHg]" ylabel="ct[O2] mmol/L" maxdata="1024" xrefpointindex="405" refpointindex="407" throttle="0"></bdl-chartjs-fixed-xy><bdl-chartjs-fixed-xy width="200" height="150" fromid="idfmi" labels="" initialdata="" refindex="408" refvalues="101" xrefindex="101" xrefvalues="101" xtofixed="0" convertors="0.00750061683,1;1,1" xlabel="pO2 [mmHg]" ylabel="cdO2 [mmol/l]" maxdata="5" xrefpointindex="405" refpointindex="610"  throttle="0"></bdl-chartjs-fixed-xy-->
 
-**Disociační křivky závislosti na parciálním tlaku kyslíku v krvi. Vlevo závislost celkové koncentrace kyslíku v arteriální krvi. Vpravo závislost volně rozpuštěného kyslíku nevázaného na hemoglobin v krevní plasmě.**
+**Disociační křivky závislosti celkové koncentrace (vlevo) a difúzní koncentrace (vpravo) na parciálním tlaku kyslíku v krvi. Difúzní koncentrace volně rozpuštěného kyslíku v plasmě, který není vázán na hemoglobin.**
 
 
 </div>
