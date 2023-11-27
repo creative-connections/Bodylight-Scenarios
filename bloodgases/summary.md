@@ -1,6 +1,7 @@
 * [Úvod](#index.md) 
 * [Kazuistika VH1](#pribeh1.md) 
-  * [VH 2a](#pribeh2a.md) 
+  * [VH - O2](#pribeh2a.md)
+  * [VH - CO2](#pribeh2b-pco2.md)
 
 <!--
   * [VH 2](#pribeh2.md)
