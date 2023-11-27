@@ -24,7 +24,7 @@ Jan, si před odjezdem nechal odebrat žilní krev. Výsledek mu přišel večer
 
 <!--bdl-chartjs-fixed-xy width="500" height="200" colorindex="6" fromid="idfmi" labels="" initialdata="" refindex="0" refvalues="101" xrefindex="101" xrefvalues="101" xtofixed="0" convertors="0.00750061683,1;100,9.4" xlabel="pO2 [mmHg]" ylabel="SaO2" maxdata="1024" xrefpointindex="405" refpointindex="407" throttle="0"></bdl-chartjs-fixed-xy-->
 
-<bdl-chartjs-time width="500" height="150" fromid="idfmi" labels="ctCO2" initialdata="" refindex="1" refvalues="1" maxdata="402" showrefpoint="true" ylabel="ctCO2 [mmol/l]"></bdl-chartjs-time>
+<bdl-chartjs-time width="500" height="300" fromid="idfmi" labels="ctCO2" initialdata="" refindex="1" refvalues="1" maxdata="402" showrefpoint="true" ylabel="ctCO2 [mmol/l]"></bdl-chartjs-time>
 <bdl-chartjs-time width="500" height="150" fromid="idfmi" labels="cdCO2" ylabel="cdCO2 [mmol/l]" initialdata="" refindex="2" refvalues="1" maxdata="402" showrefpoint="true"></bdl-chartjs-time>
 
 <div style="margin-left:60px; width:440px">
@@ -34,8 +34,8 @@ Jan, si před odjezdem nechal odebrat žilní krev. Výsledek mu přišel večer
 
 <!--bdl-chartjs-fixed-xy width="300" height="150" colorindex="6" fromid="idfmi" labels="" initialdata="" refindex="0" refvalues="101" xrefindex="101" xrefvalues="101" xtofixed="0" convertors="0.00750061683,1;1,1" xlabel="pO2 [mmHg]" ylabel="ct[O2] mmol/L" maxdata="1024" xrefpointindex="405" refpointindex="407" throttle="0"></bdl-chartjs-fixed-xy><bdl-chartjs-fixed-xy width="200" height="150" fromid="idfmi" labels="" initialdata="" refindex="408" refvalues="101" xrefindex="101" xrefvalues="101" xtofixed="0" convertors="0.00750061683,1;1,1" xlabel="pO2 [mmHg]" ylabel="cdO2 [mmol/l]" maxdata="5" xrefpointindex="405" refpointindex="610"  throttle="0"></bdl-chartjs-fixed-xy-->
 
-**Disociační křivky závislosti celkové koncentrace (ctCO<sub>2</sub>) a difúzní koncentrace (cdCO<sub>2</sub>) na parciálním tlaku oxidu uhličitého v krvi. **
 
+**Disociační křivky závislosti celkové koncentrace (ctCO<sub>2</sub>) a difúzní koncentrace (cdCO<sub>2</sub>) na parciálním tlaku oxidu uhličitého v krvi.**
 
 </div>
 </div>
