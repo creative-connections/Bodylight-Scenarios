@@ -1,0 +1,1427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fmiModelDescription
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  fmiVersion="2.0"
+  modelName="Simplest.Test.PCO2CurveTest"
+  guid="{10fbbc03-8405-427d-b491-c8587bd96365}"
+  version="2"
+  generationTool="Dymola Version 2021x (64-bit), 2020-10-09"
+  generationDateAndTime="2023-11-22T06:52:19Z"
+  variableNamingConvention="structured"
+  numberOfEventIndicators="4">
+  <CoSimulation
+    modelIdentifier="Simplest_Test_PCO2CurveTest"
+    canHandleVariableCommunicationStepSize="true"
+    canInterpolateInputs="true"
+    maxOutputDerivativeOrder="1"
+    canGetAndSetFMUstate="true"
+    canSerializeFMUstate="true"
+    providesDirectionalDerivative="true">
+    <SourceFiles>
+      <File
+        name="all.c"/>
+    </SourceFiles>
+  </CoSimulation>
+  <UnitDefinitions>
+    <Unit
+      name="1">
+      <DisplayUnit
+        name="%"
+        factor="100.0"/>
+      <DisplayUnit
+        name="1"/>
+    </Unit>
+    <Unit
+      name="K">
+      <BaseUnit K="1"/>
+      <DisplayUnit
+        name="degC"
+        offset="-273.15"/>
+    </Unit>
+    <Unit
+      name="Pa">
+      <BaseUnit kg="1"
+        m="-1"
+        s="-2"/>
+      <DisplayUnit
+        name="mmHg"
+        factor="0.007500615758456563"/>
+    </Unit>
+    <Unit
+      name="kg/m3">
+      <BaseUnit kg="1"
+        m="-3"/>
+      <DisplayUnit
+        name="mg/l"
+        factor="1000.0"/>
+    </Unit>
+    <Unit
+      name="m3">
+      <BaseUnit m="3"/>
+      <DisplayUnit
+        name="ml"
+        factor="1000000.0"/>
+    </Unit>
+    <Unit
+      name="m3/s">
+      <BaseUnit m="3"
+        s="-1"/>
+      <DisplayUnit
+        name="ml/min"
+        factor="60000000.0"/>
+    </Unit>
+    <Unit
+      name="mol/m3">
+      <BaseUnit m="-3"
+        mol="1"/>
+      <DisplayUnit
+        name="mmol/l"/>
+    </Unit>
+    <Unit
+      name="mol/s">
+      <BaseUnit s="-1"
+        mol="1"/>
+      <DisplayUnit
+        name="mmol/min"
+        factor="60000.0"/>
+    </Unit>
+    <Unit
+      name="s">
+      <BaseUnit s="1"/>
+      <DisplayUnit
+        name="min"
+        factor="0.016666666666666666"/>
+    </Unit>
+  </UnitDefinitions>
+  <TypeDefinitions>
+    <SimpleType
+      name="Modelica.Blocks.Interfaces.RealInput">
+      <Real/>
+    </SimpleType>
+    <SimpleType
+      name="Modelica.Blocks.Interfaces.RealOutput">
+      <Real/>
+    </SimpleType>
+    <SimpleType
+      name="Modelica.Units.SI.Time">
+      <Real
+        quantity="Time"
+        unit="s"/>
+    </SimpleType>
+    <SimpleType
+      name="Physiolibrary.Types.Concentration">
+      <Real
+        quantity="Concentration"
+        unit="mol/m3"
+        displayUnit="mmol/l"
+        min="0.0"/>
+    </SimpleType>
+    <SimpleType
+      name="Physiolibrary.Types.DiffusionPermeability">
+      <Real
+        quantity="DiffusionPermeability"
+        unit="m3/s"
+        displayUnit="ml/min"
+        min="0.0"
+        nominal="1.6666666666666667E-08"/>
+    </SimpleType>
+    <SimpleType
+      name="Physiolibrary.Types.Fraction">
+      <Real
+        quantity="Fraction"
+        unit="1"
+        displayUnit="%"
+        nominal="0.01"/>
+    </SimpleType>
+    <SimpleType
+      name="Physiolibrary.Types.MolarFlowRate">
+      <Real
+        quantity="MolarFlowRate"
+        unit="mol/s"
+        displayUnit="mmol/min"/>
+    </SimpleType>
+    <SimpleType
+      name="Physiolibrary.Types.Pressure">
+      <Real
+        quantity="Pressure"
+        unit="Pa"
+        displayUnit="mmHg"
+        nominal="133.322387415"/>
+    </SimpleType>
+    <SimpleType
+      name="Physiolibrary.Types.RealIO.ConcentrationInput">
+      <Real
+        quantity="Concentration"
+        unit="mol/m3"
+        displayUnit="mmol/l"
+        min="0.0"/>
+    </SimpleType>
+    <SimpleType
+      name="Physiolibrary.Types.RealIO.ConcentrationOutput">
+      <Real
+        quantity="Concentration"
+        unit="mol/m3"
+        displayUnit="mmol/l"
+        min="0.0"/>
+    </SimpleType>
+    <SimpleType
+      name="Physiolibrary.Types.RealIO.FractionInput">
+      <Real
+        quantity="Fraction"
+        unit="1"
+        displayUnit="%"
+        nominal="0.01"/>
+    </SimpleType>
+    <SimpleType
+      name="Physiolibrary.Types.RealIO.FractionOutput">
+      <Real
+        quantity="Fraction"
+        unit="1"
+        displayUnit="%"
+        nominal="0.01"/>
+    </SimpleType>
+    <SimpleType
+      name="Physiolibrary.Types.RealIO.MassConcentrationOutput">
+      <Real
+        quantity="MassConcentration"
+        unit="kg/m3"
+        displayUnit="mg/l"
+        min="0.0"
+        nominal="0.001"/>
+    </SimpleType>
+    <SimpleType
+      name="Physiolibrary.Types.RealIO.PressureInput">
+      <Real
+        quantity="Pressure"
+        unit="Pa"
+        displayUnit="mmHg"
+        nominal="133.322387415"/>
+    </SimpleType>
+    <SimpleType
+      name="Physiolibrary.Types.RealIO.PressureOutput">
+      <Real
+        quantity="Pressure"
+        unit="Pa"
+        displayUnit="mmHg"
+        nominal="133.322387415"/>
+    </SimpleType>
+    <SimpleType
+      name="Physiolibrary.Types.RealIO.pHInput">
+      <Real
+        quantity="pH"
+        unit="1"
+        displayUnit="1"
+        min="0.0"
+        max="14.0"
+        nominal="7.0"/>
+    </SimpleType>
+    <SimpleType
+      name="Physiolibrary.Types.RealIO.pHOutput">
+      <Real
+        quantity="pH"
+        unit="1"
+        displayUnit="1"
+        min="0.0"
+        max="14.0"
+        nominal="7.0"/>
+    </SimpleType>
+    <SimpleType
+      name="Physiolibrary.Types.Temperature">
+      <Real
+        quantity="ThermodynamicTemperature"
+        unit="K"
+        displayUnit="degC"
+        min="0.0"
+        nominal="1.0"/>
+    </SimpleType>
+    <SimpleType
+      name="Physiolibrary.Types.Time">
+      <Real
+        quantity="Time"
+        unit="s"
+        displayUnit="min"
+        nominal="60.0"/>
+    </SimpleType>
+    <SimpleType
+      name="Physiolibrary.Types.Volume">
+      <Real
+        quantity="Volume"
+        unit="m3"
+        displayUnit="ml"
+        min="0.0"
+        nominal="1E-06"/>
+    </SimpleType>
+    <SimpleType
+      name="Physiolibrary.Types.VolumeFlowRate">
+      <Real
+        quantity="VolumeFlowRate"
+        unit="m3/s"
+        displayUnit="ml/min"
+        nominal="1.6666666666666667E-08"/>
+    </SimpleType>
+    <SimpleType
+      name="Modelica.Blocks.Types.Init">
+      <Enumeration>
+        <Item name="NoInit"
+          value="1"
+          description="No initialization (start values are used as guess values with fixed=false)"/>
+        <Item name="SteadyState"
+          value="2"
+          description="Steady state initialization (derivatives of states are zero)"/>
+        <Item name="InitialState"
+          value="3"
+          description="Initialization with initial states"/>
+        <Item name="InitialOutput"
+          value="4"
+          description="Initialization with initial outputs (and steady state of the states if possible)"/>
+      </Enumeration>
+    </SimpleType>
+  </TypeDefinitions>
+  <DefaultExperiment startTime="0.0"
+    stopTime="200.0"
+    tolerance="0.0001"/>
+  <ModelVariables>
+    <!-- Index for next variable = 1 -->
+    <ScalarVariable
+      name="modelSettings.useIons"
+      valueReference="16777216"
+      causality="parameter"
+      variability="fixed">
+      <Boolean start="true"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 2 -->
+    <ScalarVariable
+      name="modelSettings.useOsmoticFlow"
+      valueReference="16777217"
+      causality="parameter"
+      variability="fixed">
+      <Boolean start="true"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 3 -->
+    <ScalarVariable
+      name="modelSettings.NormalAlveolarVentilation"
+      valueReference="16777218"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Physiolibrary.Types.VolumeFlowRate"
+        start="7.68333E-05"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 4 -->
+    <ScalarVariable
+      name="modelSettings.UseRespiratoryCompensation"
+      valueReference="16777219"
+      causality="parameter"
+      variability="fixed">
+      <Boolean start="true"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 5 -->
+    <ScalarVariable
+      name="modelSettings.respiratoryQuotient"
+      valueReference="16777220"
+      causality="parameter"
+      variability="fixed">
+      <Real
+        declaredType="Physiolibrary.Types.Fraction"
+        start="0.85"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 6 -->
+    <ScalarVariable
+      name="modelSettings.PB"
+      valueReference="16777221"
+      description="Barometric Pressure"
+      causality="parameter"
+      variability="fixed">
+      <Real
+        declaredType="Physiolibrary.Types.Pressure"
+        start="101325.0144354"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 7 -->
+    <ScalarVariable
+      name="modelSettings.FiO2"
+      valueReference="16777222"
+      description="Frattion of O2"
+      causality="parameter"
+      variability="fixed">
+      <Real
+        declaredType="Physiolibrary.Types.Fraction"
+        start="0.21"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 8 -->
+    <ScalarVariable
+      name="modelSettings.FiCO2_start"
+      valueReference="16777223"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Physiolibrary.Types.Fraction"
+        start="0.0004"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 9 -->
+    <ScalarVariable
+      name="modelSettings.lungShuntFraction"
+      valueReference="16777224"
+      causality="parameter"
+      variability="fixed">
+      <Real
+        declaredType="Physiolibrary.Types.Fraction"
+        start="0.05"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 10 -->
+    <ScalarVariable
+      name="modelSettings.perfusionFraction"
+      valueReference="16777225"
+      description="alveolar perfusion fraction of the first half of the lungs"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Physiolibrary.Types.Fraction"
+        start="0.5"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 11 -->
+    <ScalarVariable
+      name="modelSettings.ventilationFraction"
+      valueReference="16777226"
+      description="alveolar ventilation fraction of the first half of the lungs"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Physiolibrary.Types.Fraction"
+        start="0.5"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 12 -->
+    <ScalarVariable
+      name="modelSettings.cAlb"
+      valueReference="16777227"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Physiolibrary.Types.Concentration"
+        start="0.66"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 13 -->
+    <ScalarVariable
+      name="modelSettings.ctHb"
+      valueReference="16777228"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Physiolibrary.Types.Concentration"
+        start="9.4"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 14 -->
+    <ScalarVariable
+      name="modelSettings.cPi"
+      valueReference="16777229"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Physiolibrary.Types.Concentration"
+        start="1.15"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 15 -->
+    <ScalarVariable
+      name="modelSettings.cDPG"
+      valueReference="16777230"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Physiolibrary.Types.Concentration"
+        start="5"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 16 -->
+    <ScalarVariable
+      name="modelSettings.FMetHb"
+      valueReference="16777231"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Physiolibrary.Types.Fraction"
+        start="0.005"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 17 -->
+    <ScalarVariable
+      name="modelSettings.FCOHb"
+      valueReference="16777232"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Physiolibrary.Types.Fraction"
+        start="0.005"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 18 -->
+    <ScalarVariable
+      name="modelSettings.FHbF"
+      valueReference="16777233"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Physiolibrary.Types.Fraction"
+        start="0.005"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 19 -->
+    <ScalarVariable
+      name="modelSettings.Temperature"
+      valueReference="16777234"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Physiolibrary.Types.Temperature"
+        start="310.15"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 20 -->
+    <ScalarVariable
+      name="modelSettings.arterialO2conc_start"
+      valueReference="16777235"
+      causality="parameter"
+      variability="fixed">
+      <Real
+        declaredType="Physiolibrary.Types.Concentration"
+        start="8.23882"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 21 -->
+    <ScalarVariable
+      name="modelSettings.arterialCO2conc_start"
+      valueReference="16777236"
+      causality="parameter"
+      variability="fixed">
+      <Real
+        declaredType="Physiolibrary.Types.Concentration"
+        start="21.659"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 22 -->
+    <ScalarVariable
+      name="modelSettings.venousO2conc_start"
+      valueReference="16777237"
+      causality="parameter"
+      variability="fixed">
+      <Real
+        declaredType="Physiolibrary.Types.Concentration"
+        start="6.03882"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 23 -->
+    <ScalarVariable
+      name="modelSettings.venousCO2conc_start"
+      valueReference="16777238"
+      causality="parameter"
+      variability="fixed">
+      <Real
+        declaredType="Physiolibrary.Types.Concentration"
+        start="23.529"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 24 -->
+    <ScalarVariable
+      name="modelSettings.ISFvolume_start"
+      valueReference="16777239"
+      causality="parameter"
+      variability="fixed">
+      <Real
+        declaredType="Physiolibrary.Types.Volume"
+        start="0.01"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 25 -->
+    <ScalarVariable
+      name="modelSettings.IonConcentration[1]"
+      valueReference="16777240"
+      description="Plasma ion concentrations"
+      causality="parameter"
+      variability="fixed">
+      <Real
+        declaredType="Physiolibrary.Types.Concentration"
+        start="130.0"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 26 -->
+    <ScalarVariable
+      name="modelSettings.IonConcentration[2]"
+      valueReference="16777241"
+      description="Plasma ion concentrations"
+      causality="parameter"
+      variability="fixed">
+      <Real
+        declaredType="Physiolibrary.Types.Concentration"
+        start="100.0"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 27 -->
+    <ScalarVariable
+      name="modelSettings.IonConcentration[3]"
+      valueReference="16777242"
+      description="Plasma ion concentrations"
+      causality="parameter"
+      variability="fixed">
+      <Real
+        declaredType="Physiolibrary.Types.Concentration"
+        start="2.5"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 28 -->
+    <ScalarVariable
+      name="modelSettings.IonConcentration[4]"
+      valueReference="16777243"
+      description="Plasma ion concentrations"
+      causality="parameter"
+      variability="fixed">
+      <Real
+        declaredType="Physiolibrary.Types.Concentration"
+        start="0.65"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 29 -->
+    <ScalarVariable
+      name="modelSettings.IonElemChrgs[1]"
+      valueReference="100663296"
+      description="elementary charges of ions"
+      variability="constant">
+      <Integer start="1"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 30 -->
+    <ScalarVariable
+      name="modelSettings.IonElemChrgs[2]"
+      valueReference="100663297"
+      description="elementary charges of ions"
+      variability="constant">
+      <Integer start="-1"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 31 -->
+    <ScalarVariable
+      name="modelSettings.IonElemChrgs[3]"
+      valueReference="100663298"
+      description="elementary charges of ions"
+      variability="constant">
+      <Integer start="-1"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 32 -->
+    <ScalarVariable
+      name="modelSettings.IonElemChrgs[4]"
+      valueReference="100663299"
+      description="elementary charges of ions"
+      variability="constant">
+      <Integer start="-1"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 33 -->
+    <ScalarVariable
+      name="modelSettings.O2DiffusionPermeability"
+      valueReference="16777244"
+      causality="parameter"
+      variability="fixed">
+      <Real
+        declaredType="Physiolibrary.Types.DiffusionPermeability"
+        start="0.005"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 34 -->
+    <ScalarVariable
+      name="modelSettings.CO2DiffusionPermeability"
+      valueReference="16777245"
+      description="According to partial pressure difference in plasma and tissues, a study by SA"
+      causality="parameter"
+      variability="fixed">
+      <Real
+        declaredType="Physiolibrary.Types.DiffusionPermeability"
+        start="0.005"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 35 -->
+    <ScalarVariable
+      name="modelSettings.IonPermeabilities[1]"
+      valueReference="16777246"
+      description="Albumin permeability calculated from lympha flow and 3:1 concentration difference"
+      causality="parameter"
+      variability="fixed">
+      <Real
+        declaredType="Physiolibrary.Types.DiffusionPermeability"
+        start="100"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 36 -->
+    <ScalarVariable
+      name="modelSettings.IonPermeabilities[2]"
+      valueReference="16777247"
+      description="Albumin permeability calculated from lympha flow and 3:1 concentration difference"
+      causality="parameter"
+      variability="fixed">
+      <Real
+        declaredType="Physiolibrary.Types.DiffusionPermeability"
+        start="100"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 37 -->
+    <ScalarVariable
+      name="modelSettings.IonPermeabilities[3]"
+      valueReference="16777248"
+      description="Albumin permeability calculated from lympha flow and 3:1 concentration difference"
+      causality="parameter"
+      variability="fixed">
+      <Real
+        declaredType="Physiolibrary.Types.DiffusionPermeability"
+        start="50"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 38 -->
+    <ScalarVariable
+      name="modelSettings.IonPermeabilities[4]"
+      valueReference="16777249"
+      description="Albumin permeability calculated from lympha flow and 3:1 concentration difference"
+      causality="parameter"
+      variability="fixed">
+      <Real
+        declaredType="Physiolibrary.Types.DiffusionPermeability"
+        start="0"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 39 -->
+    <ScalarVariable
+      name="modelSettings.HCO3Permeability"
+      valueReference="16777250"
+      description="just a wild guess"
+      causality="parameter"
+      variability="fixed">
+      <Real
+        declaredType="Physiolibrary.Types.DiffusionPermeability"
+        start="5E-05"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 40 -->
+    <ScalarVariable
+      name="modelSettings.metabolismO2FlowRate"
+      valueReference="16777251"
+      causality="parameter"
+      variability="fixed">
+      <Real
+        declaredType="Physiolibrary.Types.MolarFlowRate"
+        start="0.00018333333333333"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 41 -->
+    <ScalarVariable
+      name="modelSettings.UseMetabolicUABalance"
+      valueReference="16777252"
+      causality="parameter"
+      variability="fixed">
+      <Boolean start="true"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 42 -->
+    <ScalarVariable
+      name="modelSettings.fixedMetabolismCompensation"
+      valueReference="16777253"
+      causality="parameter"
+      variability="fixed">
+      <Boolean start="false"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 43 -->
+    <ScalarVariable
+      name="modelSettings.metabolismUAFlowRate_norm"
+      valueReference="16777254"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Physiolibrary.Types.MolarFlowRate"
+        start="6.944444E-07"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 44 -->
+    <ScalarVariable
+      name="modelSettings.makeUAstep"
+      valueReference="16777255"
+      causality="parameter"
+      variability="tunable">
+      <Boolean start="false"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 45 -->
+    <ScalarVariable
+      name="modelSettings.UAstepRatio"
+      valueReference="16777256"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Physiolibrary.Types.Fraction"
+        start="1.5"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 46 -->
+    <ScalarVariable
+      name="modelSettings.makeCO2FractionStep"
+      valueReference="16777257"
+      causality="parameter"
+      variability="tunable">
+      <Boolean start="false"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 47 -->
+    <ScalarVariable
+      name="modelSettings.FiCO2_step"
+      valueReference="16777258"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Physiolibrary.Types.Fraction"
+        start="0.08"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 48 -->
+    <ScalarVariable
+      name="modelSettings.makeVentilationPerfusionFractionStep"
+      valueReference="16777259"
+      causality="parameter"
+      variability="tunable">
+      <Boolean start="false"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 49 -->
+    <ScalarVariable
+      name="modelSettings.ventilationPerfusionFraction_step"
+      valueReference="16777260"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Physiolibrary.Types.Fraction"
+        start="0.75"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 50 -->
+    <ScalarVariable
+      name="modelSettings.makeVAstep"
+      valueReference="16777261"
+      causality="parameter"
+      variability="tunable">
+      <Boolean start="false"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 51 -->
+    <ScalarVariable
+      name="modelSettings.VAstepRatio"
+      valueReference="16777262"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Physiolibrary.Types.Fraction"
+        start="1.5"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 52 -->
+    <ScalarVariable
+      name="modelSettings.breakTime"
+      valueReference="16777263"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Physiolibrary.Types.Time"
+        start="36000"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 53 -->
+    <ScalarVariable
+      name="modelSettings.break2Time"
+      valueReference="16777264"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Physiolibrary.Types.Time"
+        start="36000"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 54 -->
+    <ScalarVariable
+      name="modelSettings.breakLength"
+      valueReference="16777265"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Physiolibrary.Types.Time"
+        start="172800"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 55 -->
+    <ScalarVariable
+      name="modelSettings.metabolismUAFlowRate"
+      valueReference="905969668"
+      variability="discrete">
+      <Real
+        declaredType="Physiolibrary.Types.MolarFlowRate"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 56 -->
+    <ScalarVariable
+      name="modelSettings.FiCO2"
+      valueReference="905969669"
+      variability="discrete">
+      <Real
+        declaredType="Physiolibrary.Types.Fraction"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 57 -->
+    <ScalarVariable
+      name="modelSettings.ventilationFractionStep"
+      valueReference="905969670"
+      description="alveolar perfusion fraction of the first half of the lungs"
+      variability="discrete">
+      <Real
+        declaredType="Physiolibrary.Types.Fraction"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 58 -->
+    <ScalarVariable
+      name="modelSettings.perfusionFractionStep"
+      valueReference="905969671"
+      description="alveolar perfusion fraction of the first half of the lungs"
+      variability="discrete">
+      <Real
+        declaredType="Physiolibrary.Types.Fraction"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 59 -->
+    <ScalarVariable
+      name="modelSettings.AlveolarVentilationFlowRate"
+      valueReference="905969672"
+      description="alveolar perfusion fraction of the first half of the lungs"
+      variability="discrete">
+      <Real
+        declaredType="Physiolibrary.Types.VolumeFlowRate"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 60 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.sO2"
+      valueReference="637534221">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.FractionOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 61 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.cHCO3"
+      valueReference="905969685"
+      description="outgoing concentration of HCO3">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.ConcentrationOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 62 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.pO2"
+      valueReference="234881076"
+      variability="tunable">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.PressureInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 63 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.pCO2"
+      valueReference="637534219">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.PressureInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 64 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.ctCO2"
+      valueReference="905969684">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.ConcentrationOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 65 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.ctO2"
+      valueReference="637534222">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.ConcentrationOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 66 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.BEox"
+      valueReference="905969673">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.ConcentrationInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 67 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.pH"
+      valueReference="637534218">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.pHOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 68 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.cdO2"
+      valueReference="637534223">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.ConcentrationOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 69 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.cdCO2"
+      valueReference="905969686">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.ConcentrationOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 70 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.bloodctO2content.pH"
+      valueReference="637534218">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.pHInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 71 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.bloodctO2content.pCO2"
+      valueReference="637534219">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.PressureInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 72 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.bloodctO2content.pO2"
+      valueReference="100663308"
+      variability="tunable">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.PressureInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 73 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.bloodctO2content.sO2"
+      valueReference="637534221">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.FractionOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 74 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.bloodctO2content.totalO2"
+      valueReference="637534222">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.ConcentrationOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 75 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.bloodctO2content.cdO2p"
+      valueReference="637534223"
+      description="dissolved O2 concentration in plasma">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.ConcentrationOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 76 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.bloodctO2content.ceHb"
+      valueReference="637534224"
+      description="effective concentration of hemoglobin">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.ConcentrationOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 77 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.bloodctCO2content.pCO2"
+      valueReference="905969681"
+      description="pCO2 in Pa">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.PressureInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 78 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.bloodctCO2content.pH"
+      valueReference="905969682">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.pHInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 79 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.bloodctCO2content.sO2"
+      valueReference="905969683"
+      description="O2 hemoglobin saturation ">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.FractionInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 80 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.bloodctCO2content.ctCO2"
+      valueReference="905969684"
+      description="total blood CO2 concentration (in mmol/l)">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.ConcentrationOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 81 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.bloodctCO2content.cHCO3"
+      valueReference="905969685"
+      description="plasma HCO3 concentration (in mmol/l)">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.ConcentrationOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 82 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.bloodctCO2content.cdCO2p"
+      valueReference="905969686"
+      description="plasma CO2 dissolved concentration (in mmol/l)">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.ConcentrationOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 83 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.ceHb"
+      valueReference="637534224"
+      description="effiective concentration of hemoglobin (mmol/l)">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.ConcentrationOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 84 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.bEINV_by_integration.pCO2"
+      valueReference="637534219"
+      description="pCO2 at given temperature in Pa">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.PressureInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 85 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.bEINV_by_integration.pH"
+      valueReference="637534218"
+      description="plasma pH at given temperature">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.pHOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 86 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.bEINV_by_integration.BEox"
+      valueReference="905969673"
+      description="BEox in mmol/l">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.ConcentrationInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 87 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.bEINV_by_integration.vanSlykeEquation.pCO2"
+      valueReference="637534231"
+      description="pCO2 at given temperature in Pa">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.PressureInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 88 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.bEINV_by_integration.vanSlykeEquation.pH"
+      valueReference="637534232"
+      description="pH at given temperature">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.pHInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 89 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.bEINV_by_integration.vanSlykeEquation.BEox"
+      valueReference="637534233"
+      description="Base Excess (in fully oxygenated blood) in mmol/l">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.ConcentrationOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 90 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.bEINV_by_integration.vanSlykeEquation.sO2"
+      valueReference="637534234"
+      description="O2 hemoglobin saturation">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.FractionInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 91 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.bEINV_by_integration.sO2"
+      valueReference="637534221"
+      description="O2 hemoglobin saturation">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.FractionInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 92 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.bEINV_by_integration.integrator.k"
+      valueReference="16777266"
+      description="Integrator gain"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        unit="1"
+        start="10000"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 93 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.bEINV_by_integration.integrator.initType"
+      valueReference="100663325"
+      description="Type of initialization (1: no init, 2: steady state, 3,4: initial output)"
+      variability="constant">
+      <Enumeration
+        declaredType="Modelica.Blocks.Types.Init"
+        start="3"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 94 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.bEINV_by_integration.integrator.y_start"
+      valueReference="16777267"
+      description="Initial or guess value of output (= state)"
+      causality="parameter"
+      variability="fixed">
+      <Real start="7.4"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 95 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.bEINV_by_integration.integrator.u"
+      valueReference="637534238"
+      description="Connector of Real input signal">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 96 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.bEINV_by_integration.integrator.y"
+      valueReference="33554432"
+      description="Connector of Real output signal">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 97 -->
+    <ScalarVariable
+      name="der(pO2PCO2_by_integration.bEINV_by_integration.integrator.y)"
+      valueReference="587202560"
+      description="der(Connector of Real output signal)">
+      <Real derivative="96"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 98 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.bEINV_by_integration.feedback.u1"
+      valueReference="234881082"
+      description="Commanded input"
+      variability="tunable">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 99 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.bEINV_by_integration.feedback.u2"
+      valueReference="637534241"
+      description="Feedback input">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 100 -->
+    <ScalarVariable
+      name="pO2PCO2_by_integration.bEINV_by_integration.feedback.y"
+      valueReference="637534238">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 101 -->
+    <ScalarVariable
+      name="PO2.k"
+      valueReference="16777268"
+      description="Constant Pressure output value"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Physiolibrary.Types.Pressure"
+        start="13332.2387415"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 102 -->
+    <ScalarVariable
+      name="PO2.y"
+      valueReference="234881076"
+      description="Pressure constant"
+      variability="tunable">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.PressureOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 103 -->
+    <ScalarVariable
+      name="PCO2.k"
+      valueReference="16777269"
+      description="Constant Pressure output value"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Physiolibrary.Types.Pressure"
+        start="133.322387415"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 104 -->
+    <ScalarVariable
+      name="PCO2.y"
+      valueReference="234881077"
+      description="Pressure constant"
+      variability="tunable">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.PressureOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 105 -->
+    <ScalarVariable
+      name="product1.u1"
+      valueReference="905969698"
+      description="Connector of Real input signal 1">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 106 -->
+    <ScalarVariable
+      name="product1.u2"
+      valueReference="637534243"
+      description="Connector of Real input signal 2">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 107 -->
+    <ScalarVariable
+      name="product1.y"
+      valueReference="637534244"
+      description="Connector of Real output signal">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 108 -->
+    <ScalarVariable
+      name="ramp.height"
+      valueReference="16777270"
+      description="Height of ramps"
+      causality="parameter"
+      variability="tunable">
+      <Real start="100"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 109 -->
+    <ScalarVariable
+      name="ramp.duration"
+      valueReference="16777271"
+      description="Duration of ramp (= 0.0 gives a Step)"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Modelica.Units.SI.Time"
+        min="0.0"
+        start="100"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 110 -->
+    <ScalarVariable
+      name="ramp.y"
+      valueReference="637534243"
+      description="Connector of Real output signal">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 111 -->
+    <ScalarVariable
+      name="ramp.offset"
+      valueReference="16777272"
+      description="Offset of output signal y"
+      causality="parameter"
+      variability="tunable">
+      <Real start="1E-06"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 112 -->
+    <ScalarVariable
+      name="ramp.startTime"
+      valueReference="16777273"
+      description="Output y = offset for time &lt; startTime"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Modelica.Units.SI.Time"
+        start="0"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 113 -->
+    <ScalarVariable
+      name="CtO2_ml.mmol_per_liter"
+      valueReference="637534222">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.ConcentrationInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 114 -->
+    <ScalarVariable
+      name="CtO2_ml.ml_per_liter"
+      valueReference="905969701">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 115 -->
+    <ScalarVariable
+      name="CtCO2_ml.mmol_per_liter"
+      valueReference="905969684">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.ConcentrationInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 116 -->
+    <ScalarVariable
+      name="CtCO2_ml.ml_per_liter"
+      valueReference="905969702">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 117 -->
+    <ScalarVariable
+      name="ceHb_g.Hb_mmol"
+      valueReference="637534224">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.ConcentrationInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 118 -->
+    <ScalarVariable
+      name="ceHb_g.Hb_g"
+      valueReference="905969703">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.MassConcentrationOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 119 -->
+    <ScalarVariable
+      name="CdCO2_ml.mmol_per_liter"
+      valueReference="905969686">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.ConcentrationInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 120 -->
+    <ScalarVariable
+      name="CdCO2_ml.ml_per_liter"
+      valueReference="905969704">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 121 -->
+    <ScalarVariable
+      name="CdO2_ml.mmol_per_liter"
+      valueReference="637534223">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.ConcentrationInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 122 -->
+    <ScalarVariable
+      name="CdO2_ml.ml_per_liter"
+      valueReference="905969705">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 123 -->
+    <ScalarVariable
+      name="ctHb.k"
+      valueReference="100663338"
+      description="Constant Concentration output value"
+      variability="tunable">
+      <Real
+        declaredType="Physiolibrary.Types.Concentration"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 124 -->
+    <ScalarVariable
+      name="ctHb.y"
+      valueReference="100663338"
+      description="Concentration constant"
+      variability="tunable">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.ConcentrationOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 125 -->
+    <ScalarVariable
+      name="Hb_g_per_l.Hb_mmol"
+      valueReference="100663338"
+      variability="tunable">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.ConcentrationInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 126 -->
+    <ScalarVariable
+      name="Hb_g_per_l.Hb_g"
+      valueReference="100663339"
+      variability="tunable">
+      <Real
+        declaredType="Physiolibrary.Types.RealIO.MassConcentrationOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 127 -->
+    <ScalarVariable
+      name="BEox.k"
+      valueReference="16777274"
+      description="Constant output value"
+      causality="parameter"
+      variability="tunable">
+      <Real min="0.0"
+        start="0"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 128 -->
+    <ScalarVariable
+      name="BEox.y"
+      valueReference="234881082"
+      description="Connector of Real output signal"
+      variability="tunable">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
+    </ScalarVariable>
+  </ModelVariables>
+  <ModelStructure>
+    <Derivatives>
+      <Unknown index="97"
+        dependencies="96"
+        dependenciesKind="fixed"/>
+    </Derivatives>
+    <InitialUnknowns>
+      <Unknown index="96"
+        dependencies="94"
+        dependenciesKind="dependent"/>
+      <Unknown index="97"
+        dependencies="12 13 14 15 16 17 18 19 92 94 101 103 108 109 111 112 127"
+        dependenciesKind="dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent"/>
+    </InitialUnknowns>
+  </ModelStructure>
+</fmiModelDescription>
