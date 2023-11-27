@@ -10,14 +10,13 @@ Jan, si před odjezdem nechal odebrat žilní krev. Výsledek mu přišel večer
 1. posuvníkem v interaktivním grafu vyhledejte odpovídající hodnoty
 2. odpovězte na otázky:
 
-<bdl-quiz id="q1" type="choice2" question="Pulzní oxymetr měří SpO2. Laboratorně se však stanovuje SaO2. " answers="SpO2 a SaO2 jsou stejné hodnoty|SpO2 je saturace periferní krve, SaO2 se změří laboratorně z arteriální krve. Nicméně hodnoty SpO2 a SaO2 jsou téměř totožné." correctoptions="false|true" explanations="ne|ano" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz id="q2" type="choice2" question="Nastavte v posuvníku takovou hondotu PO2, aby saturace ukazovala přibližně naměřenou hodnotu. Kolik je parciální tlak?" answers="&#x2250; 93 mmHg|&#x2250; 73 mmHg|&#x2250; 53 mmHg" correctoptions="true|false|false" explanations="ano|ne|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz id="q3" type="choice2" question="Jaká je tedy koncentrace kyslíku v arteriální krvi? Viz disociační křivka vlevo dole" answers="&#x2250; 8.2 mmol/l|&#x2250; 5.2 mmol/l|&#x2250; 3.2 mmol/l" correctoptions="true|false|false" explanations="ano|ne|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz id="q4" type="choice2" question="Jaká koncentrace  kyslíku je volně rozpuštěna v plasmě(nevázané na hemoglobin)" answers="&#x2250; 0.13 mmol/l|&#x2250; 0.09 mmol/l|&#x2250; 0.05 mmol/l" correctoptions="true|false|false" explanations="ano|ne|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz id="q5" type="choice2" question="Jakou měrou se podílí volně rozpuštěný kyslík k celkové koncentraci kyslíku v krvi" answers="1.6 %|16%" correctoptions="true|false" explanations="ano 0.13/8.12 = 0.016 což je 1.6%|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
-<bdl-quiz-control ids="q1,q2,q3,q4,q5"></bdl-quiz-control>
-
-
+<bdl-quiz id="q2" type="choice2" question="Nastavte v posuvníku hodnotu PCO2 na hodnotu v arteriální krvi. Jaká je celková koncentrace CO<sub>2</sub> v arteriální krvi?" answers="&#x2250; 8.2 mmol/l|&#x2250; 6.2 mmol/l|&#x2250; 4.1 mmol/l" correctoptions="true|false|false" explanations="ano|ne|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz id="q3" type="choice2" question="Jaká je koncentrace CO2 volně rozpuštěného(nevázané na hemoglobin) v plasmě?" answers="&#x2250; 0.16 mmol/l|&#x2250; 0.08 mmol/l|&#x2250; 0.04 mmol/l" correctoptions="true|false|false" explanations="ano|ne|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz id="q5" type="choice2" question="Jakou měrou se podílí volně rozpuštěný oxidu uhličitý na celkové koncentraci (tj. včetně navázaného na hemoglobin) v krvi" answers="2 %|20%" correctoptions="true|false" explanations="ano 0.16/8.12 = 0.0195 což je přibližně 2%|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz id="q2a" type="choice2" question="Nastavte v posuvníku hodnotu PCO2 na hodnotu ve venózní krvi. Jaká je celková koncentrace CO<sub>2</sub> ve venózní krvi?" answers="&#x2250; 8.9 mmol/l|&#x2250; 6.9 mmol/l|&#x2250; 4.9 mmol/l" correctoptions="true|false|false" explanations="ano|ne|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz id="q3a" type="choice2" question="Jaká je koncentrace CO2 volně rozpuštěného(nevázané na hemoglobin) v plasmě?" answers="&#x2250; 0.19 mmol/l|&#x2250; 0.08 mmol/l|&#x2250; 0.04 mmol/l" correctoptions="true|false|false" explanations="ano|ne|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz id="q5a" type="choice2" question="Jakou měrou se podílí volně rozpuštěný oxidu uhličitý na celkové koncentraci (tj. včetně navázaného na hemoglobin) ve venózní krvi" answers="2.1 %|21%" correctoptions="true|false" explanations="ano 0.19/8.9 = 0.02134 což je přibližně 2.1%|ne" buttontitle="zkontrolovat odpověď"></bdl-quiz>
+<bdl-quiz-control ids="q2,q3,q5,q2a,q3a,q5a"></bdl-quiz-control>
 
 
 </div>
@@ -25,20 +24,17 @@ Jan, si před odjezdem nechal odebrat žilní krev. Výsledek mu přišel večer
 
 <!--bdl-chartjs-fixed-xy width="500" height="200" colorindex="6" fromid="idfmi" labels="" initialdata="" refindex="0" refvalues="101" xrefindex="101" xrefvalues="101" xtofixed="0" convertors="0.00750061683,1;100,9.4" xlabel="pO2 [mmHg]" ylabel="SaO2" maxdata="1024" xrefpointindex="405" refpointindex="407" throttle="0"></bdl-chartjs-fixed-xy-->
 
-<bdl-chartjs-time width="300" height="150" fromid="idfmi" labels="ctCO2" initialdata="" refindex="1" refvalues="1" maxdata="201" showrefpoint="true" ylabel="ctCO2 [mmol/l]"></bdl-chartjs-time>
-<bdl-chartjs-time width="200" height="150" fromid="idfmi" labels="cdCO2" ylabel="cdCO2 [mmol/l]" initialdata="" refindex="2" refvalues="1" maxdata="201" showrefpoint="true"></bdl-chartjs-time>
+<bdl-chartjs-time width="500" height="150" fromid="idfmi" labels="ctCO2" initialdata="" refindex="1" refvalues="1" maxdata="402" showrefpoint="true" ylabel="ctCO2 [mmol/l]"></bdl-chartjs-time>
+<bdl-chartjs-time width="500" height="150" fromid="idfmi" labels="cdCO2" ylabel="cdCO2 [mmol/l]" initialdata="" refindex="2" refvalues="1" maxdata="402" showrefpoint="true"></bdl-chartjs-time>
 
-
-<div style="margin-left:60px; width:420px">
-<bdl-range  id="id2" title="" min="1" max="190" default="24" step="1" maxlength="3" showicons="false" fireevent="xdata" ></bdl-range>
+<div style="margin-left:60px; width:440px">
+<bdl-range  id="id2" title="" min="1" max="200" default="5" step="1" maxlength="3" showicons="false" fireevent="xdata" ></bdl-range>
 </div>
-
-**Saturační křivka. Závislost parciálního tlaku a saturace hemoglobinu kyslíkem.**
 
 
 <!--bdl-chartjs-fixed-xy width="300" height="150" colorindex="6" fromid="idfmi" labels="" initialdata="" refindex="0" refvalues="101" xrefindex="101" xrefvalues="101" xtofixed="0" convertors="0.00750061683,1;1,1" xlabel="pO2 [mmHg]" ylabel="ct[O2] mmol/L" maxdata="1024" xrefpointindex="405" refpointindex="407" throttle="0"></bdl-chartjs-fixed-xy><bdl-chartjs-fixed-xy width="200" height="150" fromid="idfmi" labels="" initialdata="" refindex="408" refvalues="101" xrefindex="101" xrefvalues="101" xtofixed="0" convertors="0.00750061683,1;1,1" xlabel="pO2 [mmHg]" ylabel="cdO2 [mmol/l]" maxdata="5" xrefpointindex="405" refpointindex="610"  throttle="0"></bdl-chartjs-fixed-xy-->
 
-**Disociační křivky závislosti celkové koncentrace (vlevo) a difúzní koncentrace (vpravo) na parciálním tlaku kyslíku v krvi. Difúzní koncentrace volně rozpuštěného kyslíku v plasmě, který není vázán na hemoglobin.**
+**Disociační křivky závislosti celkové koncentrace (ctCO<sub>2</sub>) a difúzní koncentrace (cdCO<sub>2</sub>) na parciálním tlaku oxidu uhličitého v krvi. **
 
 
 </div>
