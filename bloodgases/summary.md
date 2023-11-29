@@ -1,6 +1,8 @@
 * [Úvod](#index.md) 
 * [Kazuistika VH1](#pribeh1.md) 
-  * [VH 2a](#pribeh2a.md) 
+  * [VH - O2](#pribeh2a.md)
+  * [VH - CO2](#pribeh2b-pco2.md)
+* [Křivky O2CO2](#bloodymaryO2CO2.md)
 
 <!--
   * [VH 2](#pribeh2.md)
@@ -10,7 +12,7 @@
     * [Komplexní simulace plic](#komplexnisimulator.md)
     * [Simulátor krevních plynů 1](#bloodymary2.md)
     * [Simulátor krevních plynů 2](#bloodymary3.md)
-  * [Křivky O2CO2](#bloodymaryO2CO2.md)
+
     * [Křivky O2CO2 více proměnných](#bloodymaryO2CO2ViceProm.md)
   * [Animace - Nanogenerátory](#c03_nanogeneratory.md)
     * [Palivo pro mitochondriální <br/> nanogenerátory](#c04_palivo.md)
