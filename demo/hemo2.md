@@ -31,7 +31,7 @@ Apply negative inotropy agent: <bdl-buttonparams title="Nifedipin 20mg" ids="idl
   
 </div>
 <div class="w3-col l4">
-<bdl-chartjs-xy id="id10" width="350" height="600" fromid="id4" labels="pressure, volume" initialdata="" refindex="0" refvalues="2" maxdata="512" convertors="0.00750062,1;1000000,1" xlabel="pressure" ylabel="volume"></bdl-chartjs-xy>
+<bdl-chartjs-xy id="id10" width="350" height="600" fromid="id4" labels="volume,pressure" initialdata="" refindex="0" refvalues="2" maxdata="512" convertors="1000000,1;0.00750062,1" xlabel="volume" ylabel="pressure"></bdl-chartjs-xy>
 
 </div>
 </div>
