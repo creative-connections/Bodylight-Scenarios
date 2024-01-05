@@ -1,4 +1,4 @@
-# Introduction
+# test with CVODE solver
 
 Test Pulsatile circulation - non-linear model exported from OpenModelica FMU/co simulation with CVODE solver.
 SUNDIALS CVODE sources 6.x used and CVODE code inside OM updated appropriately
