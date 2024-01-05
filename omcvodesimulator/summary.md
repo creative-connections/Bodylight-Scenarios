@@ -1,2 +1,2 @@
-  * [index.md](#index.md)
-  * [index1.md](#index1.md)
+  * [cvode solver](#index.md)
+  * [euler solver](#index1.md)
