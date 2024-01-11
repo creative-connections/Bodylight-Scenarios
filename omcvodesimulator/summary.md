@@ -1,2 +1,5 @@
-  * [cvode solver](#index.md)
-  * [euler solver](#index1.md)
+  * [Pulsatile Circulation cvode solver](#index.md)
+  * [Pulsatile Circulation euler solver](#index1.md)
+  * [Pulsatile Circulation OM119](#indexEulerOM119.md)
+  * [lorenzattractor euler OM119](#lorenzattractor.md)
+  * [lorenzattractor2024 euler OM123](#lorenzattractor2024.md)
