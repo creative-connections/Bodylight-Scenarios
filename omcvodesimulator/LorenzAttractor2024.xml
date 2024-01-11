@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fmiModelDescription
+  fmiVersion="2.0"
+  modelName="LorenzAttractor2024"
+  guid="{8c4e810f-3df3-4a00-8276-176fa3c9f9e0}"
+  description=""
+  generationTool="OpenModelica Compiler OpenModelica 1.23.0~dev-206-g00d3636"
+  generationDateAndTime="2024-01-11T12:57:46Z"
+  variableNamingConvention="structured"
+  numberOfEventIndicators="0">
+  <CoSimulation
+    modelIdentifier="LorenzAttractor2024"
+    needsExecutionTool="false"
+    canHandleVariableCommunicationStepSize="true"
+    canInterpolateInputs="true"
+    maxOutputDerivativeOrder="1"
+    canRunAsynchronuously = "false"
+    canBeInstantiatedOnlyOncePerProcess="false"
+    canNotUseMemoryManagementFunctions="false"
+    canGetAndSetFMUstate="false"
+    canSerializeFMUstate="false"
+    providesDirectionalDerivative="false">
+    <SourceFiles>
+      <File name="LorenzAttractor2024.c" />
+      <File name="LorenzAttractor2024_functions.c" />
+      <File name="LorenzAttractor2024_records.c" />
+      <File name="LorenzAttractor2024_01exo.c" />
+      <File name="LorenzAttractor2024_02nls.c" />
+      <File name="LorenzAttractor2024_03lsy.c" />
+      <File name="LorenzAttractor2024_04set.c" />
+      <File name="LorenzAttractor2024_05evt.c" />
+      <File name="LorenzAttractor2024_06inz.c" />
+      <File name="LorenzAttractor2024_07dly.c" />
+      <File name="LorenzAttractor2024_08bnd.c" />
+      <File name="LorenzAttractor2024_09alg.c" />
+      <File name="LorenzAttractor2024_10asr.c" />
+      <File name="LorenzAttractor2024_11mix.c" />
+      <File name="LorenzAttractor2024_12jac.c" />
+      <File name="LorenzAttractor2024_13opt.c" />
+      <File name="LorenzAttractor2024_14lnz.c" />
+      <File name="LorenzAttractor2024_15syn.c" />
+      <File name="LorenzAttractor2024_16dae.c" />
+      <File name="LorenzAttractor2024_17inl.c" />
+      <File name="LorenzAttractor2024_18spd.c" />
+      <File name="LorenzAttractor2024_init_fmu.c" />
+      <File name="LorenzAttractor2024_FMU.c" />
+      <File name="./gc/memory_pool.c" />
+      <File name="./gc/omc_gc.c" />
+      <File name="./util/base_array.c" />
+      <File name="./util/boolean_array.c" />
+      <File name="./util/context.c" />
+      <File name="./util/division.c" />
+      <File name="./util/doubleEndedList.c" />
+      <File name="./util/generic_array.c" />
+      <File name="./util/index_spec.c" />
+      <File name="./util/integer_array.c" />
+      <File name="./util/list.c" />
+      <File name="./util/modelica_string_lit.c" />
+      <File name="./util/modelica_string.c" />
+      <File name="./util/ModelicaUtilities.c" />
+      <File name="./util/omc_error.c" />
+      <File name="./util/omc_file.c" />
+      <File name="./util/omc_init.c" />
+      <File name="./util/omc_mmap.c" />
+      <File name="./util/omc_msvc.c" />
+      <File name="./util/omc_numbers.c" />
+      <File name="./util/parallel_helper.c" />
+      <File name="./util/rational.c" />
+      <File name="./util/real_array.c" />
+      <File name="./util/ringbuffer.c" />
+      <File name="./util/simulation_options.c" />
+      <File name="./util/string_array.c" />
+      <File name="./util/utility.c" />
+      <File name="./util/varinfo.c" />
+      <File name="./math-support/pivot.c" />
+      <File name="./simulation/jacobian_util.c" />
+      <File name="./simulation/omc_simulation_util.c" />
+      <File name="./simulation/options.c" />
+      <File name="./simulation/simulation_info_json.c" />
+      <File name="./simulation/simulation_omc_assert.c" />
+      <File name="./simulation/solver/delay.c" />
+      <File name="./simulation/solver/fmi_events.c" />
+      <File name="./simulation/solver/model_help.c" />
+      <File name="./simulation/solver/omc_math.c" />
+      <File name="./simulation/solver/spatialDistribution.c" />
+      <File name="./simulation/solver/stateset.c" />
+      <File name="./simulation/solver/synchronous.c" />
+      <File name="./simulation/solver/initialization/initialization.c" />
+      <File name="./meta/meta_modelica_catch.c" />
+    </SourceFiles>
+  </CoSimulation>
+  <LogCategories>
+    <Category name="logEvents" />
+    <Category name="logSingularLinearSystems" />
+    <Category name="logNonlinearSystems" />
+    <Category name="logDynamicStateSelection" />
+    <Category name="logStatusWarning" />
+    <Category name="logStatusDiscard" />
+    <Category name="logStatusError" />
+    <Category name="logStatusFatal" />
+    <Category name="logStatusPending" />
+    <Category name="logAll" />
+    <Category name="logFmi2Call" />
+  </LogCategories>
+  <DefaultExperiment startTime="0.0" stopTime="1.0" tolerance="1e-6"/>
+  <ModelVariables>
+  <!-- Index of variable = "1" -->
+  <ScalarVariable
+    name="x"
+    valueReference="0"
+    initial="exact">
+    <Real start="-1.0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "2" -->
+  <ScalarVariable
+    name="y"
+    valueReference="1"
+    initial="exact">
+    <Real start="1.0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "3" -->
+  <ScalarVariable
+    name="z"
+    valueReference="2"
+    initial="exact">
+    <Real start="0.0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "4" -->
+  <ScalarVariable
+    name="der(x)"
+    valueReference="3"
+    >
+    <Real derivative="1"/>
+  </ScalarVariable>
+  <!-- Index of variable = "5" -->
+  <ScalarVariable
+    name="der(y)"
+    valueReference="4"
+    >
+    <Real derivative="2"/>
+  </ScalarVariable>
+  <!-- Index of variable = "6" -->
+  <ScalarVariable
+    name="der(z)"
+    valueReference="5"
+    >
+    <Real derivative="3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "7" -->
+  <ScalarVariable
+    name="beta"
+    valueReference="6"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="2.6666666666666665"/>
+  </ScalarVariable>
+  <!-- Index of variable = "8" -->
+  <ScalarVariable
+    name="ro"
+    valueReference="7"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="99.96"/>
+  </ScalarVariable>
+  <!-- Index of variable = "9" -->
+  <ScalarVariable
+    name="sigma"
+    valueReference="8"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="10.0"/>
+  </ScalarVariable>
+  </ModelVariables>
+  <ModelStructure>
+    <Derivatives>
+      <Unknown index="4" dependencies="1 2" dependenciesKind="dependent dependent" />
+      <Unknown index="5" dependencies="1 2 3" dependenciesKind="dependent dependent dependent" />
+      <Unknown index="6" dependencies="1 2 3" dependenciesKind="dependent dependent dependent" />
+    </Derivatives>
+    <InitialUnknowns>
+      <Unknown index="4" dependencies="1 2 9" dependenciesKind="dependent dependent dependent" />
+      <Unknown index="5" dependencies="1 2 3 8" dependenciesKind="dependent dependent dependent dependent" />
+      <Unknown index="6" dependencies="1 2 3 7" dependenciesKind="dependent dependent dependent dependent" />
+    </InitialUnknowns>
+  </ModelStructure>
+</fmiModelDescription>
