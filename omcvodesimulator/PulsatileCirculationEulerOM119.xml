@@ -1,0 +1,4621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fmiModelDescription
+  fmiVersion="2.0"
+  modelName="Physiolibrary.Hydraulic.Examples.Fernandez2013.PulsatileCirculation"
+  guid="{62094bf0-ee88-4265-ac79-d3688aec8ad0}"
+  description="Model of cardiovascular system with pulsatile dynamic"
+  generationTool="OpenModelica Compiler OpenModelica 1.19.2"
+  generationDateAndTime="2024-01-10T15:09:05Z"
+  variableNamingConvention="structured"
+  numberOfEventIndicators="8">
+  <CoSimulation
+    modelIdentifier="Physiolibrary_Hydraulic_Examples_Fernandez2013_PulsatileCirculation"
+    needsExecutionTool="false"
+    canHandleVariableCommunicationStepSize="true"
+    canInterpolateInputs="true"
+    maxOutputDerivativeOrder="1"
+    canRunAsynchronuously = "false"
+    canBeInstantiatedOnlyOncePerProcess="false"
+    canNotUseMemoryManagementFunctions="false"
+    canGetAndSetFMUstate="false"
+    canSerializeFMUstate="false"
+    providesDirectionalDerivative="false">
+    <SourceFiles>
+      <File name="Physiolibrary_Hydraulic_Examples_Fernandez2013_PulsatileCirculation.c" />
+      <File name="Physiolibrary_Hydraulic_Examples_Fernandez2013_PulsatileCirculation_functions.c" />
+      <File name="Physiolibrary_Hydraulic_Examples_Fernandez2013_PulsatileCirculation_records.c" />
+      <File name="Physiolibrary_Hydraulic_Examples_Fernandez2013_PulsatileCirculation_01exo.c" />
+      <File name="Physiolibrary_Hydraulic_Examples_Fernandez2013_PulsatileCirculation_02nls.c" />
+      <File name="Physiolibrary_Hydraulic_Examples_Fernandez2013_PulsatileCirculation_03lsy.c" />
+      <File name="Physiolibrary_Hydraulic_Examples_Fernandez2013_PulsatileCirculation_04set.c" />
+      <File name="Physiolibrary_Hydraulic_Examples_Fernandez2013_PulsatileCirculation_05evt.c" />
+      <File name="Physiolibrary_Hydraulic_Examples_Fernandez2013_PulsatileCirculation_06inz.c" />
+      <File name="Physiolibrary_Hydraulic_Examples_Fernandez2013_PulsatileCirculation_07dly.c" />
+      <File name="Physiolibrary_Hydraulic_Examples_Fernandez2013_PulsatileCirculation_08bnd.c" />
+      <File name="Physiolibrary_Hydraulic_Examples_Fernandez2013_PulsatileCirculation_09alg.c" />
+      <File name="Physiolibrary_Hydraulic_Examples_Fernandez2013_PulsatileCirculation_10asr.c" />
+      <File name="Physiolibrary_Hydraulic_Examples_Fernandez2013_PulsatileCirculation_11mix.c" />
+      <File name="Physiolibrary_Hydraulic_Examples_Fernandez2013_PulsatileCirculation_12jac.c" />
+      <File name="Physiolibrary_Hydraulic_Examples_Fernandez2013_PulsatileCirculation_13opt.c" />
+      <File name="Physiolibrary_Hydraulic_Examples_Fernandez2013_PulsatileCirculation_14lnz.c" />
+      <File name="Physiolibrary_Hydraulic_Examples_Fernandez2013_PulsatileCirculation_15syn.c" />
+      <File name="Physiolibrary_Hydraulic_Examples_Fernandez2013_PulsatileCirculation_16dae.c" />
+      <File name="Physiolibrary_Hydraulic_Examples_Fernandez2013_PulsatileCirculation_17inl.c" />
+      <File name="Physiolibrary_Hydraulic_Examples_Fernandez2013_PulsatileCirculation_18spd.c" />
+      <File name="Physiolibrary_Hydraulic_Examples_Fernandez2013_PulsatileCirculation_init_fmu.c" />
+      <File name="Physiolibrary_Hydraulic_Examples_Fernandez2013_PulsatileCirculation_FMU.c" />
+      <File name="gc/memory_pool.c" />
+      <File name="gc/omc_gc.c" />
+      <File name="./util/base_array.c" />
+      <File name="./util/boolean_array.c" />
+      <File name="./util/division.c" />
+      <File name="./util/doubleEndedList.c" />
+      <File name="./util/generic_array.c" />
+      <File name="./util/index_spec.c" />
+      <File name="./util/integer_array.c" />
+      <File name="./util/jacobian_util.c" />
+      <File name="./util/list.c" />
+      <File name="./util/modelica_string_lit.c" />
+      <File name="./util/modelica_string.c" />
+      <File name="./util/ModelicaUtilities.c" />
+      <File name="./util/omc_error.c" />
+      <File name="./util/omc_file.c" />
+      <File name="./util/omc_init.c" />
+      <File name="./util/omc_mmap.c" />
+      <File name="./util/omc_msvc.c" />
+      <File name="./util/omc_numbers.c" />
+      <File name="./util/parallel_helper.c" />
+      <File name="./util/rational.c" />
+      <File name="./util/real_array.c" />
+      <File name="./util/ringbuffer.c" />
+      <File name="./util/simulation_options.c" />
+      <File name="./util/string_array.c" />
+      <File name="./util/utility.c" />
+      <File name="./util/varinfo.c" />
+      <File name="./math-support/pivot.c" />
+      <File name="./simulation/omc_simulation_util.c" />
+      <File name="./simulation/options.c" />
+      <File name="./simulation/simulation_info_json.c" />
+      <File name="./simulation/simulation_omc_assert.c" />
+      <File name="./simulation/solver/delay.c" />
+      <File name="./simulation/solver/fmi_events.c" />
+      <File name="./simulation/solver/model_help.c" />
+      <File name="./simulation/solver/omc_math.c" />
+      <File name="./simulation/solver/spatialDistribution.c" />
+      <File name="./simulation/solver/stateset.c" />
+      <File name="./simulation/solver/synchronous.c" />
+      <File name="./simulation/solver/initialization/initialization.c" />
+      <File name="./meta/meta_modelica_catch.c" />
+      <File name="./simulation/solver/nonlinearSolverHomotopy.c" />
+      <File name="./simulation/solver/nonlinearSolverHybrd.c" />
+      <File name="./simulation/solver/nonlinearValuesList.c" />
+      <File name="./simulation/solver/nonlinearSystem.c" />
+    </SourceFiles>
+  </CoSimulation>
+  <UnitDefinitions>
+    <Unit name="Hz">
+      <BaseUnit s="-1" />
+    </Unit>
+    <Unit name="Pa.s2/m3">
+      <BaseUnit m="-4" kg="1" />
+    </Unit>
+    <Unit name="m3/(Pa.s)">
+      <BaseUnit m="4" s="1" kg="-1" />
+    </Unit>
+    <Unit name="s">
+      <BaseUnit s="1" />
+    </Unit>
+    <Unit name="Pa/m3">
+      <BaseUnit m="-4" s="-2" kg="1" />
+    </Unit>
+    <Unit name="m3/Pa">
+      <BaseUnit m="4" s="2" kg="-1" />
+    </Unit>
+    <Unit name="1">
+      <BaseUnit />
+    </Unit>
+    <Unit name="m3/s">
+      <BaseUnit m="3" s="-1" />
+    </Unit>
+    <Unit name="m3">
+      <BaseUnit m="3" />
+    </Unit>
+    <Unit name="Pa">
+      <BaseUnit m="-1" s="-2" kg="1" />
+    </Unit>
+  </UnitDefinitions>
+  <TypeDefinitions>
+    <SimpleType name="Physiolibrary.Types.SimulationType">
+      <Enumeration>
+        <Item name="NoInit" value="1"/>
+        <Item name="NormalInit" value="2"/>
+        <Item name="ReadInit" value="3"/>
+        <Item name="InitSteadyState" value="4"/>
+        <Item name="SteadyState" value="5"/>
+      </Enumeration>
+    </SimpleType>
+  </TypeDefinitions>
+  <LogCategories>
+    <Category name="logEvents" />
+    <Category name="logSingularLinearSystems" />
+    <Category name="logNonlinearSystems" />
+    <Category name="logDynamicStateSelection" />
+    <Category name="logStatusWarning" />
+    <Category name="logStatusDiscard" />
+    <Category name="logStatusError" />
+    <Category name="logStatusFatal" />
+    <Category name="logStatusPending" />
+    <Category name="logAll" />
+    <Category name="logFmi2Call" />
+  </LogCategories>
+  <DefaultExperiment startTime="0.0" stopTime="5.0" tolerance="1e-06"/>
+  <ModelVariables>
+  <!-- Index of variable = "1" -->
+  <ScalarVariable
+    name="aorta.state"
+    valueReference="0"
+    description="This state must be connected in inherited class definition"
+    >
+    <Real min="0.0" nominal="1e-06"/>
+  </ScalarVariable>
+  <!-- Index of variable = "2" -->
+  <ScalarVariable
+    name="aorticInertia.state"
+    valueReference="1"
+    description="This state must be connected in inherited class definition"
+    >
+    <Real nominal="1.666666666666667e-08"/>
+  </ScalarVariable>
+  <!-- Index of variable = "3" -->
+  <ScalarVariable
+    name="arteries.state"
+    valueReference="2"
+    description="This state must be connected in inherited class definition"
+    >
+    <Real min="0.0" nominal="1e-06"/>
+  </ScalarVariable>
+  <!-- Index of variable = "4" -->
+  <ScalarVariable
+    name="leftVentricle.state"
+    valueReference="3"
+    description="This state must be connected in inherited class definition"
+    >
+    <Real min="0.0" nominal="1e-06"/>
+  </ScalarVariable>
+  <!-- Index of variable = "5" -->
+  <ScalarVariable
+    name="pulmonaryArterialInertia.state"
+    valueReference="4"
+    description="This state must be connected in inherited class definition"
+    >
+    <Real nominal="1.666666666666667e-08"/>
+  </ScalarVariable>
+  <!-- Index of variable = "6" -->
+  <ScalarVariable
+    name="pulmonaryArterioles.state"
+    valueReference="5"
+    description="This state must be connected in inherited class definition"
+    >
+    <Real min="0.0" nominal="1e-06"/>
+  </ScalarVariable>
+  <!-- Index of variable = "7" -->
+  <ScalarVariable
+    name="pulmonaryArtery.state"
+    valueReference="6"
+    description="This state must be connected in inherited class definition"
+    >
+    <Real min="0.0" nominal="1e-06"/>
+  </ScalarVariable>
+  <!-- Index of variable = "8" -->
+  <ScalarVariable
+    name="pulmonaryVeins.state"
+    valueReference="7"
+    description="This state must be connected in inherited class definition"
+    >
+    <Real min="0.0" nominal="1e-06"/>
+  </ScalarVariable>
+  <!-- Index of variable = "9" -->
+  <ScalarVariable
+    name="pulmonaryVeinsInertia.state"
+    valueReference="8"
+    description="This state must be connected in inherited class definition"
+    >
+    <Real nominal="1.666666666666667e-08"/>
+  </ScalarVariable>
+  <!-- Index of variable = "10" -->
+  <ScalarVariable
+    name="rightVentricle.state"
+    valueReference="9"
+    description="This state must be connected in inherited class definition"
+    >
+    <Real min="0.0" nominal="1e-06"/>
+  </ScalarVariable>
+  <!-- Index of variable = "11" -->
+  <ScalarVariable
+    name="systemicInertia.state"
+    valueReference="10"
+    description="This state must be connected in inherited class definition"
+    >
+    <Real nominal="1.666666666666667e-08"/>
+  </ScalarVariable>
+  <!-- Index of variable = "12" -->
+  <ScalarVariable
+    name="veins.state"
+    valueReference="11"
+    description="This state must be connected in inherited class definition"
+    >
+    <Real min="0.0" nominal="1e-06"/>
+  </ScalarVariable>
+  <!-- Index of variable = "13" -->
+  <ScalarVariable
+    name="der(aorta.state)"
+    valueReference="12"
+    description="der(This state must be connected in inherited class definition)"
+    >
+    <Real derivative="1"/>
+  </ScalarVariable>
+  <!-- Index of variable = "14" -->
+  <ScalarVariable
+    name="der(aorticInertia.state)"
+    valueReference="13"
+    description="der(This state must be connected in inherited class definition)"
+    >
+    <Real derivative="2"/>
+  </ScalarVariable>
+  <!-- Index of variable = "15" -->
+  <ScalarVariable
+    name="der(arteries.state)"
+    valueReference="14"
+    description="der(This state must be connected in inherited class definition)"
+    >
+    <Real derivative="3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "16" -->
+  <ScalarVariable
+    name="der(leftVentricle.state)"
+    valueReference="15"
+    description="der(This state must be connected in inherited class definition)"
+    >
+    <Real derivative="4"/>
+  </ScalarVariable>
+  <!-- Index of variable = "17" -->
+  <ScalarVariable
+    name="der(pulmonaryArterialInertia.state)"
+    valueReference="16"
+    description="der(This state must be connected in inherited class definition)"
+    >
+    <Real derivative="5"/>
+  </ScalarVariable>
+  <!-- Index of variable = "18" -->
+  <ScalarVariable
+    name="der(pulmonaryArterioles.state)"
+    valueReference="17"
+    description="der(This state must be connected in inherited class definition)"
+    >
+    <Real derivative="6"/>
+  </ScalarVariable>
+  <!-- Index of variable = "19" -->
+  <ScalarVariable
+    name="der(pulmonaryArtery.state)"
+    valueReference="18"
+    description="der(This state must be connected in inherited class definition)"
+    >
+    <Real derivative="7"/>
+  </ScalarVariable>
+  <!-- Index of variable = "20" -->
+  <ScalarVariable
+    name="der(pulmonaryVeins.state)"
+    valueReference="19"
+    description="der(This state must be connected in inherited class definition)"
+    >
+    <Real derivative="8"/>
+  </ScalarVariable>
+  <!-- Index of variable = "21" -->
+  <ScalarVariable
+    name="der(pulmonaryVeinsInertia.state)"
+    valueReference="20"
+    description="der(This state must be connected in inherited class definition)"
+    >
+    <Real derivative="9"/>
+  </ScalarVariable>
+  <!-- Index of variable = "22" -->
+  <ScalarVariable
+    name="der(rightVentricle.state)"
+    valueReference="21"
+    description="der(This state must be connected in inherited class definition)"
+    >
+    <Real derivative="10"/>
+  </ScalarVariable>
+  <!-- Index of variable = "23" -->
+  <ScalarVariable
+    name="der(systemicInertia.state)"
+    valueReference="22"
+    description="der(This state must be connected in inherited class definition)"
+    >
+    <Real derivative="11"/>
+  </ScalarVariable>
+  <!-- Index of variable = "24" -->
+  <ScalarVariable
+    name="der(veins.state)"
+    valueReference="23"
+    description="der(This state must be connected in inherited class definition)"
+    >
+    <Real derivative="12"/>
+  </ScalarVariable>
+  <!-- Index of variable = "25" -->
+  <ScalarVariable
+    name="RLeftMyo.dp"
+    valueReference="24"
+    description="Pressure gradient"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "26" -->
+  <ScalarVariable
+    name="RLeftMyo.q_out.pressure"
+    valueReference="25"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "27" -->
+  <ScalarVariable
+    name="RPulmonaryArtery.dp"
+    valueReference="26"
+    description="Pressure gradient"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "28" -->
+  <ScalarVariable
+    name="RPulmonaryArtery.q_out.pressure"
+    valueReference="27"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "29" -->
+  <ScalarVariable
+    name="RPulmonaryVeins.dp"
+    valueReference="28"
+    description="Pressure gradient"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "30" -->
+  <ScalarVariable
+    name="RPulmonaryVeins.q_out.pressure"
+    valueReference="29"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "31" -->
+  <ScalarVariable
+    name="RRightMyo.dp"
+    valueReference="30"
+    description="Pressure gradient"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "32" -->
+  <ScalarVariable
+    name="RRightMyo.q_in.pressure"
+    valueReference="31"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "33" -->
+  <ScalarVariable
+    name="RRightMyo.q_out.pressure"
+    valueReference="32"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "34" -->
+  <ScalarVariable
+    name="RSystemic.dp"
+    valueReference="33"
+    description="Pressure gradient"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "35" -->
+  <ScalarVariable
+    name="RSystemic.q_out.pressure"
+    valueReference="34"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "36" -->
+  <ScalarVariable
+    name="Raorta.dp"
+    valueReference="35"
+    description="Pressure gradient"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "37" -->
+  <ScalarVariable
+    name="Raorta.q_out.pressure"
+    valueReference="36"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "38" -->
+  <ScalarVariable
+    name="aorta.excessVolume"
+    valueReference="37"
+    description="Additional volume, that generate pressure"
+    >
+    <Real min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "39" -->
+  <ScalarVariable
+    name="aorta.q_in.q"
+    valueReference="38"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "40" -->
+  <ScalarVariable
+    name="aorticInertia.change"
+    valueReference="39"
+    description="Dynamic change of state value per minute"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "41" -->
+  <ScalarVariable
+    name="aorticInertia.dp"
+    valueReference="40"
+    description="Pressure gradient"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "42" -->
+  <ScalarVariable
+    name="aorticValve.dp"
+    valueReference="41"
+    description="Pressure gradient"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "43" -->
+  <ScalarVariable
+    name="aorticValve.passableVariable"
+    valueReference="42"
+    description="Auxiliary variable for actual position on the ideal diode characteristic"
+    >
+    <Real unit="1"/>
+  </ScalarVariable>
+  <!-- Index of variable = "44" -->
+  <ScalarVariable
+    name="aorticValve.q_out.pressure"
+    valueReference="43"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "45" -->
+  <ScalarVariable
+    name="aorticValve.volumeFlowRate"
+    valueReference="44"
+    description="Volumetric flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "46" -->
+  <ScalarVariable
+    name="arteries.excessVolume"
+    valueReference="45"
+    description="Additional volume, that generate pressure"
+    >
+    <Real min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "47" -->
+  <ScalarVariable
+    name="arteries.q_in.pressure"
+    valueReference="46"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "48" -->
+  <ScalarVariable
+    name="arteries.q_in.q"
+    valueReference="47"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "49" -->
+  <ScalarVariable
+    name="leftVentricle.compliance"
+    valueReference="48"
+    >
+    <Real nominal="7.500615758456563e-09" unit="m3/Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "50" -->
+  <ScalarVariable
+    name="leftVentricle.excessVolume"
+    valueReference="49"
+    description="Additional volume, that generate pressure"
+    >
+    <Real min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "51" -->
+  <ScalarVariable
+    name="leftVentricle.externalPressure"
+    valueReference="50"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "52" -->
+  <ScalarVariable
+    name="leftVentricle.q_in.pressure"
+    valueReference="51"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "53" -->
+  <ScalarVariable
+    name="leftVentricle.q_in.q"
+    valueReference="52"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "54" -->
+  <ScalarVariable
+    name="mitralValve.dp"
+    valueReference="53"
+    description="Pressure gradient"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "55" -->
+  <ScalarVariable
+    name="mitralValve.passableVariable"
+    valueReference="54"
+    description="Auxiliary variable for actual position on the ideal diode characteristic"
+    >
+    <Real unit="1"/>
+  </ScalarVariable>
+  <!-- Index of variable = "56" -->
+  <ScalarVariable
+    name="mitralValve.volumeFlowRate"
+    valueReference="55"
+    description="Volumetric flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "57" -->
+  <ScalarVariable
+    name="pulmonaryArterialInertia.change"
+    valueReference="56"
+    description="Dynamic change of state value per minute"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "58" -->
+  <ScalarVariable
+    name="pulmonaryArterialInertia.dp"
+    valueReference="57"
+    description="Pressure gradient"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "59" -->
+  <ScalarVariable
+    name="pulmonaryArterioles.excessVolume"
+    valueReference="58"
+    description="Additional volume, that generate pressure"
+    >
+    <Real min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "60" -->
+  <ScalarVariable
+    name="pulmonaryArterioles.q_in.pressure"
+    valueReference="59"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "61" -->
+  <ScalarVariable
+    name="pulmonaryArterioles.q_in.q"
+    valueReference="60"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "62" -->
+  <ScalarVariable
+    name="pulmonaryArtery.excessVolume"
+    valueReference="61"
+    description="Additional volume, that generate pressure"
+    >
+    <Real min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "63" -->
+  <ScalarVariable
+    name="pulmonaryArtery.q_in.pressure"
+    valueReference="62"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "64" -->
+  <ScalarVariable
+    name="pulmonaryArtery.q_in.q"
+    valueReference="63"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "65" -->
+  <ScalarVariable
+    name="pulmonaryValve.dp"
+    valueReference="64"
+    description="Pressure gradient"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "66" -->
+  <ScalarVariable
+    name="pulmonaryValve.passableVariable"
+    valueReference="65"
+    description="Auxiliary variable for actual position on the ideal diode characteristic"
+    >
+    <Real unit="1"/>
+  </ScalarVariable>
+  <!-- Index of variable = "67" -->
+  <ScalarVariable
+    name="pulmonaryValve.volumeFlowRate"
+    valueReference="66"
+    description="Volumetric flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "68" -->
+  <ScalarVariable
+    name="pulmonaryVeins.excessVolume"
+    valueReference="67"
+    description="Additional volume, that generate pressure"
+    >
+    <Real min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "69" -->
+  <ScalarVariable
+    name="pulmonaryVeins.q_in.pressure"
+    valueReference="68"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "70" -->
+  <ScalarVariable
+    name="pulmonaryVeins.q_in.q"
+    valueReference="69"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "71" -->
+  <ScalarVariable
+    name="pulmonaryVeinsInertia.change"
+    valueReference="70"
+    description="Dynamic change of state value per minute"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "72" -->
+  <ScalarVariable
+    name="pulmonaryVeinsInertia.dp"
+    valueReference="71"
+    description="Pressure gradient"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "73" -->
+  <ScalarVariable
+    name="rightVentricle.compliance"
+    valueReference="72"
+    >
+    <Real nominal="7.500615758456563e-09" unit="m3/Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "74" -->
+  <ScalarVariable
+    name="rightVentricle.excessVolume"
+    valueReference="73"
+    description="Additional volume, that generate pressure"
+    >
+    <Real min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "75" -->
+  <ScalarVariable
+    name="rightVentricle.externalPressure"
+    valueReference="74"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "76" -->
+  <ScalarVariable
+    name="rightVentricle.q_in.q"
+    valueReference="75"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "77" -->
+  <ScalarVariable
+    name="systemicInertia.change"
+    valueReference="76"
+    description="Dynamic change of state value per minute"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "78" -->
+  <ScalarVariable
+    name="systemicInertia.dp"
+    valueReference="77"
+    description="Pressure gradient"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "79" -->
+  <ScalarVariable
+    name="timeVaryingElastanceLeft.E"
+    valueReference="78"
+    >
+    <Real nominal="133322387.415" unit="Pa/m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "80" -->
+  <ScalarVariable
+    name="timeVaryingElastanceLeft.a"
+    valueReference="79"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "81" -->
+  <ScalarVariable
+    name="timeVaryingElastanceLeft.tm"
+    valueReference="80"
+    description="relative time from the beginning of cardiac cycle"
+    >
+    <Real nominal="60.0" unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "82" -->
+  <ScalarVariable
+    name="timeVaryingElastanceRight.E"
+    valueReference="81"
+    >
+    <Real nominal="133322387.415" unit="Pa/m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "83" -->
+  <ScalarVariable
+    name="timeVaryingElastanceRight.a"
+    valueReference="82"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "84" -->
+  <ScalarVariable
+    name="timeVaryingElastanceRight.tm"
+    valueReference="83"
+    description="relative time from the beginning of cardiac cycle"
+    >
+    <Real nominal="60.0" unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "85" -->
+  <ScalarVariable
+    name="tricuspidValve.dp"
+    valueReference="84"
+    description="Pressure gradient"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "86" -->
+  <ScalarVariable
+    name="tricuspidValve.passableVariable"
+    valueReference="85"
+    description="Auxiliary variable for actual position on the ideal diode characteristic"
+    initial="approx">
+    <Real start="0.0" unit="1"/>
+  </ScalarVariable>
+  <!-- Index of variable = "87" -->
+  <ScalarVariable
+    name="tricuspidValve.volumeFlowRate"
+    valueReference="86"
+    description="Volumetric flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "88" -->
+  <ScalarVariable
+    name="veins.excessVolume"
+    valueReference="87"
+    description="Additional volume, that generate pressure"
+    >
+    <Real min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "89" -->
+  <ScalarVariable
+    name="veins.q_in.pressure"
+    valueReference="88"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "90" -->
+  <ScalarVariable
+    name="veins.q_in.q"
+    valueReference="89"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "91" -->
+  <ScalarVariable
+    name="timeVaryingElastanceLeft.HP"
+    valueReference="90"
+    description="heart period"
+    variability="discrete"
+    initial="exact">
+    <Real start="0.0" nominal="60.0" unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "92" -->
+  <ScalarVariable
+    name="timeVaryingElastanceLeft.t0"
+    valueReference="91"
+    description="time of beginning of the cardiac cycle"
+    variability="discrete"
+    initial="exact">
+    <Real start="0.0" nominal="60.0" unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "93" -->
+  <ScalarVariable
+    name="timeVaryingElastanceLeft.ts"
+    valueReference="92"
+    description="duration of systole"
+    variability="discrete"
+    initial="exact">
+    <Real start="0.0" nominal="60.0" unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "94" -->
+  <ScalarVariable
+    name="timeVaryingElastanceRight.HP"
+    valueReference="93"
+    description="heart period"
+    variability="discrete"
+    initial="exact">
+    <Real start="0.0" nominal="60.0" unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "95" -->
+  <ScalarVariable
+    name="timeVaryingElastanceRight.t0"
+    valueReference="94"
+    description="time of beginning of the cardiac cycle"
+    variability="discrete"
+    initial="exact">
+    <Real start="0.0" nominal="60.0" unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "96" -->
+  <ScalarVariable
+    name="timeVaryingElastanceRight.ts"
+    valueReference="95"
+    description="duration of systole"
+    variability="discrete"
+    initial="exact">
+    <Real start="0.0" nominal="60.0" unit="s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "97" -->
+  <ScalarVariable
+    name="RLeftMyo.Conductance"
+    valueReference="96"
+    description="Hydraulic conductance if useConductanceInput=false"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="9.3757696980707e-08" min="0.0" nominal="1.250102626409427e-10" unit="m3/(Pa.s)"/>
+  </ScalarVariable>
+  <!-- Index of variable = "98" -->
+  <ScalarVariable
+    name="RLeftMyo.c"
+    valueReference="97"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real min="0.0" nominal="1.250102626409427e-10" unit="m3/(Pa.s)"/>
+  </ScalarVariable>
+  <!-- Index of variable = "99" -->
+  <ScalarVariable
+    name="RPulmonaryArtery.Conductance"
+    valueReference="98"
+    description="Hydraulic conductance if useConductanceInput=false"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="2.2216823876548e-07" min="0.0" nominal="1.250102626409427e-10" unit="m3/(Pa.s)"/>
+  </ScalarVariable>
+  <!-- Index of variable = "100" -->
+  <ScalarVariable
+    name="RPulmonaryArtery.c"
+    valueReference="99"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real min="0.0" nominal="1.250102626409427e-10" unit="m3/(Pa.s)"/>
+  </ScalarVariable>
+  <!-- Index of variable = "101" -->
+  <ScalarVariable
+    name="RPulmonaryVeins.Conductance"
+    valueReference="100"
+    description="Hydraulic conductance if useConductanceInput=false"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="7.425609600872e-08" min="0.0" nominal="1.250102626409427e-10" unit="m3/(Pa.s)"/>
+  </ScalarVariable>
+  <!-- Index of variable = "102" -->
+  <ScalarVariable
+    name="RPulmonaryVeins.c"
+    valueReference="101"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real min="0.0" nominal="1.250102626409427e-10" unit="m3/(Pa.s)"/>
+  </ScalarVariable>
+  <!-- Index of variable = "103" -->
+  <ScalarVariable
+    name="RRightMyo.Conductance"
+    valueReference="102"
+    description="Hydraulic conductance if useConductanceInput=false"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="4.2858518443821e-07" min="0.0" nominal="1.250102626409427e-10" unit="m3/(Pa.s)"/>
+  </ScalarVariable>
+  <!-- Index of variable = "104" -->
+  <ScalarVariable
+    name="RRightMyo.c"
+    valueReference="103"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real min="0.0" nominal="1.250102626409427e-10" unit="m3/(Pa.s)"/>
+  </ScalarVariable>
+  <!-- Index of variable = "105" -->
+  <ScalarVariable
+    name="RSystemic.Conductance"
+    valueReference="104"
+    description="Hydraulic conductance if useConductanceInput=false"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="7.5006157584566e-09" min="0.0" nominal="1.250102626409427e-10" unit="m3/(Pa.s)"/>
+  </ScalarVariable>
+  <!-- Index of variable = "106" -->
+  <ScalarVariable
+    name="RSystemic.c"
+    valueReference="105"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real min="0.0" nominal="1.250102626409427e-10" unit="m3/(Pa.s)"/>
+  </ScalarVariable>
+  <!-- Index of variable = "107" -->
+  <ScalarVariable
+    name="Raorta.Conductance"
+    valueReference="106"
+    description="Hydraulic conductance if useConductanceInput=false"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="1.1108411938274e-07" min="0.0" nominal="1.250102626409427e-10" unit="m3/(Pa.s)"/>
+  </ScalarVariable>
+  <!-- Index of variable = "108" -->
+  <ScalarVariable
+    name="Raorta.c"
+    valueReference="107"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real min="0.0" nominal="1.250102626409427e-10" unit="m3/(Pa.s)"/>
+  </ScalarVariable>
+  <!-- Index of variable = "109" -->
+  <ScalarVariable
+    name="aorta.CollapsingPressureVolume"
+    valueReference="108"
+    description="Maximal volume, which generate negative collapsing pressure"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="1e-12" min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "110" -->
+  <ScalarVariable
+    name="aorta.Compliance"
+    valueReference="109"
+    description="Compliance if useComplianceInput=false"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="1.6501354668604e-09" nominal="7.500615758456563e-09" unit="m3/Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "111" -->
+  <ScalarVariable
+    name="aorta.ExternalPressure"
+    valueReference="110"
+    description="External pressure. Set zero if internal pressure is relative to external. Valid only if useExternalPressureInput=false."
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="0.0" nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "112" -->
+  <ScalarVariable
+    name="aorta.MinimalCollapsingPressure"
+    valueReference="111"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="-101325.0" nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "113" -->
+  <ScalarVariable
+    name="aorta.ZeroPressureVolume"
+    valueReference="112"
+    description="Maximal volume, that does not generate pressure if useV0Input=false"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="3e-05" min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "114" -->
+  <ScalarVariable
+    name="aorta.a"
+    valueReference="113"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "115" -->
+  <ScalarVariable
+    name="aorta.c"
+    valueReference="114"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real nominal="7.500615758456563e-09" unit="m3/Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "116" -->
+  <ScalarVariable
+    name="aorta.defaultValue"
+    valueReference="115"
+    description="Default value of state."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "117" -->
+  <ScalarVariable
+    name="aorta.ep"
+    valueReference="116"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "118" -->
+  <ScalarVariable
+    name="aorta.initialValue"
+    valueReference="117"
+    description="Initial value of state."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "119" -->
+  <ScalarVariable
+    name="aorta.state_start"
+    valueReference="118"
+    description="State start or init value"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "120" -->
+  <ScalarVariable
+    name="aorta.volume_start"
+    valueReference="119"
+    description="Volume start value"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="4.6e-05" min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "121" -->
+  <ScalarVariable
+    name="aorta.zpv"
+    valueReference="120"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "122" -->
+  <ScalarVariable
+    name="aorticInertia.I"
+    valueReference="121"
+    description="Inertance"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="109990.96961737" nominal="479960594694.0001" unit="Pa.s2/m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "123" -->
+  <ScalarVariable
+    name="aorticInertia.defaultValue"
+    valueReference="122"
+    description="Default value of state."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "124" -->
+  <ScalarVariable
+    name="aorticInertia.initialValue"
+    valueReference="123"
+    description="Initial value of state."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "125" -->
+  <ScalarVariable
+    name="aorticInertia.state_start"
+    valueReference="124"
+    description="State start or init value"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "126" -->
+  <ScalarVariable
+    name="aorticInertia.volumeFlow_start"
+    valueReference="125"
+    description="Volumetric flow start value"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="1.0385e-05" nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "127" -->
+  <ScalarVariable
+    name="aorticValve.Pknee"
+    valueReference="126"
+    description="Forward threshold pressure"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="0.0" min="0.0" nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "128" -->
+  <ScalarVariable
+    name="aorticValve._Goff"
+    valueReference="127"
+    description="Backward state-off conductance (closed valve conductance)"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="1.2501026264094e-12" min="0.0" nominal="1.250102626409427e-10" unit="m3/(Pa.s)"/>
+  </ScalarVariable>
+  <!-- Index of variable = "129" -->
+  <ScalarVariable
+    name="aorticValve._Gon"
+    valueReference="128"
+    description="Forward state-on conductance (open valve conductance)"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="1.9996641612045e-06" min="0.0" nominal="1.250102626409427e-10" unit="m3/(Pa.s)"/>
+  </ScalarVariable>
+  <!-- Index of variable = "130" -->
+  <ScalarVariable
+    name="aorticValve.goff"
+    valueReference="129"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real min="0.0" nominal="1.250102626409427e-10" unit="m3/(Pa.s)"/>
+  </ScalarVariable>
+  <!-- Index of variable = "131" -->
+  <ScalarVariable
+    name="aorticValve.gon"
+    valueReference="130"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real min="0.0" nominal="1.250102626409427e-10" unit="m3/(Pa.s)"/>
+  </ScalarVariable>
+  <!-- Index of variable = "132" -->
+  <ScalarVariable
+    name="arteries.CollapsingPressureVolume"
+    valueReference="131"
+    description="Maximal volume, which generate negative collapsing pressure"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="1e-12" min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "133" -->
+  <ScalarVariable
+    name="arteries.Compliance"
+    valueReference="132"
+    description="Compliance if useComplianceInput=false"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="1.0950899007347e-08" nominal="7.500615758456563e-09" unit="m3/Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "134" -->
+  <ScalarVariable
+    name="arteries.ExternalPressure"
+    valueReference="133"
+    description="External pressure. Set zero if internal pressure is relative to external. Valid only if useExternalPressureInput=false."
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="0.0" nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "135" -->
+  <ScalarVariable
+    name="arteries.MinimalCollapsingPressure"
+    valueReference="134"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="-101325.0" nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "136" -->
+  <ScalarVariable
+    name="arteries.ZeroPressureVolume"
+    valueReference="135"
+    description="Maximal volume, that does not generate pressure if useV0Input=false"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="0.0007" min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "137" -->
+  <ScalarVariable
+    name="arteries.a"
+    valueReference="136"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "138" -->
+  <ScalarVariable
+    name="arteries.c"
+    valueReference="137"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real nominal="7.500615758456563e-09" unit="m3/Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "139" -->
+  <ScalarVariable
+    name="arteries.defaultValue"
+    valueReference="138"
+    description="Default value of state."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "140" -->
+  <ScalarVariable
+    name="arteries.ep"
+    valueReference="139"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "141" -->
+  <ScalarVariable
+    name="arteries.initialValue"
+    valueReference="140"
+    description="Initial value of state."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "142" -->
+  <ScalarVariable
+    name="arteries.state_start"
+    valueReference="141"
+    description="State start or init value"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "143" -->
+  <ScalarVariable
+    name="arteries.volume_start"
+    valueReference="142"
+    description="Volume start value"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="0.0008050000000000001" min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "144" -->
+  <ScalarVariable
+    name="arteries.zpv"
+    valueReference="143"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "145" -->
+  <ScalarVariable
+    name="heartRate.k"
+    valueReference="144"
+    description="Constant Frequency output value"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="1.2" unit="Hz"/>
+  </ScalarVariable>
+  <!-- Index of variable = "146" -->
+  <ScalarVariable
+    name="heartRate.y"
+    valueReference="145"
+    description="Frequency constant"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real unit="Hz"/>
+  </ScalarVariable>
+  <!-- Index of variable = "147" -->
+  <ScalarVariable
+    name="leftVentricle.CollapsingPressureVolume"
+    valueReference="146"
+    description="Maximal volume, which generate negative collapsing pressure"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="1e-12" min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "148" -->
+  <ScalarVariable
+    name="leftVentricle.Compliance"
+    valueReference="147"
+    description="Compliance if useComplianceInput=false"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="1.0" nominal="7.500615758456563e-09" unit="m3/Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "149" -->
+  <ScalarVariable
+    name="leftVentricle.ExternalPressure"
+    valueReference="148"
+    description="External pressure. Set zero if internal pressure is relative to external. Valid only if useExternalPressureInput=false."
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="0.0" nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "150" -->
+  <ScalarVariable
+    name="leftVentricle.MinimalCollapsingPressure"
+    valueReference="149"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="-101325.0" nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "151" -->
+  <ScalarVariable
+    name="leftVentricle.ZeroPressureVolume"
+    valueReference="150"
+    description="Maximal volume, that does not generate pressure if useV0Input=false"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="9.000000000000001e-05" min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "152" -->
+  <ScalarVariable
+    name="leftVentricle.a"
+    valueReference="151"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "153" -->
+  <ScalarVariable
+    name="leftVentricle.defaultValue"
+    valueReference="152"
+    description="Default value of state."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "154" -->
+  <ScalarVariable
+    name="leftVentricle.initialValue"
+    valueReference="153"
+    description="Initial value of state."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "155" -->
+  <ScalarVariable
+    name="leftVentricle.state_start"
+    valueReference="154"
+    description="State start or init value"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "156" -->
+  <ScalarVariable
+    name="leftVentricle.volume_start"
+    valueReference="155"
+    description="Volume start value"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="0.0002097" min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "157" -->
+  <ScalarVariable
+    name="leftVentricle.zpv"
+    valueReference="156"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "158" -->
+  <ScalarVariable
+    name="mitralValve.Pknee"
+    valueReference="157"
+    description="Forward threshold pressure"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="0.0" min="0.0" nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "159" -->
+  <ScalarVariable
+    name="mitralValve._Goff"
+    valueReference="158"
+    description="Backward state-off conductance (closed valve conductance)"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="1.2501026264094e-12" min="0.0" nominal="1.250102626409427e-10" unit="m3/(Pa.s)"/>
+  </ScalarVariable>
+  <!-- Index of variable = "160" -->
+  <ScalarVariable
+    name="mitralValve._Gon"
+    valueReference="159"
+    description="Forward state-on conductance (open valve conductance)"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="1.9996641612045e-06" min="0.0" nominal="1.250102626409427e-10" unit="m3/(Pa.s)"/>
+  </ScalarVariable>
+  <!-- Index of variable = "161" -->
+  <ScalarVariable
+    name="mitralValve.goff"
+    valueReference="160"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real min="0.0" nominal="1.250102626409427e-10" unit="m3/(Pa.s)"/>
+  </ScalarVariable>
+  <!-- Index of variable = "162" -->
+  <ScalarVariable
+    name="mitralValve.gon"
+    valueReference="161"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real min="0.0" nominal="1.250102626409427e-10" unit="m3/(Pa.s)"/>
+  </ScalarVariable>
+  <!-- Index of variable = "163" -->
+  <ScalarVariable
+    name="pulmonaryArterialInertia.I"
+    valueReference="162"
+    description="Inertance"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="99991.79056125" nominal="479960594694.0001" unit="Pa.s2/m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "164" -->
+  <ScalarVariable
+    name="pulmonaryArterialInertia.defaultValue"
+    valueReference="163"
+    description="Default value of state."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "165" -->
+  <ScalarVariable
+    name="pulmonaryArterialInertia.initialValue"
+    valueReference="164"
+    description="Initial value of state."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "166" -->
+  <ScalarVariable
+    name="pulmonaryArterialInertia.state_start"
+    valueReference="165"
+    description="State start or init value"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "167" -->
+  <ScalarVariable
+    name="pulmonaryArterialInertia.volumeFlow_start"
+    valueReference="166"
+    description="Volumetric flow start value"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="7.3233333333333e-07" nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "168" -->
+  <ScalarVariable
+    name="pulmonaryArterioles.CollapsingPressureVolume"
+    valueReference="167"
+    description="Maximal volume, which generate negative collapsing pressure"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="1e-12" min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "169" -->
+  <ScalarVariable
+    name="pulmonaryArterioles.Compliance"
+    valueReference="168"
+    description="Compliance if useComplianceInput=false"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="2.0026644075079e-08" nominal="7.500615758456563e-09" unit="m3/Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "170" -->
+  <ScalarVariable
+    name="pulmonaryArterioles.ExternalPressure"
+    valueReference="169"
+    description="External pressure. Set zero if internal pressure is relative to external. Valid only if useExternalPressureInput=false."
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="0.0" nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "171" -->
+  <ScalarVariable
+    name="pulmonaryArterioles.MinimalCollapsingPressure"
+    valueReference="170"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="-101325.0" nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "172" -->
+  <ScalarVariable
+    name="pulmonaryArterioles.ZeroPressureVolume"
+    valueReference="171"
+    description="Maximal volume, that does not generate pressure if useV0Input=false"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="0.0005999999999999999" min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "173" -->
+  <ScalarVariable
+    name="pulmonaryArterioles.a"
+    valueReference="172"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "174" -->
+  <ScalarVariable
+    name="pulmonaryArterioles.c"
+    valueReference="173"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real nominal="7.500615758456563e-09" unit="m3/Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "175" -->
+  <ScalarVariable
+    name="pulmonaryArterioles.defaultValue"
+    valueReference="174"
+    description="Default value of state."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "176" -->
+  <ScalarVariable
+    name="pulmonaryArterioles.ep"
+    valueReference="175"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "177" -->
+  <ScalarVariable
+    name="pulmonaryArterioles.initialValue"
+    valueReference="176"
+    description="Initial value of state."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "178" -->
+  <ScalarVariable
+    name="pulmonaryArterioles.state_start"
+    valueReference="177"
+    description="State start or init value"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "179" -->
+  <ScalarVariable
+    name="pulmonaryArterioles.volume_start"
+    valueReference="178"
+    description="Volume start value"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="0.000637" min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "180" -->
+  <ScalarVariable
+    name="pulmonaryArterioles.zpv"
+    valueReference="179"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "181" -->
+  <ScalarVariable
+    name="pulmonaryArtery.CollapsingPressureVolume"
+    valueReference="180"
+    description="Maximal volume, which generate negative collapsing pressure"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="1e-12" min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "182" -->
+  <ScalarVariable
+    name="pulmonaryArtery.Compliance"
+    valueReference="181"
+    description="Compliance if useComplianceInput=false"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="6.7505541826109e-10" nominal="7.500615758456563e-09" unit="m3/Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "183" -->
+  <ScalarVariable
+    name="pulmonaryArtery.ExternalPressure"
+    valueReference="182"
+    description="External pressure. Set zero if internal pressure is relative to external. Valid only if useExternalPressureInput=false."
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="0.0" nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "184" -->
+  <ScalarVariable
+    name="pulmonaryArtery.MinimalCollapsingPressure"
+    valueReference="183"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="-101325.0" nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "185" -->
+  <ScalarVariable
+    name="pulmonaryArtery.ZeroPressureVolume"
+    valueReference="184"
+    description="Maximal volume, that does not generate pressure if useV0Input=false"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="2e-05" min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "186" -->
+  <ScalarVariable
+    name="pulmonaryArtery.a"
+    valueReference="185"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "187" -->
+  <ScalarVariable
+    name="pulmonaryArtery.c"
+    valueReference="186"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real nominal="7.500615758456563e-09" unit="m3/Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "188" -->
+  <ScalarVariable
+    name="pulmonaryArtery.defaultValue"
+    valueReference="187"
+    description="Default value of state."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "189" -->
+  <ScalarVariable
+    name="pulmonaryArtery.ep"
+    valueReference="188"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "190" -->
+  <ScalarVariable
+    name="pulmonaryArtery.initialValue"
+    valueReference="189"
+    description="Initial value of state."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "191" -->
+  <ScalarVariable
+    name="pulmonaryArtery.state_start"
+    valueReference="190"
+    description="State start or init value"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "192" -->
+  <ScalarVariable
+    name="pulmonaryArtery.volume_start"
+    valueReference="191"
+    description="Volume start value"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="2.1e-05" min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "193" -->
+  <ScalarVariable
+    name="pulmonaryArtery.zpv"
+    valueReference="192"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "194" -->
+  <ScalarVariable
+    name="pulmonaryValve.Pknee"
+    valueReference="193"
+    description="Forward threshold pressure"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="0.0" min="0.0" nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "195" -->
+  <ScalarVariable
+    name="pulmonaryValve._Goff"
+    valueReference="194"
+    description="Backward state-off conductance (closed valve conductance)"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="1.2501026264094e-12" min="0.0" nominal="1.250102626409427e-10" unit="m3/(Pa.s)"/>
+  </ScalarVariable>
+  <!-- Index of variable = "196" -->
+  <ScalarVariable
+    name="pulmonaryValve._Gon"
+    valueReference="195"
+    description="Forward state-on conductance (open valve conductance)"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="1.9996641612045e-06" min="0.0" nominal="1.250102626409427e-10" unit="m3/(Pa.s)"/>
+  </ScalarVariable>
+  <!-- Index of variable = "197" -->
+  <ScalarVariable
+    name="pulmonaryValve.goff"
+    valueReference="196"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real min="0.0" nominal="1.250102626409427e-10" unit="m3/(Pa.s)"/>
+  </ScalarVariable>
+  <!-- Index of variable = "198" -->
+  <ScalarVariable
+    name="pulmonaryValve.gon"
+    valueReference="197"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real min="0.0" nominal="1.250102626409427e-10" unit="m3/(Pa.s)"/>
+  </ScalarVariable>
+  <!-- Index of variable = "199" -->
+  <ScalarVariable
+    name="pulmonaryVeins.CollapsingPressureVolume"
+    valueReference="198"
+    description="Maximal volume, which generate negative collapsing pressure"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="1e-12" min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "200" -->
+  <ScalarVariable
+    name="pulmonaryVeins.Compliance"
+    valueReference="199"
+    description="Compliance if useComplianceInput=false"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="3.5027875591992e-07" nominal="7.500615758456563e-09" unit="m3/Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "201" -->
+  <ScalarVariable
+    name="pulmonaryVeins.ExternalPressure"
+    valueReference="200"
+    description="External pressure. Set zero if internal pressure is relative to external. Valid only if useExternalPressureInput=false."
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="0.0" nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "202" -->
+  <ScalarVariable
+    name="pulmonaryVeins.MinimalCollapsingPressure"
+    valueReference="201"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="-101325.0" nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "203" -->
+  <ScalarVariable
+    name="pulmonaryVeins.ZeroPressureVolume"
+    valueReference="202"
+    description="Maximal volume, that does not generate pressure if useV0Input=false"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="0.0001" min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "204" -->
+  <ScalarVariable
+    name="pulmonaryVeins.a"
+    valueReference="203"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "205" -->
+  <ScalarVariable
+    name="pulmonaryVeins.c"
+    valueReference="204"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real nominal="7.500615758456563e-09" unit="m3/Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "206" -->
+  <ScalarVariable
+    name="pulmonaryVeins.defaultValue"
+    valueReference="205"
+    description="Default value of state."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "207" -->
+  <ScalarVariable
+    name="pulmonaryVeins.ep"
+    valueReference="206"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "208" -->
+  <ScalarVariable
+    name="pulmonaryVeins.initialValue"
+    valueReference="207"
+    description="Initial value of state."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "209" -->
+  <ScalarVariable
+    name="pulmonaryVeins.state_start"
+    valueReference="208"
+    description="State start or init value"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "210" -->
+  <ScalarVariable
+    name="pulmonaryVeins.volume_start"
+    valueReference="209"
+    description="Volume start value"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="0.0006597" min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "211" -->
+  <ScalarVariable
+    name="pulmonaryVeins.zpv"
+    valueReference="210"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "212" -->
+  <ScalarVariable
+    name="pulmonaryVeinsInertia.I"
+    valueReference="211"
+    description="Inertance"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="410632.9532382" nominal="479960594694.0001" unit="Pa.s2/m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "213" -->
+  <ScalarVariable
+    name="pulmonaryVeinsInertia.defaultValue"
+    valueReference="212"
+    description="Default value of state."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "214" -->
+  <ScalarVariable
+    name="pulmonaryVeinsInertia.initialValue"
+    valueReference="213"
+    description="Initial value of state."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "215" -->
+  <ScalarVariable
+    name="pulmonaryVeinsInertia.state_start"
+    valueReference="214"
+    description="State start or init value"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "216" -->
+  <ScalarVariable
+    name="pulmonaryVeinsInertia.volumeFlow_start"
+    valueReference="215"
+    description="Volumetric flow start value"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="2.225e-05" nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "217" -->
+  <ScalarVariable
+    name="rightVentricle.CollapsingPressureVolume"
+    valueReference="216"
+    description="Maximal volume, which generate negative collapsing pressure"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="1e-12" min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "218" -->
+  <ScalarVariable
+    name="rightVentricle.Compliance"
+    valueReference="217"
+    description="Compliance if useComplianceInput=false"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="1.0" nominal="7.500615758456563e-09" unit="m3/Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "219" -->
+  <ScalarVariable
+    name="rightVentricle.ExternalPressure"
+    valueReference="218"
+    description="External pressure. Set zero if internal pressure is relative to external. Valid only if useExternalPressureInput=false."
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="0.0" nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "220" -->
+  <ScalarVariable
+    name="rightVentricle.MinimalCollapsingPressure"
+    valueReference="219"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="-101325.0" nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "221" -->
+  <ScalarVariable
+    name="rightVentricle.ZeroPressureVolume"
+    valueReference="220"
+    description="Maximal volume, that does not generate pressure if useV0Input=false"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="6.999999999999999e-05" min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "222" -->
+  <ScalarVariable
+    name="rightVentricle.a"
+    valueReference="221"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "223" -->
+  <ScalarVariable
+    name="rightVentricle.defaultValue"
+    valueReference="222"
+    description="Default value of state."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "224" -->
+  <ScalarVariable
+    name="rightVentricle.initialValue"
+    valueReference="223"
+    description="Initial value of state."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "225" -->
+  <ScalarVariable
+    name="rightVentricle.state_start"
+    valueReference="224"
+    description="State start or init value"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "226" -->
+  <ScalarVariable
+    name="rightVentricle.volume_start"
+    valueReference="225"
+    description="Volume start value"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="0.00018" min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "227" -->
+  <ScalarVariable
+    name="rightVentricle.zpv"
+    valueReference="226"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "228" -->
+  <ScalarVariable
+    name="systemicInertia.I"
+    valueReference="227"
+    description="Inertance"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="479960.594694" nominal="479960594694.0001" unit="Pa.s2/m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "229" -->
+  <ScalarVariable
+    name="systemicInertia.defaultValue"
+    valueReference="228"
+    description="Default value of state."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "230" -->
+  <ScalarVariable
+    name="systemicInertia.initialValue"
+    valueReference="229"
+    description="Initial value of state."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "231" -->
+  <ScalarVariable
+    name="systemicInertia.state_start"
+    valueReference="230"
+    description="State start or init value"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "232" -->
+  <ScalarVariable
+    name="systemicInertia.volumeFlow_start"
+    valueReference="231"
+    description="Volumetric flow start value"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="7.935e-05" nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "233" -->
+  <ScalarVariable
+    name="timeVaryingElastanceLeft.Ed"
+    valueReference="232"
+    description="elastance of diastole"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="13332238.7415" nominal="133322387.415" unit="Pa/m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "234" -->
+  <ScalarVariable
+    name="timeVaryingElastanceLeft.Es"
+    valueReference="233"
+    description="elastance of systole"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="183318282.69563" nominal="133322387.415" unit="Pa/m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "235" -->
+  <ScalarVariable
+    name="timeVaryingElastanceLeft.HR"
+    valueReference="234"
+    description="heart rate"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real unit="Hz"/>
+  </ScalarVariable>
+  <!-- Index of variable = "236" -->
+  <ScalarVariable
+    name="timeVaryingElastanceLeft.Pi0"
+    valueReference="235"
+    description="peak isovolumic pressure"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="6666.11937075" nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "237" -->
+  <ScalarVariable
+    name="timeVaryingElastanceRight.Ed"
+    valueReference="236"
+    description="elastance of diastole"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="3999671.62245" nominal="133322387.415" unit="Pa/m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "238" -->
+  <ScalarVariable
+    name="timeVaryingElastanceRight.Es"
+    valueReference="237"
+    description="elastance of systole"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="43729743.0721" nominal="133322387.415" unit="Pa/m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "239" -->
+  <ScalarVariable
+    name="timeVaryingElastanceRight.HR"
+    valueReference="238"
+    description="heart rate"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real unit="Hz"/>
+  </ScalarVariable>
+  <!-- Index of variable = "240" -->
+  <ScalarVariable
+    name="timeVaryingElastanceRight.Pi0"
+    valueReference="239"
+    description="peak isovolumic pressure"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="3199.73729796" nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "241" -->
+  <ScalarVariable
+    name="tricuspidValve.Pknee"
+    valueReference="240"
+    description="Forward threshold pressure"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="0.0" min="0.0" nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "242" -->
+  <ScalarVariable
+    name="tricuspidValve._Goff"
+    valueReference="241"
+    description="Backward state-off conductance (closed valve conductance)"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="1.2501026264094e-12" min="0.0" nominal="1.250102626409427e-10" unit="m3/(Pa.s)"/>
+  </ScalarVariable>
+  <!-- Index of variable = "243" -->
+  <ScalarVariable
+    name="tricuspidValve._Gon"
+    valueReference="242"
+    description="Forward state-on conductance (open valve conductance)"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="1.9996641612045e-06" min="0.0" nominal="1.250102626409427e-10" unit="m3/(Pa.s)"/>
+  </ScalarVariable>
+  <!-- Index of variable = "244" -->
+  <ScalarVariable
+    name="tricuspidValve.goff"
+    valueReference="243"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real min="0.0" nominal="1.250102626409427e-10" unit="m3/(Pa.s)"/>
+  </ScalarVariable>
+  <!-- Index of variable = "245" -->
+  <ScalarVariable
+    name="tricuspidValve.gon"
+    valueReference="244"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real min="0.0" nominal="1.250102626409427e-10" unit="m3/(Pa.s)"/>
+  </ScalarVariable>
+  <!-- Index of variable = "246" -->
+  <ScalarVariable
+    name="veins.CollapsingPressureVolume"
+    valueReference="245"
+    description="Maximal volume, which generate negative collapsing pressure"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="1e-12" min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "247" -->
+  <ScalarVariable
+    name="veins.Compliance"
+    valueReference="246"
+    description="Compliance if useComplianceInput=false"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="1.5001231516913e-07" nominal="7.500615758456563e-09" unit="m3/Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "248" -->
+  <ScalarVariable
+    name="veins.ExternalPressure"
+    valueReference="247"
+    description="External pressure. Set zero if internal pressure is relative to external. Valid only if useExternalPressureInput=false."
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="0.0" nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "249" -->
+  <ScalarVariable
+    name="veins.MinimalCollapsingPressure"
+    valueReference="248"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="-101325.0" nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "250" -->
+  <ScalarVariable
+    name="veins.ZeroPressureVolume"
+    valueReference="249"
+    description="Maximal volume, that does not generate pressure if useV0Input=false"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="0.00237" min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "251" -->
+  <ScalarVariable
+    name="veins.a"
+    valueReference="250"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "252" -->
+  <ScalarVariable
+    name="veins.c"
+    valueReference="251"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real nominal="7.500615758456563e-09" unit="m3/Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "253" -->
+  <ScalarVariable
+    name="veins.defaultValue"
+    valueReference="252"
+    description="Default value of state."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "254" -->
+  <ScalarVariable
+    name="veins.ep"
+    valueReference="253"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "255" -->
+  <ScalarVariable
+    name="veins.initialValue"
+    valueReference="254"
+    description="Initial value of state."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "256" -->
+  <ScalarVariable
+    name="veins.state_start"
+    valueReference="255"
+    description="State start or init value"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "257" -->
+  <ScalarVariable
+    name="veins.volume_start"
+    valueReference="256"
+    description="Volume start value"
+    variability="fixed"
+    causality="parameter"
+    >
+    <Real start="0.002443" min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "258" -->
+  <ScalarVariable
+    name="veins.zpv"
+    valueReference="257"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Real min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "259" -->
+  <ScalarVariable
+    name="RLeftMyo.q_in.pressure"
+    valueReference="51"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "260" -->
+  <ScalarVariable
+    name="RLeftMyo.q_in.q"
+    valueReference="44"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "261" -->
+  <ScalarVariable
+    name="RLeftMyo.q_out.q"
+    valueReference="260"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "262" -->
+  <ScalarVariable
+    name="RLeftMyo.volumeFlowRate"
+    valueReference="44"
+    description="Volumetric flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "263" -->
+  <ScalarVariable
+    name="RPulmonaryArtery.q_in.pressure"
+    valueReference="62"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "264" -->
+  <ScalarVariable
+    name="RPulmonaryArtery.q_in.q"
+    valueReference="4"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "265" -->
+  <ScalarVariable
+    name="RPulmonaryArtery.q_out.q"
+    valueReference="264"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "266" -->
+  <ScalarVariable
+    name="RPulmonaryArtery.volumeFlowRate"
+    valueReference="4"
+    description="Volumetric flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "267" -->
+  <ScalarVariable
+    name="RPulmonaryVeins.q_in.pressure"
+    valueReference="59"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "268" -->
+  <ScalarVariable
+    name="RPulmonaryVeins.q_in.q"
+    valueReference="8"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "269" -->
+  <ScalarVariable
+    name="RPulmonaryVeins.q_out.q"
+    valueReference="268"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "270" -->
+  <ScalarVariable
+    name="RPulmonaryVeins.volumeFlowRate"
+    valueReference="8"
+    description="Volumetric flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "271" -->
+  <ScalarVariable
+    name="RRightMyo.q_in.q"
+    valueReference="66"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "272" -->
+  <ScalarVariable
+    name="RRightMyo.q_out.q"
+    valueReference="271"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "273" -->
+  <ScalarVariable
+    name="RRightMyo.volumeFlowRate"
+    valueReference="66"
+    description="Volumetric flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "274" -->
+  <ScalarVariable
+    name="RSystemic.q_in.pressure"
+    valueReference="46"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "275" -->
+  <ScalarVariable
+    name="RSystemic.q_in.q"
+    valueReference="10"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "276" -->
+  <ScalarVariable
+    name="RSystemic.q_out.q"
+    valueReference="275"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "277" -->
+  <ScalarVariable
+    name="RSystemic.volumeFlowRate"
+    valueReference="10"
+    description="Volumetric flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "278" -->
+  <ScalarVariable
+    name="Raorta.q_in.pressure"
+    valueReference="43"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "279" -->
+  <ScalarVariable
+    name="Raorta.q_in.q"
+    valueReference="1"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "280" -->
+  <ScalarVariable
+    name="Raorta.q_out.q"
+    valueReference="279"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "281" -->
+  <ScalarVariable
+    name="Raorta.volumeFlowRate"
+    valueReference="1"
+    description="Volumetric flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "282" -->
+  <ScalarVariable
+    name="aorta.change"
+    valueReference="38"
+    description="Dynamic change of state value per minute"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "283" -->
+  <ScalarVariable
+    name="aorta.q_in.pressure"
+    valueReference="43"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "284" -->
+  <ScalarVariable
+    name="aorta.volume"
+    valueReference="0"
+    >
+    <Real min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "285" -->
+  <ScalarVariable
+    name="aorticInertia.q_in.pressure"
+    valueReference="36"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "286" -->
+  <ScalarVariable
+    name="aorticInertia.q_in.q"
+    valueReference="1"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "287" -->
+  <ScalarVariable
+    name="aorticInertia.q_out.pressure"
+    valueReference="46"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "288" -->
+  <ScalarVariable
+    name="aorticInertia.q_out.q"
+    valueReference="287"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "289" -->
+  <ScalarVariable
+    name="aorticInertia.volumeFlowRate"
+    valueReference="1"
+    description="Volumetric flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "290" -->
+  <ScalarVariable
+    name="aorticValve.q_in.pressure"
+    valueReference="25"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "291" -->
+  <ScalarVariable
+    name="aorticValve.q_in.q"
+    valueReference="44"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "292" -->
+  <ScalarVariable
+    name="aorticValve.q_out.q"
+    valueReference="291"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "293" -->
+  <ScalarVariable
+    name="arteries.change"
+    valueReference="47"
+    description="Dynamic change of state value per minute"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "294" -->
+  <ScalarVariable
+    name="arteries.volume"
+    valueReference="2"
+    >
+    <Real min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "295" -->
+  <ScalarVariable
+    name="leftVentricle.c"
+    valueReference="48"
+    >
+    <Real nominal="7.500615758456563e-09" unit="m3/Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "296" -->
+  <ScalarVariable
+    name="leftVentricle.change"
+    valueReference="52"
+    description="Dynamic change of state value per minute"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "297" -->
+  <ScalarVariable
+    name="leftVentricle.ep"
+    valueReference="50"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "298" -->
+  <ScalarVariable
+    name="leftVentricle.volume"
+    valueReference="3"
+    >
+    <Real min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "299" -->
+  <ScalarVariable
+    name="mitralValve.q_in.pressure"
+    valueReference="68"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "300" -->
+  <ScalarVariable
+    name="mitralValve.q_in.q"
+    valueReference="55"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "301" -->
+  <ScalarVariable
+    name="mitralValve.q_out.pressure"
+    valueReference="51"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "302" -->
+  <ScalarVariable
+    name="mitralValve.q_out.q"
+    valueReference="301"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "303" -->
+  <ScalarVariable
+    name="pulmonaryArterialInertia.q_in.pressure"
+    valueReference="27"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "304" -->
+  <ScalarVariable
+    name="pulmonaryArterialInertia.q_in.q"
+    valueReference="4"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "305" -->
+  <ScalarVariable
+    name="pulmonaryArterialInertia.q_out.pressure"
+    valueReference="59"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "306" -->
+  <ScalarVariable
+    name="pulmonaryArterialInertia.q_out.q"
+    valueReference="305"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "307" -->
+  <ScalarVariable
+    name="pulmonaryArterialInertia.volumeFlowRate"
+    valueReference="4"
+    description="Volumetric flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "308" -->
+  <ScalarVariable
+    name="pulmonaryArterioles.change"
+    valueReference="60"
+    description="Dynamic change of state value per minute"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "309" -->
+  <ScalarVariable
+    name="pulmonaryArterioles.volume"
+    valueReference="5"
+    >
+    <Real min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "310" -->
+  <ScalarVariable
+    name="pulmonaryArtery.change"
+    valueReference="63"
+    description="Dynamic change of state value per minute"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "311" -->
+  <ScalarVariable
+    name="pulmonaryArtery.volume"
+    valueReference="6"
+    >
+    <Real min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "312" -->
+  <ScalarVariable
+    name="pulmonaryValve.q_in.pressure"
+    valueReference="32"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "313" -->
+  <ScalarVariable
+    name="pulmonaryValve.q_in.q"
+    valueReference="66"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "314" -->
+  <ScalarVariable
+    name="pulmonaryValve.q_out.pressure"
+    valueReference="62"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "315" -->
+  <ScalarVariable
+    name="pulmonaryValve.q_out.q"
+    valueReference="314"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "316" -->
+  <ScalarVariable
+    name="pulmonaryVeins.change"
+    valueReference="69"
+    description="Dynamic change of state value per minute"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "317" -->
+  <ScalarVariable
+    name="pulmonaryVeins.volume"
+    valueReference="7"
+    >
+    <Real min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "318" -->
+  <ScalarVariable
+    name="pulmonaryVeinsInertia.q_in.pressure"
+    valueReference="29"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "319" -->
+  <ScalarVariable
+    name="pulmonaryVeinsInertia.q_in.q"
+    valueReference="8"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "320" -->
+  <ScalarVariable
+    name="pulmonaryVeinsInertia.q_out.pressure"
+    valueReference="68"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "321" -->
+  <ScalarVariable
+    name="pulmonaryVeinsInertia.q_out.q"
+    valueReference="320"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "322" -->
+  <ScalarVariable
+    name="pulmonaryVeinsInertia.volumeFlowRate"
+    valueReference="8"
+    description="Volumetric flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "323" -->
+  <ScalarVariable
+    name="rightVentricle.c"
+    valueReference="72"
+    >
+    <Real nominal="7.500615758456563e-09" unit="m3/Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "324" -->
+  <ScalarVariable
+    name="rightVentricle.change"
+    valueReference="75"
+    description="Dynamic change of state value per minute"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "325" -->
+  <ScalarVariable
+    name="rightVentricle.ep"
+    valueReference="74"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "326" -->
+  <ScalarVariable
+    name="rightVentricle.q_in.pressure"
+    valueReference="31"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "327" -->
+  <ScalarVariable
+    name="rightVentricle.volume"
+    valueReference="9"
+    >
+    <Real min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "328" -->
+  <ScalarVariable
+    name="systemicInertia.q_in.pressure"
+    valueReference="34"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "329" -->
+  <ScalarVariable
+    name="systemicInertia.q_in.q"
+    valueReference="10"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "330" -->
+  <ScalarVariable
+    name="systemicInertia.q_out.pressure"
+    valueReference="88"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "331" -->
+  <ScalarVariable
+    name="systemicInertia.q_out.q"
+    valueReference="330"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "332" -->
+  <ScalarVariable
+    name="systemicInertia.volumeFlowRate"
+    valueReference="10"
+    description="Volumetric flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "333" -->
+  <ScalarVariable
+    name="timeVaryingElastanceLeft.C"
+    valueReference="48"
+    >
+    <Real nominal="7.500615758456563e-09" unit="m3/Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "334" -->
+  <ScalarVariable
+    name="timeVaryingElastanceLeft.Pi"
+    valueReference="50"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "335" -->
+  <ScalarVariable
+    name="timeVaryingElastanceRight.C"
+    valueReference="72"
+    >
+    <Real nominal="7.500615758456563e-09" unit="m3/Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "336" -->
+  <ScalarVariable
+    name="timeVaryingElastanceRight.Pi"
+    valueReference="74"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "337" -->
+  <ScalarVariable
+    name="tricuspidValve.q_in.pressure"
+    valueReference="88"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "338" -->
+  <ScalarVariable
+    name="tricuspidValve.q_in.q"
+    valueReference="86"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "339" -->
+  <ScalarVariable
+    name="tricuspidValve.q_out.pressure"
+    valueReference="31"
+    description="Pressure"
+    >
+    <Real nominal="133.322387415" unit="Pa"/>
+  </ScalarVariable>
+  <!-- Index of variable = "340" -->
+  <ScalarVariable
+    name="tricuspidValve.q_out.q"
+    valueReference="339"
+    description="Volume flow"
+    >
+    <Real nominal="1.666666666666667e-08" unit="m3/s"/>
+  </ScalarVariable>
+  <!-- Index of variable = "341" -->
+  <ScalarVariable
+    name="veins.change"
+    valueReference="89"
+    description="Dynamic change of state value per minute"
+    >
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "342" -->
+  <ScalarVariable
+    name="veins.volume"
+    valueReference="11"
+    >
+    <Real min="0.0" nominal="1e-06" unit="m3"/>
+  </ScalarVariable>
+  <!-- Index of variable = "343" -->
+  <ScalarVariable
+    name="aorta.Simulation"
+    valueReference="0"
+    description="Dynamic with Initialization or Steady State"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Enumeration declaredType="Physiolibrary.Types.SimulationType"/>
+  </ScalarVariable>
+  <!-- Index of variable = "344" -->
+  <ScalarVariable
+    name="aorticInertia.Simulation"
+    valueReference="1"
+    description="Dynamic with Initialization or Steady State"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Enumeration declaredType="Physiolibrary.Types.SimulationType"/>
+  </ScalarVariable>
+  <!-- Index of variable = "345" -->
+  <ScalarVariable
+    name="arteries.Simulation"
+    valueReference="2"
+    description="Dynamic with Initialization or Steady State"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Enumeration declaredType="Physiolibrary.Types.SimulationType"/>
+  </ScalarVariable>
+  <!-- Index of variable = "346" -->
+  <ScalarVariable
+    name="leftVentricle.Simulation"
+    valueReference="3"
+    description="Dynamic with Initialization or Steady State"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Enumeration declaredType="Physiolibrary.Types.SimulationType"/>
+  </ScalarVariable>
+  <!-- Index of variable = "347" -->
+  <ScalarVariable
+    name="pulmonaryArterialInertia.Simulation"
+    valueReference="4"
+    description="Dynamic with Initialization or Steady State"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Enumeration declaredType="Physiolibrary.Types.SimulationType"/>
+  </ScalarVariable>
+  <!-- Index of variable = "348" -->
+  <ScalarVariable
+    name="pulmonaryArterioles.Simulation"
+    valueReference="5"
+    description="Dynamic with Initialization or Steady State"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Enumeration declaredType="Physiolibrary.Types.SimulationType"/>
+  </ScalarVariable>
+  <!-- Index of variable = "349" -->
+  <ScalarVariable
+    name="pulmonaryArtery.Simulation"
+    valueReference="6"
+    description="Dynamic with Initialization or Steady State"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Enumeration declaredType="Physiolibrary.Types.SimulationType"/>
+  </ScalarVariable>
+  <!-- Index of variable = "350" -->
+  <ScalarVariable
+    name="pulmonaryVeins.Simulation"
+    valueReference="7"
+    description="Dynamic with Initialization or Steady State"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Enumeration declaredType="Physiolibrary.Types.SimulationType"/>
+  </ScalarVariable>
+  <!-- Index of variable = "351" -->
+  <ScalarVariable
+    name="pulmonaryVeinsInertia.Simulation"
+    valueReference="8"
+    description="Dynamic with Initialization or Steady State"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Enumeration declaredType="Physiolibrary.Types.SimulationType"/>
+  </ScalarVariable>
+  <!-- Index of variable = "352" -->
+  <ScalarVariable
+    name="rightVentricle.Simulation"
+    valueReference="9"
+    description="Dynamic with Initialization or Steady State"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Enumeration declaredType="Physiolibrary.Types.SimulationType"/>
+  </ScalarVariable>
+  <!-- Index of variable = "353" -->
+  <ScalarVariable
+    name="systemicInertia.Simulation"
+    valueReference="10"
+    description="Dynamic with Initialization or Steady State"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Enumeration declaredType="Physiolibrary.Types.SimulationType"/>
+  </ScalarVariable>
+  <!-- Index of variable = "354" -->
+  <ScalarVariable
+    name="veins.Simulation"
+    valueReference="11"
+    description="Dynamic with Initialization or Steady State"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Enumeration declaredType="Physiolibrary.Types.SimulationType"/>
+  </ScalarVariable>
+  <!-- Index of variable = "355" -->
+  <ScalarVariable
+    name="_D_whenCondition1"
+    valueReference="0"
+    description="timeVaryingElastanceLeft.tm &gt;= pre(timeVaryingElastanceLeft.HP)"
+    variability="discrete"
+    initial="exact">
+    <Boolean start="false"/>
+  </ScalarVariable>
+  <!-- Index of variable = "356" -->
+  <ScalarVariable
+    name="_D_whenCondition2"
+    valueReference="1"
+    description="timeVaryingElastanceRight.tm &gt;= pre(timeVaryingElastanceRight.HP)"
+    variability="discrete"
+    initial="exact">
+    <Boolean start="false"/>
+  </ScalarVariable>
+  <!-- Index of variable = "357" -->
+  <ScalarVariable
+    name="aorticValve.open"
+    valueReference="2"
+    description="Switching state"
+    variability="discrete"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "358" -->
+  <ScalarVariable
+    name="mitralValve.open"
+    valueReference="3"
+    description="Switching state"
+    variability="discrete"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "359" -->
+  <ScalarVariable
+    name="pulmonaryValve.open"
+    valueReference="4"
+    description="Switching state"
+    variability="discrete"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "360" -->
+  <ScalarVariable
+    name="tricuspidValve.open"
+    valueReference="5"
+    description="Switching state"
+    variability="discrete"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "361" -->
+  <ScalarVariable
+    name="RLeftMyo.useConductanceInput"
+    valueReference="6"
+    description="=true, if external conductance value is used"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "362" -->
+  <ScalarVariable
+    name="RPulmonaryArtery.useConductanceInput"
+    valueReference="7"
+    description="=true, if external conductance value is used"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "363" -->
+  <ScalarVariable
+    name="RPulmonaryVeins.useConductanceInput"
+    valueReference="8"
+    description="=true, if external conductance value is used"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "364" -->
+  <ScalarVariable
+    name="RRightMyo.useConductanceInput"
+    valueReference="9"
+    description="=true, if external conductance value is used"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "365" -->
+  <ScalarVariable
+    name="RSystemic.useConductanceInput"
+    valueReference="10"
+    description="=true, if external conductance value is used"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "366" -->
+  <ScalarVariable
+    name="Raorta.useConductanceInput"
+    valueReference="11"
+    description="=true, if external conductance value is used"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "367" -->
+  <ScalarVariable
+    name="aorta.LOAD_STARTS"
+    valueReference="12"
+    description="Load start value of state"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "368" -->
+  <ScalarVariable
+    name="aorta.SAVE_COMPARISON"
+    valueReference="13"
+    description="Compare final state values with original values"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "369" -->
+  <ScalarVariable
+    name="aorta.SAVE_RESULTS"
+    valueReference="14"
+    description="Save final state values"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "370" -->
+  <ScalarVariable
+    name="aorta.isDependent"
+    valueReference="15"
+    description="=true, If zero flow is propagated in eqiulibrium through resistors, impedances, reactions, etc."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "371" -->
+  <ScalarVariable
+    name="aorta.useComplianceInput"
+    valueReference="16"
+    description="=true, if compliance input is used"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "372" -->
+  <ScalarVariable
+    name="aorta.useExternalPressureInput"
+    valueReference="17"
+    description="=true, if external pressure input is used"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "373" -->
+  <ScalarVariable
+    name="aorta.useV0Input"
+    valueReference="18"
+    description="=true, if zero-pressure-volume input is used"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "374" -->
+  <ScalarVariable
+    name="aorticInertia.LOAD_STARTS"
+    valueReference="19"
+    description="Load start value of state"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "375" -->
+  <ScalarVariable
+    name="aorticInertia.SAVE_COMPARISON"
+    valueReference="20"
+    description="Compare final state values with original values"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "376" -->
+  <ScalarVariable
+    name="aorticInertia.SAVE_RESULTS"
+    valueReference="21"
+    description="Save final state values"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "377" -->
+  <ScalarVariable
+    name="aorticInertia.isDependent"
+    valueReference="22"
+    description="=true, If zero flow is propagated in eqiulibrium through resistors, impedances, reactions, etc."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "378" -->
+  <ScalarVariable
+    name="aorticValve.useLimitationInputs"
+    valueReference="23"
+    description="=true, if Gon and Goff are from inputs"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "379" -->
+  <ScalarVariable
+    name="arteries.LOAD_STARTS"
+    valueReference="24"
+    description="Load start value of state"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "380" -->
+  <ScalarVariable
+    name="arteries.SAVE_COMPARISON"
+    valueReference="25"
+    description="Compare final state values with original values"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "381" -->
+  <ScalarVariable
+    name="arteries.SAVE_RESULTS"
+    valueReference="26"
+    description="Save final state values"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "382" -->
+  <ScalarVariable
+    name="arteries.isDependent"
+    valueReference="27"
+    description="=true, If zero flow is propagated in eqiulibrium through resistors, impedances, reactions, etc."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "383" -->
+  <ScalarVariable
+    name="arteries.useComplianceInput"
+    valueReference="28"
+    description="=true, if compliance input is used"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "384" -->
+  <ScalarVariable
+    name="arteries.useExternalPressureInput"
+    valueReference="29"
+    description="=true, if external pressure input is used"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "385" -->
+  <ScalarVariable
+    name="arteries.useV0Input"
+    valueReference="30"
+    description="=true, if zero-pressure-volume input is used"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "386" -->
+  <ScalarVariable
+    name="leftVentricle.LOAD_STARTS"
+    valueReference="31"
+    description="Load start value of state"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "387" -->
+  <ScalarVariable
+    name="leftVentricle.SAVE_COMPARISON"
+    valueReference="32"
+    description="Compare final state values with original values"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "388" -->
+  <ScalarVariable
+    name="leftVentricle.SAVE_RESULTS"
+    valueReference="33"
+    description="Save final state values"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "389" -->
+  <ScalarVariable
+    name="leftVentricle.isDependent"
+    valueReference="34"
+    description="=true, If zero flow is propagated in eqiulibrium through resistors, impedances, reactions, etc."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "390" -->
+  <ScalarVariable
+    name="leftVentricle.useComplianceInput"
+    valueReference="35"
+    description="=true, if compliance input is used"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "391" -->
+  <ScalarVariable
+    name="leftVentricle.useExternalPressureInput"
+    valueReference="36"
+    description="=true, if external pressure input is used"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "392" -->
+  <ScalarVariable
+    name="leftVentricle.useV0Input"
+    valueReference="37"
+    description="=true, if zero-pressure-volume input is used"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "393" -->
+  <ScalarVariable
+    name="mitralValve.useLimitationInputs"
+    valueReference="38"
+    description="=true, if Gon and Goff are from inputs"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "394" -->
+  <ScalarVariable
+    name="pulmonaryArterialInertia.LOAD_STARTS"
+    valueReference="39"
+    description="Load start value of state"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "395" -->
+  <ScalarVariable
+    name="pulmonaryArterialInertia.SAVE_COMPARISON"
+    valueReference="40"
+    description="Compare final state values with original values"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "396" -->
+  <ScalarVariable
+    name="pulmonaryArterialInertia.SAVE_RESULTS"
+    valueReference="41"
+    description="Save final state values"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "397" -->
+  <ScalarVariable
+    name="pulmonaryArterialInertia.isDependent"
+    valueReference="42"
+    description="=true, If zero flow is propagated in eqiulibrium through resistors, impedances, reactions, etc."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "398" -->
+  <ScalarVariable
+    name="pulmonaryArterioles.LOAD_STARTS"
+    valueReference="43"
+    description="Load start value of state"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "399" -->
+  <ScalarVariable
+    name="pulmonaryArterioles.SAVE_COMPARISON"
+    valueReference="44"
+    description="Compare final state values with original values"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "400" -->
+  <ScalarVariable
+    name="pulmonaryArterioles.SAVE_RESULTS"
+    valueReference="45"
+    description="Save final state values"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "401" -->
+  <ScalarVariable
+    name="pulmonaryArterioles.isDependent"
+    valueReference="46"
+    description="=true, If zero flow is propagated in eqiulibrium through resistors, impedances, reactions, etc."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "402" -->
+  <ScalarVariable
+    name="pulmonaryArterioles.useComplianceInput"
+    valueReference="47"
+    description="=true, if compliance input is used"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "403" -->
+  <ScalarVariable
+    name="pulmonaryArterioles.useExternalPressureInput"
+    valueReference="48"
+    description="=true, if external pressure input is used"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "404" -->
+  <ScalarVariable
+    name="pulmonaryArterioles.useV0Input"
+    valueReference="49"
+    description="=true, if zero-pressure-volume input is used"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "405" -->
+  <ScalarVariable
+    name="pulmonaryArtery.LOAD_STARTS"
+    valueReference="50"
+    description="Load start value of state"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "406" -->
+  <ScalarVariable
+    name="pulmonaryArtery.SAVE_COMPARISON"
+    valueReference="51"
+    description="Compare final state values with original values"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "407" -->
+  <ScalarVariable
+    name="pulmonaryArtery.SAVE_RESULTS"
+    valueReference="52"
+    description="Save final state values"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "408" -->
+  <ScalarVariable
+    name="pulmonaryArtery.isDependent"
+    valueReference="53"
+    description="=true, If zero flow is propagated in eqiulibrium through resistors, impedances, reactions, etc."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "409" -->
+  <ScalarVariable
+    name="pulmonaryArtery.useComplianceInput"
+    valueReference="54"
+    description="=true, if compliance input is used"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "410" -->
+  <ScalarVariable
+    name="pulmonaryArtery.useExternalPressureInput"
+    valueReference="55"
+    description="=true, if external pressure input is used"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "411" -->
+  <ScalarVariable
+    name="pulmonaryArtery.useV0Input"
+    valueReference="56"
+    description="=true, if zero-pressure-volume input is used"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "412" -->
+  <ScalarVariable
+    name="pulmonaryValve.useLimitationInputs"
+    valueReference="57"
+    description="=true, if Gon and Goff are from inputs"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "413" -->
+  <ScalarVariable
+    name="pulmonaryVeins.LOAD_STARTS"
+    valueReference="58"
+    description="Load start value of state"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "414" -->
+  <ScalarVariable
+    name="pulmonaryVeins.SAVE_COMPARISON"
+    valueReference="59"
+    description="Compare final state values with original values"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "415" -->
+  <ScalarVariable
+    name="pulmonaryVeins.SAVE_RESULTS"
+    valueReference="60"
+    description="Save final state values"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "416" -->
+  <ScalarVariable
+    name="pulmonaryVeins.isDependent"
+    valueReference="61"
+    description="=true, If zero flow is propagated in eqiulibrium through resistors, impedances, reactions, etc."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "417" -->
+  <ScalarVariable
+    name="pulmonaryVeins.useComplianceInput"
+    valueReference="62"
+    description="=true, if compliance input is used"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "418" -->
+  <ScalarVariable
+    name="pulmonaryVeins.useExternalPressureInput"
+    valueReference="63"
+    description="=true, if external pressure input is used"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "419" -->
+  <ScalarVariable
+    name="pulmonaryVeins.useV0Input"
+    valueReference="64"
+    description="=true, if zero-pressure-volume input is used"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "420" -->
+  <ScalarVariable
+    name="pulmonaryVeinsInertia.LOAD_STARTS"
+    valueReference="65"
+    description="Load start value of state"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "421" -->
+  <ScalarVariable
+    name="pulmonaryVeinsInertia.SAVE_COMPARISON"
+    valueReference="66"
+    description="Compare final state values with original values"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "422" -->
+  <ScalarVariable
+    name="pulmonaryVeinsInertia.SAVE_RESULTS"
+    valueReference="67"
+    description="Save final state values"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "423" -->
+  <ScalarVariable
+    name="pulmonaryVeinsInertia.isDependent"
+    valueReference="68"
+    description="=true, If zero flow is propagated in eqiulibrium through resistors, impedances, reactions, etc."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "424" -->
+  <ScalarVariable
+    name="rightVentricle.LOAD_STARTS"
+    valueReference="69"
+    description="Load start value of state"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "425" -->
+  <ScalarVariable
+    name="rightVentricle.SAVE_COMPARISON"
+    valueReference="70"
+    description="Compare final state values with original values"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "426" -->
+  <ScalarVariable
+    name="rightVentricle.SAVE_RESULTS"
+    valueReference="71"
+    description="Save final state values"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "427" -->
+  <ScalarVariable
+    name="rightVentricle.isDependent"
+    valueReference="72"
+    description="=true, If zero flow is propagated in eqiulibrium through resistors, impedances, reactions, etc."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "428" -->
+  <ScalarVariable
+    name="rightVentricle.useComplianceInput"
+    valueReference="73"
+    description="=true, if compliance input is used"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "429" -->
+  <ScalarVariable
+    name="rightVentricle.useExternalPressureInput"
+    valueReference="74"
+    description="=true, if external pressure input is used"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "430" -->
+  <ScalarVariable
+    name="rightVentricle.useV0Input"
+    valueReference="75"
+    description="=true, if zero-pressure-volume input is used"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "431" -->
+  <ScalarVariable
+    name="systemicInertia.LOAD_STARTS"
+    valueReference="76"
+    description="Load start value of state"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "432" -->
+  <ScalarVariable
+    name="systemicInertia.SAVE_COMPARISON"
+    valueReference="77"
+    description="Compare final state values with original values"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "433" -->
+  <ScalarVariable
+    name="systemicInertia.SAVE_RESULTS"
+    valueReference="78"
+    description="Save final state values"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "434" -->
+  <ScalarVariable
+    name="systemicInertia.isDependent"
+    valueReference="79"
+    description="=true, If zero flow is propagated in eqiulibrium through resistors, impedances, reactions, etc."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "435" -->
+  <ScalarVariable
+    name="tricuspidValve.useLimitationInputs"
+    valueReference="80"
+    description="=true, if Gon and Goff are from inputs"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "436" -->
+  <ScalarVariable
+    name="veins.LOAD_STARTS"
+    valueReference="81"
+    description="Load start value of state"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "437" -->
+  <ScalarVariable
+    name="veins.SAVE_COMPARISON"
+    valueReference="82"
+    description="Compare final state values with original values"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "438" -->
+  <ScalarVariable
+    name="veins.SAVE_RESULTS"
+    valueReference="83"
+    description="Save final state values"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "439" -->
+  <ScalarVariable
+    name="veins.isDependent"
+    valueReference="84"
+    description="=true, If zero flow is propagated in eqiulibrium through resistors, impedances, reactions, etc."
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "440" -->
+  <ScalarVariable
+    name="veins.useComplianceInput"
+    valueReference="85"
+    description="=true, if compliance input is used"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "441" -->
+  <ScalarVariable
+    name="veins.useExternalPressureInput"
+    valueReference="86"
+    description="=true, if external pressure input is used"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "442" -->
+  <ScalarVariable
+    name="veins.useV0Input"
+    valueReference="87"
+    description="=true, if zero-pressure-volume input is used"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <Boolean/>
+  </ScalarVariable>
+  <!-- Index of variable = "443" -->
+  <ScalarVariable
+    name="aorta.stateName"
+    valueReference="0"
+    description="Name in Utilities input/output function"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <String/>
+  </ScalarVariable>
+  <!-- Index of variable = "444" -->
+  <ScalarVariable
+    name="aorta.storeUnit"
+    valueReference="1"
+    description="Unit in Utilities input/output function"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <String/>
+  </ScalarVariable>
+  <!-- Index of variable = "445" -->
+  <ScalarVariable
+    name="aorticInertia.stateName"
+    valueReference="2"
+    description="Name in Utilities input/output function"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <String/>
+  </ScalarVariable>
+  <!-- Index of variable = "446" -->
+  <ScalarVariable
+    name="aorticInertia.storeUnit"
+    valueReference="3"
+    description="Unit in Utilities input/output function"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <String/>
+  </ScalarVariable>
+  <!-- Index of variable = "447" -->
+  <ScalarVariable
+    name="arteries.stateName"
+    valueReference="4"
+    description="Name in Utilities input/output function"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <String/>
+  </ScalarVariable>
+  <!-- Index of variable = "448" -->
+  <ScalarVariable
+    name="arteries.storeUnit"
+    valueReference="5"
+    description="Unit in Utilities input/output function"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <String/>
+  </ScalarVariable>
+  <!-- Index of variable = "449" -->
+  <ScalarVariable
+    name="leftVentricle.stateName"
+    valueReference="6"
+    description="Name in Utilities input/output function"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <String/>
+  </ScalarVariable>
+  <!-- Index of variable = "450" -->
+  <ScalarVariable
+    name="leftVentricle.storeUnit"
+    valueReference="7"
+    description="Unit in Utilities input/output function"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <String/>
+  </ScalarVariable>
+  <!-- Index of variable = "451" -->
+  <ScalarVariable
+    name="pulmonaryArterialInertia.stateName"
+    valueReference="8"
+    description="Name in Utilities input/output function"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <String/>
+  </ScalarVariable>
+  <!-- Index of variable = "452" -->
+  <ScalarVariable
+    name="pulmonaryArterialInertia.storeUnit"
+    valueReference="9"
+    description="Unit in Utilities input/output function"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <String/>
+  </ScalarVariable>
+  <!-- Index of variable = "453" -->
+  <ScalarVariable
+    name="pulmonaryArterioles.stateName"
+    valueReference="10"
+    description="Name in Utilities input/output function"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <String/>
+  </ScalarVariable>
+  <!-- Index of variable = "454" -->
+  <ScalarVariable
+    name="pulmonaryArterioles.storeUnit"
+    valueReference="11"
+    description="Unit in Utilities input/output function"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <String/>
+  </ScalarVariable>
+  <!-- Index of variable = "455" -->
+  <ScalarVariable
+    name="pulmonaryArtery.stateName"
+    valueReference="12"
+    description="Name in Utilities input/output function"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <String/>
+  </ScalarVariable>
+  <!-- Index of variable = "456" -->
+  <ScalarVariable
+    name="pulmonaryArtery.storeUnit"
+    valueReference="13"
+    description="Unit in Utilities input/output function"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <String/>
+  </ScalarVariable>
+  <!-- Index of variable = "457" -->
+  <ScalarVariable
+    name="pulmonaryVeins.stateName"
+    valueReference="14"
+    description="Name in Utilities input/output function"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <String/>
+  </ScalarVariable>
+  <!-- Index of variable = "458" -->
+  <ScalarVariable
+    name="pulmonaryVeins.storeUnit"
+    valueReference="15"
+    description="Unit in Utilities input/output function"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <String/>
+  </ScalarVariable>
+  <!-- Index of variable = "459" -->
+  <ScalarVariable
+    name="pulmonaryVeinsInertia.stateName"
+    valueReference="16"
+    description="Name in Utilities input/output function"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <String/>
+  </ScalarVariable>
+  <!-- Index of variable = "460" -->
+  <ScalarVariable
+    name="pulmonaryVeinsInertia.storeUnit"
+    valueReference="17"
+    description="Unit in Utilities input/output function"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <String/>
+  </ScalarVariable>
+  <!-- Index of variable = "461" -->
+  <ScalarVariable
+    name="rightVentricle.stateName"
+    valueReference="18"
+    description="Name in Utilities input/output function"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <String/>
+  </ScalarVariable>
+  <!-- Index of variable = "462" -->
+  <ScalarVariable
+    name="rightVentricle.storeUnit"
+    valueReference="19"
+    description="Unit in Utilities input/output function"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <String/>
+  </ScalarVariable>
+  <!-- Index of variable = "463" -->
+  <ScalarVariable
+    name="systemicInertia.stateName"
+    valueReference="20"
+    description="Name in Utilities input/output function"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <String/>
+  </ScalarVariable>
+  <!-- Index of variable = "464" -->
+  <ScalarVariable
+    name="systemicInertia.storeUnit"
+    valueReference="21"
+    description="Unit in Utilities input/output function"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <String/>
+  </ScalarVariable>
+  <!-- Index of variable = "465" -->
+  <ScalarVariable
+    name="veins.stateName"
+    valueReference="22"
+    description="Name in Utilities input/output function"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <String/>
+  </ScalarVariable>
+  <!-- Index of variable = "466" -->
+  <ScalarVariable
+    name="veins.storeUnit"
+    valueReference="23"
+    description="Unit in Utilities input/output function"
+    variability="fixed"
+    causality="calculatedParameter"
+    >
+    <String/>
+  </ScalarVariable>
+  </ModelVariables>
+  <ModelStructure>
+    <Derivatives>
+      <Unknown index="13" dependencies="1 2 4" dependenciesKind="dependent dependent dependent" />
+      <Unknown index="14" dependencies="1 2 3" dependenciesKind="dependent dependent dependent" />
+      <Unknown index="15" dependencies="2 11" dependenciesKind="dependent dependent" />
+      <Unknown index="16" dependencies="1 4 8" dependenciesKind="dependent dependent dependent" />
+      <Unknown index="17" dependencies="5 6 7" dependenciesKind="dependent dependent dependent" />
+      <Unknown index="18" dependencies="5 9" dependenciesKind="dependent dependent" />
+      <Unknown index="19" dependencies="5 7 10" dependenciesKind="dependent dependent dependent" />
+      <Unknown index="20" dependencies="4 8 9" dependenciesKind="dependent dependent dependent" />
+      <Unknown index="21" dependencies="6 8 9" dependenciesKind="dependent dependent dependent" />
+      <Unknown index="22" dependencies="7 10 12" dependenciesKind="dependent dependent dependent" />
+      <Unknown index="23" dependencies="3 11 12" dependenciesKind="dependent dependent dependent" />
+      <Unknown index="24" dependencies="10 11 12" dependenciesKind="dependent dependent dependent" />
+    </Derivatives>
+    <InitialUnknowns>
+      <Unknown index="1" dependencies="" dependenciesKind="" />
+      <Unknown index="2" dependencies="" dependenciesKind="" />
+      <Unknown index="3" dependencies="" dependenciesKind="" />
+      <Unknown index="4" dependencies="" dependenciesKind="" />
+      <Unknown index="5" dependencies="" dependenciesKind="" />
+      <Unknown index="6" dependencies="" dependenciesKind="" />
+      <Unknown index="7" dependencies="" dependenciesKind="" />
+      <Unknown index="8" dependencies="" dependenciesKind="" />
+      <Unknown index="9" dependencies="" dependenciesKind="" />
+      <Unknown index="10" dependencies="" dependenciesKind="" />
+      <Unknown index="11" dependencies="" dependenciesKind="" />
+      <Unknown index="12" dependencies="" dependenciesKind="" />
+      <Unknown index="13" dependencies="97 109 110 111 113 127 128 129 147 151 233 234 236" dependenciesKind="dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent" />
+      <Unknown index="14" dependencies="107 109 110 111 113 122 132 133 134 136" dependenciesKind="dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent" />
+      <Unknown index="15" dependencies="" dependenciesKind="" />
+      <Unknown index="16" dependencies="97 109 110 111 113 127 128 129 147 151 158 159 160 199 200 201 203 233 234 236" dependenciesKind="dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent" />
+      <Unknown index="17" dependencies="99 163 168 169 170 172 181 182 183 185" dependenciesKind="dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent" />
+      <Unknown index="18" dependencies="" dependenciesKind="" />
+      <Unknown index="19" dependencies="103 181 182 183 185 194 195 196 217 221 237 238 240" dependenciesKind="dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent" />
+      <Unknown index="20" dependencies="147 151 158 159 160 199 200 201 203 233 234 236" dependenciesKind="dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent" />
+      <Unknown index="21" dependencies="101 168 169 170 172 199 200 201 203 212" dependenciesKind="dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent" />
+      <Unknown index="22" dependencies="103 181 182 183 185 194 195 196 217 221 237 238 240 241 242 243 246 247 248 250" dependenciesKind="dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent" />
+      <Unknown index="23" dependencies="105 132 133 134 136 228 246 247 248 250" dependenciesKind="dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent" />
+      <Unknown index="24" dependencies="217 221 237 238 240 241 242 243 246 247 248 250" dependenciesKind="dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent" />
+      <Unknown index="98" dependencies="97" dependenciesKind="dependent" />
+      <Unknown index="100" dependencies="99" dependenciesKind="dependent" />
+      <Unknown index="102" dependencies="101" dependenciesKind="dependent" />
+      <Unknown index="104" dependencies="103" dependenciesKind="dependent" />
+      <Unknown index="106" dependencies="105" dependenciesKind="dependent" />
+      <Unknown index="108" dependencies="107" dependenciesKind="dependent" />
+      <Unknown index="114" dependencies="112" dependenciesKind="dependent" />
+      <Unknown index="115" dependencies="110" dependenciesKind="dependent" />
+      <Unknown index="116" dependencies="" dependenciesKind="" />
+      <Unknown index="117" dependencies="111" dependenciesKind="dependent" />
+      <Unknown index="118" dependencies="" dependenciesKind="" />
+      <Unknown index="119" dependencies="120" dependenciesKind="dependent" />
+      <Unknown index="121" dependencies="113" dependenciesKind="dependent" />
+      <Unknown index="123" dependencies="" dependenciesKind="" />
+      <Unknown index="124" dependencies="" dependenciesKind="" />
+      <Unknown index="125" dependencies="126" dependenciesKind="dependent" />
+      <Unknown index="130" dependencies="128" dependenciesKind="dependent" />
+      <Unknown index="131" dependencies="129" dependenciesKind="dependent" />
+      <Unknown index="137" dependencies="135" dependenciesKind="dependent" />
+      <Unknown index="138" dependencies="133" dependenciesKind="dependent" />
+      <Unknown index="139" dependencies="" dependenciesKind="" />
+      <Unknown index="140" dependencies="134" dependenciesKind="dependent" />
+      <Unknown index="141" dependencies="" dependenciesKind="" />
+      <Unknown index="142" dependencies="143" dependenciesKind="dependent" />
+      <Unknown index="144" dependencies="136" dependenciesKind="dependent" />
+      <Unknown index="146" dependencies="145" dependenciesKind="dependent" />
+      <Unknown index="152" dependencies="150" dependenciesKind="dependent" />
+      <Unknown index="153" dependencies="" dependenciesKind="" />
+      <Unknown index="154" dependencies="" dependenciesKind="" />
+      <Unknown index="155" dependencies="156" dependenciesKind="dependent" />
+      <Unknown index="157" dependencies="151" dependenciesKind="dependent" />
+      <Unknown index="161" dependencies="159" dependenciesKind="dependent" />
+      <Unknown index="162" dependencies="160" dependenciesKind="dependent" />
+      <Unknown index="164" dependencies="" dependenciesKind="" />
+      <Unknown index="165" dependencies="" dependenciesKind="" />
+      <Unknown index="166" dependencies="167" dependenciesKind="dependent" />
+      <Unknown index="173" dependencies="171" dependenciesKind="dependent" />
+      <Unknown index="174" dependencies="169" dependenciesKind="dependent" />
+      <Unknown index="175" dependencies="" dependenciesKind="" />
+      <Unknown index="176" dependencies="170" dependenciesKind="dependent" />
+      <Unknown index="177" dependencies="" dependenciesKind="" />
+      <Unknown index="178" dependencies="179" dependenciesKind="dependent" />
+      <Unknown index="180" dependencies="172" dependenciesKind="dependent" />
+      <Unknown index="186" dependencies="184" dependenciesKind="dependent" />
+      <Unknown index="187" dependencies="182" dependenciesKind="dependent" />
+      <Unknown index="188" dependencies="" dependenciesKind="" />
+      <Unknown index="189" dependencies="183" dependenciesKind="dependent" />
+      <Unknown index="190" dependencies="" dependenciesKind="" />
+      <Unknown index="191" dependencies="192" dependenciesKind="dependent" />
+      <Unknown index="193" dependencies="185" dependenciesKind="dependent" />
+      <Unknown index="197" dependencies="195" dependenciesKind="dependent" />
+      <Unknown index="198" dependencies="196" dependenciesKind="dependent" />
+      <Unknown index="204" dependencies="202" dependenciesKind="dependent" />
+      <Unknown index="205" dependencies="200" dependenciesKind="dependent" />
+      <Unknown index="206" dependencies="" dependenciesKind="" />
+      <Unknown index="207" dependencies="201" dependenciesKind="dependent" />
+      <Unknown index="208" dependencies="" dependenciesKind="" />
+      <Unknown index="209" dependencies="210" dependenciesKind="dependent" />
+      <Unknown index="211" dependencies="203" dependenciesKind="dependent" />
+      <Unknown index="213" dependencies="" dependenciesKind="" />
+      <Unknown index="214" dependencies="" dependenciesKind="" />
+      <Unknown index="215" dependencies="216" dependenciesKind="dependent" />
+      <Unknown index="222" dependencies="220" dependenciesKind="dependent" />
+      <Unknown index="223" dependencies="" dependenciesKind="" />
+      <Unknown index="224" dependencies="" dependenciesKind="" />
+      <Unknown index="225" dependencies="226" dependenciesKind="dependent" />
+      <Unknown index="227" dependencies="221" dependenciesKind="dependent" />
+      <Unknown index="229" dependencies="" dependenciesKind="" />
+      <Unknown index="230" dependencies="" dependenciesKind="" />
+      <Unknown index="231" dependencies="232" dependenciesKind="dependent" />
+      <Unknown index="235" dependencies="145" dependenciesKind="dependent" />
+      <Unknown index="239" dependencies="145" dependenciesKind="dependent" />
+      <Unknown index="244" dependencies="242" dependenciesKind="dependent" />
+      <Unknown index="245" dependencies="243" dependenciesKind="dependent" />
+      <Unknown index="251" dependencies="249" dependenciesKind="dependent" />
+      <Unknown index="252" dependencies="247" dependenciesKind="dependent" />
+      <Unknown index="253" dependencies="" dependenciesKind="" />
+      <Unknown index="254" dependencies="248" dependenciesKind="dependent" />
+      <Unknown index="255" dependencies="" dependenciesKind="" />
+      <Unknown index="256" dependencies="257" dependenciesKind="dependent" />
+      <Unknown index="258" dependencies="250" dependenciesKind="dependent" />
+      <Unknown index="343" dependencies="" dependenciesKind="" />
+      <Unknown index="344" dependencies="" dependenciesKind="" />
+      <Unknown index="345" dependencies="" dependenciesKind="" />
+      <Unknown index="346" dependencies="" dependenciesKind="" />
+      <Unknown index="347" dependencies="" dependenciesKind="" />
+      <Unknown index="348" dependencies="" dependenciesKind="" />
+      <Unknown index="349" dependencies="" dependenciesKind="" />
+      <Unknown index="350" dependencies="" dependenciesKind="" />
+      <Unknown index="351" dependencies="" dependenciesKind="" />
+      <Unknown index="352" dependencies="" dependenciesKind="" />
+      <Unknown index="353" dependencies="" dependenciesKind="" />
+      <Unknown index="354" dependencies="" dependenciesKind="" />
+      <Unknown index="361" dependencies="" dependenciesKind="" />
+      <Unknown index="362" dependencies="" dependenciesKind="" />
+      <Unknown index="363" dependencies="" dependenciesKind="" />
+      <Unknown index="364" dependencies="" dependenciesKind="" />
+      <Unknown index="365" dependencies="" dependenciesKind="" />
+      <Unknown index="366" dependencies="" dependenciesKind="" />
+      <Unknown index="367" dependencies="" dependenciesKind="" />
+      <Unknown index="368" dependencies="" dependenciesKind="" />
+      <Unknown index="369" dependencies="" dependenciesKind="" />
+      <Unknown index="370" dependencies="" dependenciesKind="" />
+      <Unknown index="371" dependencies="" dependenciesKind="" />
+      <Unknown index="372" dependencies="" dependenciesKind="" />
+      <Unknown index="373" dependencies="" dependenciesKind="" />
+      <Unknown index="374" dependencies="" dependenciesKind="" />
+      <Unknown index="375" dependencies="" dependenciesKind="" />
+      <Unknown index="376" dependencies="" dependenciesKind="" />
+      <Unknown index="377" dependencies="" dependenciesKind="" />
+      <Unknown index="378" dependencies="" dependenciesKind="" />
+      <Unknown index="379" dependencies="" dependenciesKind="" />
+      <Unknown index="380" dependencies="" dependenciesKind="" />
+      <Unknown index="381" dependencies="" dependenciesKind="" />
+      <Unknown index="382" dependencies="" dependenciesKind="" />
+      <Unknown index="383" dependencies="" dependenciesKind="" />
+      <Unknown index="384" dependencies="" dependenciesKind="" />
+      <Unknown index="385" dependencies="" dependenciesKind="" />
+      <Unknown index="386" dependencies="" dependenciesKind="" />
+      <Unknown index="387" dependencies="" dependenciesKind="" />
+      <Unknown index="388" dependencies="" dependenciesKind="" />
+      <Unknown index="389" dependencies="" dependenciesKind="" />
+      <Unknown index="390" dependencies="" dependenciesKind="" />
+      <Unknown index="391" dependencies="" dependenciesKind="" />
+      <Unknown index="392" dependencies="" dependenciesKind="" />
+      <Unknown index="393" dependencies="" dependenciesKind="" />
+      <Unknown index="394" dependencies="" dependenciesKind="" />
+      <Unknown index="395" dependencies="" dependenciesKind="" />
+      <Unknown index="396" dependencies="" dependenciesKind="" />
+      <Unknown index="397" dependencies="" dependenciesKind="" />
+      <Unknown index="398" dependencies="" dependenciesKind="" />
+      <Unknown index="399" dependencies="" dependenciesKind="" />
+      <Unknown index="400" dependencies="" dependenciesKind="" />
+      <Unknown index="401" dependencies="" dependenciesKind="" />
+      <Unknown index="402" dependencies="" dependenciesKind="" />
+      <Unknown index="403" dependencies="" dependenciesKind="" />
+      <Unknown index="404" dependencies="" dependenciesKind="" />
+      <Unknown index="405" dependencies="" dependenciesKind="" />
+      <Unknown index="406" dependencies="" dependenciesKind="" />
+      <Unknown index="407" dependencies="" dependenciesKind="" />
+      <Unknown index="408" dependencies="" dependenciesKind="" />
+      <Unknown index="409" dependencies="" dependenciesKind="" />
+      <Unknown index="410" dependencies="" dependenciesKind="" />
+      <Unknown index="411" dependencies="" dependenciesKind="" />
+      <Unknown index="412" dependencies="" dependenciesKind="" />
+      <Unknown index="413" dependencies="" dependenciesKind="" />
+      <Unknown index="414" dependencies="" dependenciesKind="" />
+      <Unknown index="415" dependencies="" dependenciesKind="" />
+      <Unknown index="416" dependencies="" dependenciesKind="" />
+      <Unknown index="417" dependencies="" dependenciesKind="" />
+      <Unknown index="418" dependencies="" dependenciesKind="" />
+      <Unknown index="419" dependencies="" dependenciesKind="" />
+      <Unknown index="420" dependencies="" dependenciesKind="" />
+      <Unknown index="421" dependencies="" dependenciesKind="" />
+      <Unknown index="422" dependencies="" dependenciesKind="" />
+      <Unknown index="423" dependencies="" dependenciesKind="" />
+      <Unknown index="424" dependencies="" dependenciesKind="" />
+      <Unknown index="425" dependencies="" dependenciesKind="" />
+      <Unknown index="426" dependencies="" dependenciesKind="" />
+      <Unknown index="427" dependencies="" dependenciesKind="" />
+      <Unknown index="428" dependencies="" dependenciesKind="" />
+      <Unknown index="429" dependencies="" dependenciesKind="" />
+      <Unknown index="430" dependencies="" dependenciesKind="" />
+      <Unknown index="431" dependencies="" dependenciesKind="" />
+      <Unknown index="432" dependencies="" dependenciesKind="" />
+      <Unknown index="433" dependencies="" dependenciesKind="" />
+      <Unknown index="434" dependencies="" dependenciesKind="" />
+      <Unknown index="435" dependencies="" dependenciesKind="" />
+      <Unknown index="436" dependencies="" dependenciesKind="" />
+      <Unknown index="437" dependencies="" dependenciesKind="" />
+      <Unknown index="438" dependencies="" dependenciesKind="" />
+      <Unknown index="439" dependencies="" dependenciesKind="" />
+      <Unknown index="440" dependencies="" dependenciesKind="" />
+      <Unknown index="441" dependencies="" dependenciesKind="" />
+      <Unknown index="442" dependencies="" dependenciesKind="" />
+      <Unknown index="443" dependencies="" dependenciesKind="" />
+      <Unknown index="444" dependencies="" dependenciesKind="" />
+      <Unknown index="445" dependencies="" dependenciesKind="" />
+      <Unknown index="446" dependencies="" dependenciesKind="" />
+      <Unknown index="447" dependencies="" dependenciesKind="" />
+      <Unknown index="448" dependencies="" dependenciesKind="" />
+      <Unknown index="449" dependencies="" dependenciesKind="" />
+      <Unknown index="450" dependencies="" dependenciesKind="" />
+      <Unknown index="451" dependencies="" dependenciesKind="" />
+      <Unknown index="452" dependencies="" dependenciesKind="" />
+      <Unknown index="453" dependencies="" dependenciesKind="" />
+      <Unknown index="454" dependencies="" dependenciesKind="" />
+      <Unknown index="455" dependencies="" dependenciesKind="" />
+      <Unknown index="456" dependencies="" dependenciesKind="" />
+      <Unknown index="457" dependencies="" dependenciesKind="" />
+      <Unknown index="458" dependencies="" dependenciesKind="" />
+      <Unknown index="459" dependencies="" dependenciesKind="" />
+      <Unknown index="460" dependencies="" dependenciesKind="" />
+      <Unknown index="461" dependencies="" dependenciesKind="" />
+      <Unknown index="462" dependencies="" dependenciesKind="" />
+      <Unknown index="463" dependencies="" dependenciesKind="" />
+      <Unknown index="464" dependencies="" dependenciesKind="" />
+      <Unknown index="465" dependencies="" dependenciesKind="" />
+      <Unknown index="466" dependencies="" dependenciesKind="" />
+    </InitialUnknowns>
+  </ModelStructure>
+</fmiModelDescription>
