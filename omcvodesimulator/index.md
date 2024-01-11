@@ -1,7 +1,8 @@
 # test with CVODE solver
 
-Test Pulsatile circulation - non-linear model exported from OpenModelica FMU/co simulation with CVODE solver.
-SUNDIALS CVODE sources 6.x used and CVODE code inside OM updated appropriately
+Test Pulsatile circulation - non-linear model exported from OpenModelica FMU/co simulation with CVODE solver. See Javascript console for errors.
+
+SUNDIALS CVODE sources 6.x used and CVODE code inside OM updated appropriately.
 
 
 <bdl-fmi id="idfmi" mode="continuous" src="PulsatileCirculation.js" fminame="PulsatileCirculation" fmifunctionprefixname="Physiolibrary_Hydraulic_Examples_Fernandez2013_PulsatileCirculation" tolerance="0.000001" starttime="0" stoptime="0" fstepsize="0.001" fpslimit="60" guid="{7aacfc01-0b1e-47a3-869a-4d81c711caaf}" valuereferences="0,43,37" valuelabels="aorta.volume,aorta.q_in.pressure,aorta.q_in.q" inputs="id1,144,1,60,f" inputlabels="heartRate.k" debug="1"></bdl-fmi>
