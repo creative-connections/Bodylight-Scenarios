@@ -3,3 +3,4 @@
   * [Pulsatile Circulation OM119](#indexEulerOM119.md)
   * [lorenzattractor euler OM119](#lorenzattractor.md)
   * [lorenzattractor2024 euler OM123](#lorenzattractor2024.md)
+  * [lorenzattractor2024cvode](#lorenzattractor2024cvode.md)
