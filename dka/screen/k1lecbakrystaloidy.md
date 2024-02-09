@@ -11,7 +11,7 @@
 </div>
 <div class="w3-half">
 
-<bdl-animate-adobe src="k1dm1/Dehydratace3.js" width="600" height="400" name="Dehydratace6" fromid="id4" responsive="true" playafterstart="true"></bdl-animate-adobe>
+<bdl-animate-adobe src="screen/Dehydratace3.js" width="600" height="400" name="Dehydratace6" fromid="id4" responsive="true" playafterstart="true"></bdl-animate-adobe>
 <bdl-animate-adobe-control id="id4"></bdl-animate-adobe-control>
 
 </div>
