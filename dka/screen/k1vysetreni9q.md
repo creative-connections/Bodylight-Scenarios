@@ -31,8 +31,8 @@ Vstupní lab. vyšetření:
           explanations="ano|ne" 
           buttontitle="zkontrolovat odpověď"></bdl-quiz>
 <bdl-quiz id="q2" type="choice2" 
-          question="Leukocyty a co by ještě doplnili zadalší vyšetření (diferenciál)?" 
-          answers="Pro leukocytózu bych doplnil diferenciální rozpočet leukocytů a CRP.|Pacient má suspektní konkomitantní hematologické onemocnění, nelze vyloučit leukémii či leukemizovaný lymfom, doplním vyšetření průtokovou cytometrií z periferní krve k vyloučení či potvrzení této možnosti a naplánuji trepanobiopsii." 
+          question="Jaký je důvod leukocytózy a co by bylo vhodné doplnit za další vyšetření?" 
+          answers="Pro leukocytózu bych doplnil diferenciální rozpočet leukocytů a CRP. V rozboru vidíme leukocytózu a elevaci CRP k hodnotě 58mg/L, predominantně v neutrofilech, což je dáno susp. konkomitantně probíhajícím infektem v kombinaci se stresovou reakcí, tedy vyplavením neutrofilů z KD a sleziny vlivem glukokortikoidů.|Pacient má suspektní konkomitantní hematologické onemocnění, nelze vyloučit leukémii či leukemizovaný lymfom, doplním vyšetření průtokovou cytometrií z periferní krve k vyloučení či potvrzení této možnosti a naplánuji trepanobiopsii." 
           correctoptions="true|false" 
           explanations="ano|ne" 
           buttontitle="zkontrolovat odpověď" ></bdl-quiz>
