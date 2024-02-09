@@ -26,14 +26,11 @@
 <bdl-chartjs-time id="id11" width="200" height="80" fromid="lungsim" refindex="7" refvalues="1" labels="tidal volume"></bdl-chartjs-time>
 <bdl-value fromid="manequin" refindex="3" tohash="true"></bdl-value>
 
-<bdl-buttonparams title="0. Uvod" ids="status" values='"screen/k1uvod.md"'></bdl-buttonparams>
-<bdl-buttonparams title="1. Subj" ids="status" values='"screen/k1subj.md"'></bdl-buttonparams>
-<bdl-buttonparams title="2. Obj" ids="status" values='"screen/k1obj.md"'></bdl-buttonparams>
-<bdl-buttonparams title="2. Obj-quiz" ids="status" values='"screen/k1obj-quiz.md"'></bdl-buttonparams>
-<bdl-buttonparams title="2. Obj-text" ids="status" values='"screen/k1obj-text.md"'></bdl-buttonparams><bdl-buttonparams title="3. Transport" ids="status" values='"screen/k1transport.md"'></bdl-buttonparams>
-<bdl-buttonparams title="4 a. Vysetreni laborator" ids="status" values='"screen/k1vysetreni9.md"'></bdl-buttonparams>
-<bdl-buttonparams title="4 b. Vysetreni diff" ids="status" values='"screen/k1vysetreniDiff.md"'></bdl-buttonparams>
-<bdl-buttonparams title="4 c. Vysetreni biochemie" ids="status" values='"screen/k1vysetrenibiochemie.md"'></bdl-buttonparams>
+<bdl-buttonparams title="0. Simulace" ids="status" values='"screen/k1uvod.md"'></bdl-buttonparams>
+<bdl-buttonparams title="1. Simulace quiz 1" ids="status" values='"screen/k1obj-quiz.md"'></bdl-buttonparams>
+<bdl-buttonparams title="2 a. Vysetreni quiz" ids="status" values='"screen/k1vysetreni9q.md"'></bdl-buttonparams>
+<bdl-buttonparams title="2 b. Vysetreni diff" ids="status" values='"screen/k1vysetreniDiff.md"'></bdl-buttonparams>
+<bdl-buttonparams title="2 c. Vysetreni biochemie" ids="status" values='"screen/k1vysetrenibiochemieq.md"'></bdl-buttonparams>
 <bdl-buttonparams title="5 a. Astrup SA" ids="status" values='"screen/k1vysetreniastrup.md"'></bdl-buttonparams>
 <bdl-buttonparams title="5 b. Astrup EN" ids="status" values='"screen/k1vysetreniastrup2.md"'></bdl-buttonparams>
 <bdl-buttonparams title="6 Dýchání" ids="status" values='"screen/k1dychani.md"'></bdl-buttonparams>
