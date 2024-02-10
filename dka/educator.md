@@ -1,9 +1,6 @@
 <div class="w3-half">
 
-<bdl-remote-value remoteurl="https://patf-lab06.lf1.cuni.cz:5000/manequin" interval="1000" id="manequin" inputs="status"></bdl-remote-value>
-<bdl-remote-value remoteurl="https://patf-lab06.lf1.cuni.cz:5000/lungsim" interval="1000" id="lungsim" inputs="rate;muscle_pressure;blend_duration;compliance;peep;resistance;run"></bdl-remote-value>
-<bdl-remote-value remoteurl="https://patf-lab06.lf1.cuni.cz:5000/cardiohelp" interval="1000" id="cardiohelp" inputs="p_art;p_ven;temp;dot_v"></bdl-remote-value>
-<span class="w3-tiny"><a href="https://patf-lab06.lf1.cuni.cz:5000/manequin" target="_blank">visit and enable self-signed cert: https://patf-lab06.lf1.cuni.cz:5000/manequin</a></span>
+<bdl-remote-value remoteurl="https://patf-lab06.lf1.cuni.cz:5000/lungsim" interval="2000" id="lungsim" inputs="rate;muscle_pressure;blend_duration;compliance;peep;resistance;run"></bdl-remote-value><bdl-chartjs-time id="id11" width="200" height="80" fromid="lungsim" refindex="7" refvalues="1" labels="tidal volume"></bdl-chartjs-time> <span class="w3-button w3-theme"><a href="https://patf-lab06.lf1.cuni.cz:5000/manequin" target="_blank">enable certificate</a></span>
 ![body](body.png)
 **Human simulator <bdl-checkbox id="run" default="true" titlemin="STOPPED" titlemax="RUNNING"></bdl-checkbox><br/>**
 <!--bdl-range id="rate" min="0" max="100" default="7" step="0.5" title="breath rate [1/min]"></bdl-range><br/-->
@@ -15,7 +12,7 @@
 <bdl-range id="resistance" min="8" max="150" default="35" title="Resistance [cmH2O/(l.s)]"></bdl-range><br/>
 <!--bdl-range id="status" min="0" max="150" default="" title="Helper - use for state"></bdl-range><br/-->
 </div>
-<bdl-buttonparams title="normální dýchání" ids="blend_duration,compliance,muscle_pressure,peep,resistance,rate" values='4,50,33,5,35,17'></bdl-buttonparams>
+<bdl-buttonparams title="Normální dýchání" ids="blend_duration,compliance,muscle_pressure,peep,resistance,rate" values='4,50,33,5,35,17'></bdl-buttonparams>
 <bdl-buttonparams title="Kussmaulovo dýchání" ids="blend_duration,compliance,muscle_pressure,peep,resistance,rate" values='4,50,50,5,15,25'></bdl-buttonparams>
 
 <div class="w3-hide">
@@ -23,10 +20,17 @@
 <span id="status"></span>
 </div>
 </div>
-<bdl-chartjs-time id="id11" width="200" height="80" fromid="lungsim" refindex="7" refvalues="1" labels="tidal volume"></bdl-chartjs-time>
 <bdl-value fromid="manequin" refindex="3" tohash="true"></bdl-value>
+<bdl-fb-config api-str="6beb9cc2eaec52b92e54c60a:14def138125db28da79302f38602fbd3ed4acdf9f1380a72b1e3e384c40e5f164e1b72d07eb98827af0df577fe63b8f48f9f3de3a3208d12b25f8c62bae076ff4f79105c91fa9f1e68bc3939063c975f15081254ac2010d0a7678bc9aa1201757b65bfaa2028956ea97868faa7ff9aa3c1c157dd73fd898c6a2a448d0de54b7e9482ff2057cee4df84727a1a2c683236abab0fc6a50f100fa84360efcb12d5d1fd5abf73a9b4ee07f934d04444debe32f62f46da9446c7a9b23af7a9e43a7f38ae383f204ebce87a511f8a3648127a6248243630d6e95c7496284d2d36db48123fe3ade5ea055beb96ad05427506f83b5aa52bc6ba5ee911bc627c86b0c47ca92f0b15a0a36b198ec26586d96dc87d1f6364ce012b3bfd1e87217f15ac05d110fc17320617d7177d2de7b7a7b99f8c5454966bb57103253c5e214bb64579e5319251f3eb87a7d7d3406ea7cbfa0c4a95000c150c254b26e14444e0f55099f2fd174bffa9f395a8aaa60ce504516c9fc7:ce520f6aa563b22a45ddf894bb9224e4"></bdl-fb-config>
 
-<bdl-buttonparams title="0. Simulace" ids="status" values='"screen/k1uvod.md"'></bdl-buttonparams>
+<bdl-fb-set-state title="1.Simulace" value="screen/k1uvod.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="2.Vyš. základ" value="screen/k1vysetreni9q.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="3.Vyš. biochemie Astrup" value="screen/k1vysetrenibiochemieq.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="4.Léčba" value="screen/k1obj-lecba1.md"></bdl-fb-set-state>
+
+
+
+<!--bdl-buttonparams title="0. Simulace" ids="status" values='"screen/k1uvod.md"'></bdl-buttonparams>
 <bdl-buttonparams title="1. Simulace quiz 1" ids="status" values='"screen/k1obj-quiz.md"'></bdl-buttonparams>
 <bdl-buttonparams title="2 a. Vysetreni quiz" ids="status" values='"screen/k1vysetreni9q.md"'></bdl-buttonparams>
 <bdl-buttonparams title="2 b. Vysetreni diff" ids="status" values='"screen/k1vysetreniDiff.md"'></bdl-buttonparams>
@@ -34,6 +38,6 @@
 <bdl-buttonparams title="5 a. Astrup SA" ids="status" values='"screen/k1vysetreniastrup.md"'></bdl-buttonparams>
 <bdl-buttonparams title="5 b. Astrup EN" ids="status" values='"screen/k1vysetreniastrup2.md"'></bdl-buttonparams>
 <bdl-buttonparams title="6 Dýchání" ids="status" values='"screen/k1dychani.md"'></bdl-buttonparams>
-<bdl-buttonparams title="7 Simulátor Glukóza Inzulín" ids="status" values='"screen/gisimulator.md"'></bdl-buttonparams>
+<bdl-buttonparams title="7 Simulátor Glukóza Inzulín" ids="status" values='"screen/gisimulator.md"'></bdl-buttonparams-->
 
 
