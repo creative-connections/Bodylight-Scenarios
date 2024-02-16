@@ -45,6 +45,6 @@ Biochemie vstupně:
           answers="Vzniká díky absolutnímu nedostatku inzulinu a nadprodukci glukagonu, který facilituje vstup glukózy do buněk, to u naprostého nedostatku inzulinu nenastává. Zároveň dochází ke glukoneogenezi v játrech.| Vzniká následkem nadměrného uvolňování glukózy ze zásob ve svalech a podkoží při aktivaci stresové reakce, deficit inzulinu vyvolává nadměrnou retenci glukózy intracelulárně a tělo tak ve snaze zvýšit glykémii extracelulárně k zajištění dostatečného přívodu do CNS aktivuje právě glukoneogenezi ve svalech a podkoží." 
           correctoptions="true|false" 
           explanations="ano|ne" 
-          buttontitle="zkontrolovat odpověď" ></bdl-quiz>          
-</div>
+          buttontitle="zkontrolovat odpověď" ></bdl-quiz>        
+<bdl-quiz-control ids="q3,q4,q5"></bdl-quiz-control>            
 </div>
