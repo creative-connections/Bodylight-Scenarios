@@ -33,8 +33,10 @@
 <bdl-fb-set-state title="4.Léčba 2" value="screen/k1obj-lecba2.md"></bdl-fb-set-state>
 <bdl-fb-set-state title="4.Léčba 3" value="screen/k1obj-lecba3.md"></bdl-fb-set-state>
 <bdl-fb-set-state title="4.Léčba 4" value="screen/k1obj-lecba4.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="4.Léčba Vše" value="screen/k1obj-lecbavse.md"></bdl-fb-set-state>
 
 <bdl-fb-get-state tohash="true"></bdl-fb-get-state>
 
 </div>
 </div>
+
