@@ -17,6 +17,7 @@
     * [screen/k1obj-lecba5](#screen/k1obj-lecba5.md)
     * [screen/k1obj-lecba6](#screen/k1obj-lecba6.md)
     * [screen/k1obj-lecba7](#screen/k1obj-lecba7.md)
+    * [screen/k1obj-lecbavse](#screen/k1obj-lecbavse.md)
   * [k1vysetreni9](#screen/k1vysetreni9.md)
   * [k1dychani](#screen/k1dychani.md)
   * [Simulátory](#screen/gisimulator0.md)
