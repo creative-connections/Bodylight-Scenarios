@@ -58,9 +58,15 @@
                             <span class="w3-small">mmHg</span>
                         </div>
                         <br />
-                        <div class="w3-text-light-green w3-xlarge" id="v6" style="display:none">
+                        <div class="w3-text-teal w3-xlarge" id="v6" style="display:none">
                             &nbsp;Gly 46 <span class="w3-small">mmol/l</span>
-                        </div>                        
+                        </div><br/>
+                        <div class="w3-text-orange w3-xlarge" id="v7" style="display:none">
+                            &nbsp;CRP 58 <span class="w3-small">mg/l</span>
+                        </div><br/>
+                        <div class="w3-text-pink w3-xlarge" id="v8" style="display:none">
+                            &nbsp;T 37.5 <span class="w3-small">°C</span>
+                        </div>                                                
                     </div>
                 </div>
             </div>
@@ -237,7 +243,7 @@
           buttontitle="zkontrolovat odpověď" ></bdl-quizx>          
 <bdl-quiz-summary id="qs1">
   Shrnutí odpovědí:
-  <button class="w3-right w3-button w3-theme" onclick="document.querySelectorAll('#v1, #v2, #v3, #v4, #v5, #v6').forEach(el => el.style.display = 'inline');">Zobraz hodnoty</button>
+  <button class="w3-right w3-button w3-theme" onclick="document.querySelectorAll('#v1, #v2, #v3, #v4, #v5, #v6,#v7,#v8').forEach(el => el.style.display = 'inline');">Zobraz hodnoty</button>
 </bdl-quiz-summary>           
 <bdl-quiz-control ids="q0,q1,q2,q3,q4,q5,qs1"></bdl-quiz-control>                
     </div>
