@@ -93,12 +93,12 @@
         <div style="display:none" id="vcontrols" class="w3-card">
             <button class="w3-button w3-red"
                 onclick="document.getElementById('vcontrols').style.display='none'">X</button>
-            <bdl-remote-value remoteurl="https://patf-lab06.lf1.cuni.cz:5000/lungsim" interval="1000" id="lungsim"
-                inputs="rate;muscle_pressure;blend_duration;compliance;peep;resistance;run"></bdl-remote-value>
-            <bdl-remote-value remoteurl="https://patf-lab06.lf1.cuni.cz:5000/cardiohelp" interval="1000" id="cardiohelp"
-                inputs="p_art;p_ven;temp;dot_v"></bdl-remote-value>
-            <bdl-remote-value remoteurl="https://patf-lab06.lf1.cuni.cz:5000/manequin" interval="1000"
-                id="manequin"></bdl-remote-value>
+            <!--bdl-remote-value remoteurl="https://patf-lab06.lf1.cuni.cz:5000/lungsim" interval="1000" id="lungsim"
+                inputs="rate;muscle_pressure;blend_duration;compliance;peep;resistance;run"></bdl-remote-value-->
+            <!--bdl-remote-value remoteurl="https://patf-lab06.lf1.cuni.cz:5000/cardiohelp" interval="1000" id="cardiohelp"
+                inputs="p_art;p_ven;temp;dot_v"></bdl-remote-value-->
+            <!--bdl-remote-value remoteurl="https://patf-lab06.lf1.cuni.cz:5000/manequin" interval="1000"
+                id="manequin"></bdl-remote-value-->
             <div class="w3-row">
                 <div class="w3-half">
                     <div class="w3-row">
@@ -197,10 +197,10 @@
     </div>
     Pusťte simulaci nebo sledujte simulaci a<br/>
 <bdl-quizx id="q0" type="choice"
-          question="0. jaké objektivní vyšetření se dají udělat ambulantně. S výsledkem během sekund/několika minut" 
+          question="0. Jaké objektivní vyšetření lze u pacienta zvolit s výsledkem během sekund nebo několika minut" 
           answers="A. poslechové vyšetření dechu|B. poslechové vyšetření srdce|C. změření atreriálního tlaku|D. saturace kyslíku v krvi z prstu|E. stanovení glykémie glukometrem z prstu|F. krevní obraz|G. biochemie krve a moči|H. ASTRUP vyšetření tepenné nebo kapilární krve" 
           correctoptions="true|true|true|true|true|false|false|false" 
-          explanations="ano" 
+          explanations="ano|ano|ano|ano|ano|ne|ne|ne" 
           buttontitle="zkontrolovat odpověď" ></bdl-quizx>    
 <bdl-quizx id="q1" type="choice2" 
           question="1. odhadněte dechovou frekvenci" 
@@ -222,7 +222,7 @@
           buttontitle="zkontrolovat odpověď" ></bdl-quizx>        
 <bdl-quizx id="q4" type="choice2" 
           question="3. jaká je saturace kyslíku v krvi" 
-          answers="A. 85 %|B. 91%|C. 97%" 
+          answers="A. 85 %|B. 91%|C. 98%" 
           correctoptions="false|true|false" 
           explanations="ne|ano|ne" 
           buttontitle="zkontrolovat odpověď" ></bdl-quizx>        
