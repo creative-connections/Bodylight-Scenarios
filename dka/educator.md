@@ -25,18 +25,16 @@
 
 <bdl-fb-set-state title="1.Simulace" value="screen/k1uvod.md"></bdl-fb-set-state>
 
-<bdl-fb-set-state title="2.Vyš. základ" value="screen/k1vysetreni9q.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="2.Vyš. krevního obrazu" value="screen/k1vysetreni9q.md"></bdl-fb-set-state>
 
 <bdl-fb-set-state title="3.Vyš. biochemie Astrup" value="screen/k1vysetrenibiochemieq.md"></bdl-fb-set-state>
 
-<bdl-fb-set-state title="4.Léčba" value="screen/k1obj-lecba1.md"></bdl-fb-set-state>
-<bdl-fb-set-state title="4.Léčba 2" value="screen/k1obj-lecba2.md"></bdl-fb-set-state>
-<bdl-fb-set-state title="4.Léčba 3" value="screen/k1obj-lecba3.md"></bdl-fb-set-state>
-<bdl-fb-set-state title="4.Léčba 4" value="screen/k1obj-lecba4.md"></bdl-fb-set-state>
 <bdl-fb-set-state title="4.Léčba Vše" value="screen/k1obj-lecbavse.md"></bdl-fb-set-state>
 
 <bdl-fb-get-state tohash="true"></bdl-fb-get-state>
 
 </div>
 </div>
+
+          question="Rozbor biochemie – Jaká je příčina hyponatrémie:" 
 
