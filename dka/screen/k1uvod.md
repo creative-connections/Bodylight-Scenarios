@@ -37,7 +37,7 @@
                         refvalues="1" throttle="100" colorindex="2" minichart="true"
                         initialdata="0,0.01;0,0"></bdl-chartjs-time>
                     &nbsp;<bdl-chartjs-time width="450" height="60" fromid="hemodynamics" labels="pulsatile sO2"
-                        refindex="0" refvalues="1" throttle="100" colorindex="11" minichart="true"
+                        refindex="0" refvalues="1" throttle="100" colorindex="4" minichart="true"
                         initialdata="0,0.01;11370,11370"></bdl-chartjs-time>
                 </div>
                 <div class="w3-third">
@@ -67,8 +67,8 @@
                         &nbsp;<bdl-chartjs-time width="450" height="60" fromid="idfmi" labels="sO2" refindex="1"
                             refvalues="1" throttle="1000" colorindex="4" minichart="true"
                             initialdata="0,0.01;0.98,0.98"></bdl-chartjs-time>
-                        &nbsp;<bdl-chartjs-time width="450" height="60" fromid="idfmi" labels="pO2,pCO2" refindex="13"
-                            refvalues="2" throttle="1000" colorindex="6" minichart="true"></bdl-chartjs-time>
+<!--                        &nbsp;<bdl-chartjs-time width="450" height="60" fromid="idfmi" labels="pO2,pCO2" refindex="13"
+                            refvalues="2" throttle="1000" colorindex="6" minichart="true"></bdl-chartjs-time-->
                     </div>
                 </div>
                 <div class="w3-third">
@@ -77,14 +77,15 @@
                             &nbsp;sO<sub>2</sub><sup>art</sup><b class="w3-xxlarge"><bdl-value fromid="idfmi"
                                     refindex="1" convertor="100,1" precision="4"></bdl-value></b>&nbsp;<span
                                 class="w3-small">%</span><br /></div>
-                        <div class="w3-text-red w3-large">&nbsp;pO<sub>2</sub><sup>art</sup><b
+                                <!--                        <div class="w3-text-red w3-large">&nbsp;pO<sub>2</sub><sup>art</sup><b
                                 class="w3-large"><bdl-value fromid="idfmi" refindex="13" convertor="1,133.322"
                                     precision="4" convertors="1,133.322"></bdl-value></b>&nbsp;<span
                                 class="w3-small">mmHg</span><br /></div>
                         <div class="w3-text-green w3-large">&nbsp;pCO<sub>2</sub><sup>art</sup><b
                                 class="w3-large"><bdl-value fromid="idfmi" refindex="14" convertor="1,133.322"
                                     precision="4" convertors="1,133.322"></bdl-value></b>&nbsp;<span
-                                class="w3-small">mmHg</span></div </div>
+                                class="w3-small">mmHg</span></div>
+-->                                
                     </div>
                 </div>
             </div>
@@ -195,6 +196,12 @@
         Muž 42 let, přijat na pohotovost v celkově zhoršeném stavu. 
     </div>
     Pusťte simulaci nebo sledujte simulaci a<br/>
+<bdl-quizx id="q0" type="choice"
+          question="0. jaké objektivní vyšetření se dají udělat ambulantně. S výsledkem během sekund/několika minut" 
+          answers="A. poslechové vyšetření dechu|B. poslechové vyšetření srdce|C. změření atreriálního tlaku|D. saturace kyslíku v krvi z prstu|E. stanovení glykémie glukometrem z prstu|F. krevní obraz|G. biochemie krve a moči|H. ASTRUP vyšetření tepenné nebo kapilární krve" 
+          correctoptions="true|true|true|true|true|false|false|false" 
+          explanations="ano" 
+          buttontitle="zkontrolovat odpověď" ></bdl-quizx>    
 <bdl-quizx id="q1" type="choice2" 
           question="1. odhadněte dechovou frekvenci" 
           answers="A. 17 /min|B. 25 /min|C. 33 /min" 
@@ -213,9 +220,15 @@
           correctoptions="true|false|false" 
           explanations="ano|ne|ne" 
           buttontitle="zkontrolovat odpověď" ></bdl-quizx>        
+<bdl-quizx id="q4" type="choice2" 
+          question="3. jaká je saturace kyslíku v krvi" 
+          answers="A. 85 %|B. 91%|C. 97%" 
+          correctoptions="false|true|false" 
+          explanations="ne|ano|ne" 
+          buttontitle="zkontrolovat odpověď" ></bdl-quizx>        
 <bdl-quiz-summary id="qs1">
   Shrnutí odpovědí:
 </bdl-quiz-summary>           
-<bdl-quiz-control ids="q1,q2,q3,qs1"></bdl-quiz-control>                
+<bdl-quiz-control ids="q0,q1,q2,q3,q4,qs1"></bdl-quiz-control>                
     </div>
 </div>
