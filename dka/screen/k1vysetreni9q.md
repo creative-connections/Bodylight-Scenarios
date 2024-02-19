@@ -7,6 +7,7 @@
 Vstupní lab. vyšetření: 
 |veličina|hodnota|jedn|norma|
 |---|---|---|---|
+| CRP | 58 mg/l | [0..10] |
 |Leu| 12,6| 10^9/l |	[4,0..10,0] |
 |Ery| 5,56| 10^12/l |	[3,8..4,8] |
 |Hb| 157| g/l |		[120..168] |
@@ -16,7 +17,6 @@ Vstupní lab. vyšetření:
 |MCHC| 374| g/l |		[329..364] |
 |RDW| 14,5| % |		[12,1..15,0] |
 |Plt| 256| 10^9/l | 		[142..327] |
-
 
 
 
@@ -36,9 +36,9 @@ Vstupní lab. vyšetření:
           correctoptions="true|false" 
           explanations="ano|ne" 
           buttontitle="zkontrolovat odpověď" ></bdl-quizx>
-<bdl-quiz-summary id="qs2">
-  Summary:
+<bdl-quiz-summary id="qs1">
+  Shrnutí odpovědí:
 </bdl-quiz-summary>          
-<bdl-quiz-control ids="q1,q2,qs"></bdl-quiz-control>          
+<bdl-quiz-control ids="q1,q2,qs1"></bdl-quiz-control>          
 </div>
 </div>
