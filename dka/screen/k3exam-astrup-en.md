@@ -29,9 +29,9 @@
 </div>
 <div class="w3-half">
 
-![Acid-base_nomogramK1](screen/Acid-base_nomogramK1.svg)
-
-
+<object id="mySvg" type="image/svg+xml" data="screen/Acid-base_nomogramK1.svg" >
+  Your browser does not support SVG
+</object>
 
 </div>
 </div>
@@ -128,6 +128,7 @@
 
 <bdl-quiz-summary id="qs1">
   Shrnutí odpovědí:
+  <button class="w3-right w3-button w3-theme" onclick="document.getElementById('mySvg').contentDocument.getElementById('patientpoint').style.display='';">Zobraz hodnoty</button> 
 </bdl-quiz-summary>          
 <bdl-quiz-control ids="q7,q8,q9,q10,q11,q12,q13,q14,q15,q16,qs1"></bdl-quiz-control>             
 
