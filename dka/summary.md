@@ -4,7 +4,7 @@
   * [3 Vyšetření ASTRUP a biochemie](#screen/k3vysetreniastrup.md)
   * [4 Léčba](#screen/k4lecba.md)
 * [1 Simulation EN](#screen/k1simulation-en.md)
-  * [2 Exam Blood](#screen/k2exam-blood.md)
+  * [2 Exam Blood](#screen/k2exam-blood-en.md)
   * [3 Astrup and biochemistry](#screen/k3exam-astrup-en.md)
   * [4 Treatment](#screen/k4treatment-en.md)
 * [Další obrazovky]
