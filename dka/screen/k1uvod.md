@@ -30,13 +30,13 @@
             </div>
             <div class="w3-row">
                 <div class="w3-twothird">
-                    &nbsp;<bdl-chartjs-time width="450" height="60" fromid="ventilator" labels="lungs volume"
+                    &nbsp;<bdl-chartjs-time width="390" height="60" fromid="ventilator" labels="lungs volume"
                         refindex="1" refvalues="1" minichart="true" colorindex=5
                         initialdata="0,0.01;0.0023,0.0023" maxdata="128"></bdl-chartjs-time><br />
-                    &nbsp;<bdl-chartjs-time width="450" height="60" fromid="hemodynamics" labels="ecg" refindex="3"
+                    &nbsp;<bdl-chartjs-time width="390" height="60" fromid="hemodynamics" labels="ecg" refindex="3"
                         refvalues="1" throttle="100" colorindex="2" minichart="true"
                         initialdata="0,0.01;0,0"></bdl-chartjs-time>
-                    &nbsp;<bdl-chartjs-time width="450" height="150" fromid="hemodynamics" labels="pulsatile sO2"
+                    &nbsp;<bdl-chartjs-time width="390" height="150" fromid="hemodynamics" labels="pulsatile sO2"
                         refindex="0" refvalues="1" throttle="100" colorindex="4" minichart="false" convertors="0.00750062,1" min="60" max="140"
                         initialdata="0,0.01;11370,11370"></bdl-chartjs-time>
                 </div>
@@ -67,10 +67,10 @@
             <div class="w3-row">
                 <div class="w3-twothird">
                     <div class="w3-row">
-                        &nbsp;<bdl-chartjs-time width="450" height="120" fromid="idfmi" labels="sO2" refindex="1"
+                        &nbsp;<bdl-chartjs-time width="390" height="120" fromid="idfmi" labels="sO2" refindex="1"
                             refvalues="1" throttle="1000" colorindex="4" minichart="false" min="0.8" max="1.0"
                             initialdata="0,0.01;0.98,0.98" displayxticks="false"></bdl-chartjs-time>
-<!--                        &nbsp;<bdl-chartjs-time width="450" height="60" fromid="idfmi" labels="pO2,pCO2" refindex="13"
+<!--                        &nbsp;<bdl-chartjs-time width="390" height="60" fromid="idfmi" labels="pO2,pCO2" refindex="13"
                             refvalues="2" throttle="1000" colorindex="6" minichart="true"></bdl-chartjs-time-->
                     </div>
                 </div>
@@ -242,3 +242,4 @@
 <bdl-quiz-control ids="q0,q1,q2,q3,q4,q5,qs1"></bdl-quiz-control>                
     </div>
 </div>
+
