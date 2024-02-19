@@ -1,11 +1,12 @@
 
 <div class="w3-row">
-<div class="w3-half">
+<div class="w3-third">
 
-<div class="w3-khaki w3-xlarge w3-padding w3-margin">
+<div class="w3-sand w3-large w3-padding w3-margin">
 
-Vstupní lab. vyšetření: 
-|veličina|hodnota|jedn|norma|
+
+**Vstupní lab. vyšetření**
+| | | | |
 |---|---|---|---|
 | CRP | 58 | mg/l | [0..10] |
 |Leu| 12,6| 10^9/l |	[4,0..10,0] |
@@ -19,23 +20,60 @@ Vstupní lab. vyšetření:
 |Plt| 256| 10^9/l | 		[142..327] |
 
 </div>
+
 </div>
-<div class="w3-half">
+<div class="w3-third">
+<div class="w3-sand w3-large w3-padding w3-margin" style="line-height:0.9">
+
+**Diff. rozpočet leukocytů:**
+
+| | | |
+|----|------------|------------|
+| Neutrofily | 8,9 e+9/L| [2,0 - 7,0] |
+| Lymfocyty | 0,8 e+9/L | [0,8 – 4,0] |
+| Monocyty | norma | |
+| Eosinofily | norma | |
+| Basofily | norma | |
+**Biochemie**
+
+| | | |
+|----|------------|------------|
+| Na | 123 mmol/l | [135..146] |
+| K | 6,3 mmol/l | [3,8..5,0] |
+| Cl | 88 mmol/l | [97..108] |
+| Urea | 18,0 mmol/l | [1,8..6,7] |
+| Kreatinin | 152 umol/l | [27..88] |
+| Bilirub. celk. | 10,2 μmol/l | [2..17] |
+| ALT | 0,2 ukat/l | [0,05..0,6] |
+| AST | 0,38 ukat/l | [0,1..0,63] |
+| ALP | 5,06 ukat/l | [0,67..2,15] |
+| GMT | 0,15 ukat/l | [0,1..0,39] |
+| Glykemie |  48,4 mmol/l | [3,9..5,6] |
+| HbA1c | 49 mmol/mol | [28..40] |
+
+</div>
+</div>
+<div class="w3-third">
+
+<div class="w3-padding w3-margin">
 <bdl-quizx id="q1" type="choice2" 
-          question=" Rozbor výsledků krevního obrazu - proč má pacient normální hematokrit (0,42), ale erytrocyty mají nižší MCV?" 
-          answers=" Vlivem hemokoncentrace při osmotické diuréze v kombinaci s hyperosmolaritou vedoucí ke zmenšení MCV erytrocytů, vliv může mít i dopočet těchto hodnot manuálně. |Dominantním mechanismem je alterace membrány erytrocytů při průchodu slezinou, erytrocyty poškozené hyperosmolárním prostředím a acidózou ztrácí část své membrány a zmenšují svůj povrch, nejsou však nadměrně destruovány, proto je hematokrit v normě." 
+          question="Proč má pacient normální hematokrit (0,42), ale erytrocyty mají nižší MCV?" 
+          answers="Vlivem hemokoncentrace při osmotické diuréze v kombinaci s hyperosmolaritou vedoucí ke zmenšení MCV erytrocytů, vliv může mít i dopočet těchto hodnot manuálně.|Dominantním mechanismem je alterace membrány erytrocytů při průchodu slezinou, erytrocyty poškozené hyperosmolárním prostředím a acidózou ztrácí část své membrány a zmenšují svůj povrch, nejsou však nadměrně destruovány, proto je hematokrit v normě." 
           correctoptions="true|false" 
           explanations="ano|ne" 
           buttontitle="zkontrolovat odpověď"></bdl-quizx>
+
 <bdl-quizx id="q2" type="choice2" 
-          question="Jaký je důvod leukocytózy a co by bylo vhodné doplnit za další vyšetření?" 
-          answers="Pro leukocytózu bych doplnil diferenciální rozpočet leukocytů a CRP. V rozboru vidíme leukocytózu a elevaci CRP k hodnotě 58mg/L, predominantně v neutrofilech, což je dáno susp. konkomitantně probíhajícím infektem v kombinaci se stresovou reakcí, tedy vyplavením neutrofilů z KD a sleziny vlivem glukokortikoidů.|Pacient má suspektní konkomitantní hematologické onemocnění, nelze vyloučit leukémii či leukemizovaný lymfom, doplním vyšetření průtokovou cytometrií z periferní krve k vyloučení či potvrzení této možnosti a naplánuji trepanobiopsii." 
-          correctoptions="true|false" 
-          explanations="ano|ne" 
-          buttontitle="zkontrolovat odpověď" ></bdl-quizx>
+           question="Jaký je důvod leukocytózy a co by bylo vhodné doplnit za další vyšetření?" 
+           answers="Pro leukocytózu bych doplnil diferenciální rozpočet leukocytů a CRP. V rozboru vidíme leukocytózu a elevaci CRP k hodnotě 58mg/L, predominantně v neutrofilech, což je dáno susp. konkomitantně probíhajícím infektem v kombinaci se stresovou reakcí, tedy vyplavením neutrofilů z KD a sleziny vlivem glukokortikoidů.|Pacient má suspektní konkomitantní hematologické onemocnění, nelze vyloučit leukémii či leukemizovaný lymfom, doplním vyšetření průtokovou cytometrií z periferní krve k vyloučení či potvrzení této možnosti a naplánuji trepanobiopsii." 
+           correctoptions="true|false" 
+           explanations="ano|ne" 
+           buttontitle="zkontrolovat odpověď"></bdl-quizx>
+
 <bdl-quiz-summary id="qs1">
   Shrnutí odpovědí:
 </bdl-quiz-summary>          
 <bdl-quiz-control ids="q1,q2,qs1"></bdl-quiz-control>          
+</div>
 </div>
 </div>
