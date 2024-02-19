@@ -1,7 +1,7 @@
 * [Kazuistika 42 muž DKA](#index.md)
 * [1 Simulace CZ](#screen/k1uvod.md)
   * [2 Vyšetření krve](#screen/k2vysetreni.md)
-  * [3 Vyšetření ASTRUP a biochemie](#screen/k2exam-blood.md)
+  * [3 Vyšetření ASTRUP a biochemie](#screen/k3vysetreniastrup.md)
   * [4 Léčba](#screen/k4lecba.md)
 * [1 Simulation EN](#screen/k1simulation-en.md)
   * [2 Exam Blood](#screen/k2exam-blood.md)
