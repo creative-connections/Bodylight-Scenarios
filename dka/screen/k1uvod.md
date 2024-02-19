@@ -59,7 +59,7 @@
                         </div>
                         <br />
                         <div class="w3-text-light-green w3-xlarge" id="v6" style="display:none">
-                            &nbsp;Gly 48 <span class="w3-small">mmol/l</span>
+                            &nbsp;Gly 46 <span class="w3-small">mmol/l</span>
                         </div>                        
                     </div>
                 </div>
@@ -200,7 +200,7 @@
     </div>
     <br/>
 <bdl-quizx id="q0" type="choice"
-          question="1. Jaké objektivní vyšetření lze u pacienta zvolit s výsledkem ihned (<b>výsledek během sekund až minut</b>)" 
+          question="1. Jaké objektivní vyšetření lze u pacienta provést jehož výsledek je znám ihned (během sekund až minut)" 
           answers="A. poslechové vyšetření dechu|B. poslechové vyšetření srdce|C. změření atreriálního tlaku|D. saturace kyslíku v krvi z prstu|E. stanovení glykémie glukometrem z prstu|F. krevní obraz|G. biochemie krve a moči|H. ASTRUP vyšetření tepenné nebo kapilární krve" 
           correctoptions="true|true|true|true|true|false|false|false" 
           explanations="ano|ano|ano|ano|ano|ne|ne|ne" 
