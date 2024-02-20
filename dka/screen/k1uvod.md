@@ -6,7 +6,7 @@
                 <!-- not optimalized -O0 --><bdl-fmi id="idfmi" mode="continuous" showcontrols="false"
                     controlid="controlbuttons2" src="modelECMORespiratoryVR_BloodGasesTransport_BloodyMaryPPG2.js"
                     fminame="modelECMORespiratoryVR_BloodGasesTransport_BloodyMaryPPG2" tolerance="0.00001"
-                    starttime="0" fstepsize="0.4" fpslimit="0.5" guid="{83d444de-f6b1-4a60-a953-199d3e7b2d57}"
+                    starttime="0" fstepsize="0.1" fpslimit="0.5" guid="{83d444de-f6b1-4a60-a953-199d3e7b2d57}"
                     valuereferences="905975257,369103464,905975068,905975254,905974373,905975067,905975342,905972510,16777311,16777312,905975256,335544320,637537073,637538918,637538919"
                     valuelabels="venous.sO2,arterial.sO2,tissueUnit[1].sO2,venous.pH,arterial.pH,tissueUnit[1].pH,AirO2.y,AirN2,AirCO2,AirH2O,venous.pCO2,plethy,respiratoryCenter.VentilationSwitch.y,arterial.pO2,arterial.pCO2"
                     inputs="rate,16777223,1,60,t;idco2,16777311,1,100,t;idh2o,16777312,1,100,t;idshunts,16777227,1,100,t;iddeadspace,16777225,1,1000000,t;ido2,16777547,1,100,t;idventilation,16777511,1,1,t"
@@ -32,13 +32,13 @@
                 <div class="w3-twothird">
                     &nbsp;<bdl-chartjs-time width="390" height="60" fromid="ventilator" labels="lungs volume"
                         refindex="1" refvalues="1" minichart="true" colorindex=5
-                        initialdata="0,0.01;0.0023,0.0023" maxdata="128"></bdl-chartjs-time><br />
+                        initialdata="0,0.01;0.0023,0.0023" maxdata="150"></bdl-chartjs-time><br />
                     &nbsp;<bdl-chartjs-time width="390" height="60" fromid="hemodynamics" labels="ecg" refindex="3"
                         refvalues="1" throttle="100" colorindex="2" minichart="true"
-                        initialdata="0,0.01;0,0"></bdl-chartjs-time>
+                        initialdata="0,0.01;0,0" maxdata="300"></bdl-chartjs-time>
                     &nbsp;<bdl-chartjs-time width="390" height="150" fromid="hemodynamics" labels="pulsatile sO2"
-                        refindex="0" refvalues="1" throttle="100" colorindex="4" minichart="false" convertors="0.00750062,1" min="60" max="140"
-                        initialdata="0,0.01;11370,11370"></bdl-chartjs-time>
+                        refindex="0" refvalues="1" throttle="100" colorindex="4" minichart="false" convertors="0.0075,1.3,10" min="60" max="140"
+                        initialdata="0,0.01;11370,11370" maxdata="300"></bdl-chartjs-time>
                 </div>
                 <div class="w3-third">
                     <div class="w3-card w3-text-aqua w3-xlarge" style="white-space:nowrap">
@@ -53,8 +53,8 @@
                         <br />
                         <div class="w3-text-red w3-large">
                             &nbsp;NIBP<b class="w3-xlarge"><bdl-value id="v3" style="display:none" fromid="hemodynamics" refindex="1"
-                                    convertor="1,133.322" precision="3"></bdl-value>/<bdl-value fromid="hemodynamics" id="v4" style="display:none" 
-                                    refindex="2" convertor="1,133.322" tofixed="0"></bdl-value></b>
+                                    convertor="0.0075,1.3,10" precision="3"></bdl-value>/<bdl-value fromid="hemodynamics" id="v4" style="display:none" 
+                                    refindex="2" convertor="0.0075,1.3,10" tofixed="0"></bdl-value></b>
                             <span class="w3-small">mmHg</span>
                         </div>
                         <br />
@@ -225,9 +225,9 @@
           buttontitle="zkontrolovat odpověď" ></bdl-quizx>
 <bdl-quizx id="q3" type="choice2" 
           question="4. jaký je arteriální tlak, zvolte nejbližší hodnotu" 
-          answers="A. 126/82 mmhg|B. 103/61 mmhg|C. 149/98 mmhg" 
-          correctoptions="true|false|false" 
-          explanations="ano|ne|ne" 
+          answers="A. 126/82 mmhg|B. 107/74 mmhg|C. 149/98 mmhg" 
+          correctoptions="false|true|false" 
+          explanations="ne|ano|ne" 
           buttontitle="zkontrolovat odpověď" ></bdl-quizx>        
 <bdl-quizx id="q4" type="choice2" 
           question="5. jaká je saturace kyslíku v krvi, zvolte nejbližší hodnotu" 
