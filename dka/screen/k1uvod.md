@@ -5,8 +5,8 @@
                 <bdl-animate-control id="controlbuttons2" controlfmi="true" showstep="false"></bdl-animate-control>
                 <!-- not optimalized -O0 --><bdl-fmi id="idfmi" mode="continuous" showcontrols="false"
                     controlid="controlbuttons2" src="modelECMORespiratoryVR_BloodGasesTransport_BloodyMaryPPG2.js"
-                    fminame="modelECMORespiratoryVR_BloodGasesTransport_BloodyMaryPPG2" tolerance="0.00001"
-                    starttime="0" fstepsize="0.005" fpslimit="0.1" guid="{83d444de-f6b1-4a60-a953-199d3e7b2d57}"
+                    fminame="modelECMORespiratoryVR_BloodGasesTransport_BloodyMaryPPG2" tolerance="0.001"
+                    starttime="0" fstepsize="2" fpslimit="0.1" guid="{83d444de-f6b1-4a60-a953-199d3e7b2d57}"
                     valuereferences="905975257,369103464,905975068,905975254,905974373,905975067,905975342,905972510,16777311,16777312,905975256,335544320,637537073,637538918,637538919"
                     valuelabels="venous.sO2,arterial.sO2,tissueUnit[1].sO2,venous.pH,arterial.pH,tissueUnit[1].pH,AirO2.y,AirN2,AirCO2,AirH2O,venous.pCO2,plethy,respiratoryCenter.VentilationSwitch.y,arterial.pO2,arterial.pCO2"
                     inputs="rate,16777223,1,60,t;idco2,16777311,1,100,t;idh2o,16777312,1,100,t;idshunts,16777227,1,100,t;iddeadspace,16777225,1,1000000,t;ido2,16777547,1,100,t;idventilation,16777511,1,1,t"
@@ -199,7 +199,7 @@
                 </div>
             </div> <!-- controls -->
         </div>
-        <sup>v.240220</sup>
+        <sup>v.24.2</sup>
     </div>
     <div class="w3-padding w3-half w3-xlarge">
      <div class="w3-khaki">
