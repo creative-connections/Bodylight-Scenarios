@@ -15,8 +15,7 @@
 <!--bdl-range id="status" min="0" max="150" default="" title="Helper - use for state"></bdl-range><br/-->
 </div>
 <bdl-buttonparams title="Normální dýchání" ids="blend_duration,compliance,muscle_pressure,peep,resistance,rate" values='4,50,33,5,35,17'></bdl-buttonparams>
-<bdl-buttonparams title="Kussmaulovo dýchání" ids="blend_duration,compliance,muscle_pressure,peep,resistance,rate" values='4,50,50,5,15,25'></bdl-buttonparams>
-
+<bdl-buttonparams title="Kussmaulovo dýchání" ids="blend_duration,compliance,muscle_pressure,peep,resistance,rate" values='4,50,50,5,15,33'></bdl-buttonparams>
 </div>
 <div class="w3-third">
 
