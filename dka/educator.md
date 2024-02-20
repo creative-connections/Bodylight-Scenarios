@@ -4,8 +4,10 @@
 **Ovládání figuríny**
 <bdl-remote-value remoteurl="https://patf-lab06.lf1.cuni.cz:5000/lungsim" interval="2000" id="lungsim" inputs="rate;muscle_pressure;blend_duration;compliance;peep;resistance;run"></bdl-remote-value><bdl-chartjs-time id="id11" width="200" height="80" fromid="lungsim" refindex="7" refvalues="1" labels="tidal volume"></bdl-chartjs-time> <span class="w3-button w3-theme w3-small"><a href="https://patf-lab06.lf1.cuni.cz:5000/manequin" target="_blank">enable certificate</a></span>
 ![body](body.png)
-**Human simulator <bdl-checkbox id="run" default="true" titlemin="STOPPED" titlemax="RUNNING"></bdl-checkbox><br/>**
-<div class="w3-hide">
+**Human simulator <bdl-checkbox id="run" default="true" titlemin="STOPPED" titlemax="RUNNING"></bdl-checkbox> <button class="w3-button" onclick="document.getElementById('controls').style.display='block'">controls</button>
+<br/>**
+<div class="w3-card" style="display:none" id="controls">
+<button class="w3-button" onclick="document.getElementById('controls').style.display='none'">hide controls</button>
 <bdl-range id="rate" min="0" max="100" default="7" step="0.5" title="breath rate [1/min]"></bdl-range><br/>
 <bdl-range id="blend_duration" min="1" max="10" default="4" step="1" title="how many breaths to change value [1]"></bdl-range><br/>
 <bdl-range id="compliance" min="0.5" max="250" default="50" step="0.5" title="Compliance [ml/cmH2O]"></bdl-range><br/>
@@ -15,7 +17,7 @@
 <!--bdl-range id="status" min="0" max="150" default="" title="Helper - use for state"></bdl-range><br/-->
 </div>
 <bdl-buttonparams title="Normální dýchání" ids="blend_duration,compliance,muscle_pressure,peep,resistance,rate" values='4,50,33,5,35,17'></bdl-buttonparams>
-<bdl-buttonparams title="Kussmaulovo dýchání" ids="blend_duration,compliance,muscle_pressure,peep,resistance,rate" values='4,30,50,3,12,33'></bdl-buttonparams>
+<bdl-buttonparams title="Kussmaulovo dýchání" ids="blend_duration,compliance,muscle_pressure,peep,resistance,rate" values='4,50,33,5,15,33'></bdl-buttonparams>
 </div>
 <div class="w3-third">
 
