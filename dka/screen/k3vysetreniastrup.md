@@ -5,22 +5,34 @@
   titlelist="ASTRUP,Biochemie"></bdl-tabs>
 
 <div class="w3-row">
-  <div class="w3-half">
-    <div id="astrup" class="w3-sand w3-large w3-padding" style="line-height:0.9">
-      
+  <div id="astrup" style="line-height:0.9">
+    <div class="w3-half w3-sand w3-large w3-padding">
 
 **ASTRUP vstupní:**
 | |  | |
 |-----|------|-------|
 | pH: |  7,14 | [7,36..7,44] |
 | pCO2: | 2,48 kPa | [4,7..6] |
+| | 18,6 mmHg | [35..45] |
+| &nbsp; | | |
 | Akt.bikarb: | 6,1 mmol/l | [22..26] |
 | Stand.bikar: | 8,9 mmol/l | [22..26] |
 | BE akt.: |  -21,9 mmol/l | [-2..2] |
 | pO2: | 12,1 kPa | [10,4..14,3] |
+| | 90 mmHg | [78.. 107] |
+| &nbsp; | | |
 | sat.O2: | 95 % | [94..99] |
+  </div>
+<div class="w3-half">
+
+<object id="mySvg" type="image/svg+xml" data="screen/Acid-base_nomogramK1.svg" style="width:100%">
+  Your browser does not support SVG
+</object>
+
 </div>
-<div id="biochemie" class="w3-sand w3-large w3-padding w3-margin" style="line-height:0.9">
+</div>
+<div id="biochemie" style="line-height:0.9">
+    <div class="w3-half w3-sand w3-large w3-padding">
 
 **Diff. rozpočet leukocytů:**
 
@@ -47,17 +59,15 @@
 | GMT | 0,15 ukat/l | [0,1..0,39] |
 | Glykemie |  48,4 mmol/l | [3,9..5,6] |
 | HbA1c | 49 mmol/mol | [28..40] |
-</div>
-    
-
+| Stand.bikar | 8,9 mmol/l | [22..26] |
 </div>
 <div class="w3-half">
 
-<object id="mySvg" type="image/svg+xml" data="screen/Acid-base_nomogramK1.svg" style="width:100%">
-  Your browser does not support SVG
-</object>
+<bdl-calculator></bdl-calculator>
+</div>    
 
 </div>
+
 </div>
 </div>
 <div class="w3-third">
@@ -75,10 +85,16 @@
            buttontitle="zkontrolovat odpověď"></bdl-quizx>           
 <bdl-quizx id="q8" type="choice2" 
            question="Jaká je aniontová mezera (anion gap)?" 
-           answers="AG = (Na<sup>+</sup>) – (Cl<sup>-</sup> + HCO3<sup>-</sup>)|(Na<sup>+</sup>) + (2x Cl<sup>-</sup>) + (HCO3<sup>-</sup>) + (K<sup>+</sup>)" 
+           answers="AG = (Na<sup>+</sup>+K<sup>+</sup>) – (Cl<sup>-</sup> + HCO3<sup>-</sup>)|AG = (Na<sup>+</sup>) + (2x Cl<sup>-</sup>) + (HCO3<sup>-</sup>) + (K<sup>+</sup>)" 
            correctoptions="true|false" 
            explanations="ano|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
+<bdl-quizx id="q8a" type="choice2" 
+           question="Aniontová mezera se obvykle pohybuje v rozmezí 10-12 mmol/l, hraničně pak 16 mmol/l. Zvýšená aniontová mezera může naznačovat přítomnost některých onemocnění nebo stavů, jako jsou metabolická acidóza. Spočítejte aniontovou mezeru zpaměti nebo na kalkulačce dle hodnot a vyberte:" 
+           answers="AG = 32,4| AG = 314.2 | AG = 10" 
+           correctoptions="true|false" 
+           explanations="ano|ne" 
+           buttontitle="zkontrolovat odpověď"></bdl-quizx>           
 <bdl-quizx id="q9" type="choice2" 
            question="Jak by se změnily parametry ABR a klinický obraz, při zvracení?" 
            answers="Při zvracení dojde ke komplikaci již existující metabolické acidózy metabolickou alkalózou (ztráta H<sup>+</sup>, Cl<sup>-</sup>, bikarbonát), utlumení respiračních kompenzačních mechanismů, prohloubení dehydratace, zvýšení ztrát K<sup>+</sup> a ke zhoršení stavu (kombinovaná porucha ABR, deplece K<sup>+</sup>).|zvracením se ztrácí K<sup>+</sup>, dochází k rozvoji hypokálémie a není-li situace řešena, směně H<sup>+</sup> za K<sup>+</sup> na buněčné membráně (K<sup>+</sup> jde ven, H<sup>+</sup> dovnitř, dojde ke alkalizaci vnitřního prostředí." 
@@ -128,7 +144,7 @@
   Shrnutí odpovědí:
   <button class="w3-right w3-button w3-theme" onclick="document.getElementById('mySvg').contentDocument.getElementById('patientpoint').style.display='';">Zobraz hodnoty</button>
 </bdl-quiz-summary>          
-<bdl-quiz-control ids="q7,q7a,q8,q9,q10,q11,q12,q13,q14,q15,q16,qs1"></bdl-quiz-control>             
+<bdl-quiz-control ids="q7,q7a,q8,q8a,q9,q10,q11,q12,q13,q14,q15,q16,qs1"></bdl-quiz-control>             
 
 </div>
 </div>
