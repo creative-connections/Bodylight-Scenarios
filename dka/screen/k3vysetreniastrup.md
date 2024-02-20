@@ -60,6 +60,8 @@
 | Glykemie |  48,4 mmol/l | [3,9..5,6] |
 | HbA1c | 49 mmol/mol | [28..40] |
 | Stand.bikar | 8,9 mmol/l | [22..26] |
+| Akt.bikarb: | 6,1 mmol/l | [22..26] |
+
 </div>
 <div class="w3-half">
 
@@ -85,13 +87,13 @@
            buttontitle="zkontrolovat odpověď"></bdl-quizx>           
 <bdl-quizx id="q8" type="choice2" 
            question="Jaká je aniontová mezera (anion gap)?" 
-           answers="AG = (Na<sup>+</sup>+K<sup>+</sup>) – (Cl<sup>-</sup> + HCO3<sup>-</sup>)|AG = (Na<sup>+</sup>) + (2x Cl<sup>-</sup>) + (HCO3<sup>-</sup>) + (K<sup>+</sup>)" 
+           answers="AG = Na<sup>+</sup> – (Cl<sup>-</sup> + HCO3<sup>-</sup>) v USA au nás na ústavu<br/>AG = (Na<sup>+</sup>+K<sup>+</sup>) – (Cl<sup>-</sup> + HCO3<sup>-</sup>) v Evropě|AG = (Na<sup>+</sup>) + (2x Cl<sup>-</sup>) + (HCO3<sup>-</sup>) v USA a u nás na ústavu<br/>|AG = (Na<sup>+</sup>) + (2x Cl<sup>-</sup>) + (HCO3<sup>-</sup>) + (K<sup>+</sup>) v Evropě" 
            correctoptions="true|false" 
            explanations="ano|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q8a" type="choice2" 
            question="Aniontová mezera se obvykle pohybuje v rozmezí 10-12 mmol/l, hraničně pak 16 mmol/l. Zvýšená aniontová mezera může naznačovat přítomnost některých onemocnění nebo stavů, jako jsou metabolická acidóza. Spočítejte aniontovou mezeru zpaměti nebo na kalkulačce dle hodnot a vyberte:" 
-           answers="AG = 32,4| AG = 314.2 | AG = 10" 
+           answers="AG = 28,9| AG = 314.2 | AG = 10" 
            correctoptions="true|false" 
            explanations="ano|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>           
