@@ -62,11 +62,17 @@
 </div>
 <div class="w3-third">
 <bdl-quizx id="q7" type="choice2" 
-           question="Jaká je to porucha ABR? Co to tedy může být za komplikaci DM 1. typu?" 
-           answers="jedná se o metabolickou acidózu - konkrétně diabetickou ketoacidózu|jedná se o hyperglykemické hyperosmolární kóma" 
-           correctoptions="true|false" 
-           explanations="ano|ne" 
+           question="Jaká je to porucha ABR?" 
+           answers="metabolická acidóza|akutní respirační acidóza|chronická respirační acidóza|metabolická alkalóza" 
+           correctoptions="true|false|false" 
+           explanations="ano|ne|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
+<bdl-quizx id="q7a" type="choice2" 
+           question="Co to tedy může být za komplikaci DM 1. typu?" 
+           answers="diabetická ketoacidóza| hypochloremická alkalóza při zvracení|hyperglykemické hyperosmolární kóma" 
+           correctoptions="true|false|false" 
+           explanations="ano|ne|ne" 
+           buttontitle="zkontrolovat odpověď"></bdl-quizx>           
 <bdl-quizx id="q8" type="choice2" 
            question="Jaká je aniontová mezera (anion gap)?" 
            answers="AG = (Na<sup>+</sup>) – (Cl<sup>-</sup> + HCO3<sup>-</sup>)|(Na<sup>+</sup>) + (2x Cl<sup>-</sup>) + (HCO3<sup>-</sup>) + (K<sup>+</sup>)" 
@@ -122,7 +128,7 @@
   Shrnutí odpovědí:
   <button class="w3-right w3-button w3-theme" onclick="document.getElementById('mySvg').contentDocument.getElementById('patientpoint').style.display='';">Zobraz hodnoty</button>
 </bdl-quiz-summary>          
-<bdl-quiz-control ids="q7,q8,q9,q10,q11,q12,q13,q14,q15,q16,qs1"></bdl-quiz-control>             
+<bdl-quiz-control ids="q7,q7a,q8,q9,q10,q11,q12,q13,q14,q15,q16,qs1"></bdl-quiz-control>             
 
 </div>
 </div>
