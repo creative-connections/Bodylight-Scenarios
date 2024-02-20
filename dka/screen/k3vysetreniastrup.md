@@ -3,14 +3,11 @@
 
 <bdl-tabs idlist="astrup,biochemie" 
   titlelist="ASTRUP,Biochemie"></bdl-tabs>
-<div class="w3-border">
-
-<div id="astrup">
 
 <div class="w3-row">
-<div class="w3-half">
-
-<div class="w3-sand w3-large w3-padding w3-margin" style="line-height:0.9">
+  <div class="w3-half">
+    <div id="astrup" class="w3-sand w3-large w3-padding" style="line-height:0.9">
+      
 
 **ASTRUP vstupní:**
 | |  | |
@@ -22,25 +19,8 @@
 | BE akt.: |  -21,9 mmol/l | [-2..2] |
 | pO2: | 12,1 kPa | [10,4..14,3] |
 | sat.O2: | 95 % | [94..99] |
-
-
 </div>
-
-</div>
-<div class="w3-half">
-
-<object id="mySvg" type="image/svg+xml" data="screen/Acid-base_nomogramK1.svg" >
-  Your browser does not support SVG
-</object>
-
-
-
-
-</div>
-</div>
-</div>
-<div id="biochemie">
-<div class="w3-sand w3-large w3-padding w3-margin" style="line-height:0.9">
+<div id="biochemie" class="w3-sand w3-large w3-padding w3-margin" style="line-height:0.9">
 
 **Diff. rozpočet leukocytů:**
 
@@ -68,6 +48,15 @@
 | Glykemie |  48,4 mmol/l | [3,9..5,6] |
 | HbA1c | 49 mmol/mol | [28..40] |
 </div>
+    
+
+</div>
+<div class="w3-half">
+
+<object id="mySvg" type="image/svg+xml" data="screen/Acid-base_nomogramK1.svg" style="width:100%">
+  Your browser does not support SVG
+</object>
+
 </div>
 </div>
 </div>
