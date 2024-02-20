@@ -3,8 +3,8 @@
 <div class="w3-half">
 
 
-<bdl-tabs idlist="krystaloidy,inzulin,glykemie,kalemie,ABR,ketoacidoza,ketoacidoza2" 
-  titlelist="Léčba krystaloidy,Inzulin,Glykémie,Kalémie,ABR,Ketoacidóza,DKA 2"></bdl-tabs>
+<bdl-tabs idlist="krystaloidy,inzulin,kalemie,ABR,ketoacidoza,ketoacidoza2" 
+  titlelist="Léčba krystaloidy,Léčba hyperglykémie,Léčba hypokalémie,ABR,Ketoacidóza,DKA 2"></bdl-tabs>
 <div class="w3-sand w3-large w3-padding w3-margin">  
 
 <div id="krystaloidy">
@@ -17,17 +17,25 @@ zdroj: <a href="https://www.wikiskripta.eu/w/Aplikace_infuz%C3%AD#Krystaloidy" t
 
 </div>
 <div id="inzulin">
-Kontinuální infuze inzulinu k nastartování utilizace glukózy, supresi produkce glukózy játry a inhibici lipolýzy.  Povede to k postupnému poklesu glykémie i k návratu K+ do buněk a poklesu EC K+, stejně jako to zabrání produkci ketolátek. Nutnost pravidelně měřit glykémii, ze začátku klidně á 60 min, následně pak á 6 hodin a při poklesu pod 10mmol/L zvážit převedení do s.c. injekcí dle glykémie před jídlem.
+Terapie se u jednotlivých typů diabetu do značné míry liší. Zatímco u diabetu 1. typu jsme odkázáni na inzulinoterapii, u diabetiků 2. typu se používá v závislosti na stupni inzulinorezistence dieta, perorální antidiabetika a až u komplikovaného diabetu saháme k inzulinoterapii.
+
+zdroj: <a href="https://www.wikiskripta.eu/w/Inzulinoterapie" target="_blank">wikiskripta.eu/w/Inzulinoterapie</a>
+
 </div>
-<div id="glykemie">
+<!--div id="glykemie">
 Pokles glykémie musí být postupný – 2,5-4,5 mmol/L za hodinu maximálně!!! Jde o to aby se předešlo rozvoji mozkového edému. Nutná je i pravidelná monitorace iontů – ze začátku i několikrát denně, aby se preventoval shift do hypokalémie. Infuze inzulinu musí být následně při dostatečném poklesu glykémie a kália doplněny i infuze iontů – viz. níže. Cílová glykémie (tj. normální hodnoty) by měla být dosažena postupně během 24 – 48 hodin.
-</div>
+</div-->
 <div id="kalemie">
+Zásadně se snažíme ovlivnit základní příčinu hypokalémie. Vždy se orientujeme dle EKG a ABR, nikdy neléčíme kalémii "izolovaně". V praxi se velmi špatně odhadne celkový deficit kalia, proto korekci provádíme velmi opatrně. Při MAL s transmembránovým přesunem stačí ke korekci kalémie úprava ABR. 
+
+zdroj: <a href="https://www.wikiskripta.eu/w/Hypokal%C3%A9mie" target="_blank">wikiskripta.eu/w/Hypokalémie</a>
+
+<!--
 Při nízké kalémii se zahajuje podávání inzulinu až po doplnění hladiny kalia k hodnotám, která se blíží dolní hranici referenčních hodnot (tj. ~ 3,8 mmol/L)
 
 ATB – nejprve empiricky, poté dle citlivosti.
 
-Náhrada iontů: zejména K+ - administrovat opatrně, protože inzulin navodí přesun (shift) K+ do buněk – dle EKG má vstupně změny, které souvisí s vysokou hladinou K+ extracelulárně! Vyčkat normalizace hladin a normalizace EKG – na něm vysoké hrotnaté T (Eiffel tower tvar), i když není přítomna bradykardie…. Může být dáno i lehkou teplotou a hypotenzí! Následně substituovat a zabránit hypokalémii, která má také kardiovaskulární rizika!
+Náhrada iontů: zejména K+ - administrovat opatrně, protože inzulin navodí přesun (shift) K+ do buněk – dle EKG má vstupně změny, které souvisí s vysokou hladinou K+ extracelulárně! Vyčkat normalizace hladin a normalizace EKG – na něm vysoké hrotnaté T (Eiffel tower tvar), i když není přítomna bradykardie…. Může být dáno i lehkou teplotou a hypotenzí! Následně substituovat a zabránit hypokalémii, která má také kardiovaskulární rizika!-->
 </div>
 <div id="ABR">
 Management ABR poruchy: podávání inzulinu s i.v. tekutinami a náhradou elektrolytů a udržováním jejich normálních hodnot povede k postupnému snížení prodkce ketolátek a stabilizaci glykémie a utilizaci glukózy, což navodí i postupnou korekci metabolické acidózy. ASTRUP by se měl provádět alespoň á 6 hodin do normalizace – ideálně arteriální.
@@ -84,20 +92,20 @@ A ještě by se dalo zmínit, že v 10-15% případů je DKA spojená s laktá
           correctoptions="true|true|false" 
           explanations="ano|ano|ne" 
           buttontitle="zkontrolovat odpověď" ></bdl-quizx>          
-<bdl-quizx id="q24" type="choice2" 
+<bdl-quizx id="q24" type="choice" 
           question="Inzulin při hyperglykémii v rámci DKA navodí:" 
-          answers="shift kalia do buněk|shift glukózy do buněk|shift H+ do buněk|shift glukózy z buněk, která je k dispozici pro životně důležité orgány" 
+          answers="přesun kalia do buněk|přesun glukózy do buněk|přesun H<sup>+</sup> do buněk|přesun glukózy z buněk, která je k dispozici pro životně důležité orgány" 
           correctoptions="true|true|false|false" 
           explanations="ano|ano|ne|ne" 
           buttontitle="zkontrolovat odpověď" ></bdl-quizx> 
 <bdl-quizx id="q25" type="choice2" 
           question="DKA je častější komplikací u diabetes mellitus typu:" 
-          answers="I|II (ale nastat může)|II (nastat nemůže za žádných okolností)" 
-          correctoptions="true|false|false" 
-          explanations="ano|ne|ne" 
+          answers="I|II" 
+          correctoptions="true|false" 
+          explanations="ano|ne" 
           buttontitle="zkontrolovat odpověď"></bdl-quizx>          
 
-<bdl-quizx id="q26" type="choice2" 
+<bdl-quizx id="q26" type="choice" 
           question="Hladinu glykémie přímo ovlivňuje:" 
           answers="inzulin|glukagon|růstový hormon|katecholaminy|hormony štítné žlázy|aldosteron|glukokortikoidy|melatonin|leptin" 
           correctoptions="true|true|true|true|true|false|true|false|true" 
