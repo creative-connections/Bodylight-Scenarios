@@ -4,16 +4,17 @@
 
 
 <bdl-tabs idlist="krystaloidy,inzulin,glykemie,kalemie,ABR,ketoacidoza,ketoacidoza2" 
-  titlelist="Léčba kr.,Inzulin,Glykémie,Kalémie,ABR,Ketoacidóza,DKA 2"></bdl-tabs>
-<div class="w3-khaki w3-large w3-padding w3-margin">  
-
-**Management léčby:**
+  titlelist="Léčba krystaloidy,Inzulin,Glykémie,Kalémie,ABR,Ketoacidóza,DKA 2"></bdl-tabs>
+<div class="w3-sand w3-large w3-padding w3-margin">  
 
 <div id="krystaloidy">
+Krystaloidy jsou nízkomolekulární, bilancované roztoky. Jejich nevýhodou je, že většina roztoku přestupuje do intersticia (intravaskulárně zůstává asi 20 %). Používají se pro úpravu vodní a elektrolytové rovnováhy. 
 
-Infuze krystaloidů – ze začátku agresivní – isotonickými roztoky ke korekci dehydratace a k obnovení i.v. objemu (stabilizace oběhu a perfúze tkání), snížení osmolality plasmy.
+Např. Fyziologický roztok, Hartmanův roztok (izotonický), Ringerův roztok, Plasmalyte (zastoupení iontů obdobné jako v plazmě), 5% glukóza. 
 
-ále: Povede ke korekci hematokritu (snížení) a MCV (zvýšení), zvýší se turgor kůže, zvlhčí sliznice, zvýší se TK (110/73 mmHg).
+zdroj: <a href="https://www.wikiskripta.eu/w/Aplikace_infuz%C3%AD#Krystaloidy" target="_blank">wikiskripta.eu/w/Aplikace_infuzí</a>
+
+
 </div>
 <div id="inzulin">
 Kontinuální infuze inzulinu k nastartování utilizace glukózy, supresi produkce glukózy játry a inhibici lipolýzy.  Povede to k postupnému poklesu glykémie i k návratu K+ do buněk a poklesu EC K+, stejně jako to zabrání produkci ketolátek. Nutnost pravidelně měřit glykémii, ze začátku klidně á 60 min, následně pak á 6 hodin a při poklesu pod 10mmol/L zvážit převedení do s.c. injekcí dle glykémie před jídlem.
@@ -60,8 +61,8 @@ A ještě by se dalo zmínit, že v 10-15% případů je DKA spojená s laktá
 
 **Vyberte nejlepší odpověď na otázky**
 <bdl-quizx id="q20" type="choice2" 
-          question="Infuze krystaloidů v rámci léčby diabetické ketoacidózy se:" 
-          answers="je ze začátku agresivní, isotonickými roztoky ke korekci dehydratace a k obnovení i.v. objemu|je ze začátku agresivní, hyperosmolárními roztoky ke korekci dehydratace a k obnovení i.v. objemu|ze začátku se nepoužívá, důležitá je okamžitá bolusová aplikace inzulinu ke korekci hyperglykémie" 
+          question="Infuze krystaloidů v rámci léčby diabetické ketoacidózy:" 
+          answers="je ze začátku agresivní, isotonickými roztoky ke korekci dehydratace a k obnovení i.v. objemu|je ze začátku agresivní, hyperosmolárními roztoky ke korekci dehydratace a k obnovení i.v. objemu|se ze začátku se nepoužívá, důležitá je okamžitá bolusová aplikace inzulinu ke korekci hyperglykémie" 
           correctoptions="true|false|false" 
           explanations="ano|ne|ne" 
           buttontitle="zkontrolovat odpověď" ></bdl-quizx>
