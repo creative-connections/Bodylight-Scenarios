@@ -69,7 +69,7 @@
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q7a" type="choice2" 
            question="Co to tedy může být za komplikaci DM 1. typu?" 
-           answers="diabetická ketoacidóza| hypochloremická alkalóza při zvracení|hyperglykemické hyperosmolární kóma" 
+           answers="diabetická ketoacidóza| hypochloremická alkalóza při diabetu a zvracení|hyperglykemické hyperosmolární kóma" 
            correctoptions="true|false|false" 
            explanations="ano|ne|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>           
