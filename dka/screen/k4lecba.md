@@ -4,7 +4,7 @@
 
 
 <bdl-tabs idlist="krystaloidy,inzulin,kalemie,ABR,ketoacidoza,ketoacidoza2" 
-  titlelist="Léčba krystaloidy,Léčba hyperglykémie,Léčba hypokalémie,ABR,Ketoacidóza,DKA 2"></bdl-tabs>
+  titlelist="Léčba krystaloidy,Léčba hyperglykémie,Léčba hypokalémie,Léčba poruchy ABR,Ketoacidóza,DKA 2"></bdl-tabs>
 <div class="w3-sand w3-large w3-padding w3-margin">  
 
 <div id="krystaloidy">
@@ -38,7 +38,14 @@ ATB – nejprve empiricky, poté dle citlivosti.
 Náhrada iontů: zejména K+ - administrovat opatrně, protože inzulin navodí přesun (shift) K+ do buněk – dle EKG má vstupně změny, které souvisí s vysokou hladinou K+ extracelulárně! Vyčkat normalizace hladin a normalizace EKG – na něm vysoké hrotnaté T (Eiffel tower tvar), i když není přítomna bradykardie…. Může být dáno i lehkou teplotou a hypotenzí! Následně substituovat a zabránit hypokalémii, která má také kardiovaskulární rizika!-->
 </div>
 <div id="ABR">
-Management ABR poruchy: podávání inzulinu s i.v. tekutinami a náhradou elektrolytů a udržováním jejich normálních hodnot povede k postupnému snížení prodkce ketolátek a stabilizaci glykémie a utilizaci glukózy, což navodí i postupnou korekci metabolické acidózy. ASTRUP by se měl provádět alespoň á 6 hodin do normalizace – ideálně arteriální.
+Základem léčby těžší metabolické acidózy bývá podávání hydrogenuhličitanu sodného, ať už parenterálně v rámci komplexní infuzní terapie, nebo perorálně. Výhodou enterálního podání je, že je organismu ponechána regulace vstřebávání hydrogenuhličitanů, takže se není třeba tolik obávat přílišné alkalizace. Na druhou stranu je tato cesta pomalejší a méně účinná, navíc u pacientů v těžším stavu může být porušena resorpce.
+
+Lehčí a chronická metabolická acidóza se často upravuje podáváním organických kyselin a jejich solí. Hydrogenuhličitany vznikají vlastně až jejich metabolizováním v citrátovém cyklu. Podmínkou je dobrá funkce jater. Nejčastěji se používá laktát (např. Ringerův infuzní roztok s laktátem) a citrát (např. v roztocích pro perorální rehydrataci používaných k léčbě průjmových onemocnění).
+
+Pokud acidóza a acidémie trvala delší dobu, je nutné pH vnitřního prostředí upravovat pomalu. 
+
+zdroj: <a href="https://www.wikiskripta.eu/w/Poruchy_acidobazick%C3%A9_rovnov%C3%A1hy" target="_blank">wikiskripta.eu/w/Poruchy_acidobazické_rovnováhy</a>
+<!--Management ABR poruchy: podávání inzulinu s i.v. tekutinami a náhradou elektrolytů a udržováním jejich normálních hodnot povede k postupnému snížení prodkce ketolátek a stabilizaci glykémie a utilizaci glukózy, což navodí i postupnou korekci metabolické acidózy. ASTRUP by se měl provádět alespoň á 6 hodin do normalizace – ideálně arteriální.
 
 Přechod na s.c. inzulin – poučit pacientku, musí režim dodržovat, aby se zabránilo opětovné komplikaci DKA, nutnost sledovat pacientku u diabetologa. Nutno glykémie pravidelně měřit nalačno před jídlem a vysledovat ideální dávky inzulinu, které povedou u pacientky s normalizaci hodnot glykémií. Zvážení kontinuální monitorace pomocí čipu – glukózového senzoru (dnes má na něj nárok každý pacient s DM 1. typu). Pacientka poté může být propuštěna do péče ošetřujícího diabetologa.
 
@@ -46,7 +53,7 @@ Ještě pár poznámek ke kazuistice, které lze studentům pro zajímavost zmí
 
 Dříve byla DKA denním chlebem intenzivistů, u DM 1 to byla velmi častá akutní komplikace. S rutinním rozšířením glukometrů pro selfmonitoring její výskyt rapidně klesnul. Další pokles je díky rozšíření glukózových senzorů.
 
-Stále vídáme DKA při primomanifestaci DM1 u dětí. U dospělých moc ne, mají dlouho zachovalou zbytkovou sekreci inzulinu, DM1 se rozvíjí zvolna a manifestuje bez DKA.
+Stále vídáme DKA při primomanifestaci DM1 u dětí. U dospělých moc ne, mají dlouho zachovalou zbytkovou sekreci inzulinu, DM1 se rozvíjí zvolna a manifestuje bez DKA.-->
 </div>
 <div id="ketoacidoza">
 U všech věkových kategorií hrozí diabetická ketoacidóza (DKA) při zanedbání léčby, jako u této kazuistiky. Rizikovým faktorem je jakékoli interkurentní onemocnění (IMC, viróza…), které vyžaduje přechodné zvýšení dávky inzulinu (patofyziologicky hrají roli stresové hormony a zánětlivé mediátory, které mobilizují zásoby glukózy, zvyšují glukoneogenezi a navozují inzulinovou rezistenci). Zvýšení potřeby inzulinu nespraví pár jednotek – potřebné dávky se zvyšují na 150..200 i více %. Toho se pacienti často obávají, nezvyšují dávky dostatečně, roli hraje i to, že v rámci nechutenství málo jí a bojí si přitom píchat více inzulinu.
