@@ -98,13 +98,13 @@
 <div class="w3-third">
 
 <bdl-quizx id="q7" type="choice2" 
-           question="20. Jaká je to porucha ABR?" 
-           answers="A. metabolická acidóza|B. akutní respirační acidóza|C. chronická respirační acidóza|D. metabolická alkalóza" 
-           correctoptions="true|false|false" 
-           explanations="ano|ne|ne" 
+           question="19. Jaká je to porucha ABR dle diagramu ASTRUP pH pCO2?" 
+           answers="A. chronický base deficit|B. akutní base deficit|C. chronická hypercapnie|D. akutní hypercapnie" 
+           correctoptions="true|false|false|false" 
+           explanations="ano|ne|ne|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
-<bdl-quizx id="q7" type="choice2" 
-           question="20. Jaká je to porucha ABR?" 
+<bdl-quizx id="q70" type="choice2" 
+           question="20. Jaká je to porucha ABR dle diagramu ASTRUP pH HCO3-?" 
            answers="A. metabolická acidóza|B. akutní respirační acidóza|C. chronická respirační acidóza|D. metabolická alkalóza" 
            correctoptions="true|false|false" 
            explanations="ano|ne|ne" 
@@ -175,7 +175,7 @@
   Shrnutí odpovědí:
   <button class="w3-right w3-button w3-theme" onclick="document.getElementById('mySvg').contentDocument.getElementById('patientpoint').style.display='';">Zobraz hodnoty</button>
 </bdl-quiz-summary>          
-<bdl-quiz-control ids="q7,q7a,q8,q8a,q9,q10,q11,q12,q13,q14,q15,q16,qs1"></bdl-quiz-control>             
+<bdl-quiz-control ids="q7,q70,q7a,q8,q8a,q9,q10,q11,q12,q13,q14,q15,q16,qs1"></bdl-quiz-control>             
 
 </div>
 </div>
