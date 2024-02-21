@@ -40,7 +40,7 @@
 <div class="w3-third">
 
 **Control Seminar (EN)**
-<bdl-fb-set-state title="0.Intro" value="index.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="0.Intro" value="index-en.md"></bdl-fb-set-state>
 
 <bdl-fb-set-state title="1.Simulation" value="screen/k1simulation-en.md"></bdl-fb-set-state>
 
