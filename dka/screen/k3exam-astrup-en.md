@@ -1,8 +1,8 @@
 <div class="w3-row">
 <div class="w3-twothird">
 
-<bdl-tabs idlist="astrup,biochemie" 
-  titlelist="ASTRUP,Biochemie"></bdl-tabs>
+<bdl-tabs idlist="astrup2,astrup,biochemie" 
+  titlelist="ASTRUP pH pCO2,ASTRUP pH HCO3-,Biochemie"></bdl-tabs>
 
 <div class="w3-row">
   <div id="astrup" style="line-height:0.9">
@@ -32,6 +32,31 @@
 
 </div>
 </div>
+<div id="astrup2" style="line-height:0.9">
+    <div class="w3-half w3-sand w3-large w3-padding">
+
+**Initial ASTRUP:**
+|                |         |             |
+|----------------|---------|-------------|
+| pH:            |  7.14   | [7.36..7.44]|
+| pCO2:          | 2.48 kPa| [4.7..6.0]  |
+|                | 18.6 mmHg | [35..45]   |
+| &nbsp;         |         |             |
+| Active bicarb: | 6.1 mmol/l | [22..26]  |
+| Std. bicarb:   | 8.9 mmol/l | [22..26]  |
+| BE active:     | -21.9 mmol/l| [-2..2]  |
+| pO2:           | 12.1 kPa| [10.4..14.3]|
+|                | 90 mmHg | [78..107]   |
+| &nbsp;         |         |             |
+| sat.O2:        | 95 %    | [94..99]    |
+  </div>
+<div class="w3-half">
+
+<bdl-sachart fromid="idfmi" refindex="9,3" convertors="1,1,0;1,133.322" width="500" height="500" p-h="7.14" p-c-o2="18.75"></bdl-sachart> 
+
+</div>
+</div>
+
 <div id="biochemie" style="line-height:0.9">
     <div class="w3-half w3-sand w3-large w3-padding">
 
@@ -76,7 +101,13 @@
 </div>
 <div class="w3-third">
 <bdl-quizx id="q7" type="choice2" 
-           question="What type of ABR disorder is this?" 
+           question="What type of ABR disorder is this - as in pH pCO2 diagram?" 
+           answers="A. chronic base deficit|B. acute base deficit|C. chronic hypercapnia|D. acute hypercapnia" 
+           correctoptions="true|false|false|false" 
+           explanations="ano|ne|ne|ne" 
+           buttontitle="zkontrolovat odpověď"></bdl-quizx>
+<bdl-quizx id="q70" type="choice2" 
+           question="What type of ABR disorder is this - as in pH HCO3- diagram?" 
            answers="metabolic acidosis|acute respiratory acidosis|chronic respiratory acidosis|metabolic alkalosis" 
            correctoptions="true|false|false" 
            explanations="yes|no|no" 
@@ -149,7 +180,7 @@
   <button class="w3-right w3-button w3-theme" onclick="document.getElementById('mySvg').contentDocument.getElementById('patientpoint').style.display='';">Show values</button>
 </bdl-quiz-summary>
           
-<bdl-quiz-control ids="q7,q7a,q8,q8a,q9,q10,q11,q12,q13,q14,q15,q16,qs1"></bdl-quiz-control>             
+<bdl-quiz-control ids="q7,q70,q7a,q8,q8a,q9,q10,q11,q12,q13,q14,q15,q16,qs1"></bdl-quiz-control>             
 
 </div>
 </div>
