@@ -4,7 +4,7 @@
 
 
 <bdl-tabs idlist="krystaloidy,inzulin,kalemie,ABR,ketoacidoza,ketoacidoza2" 
-  titlelist="Léčba krystaloidy,Léčba hyperglykémie,Léčba hypokalémie,Léčba poruchy ABR,Ketoacidóza,DKA 2"></bdl-tabs>
+  titlelist="Crystalloid treatment,Treatment of hyperglycemia,Treatment of hypokalemia,Treatment of ABR disorder,Ketoacidosis,DKA 2"></bdl-tabs>
 <div class="w3-sand w3-large w3-padding w3-margin">  
 
 <div id="krystaloidy">
