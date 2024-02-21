@@ -3,33 +3,51 @@
 <div class="w3-half">
 
 
-<bdl-tabs idlist="krystaloidy,inzulin,glykemie,kalemie,ABR,ketoacidoza,ketoacidoza2" 
-  titlelist="Léčba kr.,Inzulin,Glykémie,Kalémie,ABR,Ketoacidóza,DKA 2"></bdl-tabs>
-<div class="w3-khaki w3-large w3-padding w3-margin">  
-
-**Management léčby:**
+<bdl-tabs idlist="krystaloidy,inzulin,kalemie,ABR,ketoacidoza,ketoacidoza2" 
+  titlelist="Léčba krystaloidy,Léčba hyperglykémie,Léčba hypokalémie,Léčba poruchy ABR,Ketoacidóza,DKA 2"></bdl-tabs>
+<div class="w3-sand w3-large w3-padding w3-margin">  
 
 <div id="krystaloidy">
+Crystalloids are low-molecular-weight, balanced solutions. Their disadvantage is that most of the solution passes into the interstitial space (about 20% remains intravascularly). They are used to adjust water and electrolyte balance.
 
-Infuze krystaloidů – ze začátku agresivní – isotonickými roztoky ke korekci dehydratace a k obnovení i.v. objemu (stabilizace oběhu a perfúze tkání), snížení osmolality plasmy.
+For example, Normal saline, Hartmann's solution (isotonic), Ringer's solution, Plasmalyte (ion representation similar to plasma), 5% glucose.
 
-ále: Povede ke korekci hematokritu (snížení) a MCV (zvýšení), zvýší se turgor kůže, zvlhčí sliznice, zvýší se TK (110/73 mmHg).
+source: <a href="https://www.wikiskripta.eu/w/Aplikace_infuz%C3%AD#Krystaloidy" target="_blank">wikiskripta.eu/w/Aplikace_infuzí</a>
+
+
+
 </div>
 <div id="inzulin">
-Kontinuální infuze inzulinu k nastartování utilizace glukózy, supresi produkce glukózy játry a inhibici lipolýzy.  Povede to k postupnému poklesu glykémie i k návratu K+ do buněk a poklesu EC K+, stejně jako to zabrání produkci ketolátek. Nutnost pravidelně měřit glykémii, ze začátku klidně á 60 min, následně pak á 6 hodin a při poklesu pod 10mmol/L zvážit převedení do s.c. injekcí dle glykémie před jídlem.
+The therapy for different types of diabetes varies significantly. While we rely on insulin therapy for type 1 diabetes, for type 2 diabetes patients, depending on the degree of insulin resistance, diet, oral antidiabetic drugs are used, and insulin therapy is reached only in complicated diabetes.
+
+source: <a href="https://www.wikiskripta.eu/w/Inzulinoterapie" target="_blank">wikiskripta.eu/w/Inzulinoterapie</a>
+
+
 </div>
-<div id="glykemie">
+<!--div id="glykemie">
 Pokles glykémie musí být postupný – 2,5-4,5 mmol/L za hodinu maximálně!!! Jde o to aby se předešlo rozvoji mozkového edému. Nutná je i pravidelná monitorace iontů – ze začátku i několikrát denně, aby se preventoval shift do hypokalémie. Infuze inzulinu musí být následně při dostatečném poklesu glykémie a kália doplněny i infuze iontů – viz. níže. Cílová glykémie (tj. normální hodnoty) by měla být dosažena postupně během 24 – 48 hodin.
-</div>
+</div-->
 <div id="kalemie">
+We always try to influence the underlying cause of hypokalemia. We always orientate according to EKG and ABR, we never treat potassium "isolated". In practice, it is very difficult to estimate the total potassium deficit, so we correct it very cautiously. In MAL with transmembrane shift, correction of potassium is sufficient by adjusting ABR.
+
+source: <a href="https://www.wikiskripta.eu/w/Hypokal%C3%A9mie" target="_blank">wikiskripta.eu/w/Hypokalémie</a>
+
+<!--
 Při nízké kalémii se zahajuje podávání inzulinu až po doplnění hladiny kalia k hodnotám, která se blíží dolní hranici referenčních hodnot (tj. ~ 3,8 mmol/L)
 
 ATB – nejprve empiricky, poté dle citlivosti.
 
-Náhrada iontů: zejména K+ - administrovat opatrně, protože inzulin navodí přesun (shift) K+ do buněk – dle EKG má vstupně změny, které souvisí s vysokou hladinou K+ extracelulárně! Vyčkat normalizace hladin a normalizace EKG – na něm vysoké hrotnaté T (Eiffel tower tvar), i když není přítomna bradykardie…. Může být dáno i lehkou teplotou a hypotenzí! Následně substituovat a zabránit hypokalémii, která má také kardiovaskulární rizika!
+Náhrada iontů: zejména K+ - administrovat opatrně, protože inzulin navodí přesun (shift) K+ do buněk – dle EKG má vstupně změny, které souvisí s vysokou hladinou K+ extracelulárně! Vyčkat normalizace hladin a normalizace EKG – na něm vysoké hrotnaté T (Eiffel tower tvar), i když není přítomna bradykardie…. Může být dáno i lehkou teplotou a hypotenzí! Následně substituovat a zabránit hypokalémii, která má také kardiovaskulární rizika!-->
 </div>
 <div id="ABR">
-Management ABR poruchy: podávání inzulinu s i.v. tekutinami a náhradou elektrolytů a udržováním jejich normálních hodnot povede k postupnému snížení prodkce ketolátek a stabilizaci glykémie a utilizaci glukózy, což navodí i postupnou korekci metabolické acidózy. ASTRUP by se měl provádět alespoň á 6 hodin do normalizace – ideálně arteriální.
+The basis for treating severe metabolic acidosis is usually the administration of sodium bicarbonate, either parenterally as part of comprehensive infusion therapy or orally. The advantage of enteral administration is that the organism is left to regulate the absorption of bicarbonates, so there is less fear of excessive alkalization. On the other hand, this route is slower and less effective, and in patients in severe condition, absorption may be impaired.
+
+Mild and chronic metabolic acidosis is often adjusted by administering organic acids and their salts. Bicarbonates are actually formed by their metabolism in the citric acid cycle. Good liver function is a prerequisite. Lactate (e.g., Ringer's infusion solution with lactate) and citrate (e.g., in solutions for oral rehydration used to treat diarrheal diseases) are most commonly used.
+
+If acidosis and acidemia lasted for a longer time, the pH of the internal environment should be adjusted slowly.
+
+source: <a href="https://www.wikiskripta.eu/w/Poruchy_acidobazick%C3%A9_rovnov%C3%A1hy" target="_blank">wikiskripta.eu/w/Poruchy_acidobazické_rovnováhy</a>
+<!--Management ABR poruchy: podávání inzulinu s i.v. tekutinami a náhradou elektrolytů a udržováním jejich normálních hodnot povede k postupnému snížení prodkce ketolátek a stabilizaci glykémie a utilizaci glukózy, což navodí i postupnou korekci metabolické acidózy. ASTRUP by se měl provádět alespoň á 6 hodin do normalizace – ideálně arteriální.
 
 Přechod na s.c. inzulin – poučit pacientku, musí režim dodržovat, aby se zabránilo opětovné komplikaci DKA, nutnost sledovat pacientku u diabetologa. Nutno glykémie pravidelně měřit nalačno před jídlem a vysledovat ideální dávky inzulinu, které povedou u pacientky s normalizaci hodnot glykémií. Zvážení kontinuální monitorace pomocí čipu – glukózového senzoru (dnes má na něj nárok každý pacient s DM 1. typu). Pacientka poté může být propuštěna do péče ošetřujícího diabetologa.
 
@@ -37,15 +55,15 @@ Ještě pár poznámek ke kazuistice, které lze studentům pro zajímavost zmí
 
 Dříve byla DKA denním chlebem intenzivistů, u DM 1 to byla velmi častá akutní komplikace. S rutinním rozšířením glukometrů pro selfmonitoring její výskyt rapidně klesnul. Další pokles je díky rozšíření glukózových senzorů.
 
-Stále vídáme DKA při primomanifestaci DM1 u dětí. U dospělých moc ne, mají dlouho zachovalou zbytkovou sekreci inzulinu, DM1 se rozvíjí zvolna a manifestuje bez DKA.
+Stále vídáme DKA při primomanifestaci DM1 u dětí. U dospělých moc ne, mají dlouho zachovalou zbytkovou sekreci inzulinu, DM1 se rozvíjí zvolna a manifestuje bez DKA.-->
 </div>
 <div id="ketoacidoza">
-U všech věkových kategorií hrozí diabetická ketoacidóza (DKA) při zanedbání léčby, jako u této kazuistiky. Rizikovým faktorem je jakékoli interkurentní onemocnění (IMC, viróza…), které vyžaduje přechodné zvýšení dávky inzulinu (patofyziologicky hrají roli stresové hormony a zánětlivé mediátory, které mobilizují zásoby glukózy, zvyšují glukoneogenezi a navozují inzulinovou rezistenci). Zvýšení potřeby inzulinu nespraví pár jednotek – potřebné dávky se zvyšují na 150..200 i více %. Toho se pacienti často obávají, nezvyšují dávky dostatečně, roli hraje i to, že v rámci nechutenství málo jí a bojí si přitom píchat více inzulinu.
+Diabetic ketoacidosis (DKA) is a risk in all age groups if treatment is neglected, as in this case report. Any intercurrent disease (IMC, viral infection...) that requires a temporary increase in the insulin dose is a risk factor (pathophysiologically, stress hormones and inflammatory mediators that mobilize glucose reserves, increase gluconeogenesis, and induce insulin resistance play a role). The need for insulin does not correct a few units - the required doses increase to 150..200% or more. Patients often fear this, do not increase the doses sufficiently, and the role is also played by the fact that they eat little due to a lack of appetite and at the same time fear to inject more insulin.
 </div>
 <div id="ketoacidoza2">
-Větší riziko DKA je při léčbě inzulinovou pumpou než při aplikaci pery. Pacient s DM1 aplikuje perem jednou denně bazální inzulin, k tomu připichuje před jídly krátkodobý inzulin. Díky bazálnímu inzulinu má v sobě vždy nějakou dávku inzulinu. V pumpě je jen krátkodobě působící inzulin, proto při vytržení kanyly, o kterém pacient neví (např. v noci), glykémie rychle stoupá a rychleji spěje do DKA (nemá v sobě bazální inzulin).
+The risk of DKA is higher with insulin pump therapy than with pen application. A patient with DM1 applies basal insulin once a day with a pen, and adds short-acting insulin before meals. Due to the basal insulin, there is always some dose of insulin in the body. In the pump, there is only short-acting insulin, so if the cannula is pulled out, which the patient does not know about (e.g., at night), the glycemia rapidly increases and quickly progresses to DKA (there is no basal insulin in the body).
 
-A ještě by se dalo zmínit, že v 10-15% případů je DKA spojená s laktátovou acidózou – zejména při deficitu fosfátů (snížení 2,3-difosfoglycerátu v erytrocytu posouvá disociační křivku Hb doleva).
+It could also be mentioned that in 10-15% of cases, DKA is associated with lactic acidosis - especially in the case of phosphate deficiency (a decrease in 2,3-diphosphoglycerate in the erythrocyte shifts the dissociation curve of Hb to the left).
 </div>
 
 
@@ -58,58 +76,57 @@ A ještě by se dalo zmínit, že v 10-15% případů je DKA spojená s laktá
 </div>
 <div class="w3-half w3-padding w3-large">
 
-**Vyberte nejlepší odpověď na otázky**
 <bdl-quizx id="q20" type="choice2" 
-          question="Infuze krystaloidů v rámci léčby diabetické ketoacidózy se:" 
-          answers="je ze začátku agresivní, isotonickými roztoky ke korekci dehydratace a k obnovení i.v. objemu|je ze začátku agresivní, hyperosmolárními roztoky ke korekci dehydratace a k obnovení i.v. objemu|ze začátku se nepoužívá, důležitá je okamžitá bolusová aplikace inzulinu ke korekci hyperglykémie" 
+          question="Infusion of crystalloids in the treatment of diabetic ketoacidosis:" 
+          answers="is initially aggressive with isotonic solutions to correct dehydration and restore i.v. volume|is initially aggressive with hyperosmolar solutions to correct dehydration and restore i.v. volume|is not used initially, immediate bolus application of insulin to correct hyperglycemia is important" 
           correctoptions="true|false|false" 
-          explanations="ano|ne|ne" 
-          buttontitle="zkontrolovat odpověď" ></bdl-quizx>
+          explanations="yes|no|no" 
+          buttontitle="check answer" ></bdl-quizx>
 <bdl-quizx id="q21" type="choice2" 
-          question="Ke snížení hyperglykémie a nastartování utilizace glukózy:" 
-          answers="zahájíme kontinuální infuzi inzulinu|zahájíme kontinuální infuzi kortizolu|zahájíme kontinuální infuzi glukagonu|zahájíme kontinuální infuzi IGF-1 hormonu (insulin-like Growth factor hormone)" 
+          question="To reduce hyperglycemia and initiate glucose utilization:" 
+          answers="we start a continuous insulin infusion|we start a continuous cortisol infusion|we start a continuous glucagon infusion|we start a continuous infusion of IGF-1 hormone (insulin-like Growth factor hormone)" 
           correctoptions="true|false|false|false" 
-          explanations="ano|ne|ne|ne" 
-          buttontitle="zkontrolovat odpověď" ></bdl-quizx>      
+          explanations="yes|no|no|no" 
+          buttontitle="check answer" ></bdl-quizx>      
 <bdl-quizx id="q22" type="choice2" 
-          question="Rychlost poklesu glykémie:" 
-          answers="nezáleží na tom, je potřeba snižovat co nejrychleji, pacient je v kómatu, hrozí exitus|musí být pomalá - max. 2,5 - 4,5 mmol/L za hodinu" 
+          question="Rate of glycemia decrease:" 
+          answers="does not matter, it needs to be reduced as quickly as possible, the patient is in a coma, exitus threatens|must be slow - max. 2.5 - 4.5 mmol/L per hour" 
           correctoptions="false|true" 
-          explanations="ne|ano" 
-          buttontitle="zkontrolovat odpověď" ></bdl-quizx>
+          explanations="no|yes" 
+          buttontitle="check answer" ></bdl-quizx>
 <bdl-quizx id="q23" type="choice2" 
-          question="Proč musí být rychlost snižování glykémie pomalá?" 
-          answers="aby se rychlou změnou osmolarity vnitřního prostředí nezpůsobil mozkový edém|aby nedošlo k rychlému rozvoji těžké hypokálémie|aby se extracelulárně v krvi zachoval dostatečný energetický pool pro životně důležité orgány" 
+          question="Why must the rate of glycemia reduction be slow?" 
+          answers="to prevent cerebral edema due to rapid change in internal environment osmolarity|to prevent the rapid development of severe hypokalemia|to maintain a sufficient energy pool in the blood extracellularly for vital organs" 
           correctoptions="true|true|false" 
-          explanations="ano|ano|ne" 
-          buttontitle="zkontrolovat odpověď" ></bdl-quizx>          
-<bdl-quizx id="q24" type="choice2" 
-          question="Inzulin při hyperglykémii v rámci DKA navodí:" 
-          answers="shift kalia do buněk|shift glukózy do buněk|shift H+ do buněk|shift glukózy z buněk, která je k dispozici pro životně důležité orgány" 
+          explanations="yes|yes|no" 
+          buttontitle="check answer" ></bdl-quizx>          
+<bdl-quizx id="q24" type="choice" 
+          question="Insulin during hyperglycemia in DKA induces:" 
+          answers="shift of potassium into cells|shift of glucose into cells|shift of H<sup>+</sup> into cells|shift of glucose out of cells, which is available for vital organs" 
           correctoptions="true|true|false|false" 
-          explanations="ano|ano|ne|ne" 
-          buttontitle="zkontrolovat odpověď" ></bdl-quizx> 
+          explanations="yes|yes|no|no" 
+          buttontitle="check answer" ></bdl-quizx> 
 <bdl-quizx id="q25" type="choice2" 
-          question="DKA je častější komplikací u diabetes mellitus typu:" 
-          answers="I|II (ale nastat může)|II (nastat nemůže za žádných okolností)" 
-          correctoptions="true|false|false" 
-          explanations="ano|ne|ne" 
-          buttontitle="zkontrolovat odpověď"></bdl-quizx>          
-
-<bdl-quizx id="q26" type="choice2" 
-          question="Hladinu glykémie přímo ovlivňuje:" 
-          answers="inzulin|glukagon|růstový hormon|katecholaminy|hormony štítné žlázy|aldosteron|glukokortikoidy|melatonin|leptin" 
-          correctoptions="true|true|true|true|true|false|true|false|true" 
-          explanations="ano|ano|ano|ano|ano|ne|ano|ne|ano" 
-          buttontitle="zkontrolovat odpověď"></bdl-quizx>     
-<bdl-quizx id="q27" type="choice2" 
-          question="Může být DKA doprovázena laktátovou acidózou?" 
-          answers="ano může|ne nemůže" 
+          question="DKA is a more common complication in diabetes mellitus type:" 
+          answers="I|II" 
           correctoptions="true|false" 
-          explanations="ano|ne" 
-          buttontitle="zkontrolovat odpověď"></bdl-quizx>
+          explanations="yes|no" 
+          buttontitle="check answer"></bdl-quizx>          
+
+<bdl-quizx id="q26" type="choice" 
+          question="Glycemia level is directly influenced by:" 
+          answers="insulin|glucagon|growth hormone|catecholamines|thyroid hormones|aldosterone|glucocorticoids|melatonin|leptin" 
+          correctoptions="true|true|true|true|true|false|true|false|true" 
+          explanations="yes|yes|yes|yes|yes|no|yes|no|yes" 
+          buttontitle="check answer"></bdl-quizx>     
+<bdl-quizx id="q27" type="choice2" 
+          question="Can DKA be accompanied by lactic acidosis?" 
+          answers="yes it can|no it cannot" 
+          correctoptions="true|false" 
+          explanations="yes|no" 
+          buttontitle="check answer"></bdl-quizx>
 <bdl-quiz-summary id="qs">
-  Shrnutí odpovědí:
+  Summary of answers:
 </bdl-quiz-summary>             
 <bdl-quiz-control ids="q20,q21,q22,q23,q24,q25,q26,q27,qs"></bdl-quiz-control>
 
