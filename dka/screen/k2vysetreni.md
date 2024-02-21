@@ -77,7 +77,7 @@
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q4" type="choice2" 
            question="13. Proč má pacient hyperkalémii?" 
-           answers="A. Nedostatek inzulinu vede u této komplikace k produkci ketonů a acidóze, acidóza způsobí přesun K+ z buněk, které se vylučuje relativně více nežli H+ vzhledem k vysoké aciditě extracelulární tekutiny, K+ se do buněk dostatečně nevrací (v ledvinách vede snížení vylučování K+ relativně k závažnosti hyperkalémie). Při dlouhotrvající komplikaci tohoto typu může být i proteokatabolismus svalové hmoty.|B. V ledvinách se kalium činností tubulů aktivně vyměňuje za glukózu, organismus se tedy snaží o vyloučení nadměrného množství glukózy a snížení glykémie, což na druhé straně vede k retenci kália, které organismus následně použivá ke kontrole ABR směnou za H+ na buněčné membráně." 
+           answers="B. Nedostatek inzulinu vede u této komplikace k produkci ketonů a acidóze, acidóza způsobí přesun K+ z buněk, které se vylučuje relativně více nežli H+ vzhledem k vysoké aciditě extracelulární tekutiny, K+ se do buněk dostatečně nevrací (v ledvinách vede snížení vylučování K+ relativně k závažnosti hyperkalémie). Při dlouhotrvající komplikaci tohoto typu může být i proteokatabolismus svalové hmoty.|A. V ledvinách se kalium činností tubulů aktivně vyměňuje za glukózu, organismus se tedy snaží o vyloučení nadměrného množství glukózy a snížení glykémie, což na druhé straně vede k retenci kália, které organismus následně použivá ke kontrole ABR směnou za H+ na buněčné membráně." 
            correctoptions="true|false" 
            explanations="ano|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
@@ -89,7 +89,7 @@
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q6" type="choice2" 
            question="15. Co byste doplnili za vyšetření ke zhodnocení aktuální akutní poruchy vnitřního prostředí?" 
-           answers="A. ASTRUP|B. Glykovaný hemoglobin|C. protilátky proti inzulinu a buňkám ostrůvků" 
+           answers="C. ASTRUP|A. Glykovaný hemoglobin|B. protilátky proti inzulinu a buňkám ostrůvků" 
            correctoptions="true|false|false" 
            explanations="ano|ne|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
@@ -97,7 +97,6 @@
   Shrnutí odpovědí:
 </bdl-quiz-summary>          
 <bdl-quiz-control ids="q1,q2,q3,q4,q5,q6,qs1"></bdl-quiz-control>          
-
 </div>
 </div>
 </div>
