@@ -1,11 +1,10 @@
 <div class="w3-row">
-<div class="w3-twothird">
+<div class="w3-col l7 m7 s12">
 
 <bdl-tabs idlist="astrup2,astrup,biochemie" titlelist="ASTRUP pH pCO2,ASTRUP pH HCO3-,Biochemie"></bdl-tabs>
-
-<div class="w3-row">
   <div id="astrup" style="line-height:0.9">
-    <div class="w3-half w3-sand w3-large w3-padding">
+<div class="w3-half">
+    <div class="w3-sand w3-large w3-margin">
 
 **ASTRUP vstupní:**
 | |  | |
@@ -13,25 +12,24 @@
 | pH: |  7,14 | [7,36..7,44] |
 | pCO2: | 2,48 kPa | [4,7..6] |
 | | 18,6 mmHg | [35..45] |
-| &nbsp; | | |
 | Akt.bikarb: | 6,1 mmol/l | [22..26] |
 | Stand.bikar: | 8,9 mmol/l | [22..26] |
 | BE akt.: |  -21,9 mmol/l | [-2..2] |
 | pO2: | 12,1 kPa | [10,4..14,3] |
 | | 90 mmHg | [78.. 107] |
-| &nbsp; | | |
 | sat.O2: | 95 % | [94..99] |
-  </div>
-<div class="w3-half">
-
+</div>
+</div><div class="w3-half">
 <object id="mySvg" type="image/svg+xml" data="screen/Acid-base_nomogramK1.svg" style="width:100%">
   Your browser does not support SVG
 </object>
 
+**Acid-base nomogram**
 </div>
 </div>
 <div id="astrup2" style="line-height:0.9">
-    <div class="w3-half w3-sand w3-large w3-padding">
+<div class="w3-half">
+    <div class="w3-sand w3-large w3-margin">
 
 **ASTRUP vstupní:**
 | |  | |
@@ -39,26 +37,25 @@
 | pH: |  7,14 | [7,36..7,44] |
 | pCO2: | 2,48 kPa | [4,7..6] |
 | | 18,6 mmHg | [35..45] |
-| &nbsp; | | |
 | Akt.bikarb: | 6,1 mmol/l | [22..26] |
 | Stand.bikar: | 8,9 mmol/l | [22..26] |
 | BE akt.: |  -21,9 mmol/l | [-2..2] |
 | pO2: | 12,1 kPa | [10,4..14,3] |
 | | 90 mmHg | [78.. 107] |
-| &nbsp; | | |
 | sat.O2: | 95 % | [94..99] |
   </div>
-<div class="w3-half">
+</div><div class="w3-half">
+<bdl-sachart fromid="idfmi" refindex="9,3" convertors="1,1,0;1,133.322" width="300" height="300"></bdl-sachart> 
 
-<bdl-sachart fromid="idfmi" refindex="9,3" convertors="1,1,0;1,133.322" width="500" height="500" p-h="7.14" p-c-o2="18.75"></bdl-sachart> 
+**Siggaard Andersen nomogram**
+<!--  p-h="7.14" p-c-o2="18.75"-->
+</div></div>
 
-</div>
-</div>
 <div id="biochemie" style="line-height:0.9">
-    <div class="w3-half w3-sand w3-large w3-padding">
+<div class="w3-half">
+<div class="w3-sand w3-margin">
 
 **Diff. rozpočet leukocytů:**
-
 | | | |
 |----|------------|------------|
 | Neutrofily | 8,9 e+9/L| [2,0 - 7,0] |
@@ -67,7 +64,6 @@
 | Eosinofily | norma | |
 | Basofily | norma | |
 **Biochemie**
-
 | | | |
 |----|------------|------------|
 | Na | 123 mmol/l | [135..146] |
@@ -84,18 +80,15 @@
 | HbA1c | 49 mmol/mol | [28..40] |
 | Stand.bikar | 8,9 mmol/l | [22..26] |
 | Akt.bikarb: | 6,1 mmol/l | [22..26] |
-
 </div>
-<div class="w3-half">
+</div><div class="w3-half">
 
 <bdl-calculator></bdl-calculator>
-</div>    
+</div>
+</div>
+</div>
+<div class="w3-col l5 m5 s12">
 
-</div>
-
-</div>
-</div>
-<div class="w3-third">
 
 <bdl-quizx id="q7" type="choice2" 
            question="19. Jaká je to porucha ABR dle diagramu ASTRUP pH pCO2?" 
@@ -140,7 +133,7 @@
            explanations="ano|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q11" type="choice2" 
-           question="26. Jakou očekáváte osmolalitu séra? Jak ji lze vypočítat?" 
+           question="26. Jakou očekáváte osmolaritu séra? Jak ji lze vypočítat?" 
            answers="A. Osmolarita = (2xNa) + glykémie + urea - osmolarita bude zvýšená|B. Osmolarita bude snížená pro ztrátu sodíku a draslíku, vzorec (Na<sup>+</sup>) + (Cl<sup>-</sup>) + (K<sup>+</sup>) + urea" 
            correctoptions="true|false" 
            explanations="ano|ne" 
