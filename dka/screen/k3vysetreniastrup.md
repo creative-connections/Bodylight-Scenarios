@@ -1,8 +1,7 @@
 <div class="w3-row">
 <div class="w3-twothird">
 
-<bdl-tabs idlist="astrup,biochemie" 
-  titlelist="ASTRUP,Biochemie"></bdl-tabs>
+<bdl-tabs idlist="astrup2,astrup,biochemie" titlelist="ASTRUP pH pCO2,ASTRUP pH HCO3-,Biochemie"></bdl-tabs>
 
 <div class="w3-row">
   <div id="astrup" style="line-height:0.9">
@@ -28,6 +27,30 @@
 <object id="mySvg" type="image/svg+xml" data="screen/Acid-base_nomogramK1.svg" style="width:100%">
   Your browser does not support SVG
 </object>
+
+</div>
+</div>
+<div id="astrup2" style="line-height:0.9">
+    <div class="w3-half w3-sand w3-large w3-padding">
+
+**ASTRUP vstupní:**
+| |  | |
+|-----|------|-------|
+| pH: |  7,14 | [7,36..7,44] |
+| pCO2: | 2,48 kPa | [4,7..6] |
+| | 18,6 mmHg | [35..45] |
+| &nbsp; | | |
+| Akt.bikarb: | 6,1 mmol/l | [22..26] |
+| Stand.bikar: | 8,9 mmol/l | [22..26] |
+| BE akt.: |  -21,9 mmol/l | [-2..2] |
+| pO2: | 12,1 kPa | [10,4..14,3] |
+| | 90 mmHg | [78.. 107] |
+| &nbsp; | | |
+| sat.O2: | 95 % | [94..99] |
+  </div>
+<div class="w3-half">
+
+<bdl-sachart fromid="idfmi" refindex="9,3" convertors="1,1,0;1,133.322" width="500" height="500" p-h="7.14" p-c-o2="18.75"></bdl-sachart> 
 
 </div>
 </div>
@@ -73,12 +96,19 @@
 </div>
 </div>
 <div class="w3-third">
+
 <bdl-quizx id="q7" type="choice2" 
            question="20. Jaká je to porucha ABR?" 
            answers="A. metabolická acidóza|B. akutní respirační acidóza|C. chronická respirační acidóza|D. metabolická alkalóza" 
            correctoptions="true|false|false" 
            explanations="ano|ne|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
+<bdl-quizx id="q7" type="choice2" 
+           question="20. Jaká je to porucha ABR?" 
+           answers="A. metabolická acidóza|B. akutní respirační acidóza|C. chronická respirační acidóza|D. metabolická alkalóza" 
+           correctoptions="true|false|false" 
+           explanations="ano|ne|ne" 
+           buttontitle="zkontrolovat odpověď"></bdl-quizx>           
 <bdl-quizx id="q7a" type="choice2" 
            question="21. Co to tedy může být za komplikaci DM 1. typu?" 
            answers="B. diabetická ketoacidóza| A. hypochloremická alkalóza při diabetu a zvracení|C. hyperglykemické hyperosmolární kóma" 
@@ -141,7 +171,6 @@
            correctoptions="true|false" 
            explanations="ano|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
-
 <bdl-quiz-summary id="qs1">
   Shrnutí odpovědí:
   <button class="w3-right w3-button w3-theme" onclick="document.getElementById('mySvg').contentDocument.getElementById('patientpoint').style.display='';">Zobraz hodnoty</button>
