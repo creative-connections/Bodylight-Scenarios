@@ -45,9 +45,10 @@
 | sat.O2: | 95 % | [94..99] |
   </div>
 </div><div class="w3-half">
-<bdl-sachart fromid="idfmi" refindex="9,3" convertors="1,1,0;1,133.322" width="300" height="300"></bdl-sachart> 
+<bdl-sachart fromid="idfmi" refindex="9,3" convertors="1,1,0;1,133.322" width="250" height="250"></bdl-sachart> 
 
 **Siggaard Andersen nomogram**
+
 <!--  p-h="7.14" p-c-o2="18.75"-->
 </div></div>
 
