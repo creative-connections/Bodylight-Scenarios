@@ -52,7 +52,7 @@
   </div>
 <div class="w3-half">
 
-<bdl-sachart fromid="idfmi" refindex="9,3" convertors="1,1,0;1,133.322" width="500" height="500" p-h="7.14" p-c-o2="18.75"></bdl-sachart> 
+<bdl-sachart fromid="idfmi" refindex="9,3" convertors="1,1,0;1,133.322" width="250" height="250"></bdl-sachart> 
 
 </div>
 </div>
