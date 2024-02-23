@@ -102,86 +102,82 @@
 </div>
 <div class="w3-third">
 <bdl-quizx id="q7" type="choice2" 
-           question="What type of ABR disorder is this - as in pH pCO2 diagram?" 
+           question="3.1 What type of ABR disorder is this - as in pH pCO2 diagram?" 
            answers="A. chronic base deficit|B. acute base deficit|C. chronic hypercapnia|D. acute hypercapnia" 
            correctoptions="true|false|false|false" 
            explanations="ano|ne|ne|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q70" type="choice2" 
-           question="What type of ABR disorder is this - as in pH HCO3- diagram?" 
-           answers="metabolic acidosis|acute respiratory acidosis|chronic respiratory acidosis|metabolic alkalosis" 
-           correctoptions="true|false|false" 
-           explanations="yes|no|no" 
+           question="3.2 What type of ABR disorder is this - as in pH HCO3- diagram?" 
+           answers="A. metabolic acidosis|B. acute respiratory acidosis|C. chronic respiratory acidosis|D. metabolic alkalosis" 
+           correctoptions="true|false|false|false" 
+           explanations="yes|no|no|no" 
            buttontitle="check answer"></bdl-quizx>
 <bdl-quizx id="q7a" type="choice2" 
-           question="What could this be a complication of type 1 DM?" 
-           answers="diabetic ketoacidosis| hypochloremic alkalosis in diabetes and vomiting|hyperglycemic hyperosmolar coma" 
+           question="3.3 What could this be a complication of type 1 DM?" 
+           answers="A. diabetic ketoacidosis| B. hypochloremic alkalosis in diabetes and vomiting|C. hyperglycemic hyperosmolar coma" 
            correctoptions="true|false|false" 
            explanations="yes|no|no" 
            buttontitle="check answer"></bdl-quizx>           
 <bdl-quizx id="q8" type="choice2" 
-           question="What is the anion gap?" 
-           answers="AG = Na<sup>+</sup> – (Cl<sup>-</sup> + HCO3<sup>-</sup>) in the USA and at our institute<br/>AG = (Na<sup>+</sup>+K<sup>+</sup>) – (Cl<sup>-</sup> + HCO3<sup>-</sup>) in Europe|AG = (Na<sup>+</sup>) + (2x Cl<sup>-</sup>) + (HCO3<sup>-</sup>) in the USA and at our institute<br/>|AG = (Na<sup>+</sup>) + (2x Cl<sup>-</sup>) + (HCO3<sup>-</sup>) + (K<sup>+</sup>) in Europe" 
-           correctoptions="true|false" 
-           explanations="yes|no" 
+           question="3.4 What is the anion gap?" 
+           answers="A. AG = Na<sup>+</sup> – (Cl<sup>-</sup> + HCO3<sup>-</sup>) in the USA and at our institute<br/>AG = (Na<sup>+</sup>+K<sup>+</sup>) – (Cl<sup>-</sup> + HCO3<sup>-</sup>) in Europe|B. AG = (Na<sup>+</sup>) + (2x Cl<sup>-</sup>) + (HCO3<sup>-</sup>) in the USA and at our institute<br/>|C. AG = (Na<sup>+</sup>) + (2x Cl<sup>-</sup>) + (HCO3<sup>-</sup>) + (K<sup>+</sup>) in Europe" 
+           correctoptions="true|false|false" 
+           explanations="yes|no|no" 
            buttontitle="check answer"></bdl-quizx>
 <bdl-quizx id="q8a" type="choice2" 
-           question="The anion gap typically ranges from 10-12 mmol/l, marginally then 16 mmol/l. An increased anion gap may indicate the presence of certain diseases or conditions, such as metabolic acidosis. Calculate the anion gap from memory or on a calculator according to the values and select:" 
-           answers="AG = 28.9| AG = 314.2 | AG = 10" 
+           question="3.5 The anion gap typically ranges from 10-12 mmol/l, marginally then 16 mmol/l. An increased anion gap may indicate the presence of certain diseases or conditions, such as metabolic acidosis. Calculate the anion gap from memory or on a calculator according to the values and select:" 
+           answers="A. AG = 28.9| B. AG = 314.2 | C. AG = 10" 
            correctoptions="true|false" 
            explanations="yes|no" 
            buttontitle="check answer"></bdl-quizx>           
 <bdl-quizx id="q9" type="choice2" 
-           question="How would ABR parameters and clinical picture change during vomiting?" 
-           answers="Vomiting leads to the complication of existing metabolic acidosis by metabolic alkalosis (loss of H<sup>+</sup>, Cl<sup>-</sup>), suppression of respiratory compensatory mechanisms, deepening dehydration, increasing losses of K<sup>+</sup> and worsening of the condition (combined ABR disorder, K<sup>+</sup> depletion).|vomiting results in the loss of K<sup>+</sup>, leading to the development of hypokalemia and if the situation is not addressed, the exchange of H<sup>+</sup> for K<sup>+</sup> on the cell membrane (K<sup>+</sup> goes out, H<sup>+</sup> inside, leading to alkalization of the internal environment." 
+           question="3.6 How would ABR parameters and clinical picture change during vomiting?" 
+           answers="B. Vomiting leads to the complication of existing metabolic acidosis by metabolic alkalosis (loss of H<sup>+</sup>, Cl<sup>-</sup>), suppression of respiratory compensatory mechanisms, deepening dehydration, increasing losses of K<sup>+</sup> and worsening of the condition (combined ABR disorder, K<sup>+</sup> depletion).|A. vomiting results in the loss of K<sup>+</sup>, leading to the development of hypokalemia and if the situation is not addressed, the exchange of H<sup>+</sup> for K<sup>+</sup> on the cell membrane (K<sup>+</sup> goes out, H<sup>+</sup> inside, leading to alkalization of the internal environment." 
            correctoptions="true|false" 
            explanations="yes|no" 
            buttontitle="check answer"></bdl-quizx>
 <bdl-quizx id="q10" type="choice2" 
-           question="What findings do you expect in urine?" 
-           answers="I would expect ketonuria, glycosuria, polyuria, higher amounts of Na<sup>+</sup>, K<sup>+</sup> and phosphates, acidic pH|urine pH will be alkaline, there will be ketonuria, low concentration of K<sup>+</sup>, Na<sup>+</sup> and phosphates, there will be severe proteinuria" 
+           question="3.7 What findings do you expect in urine?" 
+           answers="A. I would expect ketonuria, glycosuria, polyuria, higher amounts of Na<sup>+</sup>, K<sup>+</sup> and phosphates, acidic pH|B. urine pH will be alkaline, there will be ketonuria, low concentration of K<sup>+</sup>, Na<sup>+</sup> and phosphates, there will be severe proteinuria" 
            correctoptions="true|false" 
            explanations="yes|no" 
            buttontitle="check answer"></bdl-quizx>
 <bdl-quizx id="q11" type="choice2" 
-           question="What osmolality of serum do you expect? How can it be calculated?" 
-           answers="Osmolarity = (2xNa) + glycemia + urea - osmolarity will be increased|Osmolarity will be decreased due to loss of sodium and potassium, formula (Na<sup>+</sup>) + (Cl<sup>-</sup>) + (K<sup>+</sup>) + urea" 
+           question="3.8 What osmolality of serum do you expect? How can it be calculated?" 
+           answers="B. Osmolarity = (2xNa) + glycemia + urea - osmolarity will be increased|A. Osmolarity will be decreased due to loss of sodium and potassium, formula (Na<sup>+</sup>) + (Cl<sup>-</sup>) + (K<sup>+</sup>) + urea" 
            correctoptions="true|false" 
            explanations="yes|no" 
            buttontitle="check answer"></bdl-quizx>
 <bdl-quizx id="q12" type="choice2" 
-           question="How would you interpret renal parameters?" 
-           answers="Elevation of urea and creatinine vs. due to dehydration and practically prerenal failure with the development of renal ischemia. Another reason could also be chronic renal insufficiency developed over the course of the disease due to the patient's non-cooperation in treatment. Currently worsened by concurrently running complication and dehydration." 
+           question="3.9 How would you interpret renal parameters?" 
+           answers="A. Elevation of urea and creatinine vs. due to dehydration and practically prerenal failure with the development of renal ischemia. Another reason could also be chronic renal insufficiency developed over the course of the disease due to the patient's non-cooperation in treatment. Currently worsened by concurrently running complication and dehydration." 
            correctoptions="true" 
            explanations="yes" 
            buttontitle="check answer"></bdl-quizx>
 <bdl-quizx id="q13" type="choice2" 
-           question="What is the development of potassium levels in ketoacidosis? Over time, at the start of treatment and its continuation in the further course without potassium substitution?" 
-           answers="Hyperkalemia persists throughout, it adjusts only when glucose drops < 10mmol/L. If treatment is not initiated, the patient with hyperglycemia and hyperkalemia dies from malignant arrhythmia, if potassium is substituted during treatment, hyperkalemia worsens and the patient is at risk of malignant arrhythmia.|metabolic acidosis initially causes hyperkalemia, which is corrected by treatment to the right value, if K<sup>+</sup> is not compensated by infusions, the patient is at risk of severe hypokalemia due to potassium losses through urine and depletion of IC reserves." 
+           question="3.10 What is the development of potassium levels in ketoacidosis? Over time, at the start of treatment and its continuation in the further course without potassium substitution?" 
+           answers="A. Hyperkalemia persists throughout, it adjusts only when glucose drops < 10mmol/L. If treatment is not initiated, the patient with hyperglycemia and hyperkalemia dies from malignant arrhythmia, if potassium is substituted during treatment, hyperkalemia worsens and the patient is at risk of malignant arrhythmia.|B. metabolic acidosis initially causes hyperkalemia, which is corrected by treatment to the right value, if K<sup>+</sup> is not compensated by infusions, the patient is at risk of severe hypokalemia due to potassium losses through urine and depletion of IC reserves." 
            correctoptions="false|true" 
            explanations="no|yes" 
            buttontitle="check answer"></bdl-quizx>
 <bdl-quizx id="q14" type="choice2" 
-           question="What is the cause of diabetic ketoacidosis?" 
-           answers="absolute lack of insulin and excess of glucagon|relative lack of insulin" 
+           question="3.11 What is the cause of diabetic ketoacidosis?" 
+           answers="A. absolute lack of insulin and excess of glucagon|B. relative lack of insulin" 
            correctoptions="true|false" 
            explanations="yes|no" 
            buttontitle="check answer"></bdl-quizx>
 <bdl-quizx id="q15" type="choice2" 
-           question="What is the pathogenesis of the development of diabetic ketoacidosis?"></bdl-quizx>
+           question="3.12 What is the pathogenesis of the development of diabetic ketoacidosis?"></bdl-quizx>
 <bdl-quizx id="q16" type="choice2" 
-           question="Which other conditions lead to increased production of ketone bodies?" 
-           answers="alcoholism and starvation|hypothyroidism, Cushing's syndrome" 
+           question="3.13 Which other conditions lead to increased production of ketone bodies?" 
+           answers="A. alcoholism and starvation|B. hypothyroidism, Cushing's syndrome" 
            correctoptions="true|false" 
            explanations="yes|no" 
            buttontitle="check answer"></bdl-quizx>
-
 <bdl-quiz-summary id="qs1">
   Summary of answers:
   <button class="w3-right w3-button w3-theme" onclick="document.getElementById('mySvg').contentDocument.getElementById('patientpoint').style.display='';">Show values</button>
 </bdl-quiz-summary>
-          
-<bdl-quiz-control ids="q7,q70,q7a,q8,q8a,q9,q10,q11,q12,q13,q14,q15,q16,qs1"></bdl-quiz-control>             
-
-</div>
+<bdl-quiz-control ids="q7,q70,q7a,q8,q8a,q9,q10,q11,q12,q13,q14,q15,q16,qs1"></bdl-quiz-control>             </div>
 </div>
