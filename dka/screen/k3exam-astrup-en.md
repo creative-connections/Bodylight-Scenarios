@@ -133,7 +133,7 @@
            buttontitle="check answer"></bdl-quizx>           
 <bdl-quizx id="q9" type="choice2" 
            question="How would ABR parameters and clinical picture change during vomiting?" 
-           answers="Vomiting leads to the complication of existing metabolic acidosis by metabolic alkalosis (loss of H<sup>+</sup>, Cl<sup>-</sup>, bicarbonate), suppression of respiratory compensatory mechanisms, deepening dehydration, increasing losses of K<sup>+</sup> and worsening of the condition (combined ABR disorder, K<sup>+</sup> depletion).|vomiting results in the loss of K<sup>+</sup>, leading to the development of hypokalemia and if the situation is not addressed, the exchange of H<sup>+</sup> for K<sup>+</sup> on the cell membrane (K<sup>+</sup> goes out, H<sup>+</sup> inside, leading to alkalization of the internal environment." 
+           answers="Vomiting leads to the complication of existing metabolic acidosis by metabolic alkalosis (loss of H<sup>+</sup>, Cl<sup>-</sup>), suppression of respiratory compensatory mechanisms, deepening dehydration, increasing losses of K<sup>+</sup> and worsening of the condition (combined ABR disorder, K<sup>+</sup> depletion).|vomiting results in the loss of K<sup>+</sup>, leading to the development of hypokalemia and if the situation is not addressed, the exchange of H<sup>+</sup> for K<sup>+</sup> on the cell membrane (K<sup>+</sup> goes out, H<sup>+</sup> inside, leading to alkalization of the internal environment." 
            correctoptions="true|false" 
            explanations="yes|no" 
            buttontitle="check answer"></bdl-quizx>
