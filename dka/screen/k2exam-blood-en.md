@@ -50,8 +50,7 @@
 | ALP            | 1.8 ukat/l   | [0.67..2.15]|
 | GMT            | 0.15 ukat/l   | [0.1..0.39] |
 | Glycemia       | 48.4 mmol/l   | [3.9..5.6]  |
-| HbA1c          | 49 mmol/mol   | [28..40]    |
-
+| HbA1c          | 57 mmol/mol   | [28..40]    |
 
 </div>
 </div>
