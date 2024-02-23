@@ -47,7 +47,7 @@
 | Total Bilirubin| 10.2 µmol/l   | [2..17]     |
 | ALT            | 0.2 ukat/l    | [0.05..0.6] |
 | AST            | 0.38 ukat/l   | [0.1..0.63] |
-| ALP            | 1.8 ukat/l   | [0.67..2.15]|
+| ALP            | 2.06 ukat/l   | [0.67..2.15]|
 | GMT            | 0.15 ukat/l   | [0.1..0.39] |
 | Glycemia       | 48.4 mmol/l   | [3.9..5.6]  |
 | HbA1c          | 57 mmol/mol   | [28..40]    |
