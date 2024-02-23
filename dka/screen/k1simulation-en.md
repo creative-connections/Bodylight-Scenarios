@@ -37,7 +37,7 @@
                         refvalues="1" throttle="100" colorindex="2" minichart="true"
                         initialdata="0,0.01;0,0" maxdata="300"></bdl-chartjs-time>
                     &nbsp;<bdl-chartjs-time width="390" height="150" fromid="hemodynamics" labels="pulsatile sO2"
-                        refindex="0" refvalues="1" throttle="100" colorindex="4" minichart="false" convertors="0.0075,1.3,10" min="60" max="140"
+                        refindex="0" refvalues="1" throttle="100" colorindex="4" minichart="false" convertors="0.0075,1.4" min="60" max="140"
                         initialdata="0,0.01;11370,11370" maxdata="300"></bdl-chartjs-time>
                 </div>
                 <div class="w3-third">
@@ -53,8 +53,8 @@
                         <br />
                         <div class="w3-text-red w3-large">
                             &nbsp;NIBP<b class="w3-xlarge"><bdl-value id="v3" style="display:none" fromid="hemodynamics" refindex="1"
-                                    convertor="0.0075,1.3,10" precision="3"></bdl-value>/<bdl-value fromid="hemodynamics" id="v4" style="display:none" 
-                                    refindex="2" convertor="0.0075,1.3,10" tofixed="0"></bdl-value></b>
+                                    convertor="0.0075,1.4" tofixed="0"></bdl-value>/<bdl-value fromid="hemodynamics" id="v4" style="display:none" 
+                                    refindex="2" convertor="0.0075,1.4" tofixed="0"></bdl-value></b>
                             <span class="w3-small">mmHg</span>
                         </div>
                         <br />
@@ -226,7 +226,7 @@
           buttontitle="check answer" ></bdl-quizx>
 <bdl-quizx id="q3" type="choice2"
           question="4. What is the arterial pressure, choose the closest value"
-          answers="A. 126/82 mmHg|B. 107/74 mmHg|C. 149/98 mmHg"
+          answers="A. 123/86 mmhg|B. 90/60 mmhg|C. 140/90 mmhg"
           correctoptions="false|true|false"
           explanations="no|yes|no"
           buttontitle="check answer" ></bdl-quizx>
