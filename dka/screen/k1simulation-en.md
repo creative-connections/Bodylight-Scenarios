@@ -207,37 +207,37 @@
     </div>
     <br/>
 <bdl-quizx id="q0" type="choice"
-          question="1. What objective examination can be performed on a patient whose result is known immediately (within seconds to minutes)"
+          question="1.1 What objective examination can be performed on a patient whose result is known immediately (within seconds to minutes)"
           answers="A. Auscultation of breathing|B. Auscultation of the heart|C. Measurement of arterial pressure|D. Blood oxygen saturation from the finger|E. Glycemia determination by glucometer from the finger|F. Blood count|G. Blood and urine biochemistry|H. ASTRUP examination of arterial or capillary blood"
           correctoptions="true|true|true|true|true|false|false|false"
           explanations="yes|yes|yes|yes|yes|no|no|no"
           buttontitle="check answer" ></bdl-quizx>
 <bdl-quizx id="q1" type="choice2"
-          question="2. Start or watch the simulation and what is the approximate respiratory rate"
+          question="1.2 Start or watch the simulation and what is the approximate respiratory rate"
           answers="A. 17 /min|B. 25 /min|C. 33 /min"
           correctoptions="false|false|true"
           explanations="no|no|yes"
           buttontitle="check answer" ></bdl-quizx>
 <bdl-quizx id="q2" type="choice2"
-          question="3. What is the approximate heart rate"
+          question="1.3 What is the approximate heart rate"
           answers="A. 51 /min|B. 71 /min|C. 121 /min"
           correctoptions="false|true|false"
           explanations="no|yes|no"
           buttontitle="check answer" ></bdl-quizx>
 <bdl-quizx id="q3" type="choice2"
-          question="4. What is the arterial pressure, choose the closest value"
+          question="1.4 What is the arterial pressure, choose the closest value"
           answers="A. 123/86 mmhg|B. 90/60 mmhg|C. 140/90 mmhg"
           correctoptions="false|true|false"
           explanations="no|yes|no"
           buttontitle="check answer" ></bdl-quizx>
 <bdl-quizx id="q4" type="choice2"
-          question="5. What is the blood oxygen saturation, choose the closest value"
+          question="1.5 What is the blood oxygen saturation, choose the closest value"
           answers="A. 85 %|B. 91%|C. 98%"
           correctoptions="false|true|false"
           explanations="no|yes|no"
           buttontitle="check answer" ></bdl-quizx>
 <bdl-quizx id="q5" type="choice2"
-          question="6. Try to guess the glycemia level from the glucometer"
+          question="1.6 Try to guess the glycemia level from the glucometer"
           answers="A. 3.1 mmol/l|B. 5.7 mmol/l|C. 11 mmol/l|D. 46 mmol/l"
           correctoptions="false|false|false|true"
           explanations="no|no|no|yes"
@@ -247,6 +247,6 @@
   <button class="w3-right w3-button w3-theme" onclick="document.querySelectorAll('#v1, #v2, #v3, #v4, #v5, #v6,#v7,#v8').forEach(el => el.style.display = 'inline');">Show values</button>
 </bdl-quiz-summary>
 <bdl-quiz-control ids="q0,q1,q2,q3,q4,q5,qs1"></bdl-quiz-control>
-    </div>
+</div>
 </div>
 
