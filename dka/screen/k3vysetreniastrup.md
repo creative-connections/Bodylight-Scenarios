@@ -130,7 +130,7 @@
            buttontitle="zkontrolovat odpověď"></bdl-quizx>           
 <bdl-quizx id="q9" type="choice2" 
            question="24. Jak by se změnily parametry ABR a klinický obraz, při zvracení?" 
-           answers="A. Při zvracení dojde ke komplikaci již existující metabolické acidózy metabolickou alkalózou (ztráta H<sup>+</sup>, Cl<sup>-</sup>, bikarbonát), utlumení respiračních kompenzačních mechanismů, prohloubení dehydratace, zvýšení ztrát K<sup>+</sup> a ke zhoršení stavu (kombinovaná porucha ABR, deplece K<sup>+</sup>).|B. zvracením se ztrácí K<sup>+</sup>, dochází k rozvoji hypokálémie a není-li situace řešena, směně H<sup>+</sup> za K<sup>+</sup> na buněčné membráně (K<sup>+</sup> jde ven, H<sup>+</sup> dovnitř, dojde ke alkalizaci vnitřního prostředí." 
+           answers="A. Při zvracení dojde ke komplikaci již existující metabolické acidózy metabolickou alkalózou (ztráta H<sup>+</sup>, Cl<sup>-</sup>), utlumení respiračních kompenzačních mechanismů, prohloubení dehydratace, zvýšení ztrát K<sup>+</sup> a ke zhoršení stavu (kombinovaná porucha ABR, deplece K<sup>+</sup>).|B. zvracením se ztrácí K<sup>+</sup>, dochází k rozvoji hypokálémie a není-li situace řešena, směně H<sup>+</sup> za K<sup>+</sup> na buněčné membráně (K<sup>+</sup> jde ven, H<sup>+</sup> dovnitř, dojde ke alkalizaci vnitřního prostředí." 
            correctoptions="true|false" 
            explanations="ano|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
