@@ -49,6 +49,7 @@
 |                | 90 mmHg | [78..107]   |
 | &nbsp;         |         |             |
 | sat.O2:        | 95 %    | [94..99]    |
+
   </div>
 <div class="w3-half">
 
@@ -82,10 +83,10 @@
 | Total Bilirubin| 10.2 µmol/l   | [2..17]     |
 | ALT            | 0.2 ukat/l    | [0.05..0.6] |
 | AST            | 0.38 ukat/l   | [0.1..0.63] |
-| ALP            | 5.06 ukat/l   | [0.67..2.15]|
+| ALP            | 2.06 ukat/l   | [0.67..2.15]|
 | GMT            | 0.15 ukat/l   | [0.1..0.39] |
 | Glycemia       | 48.4 mmol/l   | [3.9..5.6]  |
-| HbA1c          | 49 mmol/mol   | [28..40]    |
+| HbA1c          | 57 mmol/mol   | [28..40]    |
 | Std.bicarb. | 8,9 mmol/l | [22..26] |
 | Active bicarb. | 6,1 mmol/l | [22..26] |
 
