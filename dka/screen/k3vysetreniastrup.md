@@ -43,6 +43,7 @@
 | pO2: | 12,1 kPa | [10,4..14,3] |
 | | 90 mmHg | [78.. 107] |
 | sat.O2: | 95 % | [94..99] |
+
   </div>
 </div><div class="w3-half">
 <bdl-sachart fromid="idfmi" refindex="9,3" convertors="1,1,0;1,133.322" width="250" height="250" p-H="6.9" p-c-o2="40"></bdl-sachart> 
@@ -81,10 +82,10 @@
 | Bilirub. celk. | 10,2 μmol/l | [2..17] |
 | ALT | 0,2 ukat/l | [0,05..0,6] |
 | AST | 0,38 ukat/l | [0,1..0,63] |
-| ALP | 5,06 ukat/l | [0,67..2,15] |
+| ALP | 2,06 ukat/l | [0,67..2,15] |
 | GMT | 0,15 ukat/l | [0,1..0,39] |
 | Glykemie |  48,4 mmol/l | [3,9..5,6] |
-| HbA1c | 49 mmol/mol | [28..40] |
+| HbA1c | 57 mmol/mol | [28..40] |
 | Stand.bikar | 8,9 mmol/l | [22..26] |
 | Akt.bikarb: | 6,1 mmol/l | [22..26] |
 </div>
