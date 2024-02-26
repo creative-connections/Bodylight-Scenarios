@@ -62,25 +62,27 @@
 <div class="w3-half">
     <div class="w3-sand w3-large w3-margin">
 
-**ASTRUP vstupní:**
-| |  | |
-|-----|------|-------|
-| pH: |  7,14 | [7,36..7,44] |
-| pCO2: | 2,48 kPa | [4,7..6] |
-| | 18,6 mmHg | [35..45] |
-| Akt.bikarb: | 6,1 mmol/l | [22..26] |
-| Stand.bikar: | 8,9 mmol/l | [22..26] |
-| BE akt.: |  -21,9 mmol/l | [-2..2] |
-| pO2: | 12,1 kPa | [10,4..14,3] |
-| | 90 mmHg | [78.. 107] |
-| sat.O2: | 95 % | [94..99] |
+**Initial ASTRUP:**
+|                |         |             |
+|----------------|---------|-------------|
+| pH:            |  7.14   | [7.36..7.44]|
+| pCO2:          | 2.48 kPa| [4.7..6.0]  |
+|                | 18.6 mmHg | [35..45]   |
+| &nbsp;         |         |             |
+| Active bicarb: | 6.1 mmol/l | [22..26]  |
+| Std. bicarb:   | 8.9 mmol/l | [22..26]  |
+| BE active:     | -21.9 mmol/l| [-2..2]  |
+| pO2:           | 12.1 kPa| [10.4..14.3]|
+|                | 90 mmHg | [78..107]   |
+| &nbsp;         |         |             |
+| sat.O2:        | 95 %    | [94..99]    |
 </div>
 </div><div class="w3-half">
 <object id="mySvg" type="image/svg+xml" data="screen/nomogramEnglis3.svg" style="width:100%">
   Your browser does not support SVG
 </object>
 
-**nomogram podle Engliše** _A_ - acute, _U_ - chronic/steady, _M_ - metabolic, _R_ - respiratory, _Ac_ - acidosis, _Alk_ - alkalosis
+**nomogram as Engliš (1972)** _A_ - acute, _U_ - chronic/steady, _M_ - metabolic, _R_ - respiratory, _Ac_ - acidosis, _Alk_ - alkalosis
 </div>
 </div>
 
