@@ -1,8 +1,8 @@
 <div class="w3-row">
 <div class="w3-twothird">
 
-<bdl-tabs idlist="astrup2,astrup,biochemie" 
-  titlelist="ASTRUP pH pCO2,ASTRUP pH HCO3-,Biochemie"></bdl-tabs>
+<bdl-tabs idlist="astrup2,astrup,biochemie,diabetes" 
+  titlelist="ASTRUP pH pCO2,ASTRUP pH HCO3-,Biochemie,Pathophysiology DM"></bdl-tabs>
 
 <div class="w3-row">
   <div id="astrup" style="line-height:0.9">
@@ -96,6 +96,23 @@
 <bdl-calculator></bdl-calculator>
 </div>    
 
+</div>
+<div id="diabetes">
+<div class="w3-half">
+
+![diabetes1](diabetes1.jpg)
+
+![diabetes2](diabetes2.jpg)
+
+Stefan Silbernagl, Florian Lang: **Color Atlas of Pathophysiology
+Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016 
+
+</div>
+<div class="w3-half">
+
+![diabetesAcuteEffects](diabetesAcuteEffects.jpg)
+
+</div>
 </div>
 
 </div>
