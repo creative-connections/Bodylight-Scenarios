@@ -1,5 +1,7 @@
 
 <div class="w3-row">
+<bdl-tabs idlist="biochemie,hyperkalemia,dehydratation" titlelist="Exam results, Hyperkalemia,Dehydratation"></bdl-tabs>
+<div id="biochemie">
 <div class="w3-third">
 
 <div class="w3-sand w3-large w3-padding w3-margin">
@@ -54,6 +56,24 @@
 
 </div>
 </div>
+</div>
+<div class="w3-twothird" id="hyperkalemia">
+
+![hyperkalemia](hyperkalemia.jpg)
+
+Stefan Silbernagl, Florian Lang: **Color Atlas of Pathophysiology
+Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016 
+
+</div>
+<div class="w3-twothird" id="dehydratation">
+
+![hyponatremia](hyponatremia.jpg)
+
+Stefan Silbernagl, Florian Lang: **Color Atlas of Pathophysiology
+Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016 
+
+</div>
+
 <div class="w3-third">
 
 <div class="w3-padding w3-margin">
