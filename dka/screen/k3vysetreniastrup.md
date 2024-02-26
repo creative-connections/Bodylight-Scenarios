@@ -151,7 +151,13 @@ Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016
            answers="A. metabolická acidóza|B. akutní respirační acidóza|C. chronická respirační acidóza|D. metabolická alkalóza" 
            correctoptions="true|false|false|false" 
            explanations="ano|ne|ne|ne" 
-           buttontitle="zkontrolovat odpověď"></bdl-quizx>           
+           buttontitle="zkontrolovat odpověď"></bdl-quizx>
+<bdl-quizx id="q7b" type="choice2" 
+           question="3.3 Jaká je to porucha ABR dle diagramu ASTRUP BE pCO2?" 
+           answers="A. UMAc - ustálená metabolická acidóza|B. AMAc - akutní metabolická acidóza|C. URAlk - ustálená respirační alkalóza|D. AMAlk - akutní metabolická alkalóza" 
+           correctoptions="true|false|false|false" 
+           explanations="ano|ne|ne|ne" 
+           buttontitle="zkontrolovat odpověď"></bdl-quizx>              
 <bdl-quizx id="q7a" type="choice2" 
            question="3.3 Co to tedy může být za komplikaci DM 1. typu?" 
            answers="B. dehydratace a diabetická ketoacidóza| A. hypochloremická alkalóza při diabetu a zvracení|C. hyperglykemické hyperosmolární kóma" 
@@ -218,7 +224,7 @@ Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016
   Shrnutí odpovědí:
   <button class="w3-right w3-button w3-theme" onclick="document.getElementById('mySvg').contentDocument.getElementById('patientpoint').style.display='';">Zobraz hodnoty</button>
 </bdl-quiz-summary>          
-<bdl-quiz-control ids="q7,q70,q7a,q8,q8a,q9,q10,q11,q12,q13,q14,q15,q16,qs1"></bdl-quiz-control>             
+<bdl-quiz-control ids="q7,q70,q7b,q7a,q8,q8a,q9,q10,q11,q12,q13,q14,q15,q16,qs1"></bdl-quiz-control>             
 
 </div>
 </div>
