@@ -202,7 +202,7 @@
         <sup>v.24.2</sup>
     </div>
     <div class="w3-padding w3-half w3-xlarge">
-     <div class="w3-khaki">
+     <div class="w3-sand">
         Muž 42 let, přijat na pohotovost v celkově zhoršeném stavu. 
     </div>
     <br/>
