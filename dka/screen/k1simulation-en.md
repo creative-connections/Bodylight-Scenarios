@@ -213,34 +213,34 @@
           explanations="yes|yes|yes|yes|yes|no|no|no"
           buttontitle="check answer" ></bdl-quizx>
 <bdl-quizx id="q1" type="choice2"
-          question="1.2 Start or watch the simulation and what is the approximate respiratory rate"
+          question="1.2 Start or watch the simulation and what is the approximate respiratory rate. (hint: charts show values of last 15 s)"
           answers="A. 17 /min|B. 25 /min|C. 33 /min"
           correctoptions="false|false|true"
           explanations="no|no|yes"
           buttontitle="check answer" ></bdl-quizx>
 <bdl-quizx id="q2" type="choice2"
-          question="1.3 What is the approximate heart rate"
+          question="1.3 What is the approximate heart rate? (hint: charts show values of last 15 s)"
           answers="A. 51 /min|B. 71 /min|C. 121 /min"
           correctoptions="false|true|false"
           explanations="no|yes|no"
           buttontitle="check answer" ></bdl-quizx>
 <bdl-quizx id="q3" type="choice2"
-          question="1.4 What is the arterial pressure, choose the closest value"
+          question="1.4 What is the arterial pressure, choose the closest value (hint: estimate based on chart scale)"
           answers="A. 123/86 mmhg|B. 90/60 mmhg|C. 140/90 mmhg"
           correctoptions="false|true|false"
           explanations="no|yes|no"
           buttontitle="check answer" ></bdl-quizx>
 <bdl-quizx id="q4" type="choice2"
-          question="1.5 What is the blood oxygen saturation, choose the closest value"
+          question="1.5 What is the blood oxygen saturation, choose the closest value (hint: estimate based on chart scale)"
           answers="A. 85 %|B. 91%|C. 98%"
           correctoptions="false|true|false"
           explanations="no|yes|no"
           buttontitle="check answer" ></bdl-quizx>
 <bdl-quizx id="q5" type="choice2"
-          question="1.6 Try to guess the glycemia level from the glucometer"
-          answers="A. 3.1 mmol/l|B. 5.7 mmol/l|C. 11 mmol/l|D. 46 mmol/l"
-          correctoptions="false|false|false|true"
-          explanations="no|no|no|yes"
+          question="1.6 Patient mentions that he takes insulin. But during infection he starts to take it non-regularly. Glycemia test returns abnormal value. Try to guess the glycemia level returned"
+          answers="A. 3.1 mmol/l|B. 5.7 mmol/l|C. 46 mmol/l"
+          correctoptions="false|false|true"
+          explanations="no|no|yes"
           buttontitle="check answer" ></bdl-quizx>
 <bdl-quiz-summary id="qs1">
   Summary of answers:
