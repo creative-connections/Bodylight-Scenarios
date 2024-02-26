@@ -202,7 +202,7 @@
         <sup>v.24.2</sup>
     </div>
     <div class="w3-padding w3-half w3-xlarge">
-     <div class="w3-khaki">
+     <div class="w3-sand">
        A 42-year-old man, admitted to the emergency department in an overall deteriorated condition. 
     </div>
     <br/>
