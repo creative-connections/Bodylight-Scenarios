@@ -1,8 +1,8 @@
 <div class="w3-row">
 <div class="w3-twothird">
 
-<bdl-tabs idlist="astrup2,astrup,biochemie,diabetes" 
-  titlelist="ASTRUP pH pCO2,ASTRUP pH HCO3-,Biochemie,Pathophysiology DM"></bdl-tabs>
+<bdl-tabs idlist="astrup2,astrup,astrup3,biochemie,diabetes" 
+  titlelist="ASTRUP pH pCO2,ASTRUP pH HCO3-,ASTRUP BE pCO2,Biochemie,Pathophysiology DM"></bdl-tabs>
 
 <div class="w3-row">
   <div id="astrup" style="line-height:0.9">
@@ -55,6 +55,32 @@
 
 <bdl-sachart fromid="idfmi" refindex="9,3" convertors="1,1,0;1,133.322" width="250" height="250"></bdl-sachart> 
 
+</div>
+</div>
+
+<div id="astrup3" style="line-height:0.9">
+<div class="w3-half">
+    <div class="w3-sand w3-large w3-margin">
+
+**ASTRUP vstupní:**
+| |  | |
+|-----|------|-------|
+| pH: |  7,14 | [7,36..7,44] |
+| pCO2: | 2,48 kPa | [4,7..6] |
+| | 18,6 mmHg | [35..45] |
+| Akt.bikarb: | 6,1 mmol/l | [22..26] |
+| Stand.bikar: | 8,9 mmol/l | [22..26] |
+| BE akt.: |  -21,9 mmol/l | [-2..2] |
+| pO2: | 12,1 kPa | [10,4..14,3] |
+| | 90 mmHg | [78.. 107] |
+| sat.O2: | 95 % | [94..99] |
+</div>
+</div><div class="w3-half">
+<object id="mySvg" type="image/svg+xml" data="screen/nomogramEnglis3.svg" style="width:100%">
+  Your browser does not support SVG
+</object>
+
+**nomogram podle Engliše** _A_ - acute, _U_ - chronic/steady, _M_ - metabolic, _R_ - respiratory, _Ac_ - acidosis, _Alk_ - alkalosis
 </div>
 </div>
 
@@ -130,6 +156,12 @@ Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016
            correctoptions="true|false|false|false" 
            explanations="yes|no|no|no" 
            buttontitle="check answer"></bdl-quizx>
+<bdl-quizx id="q7b" type="choice2" 
+           question="3.3 What type of ABR disorder is this - as in BE pCO2 nomogram?" 
+           answers="A. UMAc - steady metabolická acidosis|B. AMAc - acute metabolic acidosis|C. URAlk - steady respiratory alkalosis|D. AMAlk - acute metabolic alkalosis" 
+           correctoptions="true|false|false|false" 
+           explanations="ano|ne|ne|ne" 
+           buttontitle="zkontrolovat odpověď"></bdl-quizx>                
 <bdl-quizx id="q7a" type="choice2" 
            question="3.3 What could this be a complication of type 1 DM?" 
            answers="A. diabetic ketoacidosis| B. hypochloremic alkalosis in diabetes and vomiting|C. hyperglycemic hyperosmolar coma" 
@@ -196,5 +228,5 @@ Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016
   Summary of answers:
   <button class="w3-right w3-button w3-theme" onclick="document.getElementById('mySvg').contentDocument.getElementById('patientpoint').style.display='';">Show values</button>
 </bdl-quiz-summary>
-<bdl-quiz-control ids="q7,q70,q7a,q8,q8a,q9,q10,q11,q12,q13,q14,q15,q16,qs1"></bdl-quiz-control>    </div>
+<bdl-quiz-control ids="q7,q70,q7b,q7a,q8,q8a,q9,q10,q11,q12,q13,q14,q15,q16,qs1"></bdl-quiz-control>    </div>
 </div>
