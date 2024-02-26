@@ -241,7 +241,7 @@
           answers="A. 3.1 mmol/l|B. 5.7 mmol/l|C. 46 mmol/l" 
           correctoptions="false|false|true" 
           explanations="ne|ne|ano" 
-          buttontitle="zkontrolovat odpověď" ></bdl-quizx>          
+          buttontitle="zkontrolovat odpověď" ></bdl-quizx>
 <bdl-quiz-summary id="qs1">
   Shrnutí odpovědí:
   <button class="w3-right w3-button w3-theme" onclick="document.querySelectorAll('#v1, #v2, #v3, #v4, #v5, #v6,#v7,#v8').forEach(el => el.style.display = 'inline');">Zobraz hodnoty</button>
