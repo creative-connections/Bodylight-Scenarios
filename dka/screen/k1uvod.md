@@ -213,34 +213,34 @@
           explanations="ano|ano|ano|ano|ano|ne|ne|ne" 
           buttontitle="zkontrolovat odpověď" ></bdl-quizx>    
 <bdl-quizx id="q1" type="choice2" 
-          question="1.2 Spusťte nebo sledujte simulaci a jaká je přibližně dechová frekvence" 
+          question="1.2 Spusťte nebo sledujte simulaci a jaká je přibližně dechová frekvence. (nápověda: grafy ukazují hodnoty v posledních 15 s)" 
           answers="A. 17 /min|B. 25 /min|C. 33 /min" 
           correctoptions="false|false|true" 
           explanations="ne|ne|ano" 
           buttontitle="zkontrolovat odpověď" ></bdl-quizx>
 <bdl-quizx id="q2" type="choice2" 
-          question="1.3 jaká je přibližně tepová frekvence" 
+          question="1.3 jaká je přibližně tepová frekvence (nápověda: grafy ukazují hodnoty v posledních 15 s)" 
           answers="A. 51 /min|B. 71 /min|C. 121 /min" 
           correctoptions="false|true|false" 
           explanations="ne|ano|ne" 
           buttontitle="zkontrolovat odpověď" ></bdl-quizx>
 <bdl-quizx id="q3" type="choice2" 
-          question="1.4 jaký je arteriální tlak, zvolte nejbližší hodnotu" 
+          question="1.4 jaký je arteriální tlak, zvolte nejbližší hodnotu (nápověda: odhadněte z mezí grafu)" 
           answers="A. 123/86 mmhg|B. 90/60 mmhg|C. 140/90 mmhg" 
           correctoptions="false|true|false" 
           explanations="ne|ano|ne" 
           buttontitle="zkontrolovat odpověď" ></bdl-quizx>        
 <bdl-quizx id="q4" type="choice2" 
-          question="1.5 jaká je saturace kyslíku v krvi, zvolte nejbližší hodnotu" 
+          question="1.5 jaká je saturace kyslíku v krvi, zvolte přibližnou hodnotu (nápověda: odhadněte z mezí grafu)" 
           answers="A. 85 %|B. 91%|C. 98%" 
           correctoptions="false|true|false" 
           explanations="ne|ano|ne" 
           buttontitle="zkontrolovat odpověď" ></bdl-quizx>
 <bdl-quizx id="q5" type="choice2" 
-          question="1.6 zkuste uhodnout hladinu glykémie z glukometru" 
-          answers="A. 3.1 mmol/l|B. 5.7 mmol/l|C. 11 mmol/l|D. 46 mmol/l" 
-          correctoptions="false|false|false|true" 
-          explanations="ne|ne|ne|ano" 
+          question="1.6 pacient se zmínil, že je diabetik, že si píchá inzulín. Ale, že jak teď trpí infekcí, tak si píchá nepravidelně. Glukometr naměřil výrazně abnormální hladinu, vyberte:" 
+          answers="A. 3.1 mmol/l|B. 5.7 mmol/l|C. 46 mmol/l" 
+          correctoptions="false|false|true" 
+          explanations="ne|ne|ano" 
           buttontitle="zkontrolovat odpověď" ></bdl-quizx>          
 <bdl-quiz-summary id="qs1">
   Shrnutí odpovědí:
