@@ -1,7 +1,7 @@
 <div class="w3-row">
 <div class="w3-col l7 m7 s12">
 
-<bdl-tabs idlist="astrup2,astrup,biochemie" titlelist="ASTRUP pH pCO2,ASTRUP pH HCO3-,Biochemie"></bdl-tabs>
+<bdl-tabs idlist="astrup2,astrup,biochemie,diabetes" titlelist="ASTRUP pH pCO2,ASTRUP pH HCO3-,Biochemie,Patofyziologie DM"></bdl-tabs>
   <div id="astrup" style="line-height:0.9">
 <div class="w3-half">
     <div class="w3-sand w3-large w3-margin">
@@ -94,6 +94,23 @@
 <bdl-calculator></bdl-calculator>
 </div>
 </div>
+<div id="diabetes">
+<div class="w3-half">
+
+![diabetes1](diabetes1.jpg)
+
+![diabetes2](diabetes2.jpg)
+
+Stefan Silbernagl, Florian Lang: **Color Atlas of Pathophysiology
+Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016 
+
+</div>
+<div class="w3-half">
+
+![diabetesAcuteEffects](diabetesAcuteEffects.jpg)
+
+</div>
+</div>
 </div>
 <div class="w3-col l5 m5 s12">
 
@@ -107,12 +124,12 @@
 <bdl-quizx id="q70" type="choice2" 
            question="3.2 Jaká je to porucha ABR dle diagramu ASTRUP pH HCO3-?" 
            answers="A. metabolická acidóza|B. akutní respirační acidóza|C. chronická respirační acidóza|D. metabolická alkalóza" 
-           correctoptions="true|false|false" 
-           explanations="ano|ne|ne" 
+           correctoptions="true|false|false|false" 
+           explanations="ano|ne|ne|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>           
 <bdl-quizx id="q7a" type="choice2" 
            question="3.3 Co to tedy může být za komplikaci DM 1. typu?" 
-           answers="B. diabetická ketoacidóza| A. hypochloremická alkalóza při diabetu a zvracení|C. hyperglykemické hyperosmolární kóma" 
+           answers="B. dehydratace a diabetická ketoacidóza| A. hypochloremická alkalóza při diabetu a zvracení|C. hyperglykemické hyperosmolární kóma" 
            correctoptions="true|false|false" 
            explanations="ano|ne|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>           
