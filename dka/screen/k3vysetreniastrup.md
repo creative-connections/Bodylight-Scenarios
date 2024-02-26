@@ -1,8 +1,8 @@
 <div class="w3-row">
 <div class="w3-col l7 m7 s12">
 
-<bdl-tabs idlist="astrup2,astrup,biochemie,diabetes" titlelist="ASTRUP pH pCO2,ASTRUP pH HCO3-,Biochemie,Patofyziologie DM"></bdl-tabs>
-  <div id="astrup" style="line-height:0.9">
+<bdl-tabs idlist="astrup2,astrup,astrup3,biochemie,diabetes" titlelist="ASTRUP pH pCO2,ASTRUP pH HCO3-,ASTRUP BE pCO2,Biochemie,Patofyziologie DM"></bdl-tabs>
+<div id="astrup" style="line-height:0.9">
 <div class="w3-half">
     <div class="w3-sand w3-large w3-margin">
 
@@ -58,6 +58,32 @@
 
 <!--  p-h="7.14" p-c-o2="18.75"-->
 </div></div>
+
+<div id="astrup3" style="line-height:0.9">
+<div class="w3-half">
+    <div class="w3-sand w3-large w3-margin">
+
+**ASTRUP vstupní:**
+| |  | |
+|-----|------|-------|
+| pH: |  7,14 | [7,36..7,44] |
+| pCO2: | 2,48 kPa | [4,7..6] |
+| | 18,6 mmHg | [35..45] |
+| Akt.bikarb: | 6,1 mmol/l | [22..26] |
+| Stand.bikar: | 8,9 mmol/l | [22..26] |
+| BE akt.: |  -21,9 mmol/l | [-2..2] |
+| pO2: | 12,1 kPa | [10,4..14,3] |
+| | 90 mmHg | [78.. 107] |
+| sat.O2: | 95 % | [94..99] |
+</div>
+</div><div class="w3-half">
+<object id="mySvg" type="image/svg+xml" data="screen/nomogramEnglis3.svg" style="width:100%">
+  Your browser does not support SVG
+</object>
+
+**nomogram podle Engliše** _A_ - akutní, _U_ - ustálená, _M_ - metabolická, _R_ - respirační, _Ac_ - acidóza, _Alk_ - alkalóza
+</div>
+</div>
 
 <div id="biochemie" style="line-height:0.9">
 <div class="w3-half">
