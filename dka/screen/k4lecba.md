@@ -4,20 +4,17 @@
 
 
 <bdl-tabs idlist="krystaloidy,inzulin,kalemie,ABR,ketoacidoza,ketoacidoza2" 
-  titlelist="Léčba krystaloidy,Léčba hyperglykémie,Léčba hypokalémie,Léčba poruchy ABR,Ketoacidóza,DKA 2"></bdl-tabs>
+  titlelist="Léčba dehydratace,Léčba hyperglykémie,Léčba kalémie,Léčba poruchy ABR,Ketoacidóza,DKA 2"></bdl-tabs>
 <div class="w3-sand w3-large w3-padding w3-margin">  
 
 <div id="krystaloidy">
-Krystaloidy jsou nízkomolekulární, bilancované roztoky. Jejich nevýhodou je, že většina roztoku přestupuje do intersticia (intravaskulárně zůstává asi 20 %). Používají se pro úpravu vodní a elektrolytové rovnováhy. 
-
-Např. Fyziologický roztok, Hartmanův roztok (izotonický), Ringerův roztok, Plasmalyte (zastoupení iontů obdobné jako v plazmě), 5% glukóza. 
+Léčba dehydratace je možná krystaloidy nebo koloidy. Krystaloidy, např. Fyziologický roztok, Hartmanův roztok (izotonický), Ringerův roztok, Plasmalyte (zastoupení iontů obdobné jako v plazmě), 5% glukóza. 
 
 zdroj: <a href="https://www.wikiskripta.eu/w/Aplikace_infuz%C3%AD#Krystaloidy" target="_blank">wikiskripta.eu/w/Aplikace_infuzí</a>
 
-
 </div>
 <div id="inzulin">
-Terapie se u jednotlivých typů diabetu do značné míry liší. Zatímco u diabetu 1. typu jsme odkázáni na inzulinoterapii, u diabetiků 2. typu se používá v závislosti na stupni inzulinorezistence dieta, perorální antidiabetika a až u komplikovaného diabetu saháme k inzulinoterapii.
+Terapie diabetu 1. typu je založena na inzulinoterapii. Pokud pacient delší dobu zanedbával léčbu. je nutné sledovat hladiny dalších iontů, hlavně K<sup>+</sup> a dalších komplikací jako dehydratace a normalizace ABR.
 
 zdroj: <a href="https://www.wikiskripta.eu/w/Inzulinoterapie" target="_blank">wikiskripta.eu/w/Inzulinoterapie</a>
 
@@ -26,10 +23,11 @@ zdroj: <a href="https://www.wikiskripta.eu/w/Inzulinoterapie" target="_blank">wi
 Pokles glykémie musí být postupný – 2,5-4,5 mmol/L za hodinu maximálně!!! Jde o to aby se předešlo rozvoji mozkového edému. Nutná je i pravidelná monitorace iontů – ze začátku i několikrát denně, aby se preventoval shift do hypokalémie. Infuze inzulinu musí být následně při dostatečném poklesu glykémie a kália doplněny i infuze iontů – viz. níže. Cílová glykémie (tj. normální hodnoty) by měla být dosažena postupně během 24 – 48 hodin.
 </div-->
 <div id="kalemie">
-Zásadně se snažíme ovlivnit základní příčinu hypokalémie. Vždy se orientujeme dle EKG a ABR, nikdy neléčíme kalémii "izolovaně". V praxi se velmi špatně odhadne celkový deficit kalia, proto korekci provádíme velmi opatrně. Při MAL s transmembránovým přesunem stačí ke korekci kalémie úprava ABR. 
 
-zdroj: <a href="https://www.wikiskripta.eu/w/Hypokal%C3%A9mie" target="_blank">wikiskripta.eu/w/Hypokalémie</a>
+![KaliumPh](KaliumPh.png)
 
+**Hyperkalémie při nízkém pH - acidóze, může vést při rychlé korekci glykémie a acidózy k hypokalémii**
+zdroj: A.Jabor a kol., Vnitřní prostředí, Grada, 2008
 <!--
 Při nízké kalémii se zahajuje podávání inzulinu až po doplnění hladiny kalia k hodnotám, která se blíží dolní hranici referenčních hodnot (tj. ~ 3,8 mmol/L)
 
@@ -76,50 +74,50 @@ A ještě by se dalo zmínit, že v 10-15% případů je DKA spojená s laktá
 
 **Vyberte nejlepší odpověď na otázky**
 <bdl-quizx id="q20" type="choice2" 
-          question="40. Infuze krystaloidů v rámci léčby diabetické ketoacidózy:" 
+          question="4.1 Infuze krystaloidů v rámci léčby diabetické ketoacidózy:" 
           answers="B. je ze začátku agresivní, isotonickými roztoky ke korekci dehydratace a k obnovení i.v. objemu|A. je ze začátku agresivní, hyperosmolárními roztoky ke korekci dehydratace a k obnovení i.v. objemu|C. se ze začátku se nepoužívá, důležitá je okamžitá bolusová aplikace inzulinu ke korekci hyperglykémie" 
           correctoptions="true|false|false" 
           explanations="ano|ne|ne" 
           buttontitle="zkontrolovat odpověď" ></bdl-quizx>
 <bdl-quizx id="q21" type="choice2" 
-          question="41. Ke snížení hyperglykémie a nastartování utilizace glukózy:" 
+          question="4.2 Ke snížení hyperglykémie a nastartování utilizace glukózy:" 
           answers="D. zahájíme kontinuální infuzi inzulinu|A. zahájíme kontinuální infuzi kortizolu|B. zahájíme kontinuální infuzi glukagonu|C. zahájíme kontinuální infuzi IGF-1 hormonu (insulin-like Growth factor hormone)" 
           correctoptions="true|false|false|false" 
           explanations="ano|ne|ne|ne" 
           buttontitle="zkontrolovat odpověď" ></bdl-quizx>      
 <bdl-quizx id="q22" type="choice2" 
-          question="42. Rychlost poklesu glykémie:" 
+          question="4.3 Rychlost poklesu glykémie:" 
           answers="A. nezáleží na tom, je potřeba snižovat co nejrychleji, pacient je v kómatu, hrozí exitus|B. musí být pomalá - max. 2,5 - 4,5 mmol/L za hodinu" 
           correctoptions="false|true" 
           explanations="ne|ano" 
           buttontitle="zkontrolovat odpověď" ></bdl-quizx>
 <bdl-quizx id="q23" type="choice" 
-          question="43.Proč musí být rychlost snižování glykémie pomalá?" 
+          question="4.4 Proč musí být rychlost snižování glykémie pomalá?" 
           answers="A. aby se rychlou změnou osmolarity vnitřního prostředí nezpůsobil mozkový edém|B. aby nedošlo k rychlému rozvoji těžké hypokálémie|C. aby se extracelulárně v krvi zachoval dostatečný energetický pool pro životně důležité orgány" 
           correctoptions="true|true|false" 
           explanations="ano|ano|ne" 
           buttontitle="zkontrolovat odpověď" ></bdl-quizx>          
 <bdl-quizx id="q24" type="choice" 
-          question="44. Inzulin při hyperglykémii v rámci DKA navodí:" 
+          question="4.5 Inzulin při hyperglykémii v rámci DKA navodí:" 
           answers="A. přesun kalia do buněk|C. přesun glukózy do buněk|D. přesun H<sup>+</sup> do buněk|B. přesun glukózy z buněk, která je k dispozici pro životně důležité orgány" 
           correctoptions="true|true|false|false" 
           explanations="ano|ano|ne|ne" 
           buttontitle="zkontrolovat odpověď" ></bdl-quizx> 
 <bdl-quizx id="q25" type="choice2" 
-          question="45. DKA je častější komplikací u diabetes mellitus typu:" 
+          question="4.6 DKA je častější komplikací u diabetes mellitus typu:" 
           answers="A. I|B. II" 
           correctoptions="true|false" 
           explanations="ano|ne" 
           buttontitle="zkontrolovat odpověď"></bdl-quizx>          
 
 <bdl-quizx id="q26" type="choice" 
-          question="46. Hladinu glykémie přímo ovlivňuje:" 
+          question="4.7 Hladinu glykémie přímo ovlivňuje:" 
           answers="inzulin|glukagon|růstový hormon|katecholaminy|hormony štítné žlázy|aldosteron|glukokortikoidy|melatonin|leptin" 
           correctoptions="true|true|true|true|true|false|true|false|true" 
           explanations="ano|ano|ano|ano|ano|ne|ano|ne|ano" 
           buttontitle="zkontrolovat odpověď"></bdl-quizx>     
 <bdl-quizx id="q27" type="choice2" 
-          question="47. Může být DKA doprovázena laktátovou acidózou?" 
+          question="4.8 Může být DKA doprovázena laktátovou acidózou?" 
           answers="A. ano může|B. ne nemůže" 
           correctoptions="true|false" 
           explanations="ano|ne" 
@@ -128,7 +126,6 @@ A ještě by se dalo zmínit, že v 10-15% případů je DKA spojená s laktá
   Shrnutí odpovědí:
 </bdl-quiz-summary>             
 <bdl-quiz-control ids="q20,q21,q22,q23,q24,q25,q26,q27,qs"></bdl-quiz-control>
-
 
 </div>
 </div>
