@@ -1,10 +1,10 @@
 <div class="w3-row">
 <div class="w3-col l7 m7 s12">
 
-<bdl-tabs idlist="astrup2,astrup,astrup3,biochemie,diabetes" titlelist="ASTRUP pH pCO2,ASTRUP pH HCO3-,ASTRUP BE pCO2,Biochemie,Patofyziologie DM"></bdl-tabs>
+<bdl-tabs idlist="astrup2,astrup,astrup3,biochemie,diabetes,patogenesis" titlelist="ASTRUP pH pCO2,ASTRUP pH HCO3-,ASTRUP BE pCO2,Biochemie,Patofyziologie DM,Patogeneze"></bdl-tabs>
 <div id="astrup" style="line-height:0.9">
-<div class="w3-half">
-    <div class="w3-sand w3-large w3-margin">
+<div class="w3-third">
+    <div class="w3-sand ">
 
 **ASTRUP vstupní:**
 | |  | |
@@ -19,8 +19,8 @@
 | | 90 mmHg | [78.. 107] |
 | sat.O2: | 95 % | [94..99] |
 </div>
-</div><div class="w3-half">
-<object id="mySvg" type="image/svg+xml" data="screen/Acid-base_nomogramK1.svg" style="width:100%">
+</div><div class="w3-twothird">
+<object id="mySvg" type="image/svg+xml" data="screen/Acid-base_nomogramK1.svg" style="width:95%">
   Your browser does not support SVG
 </object>
 
@@ -28,8 +28,8 @@
 </div>
 </div>
 <div id="astrup2" style="line-height:0.9">
-<div class="w3-half">
-    <div class="w3-sand w3-large w3-margin">
+<div class="w3-third">
+    <div class="w3-sand ">
 
 **ASTRUP vstupní:**
 | |  | |
@@ -45,7 +45,8 @@
 | sat.O2: | 95 % | [94..99] |
 
   </div>
-</div><div class="w3-half">
+</div><div class="w3-twothird">
+
 <bdl-sachart fromid="idfmi" refindex="9,3" convertors="1,1,0;1,133.322" width="250" height="250" p-H="6.9" p-c-o2="40"></bdl-sachart> 
 
 
@@ -59,8 +60,8 @@
 </div></div>
 
 <div id="astrup3" style="line-height:0.9">
-<div class="w3-half">
-    <div class="w3-sand w3-large w3-margin">
+<div class="w3-third">
+    <div class="w3-sand ">
 
 **ASTRUP vstupní:**
 | |  | |
@@ -75,8 +76,8 @@
 | | 90 mmHg | [78.. 107] |
 | sat.O2: | 95 % | [94..99] |
 </div>
-</div><div class="w3-half">
-<object id="mySvg" type="image/svg+xml" data="screen/nomogramEnglis3.svg" style="width:100%">
+</div><div class="w3-twothird">
+<object id="mySvg" type="image/svg+xml" data="screen/nomogramEnglis3.svg" style="width:95%">
   Your browser does not support SVG
 </object>
 
@@ -136,6 +137,22 @@ Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016
 
 </div>
 </div>
+<div id="patogenesis">
+<div class="w3-row">
+<div class="w3-half">
+
+**A**
+![hhspato](hhspato.png)
+</div>
+<div class="w3-half">
+
+**B**
+![dkapato](dkapato.png)
+</div>
+</div>
+
+</div>
+
 </div>
 <div class="w3-col l5 m5 s12">
 
@@ -196,9 +213,9 @@ Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q12" type="choice2" 
            question="3.10 Jak byste interpretovali renální parametry?" 
-           answers="A. Elevace urey a kreatininu vs. na vrub dehydratace a prakticky prerenálního selhání s rozvojem ischémie ledvin. Dalším důvodem může být i chronická renální insuficience vzniklá v průběhu nemoci pro nespolupráci pacientky při léčbě. Aktuálně zhoršená konkomitantně probíhající komplikací a dehydratací." 
-           correctoptions="true" 
-           explanations="ano" 
+           answers="A. Elevace urey a kreatininu vs. na vrub dehydratace a prakticky prerenálního selhání s rozvojem ischémie ledvin. Dalším důvodem může být i chronická renální insuficience vzniklá v průběhu nemoci pro nespolupráci pacientky při léčbě. Aktuálně zhoršená konkomitantně probíhající komplikací a dehydratací.|B. Zvýšení renálních parametrů u tohoto pacienta je výhradně způsobeno konzumací nadměrného množství potravin bohatých na bílkoviny. Vzhledem k diabetickému stavu pacienta jeho tělo chybně a příliš rychle metabolizuje bílkoviny, což vede k přetížení organismu metabolity, jako je kreatinin a močoviny. Tento stav, nazývaný 'Bílkovinami indukovaná renální dysfunkce u diabetu', je běžnou komplikací u diabetických pacientů, kteří nedodržují přísná dietní omezení." 
+           correctoptions="true|false" 
+           explanations="ano|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q13" type="choice2" 
            question="3.11 Jaký je vývoj kalémie u ketoacidózy? V čase, při zahájení léčby a jejím pokračování v dalším průběhu bez substituce kalia?" 
@@ -213,7 +230,10 @@ Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016
            explanations="ano|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q15" type="choice2" 
-           question="3.13 Jaká je patogeneze rozvoje diabetické ketoacidózy?"></bdl-quizx>
+           question="3.13 Jaká je patogeneze rozvoje diabetické ketoacidózy (vyberte vhodný diagram v sekci Patogeneze)?"           answers="A. diagram (A)|B. diagram(B)" 
+           correctoptions="false|true" 
+           explanations="ne|ano" 
+           buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q16" type="choice2" 
            question="3.14 Které jiné stavy vedou ke zvýšené tvorbě ketolátek?" 
            answers="B. alkoholismus a hladovění|A. hypotyreóza, cushingův syndrom" 
