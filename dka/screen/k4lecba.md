@@ -3,10 +3,18 @@
 <div class="w3-half">
 
 
-<bdl-tabs idlist="krystaloidy,inzulin,kalemie,ABR,ketoacidoza,ketoacidoza2" 
-  titlelist="Léčba dehydratace,Léčba hyperglykémie,Léčba kalémie,Léčba poruchy ABR,Ketoacidóza,DKA 2"></bdl-tabs>
+<bdl-tabs idlist="patogeneze,krystaloidy,inzulin,kalemie,ABR,ketoacidoza,ketoacidoza2" 
+  titlelist="Patogeneze,Léčba dehydratace,Léčba hyperglykémie,Léčba kalémie,Léčba poruchy ABR,Ketoacidóza,DKA 2"></bdl-tabs>
 <div class="w3-sand w3-large w3-padding w3-margin">  
+<div id="patogeneze">
 
+**B**
+![dkapato2](dkapato2.png)
+
+![dkapato3](dkapato3.png)
+Skoro vše o diabetické ketoacidóze: https://youtu.be/EjbXidx7YFM
+
+</div>
 <div id="krystaloidy">
 Léčba dehydratace je možná krystaloidy nebo koloidy. Krystaloidy, např. Fyziologický roztok, Hartmanův roztok (izotonický), Ringerův roztok, Plasmalyte (zastoupení iontů obdobné jako v plazmě), 5% glukóza. 
 
