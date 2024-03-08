@@ -138,18 +138,12 @@ Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016
 </div>
 </div>
 <div id="patogenesis">
-<div class="w3-row">
-<div class="w3-half">
 
 **A**
 ![hhspato](hhspato.png)
-</div>
-<div class="w3-half">
 
 **B**
 ![dkapato](dkapato.png)
-</div>
-</div>
 
 </div>
 
