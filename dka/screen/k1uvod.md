@@ -242,7 +242,7 @@
           correctoptions="false|false|true" 
           explanations="ne|ne|ano" 
           buttontitle="zkontrolovat odpověď" ></bdl-quizx>
-<bdl-quiz-summary id="qs1">
+<bdl-quiz-summary id="qs1" listen2="users">
   Shrnutí odpovědí:
   <button class="w3-right w3-button w3-theme" onclick="document.querySelectorAll('#v1, #v2, #v3, #v4, #v5, #v6,#v7,#v8').forEach(el => el.style.display = 'inline');">Zobraz hodnoty</button>
 </bdl-quiz-summary>           
