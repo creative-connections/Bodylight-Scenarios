@@ -45,6 +45,7 @@
 <bdl-fb-get-state tohash="true"></bdl-fb-get-state>
 
 **Odpovědi**
+<bdl-fb-set-state title="Odpovědi od uživatelů" value="" messagetype="fb-process-answer"></bdl-fb-set-state>
 
 </div>
 
