@@ -238,7 +238,7 @@ Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016
   Shrnutí odpovědí:
   <button class="w3-right w3-button w3-theme" onclick="document.getElementById('mySvg').contentDocument.getElementById('patientpoint').style.display='';">Zobraz hodnoty</button>
 </bdl-quiz-summary>          
-<bdl-quiz-control ids="q7,q70,q7b,q7a,q8,q8a,q9,q10,q11,q12,q13,q14,q15,q16,qs1"></bdl-quiz-control>             
+<bdl-quiz-control ids="q7;astrup2,q70;astrup,q7b;astrup3,q7a,q8,q8a;biochemie,q9,q10,q11,q12,q13,q14,q15;patogenesis,q16,qs1"></bdl-quiz-control>             
 
 </div>
 </div>
