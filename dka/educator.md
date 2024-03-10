@@ -44,6 +44,8 @@
 <bdl-fb-set-state title="4.Treatment" value="screen/k4treatment-en.md"></bdl-fb-set-state>
 <bdl-fb-get-state tohash="true"></bdl-fb-get-state>
 
+**Odpovědi**
+
 </div>
 
 </div>
