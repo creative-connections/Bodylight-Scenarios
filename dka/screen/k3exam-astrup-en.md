@@ -1,8 +1,8 @@
 <div class="w3-row">
 <div class="w3-twothird">
 
-<bdl-tabs idlist="astrup2,astrup,astrup3,biochemie,diabetes" 
-  titlelist="ASTRUP pH pCO2,ASTRUP pH HCO3-,ASTRUP BE pCO2,Biochemie,Pathophysiology DM"></bdl-tabs>
+<bdl-tabs idlist="astrup2,astrup,astrup3,biochemie,diabetes,patogenesis" 
+  titlelist="ASTRUP pH pCO2,ASTRUP pH HCO3-,ASTRUP BE pCO2,Biochemie,Pathophysiology DM,Patogenesis"></bdl-tabs>
 
 <div class="w3-row">
   <div id="astrup" style="line-height:0.9">
@@ -146,6 +146,15 @@ Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016
 
 </div>
 </div>
+<div id="patogenesis">
+
+**A**
+![hhspato](hhspato.png)
+
+**B**
+![dkapato](dkapato.png)
+
+</div>
 
 </div>
 </div>
@@ -223,7 +232,11 @@ Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016
            explanations="yes|no" 
            buttontitle="check answer"></bdl-quizx>
 <bdl-quizx id="q15" type="choice2" 
-           question="3.13 What is the pathogenesis of the development of diabetic ketoacidosis?"></bdl-quizx>
+           question="3.13 What is the pathogenesis of the development of diabetic ketoacidosis?"
+           answers="A. diagram (A)|B. diagram(B)" 
+           correctoptions="false|true" 
+           explanations="ne|ano" 
+           buttontitle="check answer"></bdl-quizx>
 <bdl-quizx id="q16" type="choice2" 
            question="3.14 Which other conditions lead to increased production of ketone bodies?" 
            answers="A. alcoholism and starvation|B. hypothyroidism, Cushing's syndrome" 
