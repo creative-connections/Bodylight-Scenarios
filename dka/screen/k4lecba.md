@@ -1,7 +1,5 @@
-
 <div class="w3-row">
 <div class="w3-half">
-
 
 <bdl-tabs idlist="patogeneze,krystaloidy,inzulin,kalemie,ABR,ketoacidoza,ketoacidoza2" 
   titlelist="Patogeneze,Léčba dehydratace,Léčba hyperglykémie,Léčba kalémie,Léčba poruchy ABR,Ketoacidóza,DKA 2"></bdl-tabs>
@@ -83,15 +81,15 @@ A ještě by se dalo zmínit, že v 10-15% případů je DKA spojená s laktá
 **Vyberte nejlepší odpověď na otázky**
 <bdl-quizx id="q20" type="choice2" 
           question="4.1 Infuze krystaloidů v rámci léčby diabetické ketoacidózy:" 
-          answers="B. je ze začátku agresivní, isotonickými roztoky ke korekci dehydratace a k obnovení i.v. objemu|A. je ze začátku agresivní, hyperosmolárními roztoky ke korekci dehydratace a k obnovení i.v. objemu|C. se ze začátku se nepoužívá, důležitá je okamžitá bolusová aplikace inzulinu ke korekci hyperglykémie" 
-          correctoptions="true|false|false" 
+          answers="A. je ze začátku agresivní, hyperosmolárními roztoky ke korekci dehydratace a k obnovení i.v. objemu|B. je ze začátku agresivní, isotonickými roztoky ke korekci dehydratace a k obnovení i.v. objemu|C. se ze začátku se nepoužívá, důležitá je okamžitá bolusová aplikace inzulinu ke korekci hyperglykémie" 
+          correctoptions="false|true|false" 
           explanations="ano|ne|ne" 
           buttontitle="zkontrolovat odpověď" ></bdl-quizx>
 <bdl-quizx id="q21" type="choice2" 
           question="4.2 Ke snížení hyperglykémie a nastartování utilizace glukózy:" 
-          answers="D. zahájíme kontinuální infuzi inzulinu|A. zahájíme kontinuální infuzi kortizolu|B. zahájíme kontinuální infuzi glukagonu|C. zahájíme kontinuální infuzi IGF-1 hormonu (insulin-like Growth factor hormone)" 
-          correctoptions="true|false|false|false" 
-          explanations="ano|ne|ne|ne" 
+          answers="A. zahájíme kontinuální infuzi kortizolu|B. zahájíme kontinuální infuzi glukagonu|C. zahájíme kontinuální infuzi IGF-1 hormonu (insulin-like Growth factor hormone)|D. zahájíme kontinuální infuzi inzulinu" 
+          correctoptions="false|false|false|true" 
+          explanations="ne|ne|ne|ano" 
           buttontitle="zkontrolovat odpověď" ></bdl-quizx>      
 <bdl-quizx id="q22" type="choice2" 
           question="4.3 Rychlost poklesu glykémie:" 
@@ -107,9 +105,9 @@ A ještě by se dalo zmínit, že v 10-15% případů je DKA spojená s laktá
           buttontitle="zkontrolovat odpověď" ></bdl-quizx>          
 <bdl-quizx id="q24" type="choice" 
           question="4.5 Inzulin při hyperglykémii v rámci DKA navodí:" 
-          answers="A. přesun kalia do buněk|C. přesun glukózy do buněk|D. přesun H<sup>+</sup> do buněk|B. přesun glukózy z buněk, která je k dispozici pro životně důležité orgány" 
-          correctoptions="true|true|false|false" 
-          explanations="ano|ano|ne|ne" 
+          answers="A. přesun kalia do buněk|B. přesun glukózy z buněk, která je k dispozici pro životně důležité orgány|C. přesun glukózy do buněk|D. přesun H<sup>+</sup> do buněk" 
+          correctoptions="true|false|true|false" 
+          explanations="ano|ne|ano|ne" 
           buttontitle="zkontrolovat odpověď" ></bdl-quizx> 
 <bdl-quizx id="q25" type="choice2" 
           question="4.6 DKA je častější komplikací u diabetes mellitus typu:" 
