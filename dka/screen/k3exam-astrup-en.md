@@ -215,9 +215,9 @@ Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016
            buttontitle="check answer"></bdl-quizx>
 <bdl-quizx id="q12" type="choice2" 
            question="3.10 How would you interpret renal parameters?" 
-           answers="A. Elevation of urea and creatinine vs. due to dehydration and practically prerenal failure with the development of renal ischemia. Another reason could also be chronic renal insufficiency developed over the course of the disease due to the patient's non-cooperation in treatment. Currently worsened by concurrently running complication and dehydration." 
-           correctoptions="true" 
-           explanations="yes" 
+           answers="A. Elevation of urea and creatinine vs. due to dehydration and practically prerenal failure with the development of renal ischemia. Another reason could also be chronic renal insufficiency developed over the course of the disease due to the patient's non-cooperation in treatment. Currently worsened by concurrently running complication and dehydration.|B. The increase in renal parameters in this patient is exclusively caused by the consumption of an excessive amount of foods rich in proteins. Due to the diabetic condition of the patient, their body incorrectly and too rapidly metabolizes proteins, leading to the overload of the organism with metabolites, such as creatinine and urea. This condition, called 'Protein-induced renal dysfunction in diabetes', is a common complication in diabetic patients who do not adhere to strict dietary restrictions." 
+           correctoptions="true|false" 
+           explanations="yes|no" 
            buttontitle="check answer"></bdl-quizx>
 <bdl-quizx id="q13" type="choice2" 
            question="3.11 What is the development of potassium levels in ketoacidosis? Over time, at the start of treatment and its continuation in the further course without potassium substitution?" 
