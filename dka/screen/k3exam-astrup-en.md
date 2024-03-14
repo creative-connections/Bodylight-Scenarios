@@ -54,7 +54,8 @@
   </div>
 <div class="w3-half">
 
-<bdl-sachart fromid="idfmi" refindex="9,3" convertors="1,1,0;1,133.322" width="250" height="250"></bdl-sachart> 
+<bdl-sachart fromid="idfmi" refindex="9,3" convertors="1,1,0;1,133.322" width="250" height="250" p-H="6.9" p-c-o2="40"></bdl-sachart> 
+
 
 **Siggaard Andersen nomogram**
 
