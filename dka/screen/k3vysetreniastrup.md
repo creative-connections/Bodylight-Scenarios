@@ -77,6 +77,7 @@
 | sat.O2: | 95 % | [94..99] |
 </div>
 </div><div class="w3-twothird">
+
 <object id="mySvg" type="image/svg+xml" data="screen/nomogramEnglis3.svg" style="width:95%">
   Your browser does not support SVG
 </object>
@@ -183,9 +184,9 @@ Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q8a" type="choice2" 
            question="3.6 Aniontová mezera se obvykle pohybuje v rozmezí 10-12 mmol/l, hraničně pak 16 mmol/l. Zvýšená aniontová mezera může naznačovat přítomnost některých onemocnění nebo stavů, jako jsou metabolická acidóza. Spočítejte aniontovou mezeru zpaměti nebo na kalkulačce dle hodnot a vyberte:" 
-           answers="C. AG = 28,9| A. AG = 314.2 | B. AG = 10" 
-           correctoptions="true|false" 
-           explanations="ano|ne" 
+           answers="A. AG = 314.2|B. AG = 10|C. AG = 28,9" 
+           correctoptions="false|false|true" 
+           explanations="ne|ne|ano" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>           
 <bdl-quizx id="q9" type="choice2" 
            question="3.7 Jak by se změnily parametry ABR a klinický obraz, při zvracení?" 
@@ -195,9 +196,9 @@ Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q10" type="choice2" 
            question="3.8 Jaký nález očekáváte v moči?" 
-           answers="B. budu očekávat ketonurii, glykosurii, polyurii, vyšší množství Na<sup>+</sup>, K<sup>+</sup> a fosfátů, kyselé pH|A. pH moči bude alkalické, bude ketonurie, nízká koncentrace K<sup>+</sup>, Na<sup>+</sup> i fosfátů, bude těžká proteinurie" 
-           correctoptions="true|false" 
-           explanations="ano|ne" 
+           answers="A. pH moči bude alkalické, bude ketonurie, nízká koncentrace K<sup>+</sup>, Na<sup>+</sup> i fosfátů, bude těžká proteinurie|B. budu očekávat ketonurii, glykosurii, polyurii, vyšší množství Na<sup>+</sup>, K<sup>+</sup> a fosfátů, kyselé pH" 
+           correctoptions="false|true" 
+           explanations="ne|ano" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q11" type="choice2" 
            question="3.9 Jakou očekáváte osmolaritu séra? Jak ji lze vypočítat?" 
@@ -230,9 +231,9 @@ Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q16" type="choice2" 
            question="3.14 Které jiné stavy vedou ke zvýšené tvorbě ketolátek?" 
-           answers="B. alkoholismus a hladovění|A. hypotyreóza, cushingův syndrom" 
-           correctoptions="true|false" 
-           explanations="ano|ne" 
+           answers="A. hypotyreóza, cushingův syndrom|B. alkoholismus a hladovění" 
+           correctoptions="false|true" 
+           explanations="ne|ano" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quiz-summary id="qs1">
   Shrnutí odpovědí:
