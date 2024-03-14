@@ -8,7 +8,6 @@
 <div class="w3-sand w3-large w3-padding w3-margin">  
 <div id="patogeneze">
 
-**B**
 ![dkapato2](dkapato2.png)
 
 ![dkapato3](dkapato3.png)
@@ -74,11 +73,6 @@ The risk of DKA is higher with insulin pump therapy than with pen application. A
 It could also be mentioned that in 10-15% of cases, DKA is associated with lactic acidosis - especially in the case of phosphate deficiency (a decrease in 2,3-diphosphoglycerate in the erythrocyte shifts the dissociation curve of Hb to the left).
 </div>
 
-
-
-
-
-
 </div>
 
 </div>
@@ -92,7 +86,7 @@ It could also be mentioned that in 10-15% of cases, DKA is associated with lacti
           buttontitle="check answer" ></bdl-quizx>
 <bdl-quizx id="q21" type="choice2" 
           question="4.2 To reduce hyperglycemia and initiate glucose utilization:" 
-          answers="A. we start a continuous insulin infusion|B. we start a continuous cortisol infusion|D. we start a continuous glucagon infusion|C. we start a continuous infusion of IGF-1 hormone (insulin-like Growth factor hormone)" 
+          answers="A. we start a continuous insulin infusion|B. we start a continuous cortisol infusion|C. we start a continuous infusion of IGF-1 hormone (insulin-like Growth factor hormone)|D. we start a continuous glucagon infusion" 
           correctoptions="true|false|false|false" 
           explanations="yes|no|no|no" 
           buttontitle="check answer" ></bdl-quizx>      
