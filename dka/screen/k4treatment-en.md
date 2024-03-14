@@ -3,10 +3,18 @@
 <div class="w3-half">
 
 
-<bdl-tabs idlist="krystaloidy,inzulin,kalemie,ABR,ketoacidoza,ketoacidoza2" 
-  titlelist="Crystalloid treatment,Treatment of hyperglycemia,Treatment of hypokalemia,Treatment of ABR disorder,Ketoacidosis,DKA 2"></bdl-tabs>
+<bdl-tabs idlist="patogeneze,krystaloidy,inzulin,kalemie,ABR,ketoacidoza,ketoacidoza2" 
+  titlelist="Patogenesis,Crystalloid treatment,Treatment of hyperglycemia,Treatment of hypokalemia,Treatment of ABR disorder,Ketoacidosis,DKA 2"></bdl-tabs>
 <div class="w3-sand w3-large w3-padding w3-margin">  
+<div id="patogeneze">
 
+**B**
+![dkapato2](dkapato2.png)
+
+![dkapato3](dkapato3.png)
+Skoro vše o diabetické ketoacidóze: https://youtu.be/EjbXidx7YFM
+
+</div>
 <div id="krystaloidy">
 Crystalloids are low-molecular-weight, balanced solutions. Their disadvantage is that most of the solution passes into the interstitial space (about 20% remains intravascularly). They are used to adjust water and electrolyte balance.
 
