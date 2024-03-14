@@ -197,9 +197,9 @@ Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016
            buttontitle="check answer"></bdl-quizx>           
 <bdl-quizx id="q9" type="choice2" 
            question="3.7 How would ABR parameters and clinical picture change during vomiting?" 
-           answers="B. Vomiting leads to the complication of existing metabolic acidosis by metabolic alkalosis (loss of H<sup>+</sup>, Cl<sup>-</sup>), suppression of respiratory compensatory mechanisms, deepening dehydration, increasing losses of K<sup>+</sup> and worsening of the condition (combined ABR disorder, K<sup>+</sup> depletion).|A. vomiting results in the loss of K<sup>+</sup>, leading to the development of hypokalemia and if the situation is not addressed, the exchange of H<sup>+</sup> for K<sup>+</sup> on the cell membrane (K<sup>+</sup> goes out, H<sup>+</sup> inside, leading to alkalization of the internal environment." 
-           correctoptions="true|false" 
-           explanations="yes|no" 
+           answers="A. vomiting results in the loss of K<sup>+</sup>, leading to the development of hypokalemia and if the situation is not addressed, the exchange of H<sup>+</sup> for K<sup>+</sup> on the cell membrane (K<sup>+</sup> goes out, H<sup>+</sup> inside, leading to alkalization of the internal environment.|B. Vomiting leads to the complication of existing metabolic acidosis by metabolic alkalosis (loss of H<sup>+</sup>, Cl<sup>-</sup>), suppression of respiratory compensatory mechanisms, deepening dehydration, increasing losses of K<sup>+</sup> and worsening of the condition (combined ABR disorder, K<sup>+</sup> depletion)." 
+           correctoptions="false|true" 
+           explanations="no|yes" 
            buttontitle="check answer"></bdl-quizx>
 <bdl-quizx id="q10" type="choice2" 
            question="3.8 What findings do you expect in urine?" 
@@ -209,9 +209,9 @@ Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016
            buttontitle="check answer"></bdl-quizx>
 <bdl-quizx id="q11" type="choice2" 
            question="3.9 What osmolality of serum do you expect? How can it be calculated?" 
-           answers="B. Osmolarity = (2xNa) + glycemia + urea - osmolarity will be increased|A. Osmolarity will be decreased due to loss of sodium and potassium, formula (Na<sup>+</sup>) + (Cl<sup>-</sup>) + (K<sup>+</sup>) + urea" 
-           correctoptions="true|false" 
-           explanations="yes|no" 
+           answers="A. Osmolarity will be decreased due to loss of sodium and potassium, formula (Na<sup>+</sup>) + (Cl<sup>-</sup>) + (K<sup>+</sup>) + urea|B. Osmolarity = (2xNa) + glycemia + urea - osmolarity will be increased" 
+           correctoptions="false|true" 
+           explanations="no|yes|no" 
            buttontitle="check answer"></bdl-quizx>
 <bdl-quizx id="q12" type="choice2" 
            question="3.10 How would you interpret renal parameters?" 
