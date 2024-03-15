@@ -78,49 +78,49 @@ It could also be mentioned that in 10-15% of cases, DKA is associated with lacti
 </div>
 <div class="w3-half w3-padding w3-large">
 
-<bdl-quizx id="q20" type="choice2" 
+<bdl-quizx id="q4.1" type="choice2" 
           question="4.1 Infusion of crystalloids in the treatment of diabetic ketoacidosis:" 
           answers="A. is initially aggressive with isotonic solutions to correct dehydration and restore i.v. volume|B. is initially aggressive with hyperosmolar solutions to correct dehydration and restore i.v. volume|C. is not used initially, immediate bolus application of insulin to correct hyperglycemia is important" 
           correctoptions="true|false|false" 
           explanations="yes|no|no" 
           buttontitle="check answer" ></bdl-quizx>
-<bdl-quizx id="q21" type="choice2" 
+<bdl-quizx id="q4.2" type="choice2" 
           question="4.2 To reduce hyperglycemia and initiate glucose utilization:" 
           answers="A. we start a continuous insulin infusion|B. we start a continuous cortisol infusion|C. we start a continuous infusion of IGF-1 hormone (insulin-like Growth factor hormone)|D. we start a continuous glucagon infusion" 
           correctoptions="true|false|false|false" 
           explanations="yes|no|no|no" 
           buttontitle="check answer" ></bdl-quizx>      
-<bdl-quizx id="q22" type="choice2" 
+<bdl-quizx id="q4.3" type="choice2" 
           question="4.3 Rate of glycemia decrease:" 
           answers="A. does not matter, it needs to be reduced as quickly as possible, the patient is in a coma, exitus threatens|B. must be slow - max. 2.5 - 4.5 mmol/L per hour" 
           correctoptions="false|true" 
           explanations="no|yes" 
           buttontitle="check answer" ></bdl-quizx>
-<bdl-quizx id="q23" type="choice2" 
+<bdl-quizx id="q4.4" type="choice2" 
           question="4.4 Why must the rate of glycemia reduction be slow?" 
           answers="A. to prevent cerebral edema due to rapid change in internal environment osmolarity|B. to prevent the rapid development of severe hypokalemia|C. to maintain a sufficient energy pool in the blood extracellularly for vital organs" 
           correctoptions="true|true|false" 
           explanations="yes|yes|no" 
           buttontitle="check answer" ></bdl-quizx>          
-<bdl-quizx id="q24" type="choice" 
+<bdl-quizx id="q4.5" type="choice" 
           question="4.5 Insulin during hyperglycemia in DKA induces:" 
           answers="A. shift of potassium into cells|B. shift of glucose into cells|C. shift of H<sup>+</sup> into cells|D. shift of glucose out of cells, which is available for vital organs" 
           correctoptions="true|true|false|false" 
           explanations="yes|yes|no|no" 
           buttontitle="check answer" ></bdl-quizx> 
-<bdl-quizx id="q25" type="choice2" 
+<bdl-quizx id="q4.6" type="choice2" 
           question="4.6 DKA is a more common complication in diabetes mellitus type:" 
           answers="I|II" 
           correctoptions="true|false" 
           explanations="yes|no" 
           buttontitle="check answer"></bdl-quizx>          
-<bdl-quizx id="q26" type="choice" 
+<bdl-quizx id="q4.7" type="choice" 
           question="4.7 Glycemia level is directly influenced by:" 
           answers="insulin|glucagon|growth hormone|catecholamines|thyroid hormones|aldosterone|glucocorticoids|melatonin|leptin" 
           correctoptions="true|true|true|true|true|false|true|false|true" 
           explanations="yes|yes|yes|yes|yes|no|yes|no|yes" 
           buttontitle="check answer"></bdl-quizx>     
-<bdl-quizx id="q27" type="choice2" 
+<bdl-quizx id="q4.8" type="choice2" 
           question="4.8 Can DKA be accompanied by lactic acidosis?" 
           answers="A. yes it can|B. no it cannot" 
           correctoptions="true|false" 
@@ -129,6 +129,6 @@ It could also be mentioned that in 10-15% of cases, DKA is associated with lacti
 <bdl-quiz-summary id="qs">
   Summary of answers:
 </bdl-quiz-summary>             
-<bdl-quiz-control ids="q20,q21,q22,q23,q24,q25,q26,q27,qs"></bdl-quiz-control>
+<bdl-quiz-control ids="q4.1,q4.2,q4.3,q4.4,q4.5,q4.6,q4.7,q4.8,qs"></bdl-quiz-control>
 </div>
 </div>
