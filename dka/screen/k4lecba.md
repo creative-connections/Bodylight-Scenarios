@@ -79,50 +79,50 @@ A ještě by se dalo zmínit, že v 10-15% případů je DKA spojená s laktá
 <div class="w3-half w3-padding w3-large">
 
 **Vyberte nejlepší odpověď na otázky**
-<bdl-quizx id="q20" type="choice2" 
+<bdl-quizx id="q4.1" type="choice2" 
           question="4.1 Infuze krystaloidů v rámci léčby diabetické ketoacidózy:" 
           answers="A. je ze začátku agresivní, hyperosmolárními roztoky ke korekci dehydratace a k obnovení i.v. objemu|B. je ze začátku agresivní, isotonickými roztoky ke korekci dehydratace a k obnovení i.v. objemu|C. se ze začátku se nepoužívá, důležitá je okamžitá bolusová aplikace inzulinu ke korekci hyperglykémie" 
           correctoptions="false|true|false" 
           explanations="ano|ne|ne" 
           buttontitle="zkontrolovat odpověď" ></bdl-quizx>
-<bdl-quizx id="q21" type="choice2" 
+<bdl-quizx id="q4.2" type="choice2" 
           question="4.2 Ke snížení hyperglykémie a nastartování utilizace glukózy:" 
           answers="A. zahájíme kontinuální infuzi kortizolu|B. zahájíme kontinuální infuzi glukagonu|C. zahájíme kontinuální infuzi IGF-1 hormonu (insulin-like Growth factor hormone)|D. zahájíme kontinuální infuzi inzulinu" 
           correctoptions="false|false|false|true" 
           explanations="ne|ne|ne|ano" 
           buttontitle="zkontrolovat odpověď" ></bdl-quizx>      
-<bdl-quizx id="q22" type="choice2" 
+<bdl-quizx id="q4.3" type="choice2" 
           question="4.3 Rychlost poklesu glykémie:" 
           answers="A. nezáleží na tom, je potřeba snižovat co nejrychleji, pacient je v kómatu, hrozí exitus|B. musí být pomalá - max. 2,5 - 4,5 mmol/L za hodinu" 
           correctoptions="false|true" 
           explanations="ne|ano" 
           buttontitle="zkontrolovat odpověď" ></bdl-quizx>
-<bdl-quizx id="q23" type="choice" 
+<bdl-quizx id="q4.4" type="choice" 
           question="4.4 Proč musí být rychlost snižování glykémie pomalá?" 
           answers="A. aby se rychlou změnou osmolarity vnitřního prostředí nezpůsobil mozkový edém|B. aby nedošlo k rychlému rozvoji těžké hypokálémie|C. aby se extracelulárně v krvi zachoval dostatečný energetický pool pro životně důležité orgány" 
           correctoptions="true|true|false" 
           explanations="ano|ano|ne" 
           buttontitle="zkontrolovat odpověď" ></bdl-quizx>          
-<bdl-quizx id="q24" type="choice" 
+<bdl-quizx id="q4.5" type="choice" 
           question="4.5 Inzulin při hyperglykémii v rámci DKA navodí:" 
           answers="A. přesun kalia do buněk|B. přesun glukózy z buněk, která je k dispozici pro životně důležité orgány|C. přesun glukózy do buněk|D. přesun H<sup>+</sup> do buněk" 
           correctoptions="true|false|true|false" 
           explanations="ano|ne|ano|ne" 
           buttontitle="zkontrolovat odpověď" ></bdl-quizx> 
-<bdl-quizx id="q25" type="choice2" 
+<bdl-quizx id="q4.6" type="choice2" 
           question="4.6 DKA je častější komplikací u diabetes mellitus typu:" 
           answers="A. I|B. II" 
           correctoptions="true|false" 
           explanations="ano|ne" 
           buttontitle="zkontrolovat odpověď"></bdl-quizx>          
 
-<bdl-quizx id="q26" type="choice" 
+<bdl-quizx id="q4.7" type="choice" 
           question="4.7 Hladinu glykémie přímo ovlivňuje:" 
           answers="inzulin|glukagon|růstový hormon|katecholaminy|hormony štítné žlázy|aldosteron|glukokortikoidy|melatonin|leptin" 
           correctoptions="true|true|true|true|true|false|true|false|true" 
           explanations="ano|ano|ano|ano|ano|ne|ano|ne|ano" 
           buttontitle="zkontrolovat odpověď"></bdl-quizx>     
-<bdl-quizx id="q27" type="choice2" 
+<bdl-quizx id="q4.8" type="choice2" 
           question="4.8 Může být DKA doprovázena laktátovou acidózou?" 
           answers="A. ano může|B. ne nemůže" 
           correctoptions="true|false" 
@@ -131,7 +131,7 @@ A ještě by se dalo zmínit, že v 10-15% případů je DKA spojená s laktá
 <bdl-quiz-summary id="qs">
   Shrnutí odpovědí:
 </bdl-quiz-summary>             
-<bdl-quiz-control ids="q20,q21,q22,q23,q24,q25,q26,q27,qs"></bdl-quiz-control>
+<bdl-quiz-control ids="q4.1,q4.2,q4.3,q4.4,q4.5,q4.6,q4.7,q4.8,qs"></bdl-quiz-control>
 
 </div>
 </div>
