@@ -152,84 +152,84 @@ Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016
 <div class="w3-col l5 m5 s12">
 
 
-<bdl-quizx id="q7" type="choice2" 
+<bdl-quizx id="q3.1" type="choice2" 
            question="3.1 Jaká je to porucha ABR dle diagramu ASTRUP pH pCO2?" 
            answers="A. chronický base deficit|B. akutní base deficit|C. chronická hypercapnie|D. akutní hypercapnie" 
            correctoptions="true|false|false|false" 
            explanations="ano|ne|ne|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
-<bdl-quizx id="q70" type="choice2" 
+<bdl-quizx id="q3.2" type="choice2" 
            question="3.2 Jaká je to porucha ABR dle diagramu ASTRUP pH HCO3-?" 
            answers="A. metabolická acidóza|B. akutní respirační acidóza|C. chronická respirační acidóza|D. metabolická alkalóza" 
            correctoptions="true|false|false|false" 
            explanations="ano|ne|ne|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
-<bdl-quizx id="q7b" type="choice2" 
+<bdl-quizx id="q3.3" type="choice2" 
            question="3.3 Jaká je to porucha ABR dle diagramu ASTRUP BE pCO2?" 
            answers="A. UMAc - ustálená metabolická acidóza|B. AMAc - akutní metabolická acidóza|C. URAlk - ustálená respirační alkalóza|D. AMAlk - akutní metabolická alkalóza" 
            correctoptions="true|false|false|false" 
            explanations="ano|ne|ne|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>              
-<bdl-quizx id="q7a" type="choice2" 
+<bdl-quizx id="q3.4" type="choice2" 
            question="3.4 Co to tedy může být za komplikaci DM 1. typu?" 
            answers="B. dehydratace a diabetická ketoacidóza| A. hypochloremická alkalóza při diabetu a zvracení|C. hyperglykemické hyperosmolární kóma" 
            correctoptions="true|false|false" 
            explanations="ano|ne|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>           
-<bdl-quizx id="q8" type="choice2" 
+<bdl-quizx id="q3.5" type="choice2" 
            question="3.5 Jaká je aniontová mezera (anion gap)?" 
            answers="A. AG = Na<sup>+</sup> – (Cl<sup>-</sup> + HCO3<sup>-</sup>) v USA a u nás na ústavu<br/>AG = (Na<sup>+</sup>+K<sup>+</sup>) – (Cl<sup>-</sup> + HCO3<sup>-</sup>) v Evropě|B. AG = (Na<sup>+</sup>) + (2x Cl<sup>-</sup>) + (HCO3<sup>-</sup>) v USA a u nás na ústavu<br/>|C. AG = (Na<sup>+</sup>) + (2x Cl<sup>-</sup>) + (HCO3<sup>-</sup>) + (K<sup>+</sup>) v Evropě" 
            correctoptions="true|false|false" 
            explanations="ano|ne|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
-<bdl-quizx id="q8a" type="choice2" 
+<bdl-quizx id="q3.6" type="choice2" 
            question="3.6 Aniontová mezera se obvykle pohybuje v rozmezí 10-12 mmol/l, hraničně pak 16 mmol/l. Zvýšená aniontová mezera může naznačovat přítomnost některých onemocnění nebo stavů, jako jsou metabolická acidóza. Spočítejte aniontovou mezeru zpaměti nebo na kalkulačce dle hodnot a vyberte:" 
            answers="A. AG = 314.2|B. AG = 10|C. AG = 28,9" 
            correctoptions="false|false|true" 
            explanations="ne|ne|ano" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>           
-<bdl-quizx id="q9" type="choice2" 
+<bdl-quizx id="q3.7" type="choice2" 
            question="3.7 Jak by se změnily parametry ABR a klinický obraz, při zvracení?" 
            answers="A. Při zvracení dojde ke komplikaci již existující metabolické acidózy metabolickou alkalózou (ztráta H<sup>+</sup>, Cl<sup>-</sup>), utlumení respiračních kompenzačních mechanismů, prohloubení dehydratace, zvýšení ztrát K<sup>+</sup> a ke zhoršení stavu (kombinovaná porucha ABR, deplece K<sup>+</sup>).|B. zvracením se ztrácí K<sup>+</sup>, dochází k rozvoji hypokálémie a není-li situace řešena, směně H<sup>+</sup> za K<sup>+</sup> na buněčné membráně (K<sup>+</sup> jde ven, H<sup>+</sup> dovnitř, dojde ke alkalizaci vnitřního prostředí." 
            correctoptions="true|false" 
            explanations="ano|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
-<bdl-quizx id="q10" type="choice2" 
+<bdl-quizx id="q3.8" type="choice2" 
            question="3.8 Jaký nález očekáváte v moči?" 
            answers="A. pH moči bude alkalické, bude ketonurie, nízká koncentrace K<sup>+</sup>, Na<sup>+</sup> i fosfátů, bude těžká proteinurie|B. budu očekávat ketonurii, glykosurii, polyurii, vyšší množství Na<sup>+</sup>, K<sup>+</sup> a fosfátů, kyselé pH" 
            correctoptions="false|true" 
            explanations="ne|ano" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
-<bdl-quizx id="q11" type="choice2" 
+<bdl-quizx id="q3.9" type="choice2" 
            question="3.9 Jakou očekáváte osmolaritu séra? Jak ji lze vypočítat?" 
            answers="A. Osmolarita = (2xNa) + glykémie + urea - osmolarita bude zvýšená|B. Osmolarita bude snížená pro ztrátu sodíku a draslíku, vzorec (Na<sup>+</sup>) + (Cl<sup>-</sup>) + (K<sup>+</sup>) + urea" 
            correctoptions="true|false" 
            explanations="ano|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
-<bdl-quizx id="q12" type="choice2" 
+<bdl-quizx id="q3.10" type="choice2" 
            question="3.10 Jak byste interpretovali renální parametry?" 
            answers="A. Elevace urey a kreatininu vs. na vrub dehydratace a prakticky prerenálního selhání s rozvojem ischémie ledvin. Dalším důvodem může být i chronická renální insuficience vzniklá v průběhu nemoci pro nespolupráci pacientky při léčbě. Aktuálně zhoršená konkomitantně probíhající komplikací a dehydratací.|B. Zvýšení renálních parametrů u tohoto pacienta je výhradně způsobeno konzumací nadměrného množství potravin bohatých na bílkoviny. Vzhledem k diabetickému stavu pacienta jeho tělo chybně a příliš rychle metabolizuje bílkoviny, což vede k přetížení organismu metabolity, jako je kreatinin a močoviny. Tento stav, nazývaný 'Bílkovinami indukovaná renální dysfunkce u diabetu', je běžnou komplikací u diabetických pacientů, kteří nedodržují přísná dietní omezení." 
            correctoptions="true|false" 
            explanations="ano|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
-<bdl-quizx id="q13" type="choice2" 
+<bdl-quizx id="q3.11" type="choice2" 
            question="3.11 Jaký je vývoj kalémie u ketoacidózy? V čase, při zahájení léčby a jejím pokračování v dalším průběhu bez substituce kalia?" 
            answers="A. Po celou dobu přetrvává hyperkalémie, ta se srovná až ve chvíli, kdy glukóza klesne < 10mmol/L. Pokud se léčba nezahájí, pacient s hyperglykémií a hyperkalémií zmírá na maligní arytmii, pokud se substituje při léčbě kalium, hyperkalémie se horší a pacient je v riziku maligní arytmie.|B. metabolická acidóza vyvolá incipientně hyperkalémii, která se léčbou koriguje ke správné hodnotě, nedojde li k hrazení K<sup>+</sup> infuzemi, pacient je v riziku těžké hypokálémie díky ztrátám kalia močí a depleci IC rezerv." 
            correctoptions="false|true" 
            explanations="ne|ano" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
-<bdl-quizx id="q14" type="choice2" 
+<bdl-quizx id="q3.12" type="choice2" 
            question="3.12 Co je příčinou diabetické ketoacidózy?" 
            answers="A. absolutní nedostatek inzulinu a nadbytek glukagonu|B. relativní nedostatek inzulinu" 
            correctoptions="true|false" 
            explanations="ano|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
-<bdl-quizx id="q15" type="choice2" 
+<bdl-quizx id="q3.13" type="choice2" 
            question="3.13 Jaká je patogeneze rozvoje diabetické ketoacidózy (vyberte vhodný diagram v sekci Patogeneze)?"           answers="A. diagram (A)|B. diagram(B)" 
            correctoptions="false|true" 
            explanations="ne|ano" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
-<bdl-quizx id="q16" type="choice2" 
+<bdl-quizx id="q3.14" type="choice2" 
            question="3.14 Které jiné stavy vedou ke zvýšené tvorbě ketolátek?" 
            answers="A. hypotyreóza, cushingův syndrom|B. alkoholismus a hladovění" 
            correctoptions="false|true" 
@@ -239,7 +239,7 @@ Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016
   Shrnutí odpovědí:
   <button class="w3-right w3-button w3-theme" onclick="document.getElementById('mySvg').contentDocument.getElementById('patientpoint').style.display='';">Zobraz hodnoty</button>
 </bdl-quiz-summary>          
-<bdl-quiz-control ids="q7;astrup2,q70;astrup,q7b;astrup3,q7a,q8,q8a;biochemie,q9,q10,q11,q12,q13,q14,q15;patogenesis,q16,qs1"></bdl-quiz-control>             
+<bdl-quiz-control ids="q3.1;astrup2,q3.2;astrup,q3.3;astrup3,q3.4,q3.5,q3.6;biochemie,q3.7,q3.8,q3.9,q3.10,q3.11,q3.12,q3.13;patogenesis,q3.14,qs1"></bdl-quiz-control>             
 
 </div>
 </div>
