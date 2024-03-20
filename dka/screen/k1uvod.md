@@ -19,26 +19,19 @@
                     valuelabels="expiration.q_in.p,lungs.volume,RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.Eratio,ventilatorSCMV.pause,ventilation,filter.y"
                     inputs="rate,16777227,1,60,t;idtv,16777225,1,1000000,t;idiratio,16777240,1,1,t;idpause,16777242,1,100,t;ideratio,16777241,1,1,t"
                     inputlabels="RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.pause,ventilatorSCMV.Eratio"></bdl-fmi>
-                <bdl-fmi id="hemodynamics" mode="continuous" showcontrols="false" controlid="controlbuttons2"
-                    src="modelECMORespiratoryVR_BloodGasesTransport_MeursModel2011_HemodynamicsRegulatedHR.js"
-                    fminame="modelECMORespiratoryVR_BloodGasesTransport_MeursModel2011_HemodynamicsRegulatedHR"
-                    tolerance="0.000001" starttime="0" fstepsize="0.05" fpslimit="20"
-                    guid="{87860081-905b-4adf-b51a-cdbabd18cf3e}"
-                    valuereferences="905970357,905970199,905970200,33554460,637534720"
-                    valuelabels="EithaPressure.pressure,arterialPressure.systolic,arterialPressure.diastolic,Ecg.ecg,currentHeartReat.y"
-                    inputs="sO2,16777391,1,1,t" inputlabels="sO2.k"></bdl-fmi>
+                <bdl-fmi id="hemodynamics" mode="continuous" showcontrols="false" controlid="controlbuttons2" src="modelECMORespiratoryVR_BloodGasesTransport_MeursModel2011_HemodynamicsRegulatedHR.js" fminame="modelECMORespiratoryVR_BloodGasesTransport_MeursModel2011_HemodynamicsRegulatedHR" tolerance="0.000001" starttime="0" fstepsize="0.05" fpslimit="20" guid="{87860081-905b-4adf-b51a-cdbabd18cf3e}" valuereferences="905970357,905970199,905970200,33554460,637534720" valuelabels="EithaPressure.pressure,arterialPressure.systolic,arterialPressure.diastolic,Ecg.ecg,currentHeartReat.y" inputs="sO2,16777391,1,1,t;idecgA5T,16777380,1,1,t" inputlabels="sO2.k,Ecg.A[5]"></bdl-fmi>
             </div>
             <div class="w3-row">
                 <div class="w3-twothird">
                     &nbsp;<bdl-chartjs-time width="390" height="60" fromid="ventilator" labels="lungs volume"
                         refindex="1" refvalues="1" minichart="true" colorindex=5
-                        initialdata="0,0.01;0.0023,0.0023" maxdata="150"></bdl-chartjs-time><br />
+                        initialdata="0,0.01;0.0023,0.0023" maxdata="100"></bdl-chartjs-time><br />
                     &nbsp;<bdl-chartjs-time width="390" height="60" fromid="hemodynamics" labels="ecg" refindex="3"
                         refvalues="1" throttle="100" colorindex="2" minichart="true"
-                        initialdata="0,0.01;0,0" maxdata="300"></bdl-chartjs-time>
+                        initialdata="0,0.01;0,0" maxdata="200"></bdl-chartjs-time>
                     &nbsp;<bdl-chartjs-time width="390" height="150" fromid="hemodynamics" labels="pulsatile sO2"
                         refindex="0" refvalues="1" throttle="100" colorindex="4" minichart="false" convertors="0.0075,1.4" min="60" max="140"
-                        initialdata="0,0.01;11370,11370" maxdata="300"></bdl-chartjs-time>
+                        initialdata="0,0.01;11370,11370" maxdata="200"></bdl-chartjs-time>
                 </div>
                 <div class="w3-third">
                     <div class="w3-card w3-text-aqua w3-xlarge" style="white-space:nowrap">
@@ -101,8 +94,9 @@
         </div>
         <sup>v.20.3</sup>
         <div class="w3-hide">
-            <bdl-range id="rate" min="0" max="100" default="33" step="0.5" title="breath rate [1/min]" initdefault="true"></bdl-range>
-        </div>
+            <bdl-range id="rate" min="0" max="100" default="33" step="0.5" title="breath rate [1/min]" initdefault="true"></bdl-range><br/>
+            <bdl-range id="idecgA5T" min="1" max="130" default="7" step="0.5" title="ecg T wave" initdefault="true"></bdl-range><br/>            
+        </div> 
     </div>
     <div class="w3-padding w3-half w3-xlarge">
      <div class="w3-sand">
@@ -116,13 +110,13 @@
           explanations="ano|ano|ano|ano|ano|ne|ne|ne" 
           buttontitle="zkontrolovat odpověď" ></bdl-quizx>    
 <bdl-quizx id="q1.2" type="choice2" 
-          question="1.2 Spusťte nebo sledujte simulaci a jaká je přibližně dechová frekvence. (nápověda: grafy ukazují hodnoty v posledních 15 s)" 
+          question="1.2 Spusťte nebo sledujte simulaci a jaká je přibližně dechová frekvence. (nápověda: grafy ukazují hodnoty v posledních 10 s)" 
           answers="A. 17 /min|B. 25 /min|C. 33 /min" 
           correctoptions="false|false|true" 
           explanations="ne|ne|ano" 
           buttontitle="zkontrolovat odpověď" ></bdl-quizx>
 <bdl-quizx id="q1.3" type="choice2" 
-          question="1.3 jaká je přibližně tepová frekvence (nápověda: grafy ukazují hodnoty v posledních 15 s)" 
+          question="1.3 jaká je přibližně tepová frekvence (nápověda: grafy ukazují hodnoty v posledních 10 s)" 
           answers="A. 51 /min|B. 71 /min|C. 121 /min" 
           correctoptions="false|true|false" 
           explanations="ne|ano|ne" 
