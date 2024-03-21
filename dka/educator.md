@@ -12,7 +12,7 @@
 **<bdl-checkbox id="run" default="true" titlemin="STOP" titlemax="RUN"></bdl-checkbox> <button class="w3-button w3-theme-l1" onclick="document.getElementById('controls').style.display='block'"><i class="fa fa-cog"></i></button>** <span class="w3-button w3-theme-l1 w3-small"><a href="https://patf-lab06.lf1.cuni.cz:5000/manequin" target="_blank"><i class="fa fa-file"></i></a></span>
 </div>
 <div class="w3-col" style="width:240px">
-<bdl-remote-value remoteurl="https://patf-lab06.lf1.cuni.cz:5000/lungsim" interval="2000" id="lungsim" inputs="rate;muscle_pressure;blend_duration;compliance;peep;resistance;run"></bdl-remote-value><bdl-chartjs-time id="id11" width="150" height="80" fromid="lungsim" refindex="7" refvalues="1" labels="TV" displayxticks="false"></bdl-chartjs-time>
+<bdl-remote-value remoteurl="https://patf-lab06.lf1.cuni.cz:5000/lungsim" interval="2000" id="lungsim" inputs="rate;muscle_pressure;blend_duration;compliance;peep;resistance;run"></bdl-remote-value><bdl-chartjs-time id="id11" width="150" height="60" fromid="lungsim" refindex="7" refvalues="1" labels="Tidal Volume" maxdata="64" displayxticks="false"></bdl-chartjs-time>
 <bdl-buttonparams title="Normální" ids="blend_duration,compliance,muscle_pressure,peep,resistance,rate" values='4,50,33,5,35,17'></bdl-buttonparams>
 <bdl-buttonparams title="Kussmaulovo" ids="blend_duration,compliance,muscle_pressure,peep,resistance,rate" values='4,50,33,5,15,33'></bdl-buttonparams><br/>
 
