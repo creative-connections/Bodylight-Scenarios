@@ -74,37 +74,37 @@ Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016
 </div>
 
 
-<div class="w3-third">
+<div class="w3-third  w3-xlarge w3-palatino" style="line-height:1.0">
 
 <div class="w3-padding w3-margin">
 <bdl-quizx id="q2.1" type="choice2" 
           question="2.1 Proč má pacient normální hematokrit (0,42), ale erytrocyty mají nižší MCV?" 
-          answers="A. Vlivem hemokoncentrace při osmotické diuréze v kombinaci s hyperosmolaritou vedoucí ke zmenšení MCV erytrocytů, vliv může mít i dopočet těchto hodnot manuálně.|B. Dominantním mechanismem je alterace membrány erytrocytů při průchodu slezinou, erytrocyty poškozené hyperosmolárním prostředím a acidózou ztrácí část své membrány a zmenšují svůj povrch, nejsou však nadměrně destruovány, proto je hematokrit v normě." 
+          answers="A. Hemokoncentrace a hyperosmolarita z osmotické diurézy zmenšují MCV erytrocytů, ruční dopočet hodnot může také ovlivnit výsledky.|B. Erytrocyty ztrácejí část své membrány průchodem slezinou kvůli poškození v hyperosmolárním prostředí, což snižuje MCV, ale protože nejsou destruovány, hematokrit zůstává normální." 
           correctoptions="true|false" 
           explanations="ano|ne" 
           buttontitle="zkontrolovat odpověď"></bdl-quizx>
 
 <bdl-quizx id="q2.2" type="choice2" 
            question="2.2 Jaký je důvod leukocytózy a co by bylo vhodné doplnit za další vyšetření?" 
-           answers="A. Pro leukocytózu bych doplnil diferenciální rozpočet leukocytů a CRP. V rozboru vidíme leukocytózu a elevaci CRP k hodnotě 58mg/L, predominantně v neutrofilech, což je dáno susp. konkomitantně probíhajícím infektem v kombinaci se stresovou reakcí, tedy vyplavením neutrofilů z KD a sleziny vlivem glukokortikoidů.|B. Pacient má suspektní konkomitantní hematologické onemocnění, nelze vyloučit leukémii či leukemizovaný lymfom, doplním vyšetření průtokovou cytometrií z periferní krve k vyloučení či potvrzení této možnosti a naplánuji trepanobiopsii." 
+           answers="A. Pro vyšetření leukocytózy bych doporučil diferenciální rozpočet leukocytů a CRP test. Leukocytóza a zvýšené CRP na 58 mg/L, hlavně z neutrofilů, naznačují infekci a stresovou reakci, s vyplavením neutrofilů z kostní dřeně a sleziny kvůli glukokortikoidům.|B. Pacient má suspektní konkomitantní hematologické onemocnění. Pacientovi doporučuji provést průtokovou cytometrie z periferní krve a trepanobiopsii k ověření či vyloučení možné leukémie nebo leukemizovaného lymfomu." 
            correctoptions="true|false" 
            explanations="ano|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q2.3" type="choice2" 
            question="2.3 Proč má pacient hyponatrémii?" 
-           answers="A. Primárně vlivem osmotické diurézy, obecně by dehydratací a ztrátou vody mělo docházet spíše k hypernatrémii. Při hyperglykémii dochází k přesunům vody z intra do extracelulárního prostoru, tato voda sodík ředí a přispívá k hyponatrémii, zároveň vlivem ADH se snižuje exkrece vody, která sodík dále ředí, další příčinou může být i zvracení u některých pacientů se ztrátou sodíku.|B. Dominantně u pacienta dochází k narušení tubulárních funkcí vlivem dehydratace a snížené diurézy a to zejména v obl. proximálního tubulu, kde se vstřebává většina profiltrovaného sodíku. Odrazem této poruchy je i zvýšená frakční exkrece natria. Zároveň se vlivem aktivace stresové reakce a vegetativního nervového systému pacient výrazně potí, což přispívá k dalším ztrátam sodíku potem." 
+           answers="A. Hyponatrémie je způsobena osmotickou diurézou a přesuny vody z buněk do extracelulárního prostoru při hyperglykémii, které ředí sodík, a sníženou exkrecí vody díky ADH. Zvracení může také přispět ke ztrátě sodíku.|B. U pacienta je narušena tubulární funkce kvůli dehydrataci, hlavně v proximálním tubulu, což způsobuje zvýšenou frakční exkreci sodíku a ztráty sodíku potem z aktivace stresové reakce a vegetativního nervového systému." 
            correctoptions="true|false" 
            explanations="ano|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q2.4" type="choice2" 
            question="2.4 Proč má pacient hyperkalémii?" 
-           answers="B. Nedostatek inzulinu vede u této komplikace k produkci ketonů a acidóze, acidóza způsobí přesun K+ z buněk, které se vylučuje relativně více nežli H+ vzhledem k vysoké aciditě extracelulární tekutiny, K+ se do buněk dostatečně nevrací (v ledvinách vede snížení vylučování K+ relativně k závažnosti hyperkalémie). Při dlouhotrvající komplikaci tohoto typu může být i proteokatabolismus svalové hmoty.|A. V ledvinách se kalium činností tubulů aktivně vyměňuje za glukózu, organismus se tedy snaží o vyloučení nadměrného množství glukózy a snížení glykémie, což na druhé straně vede k retenci kália, které organismus následně použivá ke kontrole ABR směnou za H+ na buněčné membráně." 
-           correctoptions="true|false" 
-           explanations="ano|ne" 
+           answers="A. Ledviny vyměňují kalium za glukózu, což vede k retenci kalia při snaze snížit glykémii a používání kalia k regulaci acidobazické rovnováhy.|B. Nedostatek inzulinu způsobuje produkci ketonů a acidózu, což vede k přesunu kalia z buněk a nedostatečnému vracení do buněk, při dlouhodobé komplikaci dochází k proteokatabolismu svalů." 
+           correctoptions="false|true" 
+           explanations="ne|ano" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q2.5" type="choice2" 
            question="2.5 Proč má pacient hyperglykémii?" 
-           answers="A. Vzniká díky absolutnímu nedostatku inzulinu a nadprodukci glukagonu, který facilituje vstup glukózy do buněk, to u naprostého nedostatku inzulinu nenastává. Zároveň dochází ke glukoneogenezi v játrech.|B. Vzniká následkem nadměrného uvolňování glukózy ze zásob ve svalech a podkoží při aktivaci stresové reakce, deficit inzulinu vyvolává nadměrnou retenci glukózy intracelulárně a tělo tak ve snaze zvýšit glykémii extracelulárně k zajištění dostatečného přívodu do CNS aktivuje právě glukoneogenezi ve svalech a podkoží." 
+           answers="A. Hyperglykémie je způsobena absolutním nedostatkem inzulinu a nadprodukcí glukagonu, což brání vstupu glukózy do buněk a stimuluje glukoneogenezi v játrech.|B. Vzniká aktivací stresové reakce, která uvolňuje glukózu ze zásob a při nedostatku inzulinu dochází k její nadměrné retenci intracelulárně, zatímco tělo zvyšuje glykémii extracelulárně glukoneogenezí ve svalech a podkoží." 
            correctoptions="true|false" 
            explanations="ano|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
