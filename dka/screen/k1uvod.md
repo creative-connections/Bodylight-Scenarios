@@ -98,7 +98,7 @@
             <bdl-range id="idecgA5T" min="1" max="130" default="7" step="0.5" title="ecg T wave" initdefault="true"></bdl-range><br/>            
         </div> 
     </div>
-    <div class="w3-padding w3-half w3-xlarge">
+    <div class="w3-padding w3-half w3-xlarge w3-palatino">
      <div class="w3-sand">
         Muž 42 let, přijat na pohotovost v celkově zhoršeném stavu. 
     </div>
