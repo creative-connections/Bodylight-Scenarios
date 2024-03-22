@@ -1,13 +1,15 @@
 <div class="w3-row">
 <div class="w3-half">
 
-<bdl-tabs idlist="patogeneze,krystaloidy,inzulin,kalemie,ABR,ketoacidoza,ketoacidoza2" 
-  titlelist="Patogeneze,Léčba dehydratace,Léčba hyperglykémie,Léčba kalémie,Léčba poruchy ABR,Ketoacidóza,DKA 2"></bdl-tabs>
+<bdl-tabs idlist="patogeneze,ketogeneze,krystaloidy,inzulin,kalemie,ABR,ketoacidoza,ketoacidoza2" 
+  titlelist="Patogeneze,Ketogeneze,Léčba dehydratace,Léčba hyperglykémie,Léčba kalémie,Léčba poruchy ABR,Ketoacidóza,DKA 2"></bdl-tabs>
 <div class="w3-sand w3-large w3-padding w3-margin">  
 <div id="patogeneze">
 
 **B**
 ![dkapato2](dkapato2.png)
+</div>
+<div id="ketogeneze">
 
 ![dkapato3](dkapato3.png)
 Skoro vše o diabetické ketoacidóze: https://youtu.be/EjbXidx7YFM
@@ -76,7 +78,7 @@ A ještě by se dalo zmínit, že v 10-15% případů je DKA spojená s laktá
 </div>
 
 </div>
-<div class="w3-half w3-padding w3-large">
+<div class="w3-half w3-padding w3-xlarge w3-palatino" style="line-height:1.0">
 
 **Vyberte nejlepší odpověď na otázky**
 <bdl-quizx id="q4.1" type="choice2" 
