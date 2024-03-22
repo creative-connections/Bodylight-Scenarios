@@ -176,7 +176,7 @@ Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016
            explanations="ano|ne|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q3.5" type="choice2" 
-           question="3.5 Aniontová mezera se obvykle pohybuje v rozmezí 10-12 mmol/l, hraničně pak 16 mmol/l. Zvýšená aniontová mezera může naznačovat přítomnost některých onemocnění nebo stavů, jako jsou metabolická acidóza. Snížená aniontová mezera může být způsobena přítomností některých látek nebo stavů, jako jsou alkalóza, hypochlorémie nebo hyperkalcémie. Spočítejte aniontovou mezeru zpaměti nebo na kalkulačce dle hodnot a vyberte:" 
+           question="3.5 Aniontová mezera je obvykle 10-12 mmol/l, až do 16 mmol/l. Zvýšení může signalizovat metabolickou acidózu, zatímco snížení může ukazovat na alkalózu, hypochlorémii nebo hyperkalcémii. Spočítejte aniontovou mezeru zpaměti nebo na kalkulačce dle hodnot a vyberte:" 
            answers="A. AG = 314.2|B. AG = 6|C. AG = 28,9" 
            correctoptions="false|false|true" 
            explanations="ne|ne|ano" 
