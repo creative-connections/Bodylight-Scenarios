@@ -69,14 +69,7 @@ Větší riziko DKA je při léčbě inzulinovou pumpou než při aplikaci pery.
 
 A ještě by se dalo zmínit, že v 10-15% případů je DKA spojená s laktátovou acidózou – zejména při deficitu fosfátů (snížení 2,3-difosfoglycerátu v erytrocytu posouvá disociační křivku Hb doleva).
 </div>
-
-
-
-
-
-
 </div>
-
 </div>
 <div class="w3-half w3-padding w3-xlarge w3-palatino" style="line-height:1.0">
 
@@ -92,7 +85,7 @@ A ještě by se dalo zmínit, že v 10-15% případů je DKA spojená s laktá
           answers="A. zahájíme kontinuální infuzi kortizolu|B. zahájíme kontinuální infuzi glukagonu|C. zahájíme kontinuální infuzi IGF-1 hormonu (insulin-like Growth factor hormone)|D. zahájíme kontinuální infuzi inzulinu" 
           correctoptions="false|false|false|true" 
           explanations="ne|ne|ne|ano" 
-          buttontitle="zkontrolovat odpověď" ></bdl-quizx>      
+          buttontitle="zkontrolovat odpověď" ></bdl-quizx>
 <bdl-quizx id="q4.3" type="choice2" 
           question="4.3 Rychlost poklesu glykémie:" 
           answers="A. nezáleží na tom, je potřeba snižovat co nejrychleji, pacient je v kómatu, hrozí exitus|B. musí být pomalá - max. 2,5 - 4,5 mmol/L za hodinu" 
@@ -104,7 +97,7 @@ A ještě by se dalo zmínit, že v 10-15% případů je DKA spojená s laktá
           answers="A. aby se rychlou změnou osmolarity vnitřního prostředí nezpůsobil mozkový edém|B. aby nedošlo k rychlému rozvoji těžké hypokálémie|C. aby se extracelulárně v krvi zachoval dostatečný energetický pool pro životně důležité orgány" 
           correctoptions="true|true|false" 
           explanations="ano|ano|ne" 
-          buttontitle="zkontrolovat odpověď" ></bdl-quizx>          
+          buttontitle="zkontrolovat odpověď" ></bdl-quizx>
 <bdl-quizx id="q4.5" type="choice" 
           question="4.5 Inzulin při hyperglykémii v rámci DKA navodí:" 
           answers="A. přesun kalia do buněk|B. přesun glukózy z buněk, která je k dispozici pro životně důležité orgány|C. přesun glukózy do buněk|D. přesun H<sup>+</sup> do buněk" 
@@ -116,14 +109,13 @@ A ještě by se dalo zmínit, že v 10-15% případů je DKA spojená s laktá
           answers="A. I|B. II" 
           correctoptions="true|false" 
           explanations="ano|ne" 
-          buttontitle="zkontrolovat odpověď"></bdl-quizx>          
-
+          buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q4.7" type="choice" 
           question="4.7 Hladinu glykémie přímo ovlivňuje:" 
-          answers="inzulin|glukagon|růstový hormon|katecholaminy|hormony štítné žlázy|aldosteron|glukokortikoidy|melatonin|leptin" 
+          answers="inzulin|glukagon|růstový hormon|katecholaminy|hormony štítné žlázy|aldosteron|Glukokortikoidy|melatonin|leptin" 
           correctoptions="true|true|true|true|true|false|true|false|true" 
           explanations="ano|ano|ano|ano|ano|ne|ano|ne|ano" 
-          buttontitle="zkontrolovat odpověď"></bdl-quizx>     
+          buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q4.8" type="choice2" 
           question="4.8 Může být DKA doprovázena laktátovou acidózou?" 
           answers="A. ano může|B. ne nemůže" 
