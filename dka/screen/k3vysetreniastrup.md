@@ -200,7 +200,7 @@ Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016
            explanations="ne|ano" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q3.9" type="choice2" 
-           question="3.9 Normální fyziologická osmolalita séra 275–295 mmol/kg H2O. Pro osmolalitu lze předpokládat, že 1l &#8784; 1kg. Jak ji lze vypočítat? Jakou očekáváte osmolalitu séra z výsledků biochemie?" 
+           question="3.9 Normální fyziologická osmolalita séra 275–295 mmol/kg H2O. Pro odhad osmolality lze předpokládat, že 1 kg &#8784; 1 l. Jak ji lze odhadnout z naměřených hodnot? Očekáváte zvýšenou či sníženou osmolalitu séra z výsledků biochemie?" 
            answers="A. Osmolalita = (2xNa) + glykémie + urea &#8784; 312 mmol/kg - osmolalita bude zvýšená|B. Osmolalita bude snížená pro ztrátu sodíku a draslíku, vzorec (Na<sup>+</sup>) + (Cl<sup>-</sup>) + (K<sup>+</sup>) + urea &#8784; 235.3 mmol/kg" 
            correctoptions="true|false" 
            explanations="ano|ne" 
