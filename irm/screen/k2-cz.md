@@ -1,124 +1,205 @@
+<style>
+img[alt^="image"] {max-width:20px;}
+img[alt^="bigimage"] {  max-height:60px}
+tbody tr:nth-child(even){background-color:#f1f1f1}
+</style>
+
+*[DMT1]: divalent metal transporter 1
+*[holoTf]: Transferin - saturovaný - s navázanými ionty železa
 
 <div class="w3-row">
-<bdl-tabs idlist="biochemie,hyperkalemia,dehydratation" titlelist="Výsledky vyšetření, Hyperkalémie,Dehydratace"></bdl-tabs>
-<div id="biochemie">
-<div class="w3-third">
-<div class="w3-sand w3-large w3-padding w3-margin">
+<div class="w3-col s12 m8 l8">
+
+<bdl-animate-adobe src="Hepatocyt_2_FinalObrazovka5.js" width="800" height="600" name="Hepatocyt_2_FinalObrazovka5" fromid="idfmi" responsive="true"></bdl-animate-adobe>
+<bdl-bind2a-text findex="4" aname="children.1.Hodnota8_text" convertor="1,57.717"></bdl-bind2a-text>
+<bdl-bind2a-text findex="16" aname="children.1.Hodnota5_text" convertor="1,15.9"></bdl-bind2a-text>
+<bdl-bind2a-text findex="3" aname="children.1.Hodnota3_text" convertor="1,1.513"></bdl-bind2a-text>
+<bdl-bind2a-text findex="17" aname="children.1.Hodnota6_text"></bdl-bind2a-text>
+<bdl-bind2a-text findex="10" aname="children.1.Hodnota2_text"></bdl-bind2a-text>
+<bdl-bind2a-text findex="11" aname="children.1.Hodnota4_text" convertor="1,100"></bdl-bind2a-text>
+<bdl-bind2a-text findex="9" aname="children.1.Hodnota1_text"></bdl-bind2a-text>
+<bdl-bind2a-text findex="2" aname="children.1.Hodnota7_text" convertor="1,19.24"></bdl-bind2a-text>
+<bdl-bind2a findex="24" aname="children.1.KapackaFeFialovaSipkaOut_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="25" aname="children.1.StrikackaFeFialovaSipkaIn_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="13" aname="children.1.ZlutaSipka1_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="26" aname="children.1.FialovaSipkaTransferin_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="14" aname="children.1.SipkaTmaveModraBMP6_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="15" aname="children.1.SipkaIL6_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.CervenaSipka5_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="10" aname="children.1.Merak6_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranzova1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="26" aname="children.1.CervenaSipka3_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="26" aname="children.1.CervenaSipka2_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranzova2_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a-play findex="24" aname="children.1.KapackaFeMale_anim" amin="0" amax="99"></bdl-bind2a-play>
+<bdl-bind2a-play findex="24" aname="children.1.ZelezoVelkeKapacka_anim" amin="0" amax="99"></bdl-bind2a-play>
+<bdl-bind2a-play findex="24" aname="children.1.children.579.children.59.Kapka1_anim" amin="0" amax="99"></bdl-bind2a-play>
+<bdl-bind2a-play findex="25" aname="children.1.StrikackaCervena_anim" amin="0" amax="99"></bdl-bind2a-play>
+<bdl-bind2a-play findex="24" aname="children.1.KapackaJehlaFe_anim" amin="0" amax="99"></bdl-bind2a-play>
+<bdl-bind2a findex="14" aname="children.1.SmadSipka_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="15" aname="children.1.SmatSipka_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="4" aname="children.1.children.573.Fe3SkupinaMitochondrie1_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.1.children.573.KanalSedy_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.1.children.573.MitochondrieSipkaCervena1_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.1.children.573.MitochondrieSipkaCervena2_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="16" aname="children.1.Merak5_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.1.Merak7_anim" amin="0" amax="99" fmin="0" fmax="40"></bdl-bind2a>
+<bdl-bind2a findex="23" aname="children.1.children.516.MerakSemaforu5_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="22" aname="children.1.children.516.MerakSemaforu4_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="17" aname="children.1.children.516.MerakSemaforu3_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="21" aname="children.1.children.516.MerakSemaforu2_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="10" aname="children.1.children.516.MerakSemaforu1_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="20" aname="children.1.children.516.Semafor5_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="19" aname="children.1.children.516.Semafor4_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="7" aname="children.1.children.516.Semafor3_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="18" aname="children.1.children.516.Semafor2_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="8" aname="children.1.children.516.Semafor1_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="15" aname="children.1.ModraRuzovaPruhovanaSipka_anim" amin="159" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="3" aname="children.1.children.511.FeTransferin_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="9" aname="children.1.ModraPruhovana_anim" amin="159" amax="0" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranova2_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="17" aname="children.1.SipkaRuzova1_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="4" aname="children.1.Fe3SkupinaMitochondrie2_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.ModraSipka2_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.ModraSipka1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="10" aname="children.1.Hepcidin_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="14" aname="children.1.TmaveModraSipka_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="11" aname="children.1.Ruzova1_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.CervenaSipka6_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.CervenaSipka1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranova1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="13" aname="children.1.ZlutaSipka3_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="13" aname="children.1.ZlutaSipka2_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="12" aname="children.1.RuzovaZlutaPruhovanaSipka_anim" amin="159" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.1.KanalSedy2_anim" amin="159" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.1.MitochondrieSipkaCervena3_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.1.MitochondrieSipkaCervena4_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.ZlutyVodikVnitrniCervenyKanal_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.ZlutyVodikVnejsiCervenyKanal_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.CervenaSipka4_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.SipkaFialovaCervenaVnejsi_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="26" aname="children.1.SipkaPrechodFe2Fe3_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="17" aname="children.1.KanalFialovy_anim" amin="99" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.KanalCerveny_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.1.Fe2Skupina_anim" amin="159" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="4" aname="children.1.Fe3Skupina_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="6" aname="children.1.SipkaFialovaCervena1_anim" amin="0" amax="159" fmin="18" fmax="147"></bdl-bind2a>
+<bdl-bind2a findex="5" aname="children.1.SipkaCervenoFialova1_anim" amin="0" amax="159" fmin="18" fmax="147"></bdl-bind2a>
+<bdl-bind2a findex="11" aname="children.1.Merak4_anim" amin="0" amax="99" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="4" aname="children.1.Merak8_anim" amin="0" amax="99" fmin="0" fmax="114"></bdl-bind2a>
+<bdl-bind2a findex="10" aname="children.1.Merak2_anim" amin="0" amax="99" fmin="0" fmax="4.8" convertor="1,1.2"></bdl-bind2a>
+<bdl-bind2a findex="3" aname="children.1.Merak3_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="9" aname="children.1.Merak1_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="8" aname="children.1.SipkaRuzova2_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.188.OranzovaSipkaSpodniVehicle_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.188.KanalZlutyVehicle_anim" amin="99" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.188.SipkaCervenaHUvnitrVehicle_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.188.SipkaZlutaHUvnitrVehicle_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.188.KanalCervenyVehicle2_anim" amin="99" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.188.SipkaZlutaHUvnitrVehicle_anim_1" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.188.PrechodUvnitrVehicle_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.188.SipkaHneda1Vehicle_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.188.SipkaHneda2Vehicle_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="9" aname="children.1.StrikackaModra_anim" amin="1" amax="29" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="7" aname="children.1.SemaforFpn_anim" amin="0" amax="19" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="8" aname="children.1.SemaforHepcidin_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.1.CervenaSipka7_anim" amin="0" amax="159"></bdl-bind2a>
 
 
-**Vstupní lab. vyšetření**
-| | | | |
-|---|---|---|---|
-| CRP | 58 | mg/l | [0..10] |
-|Leu| 12,6| 10^9/l |	[4,0..10,0] |
-|Ery| 5,56| 10^12/l |	[3,8..4,8] |
-|Hb| 157| g/l |		[120..168] |
-|HTC| 0,420| |		[0,39 +- 0,04] |
-|MCV| 75,5| fl |		[82,6..98,4] |
-|MCH| 28,2| pg |		[28,0..34,6] |
-|MCHC| 374| g/l |		[329..364] |
-|RDW| 14,5| % |		[12,1..15,0] |
-|Plt| 256| 10^9/l | 		[142..327] |
+
+
+
+
+
+
+
+
+</div>
+<div class="w3-col s12 m4 l4 w3-justify w3-small">
+
+<button class="w3-right w3-button w3-theme-d4" onclick="document.getElementById('legenda').style.display='block'"><i class="fa fa-info-circle"> </i></button>
+<!-- hidden input  - buttonparams sets this input value explicitly, then it is read by fmi component -->
+<input id="idlps" value="" type="number" style="display:none"/>
+
+<bdl-fmi id="idfmi" mode="" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.05" fpslimit="10" guid="{9aa10b27-427c-44c9-a381-5815d5706331}" valuereferences="637534208,637534245,33554450,33554447,33554451,637534243,637534244,16777268,16777266,33554434,33554432,33554436,637534264,637534265,637534270,637534268,33554433,33554441,16777267,16777269,16777270,33554443,33554442,33554444,16777264,16777261,637534246" valuelabels="Fe_liv,Fe_liv_in_ser,Fe_liv_2,Fe_ser,Fe_liv_3,Fe_liv_to_ferritin,Fe_liv_from_ferritin,Fpn_liv_knockout,hep_knockout,LPS,hep,Il6,hep_in,hep_out,Bmp6_in,Il6_in,Bmp6,Fpn_liv,Fpn_duo_knockout,Fpn_spl_knockout,Fpn_res_knockout,Fpn_duo,Fpn_spl,Fpn_res,transfusion,bleeding,Fe_liv_out_ser" inputs="id1,16777260,1,1;idfpnliv,16777268,1,1,t;idhep,16777266,1,1,t;idlps,33554434,1,1,t;id11,16777262,1,1,t;id10,16777265,1,1,t;idspl,16777269,1,1,t;idres,16777270,1,1,t;id7,16777261,1,1,t;id8,16777264,1,1,t" inputlabels="Fe_food,Fpn_liv_knockout,hep_knockout,LPS,malabsorption,unregulated_absorption,Fpn_spl_knockout,Fpn_res_knockout,bleeding,transfusion" showtime="true" showtimemultiply="3600"></bdl-fmi>
+
+<div class="w3-border w3-panel">
+
+||| 
+|-------------|-------|
+| Fe v potravě [$\frac{\mu g}{h}$] | <bdl-range id="id1" title="" min="0" max="1000" default="219" step="1"></bdl-range> |
+| FPN gen  | <bdl-checkbox id="idfpnliv" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
+| hepcidin gen | <bdl-checkbox id="idhep" titlemin="gen pro hepcidin je knockoutován (neaktivní)" titlemax="gen pro expresi hepcidinu je aktivní" default="true"></bdl-checkbox>  |
+| 1$\mu$g | <bdl-buttonparams title="LPS injekce" ids="idlps" values="1" fromid="idfmi"></bdl-buttonparams>  |
+| Malabsorpce (1=norma) | <bdl-range id="id11" title="" min="0" max="1" default="1" step="0.1"></bdl-range>  |
+| DMT1 v duodenu | <bdl-checkbox id="id10" titlemin="absorpce je fyziologicky regulovaná" titlemax="regulace absorpce je vypnuta" default="false"></bdl-checkbox>  |
+| Krevní ztráty $\frac{ml}{h}$  | <bdl-range id="id7" title="" min="0" max="1" default="0" step="0.1"></bdl-range>  |
+| Příjem krve $\frac{ml}{h}$ | <bdl-range id="id8" title="" min="0" max="10" default="0" step="1"></bdl-range>  |
+<!--| Knockout genu pro FPN ve slezině | <bdl-checkbox id="idspl" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
+| Knockout genu pro FPN v dalších orgánech| <bdl-checkbox id="idres" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox> | -->
 
 </div>
 
-</div>
-<div class="w3-third">
-<div class="w3-sand w3-large w3-padding w3-margin" style="line-height:0.9">
+**Úkoly**
 
-**Diff. rozpočet leukocytů:**
+Bez kvízu.
+Vyzkoušejte si různé možnosti regulace a pokuste se zamyslet, proč systém reaguje právě tak. Jak se bude vyvíjet v čase (kvalitativně) koncentrace/množství. Udělejte si tabulku a do každé kolonky nakreslete šipku nahoru/dolů/horizontální, v závislosti na tom, jaký očekáváte vývoj v čase (koncentrace roste/klesá/nemění se).
 
-| | | |
-|----|------------|------------|
-| Neutrofily | 8,9 e+9/L| [2,0 - 7,0] |
-| Lymfocyty | 0,8 e+9/L | [0,8 – 4,0] |
-| Monocyty | norma | |
-| Eosinofily | norma | |
-| Basofily | norma | |
-**Biochemie**
+* Hepcidinu
+* Fpn v duodenu
+* Fpn v játrech
+* Železa v játrech
+* Železa v duodenu
+* Železa v krvi
+* IL-6
 
-| | | |
-|----|------------|------------|
-| Na | 123 mmol/l | [135..146] |
-| K | 6,3 mmol/l | [3,8..5,0] |
-| Cl | 88 mmol/l | [97..108] |
-| Urea | 18,0 mmol/l | [1,8..6,7] |
-| Kreatinin | 152 umol/l | [27..88] |
-| Bilirub. celk. | 10,2 μmol/l | [2..17] |
-| ALT | 0,2 ukat/l | [0,05..0,6] |
-| AST | 0,38 ukat/l | [0,1..0,63] |
-| ALP | 2,06 ukat/l | [0,67..2,15] |
-| GMT | 0,15 ukat/l | [0,1..0,39] |
-| Glykemie |  48,4 mmol/l | [3,9..5,6] |
-| HbA1c | 57 mmol/mol | [28..40] |
+Pokud:
+
+* Provedeme knock-out pro hepcidin
+* Provedeme knock-out pro Fpn v játrech
+* Provedeme knock-out pro Fpn v duodenu
+* Zapneme malabsorpci (simulace masivní duodenální resekce)
+* Zapneme neregulovanou absorpci
+* Injikujeme do krve LPS
+* Zapneme krevní transfúzi na hodnotu: ...
+* Zapneme krevní ztráty na hodnotu: ...
 
 </div>
 </div>
+
+<div id="legenda" class="w3-card w3-small w3-padding" style="display:none;z-index:1;position:absolute;top:20px;right:10px;width:500px;background-color:white">
+legenda
+<button class="w3-button w3-theme w3-right" onclick="document.getElementById('legenda').style.display='none'">Skryj legendu <i class="fa fa-close"> </i> </button>
+button
+
+|Schéma|Popis/funkce|
+|---|---|
+|![bigimagefoodiron](simfoodiron.png)|__1. Příjem železa v potravě__ ve formě nehemové ![image1](image1.jpg)Fe<sup>2+</sup>, ![image2](image2.jpg)Fe<sup>3+</sup> a hemové.|
+|![bigimagefoodiron](simnonhem.png)|__2. Nehemové železo__ ![image1](image1.jpg) Fe<sup>2+</sup> se vstřebává přes DMT1, ![image2](image2.jpg) Fe <sup>3+</sup> se katalyzuje na Fe<sup>2+</sup> pomocí Dcytb.|
+|![bigimagefoodiron](simhem.png) |__3. Hemové železo__ se přenáší do buňky, kde se pomocí HO uvolňuje Fe<sup>2+</sup> |
+|![bigimagefoodiron](simironout.png) |__4. Ztráty__ železa vzniklé nevstřebáním|
+|![bigimagefoodiron](simironpool.png) |__5.Pohotový pool, sdílená zásoba Fe<sup>2+</sup>__ která reguluje (inhibuje) transportér DMT1 a přenašeč hemu|
+|![bigimagefoodiron](simironferritin.png) |__6.Regulace příjmu a výdeje Fe<sup>2+</sup> ve ferritinu__ |
+|![bigimageferroportin](imageferroportin.png) |__7.Genová regulace ferroportinu__ |
+
+||Definice|Popis/funkce|
+|---|---|---|
+|![image1](image1.jpg)|Fe<sup>2+</sup>|Dvojmocné železo|
+|![image2](image2.jpg)|Fe<sup>3+</sup>|Trojmocné železo|
+|![image3](image3.jpg)|H<sup>+</sup>|Vodíkový iont|
+|![image4](image4.jpg)|Hem|Porfyrinový kruh s centrálním atomem Fe<sup>2+</sup>|
+|![image5](image5.jpg)|DMT1|Transportér divalentních kovů, symport Fe<sup>2+</sup> a H<sup>+</sup>|
+|![image6](image6.jpg)|Proteinový přenašeč hemu|Proteinový přenašeč hemu (neznámý), přenáší hem z luminální strany duodena do enterocytu.|
+|![image7](image7.jpg)|Dcytb|Duodenální cytochrom b reduktáza: redukuje Fe<sup>3+</sup> na Fe<sup>2+</sup>, elektrony dodává askorbát.|
+|![image8](image8.jpg)|HO|Hemoxygenáza, uvolňuje Fe<sup>2+</sup> z hemu za vzniku CO a biliverdinu|
+|![image9](image9.jpg)|Ztráty železa|Ztráty železa vzniklé nevstřebáním nebo ztrátou buněk, které železo obsahují|
+|![image10](image10.jpg)|Pool Fe<sup>2+</sup>|Pohotový pool Fe<sup>2+</sup> železa v buňce, míra zaplnění odpovídá množství (zde 6/8)|
+|![imageferritin](imageferritin.png)|Ferritin| Ferritin složený z a) proteinové části apoferitinu (oranžová) a b) iontů Fe3+. Funguje jako zásobárna Fe.|
+|![imagetransferrin](imagetransferrin.png)|Transferin| Transferin|
+|![imagehephesdin](smallhephesdin.png)|Hephesdin|Hephesdin|
+|![imageferroportin](smallferroportin.png)|Ferroportin|Ferroportin|
+|![imagetfr1](imgtfr1.png)|TfR1|Transferinový receptor 1|
+|![imageschemasteap3](imgmetaloreduktaza.png)| STEAP3 | Metaloreduktáza |
+konec legendy
 </div>
 
-<div class="w3-twothird" id="hyperkalemia">
-
-![hyperkalemia](hyperkalemia.jpg)
-
-Stefan Silbernagl, Florian Lang: **Color Atlas of Pathophysiology
-Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016 
-
-</div>
-<div class="w3-twothird" id="dehydratation">
-
-![hyponatremia](hyponatremia.jpg)
-
-Stefan Silbernagl, Florian Lang: **Color Atlas of Pathophysiology
-Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016 
-
-</div>
-
-
-<div class="w3-third  w3-xlarge w3-palatino" style="line-height:1.0">
-
-<div class="w3-padding w3-margin">
-<bdl-quizx id="q2.1" type="choice2" 
-          question="2.1 Proč má pacient normální hematokrit (0,42), ale erytrocyty mají nižší MCV?" 
-          answers="A. Hemokoncentrace a hyperosmolarita z osmotické diurézy zmenšují MCV erytrocytů, ruční dopočet hodnot může také ovlivnit výsledky.|B. Erytrocyty ztrácejí část své membrány průchodem slezinou kvůli poškození v hyperosmolárním prostředí, což snižuje MCV, ale protože nejsou destruovány, hematokrit zůstává normální." 
-          correctoptions="true|false" 
-          explanations="ano|ne" 
-          buttontitle="zkontrolovat odpověď"></bdl-quizx>
-
-<bdl-quizx id="q2.2" type="choice2" 
-           question="2.2 Jaký je důvod leukocytózy a co by bylo vhodné doplnit za další vyšetření?" 
-           answers="A. Pro vyšetření leukocytózy bych doporučil diferenciální rozpočet leukocytů a CRP test. Leukocytóza a zvýšené CRP na 58 mg/L, hlavně z neutrofilů, naznačují infekci a stresovou reakci, s vyplavením neutrofilů z kostní dřeně a sleziny kvůli glukokortikoidům.|B. Pacient má suspektní konkomitantní hematologické onemocnění. Pacientovi doporučuji provést průtokovou cytometrie z periferní krve a trepanobiopsii k ověření či vyloučení možné leukémie nebo leukemizovaného lymfomu." 
-           correctoptions="true|false" 
-           explanations="ano|ne" 
-           buttontitle="zkontrolovat odpověď"></bdl-quizx>
-<bdl-quizx id="q2.3" type="choice2" 
-           question="2.3 Proč má pacient hyponatrémii?" 
-           answers="A. Hyponatrémie je způsobena osmotickou diurézou a přesuny vody z buněk do extracelulárního prostoru při hyperglykémii, které ředí sodík, a sníženou exkrecí vody díky ADH. Zvracení může také přispět ke ztrátě sodíku.|B. U pacienta je narušena tubulární funkce kvůli dehydrataci, hlavně v proximálním tubulu, což způsobuje zvýšenou frakční exkreci sodíku a ztráty sodíku potem z aktivace stresové reakce a vegetativního nervového systému." 
-           correctoptions="true|false" 
-           explanations="ano|ne" 
-           buttontitle="zkontrolovat odpověď"></bdl-quizx>
-<bdl-quizx id="q2.4" type="choice2" 
-           question="2.4 Proč má pacient hyperkalémii?" 
-           answers="A. Ledviny vyměňují kalium za glukózu, což vede k retenci kalia při snaze snížit glykémii a používání kalia k regulaci acidobazické rovnováhy.|B. Nedostatek inzulinu způsobuje produkci ketonů a acidózu, což vede k přesunu kalia z buněk a nedostatečnému vracení do buněk, při dlouhodobé komplikaci dochází k proteokatabolismu svalů." 
-           correctoptions="false|true" 
-           explanations="ne|ano" 
-           buttontitle="zkontrolovat odpověď"></bdl-quizx>
-<bdl-quizx id="q2.5" type="choice2" 
-           question="2.5 Proč má pacient hyperglykémii?" 
-           answers="A. Hyperglykémie je způsobena absolutním nedostatkem inzulinu a nadprodukcí glukagonu, což brání vstupu glukózy do buněk a stimuluje glukoneogenezi v játrech.|B. Vzniká aktivací stresové reakce, která uvolňuje glukózu ze zásob a při nedostatku inzulinu dochází k její nadměrné retenci intracelulárně, zatímco tělo zvyšuje glykémii extracelulárně glukoneogenezí ve svalech a podkoží." 
-           correctoptions="true|false" 
-           explanations="ano|ne" 
-           buttontitle="zkontrolovat odpověď"></bdl-quizx>
-<bdl-quizx id="q2.6" type="choice2" 
-           question="2.6 Co byste doplnili za vyšetření ke zhodnocení aktuální akutní poruchy vnitřního prostředí?" 
-           answers="A. Glykovaný hemoglobin|B. protilátky proti inzulinu a buňkám ostrůvků|C. ASTRUP" 
-           correctoptions="false|false|true" 
-           explanations="ne|ne|ano" 
-           buttontitle="zkontrolovat odpověď"></bdl-quizx>
-<bdl-quiz-summary id="qs1">
-  Shrnutí odpovědí:
-</bdl-quiz-summary>          
-<bdl-quiz-control ids="q2.1,q2.2,q2.3,q2.4,q2.5,q2.6,qs1"></bdl-quiz-control>          
-</div>
-</div>
-
-</div>
