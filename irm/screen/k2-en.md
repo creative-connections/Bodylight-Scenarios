@@ -1,124 +1,200 @@
+<style>
+img[alt^="image"] {max-width:20px;}
+img[alt^="bigimage"] {  max-height:60px}
+tbody tr:nth-child(even){background-color:#f1f1f1}
+</style>
+
+*[DMT1]: divalent metal transporter 1
+*[holoTf]: Transferin - saturovaný - s navázanými ionty železa
 
 <div class="w3-row">
-<bdl-tabs idlist="biochemie,hyperkalemia,dehydratation" titlelist="Exam results, Hyperkalemia,Dehydratation"></bdl-tabs>
-<div id="biochemie">
-<div class="w3-third">
+<div class="w3-col s12 m8 l8">
 
-<div class="w3-sand w3-large w3-padding w3-margin">
+<bdl-animate-adobe src="Hepatocyt_2_FinalObrazovka5.js" width="800" height="600" name="Hepatocyt_2_FinalObrazovka5" fromid="idfmi" responsive="true"></bdl-animate-adobe>
+<bdl-bind2a-text findex="4" aname="children.1.Hodnota8_text" convertor="1,57.717"></bdl-bind2a-text>
+<bdl-bind2a-text findex="16" aname="children.1.Hodnota5_text" convertor="1,15.9"></bdl-bind2a-text>
+<bdl-bind2a-text findex="3" aname="children.1.Hodnota3_text" convertor="1,1.513"></bdl-bind2a-text>
+<bdl-bind2a-text findex="17" aname="children.1.Hodnota6_text"></bdl-bind2a-text>
+<bdl-bind2a-text findex="10" aname="children.1.Hodnota2_text"></bdl-bind2a-text>
+<bdl-bind2a-text findex="11" aname="children.1.Hodnota4_text" convertor="1,100"></bdl-bind2a-text>
+<bdl-bind2a-text findex="9" aname="children.1.Hodnota1_text"></bdl-bind2a-text>
+<bdl-bind2a-text findex="2" aname="children.1.Hodnota7_text" convertor="1,19.24"></bdl-bind2a-text>
+<bdl-bind2a findex="24" aname="children.1.KapackaFeFialovaSipkaOut_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="25" aname="children.1.StrikackaFeFialovaSipkaIn_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="13" aname="children.1.ZlutaSipka1_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="26" aname="children.1.FialovaSipkaTransferin_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="14" aname="children.1.SipkaTmaveModraBMP6_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="15" aname="children.1.SipkaIL6_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.CervenaSipka5_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="10" aname="children.1.Merak6_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranzova1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="26" aname="children.1.CervenaSipka3_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="26" aname="children.1.CervenaSipka2_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranzova2_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a-play findex="24" aname="children.1.KapackaFeMale_anim" amin="0" amax="99"></bdl-bind2a-play>
+<bdl-bind2a-play findex="24" aname="children.1.ZelezoVelkeKapacka_anim" amin="0" amax="99"></bdl-bind2a-play>
+<bdl-bind2a-play findex="24" aname="children.1.children.579.children.59.Kapka1_anim" amin="0" amax="99"></bdl-bind2a-play>
+<bdl-bind2a-play findex="25" aname="children.1.StrikackaCervena_anim" amin="0" amax="99"></bdl-bind2a-play>
+<bdl-bind2a-play findex="24" aname="children.1.KapackaJehlaFe_anim" amin="0" amax="99"></bdl-bind2a-play>
+<bdl-bind2a findex="14" aname="children.1.SmadSipka_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="15" aname="children.1.SmatSipka_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="4" aname="children.1.children.573.Fe3SkupinaMitochondrie1_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.1.children.573.KanalSedy_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.1.children.573.MitochondrieSipkaCervena1_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.1.children.573.MitochondrieSipkaCervena2_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="16" aname="children.1.Merak5_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.1.Merak7_anim" amin="0" amax="99" fmin="0" fmax="40"></bdl-bind2a>
+<bdl-bind2a findex="23" aname="children.1.children.516.MerakSemaforu5_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="22" aname="children.1.children.516.MerakSemaforu4_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="17" aname="children.1.children.516.MerakSemaforu3_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="21" aname="children.1.children.516.MerakSemaforu2_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="10" aname="children.1.children.516.MerakSemaforu1_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="20" aname="children.1.children.516.Semafor5_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="19" aname="children.1.children.516.Semafor4_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="7" aname="children.1.children.516.Semafor3_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="18" aname="children.1.children.516.Semafor2_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="8" aname="children.1.children.516.Semafor1_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="15" aname="children.1.ModraRuzovaPruhovanaSipka_anim" amin="159" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="3" aname="children.1.children.511.FeTransferin_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="9" aname="children.1.ModraPruhovana_anim" amin="159" amax="0" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranova2_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="17" aname="children.1.SipkaRuzova1_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="4" aname="children.1.Fe3SkupinaMitochondrie2_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.ModraSipka2_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.ModraSipka1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="10" aname="children.1.Hepcidin_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="14" aname="children.1.TmaveModraSipka_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="11" aname="children.1.Ruzova1_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.CervenaSipka6_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.CervenaSipka1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranova1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
+<bdl-bind2a findex="13" aname="children.1.ZlutaSipka3_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="13" aname="children.1.ZlutaSipka2_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="12" aname="children.1.RuzovaZlutaPruhovanaSipka_anim" amin="159" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.1.KanalSedy2_anim" amin="159" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.1.MitochondrieSipkaCervena3_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.1.MitochondrieSipkaCervena4_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.ZlutyVodikVnitrniCervenyKanal_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.ZlutyVodikVnejsiCervenyKanal_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.CervenaSipka4_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.SipkaFialovaCervenaVnejsi_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="26" aname="children.1.SipkaPrechodFe2Fe3_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="17" aname="children.1.KanalFialovy_anim" amin="99" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.KanalCerveny_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.1.Fe2Skupina_anim" amin="159" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="4" aname="children.1.Fe3Skupina_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="6" aname="children.1.SipkaFialovaCervena1_anim" amin="0" amax="159" fmin="18" fmax="147"></bdl-bind2a>
+<bdl-bind2a findex="5" aname="children.1.SipkaCervenoFialova1_anim" amin="0" amax="159" fmin="18" fmax="147"></bdl-bind2a>
+<bdl-bind2a findex="11" aname="children.1.Merak4_anim" amin="0" amax="99" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="4" aname="children.1.Merak8_anim" amin="0" amax="99" fmin="0" fmax="114"></bdl-bind2a>
+<bdl-bind2a findex="10" aname="children.1.Merak2_anim" amin="0" amax="99" fmin="0" fmax="4.8" convertor="1,1.2"></bdl-bind2a>
+<bdl-bind2a findex="3" aname="children.1.Merak3_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="9" aname="children.1.Merak1_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="8" aname="children.1.SipkaRuzova2_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.188.OranzovaSipkaSpodniVehicle_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.188.KanalZlutyVehicle_anim" amin="99" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.188.SipkaCervenaHUvnitrVehicle_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.188.SipkaZlutaHUvnitrVehicle_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.188.KanalCervenyVehicle2_anim" amin="99" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.188.SipkaZlutaHUvnitrVehicle_anim_1" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.188.PrechodUvnitrVehicle_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.188.SipkaHneda1Vehicle_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.1.children.188.SipkaHneda2Vehicle_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="9" aname="children.1.StrikackaModra_anim" amin="1" amax="29" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="7" aname="children.1.SemaforFpn_anim" amin="0" amax="19" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="8" aname="children.1.SemaforHepcidin_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.1.CervenaSipka7_anim" amin="0" amax="159"></bdl-bind2a>
 
 
-**Initial lab. examination**
-| | | | |
-|---|---|---|---|
-| CRP | 58 | mg/l | [0..10] |
-|Leu| 12,6| 10^9/l |	[4,0..10,0] |
-|Ery| 5,56| 10^12/l |	[3,8..4,8] |
-|Hb| 157| g/l |		[120..168] |
-|HTC| 0,420| |		[0,39 +- 0,04] |
-|MCV| 75,5| fl |		[82,6..98,4] |
-|MCH| 28,2| pg |		[28,0..34,6] |
-|MCHC| 374| g/l |		[329..364] |
-|RDW| 14,5| % |		[12,1..15,0] |
-|Plt| 256| 10^9/l | 		[142..327] |
+
+
+
+
+
+
+
+
+</div>
+<div class="w3-col s12 m4 l4 w3-justify w3-small">
+
+<button class="w3-right w3-button w3-theme-d4" onclick="document.getElementById('legenda').style.display='block'"><i class="fa fa-info-circle"> </i></button>
+<!-- hidden input  - buttonparams sets this input value explicitly, then it is read by fmi component -->
+<input id="idlps" value="" type="number" style="display:none"/>
+
+<bdl-fmi id="idfmi" mode="" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.05" fpslimit="10" guid="{9aa10b27-427c-44c9-a381-5815d5706331}" valuereferences="637534208,637534245,33554450,33554447,33554451,637534243,637534244,16777268,16777266,33554434,33554432,33554436,637534264,637534265,637534270,637534268,33554433,33554441,16777267,16777269,16777270,33554443,33554442,33554444,16777264,16777261,637534246" valuelabels="Fe_liv,Fe_liv_in_ser,Fe_liv_2,Fe_ser,Fe_liv_3,Fe_liv_to_ferritin,Fe_liv_from_ferritin,Fpn_liv_knockout,hep_knockout,LPS,hep,Il6,hep_in,hep_out,Bmp6_in,Il6_in,Bmp6,Fpn_liv,Fpn_duo_knockout,Fpn_spl_knockout,Fpn_res_knockout,Fpn_duo,Fpn_spl,Fpn_res,transfusion,bleeding,Fe_liv_out_ser" inputs="id1,16777260,1,1;idfpnliv,16777268,1,1,t;idhep,16777266,1,1,t;idlps,33554434,1,1,t;id11,16777262,1,1,t;id10,16777265,1,1,t;idspl,16777269,1,1,t;idres,16777270,1,1,t;id7,16777261,1,1,t;id8,16777264,1,1,t" inputlabels="Fe_food,Fpn_liv_knockout,hep_knockout,LPS,malabsorption,unregulated_absorption,Fpn_spl_knockout,Fpn_res_knockout,bleeding,transfusion" showtime="true" showtimemultiply="3600"></bdl-fmi>
+
+<div class="w3-border w3-panel">
+
+||| 
+|-------------|-------|
+| Iron in food [$\frac{\mu g}{h}$] | <bdl-range id="id1" title="" min="0" max="1000" default="219" step="1"></bdl-range> |
+| FPN gene  | <bdl-checkbox id="idfpnliv" titlemin="Fpn gene is knocked out (inactive)" titlemax="Fpn gene is active" default="true"></bdl-checkbox>  |
+| Hepcidin gene | <bdl-checkbox id="idhep" titlemin="gene for hepcidin is knocked out (inactive)" titlemax="gene for hepcidin expression is active" default="true"></bdl-checkbox>  |
+| 1$\mu$g | <bdl-buttonparams title="LPS injection" ids="idlps" values="1" fromid="idfmi"></bdl-buttonparams>  |
+| Malabsorption (1=normal) | <bdl-range id="id11" title="" min="0" max="1" default="1" step="0.1"></bdl-range>  |
+| DMT1 in the duodenum | <bdl-checkbox id="id10" titlemin="absorption is physiologically regulated" titlemax="regulation of absorption is turned off" default="false"></bdl-checkbox>  |
+| Blood losses $\frac{ml}{h}$  | <bdl-range id="id7" title="" min="0" max="1" default="0" step="0.1"></bdl-range>  |
+| Blood intake $\frac{ml}{h}$ | <bdl-range id="id8" title="" min="0" max="10" default="0" step="1"></bdl-range>  |
+<!--| Knockout of the FPN gene in the spleen | <bdl-checkbox id="idspl" titlemin="Fpn gene is knocked out (inactive)" titlemax="Fpn gene is active" default="true"></bdl-checkbox>  |
+| Knockout of the FPN gene in other organs| <bdl-checkbox id="idres" titlemin="Fpn gene is knocked out (inactive)" titlemax="Fpn gene is active" default="true"></bdl-checkbox> | -->
+
+</div>
+Without a quiz.
+Try different regulation options and try to think about why the system reacts in such a way. How will the concentration/amount develop over time (qualitatively)? Make a table and draw an arrow up/down/horizontal in each column, depending on what you expect the development over time to be (concentration increases/decreases/does not change).
+
+* Hepcidin
+* Fpn in the duodenum
+* Fpn in the liver
+*    Iron in the liver
+*    Iron in the duodenum
+*    Iron in the blood
+*    IL-6
+
+If:
+
+*    We perform a knock-out for hepcidin
+*    We perform a knock-out for Fpn in the liver
+*    We perform a knock-out for Fpn in the duodenum
+*    We turn on malabsorption (simulation of massive duodenal resection)
+*    We turn on unregulated absorption
+*    We inject LPS into the blood
+*    We turn on blood transfusion at the value: ...
+*    We turn on blood losses at the value: ...
+</div>
+</div>
+
+<div id="legenda" class="w3-card w3-small w3-padding" style="display:none;z-index:1;position:absolute;top:20px;right:10px;width:500px;background-color:white">
+legend
+<button class="w3-button w3-theme w3-right" onclick="document.getElementById('legenda').style.display='none'">Hide legend <i class="fa fa-close"> </i> </button>
+
+|Scheme|Description/Function|
+|---|---|
+|![bigimagefoodiron](simfoodiron.png)|__1. Iron intake in food__ in the form of non-heme ![image1](image1.jpg)Fe<sup>2+</sup>, ![image2](image2.jpg)Fe<sup>3+</sup>, and heme.|
+|![bigimagefoodiron](simnonhem.png)|__2. Non-heme iron__ ![image1](image1.jpg) Fe<sup>2+</sup> is absorbed through DMT1, ![image2](image2.jpg) Fe<sup>3+</sup> is catalyzed to Fe<sup>2+</sup> by Dcytb.|
+|![bigimagefoodiron](simhem.png) |__3. Heme iron__ is transferred into the cell, where Fe<sup>2+</sup> is released by HO |
+|![bigimagefoodiron](simironout.png) |__4. Losses__ of iron not absorbed|
+|![bigimagefoodiron](simironpool.png) |__5. Ready pool, shared stock of Fe<sup>2+</sup>__ which regulates (inhibits) the DMT1 transporter and heme carrier|
+|![bigimagefoodiron](simironferritin.png) |__6. Regulation of intake and expenditure of Fe<sup>2+</sup> in ferritin__ |
+|![bigimageferroportin](imageferroportin.png) |__7. Genetic regulation of ferroportin__ |
+
+||Definitions|Description/Function|
+|---|---|---|
+|![image1](image1.jpg)|Fe<sup>2+</sup>|Divalent iron|
+|![image2](image2.jpg)|Fe<sup>3+</sup>|Trivalent iron|
+|![image3](image3.jpg)|H<sup>+</sup>|Hydrogen ion|
+|![image4](image4.jpg)|Hem|Porphyrin ring with a central atom of Fe<sup>2+</sup>|
+|![image5](image5.jpg)|DMT1|Divalent metal transporter, symport of Fe<sup>2+</sup> and H<sup>+</sup>|
+|![image6](image6.jpg)|Heme protein carrier|Heme protein carrier (unknown), transports heme from the luminal side of the duodenum into the enterocyte.|
+|![image7](image7.jpg)|Dcytb|Duodenal cytochrome b reductase: reduces Fe<sup>3+</sup> to Fe<sup>2+</sup>, electrons are supplied by ascorbate.|
+|![image8](image8.jpg)|HO|Hemoxygenase, releases Fe<sup>2+</sup> from heme producing CO and biliverdin|
+|![image9](image9.jpg)|Iron losses|Iron losses caused by non-absorption or loss of cells containing iron|
+|![image10](image10.jpg)|Pool Fe<sup>2+</sup>|Ready pool of Fe<sup>2+</sup> iron in the cell, the level of filling corresponds to the amount (here 6/8)|
+|![imageferritin](imageferritin.png)|Ferritin| Ferritin composed of a) the protein part apoferritin (orange) and b) Fe3+ ions. Acts as an iron store.|
+|![imagetransferrin](imagetransferrin.png)|Transferrin| Transferrin|
+|![imagehephesdin](smallhephesdin.png)|Hephesdin|Hephesdin|
+|![imageferroportin](smallferroportin.png)|Ferroportin|Ferroportin|
+|![imagetfr1](imgtfr1.png)|TfR1|Transferrin receptor 1|
+|![imageschemasteap3](imgmetaloreduktaza.png)| STEAP3 | Metalloreductase |
 
 </div>
 
-</div>
-<div class="w3-third">
-<div class="w3-sand w3-large w3-padding w3-margin" style="line-height:0.9">
-
-**Differential leukocyte count**
-
-|              |               |           |
-|--------------|---------------|-----------|
-| Neutrophils  | 8.9 e+9/L     | [2.0 - 7.0] |
-| Lymphocytes  | 0.8 e+9/L     | [0.8 – 4.0] |
-| Monocytes    | normal        |           |
-| Eosinophils  | normal        |           |
-| Basophils    | normal        |           |
-
-**Biochemistry**
-
-|                |               |             |
-|----------------|---------------|-------------|
-| Na (Sodium)    | 123 mmol/l    | [135..146]  |
-| K (Potassium)  | 6.3 mmol/l    | [3.8..5.0]  |
-| Cl (Chloride)  | 88 mmol/l     | [97..108]   |
-| Urea           | 18.0 mmol/l   | [1.8..6.7]  |
-| Creatinine     | 152 µmol/l    | [27..88]    |
-| Total Bilirubin| 10.2 µmol/l   | [2..17]     |
-| ALT            | 0.2 ukat/l    | [0.05..0.6] |
-| AST            | 0.38 ukat/l   | [0.1..0.63] |
-| ALP            | 2.06 ukat/l   | [0.67..2.15]|
-| GMT            | 0.15 ukat/l   | [0.1..0.39] |
-| Glycemia       | 48.4 mmol/l   | [3.9..5.6]  |
-| HbA1c          | 57 mmol/mol   | [28..40]    |
-
-</div>
-</div>
-</div>
-<div class="w3-twothird" id="hyperkalemia">
-
-![hyperkalemia](hyperkalemia.jpg)
-
-Stefan Silbernagl, Florian Lang: **Color Atlas of Pathophysiology
-Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016 
-
-</div>
-<div class="w3-twothird" id="dehydratation">
-
-![hyponatremia](hyponatremia.jpg)
-
-Stefan Silbernagl, Florian Lang: **Color Atlas of Pathophysiology
-Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016 
-
-</div>
-
-<div class="w3-third">
-
-<div class="w3-padding w3-margin">
-<bdl-quizx id="q2.1" type="choice2" 
-          question="2.1 Why does the patient have a normal hematocrit (0.42), but lower MCV in erythrocytes?" 
-          answers="A. Due to hemoconcentration during osmotic diuresis combined with hyperosmolarity leading to a reduction in MCV of erythrocytes, manual recalculation of these values may also have an effect.|B. The dominant mechanism is the alteration of erythrocyte membranes during passage through the spleen, erythrocytes damaged by hyperosmolar environment and acidosis lose part of their membrane and reduce their surface area, however, they are not excessively destroyed, hence the hematocrit is normal." 
-          correctoptions="true|false" 
-          explanations="yes|no" 
-          buttontitle="check answer"></bdl-quizx>
-
-<bdl-quizx id="q2.2" type="choice2" 
-           question="2.2 What is the reason for leukocytosis and what further examination would be appropriate to add?" 
-           answers="A. For leukocytosis, I would add a differential leukocyte count and CRP. The analysis shows leukocytosis and an elevation of CRP to 58mg/L, predominantly in neutrophils, which is due to a suspected concurrent infection combined with a stress reaction, i.e., the release of neutrophils from bone marrow and spleen due to glucocorticoids.|B. The patient has a suspected concurrent hematological disease, leukemia or leukemized lymphoma cannot be ruled out, I will add flow cytometry examination from peripheral blood to exclude or confirm this possibility and plan a bone marrow biopsy." 
-           correctoptions="true|false" 
-           explanations="yes|no" 
-           buttontitle="check answer"></bdl-quizx>
-<bdl-quizx id="q2.3" type="choice2" 
-           question="2.3 Why does the patient have hyponatremia?" 
-           answers="A. Primarily due to osmotic diuresis, generally dehydration and water loss should lead to hypernatremia rather than hyponatremia. In hyperglycemia, water shifts from the intra to the extracellular space, this water dilutes sodium contributing to hyponatremia, also due to ADH the excretion of water is reduced, further diluting sodium, another cause could be vomiting in some patients leading to sodium loss.|B. Dominantly, the patient experiences disruption of tubular functions due to dehydration and reduced diuresis, especially in the area of the proximal tubule, where most of the filtered sodium is absorbed. This disorder is also reflected by an increased fractional excretion of sodium. At the same time, due to the activation of stress response and the autonomic nervous system, the patient sweats significantly, which contributes to further sodium losses through sweat." 
-           correctoptions="true|false" 
-           explanations="yes|no" 
-           buttontitle="check answer"></bdl-quizx>
-<bdl-quizx id="q2.4" type="choice2" 
-           question="2.4 Why does the patient have hyperkalemia?" 
-           answers="A. Lack of insulin in this complication leads to the production of ketones and acidosis, acidosis causes a shift of K+ out of cells, which is excreted relatively more than H+ due to the high acidity of the extracellular fluid, K+ is not sufficiently returned to the cells (in the kidneys, the reduction in K+ excretion is relatively significant to the severity of hyperkalemia). In long-standing complications of this type, there can also be proteocatabolism of muscle mass.|B. In the kidneys, potassium is actively exchanged for glucose by the tubules, thus the body tries to eliminate excessive amounts of glucose and reduce glycemia, which on the other hand leads to the retention of potassium, which the body subsequently uses to control ABR by exchanging it for H+ on the cell membrane." 
-           correctoptions="true|false" 
-           explanations="yes|no" 
-           buttontitle="check answer"></bdl-quizx>
-<bdl-quizx id="q2.5" type="choice2" 
-           question="2.5 Why does the patient have hyperglycemia?" 
-           answers="A. It arises due to an absolute lack of insulin and overproduction of glucagon, which facilitates the entry of glucose into cells, this does not occur in the absolute absence of insulin. At the same time, gluconeogenesis occurs in the liver.|B. It arises as a result of excessive release of glucose from reserves in muscles and subcutaneous tissue during the activation of stress response, insulin deficit causes excessive intracellular retention of glucose, and the body in an attempt to increase extracellular glycemia to ensure sufficient supply to the CNS activates gluconeogenesis in muscles and subcutaneous tissue." 
-           correctoptions="true|false" 
-           explanations="yes|no" 
-           buttontitle="check answer"></bdl-quizx>
-<bdl-quizx id="q2.6" type="choice2" 
-           question="2.6 What examination would you add to assess the current acute disorder of the internal environment?" 
-           answers="A. ABG (Arterial Blood Gas)|B. Glycated hemoglobin|C. antibodies against insulin and islet cells" 
-           correctoptions="true|false|false" 
-           explanations="yes|no|no" 
-           buttontitle="check answer"></bdl-quizx>
-<bdl-quiz-summary id="qs1">
-  Summary of answers:
-</bdl-quiz-summary>          
-<bdl-quiz-control ids="q2.1,q2.2,q2.3,q2.4,q2.5,q2.6,qs1"></bdl-quiz-control>          
-
-</div>
-</div>
-</div>
