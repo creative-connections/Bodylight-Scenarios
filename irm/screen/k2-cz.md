@@ -8,8 +8,9 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 *[holoTf]: Transferin - saturovaný - s navázanými ionty železa
 
 <div class="w3-row">
-<div class="w3-col s12 m8 l8">
+<div class="w3-col s12 m8 l8 w3-center">
 
+**metabolismus železa v buňce hepatocytu**
 <bdl-animate-adobe src="Hepatocyt_2_FinalObrazovka5.js" width="800" height="600" name="Hepatocyt_2_FinalObrazovka5" fromid="idfmi" responsive="true"></bdl-animate-adobe>
 <bdl-bind2a-text findex="4" aname="children.1.Hodnota8_text" convertor="1,57.717"></bdl-bind2a-text>
 <bdl-bind2a-text findex="16" aname="children.1.Hodnota5_text" convertor="1,15.9"></bdl-bind2a-text>
