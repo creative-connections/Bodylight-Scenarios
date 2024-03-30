@@ -6,7 +6,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <div class="w3-row">
 <div class="w3-twothird w3-center">
 
-**metabolismus železa buňky makrofágu ve slezině**
+**metabolismus železa v buňce makrofágu ve slezině**
 <bdl-animate-adobe src="BunkaSlezinaObrazovka1.js" width="800" height="600" name="BunkaSlezinaObrazovka1" fromid="idfmi" responsive="true"></bdl-animate-adobe>
 <bdl-bind2a-text findex="11" aname="children.0.Hodnota7_text" convertor="1,0.665" precision="3"></bdl-bind2a-text>
 <bdl-bind2a-text findex="12" aname="children.0.Hodnota3_text" fixed="1"></bdl-bind2a-text>
