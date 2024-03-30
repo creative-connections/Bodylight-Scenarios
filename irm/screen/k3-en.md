@@ -1,251 +1,123 @@
+<style>
+img[alt^="image"] {max-width:20px;}
+img[alt^="bigimage"] {  max-height:60px}
+tbody tr:nth-child(even){background-color:#f1f1f1}
+</style>
 <div class="w3-row">
-<div class="w3-twothird">
+<div class="w3-twothird w3-center">
 
-<bdl-tabs idlist="astrup2,astrup,astrup3,biochemie,diabetes,patogenesis" 
-  titlelist="ASTRUP pH pCO2,ASTRUP pH HCO3-,ASTRUP BE pCO2,Biochemie,Pathophysiology DM,Patogenesis"></bdl-tabs>
+**Iron Metabolism of Macrophage Cells in the Spleen**
+<bdl-animate-adobe src="BunkaSlezinaObrazovka1.js" width="800" height="600" name="BunkaSlezinaObrazovka1" fromid="idfmi" responsive="true"></bdl-animate-adobe>
+<bdl-bind2a-text findex="11" aname="children.0.Hodnota7_text" convertor="1,0.665" precision="3"></bdl-bind2a-text>
+<bdl-bind2a-text findex="12" aname="children.0.Hodnota3_text" fixed="1"></bdl-bind2a-text>
+<bdl-bind2a-text findex="11" aname="children.0.Hodnota1_text" convertor="1,0.665" precision="3"></bdl-bind2a-text>
+<bdl-bind2a-text findex="4" aname="children.0.Hodnota2_text" convertor="1,1.5"></bdl-bind2a-text>
+<bdl-bind2a-text findex="7" aname="children.0.Hodnota6_text" convertor="1,0.9"></bdl-bind2a-text>
+<bdl-bind2a-text findex="10" aname="children.0.Hodnota5_text" convertor="1,4.4"></bdl-bind2a-text>
+<bdl-bind2a-text findex="9" aname="children.0.Hodnota4_text" convertor="1,13.3"></bdl-bind2a-text>
+<bdl-bind2a findex="26" aname="children.0.children.355.MerakSemaforu5_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="3" aname="children.0.children.355.MerakSemaforu4_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="25" aname="children.0.children.355.MerakSemaforu3_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="24" aname="children.0.children.355.MerakSemaforu2_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="11" aname="children.0.children.355.MerakSemaforu1_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="23" aname="children.0.children.355.Semafor5_anim" amin="0" amax="10"></bdl-bind2a>
+<bdl-bind2a findex="14" aname="children.0.children.355.Semafor4_anim" amin="0" amax="10"></bdl-bind2a>
+<bdl-bind2a findex="22" aname="children.0.children.355.Semafor3_anim" amin="0" amax="10"></bdl-bind2a>
+<bdl-bind2a findex="21" aname="children.0.children.355.Semafor2_anim" amin="0" amax="10"></bdl-bind2a>
+<bdl-bind2a findex="20" aname="children.0.children.355.Semafor1_anim" amin="0" amax="10"></bdl-bind2a>
+<bdl-bind2a-play findex="8" aname="children.0.StrikackaCervena_anim" amin="0" amax="29"></bdl-bind2a-play>
+<bdl-bind2a findex="0" aname="children.0.KanalCerveny2_anim" amin="159" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.0.SipkaCerven11_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="10" aname="children.0.SipkaCerven8_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.0.SipkaCerven10_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="19" aname="children.0.SipkaModraRuzova_anim" amin="159" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="11" aname="children.0.SpodniZlutaPrerusovana_anim" amin="159" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="18" aname="children.0.RuzovaRNA1_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="17" aname="children.0.RuzovaRNA2_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="0" aname="children.0.SipkaCerven12_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.0.SipkaCerven9_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="16" aname="children.0.SipkaCervenoFialova1_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="15" aname="children.0.SipkaCervenoFialova2_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.0.FialovaSipkaTransferinIN_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="0" aname="children.0.SipkaZlutaTransferin1OUT_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="0" aname="children.0.SipkaZlutaTransferin2IN_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="14" aname="children.0.SemaforRuzovaRna_anim" amin="0" amax="10"></bdl-bind2a>
+<bdl-bind2a findex="8" aname="children.0.StrikackaFeFialovaSipkaIn_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="6" aname="children.0.KapackaFeFialovaSipkaOut_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="13" aname="children.0.StrikackaModra_anim" amin="0" amax="29" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="11" aname="children.0.merak7_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="12" aname="children.0.Merak3_anim" amin="0" amax="99" fmin="0" fmax="700"></bdl-bind2a>
+<bdl-bind2a findex="11" aname="children.0.Merak1_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="10" aname="children.0.Merak5_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="9" aname="children.0.Fe3SkupinaMitochondrie_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="10" aname="children.0.KanalSedy2_anim" amin="159" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="9" aname="children.0.MitochondrieSipkaCervena3_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="10" aname="children.0.MitochondrieSipkaCervena4_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="10" aname="children.0.Fe2Skupina_anim" amin="159" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="9" aname="children.0.merak4_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="9" aname="children.0.Fe3Skupina_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a-play findex="6" aname="children.0.KapackaJehlaFe_anim" amin="0" amax="9"></bdl-bind2a-play>
+<bdl-bind2a findex="0" aname="children.0.SipkaModra3_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="0" aname="children.0.SipkaCerven13_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="4" aname="children.0.Merak2_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="7" aname="children.0.Merak6_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="8" aname="children.0.KapackaFeMale_anim" amin="0" amax="9"></bdl-bind2a>
+<bdl-bind2a-play findex="6" aname="children.0.ZelezoVelkeKapacka_anim" amin="0" amax="159"></bdl-bind2a-play>
+<bdl-bind2a-play findex="6" aname="children.0.children.90.children.59.Kapka1_anim" amin="0" amax="20"></bdl-bind2a-play>
+<bdl-bind2a findex="5" aname="children.0.SipkaRuzovaZluta_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="4" aname="children.0.children.87.FeTransferin_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="3" aname="children.0.KanalFialovy_anim" amin="159" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.0.SipkacervenaFialova2_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="0" aname="children.0.SipkaFialovaVehicle_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="0" aname="children.0.SipkaZluta3_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="0" aname="children.0.CervenaUvnitrVehiclu_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="0" aname="children.0.SipkaZluta4_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="0" aname="children.0.SipkaModra3_anim_1" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="0" aname="children.0.PrechodUvnitr_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="0" aname="children.0.SipkaZluta2_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="0" aname="children.0.KanalZluty_anim" amin="159" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="0" aname="children.0.SipkaHneda2_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="0" aname="children.0.SipkaHneda1_anim" amin="0" amax="159"></bdl-bind2a>
 
-<div class="w3-row">
-  <div id="astrup" style="line-height:0.9">
-    <div class="w3-half w3-sand w3-large w3-padding">
-
-**Initial ASTRUP:**
-|                |         |             |
-|----------------|---------|-------------|
-| pH:            |  7.14   | [7.36..7.44]|
-| pCO2:          | 2.48 kPa| [4.7..6.0]  |
-|                | 18.6 mmHg | [35..45]   |
-| &nbsp;         |         |             |
-| Active bicarb: | 6.1 mmol/l | [22..26]  |
-| Std. bicarb:   | 8.9 mmol/l | [22..26]  |
-| BE active:     | -21.9 mmol/l| [-2..2]  |
-| pO2:           | 12.1 kPa| [10.4..14.3]|
-|                | 90 mmHg | [78..107]   |
-| &nbsp;         |         |             |
-| sat.O2:        | 95 %    | [94..99]    |
-
-  </div>
-<div class="w3-half">
-
-<object id="mySvg" type="image/svg+xml" data="screen/Acid-base_nomogramK1.svg" style="width:100%">
-  Your browser does not support SVG
-</object>
-
-**Acidbase nomogram**
-</div>
-</div>
-<div id="astrup2" style="line-height:0.9">
-    <div class="w3-half w3-sand w3-large w3-padding">
-
-**Initial ASTRUP:**
-|                |         |             |
-|----------------|---------|-------------|
-| pH:            |  7.14   | [7.36..7.44]|
-| pCO2:          | 2.48 kPa| [4.7..6.0]  |
-|                | 18.6 mmHg | [35..45]   |
-| &nbsp;         |         |             |
-| Active bicarb: | 6.1 mmol/l | [22..26]  |
-| Std. bicarb:   | 8.9 mmol/l | [22..26]  |
-| BE active:     | -21.9 mmol/l| [-2..2]  |
-| pO2:           | 12.1 kPa| [10.4..14.3]|
-|                | 90 mmHg | [78..107]   |
-| &nbsp;         |         |             |
-| sat.O2:        | 95 %    | [94..99]    |
-
-  </div>
-<div class="w3-half">
-
-<bdl-sachart fromid="idfmi" refindex="9,3" convertors="1,1,0;1,133.322" width="250" height="250" p-H="6.9" p-c-o2="40"></bdl-sachart> 
 
 
-**Siggaard Andersen nomogram**
-
-</div>
-</div>
-
-<div id="astrup3" style="line-height:0.9">
-<div class="w3-half">
-    <div class="w3-sand w3-large w3-margin">
-
-**Initial ASTRUP:**
-|                |         |             |
-|----------------|---------|-------------|
-| pH:            |  7.14   | [7.36..7.44]|
-| pCO2:          | 2.48 kPa| [4.7..6.0]  |
-|                | 18.6 mmHg | [35..45]   |
-| &nbsp;         |         |             |
-| Active bicarb: | 6.1 mmol/l | [22..26]  |
-| Std. bicarb:   | 8.9 mmol/l | [22..26]  |
-| BE active:     | -21.9 mmol/l| [-2..2]  |
-| pO2:           | 12.1 kPa| [10.4..14.3]|
-|                | 90 mmHg | [78..107]   |
-| &nbsp;         |         |             |
-| sat.O2:        | 95 %    | [94..99]    |
-</div>
-</div><div class="w3-half">
-<object id="mySvg" type="image/svg+xml" data="screen/nomogramEnglis3.svg" style="width:100%">
-  Your browser does not support SVG
-</object>
-
-**nomogram as Engliš (1972)** _A_ - acute, _U_ - chronic/steady, _M_ - metabolic, _R_ - respiratory, _Ac_ - acidosis, _Alk_ - alkalosis
-</div>
-</div>
-
-<div id="biochemie" style="line-height:0.9">
-    <div class="w3-half w3-sand w3-large w3-padding">
-
-**Differential leukocyte count**
-
-|              |               |           |
-|--------------|---------------|-----------|
-| Neutrophils  | 8.9 e+9/L     | [2.0 - 7.0] |
-| Lymphocytes  | 0.8 e+9/L     | [0.8 – 4.0] |
-| Monocytes    | normal        |           |
-| Eosinophils  | normal        |           |
-| Basophils    | normal        |           |
-
-**Biochemistry**
-
-|                |               |             |
-|----------------|---------------|-------------|
-| Na (Sodium)    | 123 mmol/l    | [135..146]  |
-| K (Potassium)  | 6.3 mmol/l    | [3.8..5.0]  |
-| Cl (Chloride)  | 88 mmol/l     | [97..108]   |
-| Urea           | 18.0 mmol/l   | [1.8..6.7]  |
-| Creatinine     | 152 µmol/l    | [27..88]    |
-| Total Bilirubin| 10.2 µmol/l   | [2..17]     |
-| ALT            | 0.2 ukat/l    | [0.05..0.6] |
-| AST            | 0.38 ukat/l   | [0.1..0.63] |
-| ALP            | 2.06 ukat/l   | [0.67..2.15]|
-| GMT            | 0.15 ukat/l   | [0.1..0.39] |
-| Glycemia       | 48.4 mmol/l   | [3.9..5.6]  |
-| HbA1c          | 57 mmol/mol   | [28..40]    |
-| Std.bicarb. | 8,9 mmol/l | [22..26] |
-| Active bicarb. | 6,1 mmol/l | [22..26] |
 
 </div>
-<div class="w3-half">
+<div class="w3-third w3-justify w3-padding w3-small">
 
-<bdl-calculator></bdl-calculator>
-</div>    
+<button class="w3-right w3-button w3-theme-d4" onclick="document.getElementById('legenda').style.display='block'"><i class="fa fa-info-circle"> </i></button>
+<!-- hidden input  - buttonparams sets this input value explicitly, then it is read by fmi component -->
+<input id="idlps" value="" type="number" style="display:none"/>
+
+<bdl-fmi id="idfmi" mode="" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="0.05" fpslimit="10" guid="{9aa10b27-427c-44c9-a381-5815d5706331}" valuereferences="637534275,637534274,637534276,33554442,33554447,637534264,16777264,33554438,16777261,33554453,33554452,33554432,33554436,33554434,16777269,637534273,637534272,637534281,637534283,637534268,16777266,16777267,16777268,16777270,33554443,33554441,33554444" valuelabels="Fe_spl_in_bm,Fe_spl_in_RBC,Fe_spl_out_ser,Fpn_spl,Fe_ser,hep_in,transfusion,Fpn_spl_mRNA,bleeding,Fe_spl_3,Fe_spl_2,hep,Il6,LPS,Fpn_spl_knockout,Fe_spl_from_ferritin,Fe_spl_to_ferritin,Fpn_spl_in,Fpn_spl_mRNA_in,Il6_in,hep_knockout,Fpn_duo_knockout,Fpn_liv_knockout,Fpn_res_knockout,Fpn_duo,Fpn_liv,Fpn_res" inputs="id1,16777260,1,1;idfpnliv,16777268,1,1,t;idhep,16777266,1,1,t;idlps,33554434,1,1,t;id11,16777262,1,1,t;id10,16777265,1,1,t;idspl,16777269,1,1,t;idres,16777270,1,1,t;id7,16777261,1,1,t;id8,16777264,1,1,t" inputlabels="Fe_food,Fpn_liv_knockout,hep_knockout,LPS,malabsorption,unregulated_absorption,Fpn_spl_knockout,Fpn_res_knockout,bleeding,transfusion" showtime="true" showtimemultiply="3600"></bdl-fmi>
+
+||| 
+|-------------|-------|
+| Amount of iron in food [$\frac{\mu g}{h}$] | <bdl-range id="id1" title="" min="0" max="1000" default="219" step="1"></bdl-range> |
+| FPN gene | <bdl-checkbox id="idfpnliv" titlemin="Fpn gene is knocked out (inactive)" titlemax="Fpn gene is active" default="true"></bdl-checkbox>  |
+| hepcidin gene | <bdl-checkbox id="idhep" titlemin="gene for hepcidin is knocked out (inactive)" titlemax="gene for hepcidin expression is active" default="true"></bdl-checkbox>  |
+| 1$\mu$g to inject | <bdl-buttonparams title="LPS injection" ids="idlps" values="1" fromid="idfmi"></bdl-buttonparams>  |
+| Malabsorption (1=normal) | <bdl-range id="id11" title="" min="0" max="1" default="1" step="0.1"></bdl-range>  |
+| Regulation of DMT1 in the duodenum | <bdl-checkbox id="id10" titlemin="absorption is physiologically regulated" titlemax="regulation of absorption is turned off" default="false"></bdl-checkbox>  |
+| Blood losses | <bdl-range id="id7" title="" min="0" max="1" default="0" step="0.1"></bdl-range>  $\frac{ml}{h}$ |
+| Blood intake | <bdl-range id="id8" title="" min="0" max="10" default="0" step="1"></bdl-range> $\frac{ml}{h}$ |
+| spleen:FPN gene| <bdl-checkbox id="idspl" titlemin="Fpn gene is knocked out (inactive)" titlemax="Fpn gene is active" default="true"></bdl-checkbox>  |
+| other: FPN gene| <bdl-checkbox id="idres" titlemin="Fpn gene is knocked out (inactive)" titlemax="Fpn gene is active" default="true"></bdl-checkbox> | 
+
+Except for erythrophagocytosis, all mentioned pathways have been described in previous chapters.
+
+Try and answer the following questions:
+
+* What is the significance of RES in iron metabolism?
+* What is the main cycle of iron recycling in the body?
+* How does the flow of iron into the macrophage change in the case of iron overload in the body? (qualitatively)
+* How do iron stores in the macrophage change during inflammation and why? 
+* How do iron stores in the macrophage change with a knockout of hepcidin and why?
+* How does the serum iron level change with a knockout of Fpn in macrophages and why?
+* What happens when transferrin is saturated with iron and what are the consequences?
+* Which steps of heme synthesis are inhibited by lead?
+* Describe the pathway of heme degradation and where it occurs?
+* What are haptoglobin and hemopexin used for, and what is the difference between them?
 
 </div>
-<div id="diabetes">
-<div class="w3-half">
-
-![diabetes1](diabetes1.jpg)
-
-![diabetes2](diabetes2.jpg)
-
-Stefan Silbernagl, Florian Lang: **Color Atlas of Pathophysiology
-Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016 
-
-</div>
-<div class="w3-half">
-
-![diabetesAcuteEffects](diabetesAcuteEffects.jpg)
-
-</div>
-</div>
-<div id="patogenesis">
-
-**A**
-![hhspato](hhspato.png)
-
-**B**
-![dkapato](dkapato.png)
-
-</div>
-
-</div>
-</div>
-<div class="w3-third">
-<bdl-quizx id="q3.1" type="choice2" 
-           question="3.1 What type of ABR disorder is this - as in pH pCO2 diagram?" 
-           answers="A. chronic base deficit|B. acute base deficit|C. chronic hypercapnia|D. acute hypercapnia" 
-           correctoptions="true|false|false|false" 
-           explanations="ano|ne|ne|ne" 
-           buttontitle="zkontrolovat odpověď"></bdl-quizx>
-<bdl-quizx id="q3.2" type="choice2" 
-           question="3.2 What type of ABR disorder is this - as in pH HCO3- diagram?" 
-           answers="A. metabolic acidosis|B. acute respiratory acidosis|C. chronic respiratory acidosis|D. metabolic alkalosis" 
-           correctoptions="true|false|false|false" 
-           explanations="yes|no|no|no" 
-           buttontitle="check answer"></bdl-quizx>
-<bdl-quizx id="q3.3" type="choice2" 
-           question="3.3 What type of ABR disorder is this - as in BE pCO2 nomogram?" 
-           answers="A. UMAc - steady metabolická acidosis|B. AMAc - acute metabolic acidosis|C. URAlk - steady respiratory alkalosis|D. AMAlk - acute metabolic alkalosis" 
-           correctoptions="true|false|false|false" 
-           explanations="ano|ne|ne|ne" 
-           buttontitle="zkontrolovat odpověď"></bdl-quizx>                
-<bdl-quizx id="q3.4" type="choice2" 
-           question="3.4 What could this be a complication of type 1 DM?" 
-           answers="A. diabetic ketoacidosis| B. hypochloremic alkalosis in diabetes and vomiting|C. hyperglycemic hyperosmolar coma" 
-           correctoptions="true|false|false" 
-           explanations="yes|no|no" 
-           buttontitle="check answer"></bdl-quizx>           
-<bdl-quizx id="q3.5" type="choice2" 
-           question="3.5 What is the anion gap?" 
-           answers="A. AG = Na<sup>+</sup> – (Cl<sup>-</sup> + HCO3<sup>-</sup>) in the USA and at our institute<br/>AG = (Na<sup>+</sup>+K<sup>+</sup>) – (Cl<sup>-</sup> + HCO3<sup>-</sup>) in Europe|B. AG = (Na<sup>+</sup>) + (2x Cl<sup>-</sup>) + (HCO3<sup>-</sup>) in the USA and at our institute<br/>|C. AG = (Na<sup>+</sup>) + (2x Cl<sup>-</sup>) + (HCO3<sup>-</sup>) + (K<sup>+</sup>) in Europe" 
-           correctoptions="true|false|false" 
-           explanations="yes|no|no" 
-           buttontitle="check answer"></bdl-quizx>
-<bdl-quizx id="q3.6" type="choice2" 
-           question="3.6 The anion gap typically ranges from 10-12 mmol/l, marginally then 16 mmol/l. An increased anion gap may indicate the presence of certain diseases or conditions, such as metabolic acidosis. Calculate the anion gap from memory or on a calculator according to the values and select:" 
-           answers="A. AG = 28.9| B. AG = 314.2 | C. AG = 10" 
-           correctoptions="true|false" 
-           explanations="yes|no" 
-           buttontitle="check answer"></bdl-quizx>           
-<bdl-quizx id="q3.7" type="choice2" 
-           question="3.7 How would ABR parameters and clinical picture change during vomiting?" 
-           answers="A. vomiting results in the loss of K<sup>+</sup>, leading to the development of hypokalemia and if the situation is not addressed, the exchange of H<sup>+</sup> for K<sup>+</sup> on the cell membrane (K<sup>+</sup> goes out, H<sup>+</sup> inside, leading to alkalization of the internal environment.|B. Vomiting leads to the complication of existing metabolic acidosis by metabolic alkalosis (loss of H<sup>+</sup>, Cl<sup>-</sup>), suppression of respiratory compensatory mechanisms, deepening dehydration, increasing losses of K<sup>+</sup> and worsening of the condition (combined ABR disorder, K<sup>+</sup> depletion)." 
-           correctoptions="false|true" 
-           explanations="no|yes" 
-           buttontitle="check answer"></bdl-quizx>
-<bdl-quizx id="q3.8" type="choice2" 
-           question="3.8 What findings do you expect in urine?" 
-           answers="A. I would expect ketonuria, glycosuria, polyuria, higher amounts of Na<sup>+</sup>, K<sup>+</sup> and phosphates, acidic pH|B. urine pH will be alkaline, there will be ketonuria, low concentration of K<sup>+</sup>, Na<sup>+</sup> and phosphates, there will be severe proteinuria" 
-           correctoptions="true|false" 
-           explanations="yes|no" 
-           buttontitle="check answer"></bdl-quizx>
-<bdl-quizx id="q3.9" type="choice2" 
-           question="3.9 What osmolality of serum do you expect? How can it be calculated?" 
-           answers="A. Osmolarity will be decreased due to loss of sodium and potassium, formula (Na<sup>+</sup>) + (Cl<sup>-</sup>) + (K<sup>+</sup>) + urea|B. Osmolarity = (2xNa) + glycemia + urea - osmolarity will be increased" 
-           correctoptions="false|true" 
-           explanations="no|yes|no" 
-           buttontitle="check answer"></bdl-quizx>
-<bdl-quizx id="q3.10" type="choice2" 
-           question="3.10 How would you interpret renal parameters?" 
-           answers="A. Elevation of urea and creatinine vs. due to dehydration and practically prerenal failure with the development of renal ischemia. Another reason could also be chronic renal insufficiency developed over the course of the disease due to the patient's non-cooperation in treatment. Currently worsened by concurrently running complication and dehydration.|B. The increase in renal parameters in this patient is exclusively caused by the consumption of an excessive amount of foods rich in proteins. Due to the diabetic condition of the patient, their body incorrectly and too rapidly metabolizes proteins, leading to the overload of the organism with metabolites, such as creatinine and urea. This condition, called 'Protein-induced renal dysfunction in diabetes', is a common complication in diabetic patients who do not adhere to strict dietary restrictions." 
-           correctoptions="true|false" 
-           explanations="yes|no" 
-           buttontitle="check answer"></bdl-quizx>
-<bdl-quizx id="q3.11" type="choice2" 
-           question="3.11 What is the development of potassium levels in ketoacidosis? Over time, at the start of treatment and its continuation in the further course without potassium substitution?" 
-           answers="A. Hyperkalemia persists throughout, it adjusts only when glucose drops < 10mmol/L. If treatment is not initiated, the patient with hyperglycemia and hyperkalemia dies from malignant arrhythmia, if potassium is substituted during treatment, hyperkalemia worsens and the patient is at risk of malignant arrhythmia.|B. metabolic acidosis initially causes hyperkalemia, which is corrected by treatment to the right value, if K<sup>+</sup> is not compensated by infusions, the patient is at risk of severe hypokalemia due to potassium losses through urine and depletion of IC reserves." 
-           correctoptions="false|true" 
-           explanations="no|yes" 
-           buttontitle="check answer"></bdl-quizx>
-<bdl-quizx id="q3.12" type="choice2" 
-           question="3.12 What is the cause of diabetic ketoacidosis?" 
-           answers="A. absolute lack of insulin and excess of glucagon|B. relative lack of insulin" 
-           correctoptions="true|false" 
-           explanations="yes|no" 
-           buttontitle="check answer"></bdl-quizx>
-<bdl-quizx id="q3.13" type="choice2" 
-           question="3.13 What is the pathogenesis of the development of diabetic ketoacidosis?"
-           answers="A. diagram (A)|B. diagram(B)" 
-           correctoptions="false|true" 
-           explanations="ne|ano" 
-           buttontitle="check answer"></bdl-quizx>
-<bdl-quizx id="q3.14" type="choice2" 
-           question="3.14 Which other conditions lead to increased production of ketone bodies?" 
-           answers="A. alcoholism and starvation|B. hypothyroidism, Cushing's syndrome" 
-           correctoptions="true|false" 
-           explanations="yes|no" 
-           buttontitle="check answer"></bdl-quizx>
-<bdl-quiz-summary id="qs1">
-  Summary of answers:
-  <button class="w3-right w3-button w3-theme" onclick="document.getElementById('mySvg').contentDocument.getElementById('patientpoint').style.display='';">Show values</button>
-</bdl-quiz-summary>
-<bdl-quiz-control ids="q3.1;astrup2,q3.2;astrup,q3.3;astrup3,q3.4,q3.5,q3.6;biochemie,q3.7,q3.8,q3.9,q3.10,q3.11,q3.12,q3.13;patogenesis,q3.14,qs1"></bdl-quiz-control>    </div>
 </div>
