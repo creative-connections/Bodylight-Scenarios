@@ -117,7 +117,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 
 </div>
-<div class="w3-col s12 m4 l4 w3-justify w3-small">
+<div class="w3-col s12 m4 l4 w3-justify w3-small" style="line-height:0.9">
 
 <button class="w3-right w3-button w3-theme-d4" onclick="document.getElementById('legenda').style.display='block'"><i class="fa fa-info-circle"> </i></button>
 <!-- hidden input  - buttonparams sets this input value explicitly, then it is read by fmi component -->
@@ -141,27 +141,19 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 | Knockout of the FPN gene in other organs| <bdl-checkbox id="idres" titlemin="Fpn gene is knocked out (inactive)" titlemax="Fpn gene is active" default="true"></bdl-checkbox> | -->
 
 </div>
-Without a quiz.
-Try different regulation options and try to think about why the system reacts in such a way. How will the concentration/amount develop over time (qualitatively)? Make a table and draw an arrow up/down/horizontal in each column, depending on what you expect the development over time to be (concentration increases/decreases/does not change).
 
-* Hepcidin
-* Fpn in the duodenum
-* Fpn in the liver
-*    Iron in the liver
-*    Iron in the duodenum
-*    Iron in the blood
-*    IL-6
+<div class="w3-sand">
 
-If:
+**Case Study Continuation:** ... The general practitioner addressed the situation with vitamins B12 and D, but the problem was the lack of iron due to a previous bariatric surgery (by removing the adsorption surface of the duodenum and the proximal part of the jejunum where iron is also absorbed). The patient came to the hematology clinic "on the verge of a mental breakdown". She subjectively felt adynamia, weakness, mental exhaustion, and despair. Objectively, she was subdepressive, paler, and overweight. </div>
 
-*    We perform a knock-out for hepcidin
-*    We perform a knock-out for Fpn in the liver
-*    We perform a knock-out for Fpn in the duodenum
-*    We turn on malabsorption (simulation of massive duodenal resection)
-*    We turn on unregulated absorption
-*    We inject LPS into the blood
-*    We turn on blood transfusion at the value: ...
-*    We turn on blood losses at the value: ...
+<bdl-quizx id="q2.1" type="choice2" question="2.1 Start the simulation and simulate a massive duodenal resection by reducing malabsorption to 0.05 (5% compared to the norm). What consequences do you see?" answers="A. gradual decrease in iron concentration in plasma and cells. Lack of iron for other processes, e.g., reduced production of new erythrocytes, anemia, ...|B. gradual increase of iron in plasma and cells with consequences for other organs with symptoms similar to hemochromatosis" correctoptions="true|false" explanations="yes, the simulation shows a long-term lack of iron for other metabolic processes see next chapter|no, see next chapter" buttontitle="check answer"></bdl-quizx>
+<bdl-quizx id="q2.2" type="choice2" question="2.2 Continue the simulation, increase the amount of iron in the diet 10x above the norm (i.e., about 2000). Is such compensation enough to replace the massive duodenal resection simulated in the previous question?" answers="A. Yes. Increased dietary iron intake can help in recovery and adjusts the level of iron in cells and plasma to the norm|B. No. Increased iron intake does not meet metabolic needs and the level in plasma and cells decreases and gradually depletes." correctoptions="false|true" explanations="no|yes" buttontitle="check answer"></bdl-quizx>
+<bdl-quizx id="q2.3" type="choice2" question="2.3 Continue the simulation, reduce the amount of iron in the diet to the norm (i.e., value 219). Gradually increase blood intake from blood transfusion and find the value that leads to the normalization of iron concentration in plasma and cells (i.e., to the value 1.0" answers="A. An intake of 0.1 ml/h is sufficient|B. An intake of 0.7 ml/h is sufficient|C. blood transfusion about 2.5 ml/h is sufficient" correctoptions="false|true|false" explanations="no|yes|no" buttontitle="check answer"></bdl-quizx>
+<bdl-quizx id="q2.4" type="choice2" question="2.4 Oral iron supplements did not have an effect, or the patient did not tolerate them. The patient's subjective complaints worsened and in 2021 the woman was referred to hematology. There she repeatedly (a total of 7×) received every 2 months an i.v. preparation with low iron content (a total of about 430 mg Fe). For microcytic anemia and still very pronounced symptoms, in April 2022, the hematologist referred her to the nutritional clinic for conservatively intractable sideropenic anemia, sideropenia, and severe fatigue syndrome. What is sideropenic anemia?" answers="A. a condition where the body accumulates excessive amounts of iron, leading to organ damage.|B. a type of anemia caused by a lack of iron in the body, leading to reduced production of hemoglobin and red blood cells.|a genetic disease in which the body produces an excessive number of red blood cells." correctoptions="false|true|false" explanations="no|yes|no" buttontitle="check answer"></bdl-quizx>
+<bdl-quiz-summary id="qs">
+<span class="w3-sand"><br/>Initial laboratory examinations showed that vitamins D and B12 were well substituted, but levels of iron and ferritin were very low. She was prescribed ferric carboxymaltose, which had been administered 4 times by the presentation of the case study (September 15, 2022). After each application of 500 mg FCM, the patient reports a significant improvement in the quality of life, but after a few weeks, the condition worsens and she returns for further examination (continued ID found) and application of FCM.</span><br/>Summary of answers</bdl-quiz-summary>
+<bdl-quiz-control ids="q2.1,q2.2,q2.3,q2.4,qs"></bdl-quiz-control>
+
 </div>
 </div>
 
