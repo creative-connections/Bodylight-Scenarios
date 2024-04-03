@@ -2,10 +2,11 @@
 img[alt^="image"] {max-width:20px;}
 img[alt^="bigimage"] {  max-height:60px}
 tbody tr:nth-child(even){background-color:#f1f1f1}
-</style>
-
+</style><bdl-tabs idlist="obr1,obr2" titlelist="sim,schema"></bdl-tabs>
+<div id="obr1" style="line-height:1.0">
 <div class="w3-row">
 <div class="w3-col s12 m7 l7 w3-center">
+
 
 **metabolismus železa v buňce duodena**
 <bdl-animate-adobe src="DuodenumFinalObrazovka7.js" width="824" height="824" name="DuodenumFinalObrazovka7" fromid="idfmi" responsive="true"></bdl-animate-adobe>
@@ -116,7 +117,6 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a findex="28" aname="children.0.KapackaFeFialovaSipkaOut_anim" amin="0" amax="159" fmin="0" fmax="11"></bdl-bind2a>
 
 
-
 </div>
 <div class="w3-col s12 m5 l5 w3-justify">
 <button class="w3-right w3-button w3-theme" onclick="document.getElementById('legenda').style.display='block'">Zobraz legendu</button>
@@ -193,5 +193,12 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 |![imageschemasteap3](imgmetaloreduktaza.png)| STEAP3 | Metaloreduktáza |
 |![imagetransfuze](transfuze.jpg) |Transfúze | Krevní transfúze, příjem krve |
 |![imageodberkrve](odberkrve.jpg) |Odběr krve | Odběr krve, krevní ztráty, krvácení |
+
+</div>
+</div>
+<div id="obr2">
+
+![iron_metabolism](iron_metabolism.png)
+**https://www.fxmedicine.com.au/infographic/iron-matters-absorption-and-metabolism**
 
 </div>
