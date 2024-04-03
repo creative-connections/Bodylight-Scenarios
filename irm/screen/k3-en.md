@@ -83,7 +83,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 
 </div>
-<div class="w3-third w3-justify w3-padding w3-small">
+<div class="w3-third w3-justify w3-padding w3-small" style='line-height:1.0'>
 
 <button class="w3-right w3-button w3-theme-d4" onclick="document.getElementById('legenda').style.display='block'"><i class="fa fa-info-circle"> </i></button>
 <!-- hidden input  - buttonparams sets this input value explicitly, then it is read by fmi component -->
@@ -101,23 +101,13 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 | Regulation of DMT1 in the duodenum | <bdl-checkbox id="id10" titlemin="absorption is physiologically regulated" titlemax="regulation of absorption is turned off" default="false"></bdl-checkbox>  |
 | Blood losses | <bdl-range id="id7" title="" min="0" max="1" default="0" step="0.1"></bdl-range>  $\frac{ml}{h}$ |
 | Blood intake | <bdl-range id="id8" title="" min="0" max="10" default="0" step="1"></bdl-range> $\frac{ml}{h}$ |
-| spleen:FPN gene| <bdl-checkbox id="idspl" titlemin="Fpn gene is knocked out (inactive)" titlemax="Fpn gene is active" default="true"></bdl-checkbox>  |
-| other: FPN gene| <bdl-checkbox id="idres" titlemin="Fpn gene is knocked out (inactive)" titlemax="Fpn gene is active" default="true"></bdl-checkbox> | 
 
-Except for erythrophagocytosis, all mentioned pathways have been described in previous chapters.
-
-Try and answer the following questions:
-
-* What is the significance of RES in iron metabolism?
-* What is the main cycle of iron recycling in the body?
-* How does the flow of iron into the macrophage change in the case of iron overload in the body? (qualitatively)
-* How do iron stores in the macrophage change during inflammation and why? 
-* How do iron stores in the macrophage change with a knockout of hepcidin and why?
-* How does the serum iron level change with a knockout of Fpn in macrophages and why?
-* What happens when transferrin is saturated with iron and what are the consequences?
-* Which steps of heme synthesis are inhibited by lead?
-* Describe the pathway of heme degradation and where it occurs?
-* What are haptoglobin and hemopexin used for, and what is the difference between them?
+<bdl-quizx id="q3.1" type="choice2" question="3.1 Start the simulation and simulate hereditary hemochromatosis (lack of GIT intake regulation e.g., knockout of the hepcidin gene). What consequences do you see?" answers="A. gradual decrease in iron concentration in plasma and cells. Increased iron concentration in macrophage|B. gradual increase in iron concentration in plasma and decrease in concentration in macrophage." correctoptions="false|true" explanations="no|yes" buttontitle="check answer"></bdl-quizx>
+<bdl-quizx id="q3.2" type="choice2" question="3.2 How does hemochromatosis manifest?" answers="A. caused by an excess of iron most often due to increased hemolysis. Tissue pigmentation but without signs of iron toxicity.|B. caused by a lack of iron. Lack of red blood cells due to a lack of hemoglobin.|C. caused by an excess of iron but a disorder in iron intake regulation. Tissue pigmentation with signs of toxicity and pathological changes in tissues." correctoptions="false|false|true" explanations="no|no|yes" buttontitle="check answer"></bdl-quizx>
+<bdl-quizx id="q3.3" type="choice2" question="3.3 Select the diagram that corresponds to hereditary hemochromatosis." answers="A. diagram A |B. diagram B" correctoptions="false|true" explanations="no|yes" buttontitle="check answer"></bdl-quizx>
+<bdl-quizx id="q3.4" type="choice2" question="3.4 Select the diagram that corresponds to sideropenic anemia." answers="A. diagram A |B. diagram B" correctoptions="true|false" explanations="yes|no" buttontitle="check answer"></bdl-quizx><bdl-quiz-summary id="qs">
+</bdl-quiz-summary>
+<bdl-quiz-control ids="q3.1,q3.2,q3.3,q3.4,qs"></bdl-quiz-control>
 
 </div>
 </div>
