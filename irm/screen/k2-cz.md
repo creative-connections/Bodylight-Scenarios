@@ -117,7 +117,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 
 </div>
-<div class="w3-col s12 m4 l4 w3-justify w3-small">
+<div class="w3-col s12 m4 l4 w3-justify w3-small" style="line-height:1.0">
 
 <button class="w3-right w3-button w3-theme-d4" onclick="document.getElementById('legenda').style.display='block'"><i class="fa fa-info-circle"> </i></button>
 <!-- hidden input  - buttonparams sets this input value explicitly, then it is read by fmi component -->
@@ -141,12 +141,18 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 | Knockout genu pro FPN v dalších orgánech| <bdl-checkbox id="idres" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox> | -->
 
 </div>
-<bdl-quizx id="q2.1" type="choice2" question="2.1 Spusťte simulaci a nasimulujte masivní duodenální resekci tím, že snížíte malabsorpci na hodnotu 0.05 (5% oproti normě). Jaké následky vidíte?" answers="A. postupné snižování koncentrace železa v plasmě i v buňkách. Nedostatek železa pro jiné procesy, např. snížená produkce nových erytrocytů, anémie, ...|B. postupné zvyšování železa v plasmě i v buňkách s důsledky pro další orgány s projevy podobnými jako hemochromatóza" correctoptions="true|false" explanations="ano, simulace ukazuje dlouhodobý nedostatek železa pro jiné metabolické procesy viz další kapitola|ne, viz další kapitola" buttontitle="zkontrolovat odpověď"></bdl-quizx>
+<div class="w3-sand">
 
+**Kazuistika pokračování:** ... Praktický lékař situaci řešil vitaminy B12 a D, problém ovšem představoval nedostatek železa způsobený dřívější bariatrickou operací (vyřazením adsorbční  plochy duodena a proximální části jejuna, kde se i vstřebává železo). Pacientka přišla do hematologické ambulance „na pokraji psychického zhroucení“. Subjektivně pociťovala adynamii, slabost, psychickou vyčerpanost, zoufalství. Objektivně byla subdepresivní, bledší, měla nadváhu. </div>
+
+<bdl-quizx id="q2.1" type="choice2" question="2.1 Spusťte simulaci a nasimulujte masivní duodenální resekci tím, že snížíte malabsorpci na hodnotu 0.05 (5% oproti normě). Jaké následky vidíte?" answers="A. postupné snižování koncentrace železa v plasmě i v buňkách. Nedostatek železa pro jiné procesy, např. snížená produkce nových erytrocytů, anémie, ...|B. postupné zvyšování železa v plasmě i v buňkách s důsledky pro další orgány s projevy podobnými jako hemochromatóza" correctoptions="true|false" explanations="ano, simulace ukazuje dlouhodobý nedostatek železa pro jiné metabolické procesy viz další kapitola|ne, viz další kapitola" buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q2.2" type="choice2" question="2.2 Pokračujte v simulaci, zvyšte množství železa v potravě 10x nad normu (tj. asi na hodnotu 2000). Stačí taková kompenzace nahradit masivní duodenální resekci nasimulovanou v předchozí otázce?" answers="A. Ano. Zvýšený příjem železa v potravě může pomoci v rekonvalescenci a upraví hladinu železa v buňkách i v plazmě k normě |B. Ne. Zvýšený příjem železa nedostačuje k metabolickým potřebám a hladina v plazmě i v buňkách klesá a postupně se vyčerpává." correctoptions="false|true" explanations="ne|ano" buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q2.3" type="choice2" question="2.3 Pokračujte v simulaci, snižte množství železa v potravě na normu (tj. hodnotu 219). Zvyšujte postupně příjem krve z krevní transfuze a hledejte postupně hodnotu, která vede k normalizaci koncentrace železa v plasmě i v buňkách (tj. k hodnotě 1.0" answers="A. Stačí příjem 0.1 ml/h |B. Stačí příjem 0.7 ml/h|C. krevní transfúze asi 2.5 ml/h" correctoptions="false|true|false" explanations="ne|ano|ne" buttontitle="zkontrolovat odpověď"></bdl-quizx>
-<bdl-quiz-summary id="qs"></bdl-quiz-summary>
-<bdl-quiz-control ids="q2.1,q2.2,q2.3,qs"></bdl-quiz-control>
+<bdl-quizx id="q2.4" type="choice2" question="2.4 ... 
+Perorální přípravky s obsahem železa nepřinesly efekt, případně je pacientka netolerovala. Subjektivní potíže pacientky se zhoršovaly a v roce 2021 byla žena odeslána na hematologii. Tam opakovaně (celkem 7×) dostávala každé 2 měsíce i.v. preparát s nízkým obsahem železa (celkem cca 430 mg Fe). Pro mikrocytovou anémii a stále velmi výrazné příznaky ji v dubnu 2022 hematoložka odeslala do nutriční ambulance pro konzervativně neřešitelnou sideropenickou anémii, sideropenii a těžký únavový syndrom. Co je sideropenická anémie?" answers="A. stav, kdy v těle dochází k nadměrné akumulaci železa, což vede k poškození orgánů.|B. typ anémie způsobený nedostatkem železa v těle, což vede k snížené produkci hemoglobinu a červených krvinek.|genetické onemocnění, při kterém tělo produkuje nadměrné množství červených krvinek." correctoptions="false|true|false" explanations="ne|ano|ne" buttontitle="zkontrolovat odpověď"></bdl-quizx>
+<bdl-quiz-summary id="qs">
+<span class="w3-sand"><br/>Vstupní laboratorní vyšetření ukázalo, že vitaminy D i B12 byly dobře substituované, ale hladiny železa i feritinu velmi nízké. Byla jí nasazena železitá karboxymaltóza, která byla do data prezentace kazuistiky (15. září 2022) podána 4×. Po každé aplikaci 500 mg FCM pacientka uvádí významné zlepšení kvality života, ale po několika týdnech se stav zhoršuje a sama se vrací k dalšímu vyšetření (nalézán pokračující ID) a aplikaci FCM.</span><br/>Shrnutí odpovědí</bdl-quiz-summary>
+<bdl-quiz-control ids="q2.1,q2.2,q2.3,q2.4,qs"></bdl-quiz-control>
 <div class="w3-hide">
 **Úkoly**
 
