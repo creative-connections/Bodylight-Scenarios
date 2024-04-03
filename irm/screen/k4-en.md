@@ -81,10 +81,12 @@
 | Regulation of DMT1 in the duodenum | <bdl-checkbox id="id10" titlemin="absorption is physiologically regulated" titlemax="regulation of absorption is turned off" default="false"></bdl-checkbox>  |
 | Blood losses | <bdl-range id="id7" title="" min="0" max="1" default="0" step="0.1"></bdl-range>  $\frac{ml}{h}$ |
 | Blood intake  | <bdl-range id="id8" title="" min="0" max="10" default="0" step="1"></bdl-range> $\frac{ml}{h}$ |
-| duodenum: FPN gene | <bdl-checkbox id="idduo" titlemin="gene is knocked out (inactive)" titlemax="gene is active" default="true"></bdl-checkbox>  |
-| liver: FPN gene | <bdl-checkbox id="idfpnliv" titlemin="gene is knocked out (inactive)" titlemax="Fpn gene is active" default="true"></bdl-checkbox>  |
-| spleen: FPN gene | <bdl-checkbox id="idspl" titlemin="gene is knocked out (inactive)" titlemax="gene is active" default="true"></bdl-checkbox>  |
-| other: FPN gene | <bdl-checkbox id="idres" titlemin="gene is knocked out (inactive)" titlemax="gene is active" default="true"></bdl-checkbox> | 
+
+<div class="w3-sand">
+
+**Case Study Conclusion:**
+In patients with malabsorption syndrome (for any reason), it is not possible to rely on oral supplementation of nutrients or micronutrients, but they must be administered parenterally, and "think of it not as a last resort, but as one of the first options." People who have undergone bariatric surgery remain lifelong patients, should be monitored in a specialized nutritional clinic, and should never be lost to follow-up. The quality of life proves to be a very crucial marker of treatment success.
+</div>
 
 </div>
 </div>
