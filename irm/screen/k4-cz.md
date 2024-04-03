@@ -81,11 +81,20 @@
 | Regulace DMT1 v duodenu | <bdl-checkbox id="id10" titlemin="absorpce je fyziologicky regulovaná" titlemax="regulace absorpce je vypnuta" default="false"></bdl-checkbox>  |
 | Krevní ztráty | <bdl-range id="id7" title="" min="0" max="1" default="0" step="0.1"></bdl-range>  $\frac{ml}{h}$ |
 | Příjem krve  | <bdl-range id="id8" title="" min="0" max="10" default="0" step="1"></bdl-range> $\frac{ml}{h}$ |
-| duodenum:gen FPN | <bdl-checkbox id="idduo" titlemin="gen je knockoutován (neaktivní)" titlemax="gen je aktivní" default="true"></bdl-checkbox>  |
+<div class="w3-hide">| duodenum:gen FPN | <bdl-checkbox id="idduo" titlemin="gen je knockoutován (neaktivní)" titlemax="gen je aktivní" default="true"></bdl-checkbox>  |
 | játra: gen FPN | <bdl-checkbox id="idfpnliv" titlemin="gen je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
 | slezina: gen FPN | <bdl-checkbox id="idspl" titlemin="gen je knockoutován (neaktivní)" titlemax="gen je aktivní" default="true"></bdl-checkbox>  |
-| ostatní: gen FPN | <bdl-checkbox id="idres" titlemin="gen je knockoutován (neaktivní)" titlemax="gen je aktivní" default="true"></bdl-checkbox> | 
+| ostatní: gen FPN | <bdl-checkbox id="idres" titlemin="gen je knockoutován (neaktivní)" titlemax="gen je aktivní" default="true"></bdl-checkbox> | </div>
 
+
+
+<div class="w3-sand">
+
+**Kazuistika závěr**:
+U pacientů s malabsorpčním syndromem (z jakéhokoliv důvodu) není možné spoléhat na perorální substituci nutrientů ani mikronutrientů, nýbrž je nutné podávat je parenterálně a „myslet na to ne jako na poslední možnost, ale jako na jednu z prvních možností“. Lidé po bariatrické operaci zůstávají doživotními pacienty, měli by být sledováni ve specializované nutriční poradně a nikdy by neměli sejít ze zřetele. Kvalita života se ukazuje jako velmi zásadní marker úspěšnosti léčby.
+
+Zdroj: Křížová J. Když je hematolog na sideropenii krátký... Iron Academy 2022: Proč rozumět metabolismu železa a jeho vlivu na zdraví pacienta, 15. 9. 2022.
+</div>
 
 </div>
 </div>
