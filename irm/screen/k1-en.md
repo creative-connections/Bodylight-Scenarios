@@ -2,8 +2,8 @@
 img[alt^="image"] {max-width:20px;}
 img[alt^="bigimage"] {  max-height:60px}
 tbody tr:nth-child(even){background-color:#f1f1f1}
-</style>
-
+</style><bdl-tabs idlist="obr1,obr2" titlelist="sim,schema"></bdl-tabs>
+<div id="obr1" style="line-height:1.0">
 <div class="w3-row">
 <div class="w3-col s12 m7 l7 w3-center">
 
@@ -192,5 +192,12 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 |![imageschemasteap3](imgmetaloreduktaza.png)| STEAP3 | Metalloreductase |
 |![imagetransfuze](transfuze.jpg) |Transfusion | Blood transfusion, blood intake |
 |![imageodberkrve](odberkrve.jpg) |Blood collection | Blood collection, blood losses, bleeding |
+
+</div>
+</div>
+<div id="obr2">
+
+![iron_metabolism](iron_metabolism.png)
+**https://www.fxmedicine.com.au/infographic/iron-matters-absorption-and-metabolism**
 
 </div>
