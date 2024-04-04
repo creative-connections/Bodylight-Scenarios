@@ -30,18 +30,20 @@
 <div id="CZ" class="w3-large">
 
 <bdl-fb-set-state title="0.Úvod" value="index.md"></bdl-fb-set-state>
-<bdl-fb-set-state title="1.Duodenum" value="screen/k1-cz.md"></bdl-fb-set-state>
-<bdl-fb-set-state title="2.Játra" value="screen/k2-cz.md"></bdl-fb-set-state>
-<bdl-fb-set-state title="3.Slezina" value="screen/k3-cz.md"></bdl-fb-set-state>
-<bdl-fb-set-state title="4.Celek" value="screen/k4-cz.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="1.Kazuistika" value="screen/k1-casereport.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="2.Duodenum" value="screen/k1-cz.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="3.Játra" value="screen/k2-cz.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="4.Slezina" value="screen/k3-cz.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="5.Celek" value="screen/k4-cz.md"></bdl-fb-set-state>
 </div>
 <div id="EN" class="w3-large">
 
 <bdl-fb-set-state title="0.Intro" value="index-en.md"></bdl-fb-set-state>
-<bdl-fb-set-state title="1.Duodenum" value="screen/k1-en.md"></bdl-fb-set-state>
-<bdl-fb-set-state title="2.Liver" value="screen/k2-en.md"></bdl-fb-set-state>
-<bdl-fb-set-state title="3.Spleen" value="screen/k3-en.md"></bdl-fb-set-state>
-<bdl-fb-set-state title="4.Complex" value="screen/k4-en.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="1.Case Report" value="screen/k1-casereport-en.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="2.Duodenum" value="screen/k1-en.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="3.Liver" value="screen/k2-en.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="4.Spleen" value="screen/k3-en.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="5.Complex" value="screen/k4-en.md"></bdl-fb-set-state>
 </div>
 <bdl-fb-get-state tohash="true"></bdl-fb-get-state>
 
