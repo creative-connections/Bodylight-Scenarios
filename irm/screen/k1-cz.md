@@ -1,8 +1,10 @@
 <style>
 img[alt^="image"] {max-width:20px;}
+img[alt^="1medium"] {max-width:49%;}
+img[alt^="2medium"] {max-width:23%;}
 img[alt^="bigimage"] {  max-height:60px}
 tbody tr:nth-child(even){background-color:#f1f1f1}
-</style><bdl-tabs idlist="obr1,obr2" titlelist="sim,schema"></bdl-tabs>
+</style><bdl-tabs idlist="obr1,obr2,obr3" titlelist="sim,metabolismus železa,hepcidin"></bdl-tabs>
 <div id="obr1" style="line-height:1.0">
 <div class="w3-row">
 <div class="w3-col s12 m7 l7 w3-center">
@@ -200,5 +202,14 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 ![iron_metabolism](iron_metabolism.png)
 **https://www.fxmedicine.com.au/infographic/iron-matters-absorption-and-metabolism**
+
+</div>
+<div id="obr3">
+
+A ![1mediumregulacehepcidinu](imageregulacehepcidinu.png)
+B ![2mediumhepcidinbunka](imagehepcidinbunka.png)
+C ![2mediumhepcidinlps](imagehepcidinlps.png)
+
+**A** Schématické znázornění role hepcidinu v udržování homeostázy železa. Hepcidin je regulován primárně třemi nezávislými mechanismy: 1) aktuální hladina železa - zvyšuje hladinu hepcidinu, 2) aseptický nebo infekční zánět - zvyšuje hladinu hepcidinu, 3) erytropoetická aktivita - snižuje hladinu hepcidinu.**B**  Schematické znázornění role hepcidinu v buňce duodenálního enterocytu. Regulace příjmu železa. **C** Role hepcidinu při zánětlivé reakci v regulaci příjmu železa.
 
 </div>
