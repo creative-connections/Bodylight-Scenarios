@@ -1,8 +1,10 @@
 <style>
 img[alt^="image"] {max-width:20px;}
+img[alt^="1medium"] {max-width:49%;}
+img[alt^="2medium"] {max-width:23%;}
 img[alt^="bigimage"] {  max-height:60px}
 tbody tr:nth-child(even){background-color:#f1f1f1}
-</style><bdl-tabs idlist="obr1,obr2" titlelist="sim,schema"></bdl-tabs>
+</style><bdl-tabs idlist="obr1,obr2,obr3" titlelist="sim,iron metabolism,hepcidin"></bdl-tabs>
 <div id="obr1" style="line-height:1.0">
 <div class="w3-row">
 <div class="w3-col s12 m7 l7 w3-center">
@@ -199,5 +201,14 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 ![iron_metabolism](iron_metabolism.png)
 **https://www.fxmedicine.com.au/infographic/iron-matters-absorption-and-metabolism**
+
+</div>
+<div id="obr3">
+
+A ![1mediumregulacehepcidinu](imageregulacehepcidinu.png)
+B ![2mediumhepcidinbunka](imagehepcidinbunka.png)
+C ![2mediumhepcidinlps](imagehepcidinlps.png)
+
+**A** Schematic representation of the role of hepcidin in maintaining iron homeostasis. Hepcidin is regulated primarily by three independent mechanisms: 1) current iron level - increases hepcidin level, 2) aseptic or infectious inflammation - increases hepcidin level, 3) erythropoietic activity - decreases hepcidin level.**B** Schematic representation of the role of hepcidin in the duodenal enterocyte cell. Regulation of iron intake. **C** The role of hepcidin in the inflammatory response in regulating iron intake.
 
 </div>
