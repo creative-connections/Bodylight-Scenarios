@@ -74,10 +74,10 @@
 
 ||| 
 |-------------|-------|
-| množství železa v potravě [$\frac{\mu g}{h}$] | <bdl-range id="id1" title="" min="0" max="1000" default="219" step="1"></bdl-range> |
+| množství železa v potravě [$\frac{\mu g}{h}$] | <bdl-range id="id1" title="" min="0" max="2000" default="219" step="1"></bdl-range> |
 | gen pro hepcidin | <bdl-checkbox id="idhep" titlemin="gen je knockoutován (neaktivní)" titlemax="gen je aktivní" default="true"></bdl-checkbox>  |
 | 1$\mu$g při stisknutí | <bdl-buttonparams title="LPS injekce" ids="idlps" values="1" fromid="idfmi"></bdl-buttonparams>  |
-| Malabsorpce (1-norma) | <bdl-range id="id11" title="" min="0" max="1" default="1" step="0.1"></bdl-range>  |
+| Malabsorpce (1-norma) | <bdl-range id="id11" title="" min="0" max="1" default="1" step="0.05"></bdl-range>  |
 | Regulace DMT1 v duodenu | <bdl-checkbox id="id10" titlemin="absorpce je fyziologicky regulovaná" titlemax="regulace absorpce je vypnuta" default="false"></bdl-checkbox>  |
 | Krevní ztráty | <bdl-range id="id7" title="" min="0" max="1" default="0" step="0.1"></bdl-range>  $\frac{ml}{h}$ |
 | Příjem krve  | <bdl-range id="id8" title="" min="0" max="10" default="0" step="1"></bdl-range> $\frac{ml}{h}$ |
