@@ -80,9 +80,6 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a findex="0" aname="children.0.SipkaHneda2_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="0" aname="children.0.SipkaHneda1_anim" amin="0" amax="159"></bdl-bind2a>
 
-
-
-
 </div>
 <div class="w3-third w3-justify w3-padding w3-small">
 
@@ -94,11 +91,11 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 ||| 
 |-------------|-------|
-| množství železa v potravě [$\frac{\mu g}{h}$] | <bdl-range id="id1" title="" min="0" max="1000" default="219" step="1"></bdl-range> |
+| množství železa v potravě [$\frac{\mu g}{h}$] | <bdl-range id="id1" title="" min="0" max="2000" default="219" step="1"></bdl-range> |
 | gen pro FPN | <bdl-checkbox id="idfpnliv" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
 | gen pro hepcidin | <bdl-checkbox id="idhep" titlemin="gen pro hepcidin je knockoutován (neaktivní)" titlemax="gen pro expresi hepcidinu je aktivní" default="true"></bdl-checkbox>  |
 | 1$\mu$g při stisknutí | <bdl-buttonparams title="LPS injekce" ids="idlps" values="1" fromid="idfmi"></bdl-buttonparams>  |
-| Malabsorpce (1-norma) | <bdl-range id="id11" title="" min="0" max="1" default="1" step="0.1"></bdl-range>  |
+| Malabsorpce (1-norma) | <bdl-range id="id11" title="" min="0" max="1" default="1" step="0.05"></bdl-range>  |
 | Regulace DMT1 v duodenu | <bdl-checkbox id="id10" titlemin="absorpce je fyziologicky regulovaná" titlemax="regulace absorpce je vypnuta" default="false"></bdl-checkbox>  |
 | Krevní ztráty | <bdl-range id="id7" title="" min="0" max="1" default="0" step="0.1"></bdl-range>  $\frac{ml}{h}$ |
 | Příjem krve | <bdl-range id="id8" title="" min="0" max="10" default="0" step="1"></bdl-range> $\frac{ml}{h}$ |
