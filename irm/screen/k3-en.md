@@ -94,11 +94,11 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 ||| 
 |-------------|-------|
-| Amount of iron in food [$\frac{\mu g}{h}$] | <bdl-range id="id1" title="" min="0" max="1000" default="219" step="1"></bdl-range> |
+| Amount of iron in food [$\frac{\mu g}{h}$] | <bdl-range id="id1" title="" min="0" max="2000" default="219" step="1"></bdl-range> |
 | FPN gene | <bdl-checkbox id="idfpnliv" titlemin="Fpn gene is knocked out (inactive)" titlemax="Fpn gene is active" default="true"></bdl-checkbox>  |
 | hepcidin gene | <bdl-checkbox id="idhep" titlemin="gene for hepcidin is knocked out (inactive)" titlemax="gene for hepcidin expression is active" default="true"></bdl-checkbox>  |
 | 1$\mu$g to inject | <bdl-buttonparams title="LPS injection" ids="idlps" values="1" fromid="idfmi"></bdl-buttonparams>  |
-| Malabsorption (1=normal) | <bdl-range id="id11" title="" min="0" max="1" default="1" step="0.1"></bdl-range>  |
+| Malabsorption (1=normal) | <bdl-range id="id11" title="" min="0" max="1" default="1" step="0.05"></bdl-range>  |
 | Regulation of DMT1 in the duodenum | <bdl-checkbox id="id10" titlemin="absorption is physiologically regulated" titlemax="regulation of absorption is turned off" default="false"></bdl-checkbox>  |
 | Blood losses | <bdl-range id="id7" title="" min="0" max="1" default="0" step="0.1"></bdl-range>  $\frac{ml}{h}$ |
 | Blood intake | <bdl-range id="id8" title="" min="0" max="10" default="0" step="1"></bdl-range> $\frac{ml}{h}$ |
