@@ -108,14 +108,6 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a findex="2" aname="children.1.CervenaSipka7_anim" amin="0" amax="159"></bdl-bind2a>
 
 
-
-
-
-
-
-
-
-
 </div>
 <div class="w3-col s12 m4 l4 w3-justify w3-small" style="line-height:1.0">
 
@@ -135,7 +127,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 | 1$\mu$g | <bdl-buttonparams title="LPS injekce" ids="idlps" values="1" fromid="idfmi"></bdl-buttonparams>  |
 | Malabsorpce (1=norma) | <bdl-range id="id11" title="" min="0" max="1" default="1" step="0.05"></bdl-range>  |
 | DMT1 v duodenu | <bdl-checkbox id="id10" titlemin="absorpce je fyziologicky regulovaná" titlemax="regulace absorpce je vypnuta" default="false"></bdl-checkbox>  |
-| Krevní ztráty $\frac{ml}{h}$  | <bdl-range id="id7" title="" min="0" max="1" default="0" step="0.1"></bdl-range>  |
+| Krevní ztráty $\frac{ml}{h}$  | <bdl-range id="id7" title="" min="0" max="2" default="0" step="0.1"></bdl-range>  |
 | Příjem krve $\frac{ml}{h}$ | <bdl-range id="id8" title="" min="0" max="3" default="0" step="0.1"></bdl-range>  |
 <!--| Knockout genu pro FPN ve slezině | <bdl-checkbox id="idspl" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
 | Knockout genu pro FPN v dalších orgánech| <bdl-checkbox id="idres" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox> | -->
