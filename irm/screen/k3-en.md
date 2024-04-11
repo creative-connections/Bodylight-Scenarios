@@ -2,7 +2,7 @@
 img[alt^="image"] {max-width:20px;}
 img[alt^="bigimage"] {  max-height:60px}
 tbody tr:nth-child(even){background-color:#f1f1f1}
-</style><bdl-tabs idlist="sim,diagramA,diagramB" titlelist="sim,diagram A,diagram B"></bdl-tabs>
+</style><bdl-tabs idlist="sim,anim,diagramA,diagramB" titlelist="sim,macrophage,diagram A,diagram B"></bdl-tabs>
 <div id="sim">
 <div class="w3-row">
 <div class="w3-twothird w3-center">
@@ -121,5 +121,15 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <div id="diagramB">
 
 ![hh](hh.png)
+
+</div>
+<div id="anim">
+
+**Animace makrofágu ve slezině** fagocytace erytrocytu a recyklace iontů železa
+
+![makrofagerytrocyt](makrofagerytrocyt2.gif)
+
+<!--bdl-animate-adobe src="MacrofagHotovy.js" width="800" height="600" name="MacrofagHotovy" responsive="true" playafterstart="true"></bdl-animate-adobe-->
+
 
 </div>
