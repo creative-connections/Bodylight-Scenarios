@@ -136,7 +136,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 | Malabsorption (1=normal) | <bdl-range id="id11" title="" min="0" max="1" default="1" step="0.05"></bdl-range>  |
 | DMT1 in the duodenum | <bdl-checkbox id="id10" titlemin="absorption is physiologically regulated" titlemax="regulation of absorption is turned off" default="false"></bdl-checkbox>  |
 | Blood losses $\frac{ml}{h}$  | <bdl-range id="id7" title="" min="0" max="1" default="0" step="0.1"></bdl-range>  |
-| Blood intake $\frac{ml}{h}$ | <bdl-range id="id8" title="" min="0" max="10" default="0" step="1"></bdl-range>  |
+| Blood intake $\frac{ml}{h}$ | <bdl-range id="id8" title="" min="0" max="2" default="0" step="0.1"></bdl-range>  |
 <!--| Knockout of the FPN gene in the spleen | <bdl-checkbox id="idspl" titlemin="Fpn gene is knocked out (inactive)" titlemax="Fpn gene is active" default="true"></bdl-checkbox>  |
 | Knockout of the FPN gene in other organs| <bdl-checkbox id="idres" titlemin="Fpn gene is knocked out (inactive)" titlemax="Fpn gene is active" default="true"></bdl-checkbox> | -->
 
