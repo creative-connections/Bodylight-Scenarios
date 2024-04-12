@@ -1,6 +1,6 @@
 <bdl-tabs idlist="ko,biochem" titlelist="KO,Biochemie"></bdl-tabs>
 <div id="ko">
-<div class="w3-row">
+<div class="w3-row" style="line-height:0.9">
 <div class="w3-half w3-sand w3-large w3-padding">
 
 **Krevní obraz**
@@ -15,7 +15,7 @@
 |MCH| 33,5| pg |		[28,0..34,6] |
 |MCHC| 344| g/l |		[329..364] |
 |RDW| 15,9| % |		[11,9..16,3] |
-|Plt| 353| 10^9/l | 		[142..327] |
+|Plt| <span class="w3-text-red">353</span>| 10^9/l | 		[142..327] |
 |MPV| 8| fl |		[7,1..10,4] |
 |PCT| 0,284| % |		[0,117..0,305] |
 |PDW| 16,7| % |		[15,3..17,9] |
@@ -38,7 +38,7 @@
 |--------------|---------------|-----------|
 | Quickův test INR  | 1,25     | [0,8..1.25] |
 | APTT  | 33,4 s      | [25..40] |
-| D-dimer  | 330 &#181;g/l     | [1..190] |
+| D-dimer  | <span class="w3-text-red">330 &#181;g/l</span>     | [1..190] |
 
 </div>
 </div>
@@ -62,17 +62,17 @@
 | Kreatinin | <span class="w3-text-red">117 &#181;mol/l</span> | [27..88] |
 | Kys. močová | <span class="w3-text-red">713 &#181;mol/l</span>| [140..340] |
 |**Jaterní testy**| | |
-| Bilirub. celk. | 49,6 μmol/l | [2..17] |
-| ALT | 7,17 μkat/l | [0,05..0,6] |
-| AST | 6,56 μkat/l | [0,1..0,63] |
-| ALP | 1,57 μkat/l | [0,67..2,15] |
+| Bilirub. celk. | <span class="w3-text-red">49,6 μmol/l</span> | [2..17] |
+| ALT | <span class="w3-text-red">7,17 μkat/l</span> | [0,05..0,6] |
+| AST | <span class="w3-text-red">6,56 μkat/l</span> | [0,1..0,63] |
+| ALP | <span class="w3-text-red">1,57 μkat/l</span> | [0,67..2,15] |
 |**Bílkoviny**| | |
 | Albumin | <span class="w3-text-blue">31 g/l</span> | [35..53] |
 | CB | 68 g/l | [68..85] |
 | CRP | 2,3 mg/l | [0..7] |
 | NT-proBNP | <span class="w3-text-red">750 nmol/l</span> | [<100] |
 |**Diabetický profil**| | |
-| Glykemie |  7,8 mmol/l | [3,9..5,6] |
+| Glykemie |  <span class="w3-text-red">7,8 mmol/l</span> | [3,9..5,6] |
 
 
 </div>
