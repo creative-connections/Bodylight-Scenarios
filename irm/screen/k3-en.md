@@ -80,9 +80,6 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a findex="0" aname="children.0.SipkaHneda2_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="0" aname="children.0.SipkaHneda1_anim" amin="0" amax="159"></bdl-bind2a>
 
-
-
-
 </div>
 <div class="w3-col s12 m5 l5  w3-justify w3-padding w3-small" style='line-height:1.0'>
 
