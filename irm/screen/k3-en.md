@@ -5,7 +5,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 </style><bdl-tabs idlist="sim,anim,diagramA,diagramB" titlelist="sim,macrophage,diagram A,diagram B"></bdl-tabs>
 <div id="sim">
 <div class="w3-row">
-<div class="w3-twothird w3-center">
+<div class="w3-col s12 m7 l7 w3-center">
 
 **Iron Metabolism of Macrophage Cells in the Spleen**
 <bdl-animate-adobe src="BunkaSlezinaObrazovka1.js" width="800" height="600" name="BunkaSlezinaObrazovka1" fromid="idfmi" responsive="true"></bdl-animate-adobe>
@@ -84,7 +84,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 
 </div>
-<div class="w3-third w3-justify w3-padding w3-small" style='line-height:1.0'>
+<div class="w3-col s12 m5 l5  w3-justify w3-padding w3-small" style='line-height:1.0'>
 
 <button class="w3-right w3-button w3-theme-d4" onclick="document.getElementById('legenda').style.display='block'"><i class="fa fa-info-circle"> </i></button>
 <!-- hidden input  - buttonparams sets this input value explicitly, then it is read by fmi component -->
@@ -96,10 +96,9 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 |-------------|-------|
 | Amount of iron in food [$\frac{\mu g}{h}$] | <bdl-range id="id1" title="" min="0" max="2000" default="219" step="1"></bdl-range> |
 | FPN gene | <bdl-checkbox id="idfpnliv" titlemin="Fpn gene is knocked out (inactive)" titlemax="Fpn gene is active" default="true"></bdl-checkbox>  |
-| hepcidin gene | <bdl-checkbox id="idhep" titlemin="gene for hepcidin is knocked out (inactive)" titlemax="gene for hepcidin expression is active" default="true"></bdl-checkbox>  |
+| hepcidin gene | <bdl-checkbox id="idhep" titlemin="gene for hepcidin is knocked out (inactive)" titlemax="gene for hepcidin is active" default="true"></bdl-checkbox>  |
 | 1$\mu$g to inject | <bdl-buttonparams title="LPS injection" ids="idlps" values="1" fromid="idfmi"></bdl-buttonparams>  |
 | Malabsorption (1=normal) | <bdl-range id="id11" title="" min="0" max="1" default="1" step="0.05"></bdl-range>  |
-| Regulation of DMT1 in the duodenum | <bdl-checkbox id="id10" titlemin="absorption is physiologically regulated" titlemax="regulation of absorption is turned off" default="false"></bdl-checkbox>  |
 | Blood losses | <bdl-range id="id7" title="" min="0" max="1" default="0" step="0.1"></bdl-range>  $\frac{ml}{h}$ |
 | Blood intake | <bdl-range id="id8" title="" min="0" max="10" default="0" step="1"></bdl-range> $\frac{ml}{h}$ |
 
