@@ -101,8 +101,8 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a findex="1" aname="children.1.children.188.PrechodUvnitrVehicle_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.children.188.SipkaHneda1Vehicle_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.children.188.SipkaHneda2Vehicle_anim" amin="0" amax="99"></bdl-bind2a>
-<bdl-bind2a findex="9" aname="children.1.StrikackaModra_anim" amin="1" amax="29" fmin="0" fmax="1e-20"></bdl-bind2a>
-<!--bdl-bind2a findex="13" aname="children.1.StrikackaModra_anim" amin="1" amax="29"></bdl-bind2a-->
+<!--bdl-bind2a findex="9" aname="children.1.StrikackaModra_anim" amin="1" amax="29" fmin="0" fmax="1"></bdl-bind2a-->
+<bdl-bind2a findex="13" aname="children.1.StrikackaModra_anim" amin="1" amax="29"></bdl-bind2a>
 <bdl-bind2a findex="7" aname="children.1.SemaforFpn_anim" amin="0" amax="19" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a findex="8" aname="children.1.SemaforHepcidin_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a findex="2" aname="children.1.CervenaSipka7_anim" amin="0" amax="159"></bdl-bind2a>
@@ -110,14 +110,15 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 </div>
 <div class="w3-col s12 m4 l4 w3-justify w3-small" style="line-height:1.0">
+<div class="w3-sand">
+
+**Kazuistika pokračování:** ... Praktický lékař situaci řešil vitaminy B12 a D a suplementy železa, které ale nebyly dobře tolerovány. Pacientka přišla do hematologické ambulance „na pokraji psychického zhroucení“. Subjektivně pociťovala adynamii, slabost, psychickou vyčerpanost, zoufalství. Objektivně byla subdepresivní, bledší, měla nadváhu. Krevní testy odhalily hlavní problém v nedostatek železa způsobený dřívější bariatrickou operací (vyřazením adsorbční plochy duodena a proximální části jejuna, kde se i vstřebává železo). </div>
 
 <button class="w3-right w3-button w3-theme-d4" onclick="document.getElementById('legenda').style.display='block'"><i class="fa fa-info-circle"> </i></button>
 <!-- hidden input  - buttonparams sets this input value explicitly, then it is read by fmi component -->
 <input id="idlps" value="" type="number" style="display:none"/>
 
-<bdl-fmi id="idfmi" mode="" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="4" fpslimit="10" guid="{9aa10b27-427c-44c9-a381-5815d5706331}" valuereferences="637534208,637534245,33554450,33554447,33554451,637534243,637534244,16777268,16777266,33554434,33554432,33554436,637534264,637534265,637534270,637534268,33554433,33554441,16777267,16777269,16777270,33554443,33554442,33554444,16777264,16777261,637534246,16777262" valuelabels="Fe_liv,Fe_liv_in_ser,Fe_liv_2,Fe_ser,Fe_liv_3,Fe_liv_to_ferritin,Fe_liv_from_ferritin,Fpn_liv_knockout,hep_knockout,LPS,hep,Il6,hep_in,hep_out,Bmp6_in,Il6_in,Bmp6,Fpn_liv,Fpn_duo_knockout,Fpn_spl_knockout,Fpn_res_knockout,Fpn_duo,Fpn_spl,Fpn_res,transfusion,bleeding,Fe_liv_out_ser,malabsorption" inputs="id1,16777260,1,1;idfpnliv,16777268,1,1,t;idhep,16777266,1,1,t;idlps,33554434,1,1,t;id11,16777262,1,1,t;id10,16777265,1,1,t;idspl,16777269,1,1,t;idres,16777270,1,1,t;id7,16777261,1,1,t;id8,16777264,1,1,t" inputlabels="Fe_food,Fpn_liv_knockout,hep_knockout,LPS,malabsorption,unregulated_absorption,Fpn_spl_knockout,Fpn_res_knockout,bleeding,transfusion" showtime="true" showtimemultiply="3600"></bdl-fmi>
-
-<!--bdl-chartjs-time id="idlpschart" width="300" height="300" fromid="idfmi" refindex="9" refvalues="1" labels="LPS" maxdata="4096" displayxticks="false"></bdl-chartjs-time-->
+<bdl-fmi id="idfmi" mode="" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="4" fpslimit="10" guid="{9aa10b27-427c-44c9-a381-5815d5706331}" valuereferences="637534208,637534245,33554450,33554447,33554451,637534243,637534244,16777268,16777266,33554434,33554432,33554436,637534264,637534265,637534270,637534268,33554433,33554441,16777267,16777269,16777270,33554443,33554442,33554444,16777264,16777261,637534246,16777262" valuelabels="Fe_liv,Fe_liv_in_ser,Fe_liv_2,Fe_ser,Fe_liv_3,Fe_liv_to_ferritin,Fe_liv_from_ferritin,Fpn_liv_knockout,hep_knockout,LPS,hep,Il6,hep_in,hep_out,Bmp6_in,Il6_in,Bmp6,Fpn_liv,Fpn_duo_knockout,Fpn_spl_knockout,Fpn_res_knockout,Fpn_duo,Fpn_spl,Fpn_res,transfusion,bleeding,Fe_liv_out_ser,malabsorption" inputs="id1,16777260,1,1;idfpnliv,16777268,1,1,t;idhep,16777266,1,1,t;idlps,33554434,1,1,t;id11,16777262,1,1,t;id10,16777265,1,1,t;idspl,16777269,1,1,t;idres,16777270,1,1,t;id7,16777261,1,1,t;id8,16777264,1,1,t" inputlabels="Fe_food,Fpn_liv_knockout,hep_knockout,LPS,malabsorption,unregulated_absorption,Fpn_spl_knockout,Fpn_res_knockout,bleeding,transfusion"></bdl-fmi>
 
 <div class="w3-border w3-panel">
 
@@ -125,21 +126,16 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 |-------------|-------|
 | Fe v potravě [$\frac{\mu g}{h}$] | <bdl-range id="id1" title="" min="0" max="2000" default="219" step="1"></bdl-range> |
 | FPN gen  | <bdl-checkbox id="idfpnliv" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
-| hepcidin gen | <bdl-checkbox id="idhep" titlemin="gen pro hepcidin je knockoutován (neaktivní)" titlemax="gen pro expresi hepcidinu je aktivní" default="true"></bdl-checkbox>  |
+| hepcidin gen | <bdl-checkbox id="idhep" titlemin="gen pro hepcidin je knockoutován (neaktivní)" titlemax="gen pro hepcidin je aktivní" default="true"></bdl-checkbox>  |
 | 1$\mu$g | <bdl-buttonparams title="LPS injekce" ids="idlps" values="1" fromid="idfmi"></bdl-buttonparams>  |
 | Malabsorpce (1=norma) | <bdl-range id="id11" title="" min="0" max="1" default="1" step="0.05"></bdl-range>  |
-| DMT1 v duodenu | <bdl-checkbox id="id10" titlemin="absorpce je fyziologicky regulovaná" titlemax="regulace absorpce je vypnuta" default="false"></bdl-checkbox>  |
 | Krevní ztráty $\frac{ml}{h}$  | <bdl-range id="id7" title="" min="0" max="2" default="0" step="0.1"></bdl-range>  |
 | Příjem krve $\frac{ml}{h}$ | <bdl-range id="id8" title="" min="0" max="3" default="0" step="0.1"></bdl-range>  |
-<div class="w3-hide">
-| Knockout genu pro FPN ve slezině | <bdl-checkbox id="idspl" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
-| Knockout genu pro FPN v dalších orgánech| <bdl-checkbox id="idres" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox> | 
-</div>
+<!--| Knockout genu pro FPN ve slezině | <bdl-checkbox id="idspl" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
+| Knockout genu pro FPN v dalších orgánech| <bdl-checkbox id="idres" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox> |
+| DMT1 v duodenu | <bdl-checkbox id="id10" titlemin="absorpce je fyziologicky regulovaná" titlemax="regulace absorpce je vypnuta" default="false"></bdl-checkbox>  |-->
 
 </div>
-<div class="w3-sand">
-
-**Kazuistika pokračování:** ... Praktický lékař situaci řešil vitaminy B12 a D, problém ovšem představoval nedostatek železa způsobený dřívější bariatrickou operací (vyřazením adsorbční  plochy duodena a proximální části jejuna, kde se i vstřebává železo). Pacientka přišla do hematologické ambulance „na pokraji psychického zhroucení“. Subjektivně pociťovala adynamii, slabost, psychickou vyčerpanost, zoufalství. Objektivně byla subdepresivní, bledší, měla nadváhu. </div>
 
 <bdl-quizx id="q2.1" type="choice2" question="2.1 Spusťte simulaci a nasimulujte masivní duodenální resekci tím, že snížíte malabsorpci na hodnotu 0.05 (5% oproti normě). Jaké následky vidíte?" answers="A. postupné snižování koncentrace železa v plasmě i v buňkách. Nedostatek železa pro jiné procesy, např. snížená produkce nových erytrocytů, anémie, ...|B. postupné zvyšování železa v plasmě i v buňkách s důsledky pro další orgány s projevy podobnými jako hemochromatóza" correctoptions="true|false" explanations="ano, simulace ukazuje dlouhodobý nedostatek železa pro jiné metabolické procesy viz další kapitola|ne, viz další kapitola" buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q2.2" type="choice2" question="2.2 Pokračujte v simulaci, zvyšte množství železa v potravě 10x nad normu (tj. asi na hodnotu 2000). Stačí taková kompenzace nahradit masivní duodenální resekci nasimulovanou v předchozí otázce?" answers="A. Ano. Zvýšený příjem železa v potravě může pomoci v rekonvalescenci a upraví hladinu železa v buňkách i v plazmě k normě |B. Ne. Zvýšený příjem železa nedostačuje k metabolickým potřebám a hladina v plazmě i v buňkách klesá a postupně se vyčerpává." correctoptions="false|true" explanations="ne|ano" buttontitle="zkontrolovat odpověď"></bdl-quizx>
