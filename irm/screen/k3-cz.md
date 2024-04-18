@@ -5,7 +5,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 </style><bdl-tabs idlist="sim,anim,diagramA,diagramB" titlelist="sim,makrofág,diagram A,diagram B"></bdl-tabs>
 <div id="sim">
 <div class="w3-row">
-<div class="w3-twothird w3-center">
+<div class="w3-col s12 m7 l7 w3-center">
 
 **metabolismus železa v buňce makrofágu ve slezině**
 <bdl-animate-adobe src="BunkaSlezinaObrazovka1.js" width="800" height="600" name="BunkaSlezinaObrazovka1" fromid="idfmi" responsive="true"></bdl-animate-adobe>
@@ -81,7 +81,8 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a findex="0" aname="children.0.SipkaHneda1_anim" amin="0" amax="159"></bdl-bind2a>
 
 </div>
-<div class="w3-third w3-justify w3-padding w3-small">
+<div class="w3-col s12 m5 l5  w3-justify w3-padding w3-small" style='line-height:1.0'>
+
 
 <button class="w3-right w3-button w3-theme-d4" onclick="document.getElementById('legenda').style.display='block'"><i class="fa fa-info-circle"> </i></button>
 <!-- hidden input  - buttonparams sets this input value explicitly, then it is read by fmi component -->
