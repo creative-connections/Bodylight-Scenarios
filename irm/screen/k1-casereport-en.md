@@ -38,7 +38,7 @@ answers="A. <b>obesity</b>. After noticing the negative impacts on her health an
            buttontitle="check answer"></bdl-quizx>
 <bdl-quizx id="qik.2" type="choice2" 
            question="K.2 At the age of 38, weighing 150 kg, conservative obesity treatment did not help, and in January 2016, the patient underwent sleeve gastrectomy. What mechanism is primarily targeted when performing sleeve gastrectomy in patients with morbid obesity, and how does it affect the pathophysiology of obesity?" 
-           answers="A. Sleeve gastrectomy reduces the size of the stomach, which directly decreases nutrient absorption and thus promotes weight loss. It also leads to a reduction in ghrelin levels, a hormone that stimulates hunger, resulting in a decrease in appetite.|B. The surgery increases insulin production by stimulating the pancreatic beta cells, which leads to better glycemic control and weight loss." 
+           answers="A. Sleeve gastrectomy reduces the size of the stomach, decreases nutrient income and thus promotes weight loss. It also leads to a reduction in ghrelin levels, a hormone that stimulates hunger, resulting in a decrease in appetite.|B. The surgery increases insulin production by stimulating the pancreatic beta cells, which leads to better glycemic control and weight loss." 
            correctoptions="true|false" 
            explanations="yes|no" 
            buttontitle="check answer"></bdl-quizx>
