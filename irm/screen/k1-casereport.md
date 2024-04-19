@@ -38,7 +38,7 @@ answers="A. <b>obezita</b>. Poté, co si všimla negativních dopadů na své zd
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="qik.2" type="choice2" 
            question="K.2 S hmotností 150 kg v 38 letech konzervativní léčba obezity nepomohla a v lednu 2016 pacientka podstoupila sleeve gastrektomii.Jaký mechanismus je primárně cílen při provádění sleeve gastrektomie u pacientů s morbidní obezitou, a jak to ovlivňuje patofyziologii obezity?" 
-           answers="A. Sleeve gastrektomie redukuje velikost žaludku, což přímo snižuje absorpci živin a tím podporuje hubnutí. Také dochází ke snížení hladinu ghrelinu, hormonu stimulujícího hlad, čímž dochází k poklesu apetitu.|B. Operace zvyšuje produkci insulinu tím, že stimuluje beta-buňky pankreatu, což vede k lepší kontrole glykémie a snížení tělesné hmotnosti." 
+           answers="A. Sleeve gastrektomie redukuje velikost žaludku, urychluje pocit naplnění, čímž redukuje množství živin a tím podporuje hubnutí. Také dochází ke snížení hladinu ghrelinu, hormonu stimulujícího hlad, čímž dochází k poklesu apetitu.|B. Operace zvyšuje produkci insulinu tím, že stimuluje beta-buňky pankreatu, což vede k lepší kontrole glykémie a snížení tělesné hmotnosti." 
            correctoptions="true|false" 
            explanations="ano|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
