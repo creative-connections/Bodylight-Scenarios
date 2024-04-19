@@ -44,13 +44,13 @@ API to VR <!--bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval=
 <div class="w3-text-yellow w3-large">
 &nbsp;sO<sub>2</sub><sup>art</sup><b class="w3-xxxlarge"><bdl-value fromid="idfmi" refindex="1" convertor="100,1" precision="4"></bdl-value></b>&nbsp;<span class="w3-small">%</span><br/></div>
 <div class="w3-text-red w3-large">&nbsp;pO<sub>2</sub><sup>art</sup><b class="w3-large"><bdl-value fromid="idfmi" refindex="13" convertor="1,133.322" precision="4" convertors="1,133.322"></bdl-value></b>&nbsp;<span class="w3-small">mmHg</span><br/></div>
-<div class="w3-text-green w3-large">&nbsp;pCO<sub>2</sub><sup>art</sup><b class="w3-large"><bdl-value fromid="idfmi" refindex="14" convertor="1,133.322" precision="4" convertors="1,133.322"></bdl-value></b>&nbsp;<span class="w3-small">mmHg</span></div
+<div class="w3-text-green w3-large">&nbsp;pCO<sub>2</sub><sup>art</sup><b class="w3-large"><bdl-value fromid="idfmi" refindex="14" convertor="1,133.322" precision="4" convertors="1,133.322"></bdl-value></b>&nbsp;<span class="w3-small">mmHg</span></div>
 </div>
 </div>
 </div>
 <div class="w3-row">
-<div class="w3-quarter">
-<bdl-sachart fromid="idfmi" refindex="3,10" convertors="1,1,0;1,133.322" width="300" height="250" minichart="true" class="w3-left"></bdl-sachart>
+<div class="w3-quarter" style="min-width:300px;min-height:250px">
+<bdl-sachart fromid="idfmi" refindex="3,10" convertors="1,1,0;1,133.322" width="300" height="250" class="w3-left" ></bdl-sachart>
 </div>
 
 <div class="w3-quarter">
