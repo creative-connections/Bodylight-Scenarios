@@ -1,4 +1,5 @@
-<div class="w3-row">
+<bdl-tabs idlist="obr1,obr2" titlelist="sim,prezentace"></bdl-tabs>
+<div class="w3-row" id="obr1">
 <div class="w3-twothird w3-center">
 
 **metabolismus železa, celkový pohled**
@@ -96,6 +97,10 @@ U pacientů s malabsorpčním syndromem (z jakéhokoliv důvodu) není možné s
 Zdroj: Křížová J. Když je hematolog na sideropenii krátký... Iron Academy 2022: Proč rozumět metabolismu železa a jeho vlivu na zdraví pacienta, 15. 9. 2022.
 </div>
 
-
 </div>
+</div>
+<div id="obr2">
+
+<iframe frameBorder="0" width="800" height="600" style="border:0" src="https://orgpad.info/s/iKq097cyRS8?embed=true"></iframe>
+
 </div>
