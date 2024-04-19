@@ -4,7 +4,7 @@ img[alt^="1medium"] {max-width:49%;}
 img[alt^="2medium"] {max-width:23%;}
 img[alt^="bigimage"] {  max-height:60px}
 tbody tr:nth-child(even){background-color:#f1f1f1}
-</style><bdl-tabs idlist="obr1,obr2,obr3" titlelist="sim,metabolismus železa,hepcidin"></bdl-tabs>
+</style><bdl-tabs idlist="obr1,obr2,obr3" titlelist="sim,metabolismus železa v duodenu,hepcidin"></bdl-tabs>
 <div id="obr1" style="line-height:1.0">
 <div class="w3-row">
 <div class="w3-col s12 m7 l7 w3-center">
@@ -200,8 +200,8 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 </div>
 <div id="obr2">
 
-![iron_metabolism](iron_metabolism.png)
-**https://www.fxmedicine.com.au/infographic/iron-matters-absorption-and-metabolism**
+![duodenum2](duodenum2.png)
+
 
 </div>
 <div id="obr3">
