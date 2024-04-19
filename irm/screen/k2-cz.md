@@ -7,7 +7,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 *[DMT1]: divalent metal transporter 1
 *[holoTf]: Transferin - saturovaný - s navázanými ionty železa
 
-<bdl-tabs idlist="obr1,obr2,obr3" titlelist="sim,metabolismus železa v duodenu,hepcidin"></bdl-tabs>
+<bdl-tabs idlist="obr1,obr2,obr3" titlelist="sim,metabolismus železa,hepcidin"></bdl-tabs>
 <div class="w3-row" id="obr1">
 <div class="w3-col s12 m8 l8 w3-center">
 
