@@ -54,7 +54,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a findex="10" aname="children.0.KanalSedy2_anim" amin="159" amax="0"></bdl-bind2a>
 <bdl-bind2a findex="9" aname="children.0.MitochondrieSipkaCervena3_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="10" aname="children.0.MitochondrieSipkaCervena4_anim" amin="0" amax="159"></bdl-bind2a>
-<bdl-bind2a findex="10" aname="children.0.Fe2Skupina_anim" amin="159" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="10" aname="children.0.Fe2Skupina_anim" amin="157" amax="0"></bdl-bind2a>
 <bdl-bind2a findex="9" aname="children.0.merak4_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="9" aname="children.0.Fe3Skupina_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a-play findex="6" aname="children.0.KapackaJehlaFe_anim" amin="0" amax="9"></bdl-bind2a-play>
@@ -126,6 +126,5 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 ![makrofagerytrocyt](makrofagerytrocyt2.gif)
 
 <!--bdl-animate-adobe src="MacrofagHotovy.js" width="800" height="600" name="MacrofagHotovy" responsive="true" playafterstart="true"></bdl-animate-adobe-->
-
 
 </div>
