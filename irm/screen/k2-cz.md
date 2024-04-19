@@ -2,12 +2,7 @@
 img[alt^="image"] {max-width:20px;}
 img[alt^="bigimage"] {  max-height:60px}
 tbody tr:nth-child(even){background-color:#f1f1f1}
-</style>
-
-*[DMT1]: divalent metal transporter 1
-*[holoTf]: Transferin - saturovaný - s navázanými ionty železa
-
-<bdl-tabs idlist="obr1,obr2,obr3" titlelist="sim,metabolismus železa,hepcidin"></bdl-tabs>
+</style><bdl-tabs idlist="obr1,obr2,obr3" titlelist="sim,metabolismus železa,hepcidin"></bdl-tabs>
 <div class="w3-row" id="obr1">
 <div class="w3-col s12 m8 l8 w3-center">
 
@@ -119,7 +114,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <!-- hidden input  - buttonparams sets this input value explicitly, then it is read by fmi component -->
 <input id="idlps" value="" type="number" style="display:none"/>
 
-<bdl-fmi id="idfmi" mode="" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="4" fpslimit="10" guid="{9aa10b27-427c-44c9-a381-5815d5706331}" valuereferences="637534208,637534245,33554450,33554447,33554451,637534243,637534244,16777268,16777266,33554434,33554432,33554436,637534264,637534265,637534270,637534268,33554433,33554441,16777267,16777269,16777270,33554443,33554442,33554444,16777264,16777261,637534246,16777262" valuelabels="Fe_liv,Fe_liv_in_ser,Fe_liv_2,Fe_ser,Fe_liv_3,Fe_liv_to_ferritin,Fe_liv_from_ferritin,Fpn_liv_knockout,hep_knockout,LPS,hep,Il6,hep_in,hep_out,Bmp6_in,Il6_in,Bmp6,Fpn_liv,Fpn_duo_knockout,Fpn_spl_knockout,Fpn_res_knockout,Fpn_duo,Fpn_spl,Fpn_res,transfusion,bleeding,Fe_liv_out_ser,malabsorption" inputs="id1,16777260,1,1;idfpnliv,16777268,1,1,t;idhep,16777266,1,1,t;idlps,33554434,1,1,t;id11,16777262,1,1,t;id10,16777265,1,1,t;idspl,16777269,1,1,t;idres,16777270,1,1,t;id7,16777261,1,1,t;id8,16777264,1,1,t" inputlabels="Fe_food,Fpn_liv_knockout,hep_knockout,LPS,malabsorption,unregulated_absorption,Fpn_spl_knockout,Fpn_res_knockout,bleeding,transfusion"></bdl-fmi>
+<bdl-fmi id="idfmi" mode="" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="4" fpslimit="10" guid="{9aa10b27-427c-44c9-a381-5815d5706331}" valuereferences="637534208,637534245,33554450,33554447,33554451,637534243,637534244,16777268,16777266,33554434,33554432,33554436,637534264,637534265,637534270,637534268,33554433,33554441,16777267,16777269,16777270,33554443,33554442,33554444,16777264,16777261,637534246,16777262" valuelabels="Fe_liv,Fe_liv_in_ser,Fe_liv_2,Fe_ser,Fe_liv_3,Fe_liv_to_ferritin,Fe_liv_from_ferritin,Fpn_liv_knockout,hep_knockout,LPS,hep,Il6,hep_in,hep_out,Bmp6_in,Il6_in,Bmp6,Fpn_liv,Fpn_duo_knockout,Fpn_spl_knockout,Fpn_res_knockout,Fpn_duo,Fpn_spl,Fpn_res,transfusion,bleeding,Fe_liv_out_ser,malabsorption" inputs="id1,16777260,1,1;idfpnliv,16777268,1,1,t;idhep,16777266,1,1,t;idlps,33554434,1,1,t;id11,16777262,1,1,t;id10,16777265,1,1,t;idspl,16777269,1,1,t;idres,16777270,1,1,t;id7,16777261,1,1,t;id8,16777264,1,1,t" inputlabels="Fe_food,Fpn_liv_knockout,hep_knockout,LPS,malabsorption,unregulated_absorption,Fpn_spl_knockout,Fpn_res_knockout,bleeding,transfusion" showtime="true" showtimemultiply="3600"></bdl-fmi>
 
 <div class="w3-border w3-panel">
 
