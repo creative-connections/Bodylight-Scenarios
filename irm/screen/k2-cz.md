@@ -7,7 +7,8 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 *[DMT1]: divalent metal transporter 1
 *[holoTf]: Transferin - saturovaný - s navázanými ionty železa
 
-<div class="w3-row">
+<bdl-tabs idlist="obr1,obr2,obr3" titlelist="sim,metabolismus železa v duodenu,hepcidin"></bdl-tabs>
+<div class="w3-row" id="obr1">
 <div class="w3-col s12 m8 l8 w3-center">
 
 **metabolismus železa v buňce hepatocytu**
@@ -208,4 +209,17 @@ button
 |![imageschemasteap3](imgmetaloreduktaza.png)| STEAP3 | Metaloreduktáza |
 konec legendy
 </div>
+<div id="obr2">
 
+![hepcidin2](hepcidin2.png)
+
+</div>
+<div id="obr3">
+
+A ![1mediumregulacehepcidinu](imageregulacehepcidinu.png)
+B ![2mediumhepcidinbunka](imagehepcidinbunka.png)
+C ![2mediumhepcidinlps](imagehepcidinlps.png)
+
+**A** Schématické znázornění role hepcidinu v udržování homeostázy železa. Hepcidin je regulován primárně třemi nezávislými mechanismy: 1) aktuální hladina železa - zvyšuje hladinu hepcidinu, 2) aseptický nebo infekční zánět - zvyšuje hladinu hepcidinu, 3) erytropoetická aktivita - snižuje hladinu hepcidinu.**B**  Schematické znázornění role hepcidinu v buňce duodenálního enterocytu. Regulace příjmu železa. **C** Role hepcidinu při zánětlivé reakci v regulaci příjmu železa.
+
+</div>
