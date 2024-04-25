@@ -5,10 +5,10 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 </style><bdl-tabs idlist="sim,anim,diagramA,diagramB" titlelist="sim,macrophage,diagram A,diagram B"></bdl-tabs>
 <div id="sim">
 <div class="w3-row">
-<div class="w3-col s12 m7 l7 w3-center">
+<div class="w3-col s12 m6 l6 w3-center">
 
 **Iron Metabolism of Macrophage Cells in the Spleen**
-<bdl-animate-adobe src="BunkaSlezinaObrazovka1.js" width="800" height="600" name="BunkaSlezinaObrazovka1" fromid="idfmi" responsive="true"></bdl-animate-adobe>
+<bdl-animate-adobe src="BunkaSlezinaObrazovka2.js" width="800" height="600" name="BunkaSlezinaObrazovka2" fromid="idfmi" responsive="true"></bdl-animate-adobe>
 <bdl-bind2a-text findex="11" aname="children.0.Hodnota7_text" convertor="1,0.665" precision="3"></bdl-bind2a-text>
 <bdl-bind2a-text findex="12" aname="children.0.Hodnota3_text" fixed="1"></bdl-bind2a-text>
 <bdl-bind2a-text findex="11" aname="children.0.Hodnota1_text" convertor="1,0.665" precision="3"></bdl-bind2a-text>
@@ -16,29 +16,48 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a-text findex="7" aname="children.0.Hodnota6_text" convertor="1,0.9"></bdl-bind2a-text>
 <bdl-bind2a-text findex="10" aname="children.0.Hodnota5_text" convertor="1,4.4"></bdl-bind2a-text>
 <bdl-bind2a-text findex="9" aname="children.0.Hodnota4_text" convertor="1,13.3"></bdl-bind2a-text>
-<bdl-bind2a findex="26" aname="children.0.children.355.MerakSemaforu5_anim" amin="0" amax="159"></bdl-bind2a>
-<bdl-bind2a findex="3" aname="children.0.children.355.MerakSemaforu4_anim" amin="0" amax="159"></bdl-bind2a>
-<bdl-bind2a findex="25" aname="children.0.children.355.MerakSemaforu3_anim" amin="0" amax="159"></bdl-bind2a>
-<bdl-bind2a findex="24" aname="children.0.children.355.MerakSemaforu2_anim" amin="0" amax="159"></bdl-bind2a>
-<bdl-bind2a findex="11" aname="children.0.children.355.MerakSemaforu1_anim" amin="0" amax="159"></bdl-bind2a>
-<bdl-bind2a findex="23" aname="children.0.children.355.Semafor5_anim" amin="0" amax="10"></bdl-bind2a>
-<bdl-bind2a findex="14" aname="children.0.children.355.Semafor4_anim" amin="0" amax="10"></bdl-bind2a>
-<bdl-bind2a findex="22" aname="children.0.children.355.Semafor3_anim" amin="0" amax="10"></bdl-bind2a>
-<bdl-bind2a findex="21" aname="children.0.children.355.Semafor2_anim" amin="0" amax="10"></bdl-bind2a>
-<bdl-bind2a findex="20" aname="children.0.children.355.Semafor1_anim" amin="0" amax="10"></bdl-bind2a>
-<bdl-bind2a-play findex="8" aname="children.0.StrikackaCervena_anim" amin="0" amax="29"></bdl-bind2a-play>
+<bdl-bind2a findex="26" aname="children.0.children.398.MerakSemaforu5_anim" amin="0" amax="156"></bdl-bind2a>
+<bdl-bind2a findex="3" aname="children.0.children.398.MerakSemaforu4_anim" amin="0" amax="156"></bdl-bind2a>
+<bdl-bind2a findex="25" aname="children.0.children.398.MerakSemaforu3_anim" amin="0" amax="156"></bdl-bind2a>
+<bdl-bind2a findex="24" aname="children.0.children.398.MerakSemaforu2_anim" amin="0" amax="156"></bdl-bind2a>
+<bdl-bind2a findex="11" aname="children.0.children.398.MerakSemaforu1_anim" amin="0" amax="156"></bdl-bind2a>
+<bdl-bind2a findex="23" aname="children.0.children.398.Semafor5_anim" amin="0" amax="10"></bdl-bind2a>
+<bdl-bind2a findex="14" aname="children.0.children.398.Semafor4_anim" amin="0" amax="10"></bdl-bind2a>
+<bdl-bind2a findex="22" aname="children.0.children.398.Semafor3_anim" amin="0" amax="1"></bdl-bind2a>
+<bdl-bind2a findex="21" aname="children.0.children.398.Semafor2_anim" amin="0" amax="1"></bdl-bind2a>
+<bdl-bind2a findex="20" aname="children.0.children.398.Semafor1_anim" amin="0" amax="1"></bdl-bind2a>
+<bdl-bind2a findex="8" aname="children.0.StrikackaCervena_anim" amin="undefined" amax="undefined"></bdl-bind2a>
 <bdl-bind2a findex="0" aname="children.0.KanalCerveny2_anim" amin="159" amax="0"></bdl-bind2a>
 <bdl-bind2a findex="2" aname="children.0.SipkaCerven11_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.0.tmaveZelena2_anim" amin="0" amax="156"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.0.tmaveZelena1_anim" amin="0" amax="156"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.0.CernaZKrvinky_anim" amin="0" amax="156"></bdl-bind2a>
 <bdl-bind2a findex="10" aname="children.0.SipkaCerven8_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.0.SipkaCerven3_anim" amin="0" amax="156"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.0.SvetleModraOdKrvinky1_anim" amin="0" amax="156"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.0.kanalModry1_anim" amin="156" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.0.KanalCerveny1_anim" amin="156" amax="0"></bdl-bind2a>
 <bdl-bind2a findex="2" aname="children.0.SipkaCerven10_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.0.SvetleModraOdKrvinky4_anim" amin="0" amax="156"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.0.SipkaCerven1_anim" amin="0" amax="156"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.0.SipkaCerven6_anim" amin="0" amax="156"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.0.SipkaCerven5_anim" amin="0" amax="156"></bdl-bind2a>
 <bdl-bind2a findex="19" aname="children.0.SipkaModraRuzova_anim" amin="159" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.0.hneda1_anim" amin="0" amax="156"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.0.SipkaCerven2_anim" amin="0" amax="156"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.0.SipkaCerven4_anim" amin="0" amax="156"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.0.SvetleModraOdKrvinky2_anim" amin="0" amax="156"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.0.SvetleModraOdKrvinky3_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="11" aname="children.0.SpodniZlutaPrerusovana_anim" amin="159" amax="0"></bdl-bind2a>
 <bdl-bind2a findex="18" aname="children.0.RuzovaRNA1_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="17" aname="children.0.RuzovaRNA2_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="0" aname="children.0.SipkaCerven12_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="2" aname="children.0.SipkaCerven9_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.0.Cerna2_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.0.SipkaCerven7_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="16" aname="children.0.SipkaCervenoFialova1_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="15" aname="children.0.SipkaCervenoFialova2_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="1" aname="children.0.hneda2_anim" amin="0" amax="156"></bdl-bind2a>
 <bdl-bind2a findex="2" aname="children.0.FialovaSipkaTransferinIN_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="0" aname="children.0.SipkaZlutaTransferin1OUT_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="0" aname="children.0.SipkaZlutaTransferin2IN_anim" amin="0" amax="159"></bdl-bind2a>
@@ -55,16 +74,16 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a findex="9" aname="children.0.MitochondrieSipkaCervena3_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="10" aname="children.0.MitochondrieSipkaCervena4_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="10" aname="children.0.Fe2Skupina_anim" amin="157" amax="0"></bdl-bind2a>
-<bdl-bind2a findex="9" aname="children.0.merak4_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="9" aname="children.0.merak4_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="9" aname="children.0.Fe3Skupina_anim" amin="0" amax="159"></bdl-bind2a>
-<bdl-bind2a-play findex="6" aname="children.0.KapackaJehlaFe_anim" amin="0" amax="9"></bdl-bind2a-play>
+<bdl-bind2a findex="6" aname="children.0.KapackaJehlaFe_anim" amin="undefined" amax="undefined"></bdl-bind2a>
 <bdl-bind2a findex="0" aname="children.0.SipkaModra3_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="0" aname="children.0.SipkaCerven13_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="4" aname="children.0.Merak2_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="7" aname="children.0.Merak6_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="8" aname="children.0.KapackaFeMale_anim" amin="0" amax="9"></bdl-bind2a>
-<bdl-bind2a-play findex="6" aname="children.0.ZelezoVelkeKapacka_anim" amin="0" amax="159"></bdl-bind2a-play>
-<bdl-bind2a-play findex="6" aname="children.0.children.90.children.59.Kapka1_anim" amin="0" amax="20"></bdl-bind2a-play>
+<bdl-bind2a findex="6" aname="children.0.ZelezoVelkeKapacka_anim" amin="undefined" amax="undefined"></bdl-bind2a>
+<bdl-bind2a findex="6" aname="children.0.children.90.children.59.Kapka1_anim" amin="undefined" amax="undefined"></bdl-bind2a>
 <bdl-bind2a findex="5" aname="children.0.SipkaRuzovaZluta_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="4" aname="children.0.children.87.FeTransferin_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="3" aname="children.0.KanalFialovy_anim" amin="159" amax="0"></bdl-bind2a>
@@ -79,9 +98,13 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a findex="0" aname="children.0.KanalZluty_anim" amin="159" amax="0"></bdl-bind2a>
 <bdl-bind2a findex="0" aname="children.0.SipkaHneda2_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="0" aname="children.0.SipkaHneda1_anim" amin="0" amax="159"></bdl-bind2a>
-
+<bdl-bind2a-play findex="8" aname="children.0.StrikackaCervena_anim" amin="0" amax="29"></bdl-bind2a-play>
+<bdl-bind2a-play findex="6" aname="children.0.KapackaJehlaFe_anim" amin="0" amax="9"></bdl-bind2a-play>
+<bdl-bind2a-play findex="6" aname="children.0.ZelezoVelkeKapacka_anim" amin="0" amax="159"></bdl-bind2a-play>
+<bdl-bind2a-play findex="6" aname="children.0.children.90.children.59.Kapka1_anim" amin="0" amax="20"></bdl-bind2a-play>
 </div>
-<div class="w3-col s12 m5 l5  w3-justify w3-padding w3-small" style='line-height:1.0'>
+<div class="w3-col s12 m6 l6  w3-justify w3-padding w3-small" style='line-height:1.0'>
+
 
 <button class="w3-right w3-button w3-theme-d4" onclick="document.getElementById('legenda').style.display='block'"><i class="fa fa-info-circle"> </i></button>
 <!-- hidden input  - buttonparams sets this input value explicitly, then it is read by fmi component -->
