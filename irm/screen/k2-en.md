@@ -6,16 +6,13 @@ th,td,tr {
     padding:0px 0px;
     margin:0px 0px;
 }
-</style>
+</style><bdl-tabs idlist="obr1,obr2,obr3" titlelist="sim,iron metabolism,hepcidin"></bdl-tabs>
+<div class="w3-row" id="obr1">
 
-*[DMT1]: divalent metal transporter 1
-*[holoTf]: Transferin - saturovaný - s navázanými ionty železa
-
-<div class="w3-row">
 <div class="w3-col s12 m8 l8 w3-center">
 
 **iron metabolism in the hepatocyte**
-<bdl-animate-adobe src="Hepatocyt_2_FinalObrazovka5.js" width="800" height="600" name="Hepatocyt_2_FinalObrazovka5" fromid="idfmi" responsive="true"></bdl-animate-adobe>
+<bdl-animate-adobe src="Hepatocyt_2_FinalObrazovka5_Text.js" width="800" height="600" name="Hepatocyt_2_FinalObrazovka5_Text" fromid="idfmi" responsive="true"></bdl-animate-adobe>
 <bdl-bind2a-text findex="4" aname="children.1.Hodnota8_text" convertor="1,57.717"></bdl-bind2a-text>
 <bdl-bind2a-text findex="16" aname="children.1.Hodnota5_text" convertor="1,15.9"></bdl-bind2a-text>
 <bdl-bind2a-text findex="3" aname="children.1.Hodnota3_text" convertor="1,1.513"></bdl-bind2a-text>
@@ -185,3 +182,15 @@ legend
 
 </div>
 
+<div id="obr2">
+
+![hepcidin2](hepcidin2.png)
+
+</div>
+<div id="obr3">
+
+A ![1mediumregulacehepcidinu](imageregulacehepcidinu.png)
+
+**A** Schématické znázornění role hepcidinu v udržování homeostázy železa. Hepcidin je regulován primárně třemi nezávislými mechanismy: 1) aktuální hladina železa - zvyšuje hladinu hepcidinu, 2) aseptický nebo infekční zánět - zvyšuje hladinu hepcidinu, 3) erytropoetická aktivita - snižuje hladinu hepcidinu.
+
+</div>
