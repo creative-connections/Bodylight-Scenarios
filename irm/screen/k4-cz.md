@@ -1,4 +1,8 @@
-<bdl-tabs idlist="obr1,obr2" titlelist="sim,prezentace"></bdl-tabs>
+<style>
+img[alt^="image"] {max-width:20px;}
+img[alt^="bigimage"] {  max-height:60px}
+tbody tr:nth-child(even){background-color:#f1f1f1}
+</style><bdl-tabs idlist="obr1,obr2" titlelist="sim,prezentace"></bdl-tabs>
 <div class="w3-row" id="obr1">
 <div class="w3-twothird w3-center">
 
@@ -101,6 +105,5 @@ Zdroj: Křížová J. Když je hematolog na sideropenii krátký... Iron Academy
 </div>
 <div id="obr2">
 
-<iframe frameBorder="0" width="800" height="600" style="border:0" src="https://orgpad.info/s/iKq097cyRS8?embed=true"></iframe>
 
 </div>
