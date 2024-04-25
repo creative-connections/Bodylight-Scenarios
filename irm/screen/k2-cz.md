@@ -7,7 +7,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <div class="w3-col s12 m8 l8 w3-center">
 
 **metabolismus železa v buňce hepatocytu**
-<bdl-animate-adobe src="Hepatocyt_2_FinalObrazovka5.js" width="800" height="600" name="Hepatocyt_2_FinalObrazovka5" fromid="idfmi" responsive="true"></bdl-animate-adobe>
+<bdl-animate-adobe src="Hepatocyt_2_FinalObrazovka5_Text.js" width="800" height="600" name="Hepatocyt_2_FinalObrazovka5_Text" fromid="idfmi" responsive="true"></bdl-animate-adobe>
 <bdl-bind2a-text findex="4" aname="children.1.Hodnota8_text" convertor="1,57.717"></bdl-bind2a-text>
 <bdl-bind2a-text findex="16" aname="children.1.Hodnota5_text" convertor="1,15.9"></bdl-bind2a-text>
 <bdl-bind2a-text findex="3" aname="children.1.Hodnota3_text" convertor="1,1.513"></bdl-bind2a-text>
@@ -212,9 +212,7 @@ konec legendy
 <div id="obr3">
 
 A ![1mediumregulacehepcidinu](imageregulacehepcidinu.png)
-B ![2mediumhepcidinbunka](imagehepcidinbunka.png)
-C ![2mediumhepcidinlps](imagehepcidinlps.png)
 
-**A** Schématické znázornění role hepcidinu v udržování homeostázy železa. Hepcidin je regulován primárně třemi nezávislými mechanismy: 1) aktuální hladina železa - zvyšuje hladinu hepcidinu, 2) aseptický nebo infekční zánět - zvyšuje hladinu hepcidinu, 3) erytropoetická aktivita - snižuje hladinu hepcidinu.**B**  Schematické znázornění role hepcidinu v buňce duodenálního enterocytu. Regulace příjmu železa. **C** Role hepcidinu při zánětlivé reakci v regulaci příjmu železa.
+**A** Schématické znázornění role hepcidinu v udržování homeostázy železa. Hepcidin je regulován primárně třemi nezávislými mechanismy: 1) aktuální hladina železa - zvyšuje hladinu hepcidinu, 2) aseptický nebo infekční zánět - zvyšuje hladinu hepcidinu, 3) erytropoetická aktivita - snižuje hladinu hepcidinu.
 
 </div>
