@@ -21,12 +21,11 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a findex="25" aname="children.0.children.398.MerakSemaforu3_anim" amin="0" amax="156"></bdl-bind2a>
 <bdl-bind2a findex="24" aname="children.0.children.398.MerakSemaforu2_anim" amin="0" amax="156"></bdl-bind2a>
 <bdl-bind2a findex="11" aname="children.0.children.398.MerakSemaforu1_anim" amin="0" amax="156"></bdl-bind2a>
-<bdl-bind2a findex="23" aname="children.0.children.398.Semafor5_anim" amin="0" amax="10"></bdl-bind2a>
-<bdl-bind2a findex="14" aname="children.0.children.398.Semafor4_anim" amin="0" amax="10"></bdl-bind2a>
-<bdl-bind2a findex="22" aname="children.0.children.398.Semafor3_anim" amin="0" amax="1"></bdl-bind2a>
-<bdl-bind2a findex="21" aname="children.0.children.398.Semafor2_anim" amin="0" amax="1"></bdl-bind2a>
-<bdl-bind2a findex="20" aname="children.0.children.398.Semafor1_anim" amin="0" amax="1"></bdl-bind2a>
-<bdl-bind2a findex="8" aname="children.0.StrikackaCervena_anim" amin="undefined" amax="undefined"></bdl-bind2a>
+<bdl-bind2a findex="23" aname="children.0.children.398.Semafor5_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="14" aname="children.0.children.398.Semafor4_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="22" aname="children.0.children.398.Semafor3_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="21" aname="children.0.children.398.Semafor2_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="20" aname="children.0.children.398.Semafor1_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a findex="0" aname="children.0.KanalCerveny2_anim" amin="159" amax="0"></bdl-bind2a>
 <bdl-bind2a findex="2" aname="children.0.SipkaCerven11_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.0.tmaveZelena2_anim" amin="0" amax="156"></bdl-bind2a>
@@ -76,14 +75,11 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a findex="10" aname="children.0.Fe2Skupina_anim" amin="157" amax="0"></bdl-bind2a>
 <bdl-bind2a findex="9" aname="children.0.merak4_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="9" aname="children.0.Fe3Skupina_anim" amin="0" amax="159"></bdl-bind2a>
-<bdl-bind2a findex="6" aname="children.0.KapackaJehlaFe_anim" amin="undefined" amax="undefined"></bdl-bind2a>
 <bdl-bind2a findex="0" aname="children.0.SipkaModra3_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="0" aname="children.0.SipkaCerven13_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="4" aname="children.0.Merak2_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="7" aname="children.0.Merak6_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="8" aname="children.0.KapackaFeMale_anim" amin="0" amax="9"></bdl-bind2a>
-<bdl-bind2a findex="6" aname="children.0.ZelezoVelkeKapacka_anim" amin="undefined" amax="undefined"></bdl-bind2a>
-<bdl-bind2a findex="6" aname="children.0.children.90.children.59.Kapka1_anim" amin="undefined" amax="undefined"></bdl-bind2a>
 <bdl-bind2a findex="5" aname="children.0.SipkaRuzovaZluta_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="4" aname="children.0.children.87.FeTransferin_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="3" aname="children.0.KanalFialovy_anim" amin="159" amax="0"></bdl-bind2a>
@@ -116,7 +112,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 ||| 
 |-------------|-------|
 | množství železa v potravě [$\frac{\mu g}{h}$] | <bdl-range id="id1" title="" min="0" max="2000" default="219" step="1"></bdl-range> |
-| gen pro FPN | <bdl-checkbox id="idfpnliv" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
+| gen pro FPN | <bdl-checkbox id="idspl" titlemin="gen Fpn je knockoutován (neaktivní)" titlemax="gen Fpn je aktivní" default="true"></bdl-checkbox>  |
 | gen pro hepcidin | <bdl-checkbox id="idhep" titlemin="gen pro hepcidin je knockoutován (neaktivní)" titlemax="gen pro expresi hepcidinu je aktivní" default="true"></bdl-checkbox>  |
 | 1$\mu$g při stisknutí | <bdl-buttonparams title="LPS injekce" ids="idlps" values="1" fromid="idfmi"></bdl-buttonparams>  |
 | Malabsorpce (1-norma) | <bdl-range id="id11" title="" min="0" max="1" default="1" step="0.05"></bdl-range>  |
