@@ -6,9 +6,7 @@ th,td,tr {
     padding:0px 0px;
     margin:0px 0px;
 }
-</style><bdl-tabs idlist="obr1,obr2,obr3" titlelist="sim,iron metabolism,hepcidin"></bdl-tabs>
-<div class="w3-row" id="obr1">
-
+</style><div class="w3-row" id="obr1">
 <div class="w3-col s12 m8 l8 w3-center">
 
 **iron metabolism in the hepatocyte**
@@ -179,18 +177,5 @@ legend
 |![imageferroportin](smallferroportin.png)|Ferroportin|Ferroportin|
 |![imagetfr1](imgtfr1.png)|TfR1|Transferrin receptor 1|
 |![imageschemasteap3](imgmetaloreduktaza.png)| STEAP3 | Metalloreductase |
-
-</div>
-
-<div id="obr2">
-
-![hepcidin2](hepcidin2.png)
-
-</div>
-<div id="obr3">
-
-A ![1mediumregulacehepcidinu](imageregulacehepcidinu.png)
-
-**A** Schématické znázornění role hepcidinu v udržování homeostázy železa. Hepcidin je regulován primárně třemi nezávislými mechanismy: 1) aktuální hladina železa - zvyšuje hladinu hepcidinu, 2) aseptický nebo infekční zánět - zvyšuje hladinu hepcidinu, 3) erytropoetická aktivita - snižuje hladinu hepcidinu.
 
 </div>
