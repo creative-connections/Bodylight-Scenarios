@@ -2,8 +2,7 @@
 img[alt^="image"] {max-width:20px;}
 img[alt^="bigimage"] {  max-height:60px}
 tbody tr:nth-child(even){background-color:#f1f1f1}
-</style><bdl-tabs idlist="obr1,obr2,obr3" titlelist="sim,metabolismus železa,hepcidin"></bdl-tabs>
-<div class="w3-row" id="obr1">
+</style><div class="w3-row">
 <div class="w3-col s12 m8 l8 w3-center">
 
 **metabolismus železa v buňce hepatocytu**
@@ -203,16 +202,4 @@ button
 |![imagetfr1](imgtfr1.png)|TfR1|Transferinový receptor 1|
 |![imageschemasteap3](imgmetaloreduktaza.png)| STEAP3 | Metaloreduktáza |
 konec legendy
-</div>
-<div id="obr2">
-
-![hepcidin2](hepcidin2.png)
-
-</div>
-<div id="obr3">
-
-A ![1mediumregulacehepcidinu](imageregulacehepcidinu.png)
-
-**A** Schématické znázornění role hepcidinu v udržování homeostázy železa. Hepcidin je regulován primárně třemi nezávislými mechanismy: 1) aktuální hladina železa - zvyšuje hladinu hepcidinu, 2) aseptický nebo infekční zánět - zvyšuje hladinu hepcidinu, 3) erytropoetická aktivita - snižuje hladinu hepcidinu.
-
 </div>
