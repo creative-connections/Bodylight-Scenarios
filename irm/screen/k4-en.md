@@ -1,4 +1,9 @@
-<div class="w3-row">
+<style>
+img[alt^="image"] {max-width:20px;}
+img[alt^="bigimage"] {  max-height:60px}
+tbody tr:nth-child(even){background-color:#f1f1f1}
+</style><bdl-tabs idlist="obr1,obr2,obr3" titlelist="sim,celková regulace,buněčná regulace"></bdl-tabs>
+<div class="w3-row" id="obr1">
 <div class="w3-twothird w3-center">
 
 **iron metabolism, an overview**
@@ -89,4 +94,13 @@ In patients with malabsorption syndrome (for any reason), it is not possible to 
 </div>
 
 </div>
+</div>
+<div id="obr2">
+
+![feintake](feintake.png)
+
+</div>
+<div id="obr3">
+
+![fecelular](fecelular.png)
 </div>
