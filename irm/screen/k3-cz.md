@@ -16,16 +16,16 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a-text findex="7" aname="children.0.Hodnota6_text" convertor="1,0.9"></bdl-bind2a-text>
 <bdl-bind2a-text findex="10" aname="children.0.Hodnota5_text" convertor="1,4.4"></bdl-bind2a-text>
 <bdl-bind2a-text findex="9" aname="children.0.Hodnota4_text" convertor="1,13.3"></bdl-bind2a-text>
-<bdl-bind2a findex="26" aname="children.0.children.398.MerakSemaforu5_anim" amin="0" amax="156"></bdl-bind2a>
-<bdl-bind2a findex="3" aname="children.0.children.398.MerakSemaforu4_anim" amin="0" amax="156"></bdl-bind2a>
-<bdl-bind2a findex="25" aname="children.0.children.398.MerakSemaforu3_anim" amin="0" amax="156"></bdl-bind2a>
-<bdl-bind2a findex="24" aname="children.0.children.398.MerakSemaforu2_anim" amin="0" amax="156"></bdl-bind2a>
-<bdl-bind2a findex="11" aname="children.0.children.398.MerakSemaforu1_anim" amin="0" amax="156"></bdl-bind2a>
-<bdl-bind2a findex="23" aname="children.0.children.398.Semafor5_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
-<bdl-bind2a findex="14" aname="children.0.children.398.Semafor4_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
-<bdl-bind2a findex="22" aname="children.0.children.398.Semafor3_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
-<bdl-bind2a findex="21" aname="children.0.children.398.Semafor2_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
-<bdl-bind2a findex="20" aname="children.0.children.398.Semafor1_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="26" aname="children.0.children.387.MerakSemaforu5_anim" amin="0" amax="156"></bdl-bind2a>
+<bdl-bind2a findex="3" aname="children.0.children.387.MerakSemaforu4_anim" amin="0" amax="156"></bdl-bind2a>
+<bdl-bind2a findex="25" aname="children.0.children.387.MerakSemaforu3_anim" amin="0" amax="156"></bdl-bind2a>
+<bdl-bind2a findex="24" aname="children.0.children.387.MerakSemaforu2_anim" amin="0" amax="156"></bdl-bind2a>
+<bdl-bind2a findex="11" aname="children.0.children.387.MerakSemaforu1_anim" amin="0" amax="156"></bdl-bind2a>
+<bdl-bind2a findex="23" aname="children.0.children.387.Semafor5_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="14" aname="children.0.children.387.Semafor4_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="22" aname="children.0.children.387.Semafor3_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="21" aname="children.0.children.387.Semafor2_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="20" aname="children.0.children.387.Semafor1_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a findex="0" aname="children.0.KanalCerveny2_anim" amin="159" amax="0"></bdl-bind2a>
 <bdl-bind2a findex="2" aname="children.0.SipkaCerven11_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.0.tmaveZelena2_anim" amin="0" amax="156"></bdl-bind2a>
@@ -81,7 +81,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a findex="7" aname="children.0.Merak6_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="8" aname="children.0.KapackaFeMale_anim" amin="0" amax="9"></bdl-bind2a>
 <bdl-bind2a findex="5" aname="children.0.SipkaRuzovaZluta_anim" amin="0" amax="159"></bdl-bind2a>
-<bdl-bind2a findex="4" aname="children.0.children.87.FeTransferin_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="4" aname="children.0.children.388.FeTransferin_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="3" aname="children.0.KanalFialovy_anim" amin="159" amax="0"></bdl-bind2a>
 <bdl-bind2a findex="2" aname="children.0.SipkacervenaFialova2_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="0" aname="children.0.SipkaFialovaVehicle_anim" amin="0" amax="159"></bdl-bind2a>
@@ -97,7 +97,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a-play findex="8" aname="children.0.StrikackaCervena_anim" amin="0" amax="29"></bdl-bind2a-play>
 <bdl-bind2a-play findex="6" aname="children.0.KapackaJehlaFe_anim" amin="0" amax="9"></bdl-bind2a-play>
 <bdl-bind2a-play findex="6" aname="children.0.ZelezoVelkeKapacka_anim" amin="0" amax="159"></bdl-bind2a-play>
-<bdl-bind2a-play findex="6" aname="children.0.children.90.children.59.Kapka1_anim" amin="0" amax="20"></bdl-bind2a-play>
+<bdl-bind2a-play findex="6" aname="children.0.children.87.children.59.Kapka1_anim" amin="0" amax="20"></bdl-bind2a-play>
 
 </div>
 <div class="w3-col s12 m6 l6  w3-justify w3-padding w3-small" style="line-height:1.0">
