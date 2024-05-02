@@ -38,9 +38,9 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a findex="4" aname="children.0.Fe2Skupina_anim" amin="158" amax="0" fmin="0.5" fmax="2.97"></bdl-bind2a>
 
 
-<bdl-bind2a findex="4" aname="KanalCerveny_anim" amin="0" amax="99" fmin="0.5" fmax="2.97"></bdl-bind2a>
-<bdl-bind2a findex="4" aname="KanalModry_anim" amin="0" amax="99" fmin="0.5" fmax="2.97"></bdl-bind2a>
-<bdl-bind2a findex="4" aname="CervenaSrafovanaZastaveni1_anim" amin="99" amax="0" fmin="0.5" fmax="2.97"></bdl-bind2a>
+<bdl-bind2a findex="4" aname="KanalCerveny_anim" amin="0" amax="99" coeff="1.5"></bdl-bind2a>
+<bdl-bind2a findex="4" aname="KanalModry_anim" amin="0" amax="99" coeff="1.5"></bdl-bind2a>
+<bdl-bind2a findex="4" aname="CervenaSrafovanaZastaveni1_anim" amin="99" amax="0"></bdl-bind2a>
 <bdl-bind2a findex="4" aname="children.0.CervenaSrafovanaZastaveni2_anim" amin="99" amax="0" fmin="0.5" fmax="2.97"></bdl-bind2a>
 <bdl-bind2a findex="4" aname="Merak4_anim" amin="0" amax="99" fmin="0.5" fmax="2.97"></bdl-bind2a>
 <bdl-bind2a findex="6" aname="children.0.DcytB_anim" amin="0" amax="159" fmin="0.91" fmax="2.74"></bdl-bind2a>
@@ -62,7 +62,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a findex="16" aname="children.0.Hep_anim" amin="0" amax="159" fmin="0.5" fmax="4"></bdl-bind2a>
 
 
-<bdl-bind2a findex="15" aname="KanalFialovy_anim" amin="99" amax="0" fmin="0.03" fmax="1.3"></bdl-bind2a>
+<bdl-bind2a findex="15" aname="KanalFialovy_anim" amin="99" amax="0"></bdl-bind2a>
 <bdl-bind2a findex="11" aname="Semafor_anim" amin="4" amax="5" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a-text findex="13" aname="Hodnota6_text" convertor="1,0.0412"></bdl-bind2a-text>
 <bdl-bind2a findex="18" aname="children.0.children.634.FeTransferin_anim" amin="0" amax="159" fmin="0.2" fmax="3"></bdl-bind2a>
@@ -116,6 +116,8 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a-play findex="28" aname="children.0.children.630.children.59.Kapka1_anim"></bdl-bind2a-play>
 
 <bdl-bind2a findex="28" aname="children.0.KapackaFeFialovaSipkaOut_anim" amin="0" amax="159" fmin="0" fmax="11"></bdl-bind2a>
+
+<!--bdl-chartjs-time width="600" height="200" fromid="idfmi" labels="" initialdata="0" refindex="15" refvalues="1"></bdl-chartjs-time-->
 
 
 </div>
