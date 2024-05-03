@@ -17,27 +17,22 @@ th,td,tr {
 <bdl-bind2a-text findex="17" aname="children.1.Hodnota6_text"></bdl-bind2a-text>
 <bdl-bind2a-text findex="10" aname="children.1.Hodnota2_text"></bdl-bind2a-text>
 <bdl-bind2a-text findex="11" aname="children.1.Hodnota4_text" convertor="1,100"></bdl-bind2a-text>
-<bdl-bind2a-text findex="9" aname="children.1.Hodnota1_text"></bdl-bind2a-text>
+<bdl-bind2a-text findex="9" aname="children.1.Hodnota1_text" convertor="1,100,0.00000001"></bdl-bind2a-text>
 <bdl-bind2a-text findex="2" aname="children.1.Hodnota7_text" convertor="1,19.24"></bdl-bind2a-text>
 <bdl-bind2a findex="24" aname="children.1.KapackaFeFialovaSipkaOut_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="25" aname="children.1.StrikackaFeFialovaSipkaIn_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="13" aname="children.1.ZlutaSipka1_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="26" aname="children.1.FialovaSipkaTransferin_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="14" aname="children.1.SipkaTmaveModraBMP6_anim" amin="0" amax="159"></bdl-bind2a>
-<bdl-bind2a findex="15" aname="children.1.SipkaIL6_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="15" aname="children.1.SipkaIL6_anim" amin="0" amax="159" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.CervenaSipka5_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="10" aname="children.1.Merak6_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranzova1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="26" aname="children.1.CervenaSipka3_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="26" aname="children.1.CervenaSipka2_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranzova2_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a-play findex="24" aname="children.1.KapackaFeMale_anim" amin="0" amax="99"></bdl-bind2a-play>
-<bdl-bind2a-play findex="24" aname="children.1.ZelezoVelkeKapacka_anim" amin="0" amax="99"></bdl-bind2a-play>
-<bdl-bind2a-play findex="24" aname="children.1.children.579.children.59.Kapka1_anim" amin="0" amax="99"></bdl-bind2a-play>
-<bdl-bind2a-play findex="25" aname="children.1.StrikackaCervena_anim" amin="0" amax="99"></bdl-bind2a-play>
-<bdl-bind2a-play findex="24" aname="children.1.KapackaJehlaFe_anim" amin="0" amax="99"></bdl-bind2a-play>
 <bdl-bind2a findex="14" aname="children.1.SmadSipka_anim" amin="0" amax="159"></bdl-bind2a>
-<bdl-bind2a findex="15" aname="children.1.SmatSipka_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="11" aname="children.1.SmatSipka_anim" amin="0" amax="159" fmin="0" fmax="500"></bdl-bind2a>
 <bdl-bind2a findex="4" aname="children.1.children.573.Fe3SkupinaMitochondrie1_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="2" aname="children.1.children.573.KanalSedy_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="2" aname="children.1.children.573.MitochondrieSipkaCervena1_anim" amin="0" amax="159"></bdl-bind2a>
@@ -54,24 +49,24 @@ th,td,tr {
 <bdl-bind2a findex="7" aname="children.1.children.516.Semafor3_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a findex="18" aname="children.1.children.516.Semafor2_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a findex="8" aname="children.1.children.516.Semafor1_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
-<bdl-bind2a findex="15" aname="children.1.ModraRuzovaPruhovanaSipka_anim" amin="159" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="15" aname="children.1.ModraRuzovaPruhovanaSipka_anim" amin="159" amax="0" fmin="0" fmax="3000"></bdl-bind2a>
 <bdl-bind2a findex="3" aname="children.1.children.511.FeTransferin_anim" amin="0" amax="159"></bdl-bind2a>
-<bdl-bind2a findex="9" aname="children.1.ModraPruhovana_anim" amin="159" amax="0" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="9" aname="children.1.ModraPruhovana_anim" amin="159" amax="0" fmin="0" fmax="6.5e-11"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranova2_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="17" aname="children.1.SipkaRuzova1_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="4" aname="children.1.Fe3SkupinaMitochondrie2_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.ModraSipka2_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.ModraSipka1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a findex="10" aname="children.1.Hepcidin_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="10" aname="children.1.Hepcidin_anim" amin="159" amax="0"></bdl-bind2a>
 <bdl-bind2a findex="14" aname="children.1.TmaveModraSipka_anim" amin="0" amax="159"></bdl-bind2a>
-<bdl-bind2a findex="11" aname="children.1.Ruzova1_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="15" aname="children.1.Ruzova1_anim" amin="0" amax="159" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.CervenaSipka6_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.CervenaSipka1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranova1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="13" aname="children.1.ZlutaSipka3_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="13" aname="children.1.ZlutaSipka2_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="12" aname="children.1.RuzovaZlutaPruhovanaSipka_anim" amin="159" amax="0"></bdl-bind2a>
-<bdl-bind2a findex="2" aname="children.1.KanalSedy2_anim" amin="159" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.1.KanalSedy2_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="2" aname="children.1.MitochondrieSipkaCervena3_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="2" aname="children.1.MitochondrieSipkaCervena4_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.ZlutyVodikVnitrniCervenyKanal_anim" amin="0" amax="159"></bdl-bind2a>
@@ -89,8 +84,8 @@ th,td,tr {
 <bdl-bind2a findex="4" aname="children.1.Merak8_anim" amin="0" amax="99" fmin="0" fmax="114"></bdl-bind2a>
 <bdl-bind2a findex="10" aname="children.1.Merak2_anim" amin="0" amax="99" fmin="0" fmax="4.8" convertor="1,1.2"></bdl-bind2a>
 <bdl-bind2a findex="3" aname="children.1.Merak3_anim" amin="0" amax="99"></bdl-bind2a>
-<bdl-bind2a findex="9" aname="children.1.Merak1_anim" amin="0" amax="99"></bdl-bind2a>
-<bdl-bind2a findex="8" aname="children.1.SipkaRuzova2_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="9" aname="children.1.Merak1_anim" amin="0" amax="99" fmin="0" fmax="6e-11"></bdl-bind2a>
+<bdl-bind2a findex="28" aname="children.1.SipkaRuzova2_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.children.188.OranzovaSipkaSpodniVehicle_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.children.188.KanalZlutyVehicle_anim" amin="99" amax="0"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.children.188.SipkaCervenaHUvnitrVehicle_anim" amin="0" amax="99"></bdl-bind2a>
@@ -100,11 +95,16 @@ th,td,tr {
 <bdl-bind2a findex="1" aname="children.1.children.188.PrechodUvnitrVehicle_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.children.188.SipkaHneda1Vehicle_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.children.188.SipkaHneda2Vehicle_anim" amin="0" amax="99"></bdl-bind2a>
-<!--bdl-bind2a findex="9" aname="children.1.StrikackaModra_anim" amin="1" amax="29" fmin="0" fmax="1"></bdl-bind2a-->
-<bdl-bind2a findex="13" aname="children.1.StrikackaModra_anim" amin="1" amax="29"></bdl-bind2a>
+<bdl-bind2a findex="9" aname="children.1.StrikackaModra_anim" amin="1" amax="29" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a findex="7" aname="children.1.SemaforFpn_anim" amin="0" amax="19" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a findex="8" aname="children.1.SemaforHepcidin_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a findex="2" aname="children.1.CervenaSipka7_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a-play findex="24" aname="children.1.KapackaFeMale_anim" amin="0" amax="99"></bdl-bind2a-play>
+<bdl-bind2a-play findex="24" aname="children.1.ZelezoVelkeKapacka_anim" amin="0" amax="99"></bdl-bind2a-play>
+<bdl-bind2a-play findex="24" aname="children.1.children.579.children.59.Kapka1_anim" amin="0" amax="99"></bdl-bind2a-play>
+<bdl-bind2a-play findex="25" aname="children.1.StrikackaCervena_anim" amin="0" amax="99"></bdl-bind2a-play>
+<bdl-bind2a-play findex="24" aname="children.1.KapackaJehlaFe_anim" amin="0" amax="99"></bdl-bind2a-play>
+
 
 </div>
 <div class="w3-col s12 m4 l4 w3-justify w3-small" style="line-height:0.9">
