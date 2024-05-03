@@ -13,27 +13,22 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a-text findex="17" aname="children.1.Hodnota6_text"></bdl-bind2a-text>
 <bdl-bind2a-text findex="10" aname="children.1.Hodnota2_text"></bdl-bind2a-text>
 <bdl-bind2a-text findex="11" aname="children.1.Hodnota4_text" convertor="1,100"></bdl-bind2a-text>
-<bdl-bind2a-text findex="9" aname="children.1.Hodnota1_text"></bdl-bind2a-text>
+<bdl-bind2a-text findex="9" aname="children.1.Hodnota1_text" convertor="1,100,0.00000001"></bdl-bind2a-text>
 <bdl-bind2a-text findex="2" aname="children.1.Hodnota7_text" convertor="1,19.24"></bdl-bind2a-text>
 <bdl-bind2a findex="24" aname="children.1.KapackaFeFialovaSipkaOut_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="25" aname="children.1.StrikackaFeFialovaSipkaIn_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="13" aname="children.1.ZlutaSipka1_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="26" aname="children.1.FialovaSipkaTransferin_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="14" aname="children.1.SipkaTmaveModraBMP6_anim" amin="0" amax="159"></bdl-bind2a>
-<bdl-bind2a findex="15" aname="children.1.SipkaIL6_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="15" aname="children.1.SipkaIL6_anim" amin="0" amax="159" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.CervenaSipka5_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="10" aname="children.1.Merak6_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranzova1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="26" aname="children.1.CervenaSipka3_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="26" aname="children.1.CervenaSipka2_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranzova2_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a-play findex="24" aname="children.1.KapackaFeMale_anim" amin="0" amax="99"></bdl-bind2a-play>
-<bdl-bind2a-play findex="24" aname="children.1.ZelezoVelkeKapacka_anim" amin="0" amax="99"></bdl-bind2a-play>
-<bdl-bind2a-play findex="24" aname="children.1.children.579.children.59.Kapka1_anim" amin="0" amax="99"></bdl-bind2a-play>
-<bdl-bind2a-play findex="25" aname="children.1.StrikackaCervena_anim" amin="0" amax="99"></bdl-bind2a-play>
-<bdl-bind2a-play findex="24" aname="children.1.KapackaJehlaFe_anim" amin="0" amax="99"></bdl-bind2a-play>
 <bdl-bind2a findex="14" aname="children.1.SmadSipka_anim" amin="0" amax="159"></bdl-bind2a>
-<bdl-bind2a findex="15" aname="children.1.SmatSipka_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="11" aname="children.1.SmatSipka_anim" amin="0" amax="159" fmin="0" fmax="500"></bdl-bind2a>
 <bdl-bind2a findex="4" aname="children.1.children.573.Fe3SkupinaMitochondrie1_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="2" aname="children.1.children.573.KanalSedy_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="2" aname="children.1.children.573.MitochondrieSipkaCervena1_anim" amin="0" amax="159"></bdl-bind2a>
@@ -50,24 +45,24 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a findex="7" aname="children.1.children.516.Semafor3_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a findex="18" aname="children.1.children.516.Semafor2_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a findex="8" aname="children.1.children.516.Semafor1_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
-<bdl-bind2a findex="15" aname="children.1.ModraRuzovaPruhovanaSipka_anim" amin="159" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="15" aname="children.1.ModraRuzovaPruhovanaSipka_anim" amin="159" amax="0" fmin="0" fmax="3000"></bdl-bind2a>
 <bdl-bind2a findex="3" aname="children.1.children.511.FeTransferin_anim" amin="0" amax="159"></bdl-bind2a>
-<bdl-bind2a findex="9" aname="children.1.ModraPruhovana_anim" amin="159" amax="0" fmin="0" fmax="1"></bdl-bind2a>
+<bdl-bind2a findex="9" aname="children.1.ModraPruhovana_anim" amin="159" amax="0" fmin="0" fmax="6.5e-11"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranova2_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="17" aname="children.1.SipkaRuzova1_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="4" aname="children.1.Fe3SkupinaMitochondrie2_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.ModraSipka2_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.ModraSipka1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a findex="10" aname="children.1.Hepcidin_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="10" aname="children.1.Hepcidin_anim" amin="159" amax="0"></bdl-bind2a>
 <bdl-bind2a findex="14" aname="children.1.TmaveModraSipka_anim" amin="0" amax="159"></bdl-bind2a>
-<bdl-bind2a findex="11" aname="children.1.Ruzova1_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="15" aname="children.1.Ruzova1_anim" amin="0" amax="159" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.CervenaSipka6_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.CervenaSipka1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranova1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="13" aname="children.1.ZlutaSipka3_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="13" aname="children.1.ZlutaSipka2_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="12" aname="children.1.RuzovaZlutaPruhovanaSipka_anim" amin="159" amax="0"></bdl-bind2a>
-<bdl-bind2a findex="2" aname="children.1.KanalSedy2_anim" amin="159" amax="0"></bdl-bind2a>
+<bdl-bind2a findex="2" aname="children.1.KanalSedy2_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="2" aname="children.1.MitochondrieSipkaCervena3_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="2" aname="children.1.MitochondrieSipkaCervena4_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.ZlutyVodikVnitrniCervenyKanal_anim" amin="0" amax="159"></bdl-bind2a>
@@ -85,8 +80,8 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a findex="4" aname="children.1.Merak8_anim" amin="0" amax="99" fmin="0" fmax="114"></bdl-bind2a>
 <bdl-bind2a findex="10" aname="children.1.Merak2_anim" amin="0" amax="99" fmin="0" fmax="4.8" convertor="1,1.2"></bdl-bind2a>
 <bdl-bind2a findex="3" aname="children.1.Merak3_anim" amin="0" amax="99"></bdl-bind2a>
-<bdl-bind2a findex="9" aname="children.1.Merak1_anim" amin="0" amax="99"></bdl-bind2a>
-<bdl-bind2a findex="8" aname="children.1.SipkaRuzova2_anim" amin="0" amax="159"></bdl-bind2a>
+<bdl-bind2a findex="9" aname="children.1.Merak1_anim" amin="0" amax="99" fmin="0" fmax="6e-11"></bdl-bind2a>
+<bdl-bind2a findex="28" aname="children.1.SipkaRuzova2_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.children.188.OranzovaSipkaSpodniVehicle_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.children.188.KanalZlutyVehicle_anim" amin="99" amax="0"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.children.188.SipkaCervenaHUvnitrVehicle_anim" amin="0" amax="99"></bdl-bind2a>
@@ -96,12 +91,16 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-bind2a findex="1" aname="children.1.children.188.PrechodUvnitrVehicle_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.children.188.SipkaHneda1Vehicle_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.children.188.SipkaHneda2Vehicle_anim" amin="0" amax="99"></bdl-bind2a>
-<!--bdl-bind2a findex="9" aname="children.1.StrikackaModra_anim" amin="1" amax="29" fmin="0" fmax="1"></bdl-bind2a-->
-<bdl-bind2a findex="13" aname="children.1.StrikackaModra_anim" amin="1" amax="29"></bdl-bind2a>
+<bdl-bind2a findex="9" aname="children.1.StrikackaModra_anim" amin="1" amax="29" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a findex="7" aname="children.1.SemaforFpn_anim" amin="0" amax="19" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a findex="8" aname="children.1.SemaforHepcidin_anim" amin="0" amax="10" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a findex="2" aname="children.1.CervenaSipka7_anim" amin="0" amax="159"></bdl-bind2a>
-
+<bdl-bind2a-play findex="24" aname="children.1.KapackaFeMale_anim" amin="0" amax="99"></bdl-bind2a-play>
+<bdl-bind2a-play findex="24" aname="children.1.ZelezoVelkeKapacka_anim" amin="0" amax="99"></bdl-bind2a-play>
+<bdl-bind2a-play findex="24" aname="children.1.children.579.children.59.Kapka1_anim" amin="0" amax="99"></bdl-bind2a-play>
+<bdl-bind2a-play findex="25" aname="children.1.StrikackaCervena_anim" amin="0" amax="99"></bdl-bind2a-play>
+<bdl-bind2a-play findex="24" aname="children.1.KapackaJehlaFe_anim" amin="0" amax="99"></bdl-bind2a-play>
+<!--bdl-bind2a findex="9" aname="children.1.StrikackaModra_anim" amin="1" amax="29" fmin="0" fmax="1"></bdl-bind2a-->
 
 </div>
 <div class="w3-col s12 m4 l4 w3-justify w3-small" style="line-height:1.0">
@@ -113,7 +112,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <!-- hidden input  - buttonparams sets this input value explicitly, then it is read by fmi component -->
 <input id="idlps" value="" type="number" style="display:none"/>
 
-<bdl-fmi id="idfmi" mode="" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="4" fpslimit="10" guid="{9aa10b27-427c-44c9-a381-5815d5706331}" valuereferences="637534208,637534245,33554450,33554447,33554451,637534243,637534244,16777268,16777266,33554434,33554432,33554436,637534264,637534265,637534270,637534268,33554433,33554441,16777267,16777269,16777270,33554443,33554442,33554444,16777264,16777261,637534246,16777262" valuelabels="Fe_liv,Fe_liv_in_ser,Fe_liv_2,Fe_ser,Fe_liv_3,Fe_liv_to_ferritin,Fe_liv_from_ferritin,Fpn_liv_knockout,hep_knockout,LPS,hep,Il6,hep_in,hep_out,Bmp6_in,Il6_in,Bmp6,Fpn_liv,Fpn_duo_knockout,Fpn_spl_knockout,Fpn_res_knockout,Fpn_duo,Fpn_spl,Fpn_res,transfusion,bleeding,Fe_liv_out_ser,malabsorption" inputs="id1,16777260,1,1;idfpnliv,16777268,1,1,t;idhep,16777266,1,1,t;idlps,33554434,1,1,t;id11,16777262,1,1,t;id10,16777265,1,1,t;idspl,16777269,1,1,t;idres,16777270,1,1,t;id7,16777261,1,1,t;id8,16777264,1,1,t" inputlabels="Fe_food,Fpn_liv_knockout,hep_knockout,LPS,malabsorption,unregulated_absorption,Fpn_spl_knockout,Fpn_res_knockout,bleeding,transfusion" showtime="true" showtimemultiply="3600"></bdl-fmi>
+<bdl-fmi id="idfmi" mode="" src="FeMetabolism_FeMetabolismModel.js" fminame="FeMetabolism_FeMetabolismModel" tolerance="0.000001" starttime="0" fstepsize="4" fpslimit="10" guid="{9aa10b27-427c-44c9-a381-5815d5706331}" valuereferences="637534208,637534245,33554450,33554447,33554451,637534243,637534244,16777268,16777266,33554434,33554432,33554436,637534264,637534265,637534270,637534268,33554433,33554441,16777267,16777269,16777270,33554443,33554442,33554444,16777264,16777261,637534246,16777262,637534253" valuelabels="Fe_liv,Fe_liv_in_ser,Fe_liv_2,Fe_ser,Fe_liv_3,Fe_liv_to_ferritin,Fe_liv_from_ferritin,Fpn_liv_knockout,hep_knockout,LPS,hep,Il6,hep_in,hep_out,Bmp6_in,Il6_in,Bmp6,Fpn_liv,Fpn_duo_knockout,Fpn_spl_knockout,Fpn_res_knockout,Fpn_duo,Fpn_spl,Fpn_res,transfusion,bleeding,Fe_liv_out_ser,malabsorption,Fpn_liv_mRNA_in" inputs="id1,16777260,1,1;idfpnliv,16777268,1,1,t;idhep,16777266,1,1,t;idlps,33554434,1,1,t;id11,16777262,1,1,t;id10,16777265,1,1,t;idspl,16777269,1,1,t;idres,16777270,1,1,t;id7,16777261,1,1,t;id8,16777264,1,1,t" inputlabels="Fe_food,Fpn_liv_knockout,hep_knockout,LPS,malabsorption,unregulated_absorption,Fpn_spl_knockout,Fpn_res_knockout,bleeding,transfusion" showtime="true" showtimemultiply="3600"></bdl-fmi>
 
 <div class="w3-border w3-panel">
 
@@ -135,8 +134,7 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <bdl-quizx id="q2.1" type="choice2" question="2.1 Spusťte simulaci a nasimulujte masivní duodenální resekci tím, že snížíte malabsorpci na hodnotu 0.05 (5% oproti normě). Jaké následky vidíte?" answers="A. postupné snižování koncentrace železa v plasmě i v buňkách. Nedostatek železa pro jiné procesy, např. snížená produkce nových erytrocytů, anémie, ...|B. postupné zvyšování železa v plasmě i v buňkách s důsledky pro další orgány s projevy podobnými jako hemochromatóza" correctoptions="true|false" explanations="ano, simulace ukazuje dlouhodobý nedostatek železa pro jiné metabolické procesy viz další kapitola|ne, viz další kapitola" buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q2.2" type="choice2" question="2.2 Pokračujte v simulaci, zvyšte množství železa v potravě 10x nad normu (tj. asi na hodnotu 2000). Stačí taková kompenzace nahradit masivní duodenální resekci nasimulovanou v předchozí otázce?" answers="A. Ano. Zvýšený příjem železa v potravě může pomoci v rekonvalescenci a upraví hladinu železa v buňkách i v plazmě k normě |B. Ne. Zvýšený příjem železa nedostačuje k metabolickým potřebám a hladina v plazmě i v buňkách klesá a postupně se vyčerpává." correctoptions="false|true" explanations="ne|ano" buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q2.3" type="choice2" question="2.3 Pokračujte v simulaci, snižte množství železa v potravě na normu (tj. hodnotu 219). Zvyšujte postupně příjem krve z krevní transfuze a hledejte postupně hodnotu, která vede k normalizaci koncentrace železa v plasmě i v buňkách (tj. k hodnotě 1.0" answers="A. Stačí příjem 0.1 ml/h |B. Stačí příjem 0.7 ml/h|C. krevní transfúze asi 2.5 ml/h" correctoptions="false|true|false" explanations="ne|ano|ne" buttontitle="zkontrolovat odpověď"></bdl-quizx>
-<bdl-quizx id="q2.4" type="choice2" question="2.4 ... 
-Perorální přípravky s obsahem železa nepřinesly efekt, případně je pacientka netolerovala. Subjektivní potíže pacientky se zhoršovaly a v roce 2021 byla žena odeslána na hematologii. Tam opakovaně (celkem 7×) dostávala každé 2 měsíce i.v. preparát s nízkým obsahem železa (celkem cca 430 mg Fe). Pro mikrocytovou anémii a stále velmi výrazné příznaky ji v dubnu 2022 hematoložka odeslala do nutriční ambulance pro konzervativně neřešitelnou sideropenickou anémii, sideropenii a těžký únavový syndrom. Co je sideropenická anémie?" answers="A. stav, kdy v těle dochází k nadměrné akumulaci železa, což vede k poškození orgánů.|B. typ anémie způsobený nedostatkem železa v těle, což vede k snížené produkci hemoglobinu a červených krvinek.|genetické onemocnění, při kterém tělo produkuje nadměrné množství červených krvinek." correctoptions="false|true|false" explanations="ne|ano|ne" buttontitle="zkontrolovat odpověď"></bdl-quizx>
+<bdl-quizx id="q2.4" type="choice2" question="2.4 ...  Perorální přípravky s obsahem železa nepřinesly efekt, případně je pacientka netolerovala. Subjektivní potíže pacientky se zhoršovaly a v roce 2021 byla žena odeslána na hematologii. Tam opakovaně (celkem 7×) dostávala každé 2 měsíce i.v. preparát s nízkým obsahem železa (celkem cca 430 mg Fe). Pro mikrocytovou anémii a stále velmi výrazné příznaky ji v dubnu 2022 hematoložka odeslala do nutriční ambulance pro konzervativně neřešitelnou sideropenickou anémii, sideropenii a těžký únavový syndrom. Co je sideropenická anémie?" answers="A. stav, kdy v těle dochází k nadměrné akumulaci železa, což vede k poškození orgánů.|B. typ anémie způsobený nedostatkem železa v těle, což vede k snížené produkci hemoglobinu a červených krvinek.|genetické onemocnění, při kterém tělo produkuje nadměrné množství červených krvinek." correctoptions="false|true|false" explanations="ne|ano|ne" buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quiz-summary id="qs">
 <span class="w3-sand"><br/>Vstupní laboratorní vyšetření ukázalo, že vitaminy D i B12 byly dobře substituované, ale hladiny železa i feritinu velmi nízké. Byla jí nasazena železitá karboxymaltóza, která byla do data prezentace kazuistiky (15. září 2022) podána 4×. Po každé aplikaci 500 mg FCM pacientka uvádí významné zlepšení kvality života, ale po několika týdnech se stav zhoršuje a sama se vrací k dalšímu vyšetření (nalézán pokračující ID) a aplikaci FCM.</span><br/>Shrnutí odpovědí</bdl-quiz-summary>
 <bdl-quiz-control ids="q2.1,q2.2,q2.3,q2.4,qs"></bdl-quiz-control>
