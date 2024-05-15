@@ -95,10 +95,14 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 
 <div class="w3-sand">
 
-**Kazuistika závěr**:
-U pacientů s malabsorpčním syndromem (z jakéhokoliv důvodu) není možné spoléhat na perorální substituci nutrientů ani mikronutrientů, nýbrž je nutné podávat je parenterálně a „myslet na to ne jako na poslední možnost, ale jako na jednu z prvních možností“. Lidé po bariatrické operaci zůstávají doživotními pacienty, měli by být sledováni ve specializované nutriční poradně a nikdy by neměli sejít ze zřetele. Kvalita života se ukazuje jako velmi zásadní marker úspěšnosti léčby.
+**Kazuistika závěr**
+<bdl-quizx id="q4.1" type="choice2" question="4.1 Spusťte simulaci a nasimulujte příjem potravy bohatý na železo (příjem železa 2000 mug/h). Jaké následky vidíte?" answers="A. postupné zvyšování koncentrace železa v plasmě i v buňkách. |B. postupné zvýšování koncentrace hepcidinu, koncentrace železa v plasmě zůstává stejná." correctoptions="false|true" explanations="ne|ano" buttontitle="zkontrolovat odpověď"></bdl-quizx>
+<bdl-quizx id="q4.2" type="choice2" question="4.2 Pokračujte v simulaci a vypněte gen pro hepcidin. Hepcidin přestává regulovat metabolismus železa v organismu. Co pozorujete." answers="A. postupné zvyšování koncentrace železa v plasmě i v buňkách. |B. postupné snižování koncentrace železa v plasmě a v buňkách." correctoptions="true|false" explanations="ano|ne" buttontitle="zkontrolovat odpověď"></bdl-quizx>
+<bdl-quizx id="q4.3" type="choice2" question="4.3 Vyberte hlavní roli hepcidinu v metabolismu železa." answers="A. hepcidin brání přetížení organismu železem tím, že redukuje jeho výdej z enterocytu duodena a nepřímo tedy vstřebávání železa, pokud je strava bohatá na železo |B. hepcidin brání přetížení organismu železem tím, že reguluje jeho výdej ledvinami do moči" correctoptions="true|false" explanations="ano|ne" buttontitle="zkontrolovat odpověď"></bdl-quizx>
+<bdl-quizx id="q4.4" type="choice2" question="Fyziologická regulace příjmu železa hepcidinem u nízkých hladin železa v séru nemusí stačit pro příjem železa u pacientů s malabsorpčním syndromem (z jakéhokoliv důvodu). Vyberte nejvhodnější závěr:" answers="A. Perorální substituce nutrientů ani mikronutrientů nemusí stačit.  Lidé po bariatrické operaci zůstávají doživotními pacienty závislými na parenterální substituci, měli by být sledováni ve specializované nutriční poradně a nikdy by neměli sejít ze zřetele. Kvalita života se ukazuje jako velmi zásadní marker úspěšnosti léčby.|B.Perorální substituce nutrientů a mikronutrientů u pacientů po bariatrické operaci stačí.  Lidé nemusí být pravidelně sledováni ve specializované nutriční poradně." correctoptions="true|false" explanations="ano|ne" buttontitle="zkontrolovat odpověď"></bdl-quizx><bdl-quiz-summary id="qs">
+</bdl-quiz-summary>
+<bdl-quiz-control ids="q4.1,q4.2,q4.3,q4.4,qs"></bdl-quiz-control>
 
-Zdroj: Křížová J. Když je hematolog na sideropenii krátký... Iron Academy 2022: Proč rozumět metabolismu železa a jeho vlivu na zdraví pacienta, 15. 9. 2022.
 </div>
 
 </div>
