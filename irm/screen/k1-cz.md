@@ -9,9 +9,8 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <div class="w3-row">
 <div class="w3-col s12 m7 l7 w3-center">
 
-
 **metabolismus železa v buňce duodena**
-<bdl-animate-adobe src="DuodenumFinalObrazovka7_Text.js" width="824" height="824" name="DuodenumFinalObrazovka7_Text" fromid="idfmi" responsive="true"></bdl-animate-adobe>
+<bdl-animate-adobe src="DuodenumFinalObrazovka8_Text.js" width="824" height="824" name="DuodenumFinalObrazovka8_Text" fromid="idfmi" responsive="true"></bdl-animate-adobe>
 
 <bdl-bind2a findex="3" aname="SipkaCervena1_anim" amin="0" amax="100" fmin="1" fmax="1000"></bdl-bind2a>
 <bdl-bind2a findex="3" aname="Merak1_anim" amin="0" amax="99" fmin="0" fmax="1000"></bdl-bind2a>
@@ -202,7 +201,6 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <div id="obr2">
 
 ![duodenum2](duodenum2.png)
-
 
 </div>
 <div id="obr3">
