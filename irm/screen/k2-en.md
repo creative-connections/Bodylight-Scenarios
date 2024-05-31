@@ -26,7 +26,7 @@ th,td,tr {
 <bdl-bind2a findex="14" aname="children.1.SipkaTmaveModraBMP6_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="15" aname="children.1.SipkaIL6_anim" amin="0" amax="159" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.CervenaSipka5_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a findex="10" aname="children.1.Merak6_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="17" aname="children.1.Merak6_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranzova1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="26" aname="children.1.CervenaSipka3_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="26" aname="children.1.CervenaSipka2_anim" amin="0" amax="159"></bdl-bind2a>
@@ -104,7 +104,6 @@ th,td,tr {
 <bdl-bind2a-play findex="24" aname="children.1.children.579.children.59.Kapka1_anim" amin="0" amax="99"></bdl-bind2a-play>
 <bdl-bind2a-play findex="25" aname="children.1.StrikackaCervena_anim" amin="0" amax="99"></bdl-bind2a-play>
 <bdl-bind2a-play findex="24" aname="children.1.KapackaJehlaFe_anim" amin="0" amax="99"></bdl-bind2a-play>
-
 
 </div>
 <div class="w3-col s12 m4 l4 w3-justify w3-small" style="line-height:0.9">
