@@ -1,3 +1,4 @@
-* [0 Úvod CZ](#index.md)
-  * [1 KO, biochem](#screen/k1-cz.md)
-  * [2 Patfyz.SS](#screen/k4-cz.md)
+
+  * [pacient1](#pacient1.md)
+  * [pacient2-oxy](#pacient2-oxy.md)
+  * [pacient3-scmv](#pacient2.md)
