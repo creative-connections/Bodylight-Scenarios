@@ -94,7 +94,7 @@ API to VR <!--bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval=
           buttontitle="zkontrolovat odpověď"></bdl-quizx>
 
 <bdl-quizx id="q1.2" type="choice2" 
-          question="1.2 Změřili jste saturaci kyslíku (sO2). Jak ji popíšete?" 
+          question="1.2 Simulace vypočítaná saturace kyslíku (sO2) v arteriální krvi. Jak ji popíšete?" 
           answers="A. Normální až zvýšená saturace. Může vést k respirační alkalóze.|B. Snížená saturace. Hrozí ztráta vědomí." 
           correctoptions="false|true" 
           explanations="ano|ne" 
@@ -102,34 +102,34 @@ API to VR <!--bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval=
 
 <bdl-quizx id="q1.3" type="choice2" 
                question="1.3 Jaký je pravděpodobný důvod této dechové frekvence?" 
-           answers="A. Zvýšená dechová frekvence u pacienta je důsledkem kompenzace metabolické acidózy, kdy tělo zrychluje dýchání, aby se zbavilo nadbytku oxidu uhličitého a snížilo kyselost krve.|B. Zvýšená dechová frekvence u pacienta je důsledkem snížené saturace kyslíku v krvi. Snížená saturace dráždí chemoreceptory v karotických tělíscích a aortálním oblouku, které vysílají signály do mozku, aby zvýšil dechovou frekvenci a tím zlepšil okysličení těla." 
+           answers="A. důsledkem kompenzace metabolické acidózy, kdy tělo zrychluje dýchání, aby se zbavilo nadbytku oxidu uhličitého a snížilo kyselost krve.|B. důsledkem snížené saturace kyslíku v krvi. Snížená saturace dráždí chemoreceptory v karotických tělíscích a aortálním oblouku, které vysílají signály do mozku, aby zvýšil dechovou frekvenci a tím zlepšil okysličení tkání." 
            correctoptions="false|true" 
            explanations="ano|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q1.4" type="choice2" 
-           question="1.4 Jak popíšete srdeční tep a tlak?" 
-           answers="A. Mírná tachykardie a prehypertenze (mírná hypertenze)|B. Bradykardie a prehypotenze." 
+           question="1.4 Jak popíšete srdeční tep?" 
+           answers="A. Mírná tachykardie a prehypertenze|B. Bradykardie a prehypotenze." 
            correctoptions="true|false" 
            explanations="ano|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q1.5" type="choice2" 
-           question="1.5 Jaký je pravděpodobný důvod tepu a tlaku pacienta?" 
-           answers="A. Zvýšený tep reaguje na špatnou saturaci kyslíku a snaží distribuovat kyslík do orgánů.|B. Zvýšený stres v důsledku nemoci." 
+           question="1.5 Jaký je pravděpodobný důvod abnormální srdeční činnosti?" 
+           answers="A. Podobně jako u dechu, zvýšený tep reaguje na špatnou saturaci kyslíku a snaží zvýšit distribuci kyslíku tkání.|B. Zvýšený stres v důsledku nemoci." 
            correctoptions="true|false" 
            explanations="ano|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q1.6" type="choice2" 
-           question="1.6 Jakou má pacient koncentraci CO2 v krvi (v simulátoru)?" 
-           answers="A. zvýšenou, akutní hyperkapnie souvisí se sníženou saturací kyslíku.|B. sníženou, akutní hypokapnie souvisí se sníženou saturací kyslíku." 
+           question="1.6 Jak popíšete koncentraci CO2 v krvi (v simulátoru)?" 
+           answers="A. zvýšenou, akutní hyperkapnie souvisí patrně s poškozením plic.|B. sníženou, akutní hypokapnie souvisí se sníženou saturací kyslíku." 
            correctoptions="true|false" 
            explanations="ano|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q1.7" type="choice2" 
-           question="1.7 Jaký první zásah byste zvolili?" 
-           answers="A. morfium pro zklidnění dechové frekvence a stresu|B. Oxygenoterapie - maska a 60% O2" 
+           question="1.7 Zvolte první intervenci na pacientovi:" 
+           answers="A. morfium pro zklidnění dechové frekvence a stresu|B. Oxygenoterapie - maska a 60% O2 pro zvýšení saturace O2" 
            correctoptions="false|true" 
            explanations="ne. Aplikací morfia se dekompenzuje dechová frekvence a úsilí pro zvýšení perfůze a distribuce. Je však možná poté co se zlepší saturace, ale ne jako první volba v této situaci|ano. Aplikací oxygenoterapie se mírně zvýší saturace kyslíku" 
-           buttontitle="zkontrolovat odpověď"> Zkuste aplikovat nejprve stisknutí tlačítka a  sledujte v simulaci a vyberte odpověď:<bdl-buttonparams title='oxygen 60% (no morf.)' ids='ido2,idrate' values='60,24'></bdl-buttonparams><br/><bdl-buttonparams title='morfium 100ml (no oxy)' ids='ido2,idrate' values='21,18'></bdl-buttonparams><br/> <bdl-buttonparams title='Reset' ids='ido2,idrate' values='21,28'></bdl-buttonparams></bdl-quizx>
+           buttontitle="zkontrolovat odpověď"> Zkuste aplikovat nejprve stisknutí tlačítka a  simulujte, stisknutí druhého tlačítka zruší vliv předchozí aplikace<bdl-buttonparams title='oxygen 60% (no morf.)' ids='ido2,idrate' values='60,24'></bdl-buttonparams><br/><bdl-buttonparams title='morfium 100ml (no oxy)' ids='ido2,idrate' values='21,18'></bdl-buttonparams><br/> <bdl-buttonparams title='Reset' ids='ido2,idrate' values='21,28'></bdl-buttonparams></bdl-quizx>
 <bdl-quiz-summary id="qs1">
   Shrnutí odpovědí:
 </bdl-quiz-summary>          
