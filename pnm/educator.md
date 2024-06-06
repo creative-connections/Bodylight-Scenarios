@@ -15,15 +15,15 @@
 <div id="CZ" class="w3-large">
 
 <bdl-fb-set-state title="0.Úvod" value="index.md"></bdl-fb-set-state>
-<bdl-fb-set-state title="1.Pacient" value="patient1.md"></bdl-fb-set-state>
-<bdl-fb-set-state title="2.OXY" value="patient2-oxy.md"></bdl-fb-set-state>
-<bdl-fb-set-state title="3.SCMV" value="patient2.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="1.Pacient" value="pacient1.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="2.OXY" value="pacient2-oxy.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="3.SCMV" value="pacient2.md"></bdl-fb-set-state>
 </div>
 <div id="EN" class="w3-large">
 <bdl-fb-set-state title="0.Úvod" value="index.md"></bdl-fb-set-state>
-<bdl-fb-set-state title="1.Pacient" value="patient1.md"></bdl-fb-set-state>
-<bdl-fb-set-state title="2.OXY" value="patient2-oxy.md"></bdl-fb-set-state>
-<bdl-fb-set-state title="3.SCMV" value="patient2.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="1.Pacient" value="pacient1.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="2.OXY" value="pacient2-oxy.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="3.SCMV" value="pacient2.md"></bdl-fb-set-state>
 </div>
 <bdl-fb-get-state tohash="true"></bdl-fb-get-state>
 
