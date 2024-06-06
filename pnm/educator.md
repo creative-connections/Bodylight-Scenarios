@@ -20,8 +20,8 @@
 <bdl-fb-set-state title="3.SCMV" value="pacient2.md"></bdl-fb-set-state>
 </div>
 <div id="EN" class="w3-large">
-<bdl-fb-set-state title="0.Úvod" value="index.md"></bdl-fb-set-state>
-<bdl-fb-set-state title="1.Pacient" value="pacient1.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="0.Introduction" value="index.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="1.Patient in admission" value="pacient1.md"></bdl-fb-set-state>
 <bdl-fb-set-state title="2.OXY" value="pacient2-oxy.md"></bdl-fb-set-state>
 <bdl-fb-set-state title="3.SCMV" value="pacient2.md"></bdl-fb-set-state>
 </div>
