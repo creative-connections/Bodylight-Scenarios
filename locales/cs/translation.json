@@ -33,5 +33,13 @@
 "blood-gases-description":"Fyziologie acidobazické rovnováhy&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp; a výměna krevních plynů(CZ)",
 "egolem-text":"e-Golem online: ",
 "android-text":"verze pro Android: ",
-"ios-text":"verze pro iOS version: ve vývoji"
+"ios-text":"verze pro iOS version: ve vývoji",
+"case-report-panel-title":"Kazuistiky - doprovodné aplikace",
+"dka-title":"DKA",
+"dka-description":"acidobayická rovnováha",
+"irm-title":"IRM",
+"irm-description":"metabolismus železa",
+"hv2-title":"HV2",
+"hv2-description":"kardiologie",
+"features-title":"vlastnosti webových simulátorů"
 }

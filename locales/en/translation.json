@@ -32,5 +32,13 @@
 "blood-gases-description":"physiology of acid base balance&nbsp;&nbsp;&nbsp;&nbsp;<br/>&nbsp; and blood gases exchange(beta-CZ)",
 "egolem-text":"web version: ",
 "android-text":"Android version: ",
-"ios-text":"iOS version: in construction"
+"ios-text":"iOS version: in construction",
+"case-report-panel-title":"Case Reports - accompanied apps",
+"dka-title":"DKA",
+"dka-description":"Acid base balance",
+"irm-title":"IRM",
+"irm-description":"Iron metabolism",
+"hv2-title":"HV2",
+"hv2-description":"Cardiology",
+"features-title":"Features"
 }
