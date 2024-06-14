@@ -37534,6 +37534,7 @@ let AuthYesContent = (_dec = (0,aurelia_dependency_injection__WEBPACK_IMPORTED_M
     this.api = bdapi;
   }
   bind() {
+    this.api.checklogged();
     console.log('bdapi:', this.api);
   }
 }) || _class);
