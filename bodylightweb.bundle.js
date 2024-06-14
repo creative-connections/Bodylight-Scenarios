@@ -37630,14 +37630,16 @@ let Bdapi = (_dec = (0,aurelia_dependency_injection__WEBPACK_IMPORTED_MODULE_2__
     //1. check auth - current user
     if (this.auth !== null) {
       this.islogged = this.auth._delegate && this.auth._delegate.currentUser !== null;
+      console.log('bdapi: delegate', this.auth._delegate);
+      if (this.auth._delegate) console.log('bdapi: currentuser', this.auth._delegate.currentUser);
       if (this.islogged) {
         this.eguser = this.auth._delegate.currentUser.displayName;
         this.egemail = this.auth._delegate.currentUser.email;
         this.token = this.auth._delegate.currentUser.accessToken;
+        console.log('checklogged() bdapi sending logging event() payload:', this.islogged);
+        this.ea.publish('logging', this.islogged);
+        return;
       }
-      console.log('checklogged() bdapi sending logging event() payload:', this.islogged);
-      this.ea.publish('logging', this.islogged);
-      return;
     }
     //2. check cookies
     console.log('bdapi.checklogged()');
