@@ -37628,8 +37628,8 @@ let Bdapi = (_dec = (0,aurelia_dependency_injection__WEBPACK_IMPORTED_MODULE_2__
       this.auth = auth;
     }
     //1. check auth - current user
-    if (this.auth) {
-      this.islogged = this.auth._delegate && this.auth._delegate.currentUser;
+    if (this.auth !== null) {
+      this.islogged = this.auth._delegate && this.auth._delegate.currentUser !== null;
       if (this.islogged) {
         this.eguser = this.auth._delegate.currentUser.displayName;
         this.egemail = this.auth._delegate.currentUser.email;
