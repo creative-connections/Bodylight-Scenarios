@@ -8,7 +8,6 @@ API to VR <!--bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval=
 <bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval="2000" id="vrapi" inputs="sO2"></bdl-remote-value>
 </div>
 
-
 <div class="w3-black w3-sans-serif" style="max-width:1100px">
 <div class="w3-row">
 </div><div class="w3-row">
