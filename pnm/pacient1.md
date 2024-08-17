@@ -125,11 +125,11 @@ API to VR <!--bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval=
            explanations="ano|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q1.7" type="choice2" 
-           question="1.7 Zvolte první intervenci na pacientovi:" 
-           answers="A. morfium pro zklidnění dechové frekvence a stresu|B. Oxygenoterapie - maska a 60% O2 pro zvýšení saturace O2" 
-           correctoptions="false|true" 
+           question="1.7 Nejprve vyzkoušejte a pak zvolte vhodnou první intervenci na pacientovi:" 
+           answers="A. morfium pro zklidnění dechové frekvence a stresu|B. Oxygenoterapie - maska a 40% O2 pro zvýšení saturace O2|C. Oxygenoterapie - maska a 80% O2 pro zvýšení saturace O2" 
+           correctoptions="false|true|true" 
            explanations="ne. Aplikací morfia se dekompenzuje dechová frekvence a úsilí pro zvýšení perfůze a distribuce. Je však možná poté co se zlepší saturace, ale ne jako první volba v této situaci|ano. Aplikací oxygenoterapie se mírně zvýší saturace kyslíku" 
-           buttontitle="zkontrolovat odpověď"> Zkuste aplikovat nejprve stisknutí tlačítka a  simulujte, stisknutí druhého tlačítka zruší vliv předchozí aplikace<bdl-buttonparams title='oxygen 60% (no morf.)' ids='ido2,idrate' values='60,24'></bdl-buttonparams><br/><bdl-buttonparams title='morfium 100ml (no oxy)' ids='ido2,idrate' values='21,18'></bdl-buttonparams><br/> <bdl-buttonparams title='Reset' ids='ido2,idrate' values='21,28'></bdl-buttonparams></bdl-quizx>
+           buttontitle="zkontrolovat odpověď"> <br/> Zkuste aplikovat nejprve stisknutí tlačítka a  simulujte, stisknutí druhého tlačítka zruší vliv předchozí aplikace<bdl-buttonparams title='oxygen 40% (no morf.)' ids='ido2,idrate' values='40,28'></bdl-buttonparams><br/><bdl-buttonparams title='oxygen 80% (no morf.)' ids='ido2,idrate' values='80,28'></bdl-buttonparams><br/><bdl-buttonparams title='morfium 100ml (no oxy)' ids='ido2,idrate' values='21,12'></bdl-buttonparams><br/> <bdl-buttonparams title='Reset' ids='ido2,idrate' values='21,28'></bdl-buttonparams></bdl-quizx>
 <bdl-quiz-summary id="qs1">
   Shrnutí odpovědí:
 </bdl-quiz-summary>          
