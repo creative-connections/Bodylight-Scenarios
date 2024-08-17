@@ -108,7 +108,13 @@ Pravá plíce vykazuje normální plicní kresbu bez známek infiltrátů nebo k
 </div>
 
 <div class="w3-quarter w3-xlarge">
-Pacient 55 let, muž, s dýchacími obtížemi, tachykardií, tachypnoe, nízkou saturací. Byla mu nasazena kyslíková maska s 60% O<sub>2</sub>
+2. Pacient 55 let, muž, s dýchacími obtížemi, tachykardií, tachypnoe a nízkou saturací. Byla mu nasazena kyslíková maska s 80% O<sub>2</sub>
+<bdl-quizx id="q2.0" type="match" 
+          question="2.0 Při oxygenoterapii hrozí otrava kyslíkem. Přiřaďte ke stavům tkání jejich popis."
+          terms="hyperoxie|hypoxie"
+          answers="vystavené plynům se zvýšenou koncentrací (parciálním tlakem) kyslíku, který může mít toxické účinky|vystavené plynům se sníženou koncentrací kyslíku, může mít vliv na změně metabolismu na anaerobní" 
+          buttontitle="zkontrolovat odpověď"></bdl-quizx>
+ 
 <bdl-quizx id="q2.1" type="choice2" 
           question="2.1 Spusťte simulaci a počkejte asi 15-20s. Je oxygenoterapie  dostačující." 
           answers="A. Ano, Saturace se ustálila na vyšších hodnotách.|B. Ne. Saturace je stále nízká pod 90%" 
@@ -147,7 +153,7 @@ Pacient 55 let, muž, s dýchacími obtížemi, tachykardií, tachypnoe, nízkou
 <bdl-quiz-summary id="qs1">
   Shrnutí odpovědí:
 </bdl-quiz-summary>          
-<bdl-quiz-control ids="q2.1,q2.2,q2.3,q2.4,q2.5,qs1"></bdl-quiz-control>
+<bdl-quiz-control ids="q2.0,q2.1,q2.2,q2.3,q2.4,q2.5,qs1"></bdl-quiz-control>
 
 
 </div>
@@ -184,7 +190,7 @@ Patient state: <br/>
 Ventilated gas: <!--bdl-buttonparams title="Normal" ids="ido2,idco2,idh2o" values="21,0.03,6"></bdl-buttonparams>
 <bdl-buttonparams title="O2 40%" ids="ido2,idco2,idh2o" values="40,0.03,6"></bdl-buttonparams>
 <bdl-buttonparams title="O2 60%" ids="ido2,idco2,idh2o" values="60,0.03,6"></bdl-buttonparams-->
-<bdl-range id="ido2" title="O2 %" min="5" max="93" default="60" fromid="vrapi" refindex="4" initdefault="true"></bdl-range><br/>
+<bdl-range id="ido2" title="O2 %" min="5" max="93" default="80" fromid="vrapi" refindex="4" initdefault="true"></bdl-range><br/>
 <bdl-range id="iddeadspace" title="dead space" min="100" max="4500" default="400" initdefault="true"></bdl-range>
 <bdl-range id="idshunts" title="L-V shunts %" min="5" max="95" default="58" initdefault="true"></bdl-range>
 <bdl-range id="idco2" title="CO2 %" min="0" max="10" default="0.03" step="0.01"></bdl-range>
