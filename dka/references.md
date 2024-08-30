@@ -11,7 +11,8 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 | **Interactive Animation:** | Martin Brož, Klára Svobodová |
 
 # References
-  * Kulhánek T., Kofránek J.: Explanatory models of human physiology to teach pathophysiology of diabetic ketoacidosis with simulators, VPH conference 4-6 September 2024, Stuttgart, Germany [Poster PDF]()
+  * Kulhánek T., Kofránek J.: Explanatory models of human physiology to teach pathophysiology of diabetic ketoacidosis with simulators, VPH conference 4-6 September 2024, Stuttgart, Germany [Poster PDF](PosterH_OrezoveZnacky_VPH_compressed.pdf)
+
 
 # Technologies 
 
