@@ -67,7 +67,7 @@ API to VR <!--bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval=
 </div>
 <div class="w3-quarter">
 
-<bdl-chartjs-xy fromid="ventilator" labelx="pressure" labely="volume" labels="pV1,pV2,pV3" refindex="0" refvalues="2" width="250" height="250" min="2" max="3.5" convertors="1,133.322,-760;1000,1" maxdata="128"></bdl-chartjs-xy>
+<bdl-chartjs-xy fromid="ventilator" labelx="pressure" labely="volume" labels="pV1,pV2,pV3" refindex="0" refvalues="2" width="250" height="250" min="2" max="4" convertors="1,133.322,-760;1000,1" maxdata="128"></bdl-chartjs-xy>
 
 </div>
 <div class="w3-rest w3-text-blue">
@@ -108,24 +108,19 @@ Pravá plíce vykazuje normální plicní kresbu bez známek infiltrátů nebo k
 </div>
 
 <div class="w3-quarter w3-xlarge">
-2. Pacient 55 let, muž, s dýchacími obtížemi, tachykardií, tachypnoe a nízkou saturací. Byla mu nasazena kyslíková maska s 80% O<sub>2</sub>
-<bdl-quizx id="q2.0" type="match" 
-          question="2.0 Při oxygenoterapii hrozí otrava kyslíkem. Přiřaďte ke stavům tkání jejich popis."
-          terms="hyperoxie|hypoxie"
-          answers="vystavené plynům se zvýšenou koncentrací (parciálním tlakem) kyslíku, který může mít toxické účinky|vystavené plynům se sníženou koncentrací kyslíku, může mít vliv na změně metabolismu na anaerobní" 
-          buttontitle="zkontrolovat odpověď"></bdl-quizx>
- 
+Pacient 35 let, muž, s dýchacími obtížemi vstupně s tachykardií, tachypnoe, nízkou saturací. 
+
 <bdl-quizx id="q2.1" type="choice2" 
-          question="2.1 Spusťte simulaci a počkejte asi 15-20s. Je oxygenoterapie  dostačující." 
-          answers="A. Ano, Saturace se ustálila na vyšších hodnotách.|B. Ne. Saturace je stále nízká pod 90%" 
-          correctoptions="false|true" 
-          explanations="ne|ano" 
-          buttontitle="zkontrolovat odpověď"></bdl-quizx>
+          question="2.1 Spusťte simulaci a počkejte asi 15-20s. Zvyšte koncentraci kyslíku aby saturace byla nad 80%." 
+          answers="A. 21%|B. 40% | C. 60%" 
+          correctoptions="false|false|true" 
+          explanations="ne|ne|ano" 
+          buttontitle="zkontrolovat odpověď"><bdl-buttonparams title='oxygen 21%' ids='ido2' values='21'></bdl-buttonparams><br/><bdl-buttonparams title='oxygen 40%' ids='ido2' values='40'></bdl-buttonparams><br/><bdl-buttonparams title='oxygen 60%' ids='ido2' values='60'></bdl-buttonparams><br/></bdl-quizx>
 
 <bdl-quizx id="q2.2" type="choice2" 
-          question="2.2 Zvolte další postup?" 
-          answers="A. Příprava na umělou plicní ventilaci, intubace. |B. Zvýšit oxygenoterapii na 100%" 
-          correctoptions="true|false" 
+          question="2.2 Kvůli nedostatečnosti oxygenoterapie byla provedena příprava na intubaci, pacient uveden do umělého spánku a napojen na umělou plicní ventilaci v režimu SCMV. Zvolte frekvenci" 
+          answers="A. 10 /min |B. 15/min|C. 20/min" 
+          correctoptions="false|false|true" 
           explanations="ano|ne" 
           buttontitle="zkontrolovat odpověď"></bdl-quizx>
 
@@ -153,7 +148,7 @@ Pravá plíce vykazuje normální plicní kresbu bez známek infiltrátů nebo k
 <bdl-quiz-summary id="qs1">
   Shrnutí odpovědí:
 </bdl-quiz-summary>          
-<bdl-quiz-control ids="q2.0,q2.1,q2.2,q2.3,q2.4,q2.5,qs1"></bdl-quiz-control>
+<bdl-quiz-control ids="q2.1,q2.2,q2.3,q2.4,q2.5,qs1"></bdl-quiz-control>
 
 
 </div>
@@ -190,16 +185,16 @@ Patient state: <br/>
 Ventilated gas: <!--bdl-buttonparams title="Normal" ids="ido2,idco2,idh2o" values="21,0.03,6"></bdl-buttonparams>
 <bdl-buttonparams title="O2 40%" ids="ido2,idco2,idh2o" values="40,0.03,6"></bdl-buttonparams>
 <bdl-buttonparams title="O2 60%" ids="ido2,idco2,idh2o" values="60,0.03,6"></bdl-buttonparams-->
-<bdl-range id="ido2" title="O2 %" min="5" max="93" default="80" fromid="vrapi" refindex="4" initdefault="true"></bdl-range><br/>
+<bdl-range id="ido2" title="O2 %" min="5" max="93" default="21" fromid="vrapi" refindex="4" initdefault="true"></bdl-range><br/>
 <bdl-range id="iddeadspace" title="dead space" min="100" max="4500" default="400" initdefault="true"></bdl-range>
 <bdl-range id="idshunts" title="L-V shunts %" min="5" max="95" default="58" initdefault="true"></bdl-range>
 <bdl-range id="idco2" title="CO2 %" min="0" max="10" default="0.03" step="0.01"></bdl-range>
 <bdl-range id="idh2o" title="H2O %" min="0" max="10" default="6" step="0.1"></bdl-range>
 
 Mechanical ventilator setting:<br/>
-<bdl-range id="idrate" title="Breathing rate (1/min)" min="1" max="60" default="24" step="1" initdefault="true" fromid="vrapi" refindex="3"></bdl-range><br/>
+<bdl-range id="idrate" title="Breathing rate (1/min)" min="1" max="60" default="27" step="1" initdefault="true" fromid="vrapi" refindex="3"></bdl-range><br/>
 <!--bdl-range id="idmuscle" title="Breathing force (%)" min="10" max="400" default="100" step="1" fromid="vrapi" refindex="0"></bdl-range-->
-<bdl-range id="idtv" title="Vt - tidal volume (ml)" min="200" max="1000" default="800" step="1" fromid="vrapi" refindex="2" initdefault="true"></bdl-range><br/>
+<bdl-range id="idtv" title="Vt - tidal volume (ml)" min="200" max="2000" default="1200" step="1" fromid="vrapi" refindex="2" initdefault="true"></bdl-range><br/>
 <div class="w3-hide">
 <bdl-range id="idiratio" min="1" max="4" default="1" step="1"fromid="vrapi" refindex="1"></bdl-range>
 <bdl-range id="ideratio" min="1" max="9" default="4" step="1" fromid="vrapi" refindex="0"></bdl-range>
