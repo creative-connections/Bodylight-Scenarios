@@ -134,7 +134,7 @@ Mechanical ventilator setting:<br/>
 <bdl-range id="idrate" title="Breathing rate (1/min)" min="1" max="60" default="17" step="1" initdefault="true" fromid="vrapi" refindex="3"></bdl-range><br/>
 <!--bdl-range id="idmuscle" title="Breathing force (%)" min="10" max="400" default="100" step="1" fromid="vrapi" refindex="0"></bdl-range-->
 <bdl-range id="idtv" title="Vt - tidal volume (ml)" min="200" max="1000" default="800" step="1" fromid="vrapi" refindex="2" initdefault="true"></bdl-range><br/>
-<div class="w3-hide">
+<div class="w3-grey">
 <bdl-range id="idiratio" min="1" max="4" default="1" step="1"fromid="vrapi" refindex="1"></bdl-range>
 <bdl-range id="ideratio" min="1" max="9" default="4" step="1" fromid="vrapi" refindex="0"></bdl-range>
 </div>
@@ -144,7 +144,17 @@ Set I:E ratio
 <bdl-buttonparams title="2:1" ids="idiratio,ideratio" values="2,1"></bdl-buttonparams>
 <bdl-buttonparams title="3:2" ids="idiratio,ideratio" values="3,2"></bdl-buttonparams></br>
 <bdl-range id="idpause" title="pause (%)" min="0" max="70" default="1" step="1" initdefault="true" fromid="vrapi" refindex="6"></bdl-range>
-
+<br/>
+Debug values VRAPI
+refindex 0:<bdl-value fromid="vrapi" refindex="0"></bdl-value>
+refindex 1:<bdl-value fromid="vrapi" refindex="1"></bdl-value>
+refindex 2:<bdl-value fromid="vrapi" refindex="2"></bdl-value>
+refindex 3:<bdl-value fromid="vrapi" refindex="3"></bdl-value>
+refindex 4:<bdl-value fromid="vrapi" refindex="4"></bdl-value>
+refindex 5:<bdl-value fromid="vrapi" refindex="5"></bdl-value>
+refindex 6:<bdl-value fromid="vrapi" refindex="6"></bdl-value>
+refindex 7:<bdl-value fromid="vrapi" refindex="7"></bdl-value>
+refindex 8:<bdl-value fromid="vrapi" refindex="8"></bdl-value>
 
 <!--bdl-chartjs-time width="150" height="90" fromid="idfmi" labels="RR" initialdata="0" refindex="7" refvalues="1" throttle="1000"></bdl-chartjs-time>
 <bdl-chartjs-time width="150" height="90" fromid="idfmi" labels="Vt" initialdata="" refindex="8" refvalues="1" throttle="1000"></bdl-chartjs-time>
@@ -153,46 +163,3 @@ Set I:E ratio
 <bdl-chartjs-time width="150" height="90" fromid="idfmi" labels="O2 %" initialdata="" refindex="12" refvalues="1" convertors="100,1" throttle="1000"></bdl-chartjs-time-->
 
 </div>
-<!--
-<div class="w3-quarter w3-xlarge">
-Pacient 55 let, muž, s dýchacími obtížemi, tachykardií, tachypnoe, nízkou saturací. Byla mu nasazena kyslíková maska s 60% O<sub>2</sub>
-<bdl-quizx id="q2.1" type="choice2" 
-          question="2.1 Spusťte simulaci a počkejte asi 15-20s. Je oxygenoterapie  dostačující." 
-          answers="A. Ano, Saturace se ustálila na vyšších hodnotách.|B. Ne. Saturace je stále nízká pod 90%" 
-          correctoptions="false|true" 
-          explanations="ne|ano" 
-          buttontitle="zkontrolovat odpověď"></bdl-quizx>
-
-<bdl-quizx id="q2.2" type="choice2" 
-          question="2.2 Zvolte další postup?" 
-          answers="A. Příprava na umělou plicní ventilaci, intubace. |B. Zvýšit oxygenoterapii na 100%" 
-          correctoptions="true|false" 
-          explanations="ano|ne" 
-          buttontitle="zkontrolovat odpověď"></bdl-quizx>
-
-<bdl-quizx id="q2.3" type="choice2" 
-               question="2.3 Pacient byl zaintubován a napojen na umělou plicní ventilaci, přístroj Hamilton-C6 v režimu . Nastavte dechovou frekvenci na 18 dechů/min.Jak se to projeví na saturaci." 
-           answers="A. Saturace se mírně zlepšila|B. Saturace s mírně zhoršila." 
-           correctoptions="false|true" 
-           explanations="ne|ano" 
-           buttontitle="zkontrolovat odpověď"><bdl-buttonparams title="18 1/m" ids="idrate" values="18"></bdl-buttonparams>
-</bdl-quizx>
-<bdl-quizx id="q2.4" type="choice2" 
-               question="2.4 Nastavte Tidal Volume na 1000ml" 
-           answers="A. Saturace se mírně zlepšila|B. Saturace s mírně zhoršila." 
-           correctoptions="true|false" 
-           explanations="ano|ne" 
-           buttontitle="zkontrolovat odpověď"><bdl-buttonparams title="TV 1000 ml" ids="idtv" values="1000"></bdl-buttonparams>
-</bdl-quizx>
-<bdl-quizx id="q2.5" type="choice2" 
-               question="2.5 Nastavte Pause na 10%." 
-           answers="A. Saturace se mírně zlepšila|B. Saturace s mírně zhoršila." 
-           correctoptions="true|false" 
-           explanations="ano|ne" 
-           buttontitle="zkontrolovat odpověď"><bdl-buttonparams title="Pause 10%" ids="idpause" values="10"></bdl-buttonparams>
-</bdl-quizx>
-<bdl-quiz-summary id="qs1">
-  Shrnutí odpovědí:
-</bdl-quiz-summary>          
-<bdl-quiz-control ids="q2.1,q2.2,q2.3,q2.4,q2.5,qs1"></bdl-quiz-control>
-!-->

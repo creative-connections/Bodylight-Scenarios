@@ -1,17 +1,31 @@
-from flask import Flask, jsonify, request, make_response
+from flask import Flask, jsonify, request, make_response, render_template
+import random
 #from flask import response
 
 # default values of parameters
 
-breath_rate = 12
-tidal_volume = 500
-i_ratio = 1
-e_ratio = 2
-pause_value = 0
-o2_fraction = 21
-patient_state = 1
-volume = 0.0023
-sO2 = 0.95
+# Variables
+variables = {
+    'breath_rate': 12,
+    'tidal_volume': 500,
+    'i_ratio': 1,
+    'e_ratio': 3,
+    'pause_value': 0,
+    'o2_fraction': 21,
+    'patient_state': 2,
+    'volume': 0.0023,
+    'sO2': 0.95
+    }
+
+#breath_rate = 12
+#tidal_volume = 500
+#i_ratio = 1
+#e_ratio = 3
+#pause_value = 0
+#o2_fraction = 21
+#patient_state = 2
+#volume = 0.0023
+#sO2 = 0.95
 count = 0
 
 #volume = 2500
@@ -49,7 +63,7 @@ def default_response(value):
         return value, response
     elif request.method == 'POST':
         #print('post 3')
-        #print('request',request.json)
+        #print('default request',request.json)
         value = request.json #['value']
         #print('value 2' ,value)
         response = jsonify(value)
@@ -59,28 +73,20 @@ def default_response(value):
 # specific method to return musclepressure, POST request will also update the value
 @app.route('/vrapi/volume', methods=['GET','OPTIONS','POST'])
 def volumeget():
-    global volume
-    volume, myresponse = default_response(volume)
+    global variables
+    volume, myresponse = default_response(variables['volume'])    
     return myresponse
 
 @app.route('/vrapi/sO2', methods=['GET','OPTIONS','POST'])
 def sO2get():
     global sO2
-    sO2, myresponse = default_response(sO2)
+    sO2, myresponse = default_response(variables['sO2'])
     return myresponse
 
 #general call to get/update all values in one call
 @app.route('/vrapi', methods=['GET','OPTIONS','POST'])
 def manequin():
-    global volume
-    global sO2
-    global breath_rate
-    global tidal_volume
-    global i_ratio
-    global e_ratio
-    global pause_value
-    global o2_fraction
-    global patient_state
+    global variables
     global count
     count = count + 1 
     if (count == 10):
@@ -92,41 +98,51 @@ def manequin():
     if (count == 40):
         patient_state = 0
 
-
-    myvalue = { 
-    "frequency" : breath_rate, 
-    "Vt": tidal_volume, 
-    "Iratio": i_ratio, 
-    "Eratio": e_ratio, 
-    "pause": pause_value, 
-    "o2_fraction": o2_fraction, 
-    "patient_state": patient_state,
-    "volume":volume,
-    "sO2":sO2 }
+    i_ratio = random.randint(1,3)
+    e_ratio = random.randint(2,3)
+    myvalue = variables
+    #{ 
+    #"frequency" : breath_rate, 
+    #"Vt": tidal_volume, 
+    #"Iratio": i_ratio, 
+    #"Eratio": e_ratio, 
+    #"pause": pause_value, 
+    #"o2_fraction": o2_fraction, 
+    #"patient_state": patient_state,
+    #"volume":volume,
+    #"sO2":sO2 }
     myvalue, myresponse = default_response(myvalue)
 
     # POST will change myvalue - it needs to be translated back to individual values
     # musclepressure = myvalue['musclepressure']
     # ...
     if request.method == 'POST':
-        breath_rate = myvalue['frequency']
-        tidal_volume = myvalue['Vt']
-        i_ratio = myvalue['Iratio']
-        e_ratio = myvalue['Eratio']
-        pause_value = myvalue['pause']
-        patient_state = myvalue['patient_state']
-        o2_fraction = myvalue['o2_fraction']
-        volume = myvalue['volume']
-        sO2 = myvalue['sO2']
+        for key in variables:
+            if key in request.form:
+                variables[key] = type(variables[key])(request.form[key])
 
     return myresponse
     # return 'Available endpoints /musclepressure /rate /blendduration /timestep /resistance /compliance /peep'
     #a = ['radek 1','radek 2'];
     #return '<html><body><pre>'+a.join('\n')+'</pre></body></html>'
 
-@app.route('/',methods=['GET'])
+@app.route('/',methods=['GET','POST'])
 def index():
-    return """<html><body><pre>This is only MOCKUP of REST API:
+    if request.method == 'POST':
+        for key in variables:
+            if key in request.form:
+                variables[key] = type(variables[key])(request.form[key])
+    return render_template('index.html', variables=variables)
+    """<html><body><pre>This is only MOCKUP of REST API:
             /vrapi {frequency,Vt,Iratiom,Eratiompause,o2_fraction,patient_state
                /volume [double] [GET, POST, OPTIONS]
-               /sO2 [double] [GET, POST, OPTIONS]</pre></body></html"""
+               /sO2 [double] [GET, POST, OPTIONS]</pre>
+<h1>Update Variables</h1>
+    <form method="POST">
+        {% for key, value in variables.items() %}
+        <label>{{ key }}:</label>
+        <input type="text" name="{{ key }}" value="{{ value }}"><br><br>
+        {% endfor %}
+        <input type="submit" value="Update">
+    </form>
+</body></html>"""
