@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Variable Update</title>
+</head>
+<body>
+    <h1>Update Variables</h1>
+    <form method="POST">
+        {% for key, value in variables.items() %}
+        <label>{{ key }}:</label>
+        <input type="text" name="{{ key }}" value="{{ value }}"><br><br>
+        {% endfor %}
+        <input type="submit" value="Update">
+    </form>
+</body>
+</html>
