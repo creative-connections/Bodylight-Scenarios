@@ -6,10 +6,10 @@ import random
 
 # Variables
 variables = {
-    'breath_rate': 12,
-    'tidal_volume': 500,
-    'i_ratio': 1,
-    'e_ratio': 3,
+    'f_breath_rate': 12,
+    'Vt_tidal_volume': 500,
+    'I_ratio': 1,
+    'E_ratio': 3,
     'pause_value': 0,
     'o2_fraction': 21,
     'patient_state': 2,
