@@ -77,37 +77,37 @@ API to VR <!--bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval=
 </div>
 <div class="w3-text-blue">
 &nbsp;p<sub>H</sub><sup>ven</sup><b class=""><bdl-value fromid="idfmi" refindex="3"></bdl-value></b>
-</div>
-</div>
-</div>
+</div></div></div>
+</div></div>
 
-</div>
-</div>
+<div class="w3-quarter w3-small w3-padding">
 
-<div class="w3-quarter w3-xlarge">
+**Pacient 55 let** , muž, byl přivezen příbuznými na pohotovost. Již 5 dnem infekce. těžce se mu dýchá. Kašel. Teplota 38.1˚C. Malátný a dezorientovaný. Spusťte simulaci napodobující pacientův stav a počkejte asi 15-20s. 
+
+_Spusťte simulaci napodobující pacientův stav a počkejte asi 15-20s a zodpovězte otázky níže_
 
 <bdl-quizx id="q1.1" type="choice2" 
-          question="1.1 Pacient 55 let, muž, byl přivezen příbuznými na pohotovost. Již 5 dnem infekce. těžce se mu dýchá. Kašel. Teplota 38.1˚C. Malátný a dezorientovaný. Spusťte simulaci napodobující pacientův stav a počkejte asi 15-20s. Jak popíšete dechovou frekvenci?" 
+          question="1.1 Vyberte nejvhodnější popis dechu:" 
           answers="A. Tachypnoe. Zvýšená frekvence (nad 20) a zvýšené  úsilí.|B. Bradypnoe. Snížená frekvence." 
           correctoptions="true|false" 
           explanations="ano|ne" 
           buttontitle="zkontrolovat odpověď"></bdl-quizx>
 
 <bdl-quizx id="q1.2" type="choice2" 
-          question="1.2 Simulace vypočítaná saturace kyslíku (sO2) v arteriální krvi. Jak ji popíšete?" 
+          question="1.2 Popište saturaci kyslíku (sO2) v arteriální krvi:" 
           answers="A. Normální až zvýšená saturace. Může vést k respirační alkalóze.|B. Snížená saturace. Hrozí ztráta vědomí." 
           correctoptions="false|true" 
           explanations="ano|ne" 
           buttontitle="zkontrolovat odpověď"></bdl-quizx>
 
 <bdl-quizx id="q1.3" type="choice2" 
-               question="1.3 Jaký je pravděpodobný důvod této dechové frekvence?" 
-           answers="A. důsledkem kompenzace metabolické acidózy, kdy tělo zrychluje dýchání, aby se zbavilo nadbytku oxidu uhličitého a snížilo kyselost krve.|B. důsledkem snížené saturace kyslíku v krvi. Snížená saturace dráždí chemoreceptory v karotických tělíscích a aortálním oblouku, které vysílají signály do mozku, aby zvýšil dechovou frekvenci a tím zlepšil okysličení tkání." 
+               question="1.3 Vyberte první pracovní hypotézu:" 
+           answers="A. Tachypnoe důsledkem kompenzace metabolické acidózy, kdy tělo zrychluje dýchání, aby se zbavilo nadbytku oxidu uhličitého a snížilo kyselost krve.|B. Tachypnoe důsledkem snížené saturace kyslíku v krvi. Snížená saturace dráždí chemoreceptory v karotických tělíscích a aortálním oblouku, které vysílají signály do mozku, aby zvýšil dechovou frekvenci." 
            correctoptions="false|true" 
            explanations="ano|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q1.4" type="choice2" 
-           question="1.4 Jak popíšete srdeční tep?" 
+           question="1.4 Popište srdeční rytmus:" 
            answers="A. Mírná tachykardie a prehypertenze|B. Bradykardie a prehypotenze." 
            correctoptions="true|false" 
            explanations="ano|ne" 
@@ -119,17 +119,17 @@ API to VR <!--bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval=
            explanations="ano|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q1.6" type="choice2" 
-           question="1.6 Jak popíšete koncentraci CO2 v krvi (v simulátoru)?" 
-           answers="A. zvýšenou, akutní hyperkapnie souvisí patrně s poškozením plic.|B. sníženou, akutní hypokapnie souvisí se sníženou saturací kyslíku." 
+           question="1.6 Popište koncentraci CO2 v krvi:" 
+           answers="A. zvýšenou, akutní hyperkapnie |B. sníženou, akutní hypokapnie" 
            correctoptions="true|false" 
            explanations="ano|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q1.7" type="choice2" 
-           question="1.7 Nejprve vyzkoušejte a pak zvolte vhodnou první intervenci na pacientovi:" 
+           question="1.7 Vyzkoušejte možné první intervence a zvolte tu která vedla k zastavení poklesu saturace kyslíku v krvi:" 
            answers="A. morfium pro zklidnění dechové frekvence a stresu|B. Oxygenoterapie - maska a 40% O2 pro zvýšení saturace O2|C. Oxygenoterapie - maska a 80% O2 pro zvýšení saturace O2" 
            correctoptions="false|true|true" 
            explanations="ne. Aplikací morfia se dekompenzuje dechová frekvence a úsilí pro zvýšení perfůze a distribuce. Je však možná poté co se zlepší saturace, ale ne jako první volba v této situaci|ano. Aplikací oxygenoterapie se mírně zvýší saturace kyslíku" 
-           buttontitle="zkontrolovat odpověď"> <br/> Zkuste aplikovat nejprve stisknutí tlačítka a  simulujte, stisknutí druhého tlačítka zruší vliv předchozí aplikace<bdl-buttonparams title='oxygen 40% (no morf.)' ids='ido2,idrate' values='40,28'></bdl-buttonparams><br/><bdl-buttonparams title='oxygen 80% (no morf.)' ids='ido2,idrate' values='80,28'></bdl-buttonparams><br/><bdl-buttonparams title='morfium 100ml (no oxy)' ids='ido2,idrate' values='21,12'></bdl-buttonparams><br/> <bdl-buttonparams title='Reset' ids='ido2,idrate' values='21,28'></bdl-buttonparams></bdl-quizx>
+           buttontitle="zkontrolovat odpověď"> <br/> _Zkuste aplikovat nejprve stisknutí tlačítka a  simulujte, stisknutí druhého tlačítka zruší vliv předchozí aplikace_<bdl-buttonparams title='oxygen 40% (no morf.)' ids='ido2,idrate' values='40,28'></bdl-buttonparams><br/><bdl-buttonparams title='oxygen 80% (no morf.)' ids='ido2,idrate' values='80,28'></bdl-buttonparams><br/><bdl-buttonparams title='morfium 100ml (no oxy)' ids='ido2,idrate' values='21,12'></bdl-buttonparams><br/> <bdl-buttonparams title='Reset' ids='ido2,idrate' values='21,28'></bdl-buttonparams></bdl-quizx>
 <bdl-quiz-summary id="qs1">
   Shrnutí odpovědí:
 </bdl-quiz-summary>          
