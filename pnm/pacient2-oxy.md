@@ -107,28 +107,26 @@ Pravá plíce vykazuje normální plicní kresbu bez známek infiltrátů nebo k
 </div>
 </div>
 
-<div class="w3-quarter w3-xlarge">
-2. Pacient 55 let, muž, s dýchacími obtížemi, tachykardií, tachypnoe a nízkou saturací. Byla mu nasazena kyslíková maska s 80% O<sub>2</sub>
+<div class="w3-quarter w3-small">
+
+2. Pacientovi byla nasazena zatím maska s 80% O<sub>2</sub>. _Pokračujte v simulaci a podle otázek níže_
 <bdl-quizx id="q2.0" type="match" 
-          question="2.0 Při oxygenoterapii hrozí otrava kyslíkem. Přiřaďte ke stavům tkání jejich popis."
+          question="2.0 Jaká komplikace můžou nastat při oxygenoterapii? Přiřaďte k názvu správný popis"
           terms="hyperoxie|hypoxie"
-          answers="vystavené plynům se zvýšenou koncentrací (parciálním tlakem) kyslíku, který může mít toxické účinky|vystavené plynům se sníženou koncentrací kyslíku, může mít vliv na změně metabolismu na anaerobní" 
+          answers="zvýšená koncentrace (parciální tlak) kyslíku může mít toxické účinky|snížená koncentrace kyslíku, může mít vliv na změnu metabolismu na anaerobní" 
           buttontitle="zkontrolovat odpověď"></bdl-quizx>
- 
 <bdl-quizx id="q2.1" type="choice2" 
-          question="2.1 Spusťte simulaci a počkejte asi 15-20s. Je oxygenoterapie  dostačující." 
+          question="2.1 Spusťte simulaci a počkejte asi 15-20s. Je oxygenoterapie  dostačující(nad 90%)?" 
           answers="A. Ano, Saturace se ustálila na vyšších hodnotách.|B. Ne. Saturace je stále nízká pod 90%" 
           correctoptions="false|true" 
           explanations="ne|ano" 
           buttontitle="zkontrolovat odpověď"></bdl-quizx>
-
 <bdl-quizx id="q2.2" type="choice2" 
           question="2.2 Zvolte další postup?" 
           answers="A. Příprava na umělou plicní ventilaci, intubace. |B. Zvýšit oxygenoterapii na 100%" 
           correctoptions="true|false" 
           explanations="ano|ne" 
           buttontitle="zkontrolovat odpověď"></bdl-quizx>
-
 <bdl-quizx id="q2.3" type="choice2" 
                question="2.3 Pacient byl zaintubován a napojen na umělou plicní ventilaci, přístroj Hamilton-C6 v režimu . Nastavte dechovou frekvenci na 18 dechů/min.Jak se to projeví na saturaci." 
            answers="A. Saturace se mírně zlepšila|B. Saturace s mírně zhoršila." 
@@ -137,18 +135,18 @@ Pravá plíce vykazuje normální plicní kresbu bez známek infiltrátů nebo k
            buttontitle="zkontrolovat odpověď"><bdl-buttonparams title="18 1/m" ids="idrate" values="18"></bdl-buttonparams>
 </bdl-quizx>
 <bdl-quizx id="q2.4" type="choice2" 
-               question="2.4 Nastavte Tidal Volume na 1000ml" 
+               question="2.4 Na plicním ventilátoru nastavte dechový objem na 1000ml" 
            answers="A. Saturace se mírně zlepšila|B. Saturace s mírně zhoršila." 
            correctoptions="true|false" 
            explanations="ano|ne" 
            buttontitle="zkontrolovat odpověď"><bdl-buttonparams title="TV 1000 ml" ids="idtv" values="1000"></bdl-buttonparams>
 </bdl-quizx>
 <bdl-quizx id="q2.5" type="choice2" 
-               question="2.5 Nastavte Pause na 10%." 
+               question="2.5 Na plicním ventilátoru nastavte inspiratorní pauzu na 10%." 
            answers="A. Saturace se mírně zlepšila|B. Saturace s mírně zhoršila." 
            correctoptions="true|false" 
            explanations="ano|ne" 
-           buttontitle="zkontrolovat odpověď"><bdl-buttonparams title="Pause 10%" ids="idpause" values="10"></bdl-buttonparams>
+           buttontitle="zkontrolovat odpověď"><bdl-buttonparams title="Pause 20%" ids="idpause" values="20"></bdl-buttonparams>
 </bdl-quizx>
 <bdl-quiz-summary id="qs1">
   Shrnutí odpovědí:
