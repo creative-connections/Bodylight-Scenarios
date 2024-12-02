@@ -136,18 +136,10 @@ answers="A. zvýšené PEEP sníží srdeční výdej a arteriální tlak|B. zv�
            buttontitle="zkontrolovat odpověď"><bdl-buttonparams title="PEEP 0 cmH2O" ids="idpeep,idcomp,idshunts,idexp,idep" values="0,10,58,0.02,-4"></bdl-buttonparams><bdl-buttonparams title="PEEP 10 cmH2O" ids="idpeep,idcomp,idshunts,idexp,idep" values="10,18,44,0.02,2"></bdl-buttonparams>
            <bdl-buttonparams title="PEEP 15 cmH2O" ids="idpeep,idcomp,idshunts,idexp,idep" values="15,20,39,0.02,5"></bdl-buttonparams>
 </bdl-quizx>
-<bdl-quizx id="q3.8" type="match" 
-               question="3.8 Přiřaďte"
-           terms=""
-           answers="A. 16 cmH2O/l/s zvýšená|B. 10 cmH2O/l/s normální" 
-           correctoptions="true|false" 
-           explanations="ano|ne" 
-           buttontitle="zkontrolovat odpověď"><button class="w3-button w3-blue" onclick="document.getElementById('idrinsp').style.display='inline'">Zobraz Rinsp</button>
-</bdl-quizx>
 <bdl-quiz-summary id="qs1">
   Shrnutí odpovědí:
 </bdl-quiz-summary>          
-<bdl-quiz-control ids="q3.1,q3.2,q3.3,q3.4,q3.5,q3.6,qs1"></bdl-quiz-control>
+<bdl-quiz-control ids="q3.1,q3.2,q3.3,q3.4,q3.5,q3.6,q3.7,qs1"></bdl-quiz-control>
 </div>
 </div>
 
