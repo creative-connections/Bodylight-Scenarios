@@ -71,10 +71,10 @@ API to VR <!--bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval=
 &nbsp;P<b class="w3-xxlarge"><bdl-value fromid="ventilator" refindex="0" convertor="1,133.322"></bdl-value></b>&nbsp;<span class="w3-small">mmHg</span><br/>
 &nbsp;V<b class="w3-xxlarge"><bdl-value fromid="ventilator" refindex="1" convertor="1000,1"></bdl-value></b>&nbsp;<span class="w3-small">l</span>
 <div class="w3-text-white w3-large">
-&nbsp;C<sub>stat</sub><b class="w3-xxlarge"><bdl-value id="idcstat" fromid="ventilator" refindex="12" convertor="1e+10,98.0665" style="display:none" precision="2"></bdl-value></b>&nbsp;<span class="w3-small">ml/cmH<sub>2</sub>O</span>
+&nbsp;C<sub>stat</sub><b class="w3-xxlarge"><bdl-value id="idcstat" fromid="ventilator" refindex="12" convertor="1e+10,98.0665" precision="2"></bdl-value></b>&nbsp;<span class="w3-small">ml/cmH<sub>2</sub>O</span>
 </div>
 <div class="w3-text-white w3-large">
-&nbsp;R<sub>insp</sub><b class="w3-xxlarge"><bdl-value id="idrinsp" fromid="ventilator" refindex="10" style="display:none" convertor="0.001,98.0665" precision="2"></bdl-value></b>
+&nbsp;R<sub>insp</sub><b class="w3-xxlarge"><bdl-value id="idrinsp" fromid="ventilator" refindex="10" convertor="0.001,98.0665" precision="2"></bdl-value></b>
 </div>
 <div class="w3-text-blue">
 &nbsp;p<sub>H</sub><sup>ven</sup><b class=""><bdl-value fromid="idfmi" refindex="3"></bdl-value></b>
@@ -166,14 +166,14 @@ Patient state: <br/>
 Ventilated gas: <!--bdl-buttonparams title="Normal" ids="ido2,idco2,idh2o" values="21,0.03,6"></bdl-buttonparams>
 <bdl-buttonparams title="O2 40%" ids="ido2,idco2,idh2o" values="40,0.03,6"></bdl-buttonparams>
 <bdl-buttonparams title="O2 60%" ids="ido2,idco2,idh2o" values="60,0.03,6"></bdl-buttonparams-->
-<bdl-range id="ido2" title="O2 %" min="5" max="93" default="80" fromid="vrapi" refindex="4" initdefault="true"></bdl-range><br/>
+<bdl-range id="ido2" title="O2 %" min="5" max="93" default="60" fromid="vrapi" refindex="4" initdefault="true"></bdl-range><br/>
 <bdl-range id="iddeadspace" title="dead space" min="100" max="4500" default="400" initdefault="true"></bdl-range>
 <bdl-range id="idshunts" title="L-V shunts %" min="5" max="95" default="58" initdefault="true"></bdl-range>
 <bdl-range id="idco2" title="CO2 %" min="0" max="10" default="0.03" step="0.01"></bdl-range>
 <bdl-range id="idh2o" title="H2O %" min="0" max="10" default="6" step="0.1"></bdl-range>
 
 Mechanical ventilator setting:<br/>
-<bdl-range id="idrate" title="Breathing rate (1/min)" min="1" max="60" default="11" step="1" initdefault="true" fromid="vrapi" refindex="3"></bdl-range><br/>
+<bdl-range id="idrate" title="Breathing rate (1/min)" min="1" max="60" default="18" step="1" initdefault="true" fromid="vrapi" refindex="3"></bdl-range><br/>
 <!--bdl-range id="idmuscle" title="Breathing force (%)" min="10" max="400" default="100" step="1" fromid="vrapi" refindex="0"></bdl-range-->
 <bdl-range id="idtv" title="Vt - tidal volume (ml)" min="200" max="1500" default="800" step="1" fromid="vrapi" refindex="2" initdefault="true"></bdl-range><br/>
 <div class="w3-hide">

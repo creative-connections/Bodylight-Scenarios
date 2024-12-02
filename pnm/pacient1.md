@@ -1,8 +1,8 @@
 <div class="w3-blue" style="position: absolute">
-<span class="w3-small">v3.22&nbsp;</span>
+<span class="w3-small">v3.18&nbsp;</span>
 <bdl-animate-control id="controlbuttons2" controlfmi="true" showstep="false" playafterstart="true"></bdl-animate-control>
-<!-- not optimalized -O0 --><bdl-fmi id="idfmi" mode="continuous" showcontrols="false" controlid="controlbuttons2" src="modelECMORespiratoryVR_BloodGasesTransport_BloodyMaryPPG2.js" fminame="modelECMORespiratoryVR_BloodGasesTransport_BloodyMaryPPG2" tolerance="0.00001" starttime="0" fstepsize="1" fpslimit="0.5" guid="{83d444de-f6b1-4a60-a953-199d3e7b2d57}" valuereferences="905975257,369103464,905975068,905975254,905974373,905975067,905975342,905972510,16777311,16777312,905975256,335544320,637537073,637538918,637538919" valuelabels="venous.sO2,arterial.sO2,tissueUnit[1].sO2,venous.pH,arterial.pH,tissueUnit[1].pH,AirO2.y,AirN2,AirCO2,AirH2O,venous.pCO2,plethy,respiratoryCenter.VentilationSwitch.y,arterial.pO2,arterial.pCO2" inputs="idrate,16777223,1,60,t;idco2,16777311,1,100,t;idh2o,16777312,1,100,t;idshunts,16777227,1,100,t;iddeadspace,16777225,1,1000000,t;ido2,16777547,1,100,t;idventilation,16777511,1,1,t" inputlabels="RR,AirCO2,AirH2O,cShuntFrac,DV,AirO2Fraction.k,respiratoryCenter.ArtificialVentilation.k"></bdl-fmi>
-<bdl-fmi id="ventilator" mode="continuous" src="modelECMORespiratoryVR_BloodGasesTransport_LungVentilatorSCMV2.js" showcontrols="false" controlid="controlbuttons2" fminame="modelECMORespiratoryVR_BloodGasesTransport_LungVentilatorSCMV2" tolerance="0.0001" starttime="0" fstepsize="0.1" fpslimit="10" guid="{940bf65b-b874-4fc8-826c-371ec080f401}" valuereferences="637534459,637534501,16777227,16777225,16777240,16777241,16777242,335544321,369099046,637534489,16777223,234881080,16777224,905969992" valuelabels="expiration.q_in.p,lungs.volume,RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.Eratio,ventilatorSCMV.pause,ventilation,filter.y,lungs.pressure,TotalResistance,expirationConductance.y,TotalCompliance,lungsPressureMeasure.pressure" inputs="idrate,16777227,1,60,t;idtv,16777225,1,1000000,t;idiratio,16777240,1,1,t;idpause,16777242,1,100,t;ideratio,16777241,1,1,t;idres,16777223,1,1,t;idcomp,16777224,1,1,t;idexp,16777272,1,100000,t" inputlabels="RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.pause,ventilatorSCMV.Eratio,TotalResistance,TotalCompliance,expirationConductance.k"></bdl-fmi>
+<!-- not optimalized -O0 --><bdl-fmi id="idfmi" mode="continuous" showcontrols="false" controlid="controlbuttons2" src="modelECMORespiratoryVR_BloodGasesTransport_BloodyMaryPPG2.js" fminame="modelECMORespiratoryVR_BloodGasesTransport_BloodyMaryPPG2" tolerance="0.00001" starttime="0" fstepsize="0.2" fpslimit="0.5" guid="{83d444de-f6b1-4a60-a953-199d3e7b2d57}" valuereferences="905975257,369103464,905975068,905975254,905974373,905975067,905975342,905972510,16777311,16777312,905975256,335544320,637537073,637538918,637538919" valuelabels="venous.sO2,arterial.sO2,tissueUnit[1].sO2,venous.pH,arterial.pH,tissueUnit[1].pH,AirO2.y,AirN2,AirCO2,AirH2O,venous.pCO2,plethy,respiratoryCenter.VentilationSwitch.y,arterial.pO2,arterial.pCO2" inputs="idrate,16777223,1,60,t;idco2,16777311,1,100,t;idh2o,16777312,1,100,t;idshunts,16777227,1,100,t;iddeadspace,16777225,1,1000000,t;ido2,16777547,1,100,t;idventilation,16777511,1,1,t" inputlabels="RR,AirCO2,AirH2O,cShuntFrac,DV,AirO2Fraction.k,respiratoryCenter.ArtificialVentilation.k"></bdl-fmi>
+<bdl-fmi id="ventilator" mode="continuous" src="modelECMORespiratoryVR_BloodGasesTransport_LungVentilatorSCMV2.js" showcontrols="false" controlid="controlbuttons2" fminame="modelECMORespiratoryVR_BloodGasesTransport_LungVentilatorSCMV2" tolerance="0.0001" starttime="0" fstepsize="0.1" fpslimit="10" guid="{940bf65b-b874-4fc8-826c-371ec080f401}" valuereferences="637534459,637534501,16777227,16777225,16777240,16777241,16777242,335544321,369099046,637534489,16777223,234881080,16777224,905969992" valuelabels="expiration.q_in.p,lungs.volume,RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.Eratio,ventilatorSCMV.pause,ventilation,filter.y,lungs.pressure,TotalResistance,expirationConductance.y,TotalCompliance,lungsPressureMeasure.pressure" inputs="idrate,16777227,1,60,t;idtv,16777225,1,1000000,t;idiratio,16777240,1,1,t;idpause,16777242,1,100,t;ideratio,16777241,1,1,t;idres,16777223,1,1,t;idcomp,16777224,1e-6,98.0665,t;idexp,16777272,1,100000,t" inputlabels="RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.pause,ventilatorSCMV.Eratio,TotalResistance,TotalCompliance,expirationConductance.k"></bdl-fmi>
 <bdl-fmi id="hemodynamics" mode="continuous" showcontrols="false" controlid="controlbuttons2" src="modelECMORespiratoryVR_BloodGasesTransport_MeursModel2011_HemodynamicsRegulatedHR.js" fminame="modelECMORespiratoryVR_BloodGasesTransport_MeursModel2011_HemodynamicsRegulatedHR" tolerance="0.000001" starttime="0" fstepsize="0.05" fpslimit="20" guid="{87860081-905b-4adf-b51a-cdbabd18cf3e}" valuereferences="905970357,905970199,905970200,33554460,637534720" valuelabels="EithaPressure.pressure,arterialPressure.systolic,arterialPressure.diastolic,Ecg.ecg,currentHeartReat.y" inputs="sO2,16777391,1,1,t" inputlabels="sO2.k"></bdl-fmi>
 API to VR <!--bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval="2000" id="vrapi" inputs="volume;sO2"></bdl-remote-value-->
 <bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval="2000" id="vrapi" inputs="sO2"></bdl-remote-value>
@@ -42,9 +42,10 @@ API to VR <!--bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval=
 <div class="w3-quarter">
 <div class="" style="white-space:nowrap">
 <div class="w3-text-yellow w3-large">
-&nbsp;sO<sub>2</sub><sup>art</sup><b class="w3-xxxlarge"><bdl-value fromid="idfmi" refindex="1" convertor="100,1" precision="4"></bdl-value></b>&nbsp;<span class="w3-small">%</span><br/></div>
-<div class="w3-text-red w3-large">&nbsp;pO<sub>2</sub><sup>art</sup><b class="w3-large"><bdl-value fromid="idfmi" refindex="13" convertor="1,133.322" precision="4" convertors="1,133.322"></bdl-value></b>&nbsp;<span class="w3-small">mmHg</span><br/></div>
-<div class="w3-text-green w3-large">&nbsp;pCO<sub>2</sub><sup>art</sup><b class="w3-large"><bdl-value fromid="idfmi" refindex="14" convertor="1,133.322" precision="4" convertors="1,133.322"></bdl-value></b>&nbsp;<span class="w3-small">mmHg</span></div>
+&nbsp;sO<sub>2</sub><sup>art</sup><b class="w3-xxxlarge"><bdl-value id="spo2value" fromid="idfmi" refindex="1" convertor="100,1" precision="4" style="display:none"></bdl-value></b>&nbsp;<span class="w3-small">%</span><br/></div>
+<div class="w3-text-red w3-large">&nbsp;pO<sub>2</sub><sup>art</sup><b class="w3-large"><bdl-value fromid="idfmi" refindex="13" convertor="1,133.322" precision="2" convertors="1,133.322"></bdl-value></b>&nbsp;<span class="w3-small">mmHg</span><br/></div>
+<!--div class="w3-text-green w3-large">&nbsp;pCO<sub>2</sub><sup>art</sup><b class="w3-large"><bdl-value fromid="idfmi" refindex="14" convertor="1,133.322" precision="4" convertors="1,133.322"></bdl-value></b>&nbsp;<span class="w3-small">mmHg</span></div-->
+<div class="w3-text-blue w3-large">&nbsp;etCO<sub>2</sub><b class="w3-large"><bdl-value id="etco2value" fromid="idfmi" refindex="14" convertor="1,134" precision="2" convertors="1,133.322" style="display:none"></bdl-value></b>&nbsp;<span class="w3-small">mmHg</span></div>
 </div>
 </div>
 </div>
@@ -80,47 +81,42 @@ API to VR <!--bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval=
 </div></div></div>
 </div></div>
 
-<div class="w3-quarter w3-small w3-padding">
+<div class="w3-quarter w3-large w3-padding">
 
-**Pacient 55 let** , muž, byl přivezen příbuznými na pohotovost. Již 5 dnem infekce. těžce se mu dýchá. Kašel. Teplota 38.1˚C. Malátný a dezorientovaný. Spusťte simulaci napodobující pacientův stav a počkejte asi 15-20s. 
-
-_Spusťte simulaci napodobující pacientův stav a počkejte asi 15-20s a zodpovězte otázky níže_
+**Pacient 55 let** , muž, byl přivezen příbuznými na pohotovost. Již 5 dnem infekce. těžce se mu dýchá. Kašel. Teplota 38.1˚C. Malátný a dezorientovaný. 
 
 <bdl-quizx id="q1.1" type="choice2" 
-          question="1.1 Vyberte nejvhodnější popis dechu:" 
-          answers="A. Tachypnoe. Zvýšená frekvence (nad 20) a zvýšené  úsilí.|B. Bradypnoe. Snížená frekvence." 
-          correctoptions="true|false" 
-          explanations="ano|ne" 
-          buttontitle="zkontrolovat odpověď"></bdl-quizx>
-
-<bdl-quizx id="q1.2" type="choice2" 
-          question="1.2 Popište saturaci kyslíku (sO2) v arteriální krvi:" 
-          answers="A. Normální až zvýšená saturace. Může vést k respirační alkalóze.|B. Snížená saturace. Hrozí ztráta vědomí." 
+          question="Spusťte simulaci. Počkejte asi 15-20s. Vyberte nejvhodnější popis dechu:" 
+          answers="A. Tachypnoe. Zvýšená frekvence (nad 20) a zvýšené  úsilí.|B. Bradypnoe. Snížená frekvence (pod 12)." 
           correctoptions="false|true" 
           explanations="ano|ne" 
           buttontitle="zkontrolovat odpověď"></bdl-quizx>
-
+<bdl-quizx id="q1.2" type="match" 
+               question="1.2 Přiřaďte k přístroji popis veličiny, kterou měří" 
+               terms="pulzní oxymetr|kapnograf"
+          answers="Měří saturaci kyslíku většinou na prstu.spO2 norma 90-100%|Měří parciální expirační tlak oxidu uhličitého ve vydechovaném vzduchu na konci výdechu, většinou součástí nasální kanuly nebo plicního ventilátoru. etCO2" 
+           buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q1.3" type="choice2" 
-               question="1.3 Vyberte první pracovní hypotézu:" 
-           answers="A. Tachypnoe důsledkem kompenzace metabolické acidózy, kdy tělo zrychluje dýchání, aby se zbavilo nadbytku oxidu uhličitého a snížilo kyselost krve.|B. Tachypnoe důsledkem snížené saturace kyslíku v krvi. Snížená saturace dráždí chemoreceptory v karotických tělíscích a aortálním oblouku, které vysílají signály do mozku, aby zvýšil dechovou frekvenci." 
-           correctoptions="false|true" 
-           explanations="ano|ne" 
-           buttontitle="zkontrolovat odpověď"></bdl-quizx>
+          question="1.3 Připojte pulzní oxymetr a popište naměřenou hodnotu saturace kyslíku (spO2)." 
+          answers="A. Normální (90-100) |B. Snížená (pod 90%)" 
+          correctoptions="false|true" 
+          explanations="ano|ne" 
+          buttontitle="zkontrolovat odpověď"><br/> <button class="w3-button w3-blue" onclick="document.getElementById('spo2value').style.display='inline'">zapnout pulzní oxymetr</button></bdl-quizx>
 <bdl-quizx id="q1.4" type="choice2" 
-           question="1.4 Popište srdeční rytmus:" 
-           answers="A. Mírná tachykardie a prehypertenze|B. Bradykardie a prehypotenze." 
-           correctoptions="true|false" 
+           question="1.4 Připojte k pacientovi nasální kanylu a popište etCO2. Parciální tlak oxidu uhličitého na konci expirace." 
+           answers="A. hyperkapnie |B. Normokapnie|C. hypokapnie" 
+           correctoptions="true|false|false" 
            explanations="ano|ne" 
-           buttontitle="zkontrolovat odpověď"></bdl-quizx>
+           buttontitle="zkontrolovat odpověď"> <button class="w3-button w3-blue" onclick="document.getElementById('etco2value').style.display='inline'">zapnout kapnograf</button></bdl-quizx>
 <bdl-quizx id="q1.5" type="choice2" 
-           question="1.5 Jaký je pravděpodobný důvod abnormální srdeční činnosti?" 
-           answers="A. Podobně jako u dechu, zvýšený tep reaguje na špatnou saturaci kyslíku a snaží zvýšit distribuci kyslíku tkání.|B. Zvýšený stres v důsledku nemoci." 
-           correctoptions="true|false" 
-           explanations="ano|ne" 
+           question="1.5 Pacient není připojen k dalším přístrojům. Nicméně simulátor počítá a emuluje vnitřní prostředí. V grafu acidobazické rovnováhy jsou v reálném čase zobrazeny hodnoty vnitřní prostředí pacienta. V jakém stavu se nachází?"
+           answers="A. Akutní hyperkapnie.|B. Normokapnie| C. Akutní hypokapnie." 
+           correctoptions="true|false|false" 
+           explanations="ano|ne|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q1.6" type="choice2" 
-           question="1.6 Popište koncentraci CO2 v krvi:" 
-           answers="A. zvýšenou, akutní hyperkapnie |B. sníženou, akutní hypokapnie" 
+           question="1.6 Akutní hyperkapnické selhávání plic (AHRF) je " 
+           answers="A. způsobené akutním onemocněním způsobené CHOPN a dalšími. Může také nastat v důsledku hypoventilace při vyčerpání dýchacích svalů během pneumonie nebo astmatického záchvatu.| B. způsobené hyperventilací, může nastat při stresové reakci." 
            correctoptions="true|false" 
            explanations="ano|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
@@ -129,7 +125,7 @@ _Spusťte simulaci napodobující pacientův stav a počkejte asi 15-20s a zodpo
            answers="A. morfium pro zklidnění dechové frekvence a stresu|B. Oxygenoterapie - maska a 40% O2 pro zvýšení saturace O2|C. Oxygenoterapie - maska a 80% O2 pro zvýšení saturace O2" 
            correctoptions="false|true|true" 
            explanations="ne. Aplikací morfia se dekompenzuje dechová frekvence a úsilí pro zvýšení perfůze a distribuce. Je však možná poté co se zlepší saturace, ale ne jako první volba v této situaci|ano. Aplikací oxygenoterapie se mírně zvýší saturace kyslíku" 
-           buttontitle="zkontrolovat odpověď"> <br/> _Zkuste aplikovat nejprve stisknutí tlačítka a  simulujte, stisknutí druhého tlačítka zruší vliv předchozí aplikace_<bdl-buttonparams title='oxygen 40% (no morf.)' ids='ido2,idrate' values='40,28'></bdl-buttonparams><br/><bdl-buttonparams title='oxygen 80% (no morf.)' ids='ido2,idrate' values='80,28'></bdl-buttonparams><br/><bdl-buttonparams title='morfium 100ml (no oxy)' ids='ido2,idrate' values='21,12'></bdl-buttonparams><br/> <bdl-buttonparams title='Reset' ids='ido2,idrate' values='21,28'></bdl-buttonparams></bdl-quizx>
+           buttontitle="zkontrolovat odpověď"> <br/> _Zkuste aplikovat nejprve stisknutí tlačítka a  simulujte, stisknutí druhého tlačítka zruší vliv předchozí aplikace_<bdl-buttonparams title='oxygen 40% (no morf.)' ids='ido2,idrate' values='40,28'></bdl-buttonparams><br/><bdl-buttonparams title='oxygen 80% (no morf.)' ids='ido2,idrate' values='80,28'></bdl-buttonparams><br/><bdl-buttonparams title='morfium 100ml (no oxy)' ids='ido2,idrate' values='21,8'></bdl-buttonparams><br/> <bdl-buttonparams title='Reset' ids='ido2,idrate' values='21,28'></bdl-buttonparams></bdl-quizx>
 <bdl-quiz-summary id="qs1">
   Shrnutí odpovědí:
 </bdl-quiz-summary>          
@@ -147,7 +143,7 @@ _Spusťte simulaci napodobující pacientův stav a počkejte asi 15-20s a zodpo
 <div style="display:none" id="vcontrols" class="w3-card">
 <button class="w3-button w3-red" onclick="document.getElementById('vcontrols').style.display='none'">X</button>
 
-compliance <bdl-value fromid="ventilator" refindex="12"></bdl-value> <bdl-range id="idcomp" title="total compliance" min="6e-8" max="6e-6" default="6e-7" step="1e-8"></bdl-range>
+compliance <bdl-value fromid="ventilator" refindex="12" convertor="1e+10,98.0665"></bdl-value> <bdl-range id="idcomp" title="total compliance (ml/cmH20)" min="10" max="200" default="10" step="1" initdefault="true"></bdl-range>
 
 conductance <bdl-value fromid="ventilator" refindex="11"></bdl-value> <bdl-range id="idexp" title="expiration conductance" min="0.01" max="2" default="0.2" step="0.01" initdefault="true"></bdl-range>
 
@@ -177,9 +173,9 @@ Ventilated gas: <!--bdl-buttonparams title="Normal" ids="ido2,idco2,idh2o" value
 <bdl-range id="idh2o" title="H2O %" min="0" max="10" default="6" step="0.1"></bdl-range>
 
 Mechanical ventilator setting:<br/>
-<bdl-range id="idrate" title="Breathing rate (1/min)" min="1" max="60" default="27" step="1" initdefault="true" fromid="vrapi" refindex="3"></bdl-range><br/>
+<bdl-range id="idrate" title="Breathing rate (1/min)" min="1" max="60" default="11" step="1" initdefault="true" fromid="vrapi" refindex="3"></bdl-range><br/>
 <!--bdl-range id="idmuscle" title="Breathing force (%)" min="10" max="400" default="100" step="1" fromid="vrapi" refindex="0"></bdl-range-->
-<bdl-range id="idtv" title="Vt - tidal volume (ml)" min="200" max="1000" default="800" step="1" fromid="vrapi" refindex="2" initdefault="true"></bdl-range><br/>
+<bdl-range id="idtv" title="Vt - tidal volume (ml)" min="200" max="1500" default="800" step="1" fromid="vrapi" refindex="2" initdefault="true"></bdl-range><br/>
 <div class="w3-hide">
 <bdl-range id="idiratio" min="1" max="4" default="1" step="1"fromid="vrapi" refindex="1"></bdl-range>
 <bdl-range id="ideratio" min="1" max="9" default="4" step="1" fromid="vrapi" refindex="0"></bdl-range>
@@ -189,7 +185,7 @@ Set I:E ratio
 <bdl-buttonparams title="1:2" ids="idiratio,ideratio" values="1,2"></bdl-buttonparams>
 <bdl-buttonparams title="2:1" ids="idiratio,ideratio" values="2,1"></bdl-buttonparams>
 <bdl-buttonparams title="3:2" ids="idiratio,ideratio" values="3,2"></bdl-buttonparams></br>
-<bdl-range id="idpause" title="pause (%)" min="0" max="70" default="10" step="1" initdefault="true" fromid="vrapi" refindex="6"></bdl-range>
+<bdl-range id="idpause" title="pause (%)" min="0" max="70" default="2" step="1" initdefault="true" fromid="vrapi" refindex="6"></bdl-range>
 
 
 <!--bdl-chartjs-time width="150" height="90" fromid="idfmi" labels="RR" initialdata="0" refindex="7" refvalues="1" throttle="1000"></bdl-chartjs-time>
