@@ -107,7 +107,7 @@ API to VR <!--bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval=
           explanations="ne|ano|ano|ano|ano" 
           buttontitle="zkontrolovat odpověď"></bdl-quizx>          
 <bdl-quizx id="q4.4" type="choice2" 
-               question="4.4 Provedl jste askultaci. Stetoskopem na pravé straně hrudi nejsou slyšet zvuky nádechu a výdechu. Nyní jste si zavolal pomoc. Vyberte pravděpodobnou komplikaci" 
+               question="4.4 Provedl jste askultaci. Stetoskopem na pravé straně hrudi nejsou slyšet zvuky nádechu a výdechu. Ultrazvuk odhalil vychýlení trachey na pravou stranu. Nyní jste si zavolal pomoc. Vyberte pravděpodobnou komplikaci" 
            answers="B. Pneumothorax|C. Pneumomediastinum|D. Pneumopericardium:" 
            correctoptions="true|false|false" 
            explanations="ano|ne|ne" 
