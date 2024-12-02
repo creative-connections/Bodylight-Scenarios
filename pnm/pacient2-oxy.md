@@ -126,7 +126,7 @@ API to VR <!--bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval=
 </bdl-quizx>
 <bdl-quizx id="q2.6" type="choice2" 
                question="2.6 Plicní ventilátor měří několik parametrů plic. Dalším z nich je tzv. Inspiratorní rezistence, odpor vůči proudění vzduchu během inspirační fáze ventilace norma 10 cmH2O/l/s. Zobrazte tuto hodnotu. Jaká je hodnota (Rinsp na monitoru) ?"
-           answers="A. 15 cmH2O/l/s |B. 150 cmH2O/l/s" 
+           answers="A. 16 cmH2O/l/s zvýšená|B. 10 cmH2O/l/s normální" 
            correctoptions="true|false" 
            explanations="ano|ne" 
            buttontitle="zkontrolovat odpověď"><button class="w3-button w3-blue" onclick="document.getElementById('idrinsp').style.display='inline'">Zobraz Rinsp</button>
