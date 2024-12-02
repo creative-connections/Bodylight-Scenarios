@@ -2,8 +2,8 @@
 <span class="w3-small">v3.18&nbsp;</span>
 <bdl-animate-control id="controlbuttons2" controlfmi="true" showstep="false" playafterstart="true"></bdl-animate-control>
 <!-- not optimalized -O0 --><bdl-fmi id="idfmi" mode="continuous" showcontrols="false" controlid="controlbuttons2" src="modelECMORespiratoryVR_BloodGasesTransport_BloodyMaryPPG2.js" fminame="modelECMORespiratoryVR_BloodGasesTransport_BloodyMaryPPG2" tolerance="0.00001" starttime="0" fstepsize="2" fpslimit="0.5" guid="{83d444de-f6b1-4a60-a953-199d3e7b2d57}" valuereferences="905975257,369103464,905975068,905975254,905974373,905975067,905975342,905972510,16777311,16777312,905975256,335544320,637537073,637538918,637538919" valuelabels="venous.sO2,arterial.sO2,tissueUnit[1].sO2,venous.pH,arterial.pH,tissueUnit[1].pH,AirO2.y,AirN2,AirCO2,AirH2O,venous.pCO2,plethy,respiratoryCenter.VentilationSwitch.y,arterial.pO2,arterial.pCO2" inputs="idrate,16777223,1,60,t;idco2,16777311,1,100,t;idh2o,16777312,1,100,t;idshunts,16777227,1,100,t;iddeadspace,16777225,1,1000000,t;ido2,16777547,1,100,t;idventilation,16777511,1,1,t" inputlabels="RR,AirCO2,AirH2O,cShuntFrac,DV,AirO2Fraction.k,respiratoryCenter.ArtificialVentilation.k"></bdl-fmi>
-<bdl-fmi id="ventilator" mode="continuous" src="modelECMORespiratoryVR_BloodGasesTransport_LungVentilatorSCMV2.js" showcontrols="false" controlid="controlbuttons2" fminame="modelECMORespiratoryVR_BloodGasesTransport_LungVentilatorSCMV2" tolerance="0.0001" starttime="0" fstepsize="0.1" fpslimit="10" guid="{940bf65b-b874-4fc8-826c-371ec080f401}" valuereferences="637534459,637534501,16777227,16777225,16777240,16777241,16777242,335544321,369099046,637534489,16777223,234881080,16777224,905969992" valuelabels="expiration.q_in.p,lungs.volume,RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.Eratio,ventilatorSCMV.pause,ventilation,filter.y,lungs.pressure,TotalResistance,expirationConductance.y,TotalCompliance,lungsPressureMeasure.pressure" inputs="idrate,16777227,1,60,t;idtv,16777225,1,1000000,t;idiratio,16777240,1,1,t;idpause,16777242,1,100,t;ideratio,16777241,1,1,t;idres,16777223,98.0665,0.001,t;idcomp,16777224,1e-6,98.0665,t;idexp,16777272,1,100000,t" inputlabels="RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.pause,ventilatorSCMV.Eratio,TotalResistance,TotalCompliance,expirationConductance.k"></bdl-fmi>
-<bdl-fmi id="hemodynamics" mode="continuous" showcontrols="false" controlid="controlbuttons2" src="modelECMORespiratoryVR_BloodGasesTransport_MeursModel2011_HemodynamicsRegulatedHR.js" fminame="modelECMORespiratoryVR_BloodGasesTransport_MeursModel2011_HemodynamicsRegulatedHR" tolerance="0.000001" starttime="0" fstepsize="0.05" fpslimit="20" guid="{87860081-905b-4adf-b51a-cdbabd18cf3e}" valuereferences="905970357,905970199,905970200,33554460,637534720" valuelabels="EithaPressure.pressure,arterialPressure.systolic,arterialPressure.diastolic,Ecg.ecg,currentHeartReat.y" inputs="sO2,16777391,1,1,t" inputlabels="sO2.k"></bdl-fmi>
+<bdl-fmi id="ventilator" mode="continuous" showcontrols="false" controlid="controlbuttons2" src="modelECMORespiratoryVR_BloodGasesTransport_LungVentilatorSCMV2.js" fminame="modelECMORespiratoryVR_BloodGasesTransport_LungVentilatorSCMV2" tolerance="0.0001" starttime="0" fstepsize="0.1" fpslimit="10" guid="{940bf65b-b874-4fc8-826c-371ec080f401}" valuereferences="637534459,637534501,16777227,16777225,16777240,16777241,16777242,335544321,369099046,637534489,16777223,234881080,16777224,905969992,16777247" valuelabels="expiration.q_in.p,lungs.volume,RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.Eratio,ventilatorSCMV.pause,ventilation,filter.y,lungs.pressure,TotalResistance,expirationConductance.y,TotalCompliance,lungsPressureMeasure.pressure,idealValve.Pknee" inputs="idrate,16777227,1,60,t;idtv,16777225,1,1000000,t;idiratio,16777240,1,1,t;idpause,16777242,1,100,t;ideratio,16777241,1,1,t;idres,16777223,98.0665,0.001,t;idcomp,16777224,1e-6,98.0665,t;idexp,16777272,1,100000,t;idpeep,16777247,98.0638,1,t" inputlabels="RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.pause,ventilatorSCMV.Eratio,TotalResistance,TotalCompliance,expirationConductance.k,idealValve.Pknee"></bdl-fmi>
+<bdl-fmi id="hemodynamics" mode="continuous" showcontrols="false" controlid="controlbuttons2" src="modelECMORespiratoryVR_BloodGasesTransport_MeursModel2011_HemodynamicsRegulatedHR.js" fminame="modelECMORespiratoryVR_BloodGasesTransport_MeursModel2011_HemodynamicsRegulatedHR" tolerance="0.000001" starttime="0" fstepsize="0.05" fpslimit="20" guid="{87860081-905b-4adf-b51a-cdbabd18cf3e}" valuereferences="905970357,905970199,905970200,33554460,637534720,637534838" valuelabels="EithaPressure.pressure,arterialPressure.systolic,arterialPressure.diastolic,Ecg.ecg,currentHeartReat.y,Eethv.q_in[1].m_flow" inputs="sO2,16777391,1,1,t;idep,16777229,133.322,1,t;idep,16777239,133.322,1,t;idep,16777249,133.322,1,t;idep,16777258,133.322,1,t;idep,16777330,133.322,1,t;idep,16777339,133.322,1,t;idep,16777281,133.322,1,f;idep,16777313,133.322,1,t" inputlabels="sO2.k,Epa.ExternalPressure,Epv.ExternalPressure,LeftAtrium.ExternalPressure,LeftVentricle.ExternalPressure,RightAtrium.ExternalPressure,RightVentricle.ExternalPressure,Eitha.ExternalPressure,Eithv.ExternalPressure"></bdl-fmi>
 API to VR <!--bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval="2000" id="vrapi" inputs="volume;sO2"></bdl-remote-value-->
 <bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval="2000" id="vrapi" inputs="sO2"></bdl-remote-value>
 </div>
@@ -29,6 +29,10 @@ API to VR <!--bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval=
 <div class="w3-text-purple w3-large">
 &nbsp;NIBP<b class="w3-xlarge"><bdl-value fromid="hemodynamics" refindex="1" convertor="1,133.322" precision="3"></bdl-value>/<bdl-value fromid="hemodynamics" refindex="2" convertor="1,133.322" tofixed="0"></bdl-value></b>
 <span class="w3-small">mmHg</span>
+</div>
+<div class="w3-text-purple w3-large">
+&nbsp;C<sub>ardiac</sub>O<sub>utput</sub><b class="w3-xlarge"><bdl-value fromid="hemodynamics" refindex="5" convertor="60,1" precision="2"></bdl-value></b>
+<span class="w3-small">l/min</span>
 </div>
 </div>
 </div>
@@ -64,68 +68,77 @@ API to VR <!--bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval=
 </div>
 <div class="w3-quarter">
 
-<bdl-chartjs-xy fromid="ventilator" labelx="pressure" labely="volume" labels="pV1,pV2,pV3" refindex="0" refvalues="2" width="250" height="250" min="2" max="3.5" convertors="1,133.322,-760;1000,1" maxdata="128"></bdl-chartjs-xy>
+<bdl-chartjs-xy fromid="ventilator" labelx="pressure" labely="volume" labels="pV1,pV2,pV3" refindex="0" refvalues="2" width="250" height="250" min="2.2" max="4.5" convertors="1,133.322,-760;1000,1" maxdata="128"></bdl-chartjs-xy>
 
 </div>
-<div class="w3-rest w3-text-blue">
-&nbsp;P<b class="w3-xxlarge"><bdl-value fromid="ventilator" refindex="0" convertor="1,133.322"></bdl-value></b>&nbsp;<span class="w3-small">mmHg</span><br/>
-&nbsp;V<b class="w3-xxlarge"><bdl-value fromid="ventilator" refindex="1" convertor="1000,1"></bdl-value></b>&nbsp;<span class="w3-small">l</span>
+<div class="w3-rest">
 <div class="w3-text-white w3-large">
 &nbsp;C<sub>stat</sub><b class="w3-xxlarge"><bdl-value id="idcstat" fromid="ventilator" refindex="12" convertor="1e+10,98.0665" precision="2"></bdl-value></b>&nbsp;<span class="w3-small">ml/cmH<sub>2</sub>O</span>
 </div>
 <div class="w3-text-white w3-large">
 &nbsp;R<sub>insp</sub><b class="w3-xxlarge"><bdl-value id="idrinsp" fromid="ventilator" refindex="10" convertor="0.001,98.0665" precision="2"></bdl-value></b>
 </div>
-<div class="w3-text-blue">
-&nbsp;p<sub>H</sub><sup>ven</sup><b class=""><bdl-value fromid="idfmi" refindex="3"></bdl-value></b>
+<div class="w3-text-blue w3-large">
+&nbsp;PEEP<b class="w3-xxlarge"><bdl-value fromid="ventilator" refindex="14" convertor="1,98.063" precision="2"></bdl-value></b>
 </div></div></div>
 </div></div>
 
 <div class="w3-quarter w3-large w3-padding">
 
-2.Pacientovi byla nasazena dýchací maska a plyn s 80% O<sub>2</sub>.
+3.Pacient byl připraven na umělou plicní ventilaci, zaintubován a napojen na umělou plicní ventilaci přístroje Hamilton C6 v režimu SCMV s oxygenací 60% O<sub>2</sub> a dechovou frekvencí 18 dechů za minutu.
  
-<bdl-quizx id="q2.0" type="choice" 
-          question="2.0 Jaké komplikace mohou nastat při zvýšené koncentraci O2 ve vzduchu"
-          answers="A. Toxické účinky při zvýšené tvorbě kyslíkových radikálů na tkáni plic a CNS| B. retence CO2 u pacientů s CHOPN, kteří se uzpůsobili regulaci dýchání na snížené koncentraci kyslíku|C. vazokonstrikce do některých tkání. Může zhoršit stav některých pacientů." 
-          correctoptions="true|true|true" 
-          explanations="ano|ano|ano"
-          buttontitle="zkontrolovat odpověď"></bdl-quizx>
-<bdl-quizx id="q2.1" type="choice2" 
-          question="2.1 Spusťte simulaci a počkejte asi 15-20s. Je oxygenoterapie  dostačující(nad 90%)?" 
+
+<bdl-quizx id="q3.1" type="choice2" 
+          question="3.1 Spusťte simulaci a počkejte asi 15-20s. Je současné nastavení plicní ventilace dostačující??" 
           answers="A. Ano, Saturace se ustálila na vyšších hodnotách.|B. Ne. Saturace je stále nízká pod 90%" 
           correctoptions="false|true" 
           explanations="ne|ano" 
           buttontitle="zkontrolovat odpověď"></bdl-quizx>
-<bdl-quizx id="q2.2" type="choice2" 
-          question="2.2 Zvolte další postup?" 
-          answers="A. Příprava na umělou plicní ventilaci, intubace. |B. Zvýšit oxygenoterapii na 100%" 
+<bdl-quizx id="q3.2" type="choice2" 
+          question="3.2 Dalším nastavitelným parametrem umělé plicní ventilace je pozitivní tlak na konci expirace tzv. PEEP. Nastavte PEEP na 5 cmH2O (=3.68 mmHg = 490 Pa). Co pozorujete." 
+          answers="A. poddajnost (compliance Cstat) se mírně zvýší. Saturace se mírně zvýší.|B. poddajnost (compliance) se mírně sníží. Saturace se mírně sníží." 
           correctoptions="true|false" 
           explanations="ano|ne" 
-          buttontitle="zkontrolovat odpověď"></bdl-quizx>
-<bdl-quizx id="q2.3" type="choice2" 
-               question="2.3 Pacient byl zaintubován a napojen na umělou plicní ventilaci, přístroj Hamilton-C6 v režimu APV. Nastavte dechovou frekvenci na 18 dechů/min.Jak se to projeví na saturaci." 
-           answers="A. Saturace se mírně zlepšila|B. Saturace s mírně zhoršila." 
+          buttontitle="zkontrolovat odpověď"><bdl-buttonparams title="PEEP 0 cmH2O" ids="idpeep,idcomp,idshunts" values="0,10,58"></bdl-buttonparams><bdl-buttonparams title="PEEP 5 cmH2O" ids="idpeep,idcomp,idshunts" values="5,14,48"></bdl-buttonparams></bdl-quizx>
+<bdl-quizx id="q3.3" type="choice" 
+          question="3.3 Zkuste různé hodnoty PEEP mezi 5-20 cmH2O. Vyberte PEEP, při kterých saturace překročí 90%." 
+          answers="A. PEEP = 5 cmH2O|B. PEEP = 10 cmH2O|C. PEEP = 15 cmH2O|D. PEEP = 20 cmH2O" 
+          correctoptions="false|true|true|true" 
+          explanations="ne|ano|ano|ano" 
+          buttontitle="zkontrolovat odpověď"><bdl-buttonparams title="PEEP 0 cmH2O" ids="idpeep,idcomp,idshunts" values="0,10,58"></bdl-buttonparams><bdl-buttonparams title="PEEP 5 cmH2O" ids="idpeep,idcomp,idshunts" values="5,14,48"></bdl-buttonparams><bdl-buttonparams title="PEEP 10 cmH2O" ids="idpeep,idcomp,idshunts" values="10,18,44"></bdl-buttonparams><bdl-buttonparams title="PEEP 15 cmH2O" ids="idpeep,idcomp,idshunts" values="15,20,39"></bdl-buttonparams></bdl-buttonparams><bdl-buttonparams title="PEEP 20 cmH2O" ids="idpeep,idcomp,idshunts" values="20,22,34"></bdl-buttonparams></bdl-quizx>          
+</bdl-quizx>
+<bdl-quizx id="q3.4" type="choice2" 
+               question="3.4 Jedna z možných komplikací zvýšeného PEEP se může projevit při obstrukčních chorobách plic. Nastavte tlačítkem obstrukci plic a vyberte co pozorujete." 
+           answers="A. zvýšené PEEP při obstrukční chorobě způsobí, že ne všechen vzduch je vydechnut z plic a další nádechy postupně přidávají objem plic|B. zvýšené PEEP při obstrukční chorobě způsobí, že vzduch je vydechnut z plic a další nádechy postupně ubírají z objemu plic" 
            correctoptions="true|false" 
            explanations="ano|ne" 
-           buttontitle="zkontrolovat odpověď"><bdl-buttonparams title="18 1/m" ids="idrate" values="18"></bdl-buttonparams>
+           buttontitle="zkontrolovat odpověď"><bdl-buttonparams title="CHOPN - PEEP 10 cmH2O" ids="idpeep,idcomp,idshunts,idexp" values="10,18,44,0.005"></bdl-buttonparams><bdl-buttonparams title="no CHOPN - PEEP 10 cmH2O" ids="idpeep,idcomp,idshunts,idexp" values="10,18,44,0.02"></bdl-buttonparams>
 </bdl-quizx>
-<bdl-quizx id="q2.4" type="choice2" 
-               question="2.4 Snižte koncentraci kyslíku vdechovaného vzduchu na 60%. Jak se to projeví na saturaci?" 
-           answers="A. Saturace se mírně zlepšila|B. Saturace s mírně zhoršila." 
-           correctoptions="false|true" 
-           explanations="ne|ano" 
-           buttontitle="zkontrolovat odpověď"><bdl-buttonparams title="O2 60%" ids="ido2" values="60"></bdl-buttonparams>
+<bdl-quizx id="q3.5" type="choice2" 
+               question="3.5 Při zvýšování PEEP a s ohledem k možné obstrukci na co si dát pozor? Vyberte nejrelevantnější odpověď." 
+           answers="A. Sledovat, zda-li se vzduch z plic stihne vydechnout. Jaká nová rovnovážná hodnota tlaku a objemu v plicích se ustálí|B. Sledovat srdeční výdej" 
+           correctoptions="true|false" 
+           explanations="ano|ne" 
+           buttontitle="zkontrolovat odpověď"><bdl-buttonparams title="CHOPN - PEEP 10 cmH2O" ids="idpeep,idcomp,idshunts,idexp" values="10,18,44,0.005"></bdl-buttonparams><bdl-buttonparams title="no CHOPN - PEEP 10 cmH2O" ids="idpeep,idcomp,idshunts,idexp" values="10,18,44,0.02"></bdl-buttonparams>
 </bdl-quizx>
-<bdl-quizx id="q2.5" type="choice2" 
-               question="2.5 Plicní ventilátor měří několik parametrů plic. Jedním z nich je tzv. poddajnost (compliance) norma 50-150 ml/cmH2O. Zobrazte tuto hodnotu. Jaká je hodnota (Cstat na monitoru)?"
-           answers="A. 100 ml/cmH2O normální|B. 10 ml/cmH2O snížená|C. 200 ml/cmH20 zvýšená" 
-           correctoptions="false|true|false" 
-           explanations="ne|ano" 
-           buttontitle="zkontrolovat odpověď"><button class="w3-button w3-blue" onclick="document.getElementById('idcstat').style.display='inline'">Zobraz Cstat</button>
+<bdl-quizx id="q3.6" type="choice2" 
+               question="3.6 Další z komplikací zvýšeného PEEP je vliv na hemodynamiku plicního oběhu, kde působí nitrohrudní tlak. Nastavte tlačítkem různé hodnoty PEEP a sledujte hodnoty hemodynamiky a srdečního výdeje (Cardiac Output)." 
+answers="A. zvýšené PEEP sníží srdeční výdej a arteriální tlak|B. zvýšené PEEP zvýší srdeční výdej a arteriální tlak." 
+           correctoptions="true|false" 
+           explanations="ano|ne" 
+           buttontitle="zkontrolovat odpověď"><bdl-buttonparams title="PEEP 0 cmH2O" ids="idpeep,idcomp,idshunts,idexp,idep" values="0,10,58,0.02,-4"></bdl-buttonparams><bdl-buttonparams title="PEEP 10 cmH2O" ids="idpeep,idcomp,idshunts,idexp,idep" values="10,18,44,0.02,2"></bdl-buttonparams><bdl-buttonparams title="PEEP 15 cmH2O" ids="idpeep,idcomp,idshunts,idexp,idep" values="15,20,39,0.02,5"></bdl-buttonparams>
 </bdl-quizx>
-<bdl-quizx id="q2.6" type="choice2" 
-               question="2.6 Plicní ventilátor měří několik parametrů plic. Dalším z nich je tzv. Inspiratorní rezistence, odpor vůči proudění vzduchu během inspirační fáze ventilace norma 10 cmH2O/l/s. Zobrazte tuto hodnotu. Jaká je hodnota (Rinsp na monitoru) ?"
+<bdl-quizx id="q3.7" type="choice2" 
+               question="3.7 Při zvýšování PEEP s ohledem na srdeční výdej, na co si dát pozor! Vyberte nejrelevantnější odpověď" 
+                      answers="A. Sledovat, zda-li se vzduch z plic stihne vydechnout. Jaká nová rovnovážná hodnota tlaku a objemu v plicích se ustálí|B. Sledovat srdeční výdej." 
+           correctoptions="true|false" 
+           explanations="ano|ne" 
+           buttontitle="zkontrolovat odpověď"><bdl-buttonparams title="PEEP 0 cmH2O" ids="idpeep,idcomp,idshunts,idexp,idep" values="0,10,58,0.02,-4"></bdl-buttonparams><bdl-buttonparams title="PEEP 10 cmH2O" ids="idpeep,idcomp,idshunts,idexp,idep" values="10,18,44,0.02,2"></bdl-buttonparams>
+           <bdl-buttonparams title="PEEP 15 cmH2O" ids="idpeep,idcomp,idshunts,idexp,idep" values="15,20,39,0.02,5"></bdl-buttonparams>
+</bdl-quizx>
+<bdl-quizx id="q3.8" type="match" 
+               question="3.8 Přiřaďte"
+           terms=""
            answers="A. 16 cmH2O/l/s zvýšená|B. 10 cmH2O/l/s normální" 
            correctoptions="true|false" 
            explanations="ano|ne" 
@@ -134,7 +147,7 @@ API to VR <!--bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval=
 <bdl-quiz-summary id="qs1">
   Shrnutí odpovědí:
 </bdl-quiz-summary>          
-<bdl-quiz-control ids="q2.0,q2.1,q2.2,q2.3,q2.4,q2.5,q2.6,qs1"></bdl-quiz-control>
+<bdl-quiz-control ids="q3.1,q3.2,q3.3,q3.4,q3.5,q3.6,qs1"></bdl-quiz-control>
 </div>
 </div>
 
@@ -151,6 +164,11 @@ compliance <bdl-value fromid="ventilator" refindex="12" convertor="1e+10,98.0665
 conductance <bdl-value fromid="ventilator" refindex="11"></bdl-value> <bdl-range id="idexp" title="expiration conductance" min="0.001" max="1" default="0.02" step="0.001" initdefault="true"></bdl-range>
 
 Resistance: <bdl-value fromid="ventilator" refindex="10" convertor="0.001,98.0665"></bdl-value> <bdl-range id="idres" title="Resistance" min="1" max="100" default="16" step="1" initdefault="true"></bdl-range>
+
+Peep mmHg: <bdl-range id="idpeep" title="PEEP" min="0" max="20" default="0" step="1"></bdl-range>
+
+EP mmHg: <bdl-range id="idep" title="EP" min="-40" max="20" default="-4" step="1"></bdl-range>
+
 
 Data to be sent to VR: 
 volume:<bdl-range id="volume" title="Lung volume (m3)" min="0.0001" max="0.01" default="0.002" step="0.000001" fromid="ventilator" refindex="1"></bdl-range>
