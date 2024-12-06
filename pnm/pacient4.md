@@ -85,7 +85,7 @@ API to VR <!--bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval=
 
 <div class="w3-quarter w3-large w3-padding">
 
-4.Pacient byl napojen na umělou plicní ventilaci přístroje Hamilton C6 v režimu SCMV s oxygenací 60% O<sub>2</sub>, dechovou frekvencí 18 dechů za minutu a PEEP 5 cmH<sub>2</sub>O. Uběhlo 24 hodin a pacient je stabilizovaný
+4.Pacient byl napojen na umělou plicní ventilaci přístroje Hamilton C6 v režimu SCMV s oxygenací 60% O<sub>2</sub>, dechovou frekvencí 18 dechů za minutu a PEEP 10 cmH<sub>2</sub>O. Uběhlo 24 hodin a pacient je stabilizovaný
  
 
 <bdl-quizx id="q4.1" type="choice2" 
@@ -136,7 +136,7 @@ Resistance: <bdl-value fromid="ventilator" refindex="10" convertor="0.001,98.066
 
 Peep mmHg: <bdl-range id="idpeep" title="PEEP" min="0" max="20" default="10" step="1" initdefault="true"></bdl-range>
 
-EP mmHg: <bdl-range id="idep" title="EP" min="-40" max="20" default="2" step="1" initdefault="true"></bdl-range>
+External Pressure Thorax mmHg: <bdl-range id="idep" title="EP" min="-40" max="20" default="2" step="1" initdefault="true"></bdl-range>
 
 
 Data to be sent to VR: 
