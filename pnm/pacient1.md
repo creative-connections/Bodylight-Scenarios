@@ -7,7 +7,6 @@
 API to VR <!--bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval="2000" id="vrapi" inputs="volume;sO2"></bdl-remote-value-->
 <bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval="2000" id="vrapi" inputs="sO2"></bdl-remote-value>
 </div>
-
 <div class="w3-row">
 <div class="w3-threequarter">
 <div class="w3-black w3-sans-serif" style="max-width:1100px">
@@ -98,7 +97,7 @@ API to VR <!--bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval=
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
 <bdl-quizx id="q1.3" type="choice2" 
           question="1.3 Připojte pulzní oxymetr a popište naměřenou hodnotu saturace kyslíku (spO2)." 
-          answers="A. Normální (90-100) |B. Snížená (pod 90%)" 
+          answers="A. Normální (92-100) |B. Snížená (klesá pod 90%)" 
           correctoptions="false|true" 
           explanations="ano|ne" 
           buttontitle="zkontrolovat odpověď"><br/> <button class="w3-button w3-blue" onclick="document.getElementById('spo2value').style.display='inline'">zapnout pulzní oxymetr</button></bdl-quizx>
@@ -125,7 +124,7 @@ API to VR <!--bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval=
            answers="A. morfium pro zklidnění dechové frekvence a stresu|B. Oxygenoterapie - maska a 40% O2 pro zvýšení saturace O2|C. Oxygenoterapie - maska a 80% O2 pro zvýšení saturace O2" 
            correctoptions="false|true|true" 
            explanations="ne. Aplikací morfia se dekompenzuje dechová frekvence a úsilí pro zvýšení perfůze a distribuce. Je však možná poté co se zlepší saturace, ale ne jako první volba v této situaci|ano. Aplikací oxygenoterapie se mírně zvýší saturace kyslíku" 
-           buttontitle="zkontrolovat odpověď"> <br/> _Zkuste aplikovat nejprve stisknutí tlačítka a  simulujte, stisknutí druhého tlačítka zruší vliv předchozí aplikace_<bdl-buttonparams title='oxygen 40% (no morf.)' ids='ido2,idrate' values='40,28'></bdl-buttonparams><br/><bdl-buttonparams title='oxygen 80% (no morf.)' ids='ido2,idrate' values='80,28'></bdl-buttonparams><br/><bdl-buttonparams title='morfium 100ml (no oxy)' ids='ido2,idrate' values='21,8'></bdl-buttonparams><br/> <bdl-buttonparams title='Reset' ids='ido2,idrate' values='21,28'></bdl-buttonparams></bdl-quizx>
+           buttontitle="zkontrolovat odpověď"> <br/> _Zkuste aplikovat nejprve stisknutí tlačítka a  simulujte, stisknutí druhého tlačítka zruší vliv předchozí aplikace_<bdl-buttonparams title='oxygen 40% (no morf.)' ids='ido2,idrate' values='40,12'></bdl-buttonparams><br/><bdl-buttonparams title='oxygen 80% (no morf.)' ids='ido2,idrate' values='80,10'></bdl-buttonparams><br/><bdl-buttonparams title='morfium 100ml (no oxy)' ids='ido2,idrate' values='21,7'></bdl-buttonparams><br/> <bdl-buttonparams title='Reset' ids='ido2,idrate' values='21,28'></bdl-buttonparams></bdl-quizx>
 <bdl-quiz-summary id="qs1">
   Shrnutí odpovědí:
 </bdl-quiz-summary>          
@@ -145,9 +144,9 @@ API to VR <!--bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval=
 
 compliance <bdl-value fromid="ventilator" refindex="12" convertor="1e+10,98.0665"></bdl-value> <bdl-range id="idcomp" title="total compliance (ml/cmH20)" min="10" max="200" default="10" step="1" initdefault="true"></bdl-range>
 
-conductance <bdl-value fromid="ventilator" refindex="11"></bdl-value> <bdl-range id="idexp" title="expiration conductance" min="0.01" max="2" default="0.2" step="0.01" initdefault="true"></bdl-range>
+conductance <bdl-value fromid="ventilator" refindex="11"></bdl-value> <bdl-range id="idexp" title="expiration conductance" min="0.001" max="1" default="0.02" step="0.001" initdefault="true"></bdl-range>
 
-Resistance: <bdl-value fromid="ventilator" refindex="10"></bdl-value> <bdl-range id="idres" title="Resistance" min="1.471e+4" max="1.471e+7" default="1.471e+5" step="1e+4"></bdl-range>
+Resistance: <bdl-value fromid="ventilator" refindex="10" convertor="0.001,98.0665"></bdl-value> <bdl-range id="idres" title="Resistance" min="1" max="100" default="16" step="1" initdefault="true"></bdl-range>
 
 System P ambient: <bdl-value fromid="ventilator" refindex="10"></bdl-value> <bdl-range id="idres" title="Resistance" min="1.471e+4" max="1.471e+6" default="1.471e+5" step="1e+4"></bdl-range>
 
@@ -187,11 +186,5 @@ Set I:E ratio
 <bdl-buttonparams title="3:2" ids="idiratio,ideratio" values="3,2"></bdl-buttonparams></br>
 <bdl-range id="idpause" title="pause (%)" min="0" max="70" default="2" step="1" initdefault="true" fromid="vrapi" refindex="6"></bdl-range>
 
-
-<!--bdl-chartjs-time width="150" height="90" fromid="idfmi" labels="RR" initialdata="0" refindex="7" refvalues="1" throttle="1000"></bdl-chartjs-time>
-<bdl-chartjs-time width="150" height="90" fromid="idfmi" labels="Vt" initialdata="" refindex="8" refvalues="1" throttle="1000"></bdl-chartjs-time>
-<bdl-chartjs-time width="150" height="90" fromid="idfmi" labels="I,E ratio" initialdata="" refindex="9" refvalues="2" throttle="1000"></bdl-chartjs-time>
-<bdl-chartjs-time width="150" height="90" fromid="idfmi" labels="pause %" initialdata="" refindex="11" refvalues="1" throttle="1000"></bdl-chartjs-time>
-<bdl-chartjs-time width="150" height="90" fromid="idfmi" labels="O2 %" initialdata="" refindex="12" refvalues="1" convertors="100,1" throttle="1000"></bdl-chartjs-time-->
 
 </div>
