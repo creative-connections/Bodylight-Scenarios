@@ -5,26 +5,11 @@
 <!-- listen3="quizortabs" event3="quizshow" publish="quizortabs" event4="quizshow"-->
 </div>
 <div class="w3-col" style="width:85px">
-
 &nbsp;
-<a href="https://egolem.online/irm/presenter.html" target="_blank" class="w3-button w3-theme-d5"><u>presenter.html</u></a>
-
 </div>
 </div>
-<bdl-tabs idlist="CZ,EN" titlelist="CZ,EN" vertical="true"></bdl-tabs>
-<div id="CZ" class="w3-large">
-
 <bdl-fb-set-state title="0.Úvod" value="index.md"></bdl-fb-set-state>
-<bdl-fb-set-state title="1.Pacient" value="pacient1.md"></bdl-fb-set-state>
-<bdl-fb-set-state title="2.OXY" value="pacient2-oxy.md"></bdl-fb-set-state>
-<bdl-fb-set-state title="3.SCMV" value="pacient2.md"></bdl-fb-set-state>
-</div>
-<div id="EN" class="w3-large">
-<bdl-fb-set-state title="0.Introduction" value="index.md"></bdl-fb-set-state>
-<bdl-fb-set-state title="1.Patient in admission" value="pacient1.md"></bdl-fb-set-state>
-<bdl-fb-set-state title="2.OXY" value="pacient2-oxy.md"></bdl-fb-set-state>
-<bdl-fb-set-state title="3.SCMV" value="pacient2.md"></bdl-fb-set-state>
-</div>
+<bdl-fb-set-state title="1.Acetaminophen" value="acetaminophen.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="2.Lithium" value="lithium.md"></bdl-fb-set-state>
 <bdl-fb-get-state tohash="true"></bdl-fb-get-state>
-
 </div>
