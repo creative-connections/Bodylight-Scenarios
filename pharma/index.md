@@ -3,10 +3,11 @@
 
 Pharmacokinetic of drug concentration in plasma after administration.
 
-<bdl-fmi id="idfmi" mode="oneshot" src="Pharmacolibrary_Test_SingleCompartment_PBPKModel.js" fminame="Pharmacolibrary_Test_SingleCompartment_PBPKModel" tolerance="0.000001" starttime="0" stoptime="286400" fstepsize="100" fpslimit="60" guid="{88014fb9-2d2b-4180-a1c7-6fc5acc651c6}" valuereferences="637534227,16777227,16777226" valuelabels="distribution.C,Cmax,Cmin" inputs="vd,16777220,1,1,t;clearance,16777222,1,1,t;bioavailability,16777221,1,1,t;adminmass,16777224,1,1,t;adminduration,16777223,60,1,t;adminperiod,16777217,3600,1,t;admincount,16777218,1,1,t;cmin,16777226,1,1,f;cmax,16777227,1,1,f;firstadmin,16777216,60,1,t" inputlabels="VdPerKg,Cl,F,adminMassMg,adminDuration,periodicDose.adminPeriod,periodicDose.doseCount,Cmin,Cmax,periodicDose.firstAdminTime"></bdl-fmi>
+
+<bdl-fmi id="idfmi" mode="oneshot" src="Pharmacolibrary_Test_SingleCompartment_PBPKModel.js" fminame="Pharmacolibrary_Test_SingleCompartment_PBPKModel" tolerance="0.000001" starttime="0" stoptime="286400" fstepsize="1000" fpslimit="60" guid="{88014fb9-2d2b-4180-a1c7-6fc5acc651c6}" valuereferences="637534227,16777227,16777226" valuelabels="distribution.C,Cmax,Cmin" inputs="vd,16777220,1,1,t;clearance,16777222,1,1,t;bioavailability,16777221,1,1,t;adminmass,16777224,1,1,t;adminduration,16777223,60,1,t;adminperiod,16777217,3600,1,t;admincount,16777218,1,1,t;cmin,16777226,1,1,f;cmax,16777227,1,1,f;firstadmin,16777216,60,1,t" inputlabels="VdPerKg,Cl,F,adminMassMg,adminDuration,periodicDose.adminPeriod,periodicDose.doseCount,Cmin,Cmax,periodicDose.firstAdminTime"></bdl-fmi>
 
 
-<bdl-chartjs-time width="600" height="400" fromid="idfmi" labels="drug concentration [g/l],min,max" initialdata="" refindex="0" refvalues="3" maxdata="8192" throttle="600"></bdl-chartjs-time>
+<bdl-chartjs-time width="600" height="400" fromid="idfmi" labels="drug concentration [g/l],min,max" initialdata="" refindex="0" refvalues="3" maxdata="8192" throttle="50"></bdl-chartjs-time>
 
 </div>
 <div class="w3-half">
