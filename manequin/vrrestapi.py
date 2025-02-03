@@ -14,7 +14,13 @@ variables = {
     'o2_fraction': 21,
     'patient_state': 2,
     'volume': 0.0023,
-    'sO2': 0.95
+    'sO2': 0.95,
+    'arterial_sO2':0.9,
+    'arterial_pH':7,
+    'arterial_pCO2':0,
+    'arterial_base_excess':0,
+    'arterial_HCO3':0,
+    'arterial_cdCO2':0
     }
 
 #breath_rate = 12
@@ -82,6 +88,38 @@ def sO2get():
     global sO2
     sO2, myresponse = default_response(variables['sO2'])
     return myresponse
+
+@app.route('/vrapi/arterial_sO2', methods=['GET','OPTIONS','POST'])
+def get1():
+    global variables
+    volume, myresponse = default_response(variables['arterial_sO2'])    
+    return myresponse
+@app.route('/vrapi/arterial_pH', methods=['GET','OPTIONS','POST'])
+def get2():
+    global variables
+    volume, myresponse = default_response(variables['arterial_pH'])    
+    return myresponse
+@app.route('/vrapi/arterial_pCO2', methods=['GET','OPTIONS','POST'])
+def get3():
+    global variables
+    volume, myresponse = default_response(variables['arterial_pCO2'])    
+    return myresponse
+@app.route('/vrapi/arterial_base_excess', methods=['GET','OPTIONS','POST'])
+def get4():
+    global variables
+    volume, myresponse = default_response(variables['arterial_base_excess'])    
+    return myresponse
+@app.route('/vrapi/arterial_HCO3', methods=['GET','OPTIONS','POST'])
+def get5():
+    global variables
+    volume, myresponse = default_response(variables['arterial_HCO3'])    
+    return myresponse
+@app.route('/vrapi/arterial_cdCO2', methods=['GET','OPTIONS','POST'])
+def get6():
+    global variables
+    volume, myresponse = default_response(variables['arterial_cdCO2'])    
+    return myresponse
+
 
 #general call to get/update all values in one call
 @app.route('/vrapi', methods=['GET','OPTIONS','POST'])
