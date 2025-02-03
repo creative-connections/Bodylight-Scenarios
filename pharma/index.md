@@ -12,7 +12,7 @@ No recent infections or respiratory illnesses were noted. Neurological examinati
 
 </div>
 <div class="w3-half w3-xlarge w3-padding">
-
+<b><a href="https://egolem.online/pharma">egolem.online/pharma</a></b>
 <br/>
 <br/>
 <br/>
