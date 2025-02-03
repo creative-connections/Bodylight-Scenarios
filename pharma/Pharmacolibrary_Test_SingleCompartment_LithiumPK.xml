@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fmiModelDescription
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  fmiVersion="2.0"
+  modelName="Pharmacolibrary.Test.SingleCompartment.LithiumPK"
+  guid="{ca914a49-a68a-45f5-a637-38f5ccf00bb0}"
+  generationTool="Dymola Version 2024x, 2023-10-06"
+  generationDateAndTime="2025-02-03T08:22:01Z"
+  variableNamingConvention="structured"
+  numberOfEventIndicators="2">
+  <CoSimulation
+    modelIdentifier="Pharmacolibrary_Test_SingleCompartment_LithiumPK"
+    canHandleVariableCommunicationStepSize="true"
+    canInterpolateInputs="true"
+    maxOutputDerivativeOrder="1"
+    canNotUseMemoryManagementFunctions="true"
+    canGetAndSetFMUstate="true"
+    canSerializeFMUstate="true"
+    providesDirectionalDerivative="true">
+    <SourceFiles>
+      <File
+        name="all.c"/>
+    </SourceFiles>
+  </CoSimulation>
+  <UnitDefinitions>
+    <Unit
+      name="kg">
+      <BaseUnit kg="1"/>
+      <DisplayUnit
+        name="mg"
+        factor="1000000.0"/>
+    </Unit>
+    <Unit
+      name="kg/m3">
+      <BaseUnit kg="1"
+        m="-3"/>
+      <DisplayUnit
+        name="mg/l"
+        factor="1000.0"/>
+    </Unit>
+    <Unit
+      name="kg/s">
+      <BaseUnit kg="1"
+        s="-1"/>
+      <DisplayUnit
+        name="mg/s"
+        factor="1000000.0"/>
+    </Unit>
+    <Unit
+      name="s">
+      <BaseUnit s="1"/>
+      <DisplayUnit
+        name="h"
+        factor="0.0002777777777777778"/>
+      <DisplayUnit
+        name="s"/>
+    </Unit>
+  </UnitDefinitions>
+  <TypeDefinitions>
+    <SimpleType
+      name="Modelica.Blocks.Interfaces.RealInput">
+      <Real/>
+    </SimpleType>
+    <SimpleType
+      name="Modelica.Blocks.Interfaces.RealOutput">
+      <Real/>
+    </SimpleType>
+    <SimpleType
+      name="Modelica.Units.SI.Time">
+      <Real
+        quantity="Time"
+        unit="s"/>
+    </SimpleType>
+    <SimpleType
+      name="Pharmacolibrary.Types.Mass">
+      <Real
+        quantity="Mass"
+        unit="kg"
+        displayUnit="mg"
+        min="-1E-12"/>
+    </SimpleType>
+    <SimpleType
+      name="Pharmacolibrary.Types.MassConcentration">
+      <Real
+        quantity="MassConcentration"
+        unit="kg/m3"
+        displayUnit="mg/l"
+        min="-1E-09"/>
+    </SimpleType>
+    <SimpleType
+      name="Pharmacolibrary.Types.MassFlowRate">
+      <Real
+        quantity="MassFlowRate"
+        unit="kg/s"
+        displayUnit="mg/s"/>
+    </SimpleType>
+  </TypeDefinitions>
+  <DefaultExperiment startTime="0.0"
+    stopTime="1.0"
+    tolerance="0.0001"/>
+  <ModelVariables>
+    <!-- Index for next variable = 1 -->
+    <ScalarVariable
+      name="lithiumCarbonate.absorption.oralDose.freeTissueConc"
+      valueReference="100663296"
+      description="free tissue concentration"
+      variability="constant">
+      <Real
+        declaredType="Pharmacolibrary.Types.MassConcentration"
+        start="1"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 2 -->
+    <ScalarVariable
+      name="lithiumCarbonate.absorption.oralDose.massFlowRate"
+      valueReference="637534223"
+      description="mass flow rate"
+      variability="discrete">
+      <Real
+        declaredType="Pharmacolibrary.Types.MassFlowRate"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 3 -->
+    <ScalarVariable
+      name="lithiumCarbonate.absorption.pharmaBus.absorptionFlow"
+      valueReference="637534224"
+      variability="discrete">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 4 -->
+    <ScalarVariable
+      name="lithiumCarbonate.absorption.pharmaBus.C"
+      valueReference="637534227">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 5 -->
+    <ScalarVariable
+      name="lithiumCarbonate.absorption.pharmaBus.Vd"
+      valueReference="100663298"
+      variability="tunable">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 6 -->
+    <ScalarVariable
+      name="lithiumCarbonate.absorption.pharmaBus.eliminationFlow"
+      valueReference="637534228">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 7 -->
+    <ScalarVariable
+      name="lithiumCarbonate.absorption.F"
+      valueReference="100663297"
+      description="bioavailability"
+      variability="tunable">
+      <Real/>
+    </ScalarVariable>
+    <!-- Index for next variable = 8 -->
+    <ScalarVariable
+      name="lithiumCarbonate.absorption.absorptionFlow"
+      valueReference="637534224"
+      variability="discrete">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 9 -->
+    <ScalarVariable
+      name="lithiumCarbonate.distribution.pharmaBus.absorptionFlow"
+      valueReference="637534224"
+      variability="discrete">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 10 -->
+    <ScalarVariable
+      name="lithiumCarbonate.distribution.pharmaBus.eliminationFlow"
+      valueReference="637534228">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 11 -->
+    <ScalarVariable
+      name="lithiumCarbonate.distribution.pharmaBus.C"
+      valueReference="637534227">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 12 -->
+    <ScalarVariable
+      name="lithiumCarbonate.distribution.pharmaBus.Vd"
+      valueReference="100663298"
+      variability="tunable">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 13 -->
+    <ScalarVariable
+      name="lithiumCarbonate.distribution.Vd"
+      valueReference="100663298"
+      description="Volume of distribution"
+      variability="tunable">
+      <Real/>
+    </ScalarVariable>
+    <!-- Index for next variable = 14 -->
+    <ScalarVariable
+      name="lithiumCarbonate.distribution.ammountDrug"
+      valueReference="33554432"
+      initial="exact">
+      <Real start="0.0"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 15 -->
+    <ScalarVariable
+      name="der(lithiumCarbonate.distribution.ammountDrug)"
+      valueReference="587202560">
+      <Real derivative="14"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 16 -->
+    <ScalarVariable
+      name="lithiumCarbonate.distribution.C"
+      valueReference="637534227">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 17 -->
+    <ScalarVariable
+      name="lithiumCarbonate.distribution.absorptionFlow"
+      valueReference="637534224"
+      variability="discrete">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 18 -->
+    <ScalarVariable
+      name="lithiumCarbonate.distribution.eliminationFlow"
+      valueReference="637534228">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 19 -->
+    <ScalarVariable
+      name="lithiumCarbonate.distribution.VdParam"
+      valueReference="100663298"
+      variability="tunable">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 20 -->
+    <ScalarVariable
+      name="lithiumCarbonate.elimination.pharmaBus.eliminationFlow"
+      valueReference="637534228">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 21 -->
+    <ScalarVariable
+      name="lithiumCarbonate.elimination.pharmaBus.Vd"
+      valueReference="100663298"
+      variability="tunable">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 22 -->
+    <ScalarVariable
+      name="lithiumCarbonate.elimination.pharmaBus.C"
+      valueReference="637534227">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 23 -->
+    <ScalarVariable
+      name="lithiumCarbonate.elimination.pharmaBus.absorptionFlow"
+      valueReference="637534224"
+      variability="discrete">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 24 -->
+    <ScalarVariable
+      name="lithiumCarbonate.elimination.Cl"
+      valueReference="100663299"
+      description="clearance from L/h to m3/s"
+      variability="tunable">
+      <Real/>
+    </ScalarVariable>
+    <!-- Index for next variable = 25 -->
+    <ScalarVariable
+      name="lithiumCarbonate.elimination.Vd"
+      valueReference="100663298"
+      variability="tunable">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 26 -->
+    <ScalarVariable
+      name="lithiumCarbonate.elimination.halfLife"
+      valueReference="100663300"
+      variability="tunable">
+      <Real/>
+    </ScalarVariable>
+    <!-- Index for next variable = 27 -->
+    <ScalarVariable
+      name="lithiumCarbonate.elimination.eliminationFlow"
+      valueReference="637534228">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 28 -->
+    <ScalarVariable
+      name="lithiumCarbonate.elimination.C"
+      valueReference="637534227">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 29 -->
+    <ScalarVariable
+      name="lithiumCarbonate.metabolism.pharmaBus.C"
+      valueReference="637534227">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 30 -->
+    <ScalarVariable
+      name="lithiumCarbonate.metabolism.pharmaBus.Vd"
+      valueReference="100663298"
+      variability="tunable">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 31 -->
+    <ScalarVariable
+      name="lithiumCarbonate.metabolism.pharmaBus.absorptionFlow"
+      valueReference="637534224"
+      variability="discrete">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 32 -->
+    <ScalarVariable
+      name="lithiumCarbonate.metabolism.pharmaBus.eliminationFlow"
+      valueReference="637534228">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 33 -->
+    <ScalarVariable
+      name="lithiumCarbonate.periodicDose.cport.freeTissueConc"
+      valueReference="100663301"
+      description="free tissue concentration"
+      variability="constant">
+      <Real
+        declaredType="Pharmacolibrary.Types.MassConcentration"
+        start="1.0"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 34 -->
+    <ScalarVariable
+      name="lithiumCarbonate.periodicDose.cport.massFlowRate"
+      valueReference="637534229"
+      description="mass flow rate">
+      <Real
+        declaredType="Pharmacolibrary.Types.MassFlowRate"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 35 -->
+    <ScalarVariable
+      name="lithiumCarbonate.periodicDose.firstAdminTime"
+      valueReference="16777216"
+      description="time of first dose"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Modelica.Units.SI.Time"
+        displayUnit="s"
+        start="60"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 36 -->
+    <ScalarVariable
+      name="lithiumCarbonate.periodicDose.adminPeriod"
+      valueReference="16777217"
+      description="time period between doses"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Modelica.Units.SI.Time"
+        displayUnit="h"
+        start="86400"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 37 -->
+    <ScalarVariable
+      name="lithiumCarbonate.periodicDose.adminMass"
+      valueReference="100663302"
+      description="drug dose mass"
+      variability="tunable">
+      <Real
+        declaredType="Pharmacolibrary.Types.Mass"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 38 -->
+    <ScalarVariable
+      name="lithiumCarbonate.periodicDose.doseCount"
+      valueReference="16777218"
+      description="number of doses, -1 .. unlimitted"
+      causality="parameter"
+      variability="tunable">
+      <Integer start="14"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 39 -->
+    <ScalarVariable
+      name="lithiumCarbonate.periodicDose.adminDuration"
+      valueReference="100663303"
+      description="administration duration"
+      variability="tunable">
+      <Real
+        declaredType="Modelica.Units.SI.Time"
+        displayUnit="s"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 40 -->
+    <ScalarVariable
+      name="lithiumCarbonate.periodicDose.pulse.amplitude"
+      valueReference="100663304"
+      description="Amplitude of pulse"
+      variability="tunable">
+      <Real
+        unit="kg/s"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 41 -->
+    <ScalarVariable
+      name="lithiumCarbonate.periodicDose.pulse.width"
+      valueReference="100663305"
+      description="Width of pulse in % of period"
+      variability="tunable">
+      <Real min="1E-60"
+        max="100.0"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 42 -->
+    <ScalarVariable
+      name="lithiumCarbonate.periodicDose.pulse.period"
+      valueReference="100663306"
+      description="Time for one period"
+      variability="tunable">
+      <Real
+        declaredType="Modelica.Units.SI.Time"
+        min="1E-60"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 43 -->
+    <ScalarVariable
+      name="lithiumCarbonate.periodicDose.pulse.nperiod"
+      valueReference="100663307"
+      description="Number of periods (&lt; 0 means infinite number of periods)"
+      variability="tunable">
+      <Integer/>
+    </ScalarVariable>
+    <!-- Index for next variable = 44 -->
+    <ScalarVariable
+      name="lithiumCarbonate.periodicDose.pulse.y"
+      valueReference="637534223"
+      description="Connector of Real output signal"
+      variability="discrete">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealOutput"
+        unit="kg/s"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 45 -->
+    <ScalarVariable
+      name="lithiumCarbonate.periodicDose.pulse.offset"
+      valueReference="16777219"
+      description="Offset of output signal y"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        unit="kg/s"
+        start="0"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 46 -->
+    <ScalarVariable
+      name="lithiumCarbonate.periodicDose.pulse.startTime"
+      valueReference="100663308"
+      description="Output y = offset for time &lt; startTime"
+      variability="tunable">
+      <Real
+        declaredType="Modelica.Units.SI.Time"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 47 -->
+    <ScalarVariable
+      name="lithiumCarbonate.periodicDose.pulse.T_width"
+      valueReference="100663309"
+      variability="tunable">
+      <Real
+        declaredType="Modelica.Units.SI.Time"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 48 -->
+    <ScalarVariable
+      name="lithiumCarbonate.periodicDose.pulse.T_start"
+      valueReference="637534225"
+      description="Start time of current period"
+      variability="discrete">
+      <Real
+        declaredType="Modelica.Units.SI.Time"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 49 -->
+    <ScalarVariable
+      name="lithiumCarbonate.periodicDose.pulse.count"
+      valueReference="637534226"
+      description="Period count"
+      variability="discrete">
+      <Integer/>
+    </ScalarVariable>
+    <!-- Index for next variable = 50 -->
+    <ScalarVariable
+      name="lithiumCarbonate.VdPerKg"
+      valueReference="16777220"
+      description="Volume of distribution (L/kg)"
+      causality="parameter"
+      variability="tunable">
+      <Real start="3"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 51 -->
+    <ScalarVariable
+      name="lithiumCarbonate.F"
+      valueReference="16777221"
+      description="bioavailiability (0-1)"
+      causality="parameter"
+      variability="tunable">
+      <Real start="0.95"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 52 -->
+    <ScalarVariable
+      name="lithiumCarbonate.Cl"
+      valueReference="16777222"
+      description="clearance (L/h)"
+      causality="parameter"
+      variability="tunable">
+      <Real start="9.4"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 53 -->
+    <ScalarVariable
+      name="lithiumCarbonate.adminDuration"
+      valueReference="16777223"
+      description="administration duration (s)"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        unit="s"
+        start="43200"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 54 -->
+    <ScalarVariable
+      name="lithiumCarbonate.adminMassMg"
+      valueReference="16777224"
+      description="administration mass (mg)"
+      causality="parameter"
+      variability="tunable">
+      <Real start="1500"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 55 -->
+    <ScalarVariable
+      name="lithiumCarbonate.weight"
+      valueReference="16777225"
+      description="patient weight"
+      causality="parameter"
+      variability="tunable">
+      <Real start="75"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 56 -->
+    <ScalarVariable
+      name="lithiumCarbonate.Vd"
+      valueReference="100663310"
+      description="Volume of distribution (m3)"
+      variability="tunable">
+      <Real/>
+    </ScalarVariable>
+    <!-- Index for next variable = 57 -->
+    <ScalarVariable
+      name="lithiumCarbonate.Cmin"
+      valueReference="16777226"
+      description="minimal therapeutic range"
+      causality="parameter"
+      variability="fixed">
+      <Real start="0.004"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 58 -->
+    <ScalarVariable
+      name="lithiumCarbonate.Cmax"
+      valueReference="16777227"
+      description="minimal therapeutic range"
+      causality="parameter"
+      variability="fixed">
+      <Real start="0.008"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 59 -->
+    <ScalarVariable
+      name="lithiumCarbonate.C1lab"
+      valueReference="16777228"
+      description="laboratory concentration 1"
+      causality="parameter"
+      variability="fixed">
+      <Real start="0.004"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 60 -->
+    <ScalarVariable
+      name="lithiumCarbonate.C2lab"
+      valueReference="16777229"
+      description="laboratory contentration 2"
+      causality="parameter"
+      variability="fixed">
+      <Real start="0.008"/>
+    </ScalarVariable>
+  </ModelVariables>
+  <ModelStructure>
+    <Derivatives>
+      <Unknown index="15"
+        dependencies="14"
+        dependenciesKind="fixed"/>
+    </Derivatives>
+    <InitialUnknowns>
+      <Unknown index="15"
+        dependencies="14 35 36 38 45 50 51 52 53 54 55"
+        dependenciesKind="dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent dependent"/>
+    </InitialUnknowns>
+  </ModelStructure>
+</fmiModelDescription>
