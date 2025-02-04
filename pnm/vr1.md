@@ -161,7 +161,7 @@ Ventilated gas: <!--bdl-buttonparams title="Normal" ids="ido2,idco2,idh2o" value
 <bdl-range id="idh2o" title="H2O %" min="0" max="10" default="6" step="0.1"></bdl-range>
 
 Mechanical ventilator setting:<br/>
-<bdl-range id="idrate" title="Breath rate (1/min)" min="1" max="60" default="17" step="1" initdefault="true" fromid="vrapi" refindex="f_breath_rate"></bdl-range><br/>
+<bdl-range id="idrate" title="Breath rate (1/min)" min="1" max="60" default="17" step="1" initdefault="true" fromid="vrapi" refindex="f_breath_rate" refconditionvar="patient_state" refconditionvalue="3"></bdl-range><br/>
 <!--bdl-range id="idmuscle" title="Breathing force (%)" min="10" max="400" default="100" step="1" fromid="vrapi" refindex="0"></bdl-range-->
 <bdl-range id="idtv" title="Vt - tidal volume (ml)" min="200" max="1500" default="800" step="1" fromid="vrapi" refindex="Vt_tidal_volume" initdefault="true"></bdl-range><br/>
 <div class="w3-hide">
