@@ -12,7 +12,7 @@ variables = {
     'E_ratio': 3,
     'pause_value': 0,
     'o2_fraction': 21,
-    'patient_state': 2,
+    'patient_state': 0,
     'volume': 0.0023,
     'sO2': 0.95,
     'arterial_sO2':0.9,
@@ -58,7 +58,8 @@ def _build_cors_preflight_response():
 # for GET request it will return the value - in JSONify from
 # for POST request it will parse the body of post in json (expected to be json form) and returns expected response - usually the same body
 # or what was updated
-def default_response(value):
+def default_response(value,key=''):
+    global variables
     if request.method == 'OPTIONS':
         #print('option')
         return value, _build_cors_preflight_response()
@@ -68,58 +69,27 @@ def default_response(value):
         response.headers.add('Access-Control-Allow-Origin','*')
         return value, response
     elif request.method == 'POST':
-        #print('post 3')
-        #print('default request',request.json)
+        #print('post 3')        
+        print('default request POST changing variables',request.json)
+        print(f'variable {key} = {variables[key]}')
         value = request.json #['value']
+        if (key!=''):
+            variables[key] = value
         #print('value 2' ,value)
         response = jsonify(value)
         response.headers.add('Access-Control-Allow-Origin','*')
         return value, response
 
+
 # specific method to return musclepressure, POST request will also update the value
-@app.route('/vrapi/volume', methods=['GET','OPTIONS','POST'])
-def volumeget():
+@app.route('/vrapi/<variable_key>', methods=['GET', 'OPTIONS', 'POST'])
+def generic_handler(variable_key):
     global variables
-    volume, myresponse = default_response(variables['volume'])    
+    if variable_key in variables:
+        value, myresponse = default_response(variables[variable_key], variable_key)
+    else:
+        myresponse = jsonify({"error": f"Variable '{variable_key}' not found"}), 404
     return myresponse
-
-@app.route('/vrapi/sO2', methods=['GET','OPTIONS','POST'])
-def sO2get():
-    global sO2
-    sO2, myresponse = default_response(variables['sO2'])
-    return myresponse
-
-@app.route('/vrapi/arterial_sO2', methods=['GET','OPTIONS','POST'])
-def get1():
-    global variables
-    volume, myresponse = default_response(variables['arterial_sO2'])    
-    return myresponse
-@app.route('/vrapi/arterial_pH', methods=['GET','OPTIONS','POST'])
-def get2():
-    global variables
-    volume, myresponse = default_response(variables['arterial_pH'])    
-    return myresponse
-@app.route('/vrapi/arterial_pCO2', methods=['GET','OPTIONS','POST'])
-def get3():
-    global variables
-    volume, myresponse = default_response(variables['arterial_pCO2'])    
-    return myresponse
-@app.route('/vrapi/arterial_base_excess', methods=['GET','OPTIONS','POST'])
-def get4():
-    global variables
-    volume, myresponse = default_response(variables['arterial_base_excess'])    
-    return myresponse
-@app.route('/vrapi/arterial_HCO3', methods=['GET','OPTIONS','POST'])
-def get5():
-    global variables
-    volume, myresponse = default_response(variables['arterial_HCO3'])    
-    return myresponse
-@app.route('/vrapi/arterial_cdCO2', methods=['GET','OPTIONS','POST'])
-def get6():
-    global variables
-    volume, myresponse = default_response(variables['arterial_cdCO2'])    
-    return myresponse
-
 
 #general call to get/update all values in one call
 @app.route('/vrapi', methods=['GET','OPTIONS','POST'])
