@@ -109,7 +109,7 @@
 <button class="w3-button w3-blue" onclick="['idNIBP', 'idNIBP2', 'idP', 'idV','idetco2','idPO2','idpv'].forEach(id => document.getElementById(id).style.display = 'inline');">Show vent. values</button>
 <button class="w3-button w3-blue" onclick="['idRR', 'idHR', 'idpH', 'idpHven','idpHmix','spo2value','idNIBP', 'idNIBP2', 'idP', 'idV','idetco2','idPO2','idpv'].forEach(id => document.getElementById(id).style.display = 'none');">Hide values</button>
 <button class="w3-button w3-blue" onclick="document.getElementById('vcontrols').style.display='block'">Ventilator controls</button>
-<button class="w3-button w3-blue" onclick="console.log('sending vuplex message');const event1 = new CustomEvent('vuplexmessage', {detail: { patient_state: '2' }});window.dispatchEvent(event1);">Debug Vuplex</button>
+<button class="w3-button w3-blue" onclick="console.log('sending vuplex message');const event1 = new CustomEvent('vuplexmessage', {detail: { patient_state: '2', 'version': navigator.userAgent }});window.dispatchEvent(event1);">Debug Vuplex</button>
 
 
 <!--bdl-chartjs-time width="600" height="200" fromid="idfmi" labels="ventilation" initialdata="0;0" refindex="12" refvalues="1"></bdl-chartjs-time>
