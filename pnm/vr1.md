@@ -101,10 +101,10 @@
 </div>
 
 <!-- debug controls -->
-<bdl-buttonparams title="1.phase (normal)" ids="idshunts,iddeadspace,idrate,idcomp" values="2,150,17,60" fromid="vrapi" thresholdvalue="1" refindex="patient_state" ></bdl-buttonparams> 
-<bdl-buttonparams title="2.phase (pneumonia)" ids="idshunts,iddeadspace,idrate,idcomp" values="58,850,33,10" fromid="vrapi" refindex="patient_state" thresholdvalue="2"></bdl-buttonparams>
-<bdl-buttonparams title="3.phase (ventilated)" ids="idshunts,iddeadspace,idrate,idcomp" values="58,850,15,10" fromid="vrapi" refindex="patient_state" thresholdvalue="3"></bdl-buttonparams>
-<bdl-buttonparams title="4.phase (stabilized)" ids="idshunts,iddeadspace,idrate,idcomp" values="58,850,15,10" fromid="vrapi" refindex="patient_state" thresholdvalue="3"></bdl-buttonparams>
+<bdl-buttonparams title="1.phase (normal)" ids="idshunts,iddeadspace,idrate,idcomp,ido2" values="2,150,17,60,21" fromid="vrapi" thresholdvalue="1" refindex="patient_state" ></bdl-buttonparams> 
+<bdl-buttonparams title="2.phase (pneumonia)" ids="idshunts,iddeadspace,idrate,idcomp,ido2" values="86,850,33,10,21" fromid="vrapi" refindex="patient_state" thresholdvalue="2"></bdl-buttonparams>
+<bdl-buttonparams title="3.phase (ventilated)" ids="idshunts,iddeadspace,idrate,idcomp,ido2" values="86,850,15,10,40" fromid="vrapi" refindex="patient_state" thresholdvalue="3"></bdl-buttonparams>
+<bdl-buttonparams title="4.phase (stabilized)" ids="idshunts,iddeadspace,idrate,idcomp,ido2" values="60,850,15,10,60" fromid="vrapi" refindex="patient_state" thresholdvalue="3"></bdl-buttonparams>
 <span class="w3-small">
 <button class="w3-button w3-blue" onclick="['idRR', 'idHR', 'idpH', 'idpHven','idpHmix','spo2value'].forEach(id => document.getElementById(id).style.display = 'inline');">show basic</button>
 <button class="w3-button w3-blue" onclick="['idNIBP', 'idNIBP2', 'idP', 'idV','idetco2','idPO2','idpv'].forEach(id => document.getElementById(id).style.display = 'inline');">show vent.</button>
