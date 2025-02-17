@@ -157,7 +157,7 @@ Patient state: <br/>
 Ventilated gas: <!--bdl-buttonparams title="Normal" ids="ido2,idco2,idh2o" values="21,0.03,6"></bdl-buttonparams>
 <bdl-buttonparams title="O2 40%" ids="ido2,idco2,idh2o" values="40,0.03,6"></bdl-buttonparams>
 <bdl-buttonparams title="O2 60%" ids="ido2,idco2,idh2o" values="60,0.03,6"></bdl-buttonparams-->
-<bdl-range id="ido2" title="O2 %" min="5" max="93" default="21" fromid="vrapi" refindex="o2_fraction"></bdl-range><br/>
+<bdl-range id="ido2" title="O2 %" min="5" max="93" default="21" fromid="vrapi" refindex="o2_fraction"  refconditionvar="patient_state" refconditionvalue="3"></bdl-range><br/>
 <bdl-range id="iddeadspace" title="dead space" min="100" max="4500" default="150" initdefault="true"></bdl-range>
 <bdl-range id="idshunts" title="L-V shunts %" min="5" max="95" default="2" initdefault="true"></bdl-range>
 <bdl-range id="idco2" title="CO2 %" min="0" max="10" default="0.03" step="0.01"></bdl-range>
@@ -166,10 +166,10 @@ Ventilated gas: <!--bdl-buttonparams title="Normal" ids="ido2,idco2,idh2o" value
 Mechanical ventilator setting:<br/>
 <bdl-range id="idrate" title="Breath rate (1/min)" min="6" max="60" default="17" step="1" initdefault="true" fromid="vrapi" refindex="f_breath_rate" refconditionvar="patient_state" refconditionvalue="3"></bdl-range><br/>
 <!--bdl-range id="idmuscle" title="Breathing force (%)" min="10" max="400" default="100" step="1" fromid="vrapi" refindex="0"></bdl-range-->
-<bdl-range id="idtv" title="Vt - tidal volume (ml)" min="200" max="1500" default="800" step="1" fromid="vrapi" refindex="Vt_tidal_volume" initdefault="true"></bdl-range><br/>
+<bdl-range id="idtv" title="Vt - tidal volume (ml)" min="200" max="1500" default="800" step="1" fromid="vrapi" refindex="Vt_tidal_volume" initdefault="true"  refconditionvar="patient_state" refconditionvalue="3"></bdl-range><br/>
 <div class="w3-hide">
-<bdl-range id="idiratio" min="1" max="4" default="1" step="1"fromid="vrapi" refindex="I_ratio"></bdl-range>
-<bdl-range id="ideratio" min="1" max="9" default="4" step="1" fromid="vrapi" refindex="E_ratio"></bdl-range>
+<bdl-range id="idiratio" min="1" max="4" default="1" step="1" fromid="vrapi" refindex="I_ratio" refconditionvar="patient_state" refconditionvalue="3"></bdl-range>
+<bdl-range id="ideratio" min="1" max="9" default="4" step="1" fromid="vrapi" refindex="E_ratio"  refconditionvar="patient_state" refconditionvalue="3"></bdl-range>
 </div>
 Set I:E ratio 
 <bdl-buttonparams title="1:1" ids="idiratio,ideratio" values="1,1"></bdl-buttonparams>
