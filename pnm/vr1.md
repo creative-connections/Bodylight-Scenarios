@@ -85,22 +85,49 @@
 <div id="pvtool" class="w3-row w3-blue" style="display:none">
 <div class="w3-half">
 <bdl-chartjs-xy fromid="ventilator" labelx="pressure" labely="volume" labels="pV1,pV2,pV3" refindex="0" refvalues="2" width="400" height="300" min="2.2" max="3.0" convertors="1,133.322,-760;1000,1" maxdata="256" id="idpv" colorindex="2"></bdl-chartjs-xy>
+
+<table>
+<tr>
+    <th>&nbsp;</th>
+    <th>Cursor 1</th>
+    <th>Cursor 2</th>
+    <th>Cursors</th>
+  </tr>
+<tr>
+    <th>&nbsp;</th>
+    <th>ml/cmH<sub>2</sub>O</th>
+    <th>ml/cmH<sub>2</sub>O</th>
+    <th>ml/cmH<sub>2</sub>O</th>
+  </tr>
+  <tr>
+    <td>Infl limb</td>
+    <td>0 / 5.2</td>
+    <td>364 / 26.8</td>
+    <td>15.9</td>
+  </tr>
+  <tr>
+    <td>Defl limb</td>
+    <td>65 / 5.2</td>
+    <td>392 / 26.8</td>
+    <td>15.1</td>
+  </tr>
+</table>
 </div>
 <div class="w3-half">
 
-
-
-
-
-
-
-
+<div style="width:100%;height:200px">&nbsp;</div>
 
 <button class="w3-button w3-red w3-round w3-border-white w3-border">Cursor 1</button>
-<button class="w3-button w3-blue w3-round w3-border-white w3-border">Cursor 2</button>
 &nbsp;&nbsp;&nbsp;&nbsp;
+<button class="w3-button w3-blue w3-round w3-border-white w3-border">Cursor 2</button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <button class="w3-button w3-blue w3-round w3-border-white w3-border">Start/Stop</button>
 <!--bdl-chartjs-fixed-xy width="400" height="300" fromid="ventilator2" labels="" initialdata="1.006,2.351;1.603,2.391;2.199,2.432;2.794,2.472;3.388,2.513;6.934,2.754;4.545,2.741;3.003,2.594;1.984,2.498;0.865,2.392" refindex="0" refvalues="2" xrefindex="2" xrefvalues="2" xtofixed="0" convertors="0.00750061683,1;1,1" xlabel="P [mmHg]" ylabel="V [l]" maxdata="10" xrefpointindex="1" refpointindex="2"></bdl-chartjs-fixed-xy-->
+
+&nbsp;&nbsp;<button class="w3-button w3-blue w3-round w3-border-white w3-border w3-xxlarge">&#x2B05; </button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="w3-button w3-blue w3-round w3-border-white w3-border w3-xxlarge">&#x2B95; </button>
+
 </div
 PVTOOL
 </div>
