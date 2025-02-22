@@ -1,12 +1,13 @@
 <div class="w3-blue" style="position: absolute">
 <span class="w3-small">25.02.17c &nbsp;</span>
-<bdl-animate-control id="controlbuttons2" controlfmi="true" showstep="false" playafterstart="true"></bdl-animate-control>
+<bdl-animate-control id="controlbuttons2" controlfmi="true" showstep="false" playafterstart="false"></bdl-animate-control>
 <!-- not optimalized -O0 --><bdl-fmi id="idfmi" mode="continuous"  controlid="controlbuttons2" showcontrols="false"  src="modelECMORespiratoryVR_BloodGasesTransport_BloodyMaryPPG2.js" fminame="modelECMORespiratoryVR_BloodGasesTransport_BloodyMaryPPG2" tolerance="0.0000001" starttime="0" fstepsize="1" fpslimit="0.5" fmuspeed="0.1" fmuspeed2="1" guid="{83d444de-f6b1-4a60-a953-199d3e7b2d57}" valuereferences="905975257,369103464,905975068,905975254,905974373,905975067,905975342,905972510,16777311,16777312,905975256,335544320,637537073,637538918,637538919,637537579,905973336,637537588,637537580" valuelabels="venous.sO2,arterial.sO2,tissueUnit[1].sO2,venous.pH,arterial.pH,tissueUnit[1].pH,AirO2.y,AirN2,AirCO2,AirH2O,venous.pCO2,plethy,respiratoryCenter.VentilationSwitch.y,arterial.pO2,arterial.pCO2,systemicArteries.chemicalSolution.bloodGases.BEox,systemicVeins.chemicalSolution.bloodGases.BEox,systemicArteries.chemicalSolution.bloodGases.cHCO3,systemicArteries.chemicalSolution.bloodGases.cdCO2" inputs="idrate,16777223,1,60,t;idco2,16777311,1,100,t;idh2o,16777312,1,100,t;idshunts,16777227,1,100,t;iddeadspace,16777225,1,1000000,t;ido2,16777547,1,100,t;idventilation,16777511,1,1,t" inputlabels="RR,AirCO2,AirH2O,cShuntFrac,DV,AirO2Fraction.k,respiratoryCenter.ArtificialVentilation.k"></bdl-fmi>
 <bdl-fmi id="ventilator" mode="continuous" controlid="controlbuttons2" showcontrols="false" src="modelECMORespiratoryVR_BloodGasesTransport_LungVentilatorSCMV2.js" fminame="modelECMORespiratoryVR_BloodGasesTransport_LungVentilatorSCMV2" tolerance="0.000001" starttime="0" fstepsize="0.1" fpslimit="10" guid="{98a13f8f-d60a-484c-9971-59dd5b4b6bb8}" valuereferences="637534444,637534486,16777227,16777225,16777240,16777241,16777242,335544321,369099031,637534474,16777223,234881080,16777224,905969977,637534474,637534445,637534443" valuelabels="expiration.q_in.p,lungs.volume,RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.Eratio,ventilatorSCMV.pause,ventilation,filter.y,lungs.pressure,TotalResistance,expirationConductance.y,TotalCompliance,lungsPressureMeasure.pressure,lungs.q_in[1].p,lungs.q_in[1].h_outflow,lungs.q_in[1].m_flow" inputs="idrate,16777227,1,60,t;idtv,16777225,1,1000000,t;idiratio,16777240,1,1,t;idpause,16777242,1,100,t;ideratio,16777241,1,1,t;idres,16777223,98.0665,0.001,t;idcomp,16777224,1e-6,98.0665,t;idexp,16777272,1,100000,t" inputlabels="RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.pause,ventilatorSCMV.Eratio,TotalResistance,TotalCompliance,expirationConductance.k"></bdl-fmi>
 <bdl-fmi id="hemodynamics" mode="continuous" controlid="controlbuttons2" showcontrols="false" src="modelECMORespiratoryVR_BloodGasesTransport_MeursModel2011_HemodynamicsRegulatedHR.js" fminame="modelECMORespiratoryVR_BloodGasesTransport_MeursModel2011_HemodynamicsRegulatedHR" tolerance="0.000001" starttime="0" fstepsize="0.05" fpslimit="20" guid="{87860081-905b-4adf-b51a-cdbabd18cf3e}" valuereferences="905970357,905970199,905970200,33554460,637534720" valuelabels="EithaPressure.pressure,arterialPressure.systolic,arterialPressure.diastolic,Ecg.ecg,currentHeartReat.y" inputs="arterial_sO2,16777391,1,1,t" inputlabels="sO2.k"></bdl-fmi>
 <!--bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval="2000" id="vrapi" inputs="volume;sO2"></bdl-remote-value-->
-<bdl-remote-value remoteurl="vuplex://localhost:5000/vrapi" interval="2000" id="vrapi" inputs="arterial_sO2;arterial_pH;arterial_pCO2;arterial_base_excess;arterial_HCO3;arterial_cdCO2;idrate"></bdl-remote-value>
+<bdl-remote-value remoteurl="vuplex://localhost:5000/vrapi" interval="2000" id="vrapi" inputs="arterial_sO2;arterial_pH;arterial_pCO2;arterial_base_excess;arterial_HCO3;arterial_cdCO2;idrate;heart_rate"></bdl-remote-value>
 </div><div class="w3-black w3-sans-serif" style="width:100%">
+
 <div class="w3-row">
 <div class="w3-threequarter w3-padding">
 
@@ -26,7 +27,7 @@
 &nbsp;RR&nbsp;<b class="w3-xxxlarge"><bdl-value id="idRR" style="display:none" fromid="ventilator" refindex="8" convertor="60,1" precision="2"></bdl-value></b>&nbsp;<span class="w3-small">1/min</span>
 <div class="w3-text-light-green w3-large">
 <br/>
-&nbsp;HR<b class="w3-xxxlarge"><bdl-value id="idHR" style="display:none" fromid="hemodynamics" refindex="4" convertor="60,1" tofixed="0"></bdl-value></b>&nbsp;<span class="w3-small">1/min</span>
+&nbsp;HR<b class="w3-xxxlarge"><bdl-value id="heart_rate" style="display:none" fromid="hemodynamics" refindex="4" convertor="60,1" tofixed="0"></bdl-value></b>&nbsp;<span class="w3-small">1/min</span>
 </div>
 <br/>
 <div class="w3-text-purple w3-large">
@@ -36,6 +37,7 @@
 </div>
 </div>
 </div>
+<div id="monitoring">
 <div class="w3-row">
 <div class="w3-threequarter w3-padding">
 <div class="w3-row">
@@ -61,7 +63,7 @@
 <div class="w3-row">
 <div class="w3-threequarter">
 
-<div id="monitoring" class="w3-row">
+<div class="w3-row">
 
 
 <div class="w3-quarter">
@@ -81,6 +83,23 @@
 
 </div>
 
+</div>
+
+</div>
+
+<div class="w3-rest w3-text-blue">
+&nbsp;P<b class="w3-xxlarge"><bdl-value id="idP" style="display:none" fromid="ventilator" refindex="0" convertor="1,133.322"></bdl-value></b>&nbsp;<span class="w3-small">mmHg</span><br/>
+&nbsp;V<b class="w3-xxlarge"><bdl-value id="idV" style="display:none" fromid="ventilator" refindex="1" convertor="1000,1"></bdl-value></b>&nbsp;<span class="w3-small">l</span>
+<div class="w3-text-red">
+&nbsp;p<sub>H</sub><sup>art</sup><b class="w3-xxxlarge"><bdl-value id="idpH" style="display:none" fromid="idfmi" refindex="4"></bdl-value></b>
+</div>
+<div class="w3-text-green">
+&nbsp;p<sub>H</sub><sup>mix</sup><b class=""><bdl-value id="idpHmix" style="display:none" fromid="idfmi" refindex="5"></bdl-value></b>
+</div>
+<div class="w3-text-blue">
+&nbsp;p<sub>H</sub><sup>ven</sup><b class=""><bdl-value id="idpHven" style="display:none" fromid="idfmi" refindex="3"></bdl-value></b>
+</div></div></div>
+</div>
 </div>
 <div id="pvtool" class="w3-row w3-blue" style="display:none">
 <div class="w3-half">
@@ -124,31 +143,15 @@
 <button class="w3-button w3-blue w3-round w3-border-white w3-border">Start/Stop</button>
 <!--bdl-chartjs-fixed-xy width="400" height="300" fromid="ventilator2" labels="" initialdata="1.006,2.351;1.603,2.391;2.199,2.432;2.794,2.472;3.388,2.513;6.934,2.754;4.545,2.741;3.003,2.594;1.984,2.498;0.865,2.392" refindex="0" refvalues="2" xrefindex="2" xrefvalues="2" xtofixed="0" convertors="0.00750061683,1;1,1" xlabel="P [mmHg]" ylabel="V [l]" maxdata="10" xrefpointindex="1" refpointindex="2"></bdl-chartjs-fixed-xy-->
 
-&nbsp;&nbsp;<button class="w3-button w3-blue w3-round w3-border-white w3-border w3-xxlarge">&#x2B05; </button>
+&nbsp;&nbsp;<button class="w3-button w3-blue w3-round w3-border-white w3-border w3-xxxlarge">&#x21E6;</button>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<button class="w3-button w3-blue w3-round w3-border-white w3-border w3-xxlarge">&#x2B95; </button>
+<button class="w3-button w3-blue w3-round w3-border-white w3-border w3-xxxlarge">&#x21E8; </button>
 
 </div
 PVTOOL
 </div>
 <div class="w3-half"></div>
 </div>
-</div>
-
-<div class="w3-rest w3-text-blue">
-&nbsp;P<b class="w3-xxlarge"><bdl-value id="idP" style="display:none" fromid="ventilator" refindex="0" convertor="1,133.322"></bdl-value></b>&nbsp;<span class="w3-small">mmHg</span><br/>
-&nbsp;V<b class="w3-xxlarge"><bdl-value id="idV" style="display:none" fromid="ventilator" refindex="1" convertor="1000,1"></bdl-value></b>&nbsp;<span class="w3-small">l</span>
-<div class="w3-text-red">
-&nbsp;p<sub>H</sub><sup>art</sup><b class="w3-xxxlarge"><bdl-value id="idpH" style="display:none" fromid="idfmi" refindex="4"></bdl-value></b>
-</div>
-<div class="w3-text-green">
-&nbsp;p<sub>H</sub><sup>mix</sup><b class=""><bdl-value id="idpHmix" style="display:none" fromid="idfmi" refindex="5"></bdl-value></b>
-</div>
-<div class="w3-text-blue">
-&nbsp;p<sub>H</sub><sup>ven</sup><b class=""><bdl-value id="idpHven" style="display:none" fromid="idfmi" refindex="3"></bdl-value></b>
-</div></div></div>
-</div>
-
 </div>
 
 <div class="w3-large w3-padding w3-hide">
@@ -158,18 +161,14 @@ PVTOOL
 </div>
 
 <button class="w3-button w3-blue w3-large" onclick="document.getElementById('monitoring').style.display = 'block';document.getElementById('pvtool').style.display = 'none';">MONITORING</button>
-<button class="w3-button w3-blue" onclick="document.getElementById('monitoring').style.display = 'none';document.getElementById('pvtool').style.display = 'block';">PV TOOL</button>
-
-
-<!-- debug controls -->
-<bdl-buttonparams title="1.phase (normal)" ids="idshunts,iddeadspace,idrate,idcomp,ido2" values="2,150,17,60,21" fromid="vrapi" thresholdvalue="1" refindex="patient_state" ></bdl-buttonparams> 
-<bdl-buttonparams title="2.phase (pneumonia)" ids="idshunts,iddeadspace,idrate,idcomp,ido2,idpause,idexp" values="86,850,33,10,21,2,0.31" fromid="vrapi" refindex="patient_state" thresholdvalue="2"></bdl-buttonparams>
-<bdl-buttonparams title="3.phase (ventilated)" ids="idshunts,iddeadspace,idrate,idcomp,ido2,idpause,idexp" values="86,850,15,10,40,30,0.15" fromid="vrapi" refindex="patient_state" thresholdvalue="3"></bdl-buttonparams>
-<bdl-buttonparams title="4.phase (stabilized)" ids="idshunts,iddeadspace,idrate,idcomp,ido2" values="60,850,15,10,60" fromid="vrapi" refindex="patient_state" thresholdvalue="3"></bdl-buttonparams>
-<span class="w3-small">
-<button class="w3-button w3-blue" onclick="['idRR', 'idHR', 'idpH', 'idpHven','idpHmix','spo2value'].forEach(id => document.getElementById(id).style.display = 'inline');">show basic</button>
-<button class="w3-button w3-blue" onclick="['idNIBP', 'idNIBP2', 'idP', 'idV','idetco2','idpo2','idpv'].forEach(id => document.getElementById(id).style.display = 'inline');">show vent.</button>
-<button class="w3-button w3-blue" onclick="['idRR', 'idHR', 'idpH', 'idpHven','idpHmix','spo2value','idNIBP', 'idNIBP2', 'idP', 'idV','idetco2','idpo2','idpv'].forEach(id => document.getElementById(id).style.display = 'none');">hide all</button>
+<button class="w3-button w3-blue w3-large" onclick="document.getElementById('monitoring').style.display = 'none';document.getElementById('pvtool').style.display = 'block';">PV TOOL</button>&nbsp;&nbsp;
+<span class="w3-right"><bdl-buttonparams title="1(normal)" ids="idshunts,iddeadspace,idrate,idcomp,ido2" values="2,150,17,60,21" fromid="vrapi" thresholdvalue="1" refindex="patient_state"></bdl-buttonparams> 
+<bdl-buttonparams title="2(pneumonia)" ids="idshunts,iddeadspace,idrate,idcomp,ido2,idpause,idexp" values="86,850,33,10,21,2,0.31" fromid="vrapi" refindex="patient_state" thresholdvalue="2"></bdl-buttonparams>
+<bdl-buttonparams title="3(ventilated)" ids="idshunts,iddeadspace,idrate,idcomp,ido2,idpause,idexp" values="86,850,15,10,40,30,0.15" fromid="vrapi" refindex="patient_state" thresholdvalue="3"></bdl-buttonparams>
+<bdl-buttonparams title="4(stabilized)" ids="idshunts,iddeadspace,idrate,idcomp,ido2" values="60,850,15,10,60" fromid="vrapi" refindex="patient_state" thresholdvalue="3"></bdl-buttonparams>
+<button class="w3-button w3-blue" onclick="['idRR', 'heart_rate', 'idpH', 'idpHven','idpHmix','spo2value'].forEach(id => document.getElementById(id).style.display = 'inline');">show basic</button>
+<button class="w3-right w3-button w3-blue" onclick="['idNIBP', 'idNIBP2', 'idP', 'idV','idetco2','idpo2','idpv'].forEach(id => document.getElementById(id).style.display = 'inline');">show vent.</button>
+<button class="w3-button w3-blue" onclick="['idRR', 'heart_rate', 'idpH', 'idpHven','idpHmix','spo2value','idNIBP', 'idNIBP2', 'idP', 'idV','idetco2','idpo2','idpv'].forEach(id => document.getElementById(id).style.display = 'none');">hide all</button>
 <button class="w3-button w3-blue" onclick="document.getElementById('vcontrols').style.display='block'">Ventilator controls</button>
 <button class="w3-button w3-blue" onclick="console.log('sending vuplex message');const event1 = new CustomEvent('vuplexmessage', {detail: { patient_state: '2', 'version': navigator.userAgent }});window.dispatchEvent(event1);">debugv1</button></span>
 
