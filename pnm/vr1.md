@@ -1,5 +1,5 @@
 <div class="w3-blue" style="position: absolute">
-<span class="w3-small">25.02.23 &nbsp;</span>
+<span class="w3-small">25.02.23a &nbsp;</span>
 <bdl-animate-control id="controlbuttons2" controlfmi="true" showstep="false" playafterstart="true"></bdl-animate-control>
 <!-- not optimalized -O0 --><bdl-fmi id="idfmi" mode="continuous"  controlid="controlbuttons2" showcontrols="false"  src="modelECMORespiratoryVR_BloodGasesTransport_BloodyMaryPPG2.js" fminame="modelECMORespiratoryVR_BloodGasesTransport_BloodyMaryPPG2" tolerance="0.0000001" starttime="0" fstepsize="1" fpslimit="0.5" fmuspeed="0.1" fmuspeed2="1" guid="{83d444de-f6b1-4a60-a953-199d3e7b2d57}" valuereferences="905975257,369103464,905975068,905975254,905974373,905975067,905975342,905972510,16777311,16777312,905975256,335544320,637537073,637538918,637538919,637537579,905973336,637537588,637537580" valuelabels="venous.sO2,arterial.sO2,tissueUnit[1].sO2,venous.pH,arterial.pH,tissueUnit[1].pH,AirO2.y,AirN2,AirCO2,AirH2O,venous.pCO2,plethy,respiratoryCenter.VentilationSwitch.y,arterial.pO2,arterial.pCO2,systemicArteries.chemicalSolution.bloodGases.BEox,systemicVeins.chemicalSolution.bloodGases.BEox,systemicArteries.chemicalSolution.bloodGases.cHCO3,systemicArteries.chemicalSolution.bloodGases.cdCO2" inputs="idrate,16777223,1,60,t;idco2,16777311,1,100,t;idh2o,16777312,1,100,t;idshunts,16777227,1,100,t;iddeadspace,16777225,1,1000000,t;ido2,16777547,1,100,t;idventilation,16777511,1,1,t" inputlabels="RR,AirCO2,AirH2O,cShuntFrac,DV,AirO2Fraction.k,respiratoryCenter.ArtificialVentilation.k"></bdl-fmi>
 <bdl-fmi id="ventilator" mode="continuous" controlid="controlbuttons2" showcontrols="false" src="modelECMORespiratoryVR_BloodGasesTransport_LungVentilatorSCMV2.js" fminame="modelECMORespiratoryVR_BloodGasesTransport_LungVentilatorSCMV2" tolerance="0.000001" starttime="0" fstepsize="0.1" fpslimit="10" guid="{98a13f8f-d60a-484c-9971-59dd5b4b6bb8}" valuereferences="637534444,637534486,16777227,16777225,16777240,16777241,16777242,335544321,369099031,637534474,16777223,234881080,16777224,905969977,637534474,637534445,637534443" valuelabels="expiration.q_in.p,lungs.volume,RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.Eratio,ventilatorSCMV.pause,ventilation,filter.y,lungs.pressure,TotalResistance,expirationConductance.y,TotalCompliance,lungsPressureMeasure.pressure,lungs.q_in[1].p,lungs.q_in[1].h_outflow,lungs.q_in[1].m_flow" inputs="idrate,16777227,1,60,t;idtv,16777225,1,1000000,t;idiratio,16777240,1,1,t;idpause,16777242,1,100,t;ideratio,16777241,1,1,t;idres,16777223,98.0665,0.001,t;idcomp,16777224,1e-6,98.0665,t;idexp,16777272,1,100000,t" inputlabels="RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.pause,ventilatorSCMV.Eratio,TotalResistance,TotalCompliance,expirationConductance.k"></bdl-fmi>
@@ -101,7 +101,7 @@
 </div></div></div>
 </div>
 </div>
-<bdl-pvtool id="pvtool" style="display:none" fromid="ventilator" refindex="0" refvalues="2"></bdl-pvtool>
+<bdl-pvtool id="idpvtool" fromid="ventilator" refindex="0" refvalues="2" style="display:none"></bdl-pvtool>
 </div>
 
 <div class="w3-large w3-padding w3-hide">
@@ -110,8 +110,8 @@
 
 </div>
 
-<button class="w3-button w3-blue w3-large" onclick="document.getElementById('monitoring').style.display = 'block';document.getElementById('pvtool').style.display = 'none';">MONITORING</button>
-<button class="w3-button w3-blue w3-large" onclick="document.getElementById('monitoring').style.display = 'none';document.getElementById('pvtool').style.display = 'block';">PV TOOL</button>&nbsp;&nbsp;
+<button class="w3-button w3-blue w3-large" onclick="document.getElementById('monitoring').style.display = 'block';document.getElementById('idpvtool').style.display = 'none';">MONITORING</button>
+<button class="w3-button w3-blue w3-large" onclick="document.getElementById('monitoring').style.display = 'none';document.getElementById('idpvtool').style.display = 'block';">PV TOOL</button>&nbsp;&nbsp;
 <span class="w3-right"><bdl-buttonparams title="1(normal)" ids="idshunts,iddeadspace,idrate,idcomp,ido2" values="2,150,17,60,21" fromid="vrapi" thresholdvalue="1" refindex="patient_state"></bdl-buttonparams> 
 <bdl-buttonparams title="2(pneumonia)" ids="idshunts,iddeadspace,idrate,idcomp,ido2,idpause,idexp" values="86,850,33,10,21,2,0.31" fromid="vrapi" refindex="patient_state" thresholdvalue="2"></bdl-buttonparams>
 <bdl-buttonparams title="3(ventilated)" ids="idshunts,iddeadspace,idrate,idcomp,ido2,idpause,idexp" values="86,850,15,10,40,30,0.15" fromid="vrapi" refindex="patient_state" thresholdvalue="3"></bdl-buttonparams>
