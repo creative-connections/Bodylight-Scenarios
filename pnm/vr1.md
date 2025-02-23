@@ -1,6 +1,6 @@
 <div class="w3-blue" style="position: absolute">
 <span class="w3-small">25.02.17c &nbsp;</span>
-<bdl-animate-control id="controlbuttons2" controlfmi="true" showstep="false" playafterstart="false"></bdl-animate-control>
+<bdl-animate-control id="controlbuttons2" controlfmi="true" showstep="false" playafterstart="true"></bdl-animate-control>
 <!-- not optimalized -O0 --><bdl-fmi id="idfmi" mode="continuous"  controlid="controlbuttons2" showcontrols="false"  src="modelECMORespiratoryVR_BloodGasesTransport_BloodyMaryPPG2.js" fminame="modelECMORespiratoryVR_BloodGasesTransport_BloodyMaryPPG2" tolerance="0.0000001" starttime="0" fstepsize="1" fpslimit="0.5" fmuspeed="0.1" fmuspeed2="1" guid="{83d444de-f6b1-4a60-a953-199d3e7b2d57}" valuereferences="905975257,369103464,905975068,905975254,905974373,905975067,905975342,905972510,16777311,16777312,905975256,335544320,637537073,637538918,637538919,637537579,905973336,637537588,637537580" valuelabels="venous.sO2,arterial.sO2,tissueUnit[1].sO2,venous.pH,arterial.pH,tissueUnit[1].pH,AirO2.y,AirN2,AirCO2,AirH2O,venous.pCO2,plethy,respiratoryCenter.VentilationSwitch.y,arterial.pO2,arterial.pCO2,systemicArteries.chemicalSolution.bloodGases.BEox,systemicVeins.chemicalSolution.bloodGases.BEox,systemicArteries.chemicalSolution.bloodGases.cHCO3,systemicArteries.chemicalSolution.bloodGases.cdCO2" inputs="idrate,16777223,1,60,t;idco2,16777311,1,100,t;idh2o,16777312,1,100,t;idshunts,16777227,1,100,t;iddeadspace,16777225,1,1000000,t;ido2,16777547,1,100,t;idventilation,16777511,1,1,t" inputlabels="RR,AirCO2,AirH2O,cShuntFrac,DV,AirO2Fraction.k,respiratoryCenter.ArtificialVentilation.k"></bdl-fmi>
 <bdl-fmi id="ventilator" mode="continuous" controlid="controlbuttons2" showcontrols="false" src="modelECMORespiratoryVR_BloodGasesTransport_LungVentilatorSCMV2.js" fminame="modelECMORespiratoryVR_BloodGasesTransport_LungVentilatorSCMV2" tolerance="0.000001" starttime="0" fstepsize="0.1" fpslimit="10" guid="{98a13f8f-d60a-484c-9971-59dd5b4b6bb8}" valuereferences="637534444,637534486,16777227,16777225,16777240,16777241,16777242,335544321,369099031,637534474,16777223,234881080,16777224,905969977,637534474,637534445,637534443" valuelabels="expiration.q_in.p,lungs.volume,RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.Eratio,ventilatorSCMV.pause,ventilation,filter.y,lungs.pressure,TotalResistance,expirationConductance.y,TotalCompliance,lungsPressureMeasure.pressure,lungs.q_in[1].p,lungs.q_in[1].h_outflow,lungs.q_in[1].m_flow" inputs="idrate,16777227,1,60,t;idtv,16777225,1,1000000,t;idiratio,16777240,1,1,t;idpause,16777242,1,100,t;ideratio,16777241,1,1,t;idres,16777223,98.0665,0.001,t;idcomp,16777224,1e-6,98.0665,t;idexp,16777272,1,100000,t" inputlabels="RR,TV,ventilatorSCMV.Iratio,ventilatorSCMV.pause,ventilatorSCMV.Eratio,TotalResistance,TotalCompliance,expirationConductance.k"></bdl-fmi>
 <bdl-fmi id="hemodynamics" mode="continuous" controlid="controlbuttons2" showcontrols="false" src="modelECMORespiratoryVR_BloodGasesTransport_MeursModel2011_HemodynamicsRegulatedHR.js" fminame="modelECMORespiratoryVR_BloodGasesTransport_MeursModel2011_HemodynamicsRegulatedHR" tolerance="0.000001" starttime="0" fstepsize="0.05" fpslimit="20" guid="{87860081-905b-4adf-b51a-cdbabd18cf3e}" valuereferences="905970357,905970199,905970200,33554460,637534720" valuelabels="EithaPressure.pressure,arterialPressure.systolic,arterialPressure.diastolic,Ecg.ecg,currentHeartReat.y" inputs="arterial_sO2,16777391,1,1,t" inputlabels="sO2.k"></bdl-fmi>
@@ -101,57 +101,7 @@
 </div></div></div>
 </div>
 </div>
-<div id="pvtool" class="w3-row w3-blue" style="display:none">
-<div class="w3-half">
-<bdl-chartjs-xy fromid="ventilator" labelx="pressure" labely="volume" labels="pV1,pV2,pV3" refindex="0" refvalues="2" width="400" height="300" min="2.2" max="3.0" convertors="1,133.322,-760;1000,1" maxdata="256" id="idpv" colorindex="2"></bdl-chartjs-xy>
-
-<table>
-<tr>
-    <th>&nbsp;</th>
-    <th>Cursor 1</th>
-    <th>Cursor 2</th>
-    <th>Cursors</th>
-  </tr>
-<tr>
-    <th>&nbsp;</th>
-    <th>ml/cmH<sub>2</sub>O</th>
-    <th>ml/cmH<sub>2</sub>O</th>
-    <th>ml/cmH<sub>2</sub>O</th>
-  </tr>
-  <tr>
-    <td>Infl limb</td>
-    <td>0 / 5.2</td>
-    <td>364 / 26.8</td>
-    <td>15.9</td>
-  </tr>
-  <tr>
-    <td>Defl limb</td>
-    <td>65 / 5.2</td>
-    <td>392 / 26.8</td>
-    <td>15.1</td>
-  </tr>
-</table>
-</div>
-<div class="w3-half">
-
-<div style="width:100%;height:200px">&nbsp;</div>
-
-<button class="w3-button w3-red w3-round w3-border-white w3-border">Cursor 1</button>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<button class="w3-button w3-blue w3-round w3-border-white w3-border">Cursor 2</button>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<button class="w3-button w3-blue w3-round w3-border-white w3-border">Start/Stop</button>
-<!--bdl-chartjs-fixed-xy width="400" height="300" fromid="ventilator2" labels="" initialdata="1.006,2.351;1.603,2.391;2.199,2.432;2.794,2.472;3.388,2.513;6.934,2.754;4.545,2.741;3.003,2.594;1.984,2.498;0.865,2.392" refindex="0" refvalues="2" xrefindex="2" xrefvalues="2" xtofixed="0" convertors="0.00750061683,1;1,1" xlabel="P [mmHg]" ylabel="V [l]" maxdata="10" xrefpointindex="1" refpointindex="2"></bdl-chartjs-fixed-xy-->
-
-&nbsp;&nbsp;<button class="w3-button w3-blue w3-round w3-border-white w3-border w3-xxxlarge">&#x21E6;</button>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<button class="w3-button w3-blue w3-round w3-border-white w3-border w3-xxxlarge">&#x21E8; </button>
-
-</div
-PVTOOL
-</div>
-<div class="w3-half"></div>
-</div>
+<bdl-pvtool id="pvtool" style="display:none" fromid="ventilator" refindex="0" refvalues="2"></bdl-pvtool>
 </div>
 
 <div class="w3-large w3-padding w3-hide">
