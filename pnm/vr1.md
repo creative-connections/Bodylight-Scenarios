@@ -30,7 +30,7 @@
 &nbsp;RR&nbsp;<b class="w3-xxxlarge"><bdl-value id="idRR" style="display:none" fromid="ventilator" refindex="8" convertor="60,1" precision="2"></bdl-value></b>&nbsp;<span class="w3-small">1/min</span>
 <div class="w3-text-light-green w3-large">
 <br/>
-&nbsp;HR<b class="w3-xxxlarge"><bdl-value id="heart_rate" style="display:none" fromid="hemodynamics" refindex="4" convertor="60,1" tofixed="0"></bdl-value></b>&nbsp;<span class="w3-small">1/min</span>
+&nbsp;HR<b class="w3-xxxlarge"><bdl-value id="idheartrate" style="display:none" fromid="hemodynamics" refindex="4" convertor="60,1" tofixed="0"></bdl-value></b>&nbsp;<span class="w3-small">1/min</span>
 </div>
 <br/>
 <div class="w3-text-purple w3-large">
@@ -119,9 +119,9 @@
 <bdl-buttonparams title="2(pneumonia)" ids="idshunts,iddeadspace,idrate,idcomp,ido2,idpause,idexp" values="86,850,33,10,21,2,0.31" fromid="vrapi" refindex="patient_state" thresholdvalue="2"></bdl-buttonparams>
 <bdl-buttonparams title="3(ventilated)" ids="idshunts,iddeadspace,idrate,idcomp,ido2,idpause,idexp,hradd" values="86,850,15,10,40,30,0.15,-0.5" fromid="vrapi" refindex="patient_state" thresholdvalue="3"></bdl-buttonparams>
 <bdl-buttonparams title="4(stabilized)" ids="idshunts,iddeadspace,idrate,idcomp,ido2" values="60,850,15,10,60" fromid="vrapi" refindex="patient_state" thresholdvalue="4"></bdl-buttonparams>
-<button class="w3-button w3-blue" onclick="['idRR', 'heart_rate', 'idpH', 'idpHven','idpHmix','spo2value'].forEach(id => document.getElementById(id).style.display = 'inline');">show1</button>
+<button class="w3-button w3-blue" onclick="['idRR', 'idheartrate', 'idpH', 'idpHven','idpHmix','spo2value'].forEach(id => document.getElementById(id).style.display = 'inline');">show1</button>
 <button class="w3-button w3-blue" onclick="['idNIBP', 'idNIBP2', 'idP', 'idV','idetco2','idpo2','idpv'].forEach(id => document.getElementById(id).style.display = 'inline');">show2</button>
-<button class="w3-button w3-blue" onclick="['idRR', 'heart_rate', 'idpH', 'idpHven','idpHmix','spo2value','idNIBP', 'idNIBP2', 'idP', 'idV','idetco2','idpo2','idpv'].forEach(id => document.getElementById(id).style.display = 'none');">hide</button>
+<button class="w3-button w3-blue" onclick="['idRR', 'idheartrate', 'idpH', 'idpHven','idpHmix','spo2value','idNIBP', 'idNIBP2', 'idP', 'idV','idetco2','idpo2','idpv'].forEach(id => document.getElementById(id).style.display = 'none');">hide</button>
 <button class="w3-button w3-blue" onclick="console.log('sending vuplex message');const event1 = new CustomEvent('vuplexmessage', {detail: { patient_state: '2', 'version': navigator.userAgent }});window.dispatchEvent(event1);">debugv1</button> 
 <button class="w3-button w3-blue" onclick="document.getElementById('vcontrols').style.display='block'">controls</button>
 </span>
@@ -144,7 +144,7 @@ Data to be sent to VR: <bdl-range id="hradd" min="-0.5" max="0.5" default="0" st
 volume:<bdl-range id="volume" title="Lung volume (m3)" min="0.0001" max="0.01" default="0.002" step="0.000001" fromid="ventilator" refindex="1"></bdl-range>
 asO2:<bdl-range id="arterial_sO2" min="0" max="1" default="0.981" step="0.001" title="so2"  fromid="idfmi" refindex="1"></bdl-range>
 apH:<bdl-range id="arterial_pH" fromid="idfmi" min="0" max="14" default="0" step="0.00001" refindex="4"></bdl-range>
-apCO2:<bdl-range id="arterial_pCO2" fromid="idfmi" refindex="14" min="0" max="10000000" default="0" step="0.0000001"></bdl-range>
+apCO2:<bdl-range id="arterial_pCO2" fromid="idfmi" refindex="14" min="0" max="10000000" default="0" step="0.001" convertors="1,1000"></bdl-range>
 aBE:<bdl-range id="arterial_base_excess" fromid="idfmi" refindex="16" min="-200" max="200" default="0" step="0.0000001"></bdl-range>
 aHCO3:<bdl-range id="arterial_HCO3" fromid="idfmi" refindex="17" min="0" max="100" default="0" step="0.0000001"></bdl-range>
 acdCO2:<bdl-range id="arterial_cdCO2" fromid="idfmi" refindex="18"  min="0" max="100" default="0" step="0.0000001"></bdl-range>
@@ -182,6 +182,7 @@ Mechanical ventilator setting:<br/>
 <bdl-range id="idrate" title="Breath rate (1/min)" min="3" max="60" default="17" step="1" initdefault="true" fromid="vrapi" refindex="f_breath_rate" refconditionvar="patient_state" refconditionvalue="3"></bdl-range><br/>
 <!--bdl-range id="idmuscle" title="Breathing force (%)" min="10" max="400" default="100" step="1" fromid="vrapi" refindex="0"></bdl-range-->
 <bdl-range id="idtv" title="Vt - tidal volume (ml)" min="200" max="1500" default="800" step="1" fromid="vrapi" refindex="Vt_tidal_volume" initdefault="true"  refconditionvar="patient_state" refconditionvalue="3"></bdl-range><br/>
+<bdl-range id="heart_rate" title="HR" min="2" max="200" default="60" step="1" fromid="hemodynamics" refindex="4" convertors="60,1" tofixed="0"></bdl-range><br/>
 <div class="w3-hide">
 <bdl-range id="idiratio" min="1" max="4" default="1" step="1" fromid="vrapi" refindex="I_ratio" refconditionvar="patient_state" refconditionvalue="3"></bdl-range>
 <bdl-range id="ideratio" min="1" max="9" default="4" step="1" fromid="vrapi" refindex="E_ratio"  refconditionvar="patient_state" refconditionvalue="3"></bdl-range>
