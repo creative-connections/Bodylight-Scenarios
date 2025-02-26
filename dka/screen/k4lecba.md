@@ -70,7 +70,7 @@ Větší riziko DKA je při léčbě inzulinovou pumpou než při aplikaci pery.
 A ještě by se dalo zmínit, že v 10-15% případů je DKA spojená s laktátovou acidózou – zejména při deficitu fosfátů (snížení 2,3-difosfoglycerátu v erytrocytu posouvá disociační křivku Hb doleva).
 </div>
 <div id="ketoacidoza3">
-<iframe src="https://api.socrative.com/rc/VghYke" style="height:500px;width:600px;" title="Iframe Example"></iframe>
+<iframe src="https://api.socrative.com/rc/VghYke" style="height:500px;width:600px;" title="Iframe Example" samesite=sone and secure=true ></iframe>
 </div>
 </div>
 </div>
