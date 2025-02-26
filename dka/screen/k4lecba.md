@@ -1,8 +1,8 @@
 <div class="w3-row">
 <div class="w3-half">
 
-<bdl-tabs idlist="patogeneze,ketogeneze,krystaloidy,inzulin,kalemie,ABR,ketoacidoza,ketoacidoza2" 
-  titlelist="Patogeneze,Ketogeneze,Léčba dehydratace,Léčba hyperglykémie,Léčba kalémie,Léčba poruchy ABR,Ketoacidóza,DKA 2"></bdl-tabs>
+<bdl-tabs idlist="patogeneze,ketogeneze,krystaloidy,inzulin,kalemie,ABR,ketoacidoza,ketoacidoza2,ketoacidoza3" 
+  titlelist="Patogeneze,Ketogeneze,Léčba dehydratace,Léčba hyperglykémie,Léčba kalémie,Léčba poruchy ABR,Ketoacidóza,DKA 2, Zpětná vazba"></bdl-tabs>
 <div class="w3-sand w3-large w3-padding w3-margin">  
 <div id="patogeneze">
 
@@ -68,6 +68,9 @@ U všech věkových kategorií hrozí diabetická ketoacidóza (DKA) při zanedb
 Větší riziko DKA je při léčbě inzulinovou pumpou než při aplikaci pery. Pacient s DM1 aplikuje perem jednou denně bazální inzulin, k tomu připichuje před jídly krátkodobý inzulin. Díky bazálnímu inzulinu má v sobě vždy nějakou dávku inzulinu. V pumpě je jen krátkodobě působící inzulin, proto při vytržení kanyly, o kterém pacient neví (např. v noci), glykémie rychle stoupá a rychleji spěje do DKA (nemá v sobě bazální inzulin).
 
 A ještě by se dalo zmínit, že v 10-15% případů je DKA spojená s laktátovou acidózou – zejména při deficitu fosfátů (snížení 2,3-difosfoglycerátu v erytrocytu posouvá disociační křivku Hb doleva).
+</div>
+<div id="ketoacidoza3">
+<iframe src="https://api.socrative.com/rc/VghYke" style="height:500px;width:600px;" title="Iframe Example"></iframe>
 </div>
 </div>
 </div>
