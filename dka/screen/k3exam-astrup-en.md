@@ -111,7 +111,7 @@
 | K (Potassium)  | 6.3 mmol/l    | [3.8..5.0]  |
 | Cl (Chloride)  | 88 mmol/l     | [97..108]   |
 | Urea           | 18.0 mmol/l   | [1.8..6.7]  |
-| Creatinine     | 152 µmol/l    | [27..88]    |
+| Creatinine     | 152 µmol/l    | [64..104]    |
 | Total Bilirubin| 10.2 µmol/l   | [2..17]     |
 | ALT            | 0.2 ukat/l    | [0.05..0.6] |
 | AST            | 0.38 ukat/l   | [0.1..0.63] |
