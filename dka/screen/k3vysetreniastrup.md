@@ -105,7 +105,7 @@
 | K | 6,3 mmol/l | [3,8..5,0] |
 | Cl | 88 mmol/l | [97..108] |
 | Urea | 18,0 mmol/l | [1,8..6,7] |
-| Kreatinin | 152 umol/l | [27..88] |
+| Kreatinin | 152 umol/l | [64..104] |
 | Bilirub. celk. | 10,2 μmol/l | [2..17] |
 | ALT | 0,2 ukat/l | [0,05..0,6] |
 | AST | 0,38 ukat/l | [0,1..0,63] |
