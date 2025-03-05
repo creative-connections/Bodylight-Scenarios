@@ -106,8 +106,8 @@
 <bdl-quizx id="q1.1" type="choice"
           question="1.1 What objective examination can be performed on a patient whose result is known immediately (within seconds to minutes)"
           answers="A. Auscultation of breathing|B. Auscultation of the heart|C. Measurement of arterial pressure|D. Blood oxygen saturation from the finger|E. Glycemia determination by glucometer from the finger|F. Blood count|G. Blood and urine biochemistry|H. ASTRUP examination of arterial or capillary blood"
-          correctoptions="true|true|true|true|true|false|false|false"
-          explanations="yes|yes|yes|yes|yes|no|no|no"
+          correctoptions="true|true|true|true|true|false|false|true"
+          explanations="yes|yes|yes|yes|yes|no|no|yes in some ambulances"
           buttontitle="check answer" ></bdl-quizx>
 <bdl-quizx id="q1.2" type="choice2"
           question="1.2 Start or watch the simulation and what is the approximate respiratory rate. (hint: charts show values of last 10 s)"
@@ -121,7 +121,7 @@
           correctoptions="false|true|false"
           explanations="no|yes|no"
           buttontitle="check answer" ></bdl-quizx>
-<bdl-quizx id="q1.3" type="choice2"
+<bdl-quizx id="q1.4" type="choice2"
           question="1.4 What is the arterial pressure, choose the closest value (hint: estimate based on chart scale)"
           answers="A. 123/86 mmhg|B. 90/60 mmhg|C. 140/90 mmhg"
           correctoptions="false|true|false"
@@ -129,9 +129,9 @@
           buttontitle="check answer" ></bdl-quizx>
 <bdl-quizx id="q1.5" type="choice2"
           question="1.5 What is the blood oxygen saturation, choose the closest value (hint: estimate based on chart scale)"
-          answers="A. 85 %|B. 91%|C. 98%"
-          correctoptions="false|true|false"
-          explanations="no|yes|no"
+          answers="A. 85 %|B. 91%|C. 97%"
+          correctoptions="false|false|true"
+          explanations="no|no|yes"
           buttontitle="check answer" ></bdl-quizx>
 <bdl-quizx id="q1.6" type="choice2"
           question="1.6 Patient mentions that he takes insulin. But during infection he starts to take it non-regularly. Glycemia test returns abnormal value. Try to guess the glycemia level returned"
