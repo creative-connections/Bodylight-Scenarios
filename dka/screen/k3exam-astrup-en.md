@@ -158,7 +158,8 @@ Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016
 
 </div>
 </div>
-<div class="w3-third">
+<div class="w3-third w3-large w3-palatino" style="line-height:1.0">
+
 <bdl-quizx id="q3.1" type="choice2" 
            question="3.1 What type of ABR disorder is this - as in pH pCO2 diagram?" 
            answers="A. chronic base deficit|B. acute base deficit|C. chronic hypercapnia|D. acute hypercapnia" 
