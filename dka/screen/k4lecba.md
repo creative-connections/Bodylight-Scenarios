@@ -68,6 +68,9 @@ U všech věkových kategorií hrozí diabetická ketoacidóza (DKA) při zanedb
 Větší riziko DKA je při léčbě inzulinovou pumpou než při aplikaci pery. Pacient s DM1 aplikuje perem jednou denně bazální inzulin, k tomu připichuje před jídly krátkodobý inzulin. Díky bazálnímu inzulinu má v sobě vždy nějakou dávku inzulinu. V pumpě je jen krátkodobě působící inzulin, proto při vytržení kanyly, o kterém pacient neví (např. v noci), glykémie rychle stoupá a rychleji spěje do DKA (nemá v sobě bazální inzulin).
 
 A ještě by se dalo zmínit, že v 10-15% případů je DKA spojená s laktátovou acidózou – zejména při deficitu fosfátů (snížení 2,3-difosfoglycerátu v erytrocytu posouvá disociační křivku Hb doleva).
+
+![dkapato3](dkapato3.png)
+Skoro vše o diabetické ketoacidóze: https://youtu.be/EjbXidx7YFM
 </div>
 <div id="ketoacidoza3">
 
@@ -75,6 +78,7 @@ Dobrovolně - prosím vyplňte závěrečný test a dejte nám zpětnou vazbu
 
 
 <a class="w3-button w3-theme-dark" href="https://api.socrative.com/rc/VghYke" target="_blank">TEST a ZPÉTNÁ VAZBA</a>
+https://api.socrative.com/rc/kK9Emj
 </div>
 </div>
 </div>
