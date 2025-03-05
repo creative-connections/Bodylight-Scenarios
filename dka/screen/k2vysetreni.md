@@ -74,7 +74,7 @@ Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016
 </div>
 
 
-<div class="w3-third  w3-xlarge w3-palatino" style="line-height:1.0">
+<div class="w3-third  w3-large w3-palatino" style="line-height:1.0">
 
 <div class="w3-padding w3-margin">
 <bdl-quizx id="q2.1" type="choice2" 
