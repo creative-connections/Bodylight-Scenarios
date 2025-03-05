@@ -6,7 +6,7 @@ import random
 
 # Variables
 variables = {
-    'f_breath_rate': 5,
+    'f_breath_rate': 17,
     'Vt_tidal_volume': 500,
     'I_ratio': 1,
     'E_ratio': 3,
@@ -20,7 +20,9 @@ variables = {
     'arterial_pCO2':0,
     'arterial_base_excess':0,
     'arterial_HCO3':0,
-    'arterial_cdCO2':0
+    'arterial_cdCO2':0,
+    'idrate':17,
+    'heart_rate':65
     }
 
 #breath_rate = 12
