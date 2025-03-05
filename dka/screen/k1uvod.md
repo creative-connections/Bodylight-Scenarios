@@ -106,8 +106,8 @@
 <bdl-quizx id="q1.1" type="choice"
           question="1.1 Jaké objektivní vyšetření lze u pacienta provést jehož výsledek je znám ihned (během sekund až minut)" 
           answers="A. poslechové vyšetření dechu|B. poslechové vyšetření srdce|C. změření atreriálního tlaku|D. saturace kyslíku v krvi z prstu|E. stanovení glykémie glukometrem z prstu|F. krevní obraz|G. biochemie krve a moči|H. ASTRUP vyšetření tepenné nebo kapilární krve" 
-          correctoptions="true|true|true|true|true|false|false|false" 
-          explanations="ano|ano|ano|ano|ano|ne|ne|ne" 
+          correctoptions="true|true|true|true|true|false|false|true" 
+          explanations="ano|ano|ano|ano|ano|ne|ne|ano, některé ordinace jsou vybaveny rychlým ASTRUP testem" 
           buttontitle="zkontrolovat odpověď" ></bdl-quizx>    
 <bdl-quizx id="q1.2" type="choice2" 
           question="1.2 Spusťte nebo sledujte simulaci a jaká je přibližně dechová frekvence. (nápověda: grafy ukazují hodnoty v posledních 10 s)" 
@@ -129,8 +129,8 @@
           buttontitle="zkontrolovat odpověď" ></bdl-quizx>        
 <bdl-quizx id="q1.5" type="choice2" 
           question="1.5 jaká je saturace kyslíku v krvi, zvolte přibližnou hodnotu (nápověda: odhadněte z mezí grafu)" 
-          answers="A. 85 %|B. 91%|C. 98%" 
-          correctoptions="false|true|false" 
+          answers="A. 85 %|B. 91%|C. 97%" 
+          correctoptions="false|false|true" 
           explanations="ne|ano|ne" 
           buttontitle="zkontrolovat odpověď" ></bdl-quizx>
 <bdl-quizx id="q1.6" type="choice2" 
