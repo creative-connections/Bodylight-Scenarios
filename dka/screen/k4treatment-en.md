@@ -76,8 +76,7 @@ It could also be mentioned that in 10-15% of cases, DKA is associated with lacti
 </div>
 
 </div>
-<div class="w3-half w3-padding w3-large">
-
+<div class="w3-half w3-padding w3-large w3-palatino" style="line-height:1.0">
 <bdl-quizx id="q4.1" type="choice2" 
           question="4.1 Infusion of crystalloids in the treatment of diabetic ketoacidosis:" 
           answers="A. is initially aggressive with isotonic solutions to correct dehydration and restore i.v. volume|B. is initially aggressive with hyperosmolar solutions to correct dehydration and restore i.v. volume|C. is not used initially, immediate bolus application of insulin to correct hyperglycemia is important" 
