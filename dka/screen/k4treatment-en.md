@@ -3,15 +3,13 @@
 <div class="w3-half">
 
 
-<bdl-tabs idlist="patogeneze,krystaloidy,inzulin,kalemie,ABR,ketoacidoza,ketoacidoza2" 
-  titlelist="Patogenesis,Crystalloid treatment,Treatment of hyperglycemia,Treatment of hypokalemia,Treatment of ABR disorder,Ketoacidosis,DKA 2"></bdl-tabs>
+<bdl-tabs idlist="patogeneze,krystaloidy,inzulin,kalemie,ABR,ketoacidoza,ketoacidoza2,ketoacidoza3" 
+  titlelist="Patogenesis,Crystalloid treatment,Treatment of hyperglycemia,Treatment of hypokalemia,Treatment of ABR disorder,Ketoacidosis,DKA 2, TEST and FEEDBACK"></bdl-tabs>
 <div class="w3-sand w3-large w3-padding w3-margin">  
 <div id="patogeneze">
 
 ![dkapato2](dkapato2.png)
 
-![dkapato3](dkapato3.png)
-Skoro vše o diabetické ketoacidóze: https://youtu.be/EjbXidx7YFM
 
 </div>
 <div id="krystaloidy">
@@ -71,6 +69,14 @@ Diabetic ketoacidosis (DKA) is a risk in all age groups if treatment is neglecte
 The risk of DKA is higher with insulin pump therapy than with pen application. A patient with DM1 applies basal insulin once a day with a pen, and adds short-acting insulin before meals. Due to the basal insulin, there is always some dose of insulin in the body. In the pump, there is only short-acting insulin, so if the cannula is pulled out, which the patient does not know about (e.g., at night), the glycemia rapidly increases and quickly progresses to DKA (there is no basal insulin in the body).
 
 It could also be mentioned that in 10-15% of cases, DKA is associated with lactic acidosis - especially in the case of phosphate deficiency (a decrease in 2,3-diphosphoglycerate in the erythrocyte shifts the dissociation curve of Hb to the left).
+</div>
+<div id="ketoacidoza3">
+
+Please complete the final test and give us your feedback here:
+
+
+<a class="w3-button w3-theme-dark" href="https://api.socrative.com/rc/kK9Emj" target="_blank">TEST and FEEDBACK</a>
+
 </div>
 
 </div>
