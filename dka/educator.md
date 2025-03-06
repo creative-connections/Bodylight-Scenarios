@@ -27,7 +27,7 @@
 </div>
 </div>
 <bdl-tabs idlist="CZ,EN" titlelist="CZ,EN" vertical="true"></bdl-tabs>
-<div id="CZ" class="w3-large">
+<div id="CZ" class="w3-xxlarge">
 
 <bdl-fb-set-state title="0.Úvod" value="index.md"></bdl-fb-set-state>
 <bdl-fb-set-state title="1.Sim" value="screen/k1uvod.md"></bdl-fb-set-state>
@@ -35,7 +35,7 @@
 <bdl-fb-set-state title="3.Astrup" value="screen/k3vysetreniastrup.md"></bdl-fb-set-state>
 <bdl-fb-set-state title="4.Léčba" value="screen/k4lecba.md"></bdl-fb-set-state>
 </div>
-<div id="EN" class="w3-large">
+<div id="EN" class="w3-xxlarge">
 
 <bdl-fb-set-state title="0.Intro" value="index-en.md"></bdl-fb-set-state>
 <bdl-fb-set-state title="1.Sim" value="screen/k1simulation-en.md"></bdl-fb-set-state>
