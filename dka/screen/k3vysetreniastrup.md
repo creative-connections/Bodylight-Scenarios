@@ -171,7 +171,7 @@ Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016
            buttontitle="zkontrolovat odpověď"></bdl-quizx>              
 <bdl-quizx id="q3.4" type="choice2" 
            question="3.4 Aniontová mezera (anion gap, AG) je rozdíl koncentrací významných kationtů a aniontů v krevní plazmě. Jak se vypočítá?" 
-           answers="A. AG = Na<sup>+</sup> – (Cl<sup>-</sup> + HCO3<sup>-</sup>) v USA a u nás na ústavu<br/>AG = (Na<sup>+</sup>+K<sup>+</sup>) – (Cl<sup>-</sup> + HCO3<sup>-</sup>) v Evropě|B. AG = (Na<sup>+</sup>) + (2x Cl<sup>-</sup>) + (HCO3<sup>-</sup>) v USA a u nás na ústavu<br/>|C. AG = (Na<sup>+</sup>) + (2x Cl<sup>-</sup>) + (HCO3<sup>-</sup>) + (K<sup>+</sup>) v Evropě" 
+           answers="A. AG = Na<sup>+</sup> – (Cl<sup>-</sup> + HCO3<sup>-</sup>) v USA <br/>AG = (Na<sup>+</sup>+K<sup>+</sup>) – (Cl<sup>-</sup> + HCO3<sup>-</sup>) v Evropě|B. AG = (Na<sup>+</sup>) + (2x Cl<sup>-</sup>) + (HCO3<sup>-</sup>) v USA<br/>|C. AG = (Na<sup>+</sup>) + (2x Cl<sup>-</sup>) + (HCO3<sup>-</sup>) + (K<sup>+</sup>) v Evropě" 
            correctoptions="true|false|false" 
            explanations="ano|ne|ne" 
            buttontitle="zkontrolovat odpověď"></bdl-quizx>
