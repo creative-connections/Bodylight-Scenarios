@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fmiModelDescription
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  fmiVersion="2.0"
+  modelName="RespirationModeling.Tests.TestAlvVent"
+  guid="{dda7cfc6-3986-4a16-81c2-b9cafa4a0896}"
+  generationTool="Dymola Version 2024x Refresh 1, 2024-04-12"
+  generationDateAndTime="2025-03-27T13:39:57Z"
+  variableNamingConvention="structured"
+  numberOfEventIndicators="0">
+  <CoSimulation
+    modelIdentifier="RespirationModeling_Tests_TestAlvVent"
+    canHandleVariableCommunicationStepSize="true"
+    canInterpolateInputs="true"
+    maxOutputDerivativeOrder="1"
+    canNotUseMemoryManagementFunctions="true"
+    canGetAndSetFMUstate="true"
+    canSerializeFMUstate="true"
+    providesDirectionalDerivative="true">
+    <SourceFiles>
+      <File
+        name="all.c"/>
+    </SourceFiles>
+  </CoSimulation>
+  <UnitDefinitions>
+    <Unit
+      name="1">
+      <DisplayUnit
+        name="%"
+        factor="100.0"/>
+    </Unit>
+    <Unit
+      name="K">
+      <BaseUnit K="1"/>
+      <DisplayUnit
+        name="degC"
+        offset="-273.15"/>
+    </Unit>
+    <Unit
+      name="Pa">
+      <BaseUnit kg="1"
+        m="-1"
+        s="-2"/>
+      <DisplayUnit
+        name="bar"
+        factor="1E-05"/>
+      <DisplayUnit
+        name="mmHg"
+        factor="0.007500615758456563"/>
+    </Unit>
+    <Unit
+      name="m3/mol">
+      <BaseUnit m="3"
+        mol="-1"/>
+    </Unit>
+    <Unit
+      name="m3/s">
+      <BaseUnit m="3"
+        s="-1"/>
+      <DisplayUnit
+        name="ml/min"
+        factor="60000000.0"/>
+    </Unit>
+    <Unit
+      name="mol/s">
+      <BaseUnit s="-1"
+        mol="1"/>
+      <DisplayUnit
+        name="mmol/min"
+        factor="60000.0"/>
+    </Unit>
+    <Unit
+      name="s">
+      <BaseUnit s="1"/>
+    </Unit>
+  </UnitDefinitions>
+  <TypeDefinitions>
+    <SimpleType
+      name="Bodylight.Types.Fraction">
+      <Real
+        quantity="Fraction"
+        unit="1"
+        displayUnit="%"
+        nominal="0.01"/>
+    </SimpleType>
+    <SimpleType
+      name="Bodylight.Types.MolarFlowRate">
+      <Real
+        quantity="MolarFlowRate"
+        unit="mol/s"
+        displayUnit="mmol/min"/>
+    </SimpleType>
+    <SimpleType
+      name="Bodylight.Types.Pressure">
+      <Real
+        quantity="Pressure"
+        unit="Pa"
+        displayUnit="mmHg"
+        nominal="133.322387415"/>
+    </SimpleType>
+    <SimpleType
+      name="Bodylight.Types.RealIO.FractionInput">
+      <Real
+        quantity="Fraction"
+        unit="1"
+        displayUnit="%"
+        nominal="0.01"/>
+    </SimpleType>
+    <SimpleType
+      name="Bodylight.Types.RealIO.FractionOutput">
+      <Real
+        quantity="Fraction"
+        unit="1"
+        displayUnit="%"
+        nominal="0.01"/>
+    </SimpleType>
+    <SimpleType
+      name="Bodylight.Types.RealIO.MolarFlowRateInput">
+      <Real
+        quantity="MolarFlowRate"
+        unit="mol/s"
+        displayUnit="mmol/min"/>
+    </SimpleType>
+    <SimpleType
+      name="Bodylight.Types.RealIO.MolarFlowRateOutput">
+      <Real
+        quantity="MolarFlowRate"
+        unit="mol/s"
+        displayUnit="mmol/min"/>
+    </SimpleType>
+    <SimpleType
+      name="Bodylight.Types.RealIO.PressureInput">
+      <Real
+        quantity="Pressure"
+        unit="Pa"
+        displayUnit="mmHg"
+        nominal="133.322387415"/>
+    </SimpleType>
+    <SimpleType
+      name="Bodylight.Types.RealIO.PressureOutput">
+      <Real
+        quantity="Pressure"
+        unit="Pa"
+        displayUnit="mmHg"
+        nominal="133.322387415"/>
+    </SimpleType>
+    <SimpleType
+      name="Bodylight.Types.RealIO.TemperatureInput">
+      <Real
+        quantity="ThermodynamicTemperature"
+        unit="K"
+        displayUnit="degC"
+        min="0.0"
+        nominal="1.0"/>
+    </SimpleType>
+    <SimpleType
+      name="Bodylight.Types.RealIO.TemperatureOutput">
+      <Real
+        quantity="ThermodynamicTemperature"
+        unit="K"
+        displayUnit="degC"
+        min="0.0"
+        nominal="1.0"/>
+    </SimpleType>
+    <SimpleType
+      name="Bodylight.Types.RealIO.VolumeFlowRateInput">
+      <Real
+        quantity="VolumeFlowRate"
+        unit="m3/s"
+        displayUnit="ml/min"
+        nominal="1.6666666666666667E-08"/>
+    </SimpleType>
+    <SimpleType
+      name="Bodylight.Types.RealIO.VolumeFlowRateOutput">
+      <Real
+        quantity="VolumeFlowRate"
+        unit="m3/s"
+        displayUnit="ml/min"
+        nominal="1.6666666666666667E-08"/>
+    </SimpleType>
+    <SimpleType
+      name="Bodylight.Types.Temperature">
+      <Real
+        quantity="ThermodynamicTemperature"
+        unit="K"
+        displayUnit="degC"
+        min="0.0"
+        nominal="1.0"/>
+    </SimpleType>
+    <SimpleType
+      name="Bodylight.Types.VolumeFlowRate">
+      <Real
+        quantity="VolumeFlowRate"
+        unit="m3/s"
+        displayUnit="ml/min"
+        nominal="1.6666666666666667E-08"/>
+    </SimpleType>
+    <SimpleType
+      name="Modelica.Blocks.Interfaces.RealInput">
+      <Real/>
+    </SimpleType>
+    <SimpleType
+      name="Modelica.Blocks.Interfaces.RealOutput">
+      <Real/>
+    </SimpleType>
+    <SimpleType
+      name="Modelica.Units.SI.MolarVolume">
+      <Real
+        quantity="MolarVolume"
+        unit="m3/mol"
+        min="0.0"/>
+    </SimpleType>
+    <SimpleType
+      name="Modelica.Units.SI.Pressure">
+      <Real
+        quantity="Pressure"
+        unit="Pa"
+        displayUnit="bar"/>
+    </SimpleType>
+    <SimpleType
+      name="Modelica.Units.SI.Time">
+      <Real
+        quantity="Time"
+        unit="s"/>
+    </SimpleType>
+  </TypeDefinitions>
+  <DefaultExperiment startTime="0.0"
+    stopTime="1.0"
+    tolerance="0.0001"/>
+  <ModelVariables>
+    <!-- Index for next variable = 1 -->
+    <ScalarVariable
+      name="alvVent.VAi_BTPS"
+      valueReference="905969669">
+      <Real
+        declaredType="Bodylight.Types.RealIO.VolumeFlowRateInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 2 -->
+    <ScalarVariable
+      name="alvVent.pressure"
+      valueReference="234881028"
+      variability="tunable">
+      <Real
+        declaredType="Bodylight.Types.RealIO.PressureInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 3 -->
+    <ScalarVariable
+      name="alvVent.temperature"
+      valueReference="234881029"
+      variability="tunable">
+      <Real
+        declaredType="Bodylight.Types.RealIO.TemperatureInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 4 -->
+    <ScalarVariable
+      name="alvVent.pAO2"
+      valueReference="905969670">
+      <Real
+        declaredType="Bodylight.Types.RealIO.PressureOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 5 -->
+    <ScalarVariable
+      name="alvVent.pACO2"
+      valueReference="905969671">
+      <Real
+        declaredType="Bodylight.Types.RealIO.PressureOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 6 -->
+    <ScalarVariable
+      name="alvVent.VAe_BTPS"
+      valueReference="905969672">
+      <Real
+        declaredType="Bodylight.Types.RealIO.VolumeFlowRateOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 7 -->
+    <ScalarVariable
+      name="alvVent.pH2O"
+      valueReference="100663296"
+      variability="tunable">
+      <Real
+        declaredType="Bodylight.Types.Pressure"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 8 -->
+    <ScalarVariable
+      name="alvVent.VO2_STPD"
+      valueReference="100663297"
+      variability="tunable">
+      <Real
+        declaredType="Bodylight.Types.VolumeFlowRate"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 9 -->
+    <ScalarVariable
+      name="alvVent.VCO2_STPD"
+      valueReference="100663298"
+      variability="tunable">
+      <Real
+        declaredType="Bodylight.Types.VolumeFlowRate"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 10 -->
+    <ScalarVariable
+      name="alvVent.VAi_STPD"
+      valueReference="905969673">
+      <Real
+        declaredType="Bodylight.Types.VolumeFlowRate"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 11 -->
+    <ScalarVariable
+      name="alvVent.VO2i_STPD"
+      valueReference="905969674">
+      <Real
+        declaredType="Bodylight.Types.VolumeFlowRate"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 12 -->
+    <ScalarVariable
+      name="alvVent.VCO2i_STPD"
+      valueReference="905969675">
+      <Real
+        declaredType="Bodylight.Types.VolumeFlowRate"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 13 -->
+    <ScalarVariable
+      name="alvVent.VAe_STPD"
+      valueReference="905969676">
+      <Real
+        declaredType="Bodylight.Types.VolumeFlowRate"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 14 -->
+    <ScalarVariable
+      name="alvVent.VO2e_STPD"
+      valueReference="905969677">
+      <Real
+        declaredType="Bodylight.Types.VolumeFlowRate"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 15 -->
+    <ScalarVariable
+      name="alvVent.VCO2e_STPD"
+      valueReference="905969678">
+      <Real
+        declaredType="Bodylight.Types.VolumeFlowRate"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 16 -->
+    <ScalarVariable
+      name="alvVent.FACO2dry"
+      valueReference="905969679">
+      <Real
+        declaredType="Bodylight.Types.Fraction"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 17 -->
+    <ScalarVariable
+      name="alvVent.FAO2dry"
+      valueReference="905969680">
+      <Real
+        declaredType="Bodylight.Types.Fraction"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 18 -->
+    <ScalarVariable
+      name="alvVent.VmO2stand"
+      valueReference="16777216"
+      description="O2 molar volume at 0°C 760 mmHg"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Modelica.Units.SI.MolarVolume"
+        start="0.022392199999999998"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 19 -->
+    <ScalarVariable
+      name="alvVent.VmCO2stand"
+      valueReference="16777217"
+      description="CO2 molar volume at 0°C 760 mmHg"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Modelica.Units.SI.MolarVolume"
+        start="0.0222629"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 20 -->
+    <ScalarVariable
+      name="alvVent.Pstand"
+      valueReference="16777218"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Modelica.Units.SI.Pressure"
+        start="101325"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 21 -->
+    <ScalarVariable
+      name="alvVent.STPD_to_BTPS"
+      valueReference="100663299"
+      variability="tunable">
+      <Real
+        unit="1"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 22 -->
+    <ScalarVariable
+      name="alvVent.tempC"
+      valueReference="100663300"
+      variability="tunable">
+      <Real
+        unit="K"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 23 -->
+    <ScalarVariable
+      name="alvVent.O2M"
+      valueReference="234881033"
+      variability="tunable">
+      <Real
+        declaredType="Bodylight.Types.RealIO.MolarFlowRateInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 24 -->
+    <ScalarVariable
+      name="alvVent.CO2M"
+      valueReference="234881032"
+      variability="tunable">
+      <Real
+        declaredType="Bodylight.Types.RealIO.MolarFlowRateInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 25 -->
+    <ScalarVariable
+      name="alvVent.FiO2d"
+      valueReference="234881030"
+      variability="tunable">
+      <Real
+        declaredType="Bodylight.Types.RealIO.FractionInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 26 -->
+    <ScalarVariable
+      name="alvVent.FiCO2d"
+      valueReference="234881031"
+      variability="tunable">
+      <Real
+        declaredType="Bodylight.Types.RealIO.FractionInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 27 -->
+    <ScalarVariable
+      name="VAi.k"
+      valueReference="16777219"
+      description="Constant VolumeFlowRate output value"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Bodylight.Types.VolumeFlowRate"
+        start="8.1E-05"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 28 -->
+    <ScalarVariable
+      name="VAi.y"
+      valueReference="234881027"
+      description="VolumeFlowRate constant"
+      variability="tunable">
+      <Real
+        declaredType="Bodylight.Types.RealIO.VolumeFlowRateOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 29 -->
+    <ScalarVariable
+      name="pressure.k"
+      valueReference="16777220"
+      description="Constant Pressure output value"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Bodylight.Types.Pressure"
+        start="101325.0144354"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 30 -->
+    <ScalarVariable
+      name="pressure.y"
+      valueReference="234881028"
+      description="Pressure constant"
+      variability="tunable">
+      <Real
+        declaredType="Bodylight.Types.RealIO.PressureOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 31 -->
+    <ScalarVariable
+      name="temperature.k"
+      valueReference="16777221"
+      description="Constant Temperature output value"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Bodylight.Types.Temperature"
+        start="310.15"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 32 -->
+    <ScalarVariable
+      name="temperature.y"
+      valueReference="234881029"
+      description="Temperature constant"
+      variability="tunable">
+      <Real
+        declaredType="Bodylight.Types.RealIO.TemperatureOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 33 -->
+    <ScalarVariable
+      name="FiO2d.k"
+      valueReference="16777222"
+      description="Constant Fraction output value"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Bodylight.Types.Fraction"
+        start="0.2095"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 34 -->
+    <ScalarVariable
+      name="FiO2d.y"
+      valueReference="234881030"
+      description="Fraction constant"
+      variability="tunable">
+      <Real
+        declaredType="Bodylight.Types.RealIO.FractionOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 35 -->
+    <ScalarVariable
+      name="FiCO2d.k"
+      valueReference="16777223"
+      description="Constant Fraction output value"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Bodylight.Types.Fraction"
+        start="0.0004"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 36 -->
+    <ScalarVariable
+      name="FiCO2d.y"
+      valueReference="234881031"
+      description="Fraction constant"
+      variability="tunable">
+      <Real
+        declaredType="Bodylight.Types.RealIO.FractionOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 37 -->
+    <ScalarVariable
+      name="MCO2.k"
+      valueReference="16777224"
+      description="Constant MolarFlowRate output value"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Bodylight.Types.MolarFlowRate"
+        start="0.00016666666666667"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 38 -->
+    <ScalarVariable
+      name="MCO2.y"
+      valueReference="234881032"
+      description="MolarFlowRate constant"
+      variability="tunable">
+      <Real
+        declaredType="Bodylight.Types.RealIO.MolarFlowRateOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 39 -->
+    <ScalarVariable
+      name="MO2.k"
+      valueReference="16777225"
+      description="Constant MolarFlowRate output value"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Bodylight.Types.MolarFlowRate"
+        start="0.00018666666666667"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 40 -->
+    <ScalarVariable
+      name="MO2.y"
+      valueReference="234881033"
+      description="MolarFlowRate constant"
+      variability="tunable">
+      <Real
+        declaredType="Bodylight.Types.RealIO.MolarFlowRateOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 41 -->
+    <ScalarVariable
+      name="ramp.height"
+      valueReference="16777226"
+      description="Height of ramps"
+      causality="parameter"
+      variability="tunable">
+      <Real start="140"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 42 -->
+    <ScalarVariable
+      name="ramp.duration"
+      valueReference="16777227"
+      description="Duration of ramp (= 0.0 gives a Step)"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Modelica.Units.SI.Time"
+        min="0.0"
+        start="140"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 43 -->
+    <ScalarVariable
+      name="ramp.y"
+      valueReference="905969681"
+      description="Connector of Real output signal">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealOutput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 44 -->
+    <ScalarVariable
+      name="ramp.offset"
+      valueReference="16777228"
+      description="Offset of output signal y"
+      causality="parameter"
+      variability="tunable">
+      <Real start="40"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 45 -->
+    <ScalarVariable
+      name="ramp.startTime"
+      valueReference="16777229"
+      description="Output y = offset for time &lt; startTime"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        declaredType="Modelica.Units.SI.Time"
+        start="0"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 46 -->
+    <ScalarVariable
+      name="product1.u1"
+      valueReference="905969682"
+      description="Connector of Real input signal 1">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealInput"
+        unit="1"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 47 -->
+    <ScalarVariable
+      name="product1.u2"
+      valueReference="234881027"
+      description="Connector of Real input signal 2"
+      variability="tunable">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealInput"
+        unit="m3/s"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 48 -->
+    <ScalarVariable
+      name="product1.y"
+      valueReference="905969669"
+      description="Connector of Real output signal">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealOutput"
+        unit="m3/s"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 49 -->
+    <ScalarVariable
+      name="gain.k"
+      valueReference="16777230"
+      description="Gain value multiplied with input signal"
+      causality="parameter"
+      variability="tunable">
+      <Real
+        unit="1"
+        displayUnit="%"
+        start="0.01"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 50 -->
+    <ScalarVariable
+      name="gain.u"
+      valueReference="905969681"
+      description="Input signal connector">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealInput"/>
+    </ScalarVariable>
+    <!-- Index for next variable = 51 -->
+    <ScalarVariable
+      name="gain.y"
+      valueReference="905969682"
+      description="Output signal connector">
+      <Real
+        declaredType="Modelica.Blocks.Interfaces.RealOutput"
+        unit="1"/>
+    </ScalarVariable>
+  </ModelVariables>
+  <ModelStructure/>
+</fmiModelDescription>
