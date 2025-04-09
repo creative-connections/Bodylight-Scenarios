@@ -2,7 +2,7 @@
 img[alt^="image"] {max-width:20px;}
 img[alt^="bigimage"] {  max-height:60px}
 tbody tr:nth-child(even){background-color:#f1f1f1}
-</style><bdl-tabs idlist="obr1,obr3,obr2,obr4,obr5" titlelist="sim,metabolismus železa,hepcidin,celková regulace,buněčná regulace"></bdl-tabs>
+</style><bdl-tabs idlist="obr1,obr3,obr2,obr4,obr5,feedback" titlelist="sim,metabolismus železa,hepcidin,celková regulace,buněčná regulace,zpětná vazba"></bdl-tabs>
 <div class="w3-row" id="obr1">
 <div class="w3-twothird w3-center">
 
@@ -126,5 +126,10 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 A ![1mediumregulacehepcidinu](imageregulacehepcidinu.png)
 
 **A** Schématické znázornění role hepcidinu v udržování homeostázy železa. Hepcidin je regulován primárně třemi nezávislými mechanismy: 1) aktuální hladina železa - zvyšuje hladinu hepcidinu, 2) aseptický nebo infekční zánět - zvyšuje hladinu hepcidinu, 3) erytropoetická aktivita - snižuje hladinu hepcidinu.
+
+</div>
+<div id="feedback">
+
+<a href="https://api.socrative.com/rc/eeuJ96" target="_blank" class="w3-button w3-theme-d1 w3-xxlarge">ohodnoťte seminář https://api.socrative.com/rc/eeuJ96</a>
 
 </div>
