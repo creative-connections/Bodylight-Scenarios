@@ -1,5 +1,5 @@
 * [0 Úvod CZ](#index.md)
-  * [1 Kazuistika](#screen/k1-casereport.md)
+  * [1 Kazuistika](#screen/k0-simulace.md)
   * [2 Duodenum](#screen/k1-cz.md)
   * [3 Játra](#screen/k2-cz.md)
   * [4 Slezina](#screen/k3-cz.md)
