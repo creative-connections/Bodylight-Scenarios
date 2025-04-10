@@ -24,7 +24,7 @@
 <div id="EN" class="w3-large">
 
 <bdl-fb-set-state title="0.Intro" value="index-en.md"></bdl-fb-set-state>
-<bdl-fb-set-state title="1.Case Report" value="screen/k1-casereport-en.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="1.Case Report" value="screen/k0-simulace-en.md"></bdl-fb-set-state>
 <bdl-fb-set-state title="2.Duodenum" value="screen/k1-en.md"></bdl-fb-set-state>
 <bdl-fb-set-state title="3.Liver" value="screen/k2-en.md"></bdl-fb-set-state>
 <bdl-fb-set-state title="4.Spleen" value="screen/k3-en.md"></bdl-fb-set-state>
