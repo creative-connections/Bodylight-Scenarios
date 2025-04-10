@@ -2,7 +2,7 @@
 img[alt^="image"] {max-width:20px;}
 img[alt^="bigimage"] {  max-height:60px}
 tbody tr:nth-child(even){background-color:#f1f1f1}
-</style><bdl-tabs idlist="obr1,obr3,obr2,obr4,obr5" titlelist="sim,iron metabolism,hepcidin,complex regulation,cell regulation"></bdl-tabs>
+</style><bdl-tabs idlist="obr1,obr3,obr2,obr4,obr5,feedback" titlelist="sim,iron metabolism,hepcidin,complex regulation,cell regulation,feedback"></bdl-tabs>
 <div class="w3-row" id="obr1">
 <div class="w3-twothird w3-center">
 
@@ -145,5 +145,12 @@ buttontitle="check answer"></bdl-quizx>
 
 A ![1mediumregulacehepcidinu](imageregulacehepcidinu.png)
 
+
+</div>
+<div id="feedback">
+
+Give us a feedback:
+
+<a href="https://api.socrative.com/rc/eeuJ96" target="_blank" class="w3-button w3-theme-d1 w3-xxlarge">evaluate seminar</a>
 
 </div>
