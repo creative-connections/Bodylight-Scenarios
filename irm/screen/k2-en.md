@@ -26,7 +26,7 @@ th,td,tr {
 <bdl-bind2a findex="14" aname="children.1.SipkaTmaveModraBMP6_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="15" aname="children.1.SipkaIL6_anim" amin="0" amax="159" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.CervenaSipka5_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
-<bdl-bind2a findex="17" aname="children.1.Merak6_anim" amin="0" amax="99"></bdl-bind2a>
+<bdl-bind2a findex="10" aname="children.1.Merak6_anim" amin="0" amax="99"></bdl-bind2a>
 <bdl-bind2a findex="1" aname="children.1.TransferinSipkaOranzova1_anim" amin="0" amax="159" fmin="2" fmax="10"></bdl-bind2a>
 <bdl-bind2a findex="26" aname="children.1.CervenaSipka3_anim" amin="0" amax="159"></bdl-bind2a>
 <bdl-bind2a findex="26" aname="children.1.CervenaSipka2_anim" amin="0" amax="159"></bdl-bind2a>
@@ -105,11 +105,11 @@ th,td,tr {
 <bdl-bind2a-play findex="25" aname="children.1.StrikackaCervena_anim" amin="0" amax="99"></bdl-bind2a-play>
 <bdl-bind2a-play findex="24" aname="children.1.KapackaJehlaFe_anim" amin="0" amax="99"></bdl-bind2a-play>
 
+
 </div>
 <div class="w3-col s12 m4 l4 w3-justify w3-small" style="line-height:0.9">
 <div class="w3-sand w3-padding w3-small">
-
-**Case Study Continuation:** ... The general practitioner addressed the situation with vitamins B12 and D and iron supplements, which in higher level was not tolerated well. The patient came to the hematology clinic "on the verge of a mental breakdown". She subjectively felt adynamia, weakness, mental exhaustion, and despair. Objectively, she was subdepressive, paler, and overweight. Blood tests revealed lack of iron. Previous bariatric surgery removed the absorption surface of the duodenum and the proximal part of the jejunum where iron is most absorbed. Try to simulate and answer ...</div>
+</div>
 
 <button class="w3-right w3-button w3-theme-d4" onclick="document.getElementById('legenda').style.display='block'"><i class="fa fa-info-circle"> </i></button>
 <!-- hidden input  - buttonparams sets this input value explicitly, then it is read by fmi component -->
@@ -133,14 +133,47 @@ th,td,tr {
 <!--| DMT1 in the duodenum | <bdl-checkbox id="id10" titlemin="is physiologically regulated" titlemax="is unregulated" default="false"></bdl-checkbox>  |-->
 </div>
 
-<bdl-quizx id="q2.1" type="choice2" question="2.1 Start the simulation and simulate a massive duodenal resection by reducing malabsorption to 0.05 (5% compared to the norm). What consequences do you see?" answers="A. gradual decrease in iron concentration in plasma and cells. Lack of iron for other processes, e.g., reduced production of new erythrocytes, anemia, ...|B. gradual increase of iron in plasma and cells with consequences for other organs with symptoms similar to hemochromatosis" correctoptions="true|false" explanations="yes, the simulation shows a long-term lack of iron for other metabolic processes see next chapter|no, see next chapter" buttontitle="check answer"></bdl-quizx>
-<bdl-quizx id="q2.2" type="choice2" question="2.2 Continue the simulation, increase the amount of iron in the diet 10x above the norm (i.e., about 2000). Is such compensation enough to replace the massive duodenal resection simulated in the previous question?" answers="A. Yes. Increased dietary iron intake can help in recovery and adjusts the level of iron in cells and plasma to the norm|B. No. Increased iron intake does not meet metabolic needs and the level in plasma and cells decreases and gradually depletes." correctoptions="false|true" explanations="no|yes" buttontitle="check answer"></bdl-quizx>
-<bdl-quizx id="q2.3" type="choice2" question="2.3 Continue the simulation, reduce the amount of iron in the diet to the norm (i.e., value 219). Gradually increase blood intake from blood transfusion and find the value that leads to the normalization of iron concentration in plasma and cells (i.e., to the value 1.0" answers="A. An intake of 0.1 ml/h is sufficient|B. An intake of 0.7 ml/h is sufficient|C. blood transfusion about 2.5 ml/h is sufficient" correctoptions="false|true|false" explanations="no|yes|no" buttontitle="check answer"></bdl-quizx>
-<bdl-quizx id="q2.4" type="choice2" question="2.4 Oral iron supplements did not have an effect, or the patient did not tolerate them. The patient's subjective complaints worsened and in 2021 the woman was referred to hematology. There she repeatedly (a total of 7×) received every 2 months an i.v. preparation with low iron content (a total of about 430 mg Fe). For microcytic anemia and still very pronounced symptoms, in April 2022, the hematologist referred her to the nutritional clinic for conservatively intractable sideropenic anemia, sideropenia, and severe fatigue syndrome. What is sideropenic anemia?" answers="A. a condition where the body accumulates excessive amounts of iron, leading to organ damage.|B. a type of anemia caused by a lack of iron in the body, leading to reduced production of hemoglobin and red blood cells.|a genetic disease in which the body produces an excessive number of red blood cells." correctoptions="false|true|false" explanations="no|yes|no" buttontitle="check answer"></bdl-quizx>
-<bdl-quizx id="q2.5" type="choice2" question="2.5 What is the difference in iron concentration in cells in sideropenic anemia and in anemia of chronic diseases?" answers="A. In sideropenic anemia, the concentration of iron in cells is lower (lower reserves in the pool and in ferritin), while in anemia of chronic diseases, the concentration of iron in cells is normal or higher than normal.|B. In both cases, in sideropenic anemia and in anemia of chronic diseases, the concentration of iron in cells is lower (lower reserves in the pool and in ferritin)." correctoptions="false|true" explanations="no|yes" buttontitle="check answer"></bdl-quizx>
-<bdl-quizx id="q2.6" type="choice2" question="2.6 Ferritin is present in small concentrations in the blood. The reference range for serum ferritin concentration (S-ferritin) is 30–300 μg/l for men and 20–120 μg/l for women. Low concentrations indicate depletion of total body iron reserves and serve for the early detection of iron deficiency anemia in the prelatent phase. Elevated ferritin concentrations are an accompanying phenomenon of high tissue iron stores. They are also seen in many patients with liver disease, some malignant tumors (tumor marker), or inflammatory diseases (positive acute phase reactant or anemia of chronic diseases). What S-ferritin value do you expect in a patient with sideropenic anemia?" answers="A. 7 μg/l |B. 70 μg/l|C. 460 μg/l" correctoptions="true|false|false" explanations="yes|no|no" buttontitle="check answer"></bdl-quizx>
-<bdl-quiz-summary id="qs">
-<span class=""><br/>Initial laboratory examinations showed that vitamins D and B12 were well substituted, but levels of iron and ferritin were very low. She was prescribed ferric carboxymaltose, which had been administered 4 times by the presentation of the case study (September 15, 2022). After each application of 500 mg FCM, the patient reports a significant improvement in the quality of life, but after a few weeks, the condition worsens and she returns for further examination  and application of FCM.</span><br/>Summary of answers</bdl-quiz-summary>
+<bdl-quizx id="q2.1" type="choice2" question="2.1 Run the simulation and simulate a massive duodenal resection by reducing absorption to 0.05 (5% of normal). What consequences do you observe?" 
+answers="A. Gradual decrease in iron concentration in plasma and cells. Iron deficiency for other processes, e.g., reduced production of new erythrocytes, anemia, ...|B. Gradual increase in iron in plasma and cells with consequences for other organs, with symptoms similar to hemochromatosis" 
+correctoptions="true|false" 
+explanations="yes, the simulation shows long-term iron deficiency affecting other metabolic processes, see next section|no, see next section" 
+buttontitle="check answer"></bdl-quizx>
+
+<bdl-quizx id="q2.2" type="choice2" 
+question="2.2 Continue the simulation, increase dietary iron intake 10 times above normal (to a value of ~2000). Is this compensation sufficient to counter the massive duodenal resection simulated in the previous question?" 
+answers="A. Yes. Increased dietary iron intake may help recovery and normalize iron levels in cells and plasma.|B. No. Increased iron intake is insufficient for metabolic needs, and iron levels in plasma and cells decline and become depleted." 
+correctoptions="false|true" 
+explanations="no|yes" 
+buttontitle="check answer"></bdl-quizx>
+
+<bdl-quizx id="q2.3" type="choice2" 
+question="2.3 Continue the simulation, reduce dietary iron to normal (i.e., value 219). Gradually increase blood intake from transfusion and find the rate that leads to normalization of iron concentration in plasma and cells (i.e., to a value of 1.0)." 
+answers="A. Intake of 0.1 ml/h is sufficient|B. Intake of 0.7 ml/h is sufficient|C. Blood transfusion of about 2.5 ml/h" 
+correctoptions="false|true|false" 
+explanations="no|yes|no" 
+buttontitle="check answer"></bdl-quizx>
+
+<bdl-quizx id="q2.4" type="choice2" 
+question="2.4 What is iron deficiency anemia?" 
+answers="A. A condition where the body accumulates excessive iron, leading to organ damage.|B. A type of anemia caused by iron deficiency in the body, resulting in decreased hemoglobin and red blood cell production.|C. A genetic disorder where the body produces excessive red blood cells." 
+correctoptions="false|true|false" 
+explanations="no|yes|no" 
+buttontitle="check answer"></bdl-quizx>
+
+<bdl-quizx id="q2.5" type="choice2" 
+question="2.5 What is the difference in cellular iron concentration between iron deficiency anemia and anemia of chronic disease?" 
+answers="A. In iron deficiency anemia, iron concentration in cells is lower (reduced stores in the pool and ferritin), whereas in anemia of chronic disease, iron concentration in cells is normal or elevated.|B. In both iron deficiency anemia and anemia of chronic disease, iron concentration in cells is lower (reduced stores in the pool and ferritin)." 
+correctoptions="false|true" 
+explanations="no|yes" 
+buttontitle="check answer"></bdl-quizx>
+
+<bdl-quizx id="q2.6" type="choice2" 
+question="2.6 Ferritin is also present in small concentrations in the blood. The reference range for serum ferritin (S-ferritin) is 30–300 μg/l for men and 20–120 μg/l for women. Low concentrations indicate depletion of total body iron stores and help detect iron deficiency anemia early in the prelatent phase. Elevated ferritin levels occur with high tissue iron stores and are also seen in patients with liver disease, some malignancies (tumor marker), or inflammatory conditions (positive acute phase reactant or anemia of chronic disease). What serum ferritin value do you expect in a patient with iron deficiency anemia?" 
+answers="A. 7 μg/l |B. 70 μg/l|C. 460 μg/l" 
+correctoptions="true|false|false" 
+explanations="yes|no|no" 
+buttontitle="check answer"></bdl-quizx>
+<bdl-quiz-summary id="qs"></bdl-quiz-summary>
 <bdl-quiz-control ids="q2.1,q2.2,q2.3,q2.4,q2.5,q2.6,qs"></bdl-quiz-control>
 
 </div>
