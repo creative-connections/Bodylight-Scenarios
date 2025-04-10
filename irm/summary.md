@@ -5,7 +5,7 @@
   * [4 Slezina](#screen/k3-cz.md)
   * [5 Celek](#screen/k4-cz.md)
 * [0 Intro EN](#index-en.md)
-  * [1 Case Report](#screen/k1-casereport-en.md)
+  * [1 Case Report](#screen/k0-simulace-en.md)
   * [2 Duodenum](#screen/k1-en.md)
   * [3 Liver](#screen/k2-en.md)
   * [4 Spleen](#screen/k3-en.md)
