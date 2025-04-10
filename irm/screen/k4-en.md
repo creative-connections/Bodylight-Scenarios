@@ -90,12 +90,38 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 <div class="w3-sand">
 
 **Case Study Conclusion:**
-<bdl-quizx id="q4.1" type="choice2" question="4.1 Start the simulation and simulate a diet rich in iron (iron intake 2000 mug/h). What consequences do you see?" answers="A. gradual increase in iron concentration in plasma and cells. |B. gradual increase in hepcidin concentration, iron concentration in plasma remains the same." correctoptions="false|true" explanations="no|yes" buttontitle="check answer"></bdl-quizx>
-<bdl-quizx id="q4.2" type="choice2" question="4.2 Continue the simulation and turn off the hepcidin gene. Hepcidin stops regulating iron metabolism in the body. What do you observe?" answers="A. gradual increase in iron concentration in plasma and cells. |B. gradual decrease in iron concentration in plasma and cells." correctoptions="true|false" explanations="yes|no" buttontitle="check answer"></bdl-quizx>
-<bdl-quizx id="q4.3" type="choice2" question="4.3 Select the main role of hepcidin in iron metabolism." answers="A. Hepcidin prevents iron overload in the body by reducing its release from duodenal enterocytes and indirectly its absorption, if the diet is rich in iron. It also reduces release of iron from other cells (e.g. hepatocytes) to the blood.|B. Hepcidin prevents iron overload in the body by regulating its excretion by the kidneys into the urine." correctoptions="true|false" explanations="yes|no" buttontitle="check answer"></bdl-quizx>
-<bdl-quizx id="q4.4" type="choice2" question="Physiological regulation of iron intake by hepcidin at low serum iron levels may not be sufficient for iron intake in patients with malabsorption syndrome (for any reason). Choose the most appropriate conclusion:" answers="A. Oral supplementation of nutrients and micronutrients may not suffice. People post-bariatric surgery remain lifelong patients dependent on parenteral supplementation, should be monitored in a specialized nutritional clinic and never be overlooked. Quality of life proves to be a very crucial marker of treatment success.|B. Oral supplementation of nutrients and micronutrients for patients after bariatric surgery is sufficient. People do not need to be regularly monitored in a specialized nutritional clinic." correctoptions="true|false" explanations="yes|no" buttontitle="check answer"></bdl-quizx><bdl-quiz-summary id="qs">
+<bdl-quizx id="q4.1" type="choice2" question="4.1 Run the simulation and simulate a diet rich in iron (iron intake 2000 μg/h). What consequences do you observe?" 
+answers="A. Gradual increase in iron concentration in plasma and cells. |B. Gradual increase in hepcidin concentration, iron concentration in plasma slightly rises but then remains stable." 
+correctoptions="false|true" 
+explanations="no|yes" 
+buttontitle="check answer"></bdl-quizx>
+
+<bdl-quizx id="q4.2" type="choice2" question="4.2 Continue the simulation and turn off the hepcidin gene. Hepcidin no longer regulates iron metabolism in the body. What do you observe?" 
+answers="A. Gradual increase in iron concentration in plasma and cells. |B. Gradual decrease in iron concentration in plasma and cells." 
+correctoptions="true|false" 
+explanations="yes|no" 
+buttontitle="check answer"></bdl-quizx>
+
+<bdl-quizx id="q4.3" type="choice2" question="4.3 Select the main role of hepcidin in iron metabolism." 
+answers="A. Hepcidin prevents iron overload by reducing its export from duodenal enterocytes, thus indirectly reducing iron absorption when the diet is iron-rich, and also by limiting the release of iron from other cells (especially the liver) into the bloodstream. |B. Hepcidin prevents iron overload by regulating its excretion via the kidneys into the urine." 
+correctoptions="true|false" 
+explanations="yes|no" 
+buttontitle="check answer"></bdl-quizx>
+
+<bdl-quizx id="q4.4" type="choice2" question="Select the most appropriate treatment for a patient with acute anemic hypoxia and iron deficiency anemia:" 
+answers="A. Acutely, an oxygen mask and blood transfusion can be used. After discharge, oral substitution of nutrients or micronutrients may not be sufficient. Intravenous application of iron carboxymaltose will be required lifelong. The patient must attend regular follow-ups.|B. Phlebotomy – therapeutic bloodletting. Possibility to use oral chelating agents that bind metal ions and prevent their absorption or facilitate their excretion." 
+correctoptions="true|false" 
+explanations="yes|no" 
+buttontitle="check answer"></bdl-quizx>
+
+<bdl-quizx id="q4.5" type="choice2" question="Select the most appropriate treatment for hemochromatosis:" 
+answers="A. Acutely, an oxygen mask and blood transfusion can be used. After discharge, oral substitution of nutrients or micronutrients may not be sufficient. Intravenous application of iron carboxymaltose will be required lifelong. The patient must attend regular follow-ups.|B. Phlebotomy – therapeutic bloodletting. Possibility to use oral chelating agents that bind metal ions and prevent their absorption or facilitate their excretion." 
+correctoptions="false|true" 
+explanations="no|yes" 
+buttontitle="check answer"></bdl-quizx>
+<bdl-quiz-summary id="qs">
 </bdl-quiz-summary>
-<bdl-quiz-control ids="q4.1,q4.2,q4.3,q4.4,qs"></bdl-quiz-control>
+<bdl-quiz-control ids="q4.1,q4.2,q4.3,q4.4,q4.5,qs"></bdl-quiz-control>
 
 </div>
 
