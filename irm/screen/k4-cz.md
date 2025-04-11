@@ -2,7 +2,7 @@
 img[alt^="image"] {max-width:20px;}
 img[alt^="bigimage"] {  max-height:60px}
 tbody tr:nth-child(even){background-color:#f1f1f1}
-</style><bdl-tabs idlist="obr1,obr3,obr2,obr4,obr5,feedback" titlelist="sim,metabolismus železa,hepcidin,celková regulace,buněčná regulace,zpětná vazba"></bdl-tabs>
+</style><bdl-tabs idlist="obr1,obr3,obr2,obr4,obr5,reference,feedback" titlelist="sim,metabolismus železa,hepcidin,celková regulace,buněčná regulace,reference,zpětná vazba"></bdl-tabs>
 <div class="w3-row" id="obr1">
 <div class="w3-twothird w3-center">
 
@@ -128,6 +128,14 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 A ![1mediumregulacehepcidinu](imageregulacehepcidinu.png)
 
 **A** Schématické znázornění role hepcidinu v udržování homeostázy železa. Hepcidin je regulován primárně třemi nezávislými mechanismy: 1) aktuální hladina železa - zvyšuje hladinu hepcidinu, 2) aseptický nebo infekční zánět - zvyšuje hladinu hepcidinu, 3) erytropoetická aktivita - snižuje hladinu hepcidinu.
+
+</div>
+<div id="reference" class="w3-large">
+
+1. Metabolismus železa: [digitální skripta se simulátory](https://egolem.online/ironmetabolism/)
+2. Léčba obezity, chirurgie: [článek NZIP](https://www.nzip.cz/clanek/735-lecba-obezity-chirurgie)
+3. Kazuistika: [Křížová J. Když je hematolog na sideropenii krátký... Iron Academy 2022: Proč rozumět metabolismu železa a jeho vlivu na zdraví pacienta, 15. 9. 2022.](https://www.prolekare.cz/zaznamy-z-kongresu/iron-academy-2022-jak-podle-aktualnich-poznatku-postupovat-pri-diagnostice-a-lecbe-deficitu-zeleza-a-co-znamena-pri-srdecnim-selhani-132595/zvladne-fcm-deficit-zeleza-po-bariatricke-operaci-kazuistika)
+
 
 </div>
 <div id="feedback">
