@@ -1,5 +1,5 @@
 <div class="w3-blue" style="position: absolute;right:1px">
-<span class="w3-small">25.04.22-o&nbsp;</span>
+<span class="w3-small">25.04.22-p2&nbsp;</span>
 <bdl-animate-control id="controlbuttons1" controlfmi="true" showstep="false" playafterstart="true"playafterstartmillis="1000"></bdl-animate-control>
 <bdl-animate-control id="controlbuttons2" controlfmi="true" showstep="false" playafterstart="true"playafterstartmillis="10000"></bdl-animate-control>
 <bdl-animate-control id="controlbuttons3" controlfmi="true" showstep="false" playafterstart="true" playafterstartmillis="50000"></bdl-animate-control>
