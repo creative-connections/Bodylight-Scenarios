@@ -1,5 +1,5 @@
 <div class="w3-blue" style="position: absolute;right:1px">
-<span class="w3-small">25.04.23-a&nbsp;</span>
+<span class="w3-small">25.04.23-b &nbsp;</span>
 <bdl-animate-control id="controlbuttons1" controlfmi="true" showstep="false" playafterstart="true"playafterstartmillis="1000"></bdl-animate-control>
 <bdl-animate-control id="controlbuttons2" controlfmi="true" showstep="false" playafterstart="true"playafterstartmillis="10000"></bdl-animate-control>
 <bdl-animate-control id="controlbuttons3" controlfmi="true" showstep="false" playafterstart="true" playafterstartmillis="40000"></bdl-animate-control>
@@ -116,7 +116,7 @@
 <button class="w3-button w3-blue w3-large" onclick="document.getElementById('monitoring').style.display = 'none';document.getElementById('idpvtool').style.display = 'block';">PV TOOL</button>&nbsp;&nbsp;
 <span class="w3-right"><bdl-buttonparams title="1(normal)" ids="idshunts,iddeadspace,idrate,idcomp,ido2" values="2,150,17,60,21" fromid="vrapi" thresholdvalue="1" refindex="patient_state"></bdl-buttonparams> 
 <bdl-buttonparams title="2(pneumonia)" ids="idshunts,iddeadspace,idrate,idcomp,ido2,idpause,idexp" values="86,850,29,10,21,2,0.31" fromid="vrapi" refindex="patient_state" thresholdvalue="2"></bdl-buttonparams>
-<bdl-buttonparams title="3(ventilated)" ids="idshunts,iddeadspace,idrate,idcomp,ido2,idpause,idexp,hradd" values="86,850,15,10,40,30,0.15,-0.6" fromid="vrapi" refindex="patient_state" thresholdvalue="3"></bdl-buttonparams>
+<bdl-buttonparams title="3(ventilated)" ids="idshunts,iddeadspace,idrate,idcomp,ido2,idpause,idexp,hradd" values="86,850,15,10,40,30,0.15,-1" fromid="vrapi" refindex="patient_state" thresholdvalue="3"></bdl-buttonparams>
 <bdl-buttonparams title="4(stabilized)" ids="idshunts,iddeadspace,idrate,idcomp,ido2,hradd" values="50,750,15,10,60,0" fromid="vrapi" refindex="patient_state" thresholdvalue="4"></bdl-buttonparams>
 <button class="w3-button w3-blue" onclick="['idRR', 'idheartrate', 'idpH', 'idpHven','idpHmix','spo2value'].forEach(id => document.getElementById(id).style.display = 'inline');">show1</button>
 <button class="w3-button w3-blue" onclick="['idNIBP', 'idNIBP2', 'idP', 'idV','idetco2','idpo2','idpv'].forEach(id => document.getElementById(id).style.display = 'inline');">show2</button>
