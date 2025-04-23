@@ -1,6 +1,6 @@
 <div class="w3-row">
 <div class="w3-half">
-<bdl-tabs idlist="obr1,obr2,obr4,biochemie,reference" titlelist="kazuistika,gastrektomie,biliopankreatická d.,biochemie,reference"></bdl-tabs>
+<bdl-tabs idlist="obr1,obr2,obr4,biochemie,reference" titlelist="case report,gastrectomy,biliopancreatic d.,biochemie,reference"></bdl-tabs>
 <div id="obr1" style="line-height:0.9">
 
 ![ComfyUI_01578_](ComfyUI_01578_.png)
@@ -8,11 +8,41 @@
 </div>
 <div id="obr2" style="line-height:0.9">
 
-![obr1](obr2.png)
+<div class="w3-row">
+<div class="w3-third">
+
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+![vsg](vsg.png)
+
+Gastric Sleeve Surgery Comprehensive Guide [2023]: https://obesityreporter.com/gastric-sleeve-surgery-guide/
+
+</div>
+<div class="w3-twothird">
+
+ ![vsgoutcome](vsgoutcome.png)
+ 
+ FLØLO, Tone Nygaard, et al. Five-year outcomes after vertical sleeve gastrectomy for severe obesity: a prospective cohort study. Obesity Surgery, 2017, 27: 1944-1951.
+ https://link.springer.com/article/10.1007/s11695-017-2605-x 
+</div>
+</div>
+
 </div>
 <div id="obr4" style="line-height:0.9">
 
-![obr1](obr4.png)
+<div class="w3-row">
+<div class="w3-third">
+
+![bpd](bpd.png)
+biobi
+</div>
+<div class="w3-twothird">
+
+![bpdoutcome](bpdoutcome.png)
+
+</div>
+</div>
 </div>
 <div id="reference" style="line-height:0.9">
 
