@@ -1,5 +1,5 @@
 <div class="w3-row">
-<div class="w3-third">
+<div class="w3-half">
 
 ## lithium carbonate
 
@@ -10,7 +10,7 @@ Simulation of pharmacokinetic and drug concentration.
 <bdl-chartjs-time width="400" height="300" fromid="idfmi" labels="drug concentration [g/l],min,max" initialdata="" refindex="0" refvalues="4" maxdata="10192" throttle="50"></bdl-chartjs-time>
 
 </div>
-<div class="w3-third">
+<div class="w3-half">
 
 One compartment model parameters:
 
@@ -35,14 +35,13 @@ Dose administration parameters:
 <bdl-range id="adminduration" title="administration duration [min]" min="1" max="720" default="720" step="1" initdefault="false"></bdl-range><br/>
 
 </div>
-<div class="w3-third w3-xlarge w3-padding">
+</div>
+<div class="w3-padding">
 Instructions
 
 1. Measured concentration of drug in plasma was 0.012 g/l. Set <b>C1 lab</b> to this value.
 2. Patient has renal insufficiency with creatinine conc in plasma 130 mmol/l. Estimate renal clearance by modifying the <b>clearance</b>. Match peak simulated concentration to C1 lab level.
 3. Adjust <b>administration dose mass</b> to fit inside therapeutic level.       
 
-
-</div>
 </div>
 
