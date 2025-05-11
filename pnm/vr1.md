@@ -37,7 +37,7 @@
 &nbsp;RR&nbsp;<b class="w3-xxxlarge"><bdl-value id="idRR"  fromid="ventilator" refindex="8" convertor="60,1" precision="2"></bdl-value></b>&nbsp;<span class="w3-small">1/min</span>
 <div class="w3-text-light-green w3-large">
 <br/>
-&nbsp;HR<b class="w3-xxxlarge"><bdl-value id="idheartrate"  fromid="hemodynamics" refindex="4" convertor="60,1" tofixed="0"></bdl-value></b>&nbsp;<span class="w3-small">1/min</span>
+&nbsp;HR<b class="w3-xxxlarge"><bdl-value id="idheartrate"  fromid="hemodynamics" refindex="4" convertor="60,1" tofixed="0"></bdl-value></b>&nbsp;<span class="w3-small">1/min (D= <bdl-value fromid="hemodynamics" refindex="5" convertor="60,1" tofixed="2"></bdl-value>)</span>
 </div>
 <br/>
 <div class="w3-text-purple w3-large">
