@@ -1,5 +1,5 @@
 <div class="w3-blue" style="position: absolute;right:1px">
-<span class="w3-small">25.05.11-b&nbsp;</span>
+<span class="w3-small">25.05.11-c&nbsp;</span>
 <bdl-animate-control id="controlbuttons1" controlfmi="true" showstep="false" playafterstart="true"playafterstartmillis="1000"></bdl-animate-control>
 <bdl-animate-control id="controlbuttons2" controlfmi="true" showstep="false" playafterstart="true"playafterstartmillis="20000"></bdl-animate-control>
 <bdl-animate-control id="controlbuttons3" controlfmi="true" showstep="false" playafterstart="true" playafterstartmillis="40000"></bdl-animate-control>
@@ -143,7 +143,7 @@ conductance <bdl-value fromid="ventilator" refindex="11"></bdl-value> <bdl-range
 Resistance: <bdl-value fromid="ventilator" refindex="10" convertor="0.001,98.0665"></bdl-value> <bdl-range id="idres" title="Resistance" min="0.1" max="100" default="1.3" step="0.1" initdefault="true"></bdl-range>
 
 Heart Rate adding 
-Data to be sent to VR: <bdl-range id="hradd" min="-1.5" max="1.5" default="0" step="0.1"></bdl-range>
+Data to be sent to VR: <bdl-range id="hradd" min="-70" max="70" default="0" step="1"></bdl-range>
 volume:<bdl-range id="volume" title="Lung volume (m3)" min="0.0001" max="0.01" default="0.002" step="0.000001" fromid="ventilator" refindex="1"></bdl-range>
 asO2:<bdl-range id="arterial_sO2" min="0" max="1" default="0.981" step="0.001" title="so2"  fromid="idfmi" refindex="1"></bdl-range>
 apH:<bdl-range id="arterial_pH" fromid="idfmi" min="0" max="14" default="0" step="0.00001" refindex="4"></bdl-range>
