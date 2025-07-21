@@ -41,7 +41,7 @@
 </div>
 <br/>
 <div class="w3-text-purple w3-large">
-&nbsp;NIBP<b class="w3-xlarge"><bdl-value id="idNIBP"  fromid="hemodynamics" refindex="1" convertor="1,133.322" precision="3"></bdl-value>/<bdl-value id="idNIBP2"  fromid="hemodynamics" refindex="2" convertor="1,133.322" tofixed="0"></bdl-value></b>
+&nbsp;BP<b class="w3-xxxlarge"><bdl-value id="idNIBP"  fromid="hemodynamics" refindex="1" convertor="1,133.322" precision="3"></bdl-value>/<bdl-value id="idNIBP2"  fromid="hemodynamics" refindex="2" convertor="1,133.322" tofixed="0"></bdl-value></b>
 <span class="w3-small">mmHg</span>
 </div>
 </div>
@@ -63,9 +63,9 @@
 <div class="" style="white-space:nowrap">
 <div class="w3-text-yellow w3-large">
 &nbsp;sO<sub>2</sub><sup>art</sup><b class="w3-xxxlarge"><bdl-value id="spo2value" fromid="idfmi" refindex="1" convertor="100,1" precision="3" ></bdl-value></b>&nbsp;<span class="w3-small">%</span><br/></div>
-<div class="w3-text-red w3-large">&nbsp;pO<sub>2</sub><sup>art</sup><b class="w3-large"><bdl-value id="idpo2"  fromid="idfmi" refindex="13" convertor="1,133.322" precision="2" convertors="1,133.322"></bdl-value></b>&nbsp;<span class="w3-small">mmHg</span><br/></div>
+<div class="w3-text-red w3-large">&nbsp;pO<sub>2</sub><sup>art</sup><b class="w3-xxxlarge"><bdl-value id="idpo2"  fromid="idfmi" refindex="13" convertor="1,133.322" precision="2" convertors="1,133.322"></bdl-value></b>&nbsp;<span class="w3-small">mmHg</span><br/></div>
 <!--div class="w3-text-green w3-large">&nbsp;pCO<sub>2</sub><sup>art</sup><b class="w3-large"><bdl-value fromid="idfmi" refindex="14" convertor="1,133.322" precision="4" convertors="1,133.322"></bdl-value></b>&nbsp;<span class="w3-small">mmHg</span></div-->
-<div class="w3-text-blue w3-large">&nbsp;etCO<sub>2</sub><b class="w3-large"><bdl-value id="idetco2"  fromid="idfmi" refindex="14" convertor="1,134" precision="2" convertors="1,133.322" ></bdl-value></b>&nbsp;<span class="w3-small">mmHg</span></div>
+<div class="w3-text-blue w3-large">&nbsp;etCO<sub>2</sub><b class="w3-xxxlarge"><bdl-value id="idetco2"  fromid="idfmi" refindex="14" convertor="1,134" precision="2" convertors="1,133.322" ></bdl-value></b>&nbsp;<span class="w3-small">mmHg</span></div>
 </div>
 </div>
 </div>
