@@ -3,11 +3,12 @@
 
 ## lithium carbonate
 
-Simulation of pharmacokinetic and drug concentration.
-<bdl-fmi id="idfmi" mode="oneshot" src="Pharmacolibrary_Test_SingleCompartment_LithiumPK.js" fminame="Pharmacolibrary_Test_SingleCompartment_LithiumPK" tolerance="0.000001" starttime="0" fstepsize="1000" stoptime="864000" fpslimit="60" guid="{ca914a49-a68a-45f5-a637-38f5ccf00bb0}" valuereferences="637534227,16777227,16777226,16777228,16777229" valuelabels="lithiumCarbonate.distribution.C,lithiumCarbonate.Cmax,lithiumCarbonate.Cmin,lithiumCarbonate.C1lab,lithiumCarbonate.C2lab" inputs="vd,16777220,1,1,t;clearance,16777222,1,1,t;bioavailability,16777221,1,1,t;adminmass,16777224,1,1,t;adminduration,16777223,60,1,t;adminperiod,16777217,3600,1,t;doseCount,16777218,1,1,t;cmin,16777226,1,1,f;cmax,16777227,1,1,f;c1lab,16777228,1,1,f;c2lab,16777229,1,1,f;firstadmin,16777216,60,1,t" inputlabels="lithiumCarbonate.VdPerKg,lithiumCarbonate.Cl,lithiumCarbonate.F,lithiumCarbonate.adminMassMg,lithiumCarbonate.adminDuration,lithiumCarbonate.periodicDose.adminPeriod,lithiumCarbonate.periodicDose.doseCount,lithiumCarbonate.Cmin,lithiumCarbonate.Cmax,lithiumCarbonate.C1lab,lithiumCarbonate.C2lab,lithiumCarbonate.periodicDose.firstAdminTime"></bdl-fmi>
+Simulation of pharmacokinetic and drug concentration..
+
+<bdl-fmi id="idfmi" mode="oneshot" src="Pharmacolibrary_Test_SingleCompartment_LithiumPK.js" fminame="Pharmacolibrary_Test_SingleCompartment_LithiumPK" tolerance="0.000001" starttime="0" fstepsize="4000" stoptime="864000" fpslimit="60" guid="{ca914a49-a68a-45f5-a637-38f5ccf00bb0}" valuereferences="637534227,16777227,16777226,16777228,16777229" valuelabels="lithiumCarbonate.distribution.C,lithiumCarbonate.Cmax,lithiumCarbonate.Cmin,lithiumCarbonate.C1lab,lithiumCarbonate.C2lab" inputs="vd,16777220,1,1,t;clearance,16777222,1,1,t;bioavailability,16777221,1,1,t;adminmass,16777224,1,1,t;adminduration,16777223,60,1,t;adminperiod,16777217,3600,1,t;doseCount,16777218,1,1,t;cmin,16777226,1,1,f;cmax,16777227,1,1,f;c1lab,16777228,1,1,f;c2lab,16777229,1,1,f;firstadmin,16777216,60,1,t" inputlabels="lithiumCarbonate.VdPerKg,lithiumCarbonate.Cl,lithiumCarbonate.F,lithiumCarbonate.adminMassMg,lithiumCarbonate.adminDuration,lithiumCarbonate.periodicDose.adminPeriod,lithiumCarbonate.periodicDose.doseCount,lithiumCarbonate.Cmin,lithiumCarbonate.Cmax,lithiumCarbonate.C1lab,lithiumCarbonate.C2lab,lithiumCarbonate.periodicDose.firstAdminTime"></bdl-fmi>
 
 
-<bdl-chartjs-time width="400" height="300" fromid="idfmi" labels="drug concentration [g/l],min,max" initialdata="" refindex="0" refvalues="4" maxdata="10192" throttle="50"></bdl-chartjs-time>
+<bdl-chartjs-time width="400" height="300" fromid="idfmi" labels="drug concentration [g/l],min,max" initialdata="" refindex="0" refvalues="4" maxdata="10192" throttle="0"></bdl-chartjs-time>
 
 </div>
 <div class="w3-half">
