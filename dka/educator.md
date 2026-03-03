@@ -30,18 +30,19 @@
 <div id="CZ" class="w3-xxlarge">
 
 <bdl-fb-set-state title="0.Úvod" value="index.md"></bdl-fb-set-state>
-<bdl-fb-set-state title="1.Sim" value="screen/k1uvod.md"></bdl-fb-set-state>
-<bdl-fb-set-state title="2.Biochem" value="screen/k2vysetreni.md"></bdl-fb-set-state>
-<bdl-fb-set-state title="3.Astrup" value="screen/k3vysetreniastrup.md"></bdl-fb-set-state>
-<bdl-fb-set-state title="4.Léčba" value="screen/k4lecba.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="1.Video" value="screen/d26-01video.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="2.Biochem" value="screen/d26-02test.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="3.Astrup" value="screen/d26-03test.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="4.Léčba" value="screen/d26-lecba.md"></bdl-fb-set-state>
 </div>
 <div id="EN" class="w3-xxlarge">
 
 <bdl-fb-set-state title="0.Intro" value="index-en.md"></bdl-fb-set-state>
-<bdl-fb-set-state title="1.Sim" value="screen/k1simulation-en.md"></bdl-fb-set-state>
-<bdl-fb-set-state title="2.Biochem" value="screen/k2exam-blood-en.md"></bdl-fb-set-state>
-<bdl-fb-set-state title="3.Astrup" value="screen/k3exam-astrup-en.md"></bdl-fb-set-state>
-<bdl-fb-set-state title="4.Treat" value="screen/k4treatment-en.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="1.Video" value="screen/d26-01video-en.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="2.Biochem" value="screen/d26-02test-en.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="3.Astrup" value="screen/d26-03test-en.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="4.Treat" value="screen/d26-04lecba-en.md"></bdl-fb-set-state>
 </div>
 <bdl-fb-get-state tohash="true"></bdl-fb-get-state>
+
 
