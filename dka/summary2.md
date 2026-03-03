@@ -1,15 +1,11 @@
 * [CZ index](#index.md)
-  * [1 uvod](#screen/k1uvod.md)
-  * [2 vysetreni](#screen/k2vysetreni.md)
-  * [3 astrup](#screen/k3vysetreniastrup.md)
-  * [4 lecba](#screen/k4lecba.md)
+  * [1 uvod](#screen/d26-01video.md)
+  * [2 vysetreni](#screen/d26-02test.md)
+  * [3 astrup](#screen/d26-03test.md)
+  * [4 lecba](#screen/d26-04lecba.md)
 * [EN index](#index-en.md)
-  * [1 simulation](#screen/k1simulation-en.md)
-  * [2 exam-blood](#screen/k2exam-blood-en.md)
-  * [3 exam-astrup](#screen/k3exam-astrup-en.md)
-  * [4 treatment](#screen/k4treatment-en.md)
+  * [1 simulation](#screen/d26-01video-en.md)
+  * [2 exam-blood](#screen/d26-02test-en.md)
+  * [3 exam-astrup](#screen/d26-03test-en.md)
+  * [4 treatment](#screen/d26-04lecba-en.md)
 * [References](#references.md)
-
-
-
-
