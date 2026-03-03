@@ -6,7 +6,7 @@
 <div class="w3-sand w3-large w3-padding w3-margin">
 
 
-**Vstupní lab. vyšetření**
+**Examination results**
 | | | | |
 |---|---|---|---|
 | CRP | 91 | mg/l | [0..10] |
