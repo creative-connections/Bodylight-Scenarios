@@ -6,7 +6,7 @@
 <div class="w3-third">
     <div class="w3-sand ">
 
-**ASTRUP vstupní:**
+**ASTRUP results:**
 | |  | |
 |-----|------|-------|
 | pH: |  7,14 | [7,36..7,44] |
