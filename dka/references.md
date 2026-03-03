@@ -11,14 +11,9 @@ tbody tr:nth-child(even){background-color:#f1f1f1}
 | **Interactive Animation:** | Martin Brož, Klára Svobodová |
 
 # References
-  * Kulhánek T., Kofránek J.: Explanatory models of human physiology to teach pathophysiology of diabetic ketoacidosis with simulators, VPH conference 4-6 September 2024, Stuttgart, Germany [Poster PDF](PosterH_OrezoveZnacky_VPH_compressed.pdf)
+  * Kulhánek T., Kofránek J.: Explanatory models of human physiology to teach pathophysiology of diabetic ketoacidosis with simulators, VPH conference 4-6 September 2024, Stuttgart, Germany <div class="w3-button w3-theme-d1">  [Poster PDF](PosterH_OrezoveZnacky_VPH_compressed.pdf)</div>
 
 
-# Technologies 
+# Technology
 
-We call technology behind in-browser simulators as 'BODYLIGHT'. The tools, scripts and libraries allows
-  * to compile mathematical models expressed in Modelica language into WebAssembly language executable in browsers without any other plugins or extension. 
-  * to integrate simulation with animation (animated GIF or Adobe Animate) and other HTML elements and JS libraries (ChartJS, Plotly). 
-  * See technical documentation, tutorials at <a href="https://bodylight.physiome.cz" class="w3-button w3-theme-d1">bodylight.physiome.cz</a>
-  * See other demos related to simulation of medical physiology at <a href="https://egolem.online/demo" class="w3-button w3-theme-d1">egolem.online/demo</a>
-   
+  * Kulhanek, T., Mladek, A., Kofranek, J., & Jezek, F. (2023). Bodylight. js 2.0-Web components for FMU simulation, visualisation and animation in standard web browser. In Modelica Conferences (pp. 443-452). https://www.ecp.ep.liu.se/index.php/modelica/article/view/954
