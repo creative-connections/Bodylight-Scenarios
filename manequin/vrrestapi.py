@@ -22,7 +22,9 @@ variables = {
     'arterial_HCO3':0,
     'arterial_cdCO2':0,
     'idrate':17,
-    'heart_rate':65
+    'heart_rate':65,
+    'nibp1':120,
+    'nibp2':80
     }
 
 #breath_rate = 12
