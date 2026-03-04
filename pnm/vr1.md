@@ -12,7 +12,7 @@
 <!--bdl-fmi id="hemodynamics" mode="continuous" controlid="controlbuttons2" showcontrols="false" src="modelECMORespiratoryVR_BloodGasesTransport_MeursModel2011_HemodynamicsRegulatedHR.js" fminame="modelECMORespiratoryVR_BloodGasesTransport_MeursModel2011_HemodynamicsRegulatedHR" tolerance="0.000001" starttime="0" fstepsize="0.05" fpslimit="20" guid="{87860081-905b-4adf-b51a-cdbabd18cf3e}" valuereferences="905970357,905970199,905970200,33554460,637534720" valuelabels="EithaPressure.pressure,arterialPressure.systolic,arterialPressure.diastolic,Ecg.ecg,currentHeartReat.y" inputs="arterial_sO2,16777391,1,1,t;hradd,16777407,1,1,t" inputlabels="sO2.k,HRAdd.k"></bdl-fmi-->
 <!-- tolerance="0.000001" starttime="0" fstepsize="0.05" fpslimit="20"  controlid="controlbuttons2" showcontrols="false"
 <!--bdl-remote-value remoteurl="http://127.0.0.1:5000/vrapi" interval="2000" id="vrapi" inputs="volume;sO2"></bdl-remote-value-->
-<bdl-remote-value remoteurl="http://localhost:5000/vrapi" interval="2000" id="vrapi" inputs="arterial_sO2;arterial_pH;arterial_pCO2;arterial_base_excess;arterial_HCO3;arterial_cdCO2;idrate;heart_rate;nibp1;nibp2"></bdl-remote-value>
+<bdl-remote-value remoteurl="vuplex://localhost:5000/vrapi" interval="2000" id="vrapi" inputs="arterial_sO2;arterial_pH;arterial_pCO2;arterial_base_excess;arterial_HCO3;arterial_cdCO2;idrate;heart_rate;nibp1;nibp2"></bdl-remote-value>
 </div>
 <div class="w3-black w3-sans-serif" style="width:100%">
 <div class="w3-row">
