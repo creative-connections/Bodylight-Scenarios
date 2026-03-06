@@ -33,7 +33,7 @@
 <bdl-fb-set-state title="1.Video" value="screen/d26-01video.md"></bdl-fb-set-state>
 <bdl-fb-set-state title="2.Biochem" value="screen/d26-02test.md"></bdl-fb-set-state>
 <bdl-fb-set-state title="3.Astrup" value="screen/d26-03test.md"></bdl-fb-set-state>
-<bdl-fb-set-state title="4.Léčba" value="screen/d26-lecba.md"></bdl-fb-set-state>
+<bdl-fb-set-state title="4.Léčba" value="screen/d26-04lecba.md"></bdl-fb-set-state>
 </div>
 <div id="EN" class="w3-xxlarge">
 
