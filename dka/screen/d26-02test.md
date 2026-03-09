@@ -2,7 +2,7 @@
 <div class="w3-row">
 <bdl-tabs idlist="biochemie,urine,hyperkalemia,dehydratation" titlelist="Výsledky vyšetření,Výsledky vyšetření 2, Hyperkalémie,Dehydratace"></bdl-tabs>
 <div id="biochemie">
-<div class="w3-third">
+<div class="w3-quarter">
 <div class="w3-sand w3-large w3-padding w3-margin">
 
 
@@ -23,7 +23,7 @@
 </div>
 
 </div>
-<div class="w3-third">
+<div class="w3-quarter">
 <div class="w3-sand w3-large w3-padding w3-margin" style="line-height:0.9">
 
 **Diff. rozpočet leukocytů:**
@@ -56,7 +56,7 @@
 </div>
 </div>
 <div id="urine">
-<div class="w3-third">
+<div class="w3-quarter">
 <div class="w3-sand w3-large w3-padding w3-margin">
 
 
@@ -75,7 +75,7 @@
 </div>
 
 </div>
-<div class="w3-third">
+<div class="w3-quarter">
 <div class="w3-sand w3-large w3-padding w3-margin" style="line-height:0.9">
 
 **Moč - sediment:**
@@ -90,7 +90,7 @@
 </div>
 </div>
 
-<div class="w3-twothird" id="hyperkalemia">
+<div class="w3-half" id="hyperkalemia">
 
 ![hyperkalemia](hyperkalemia.jpg)
 
@@ -98,7 +98,7 @@ Stefan Silbernagl, Florian Lang: **Color Atlas of Pathophysiology
 Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016 
 
 </div>
-<div class="w3-twothird" id="dehydratation">
+<div class="w3-half" id="dehydratation">
 
 ![hyponatremia](hyponatremia.jpg)
 
@@ -108,7 +108,7 @@ Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016
 </div>
 
 
-<div class="w3-third  w3-large w3-palatino" style="line-height:1.0">
+<div class="w3-half  w3-large w3-palatino" style="line-height:1.0">
 
 <div class="w3-padding w3-margin">
 <bdl-quizx id="q1.1" type="choice2" question="1.1 Pacientka má hematokrit 0,42 (v normě), ale MCV 75,5 fL (mikrocytóza). Které vysvětlení je nejpravděpodobnější?" answers="A. Chronický deficit železa, dlouhodobě anémie chronických onemocnění nebo thalasemický trait → menší erytrocyty, ale jejich počet může být vyšší, takže hematokrit může vycházet normální.|B. Akutní hyperosmolarita při hyperglykémii „smrští“ erytrocyty a dlouhodobě sníží MCV.|C. Hemolýza ve slezině zmenší erytrocyty (ztráta membrány), hematokrit zůstane normální.|D. Akutní zánět (CRP 58) způsobí mikrocytózu během hodin až dnů, hematokrit se nestihne změnit.|E. Chyba přístroje: MCV je dopočítané z hematokritu a počtu erytrocytů, takže při normálním hematokritu nemůže být nízké." correctoptions="true|false|false|false|false" explanations="Mikrocytóza typicky znamená méně hemoglobinu v buňce (deficit železa / thalasemie). Hematokrit závisí na celkovém objemu erytrocytů (počet × objem); při mikrocytóze může být počet erytrocytů kompenzačně vyšší, takže hematokrit může vyjít normálně. V tomto případě jde pravděpodobně o chronický problém (např. sideropenii), který nesouvisí s akutním stavem, a je vhodné jej dovyšetřit (parametry železa, event. zdroj ztrát či malabsorpce).|Akutní hyperosmolarita může krátkodobě ovlivnit distribuci vody mezi intracelulárním a extracelulárním prostorem, ale nevysvětluje typický chronický obraz mikrocytózy (MCV 75 fL) jako projev poruchy syntézy hemoglobinu.|Hemolýza ve slezině nevede typicky k mikrocytóze, ale spíše k hemolytické anémii se známkami zvýšeného rozpadu erytrocytů (retikulocytóza, zvýšený bilirubin, LDH); ztráta membrány je spíše obrazem sférocytózy.|Anémie chronických chorob se obvykle rozvíjí týdny až měsíce a vede k normocytární nebo jen mírně mikrocytární anémii; akutní zánět během hodin či dnů mikrocytózu sám o sobě nevyvolá.|MCV je u moderních analyzátorů primárně měřený nebo přímo odvozený parametr a může být nízké i při normálním hematokritu; nízké MCV při normálním Hct tedy není důkazem chyby přístroje." buttontitle="zkontrolovat odpověď"></bdl-quizx>
