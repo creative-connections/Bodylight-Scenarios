@@ -1,7 +1,7 @@
 <div class="w3-row">
-<div class="w3-col l7 m7 s12">
+<div class="w3-col l6 m6 s12">
 
-<bdl-tabs idlist="astrup2,astrup,astrup3,biochemie,diabetes,patogenesis" titlelist="ASTRUP pH pCO2,ASTRUP pH HCO3-,ASTRUP BE pCO2,Biochemie,Patofyziologie DM,Patogeneze"></bdl-tabs>
+<bdl-tabs idlist="astrup2,astrup,astrup3,biochemie,diabetes" titlelist="ASTRUP pH pCO2,ASTRUP pH HCO3-,ASTRUP BE pCO2,Biochemie,Patofyziologie DM"></bdl-tabs>
 <div id="astrup" style="line-height:0.9">
 <div class="w3-third">
     <div class="w3-sand ">
@@ -138,16 +138,6 @@ Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016
 
 </div>
 </div>
-<div id="patogenesis">
-
-**A**
-![hhspato](hhspato.png)
-
-**B**
-![dkapato](dkapato.png)
-
-</div>
-
 </div>
 <div class="w3-col l5 m5 s12 w3-palatino w3-xlarge" style="line-height:1.0">
 
