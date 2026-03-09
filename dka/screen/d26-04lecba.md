@@ -21,12 +21,7 @@ Skoro vše o diabetické ketoacidóze: https://youtu.be/EjbXidx7YFM
 
 **Hyperkalémie při nízkém pH - acidóze, může vést při rychlé korekci glykémie a acidózy k hypokalémii**
 zdroj: A.Jabor a kol., Vnitřní prostředí, Grada, 2008
-<!--
-Při nízké kalémii se zahajuje podávání inzulinu až po doplnění hladiny kalia k hodnotám, která se blíží dolní hranici referenčních hodnot (tj. ~ 3,8 mmol/L)
 
-ATB – nejprve empiricky, poté dle citlivosti.
-
-Náhrada iontů: zejména K+ - administrovat opatrně, protože inzulin navodí přesun (shift) K+ do buněk – dle EKG má vstupně změny, které souvisí s vysokou hladinou K+ extracelulárně! Vyčkat normalizace hladin a normalizace EKG – na něm vysoké hrotnaté T (Eiffel tower tvar), i když není přítomna bradykardie…. Může být dáno i lehkou teplotou a hypotenzí! Následně substituovat a zabránit hypokalémii, která má také kardiovaskulární rizika!-->
 </div>
 <div id="ketoacidoza3">
 
