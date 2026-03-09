@@ -2,7 +2,7 @@
 <div class="w3-row">
 <bdl-tabs idlist="biochemie,urine,hyperkalemia,dehydratation" titlelist="Výsledky vyšetření,Výsledky vyšetření 2, Hyperkalémie,Dehydratace"></bdl-tabs>
 <div id="biochemie">
-<div class="w3-third">
+<div class="w3-quarter">
 <div class="w3-sand w3-large w3-padding w3-margin">
 
 
@@ -23,7 +23,7 @@
 </div>
 
 </div>
-<div class="w3-third">
+<div class="w3-quarter">
 <div class="w3-sand w3-large w3-padding w3-margin" style="line-height:0.9">
 
 **Diff. rozpočet leukocytů:**
@@ -56,7 +56,7 @@
 </div>
 </div>
 <div id="urine">
-<div class="w3-third">
+<div class="w3-quarter">
 <div class="w3-sand w3-large w3-padding w3-margin">
 
 
@@ -75,7 +75,7 @@
 </div>
 
 </div>
-<div class="w3-third">
+<div class="w3-quarter">
 <div class="w3-sand w3-large w3-padding w3-margin" style="line-height:0.9">
 
 **Moč - sediment:**
@@ -90,7 +90,7 @@
 </div>
 </div>
 
-<div class="w3-twothird" id="hyperkalemia">
+<div class="w3-half" id="hyperkalemia">
 
 ![hyperkalemia](hyperkalemia.jpg)
 
@@ -98,7 +98,7 @@ Stefan Silbernagl, Florian Lang: **Color Atlas of Pathophysiology
 Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016 
 
 </div>
-<div class="w3-twothird" id="dehydratation">
+<div class="w3-half" id="dehydratation">
 
 ![hyponatremia](hyponatremia.jpg)
 
@@ -108,7 +108,7 @@ Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016
 </div>
 
 
-<div class="w3-third  w3-large w3-palatino" style="line-height:1.0">
+<div class="w3-half  w3-large w3-palatino" style="line-height:1.0">
 
 <div class="w3-padding w3-margin">
 <bdl-quizx id="q2.1" type="choice2" 
