@@ -1,12 +1,12 @@
 <div class="w3-row">
-<div class="w3-col l7 m7 s12">
+<div class="w3-col l6 m6 s12">
 
-<bdl-tabs idlist="astrup2,astrup,astrup3,biochemie,diabetes,patogenesis" titlelist="ASTRUP pH pCO2,ASTRUP pH HCO3-,ASTRUP BE pCO2,Biochemie,Patofyziologie DM,Patogeneze"></bdl-tabs>
+<bdl-tabs idlist="astrup2,astrup,astrup3,biochemie,diabetes" titlelist="ASTRUP pH pCO2,ASTRUP pH HCO3-,ASTRUP BE pCO2,Biochemie,Patofyziologie DM"></bdl-tabs>
 <div id="astrup" style="line-height:0.9">
 <div class="w3-third">
     <div class="w3-sand ">
 
-**ASTRUP results:**
+**ASTRUP vstupní:**
 | |  | |
 |-----|------|-------|
 | pH: |  7,14 | [7,36..7,44] |
@@ -20,7 +20,7 @@
 | sat.O2: | 95 % | [94..99] |
 </div>
 </div><div class="w3-twothird">
-<object id="mySvg" type="image/svg+xml" data="screen/Acid-base_nomogramK1.svg" style="width:95%">
+<object id="mySvg1" type="image/svg+xml" data="screen/Acid-base_nomogramK1.svg" style="width:95%">
   Your browser does not support SVG
 </object>
 
@@ -78,7 +78,7 @@
 </div>
 </div><div class="w3-twothird">
 
-<object id="mySvg" type="image/svg+xml" data="screen/nomogramEnglis3.svg" style="width:95%">
+<object id="mySvg2" type="image/svg+xml" data="screen/nomogramEnglis3.svg" style="width:95%">
   Your browser does not support SVG
 </object>
 
@@ -138,107 +138,66 @@ Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016
 
 </div>
 </div>
-<div id="patogenesis">
-
-**A**
-![hhspato](hhspato.png)
-
-**B**
-![dkapato](dkapato.png)
-
-</div>
-
 </div>
 <div class="w3-col l5 m5 s12 w3-palatino w3-xlarge" style="line-height:1.0">
 
-<bdl-quizx id="q3.1" type="choice2" 
-           question="3.1 Jaká je to porucha ABR dle diagramu ASTRUP pH pCO2?" 
-           answers="A. chronický base deficit|B. akutní base deficit|C. chronická hypercapnie|D. akutní hypercapnie" 
-           correctoptions="true|false|false|false" 
-           explanations="ano|ne|ne|ne" 
-           buttontitle="zkontrolovat odpověď"></bdl-quizx>
-<bdl-quizx id="q3.2" type="choice2" 
-           question="3.2 Jaká je to porucha ABR dle diagramu ASTRUP pH HCO3-?" 
-           answers="A. akutní respirační acidóza|B. metabolická acidóza|C. chronická respirační acidóza|D. metabolická alkalóza" 
-           correctoptions="false|true|false|false" 
-           explanations="ne|ano|ne|ne" 
-           buttontitle="zkontrolovat odpověď"></bdl-quizx>
-<bdl-quizx id="q3.3" type="choice2" 
-           question="3.3 Jaká je to porucha ABR dle diagramu ASTRUP BE pCO2?" 
-           answers="A. ARAc - akutní respirační acidóza|B. UMAc - ustálená metabolická acidóza|C. URAlk - ustálená respirační alkalóza|D. AMAlk - akutní metabolická alkalóza" 
-           correctoptions="false|true|false|false" 
-           explanations="ano|ne|ne|ne" 
-           buttontitle="zkontrolovat odpověď"></bdl-quizx>              
-<bdl-quizx id="q3.4" type="choice2" 
-           question="3.4 Aniontová mezera (anion gap, AG) je rozdíl koncentrací významných kationtů a aniontů v krevní plazmě. Jak se vypočítá?" 
-           answers="A. AG = Na<sup>+</sup> – (Cl<sup>-</sup> + HCO3<sup>-</sup>) v USA <br/>AG = (Na<sup>+</sup>+K<sup>+</sup>) – (Cl<sup>-</sup> + HCO3<sup>-</sup>) v Evropě|B. AG = (Na<sup>+</sup>) + (2x Cl<sup>-</sup>) + (HCO3<sup>-</sup>) v USA<br/>|C. AG = (Na<sup>+</sup>) + (2x Cl<sup>-</sup>) + (HCO3<sup>-</sup>) + (K<sup>+</sup>) v Evropě" 
-           correctoptions="true|false|false" 
-           explanations="ano|ne|ne" 
-           buttontitle="zkontrolovat odpověď"></bdl-quizx>
-<bdl-quizx id="q3.5" type="choice2" 
-           question="3.5 Aniontová mezera je obvykle 10-12 mmol/l, až do 16 mmol/l. Zvýšení může signalizovat metabolickou acidózu, zatímco snížení může ukazovat na alkalózu, hypochlorémii nebo hyperkalcémii. Spočítejte aniontovou mezeru zpaměti nebo na kalkulačce dle hodnot a vyberte:" 
-           answers="A. AG = 314.2|B. AG = 6|C. AG = 28,9" 
-           correctoptions="false|false|true" 
-           explanations="ne|ne|ano" 
-           buttontitle="zkontrolovat odpověď"></bdl-quizx>           
-<bdl-quizx id="q3.6" type="choice2" 
-           question="3.6 Co to tedy může být za komplikaci DM 1. typu?" 
-           answers="A. hypochloremická alkalóza při diabetu a zvracení|B. dehydratace a diabetická ketoacidóza|C. hyperglykemické hyperosmolární kóma" 
-           correctoptions="false|true|false" 
-           explanations="ne|ano|ne" 
-           buttontitle="zkontrolovat odpověď"></bdl-quizx>              
-<bdl-quizx id="q3.7" type="choice2" 
-           question="3.7 Jak by se změnily parametry ABR a klinický obraz, při zvracení?" 
-           answers="A. Při zvracení dojde ke komplikaci již existující metabolické acidózy metabolickou alkalózou (ztráta H<sup>+</sup>, Cl<sup>-</sup>), utlumení respiračních kompenzačních mechanismů, prohloubení dehydratace, zvýšení ztrát K<sup>+</sup> a ke zhoršení stavu (kombinovaná porucha ABR, deplece K<sup>+</sup>).|B. zvracením se ztrácí K<sup>+</sup>, dochází k rozvoji hypokálémie a není-li situace řešena, směně H<sup>+</sup> za K<sup>+</sup> na buněčné membráně (K<sup>+</sup> jde ven, H<sup>+</sup> dovnitř, dojde ke alkalizaci vnitřního prostředí." 
-           correctoptions="true|false" 
-           explanations="ano|ne" 
-           buttontitle="zkontrolovat odpověď"></bdl-quizx>
-<bdl-quizx id="q3.8" type="choice2" 
-           question="3.8 Jaký nález očekáváte v moči?" 
-           answers="A. pH moči bude alkalické, bude ketonurie, nízká koncentrace K<sup>+</sup>, Na<sup>+</sup> i fosfátů, bude těžká proteinurie|B. budu očekávat ketonurii, glykosurii, polyurii, vyšší množství Na<sup>+</sup>, K<sup>+</sup> a fosfátů, kyselé pH" 
-           correctoptions="false|true" 
-           explanations="ne|ano" 
-           buttontitle="zkontrolovat odpověď"></bdl-quizx>
-<bdl-quizx id="q3.9" type="choice2" 
-           question="3.9 Normální fyziologická osmolalita séra 275–295 mmol/kg H2O. Pro odhad osmolality lze předpokládat, že 1 kg &#8784; 1 l. Jak ji lze odhadnout z naměřených hodnot? Očekáváte zvýšenou či sníženou osmolalitu séra z výsledků biochemie?" 
-           answers="A. Osmolalita = (2xNa) + glykémie + urea &#8784; 312 mmol/kg - osmolalita bude zvýšená|B. Osmolalita bude snížená pro ztrátu sodíku a draslíku, vzorec (Na<sup>+</sup>) + (Cl<sup>-</sup>) + (K<sup>+</sup>) + urea &#8784; 235.3 mmol/kg" 
-           correctoptions="true|false" 
-           explanations="ano|ne" 
-           buttontitle="zkontrolovat odpověď"></bdl-quizx>
-<bdl-quizx id="q3.10" type="choice2" 
-           question="3.10 Jak byste interpretovali renální parametry?" 
-           answers="A. Elevace urey a kreatininu vs. na vrub dehydratace a prakticky prerenálního selhání s rozvojem ischémie ledvin. Dalším důvodem může být i chronická renální insuficience vzniklá v průběhu nemoci pro nespolupráci pacienta při léčbě. Aktuálně zhoršená konkomitantně probíhající komplikací a dehydratací.|B. Zvýšení renálních parametrů u tohoto pacienta je výhradně způsobeno konzumací nadměrného množství potravin bohatých na bílkoviny. Vzhledem k diabetickému stavu pacienta jeho tělo chybně a příliš rychle metabolizuje bílkoviny, což vede k přetížení organismu metabolity, jako je kreatinin a močoviny. Tento stav, nazývaný 'Bílkovinami indukovaná renální dysfunkce u diabetu', je běžnou komplikací u diabetických pacientů, kteří nedodržují přísná dietní omezení." 
-           correctoptions="true|false" 
-           explanations="ano|ne" 
-           buttontitle="zkontrolovat odpověď"></bdl-quizx>
-<bdl-quizx id="q3.11" type="choice2" 
-           question="3.11 Jaký je vývoj kalémie u ketoacidózy? V čase, při zahájení léčby a jejím pokračování v dalším průběhu bez substituce kalia?" 
-           answers="A. Po celou dobu přetrvává hyperkalémie, ta se srovná až ve chvíli, kdy glukóza klesne < 10mmol/L. Pokud se léčba nezahájí, pacient s hyperglykémií a hyperkalémií zmírá na maligní arytmii, pokud se substituje při léčbě kalium, hyperkalémie se horší a pacient je v riziku maligní arytmie.|B. metabolická acidóza vyvolá incipientně hyperkalémii, která se léčbou koriguje ke správné hodnotě. Nedojde li k hrazení K<sup>+</sup> infuzemi, pacient je v riziku těžké hypokálémie díky ztrátám kalia močí a depleci IC rezerv." 
-           correctoptions="false|true" 
-           explanations="ne|ano" 
-           buttontitle="zkontrolovat odpověď"></bdl-quizx>
-<bdl-quizx id="q3.12" type="choice2" 
-           question="3.12 Co je příčinou diabetické ketoacidózy?" 
-           answers="A. absolutní nedostatek inzulinu a nadbytek glukagonu. Metabolismus většiny buněk je nyní závislý na proteolýze a lipolýze jejichž vedlejším produktem je zvýšená tvorba ketolátek které vedou ke ketoacidóze|B. relativní nedostatek inzulinu. Buňky tolik nehladoví, ale insulínu není dostatek, proto metabolismus buněk zvýší proteolýzu a lipolýzu." 
-           correctoptions="true|false" 
-           explanations="ano|ne" 
-           buttontitle="zkontrolovat odpověď"></bdl-quizx>
-<bdl-quizx id="q3.13" type="choice2" 
-           question="3.13 Jaká je patogeneze rozvoje diabetické ketoacidózy (vyberte vhodný diagram v sekci Patogeneze)?"           answers="A. diagram (A)|B. diagram(B)" 
-           correctoptions="false|true" 
-           explanations="ne|ano" 
-           buttontitle="zkontrolovat odpověď"></bdl-quizx>
-<bdl-quizx id="q3.14" type="choice2" 
-           question="3.14 Které jiné stavy vedou ke zvýšené tvorbě ketolátek?" 
-           answers="A. hypotyreóza, cushingův syndrom|B. alkoholismus a hladovění" 
-           correctoptions="false|true" 
-           explanations="ne|ano" 
-           buttontitle="zkontrolovat odpověď"></bdl-quizx>
+<bdl-quizx id="q2.1" type="choice2" question="2.1 Aniontová mezera (anion gap, AG) se v praxi nejčastěji počítá jakým vzorcem?" answers="A. AG = Na⁺ − (Cl⁻ + HCO₃⁻).|B. AG = Na⁺ + (2×Cl⁻) + HCO₃⁻.|C. AG = (Na⁺ + K⁺) + (Cl⁻ + HCO₃⁻).|D. AG = (Cl⁻ + HCO₃⁻) − Na⁺.|E. AG = (Na⁺ + Cl⁻) − (K⁺ + HCO₃⁻)." correctoptions="true|false|false|false|false" explanations="Nejběžněji se v klinické praxi používá vzorec AG = Na⁺ − (Cl⁻ + HCO₃⁻), přičemž některé laboratoře uvádějí i variantu s draslíkem (AG = [Na⁺ + K⁺] − [Cl⁻ + HCO₃⁻]); je proto důležité znát použitou verzi při interpretaci referenčního rozmezí.|Tento vzorec nesmyslně zdvojuje koncentraci chloridů a neodpovídá fyziologické definici aniontové mezery.|Ve správném výpočtu se koncentrace hlavních aniontů od koncentrace kationtů odečítají, nikoli přičítají, proto tento zápis neodpovídá definici aniontové mezery.|Tento vzorec má obrácené znaménko (anionty minus kationty), takže by vedl k záporným hodnotám a neodpovídá běžně používané definici AG.|Tento zápis kombinuje ionty bez vazby na standardní definici aniontové mezery a nedává klinicky užitečný ani používaný výsledek." buttontitle="zkontrolovat odpověď"></bdl-quizx>
+
+<bdl-quizx id="q2.2" type="choice2" question="2.2 Aniontová mezera (AG) se v této úloze počítá jako AG = Na⁺ − (Cl⁻ + HCO₃⁻) bez K⁺. Z daných hodnot: Na 123 mmol/l, Cl 88 mmol/l, HCO₃⁻ (aktuální) 6,1 mmol/l spočítejte AG a vyberte správnou odpověď." answers="A. AG = 314,2.|B. AG = 6.|C. AG = 28,9." correctoptions="false|false|true" explanations="Výpočet: 123 − (88 + 6,1) = 123 − 94,1 = 28,9 mmol/l, což odpovídá vysoké aniontové mezeře typické pro metabolickou acidózu (například ketoacidózu, laktátovou acidózu nebo hromadění uremických kyselin).|Tato hodnota by odpovídala normální nebo nízké aniontové mezeře, což neodpovídá takto nízkému HCO₃⁻ při daných koncentracích sodíku a chloridů; jde o chybný výsledek.|Správně vypočtená aniontová mezera je 28,9 mmol/l, což svědčí pro vysokou AG metabolickou acidózu a je v souladu s uvedenými koncentracemi Na⁺, Cl⁻ a HCO₃⁻." buttontitle="zkontrolovat odpověď"></bdl-quizx>
+
+<bdl-quizx id="q2.3" type="choice2" 
+          question="2.3 Na základě hodnot (glykémie 48,4 mmol/l, aktuální HCO₃⁻ 6,1 mmol/l, standardní HCO₃⁻ 8,9 mmol/l, Na 123 mmol/l, Cl 88 mmol/l, AG ≈ 28,9) jaká akutní komplikace diabetu je nejpravděpodobnější?" 
+          answers="A. Hypochloremická metabolická alkalóza při zvracení.|B. Dehydratace a diabetická ketoacidóza.|C. Hyperglykemické hyperosmolární kóma (HHS)." 
+          correctoptions="false|true|false" 
+          explanations="Při metabolické alkalóze by byla koncentrace bikarbonátu zvýšená, typicky po zvracení, zde je však HCO₃⁻ hluboce snížené, což svědčí pro těžkou metabolickou acidózu, nikoli alkalózu.|Kombinace těžké metabolické acidózy s výrazně sníženým HCO₃⁻, vysokou aniontovou mezerou a těžkou hyperglykémií je typická pro diabetickou ketoacidózu, často provázenou dehydratací v důsledku osmotické diurézy.|Hyperglykemický hyperosmolární stav sice bývá spojen s výraznou hyperglykémií a dehydratací, ale acidóza a ketóza jsou minimální nebo chybí a bikarbonát bývá obvykle nad 15–18 mmol/l; zde je acidóza příliš hluboká pro čisté HHS." 
+          buttontitle="zkontrolovat odpověď"></bdl-quizx>
+          
+<bdl-quizx id="q2.4" type="choice2" 
+          question="2.4 Pacient má metabolickou acidózu při hyperglykemické krizi. Jak se změní acidobazická rovnováha a klinický obraz, pokud se přidá opakované zvracení?" 
+          answers="A. Přidá se metabolická alkalóza ze ztrát HCl, vznikne smíšená porucha (acidóza + alkalóza) s typickou hypochlorémií a další dehydratací; celkové zásoby draslíku v těle se dále snižují a po zahájení léčby inzulinem a rehydratací hrozí výrazná hypokalémie.|B. Zvracení vede hlavně k výměně protonů za draslík na buněčné membráně (draslík ven, protony dovnitř), což alkalizuje vnitřní prostředí, tím se acidobazická rovnováha „vyřeší“ a dehydratace se výrazněji nezhorší." 
+          correctoptions="true|false" 
+          explanations="Při opakovaném zvracení dochází ke ztrátám vodíkových iontů a chloridů žaludeční šťávou, což vede k hypochloremické metabolické alkalóze; ta se u pacienta s již přítomnou metabolickou acidózou (například ketoacidózou) kombinuje do smíšené poruchy, takže výsledné pH může vypadat relativně méně patologicky, ale přetrvává nízký bikarbonát a laboratorní známky alkalózy, zároveň zvracení dále prohlubuje hypovolémii a spolu s alkalózou a osmotickou diurézou vede k depleci draslíku, takže po nasazení inzulinu, který přesouvá draslík do buněk, výrazně roste riziko těžké hypokalémie.|Samotná výměna protonů a draslíku na buněčné membráně nedokáže odstranit základní metabolickou acidózu ani napravit celkovou poruchu vnitřního prostředí; zvracení naopak zhoršuje objemový stav, prohlubuje deficity chloridů a draslíku a může vést ke smíšené poruše acidobazické rovnováhy, takže acidobazické poměry se tím rozhodně „samy“ nevyřeší."
+          buttontitle="zkontrolovat odpověď"></bdl-quizx>          
+<bdl-quizx id="q2.5" type="choice2" 
+          question="2.5 Pacient má těžkou hyperglykémii s metabolickou acidózou (DKA). Jaký nález v moči je nejpravděpodobnější?" 
+          answers="A. Alkalické pH moči, ketonurie, nízké koncentrace sodíku, draslíku a fosfátů v moči a těžká proteinurie.|B. Ketonurie a glykosurie, polyurie, kyselé pH moči a zvýšené ztráty sodíku, draslíku a fosfátů močí." 
+          correctoptions="false|true" 
+          explanations="Alkalické pH moči není typické pro diabetickou ketoacidózu a těžká proteinurie spíše ukazuje na glomerulární onemocnění, například nefrotický syndrom; navíc při osmotické diuréze bývají ztráty iontů močí zvýšené, nikoli nízké.|Při DKA dochází k výrazné hyperglykémii s glykosurií a ketonurií, což vyvolává osmotickou diurézu s polyurií a zvýšenými ztrátami vody i iontů (sodíku, draslíku a fosfátů); přítomnost kyselých ketolátek vede obvykle ke kyselému pH moči a dále podporuje ztráty kationtů." 
+          buttontitle="zkontrolovat odpověď"></bdl-quizx>
+<bdl-quizx id="q2.6" type="choice2" 
+          question="2.6 Jak odhadnete vypočtenou osmolalitu séra z běžně měřených hodnot (v mmol/l) a bude u tohoto pacienta zvýšená?" 
+          answers="A. Osmolalita ≈ 2×Na + glykémie + urea = 2×123 + 48,4 + 18,0 = 312,4 mmol/kg, tedy zvýšená.|B. Osmolalita bude snížená pro ztrátu sodíku a draslíku; při použití vzorce Na + Cl + K + urea vychází přibližně 235,3 mmol/kg." 
+          correctoptions="true|false" 
+          explanations="V klinické praxi se pro rychlý odhad osmolality séra používá vztah osmolalita ≈ 2×Na + glukóza + urea (v mmol/l); po dosazení hodnot 2×123 + 48,4 + 18,0 dostaneme asi 312,4 mmol/kg, což znamená zvýšenou osmolalitu, přičemž hlavním faktorem je extrémní hyperglykémie.|Uvedený vzorec se standardně nepoužívá a nedává korektní odhad modelové osmolality; i přes nízkou koncentraci sodíku jde v tomto případě o hypertonický stav daný vysokou glykémií, takže osmolalita není snížená, ale naopak zvýšená." 
+          buttontitle="zkontrolovat odpověď"></bdl-quizx>
+
+<bdl-quizx id="q2.7" type="choice2" 
+          question="2.7 Jak se typicky vyvíjí kalémie u diabetické ketoacidózy (DKA) v čase a po zahájení léčby, pokud se draslík nesubstituuje?" 
+          answers="A. Hyperkalémie přetrvává po celou dobu a normalizuje se až při poklesu glykémie pod 10 mmol/l; substituce draslíku by jen zhoršila hyperkalémii.|B. Na začátku může být kalémie normální až zvýšená v důsledku přesunu draslíku z buněk při acidóze a inzulinovém deficitu, ale celkové zásoby draslíku jsou snížené kvůli osmotické diuréze; po zahájení léčby inzulinem a rehydratací se draslík rychle přesouvá zpět do buněk a více se vylučuje ledvinami, takže bez jeho substituce hrozí těžká hypokalémie." 
+          correctoptions="false|true" 
+          explanations="Kalémie u DKA nesleduje pouze pokles glykémie pod určitou hranici a bez ohledu na léčbu; po nasazení inzulinu a rehydratace může její hodnota rychle klesat, a proto je řízená substituce draslíku při DKA standardní a nezbytnou součástí terapie, nikoli kontraindikací.|Před léčbou bývá kalémie často normální až zvýšená, protože inzulinový deficit, acidóza a hyperosmolalita podporují únik draslíku z buněk, přestože pacient draslík ztrácí osmotickou diurézou; po podání inzulinu se aktivuje Na⁺/K⁺‑ATPáza a draslík se přesouvá zpět intracelulárně, rehydratace zlepší perfuzi ledvin a zvýší vylučování draslíku, takže bez jeho cílené substituce může kalémie prudce klesnout až do nebezpečné hypokalémie s rizikem arytmií." 
+          buttontitle="zkontrolovat odpověď"></bdl-quizx>
+
+<bdl-quizx id="q2.8" type="choice2" 
+          question="2.8 Co je hlavní patofyziologickou příčinou diabetické ketoacidózy (DKA)?" 
+          answers="A. Absolutní nebo výrazný deficit inzulinu v kombinaci s převahou kontraregulačních hormonů, zejména glukagonu, vede ke zvýšené lipolýze, ketogenezi v játrech (tvorbě β‑hydroxybutyrátu a acetoacetátu) a rozvoji metabolické acidózy.|B. Pouze relativní deficit inzulinu, při kterém buňky netrpí výrazným „hladověním“, a proto vzniká jen mírná ketóza bez významné acidózy." 
+          correctoptions="true|false" 
+          explanations="Při DKA je klíčový absolutní nebo výrazný nedostatek inzulinu, který odstraní jeho inhibiční vliv na hormon‑senzitivní lipázu, čímž se zvyšuje lipolýza a uvolnění volných mastných kyselin do jater; současná převaha kontraregulačních hormonů, zejména glukagonu, dále podporuje ketogenezi (tvorbu β‑hydroxybutyrátu a acetoacetátu) a zvýšenou glukoneogenezi a glykogenolýzu, takže vzniká hyperglykémie a vysoká anion gap metabolická acidóza.|Samotný relativní deficit inzulinu je typičtější pro hyperosmolární hyperglykemický stav, kde bývá inzulinu ještě dost na potlačení výrazné lipolýzy a ketogeneze, takže se nevyvíjí hluboká ketoacidóza; pro DKA je naopak charakteristické, že inzulinový účinek na potlačení lipolýzy a ketogeneze je nedostatečný, a proto vzniká výrazná ketóza a acidóza." 
+          buttontitle="zkontrolovat odpověď"></bdl-quizx>
+          
+<bdl-quizx id="q2.9" type="choice2" 
+          question="2.9 Které stavy typicky vedou ke zvýšené tvorbě ketolátek (ketóze)?" 
+          answers="A. Hypotyreóza a Cushingův syndrom.|B. Hladovění (prodloužené lačnění) a alkoholová ketóza.|C. Hyperthyreóza a Addisonova choroba.|D. SIADH a nefrotický syndrom.|E. Chronická hepatitida bez jaterního selhání." 
+          correctoptions="false|true|false|false|false" 
+          explanations="Hypotyreóza obvykle ketózu nevyvolává a Cushingův syndrom je charakterizován spíše hyperglykémií a katabolismem než typickou ketózou.|Při hladovění nebo prodlouženém lačnění a u alkoholové ketózy je nízký přísun sacharidů a relativně nízká hladina inzulinu, takže organismus přechází na β‑oxidaci mastných kyselin a játra z nich tvoří ketolátky, což vede ke ketóze.|Hyperthyreóza ani Addisonova choroba nejsou typickými příčinami výrazné ketózy v běžné klinické praxi, i když mohou měnit metabolismus, nejsou klasickými ketotickými stavy.|SIADH se projevuje poruchou vodní bilance a hyponatrémií, nefrotický syndrom zase masivní proteinurií a poruchou onkotického tlaku, ani jeden z těchto stavů typicky nevede ke ketóze.|Chronická hepatitida bez rozvoje jaterního selhání obvykle nezpůsobuje zvýšenou tvorbu ketolátek; játra sice mohou být zánětlivě změněná, ale ketóza k tomuto obrazu nepatří." 
+          buttontitle="zkontrolovat odpověď"></bdl-quizx>
+          
+
 <bdl-quiz-summary id="qs1">
   Shrnutí odpovědí:
-  <button class="w3-right w3-button w3-theme" onclick="document.getElementById('mySvg').contentDocument.getElementById('patientpoint').style.display='';">Zobraz hodnoty</button>
+
 </bdl-quiz-summary>          
-<bdl-quiz-control ids="q3.1;astrup2,q3.2;astrup,q3.3;astrup3,q3.4;biochemie,q3.5,q3.6,q3.7,q3.8,q3.9,q3.10,q3.11,q3.12,q3.13;patogenesis,q3.14,qs1"></bdl-quiz-control>             
+<bdl-quiz-control ids="q2.1;astrup2,q2.2,q2.3,q2.4,q2.5,q2.6,q2.7,q2.8,q2.9,qs1"></bdl-quiz-control>             
 
 </div>
 </div>
