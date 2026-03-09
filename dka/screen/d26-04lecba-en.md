@@ -2,7 +2,7 @@
 <div class="w3-half">
 
 <bdl-tabs idlist="patogeneze,ketogeneze,kalemie,ketoacidoza3" 
-  titlelist="Patogeneze,Ketogeneze,Léčba kalémie, Zpětná vazba"></bdl-tabs>
+  titlelist="Pathogenesis,Ketogenesis,Treatment of kalemia, Feedback"></bdl-tabs>
 <div class="w3-sand w3-large w3-padding w3-margin">  
 <div id="patogeneze">
 
@@ -12,89 +12,83 @@
 <div id="ketogeneze">
 
 ![dkapato3](dkapato3.png)
-Skoro vše o diabetické ketoacidóze: https://youtu.be/EjbXidx7YFM
+Almost everything about diabetic ketoacidosis: [https://youtu.be/EjbXidx7YFM](https://youtu.be/EjbXidx7YFM)
 
 </div>
 <div id="kalemie">
 
 ![KaliumPh](KaliumPh.png)
 
-**Hyperkalémie při nízkém pH - acidóze, může vést při rychlé korekci glykémie a acidózy k hypokalémii**
-zdroj: A.Jabor a kol., Vnitřní prostředí, Grada, 2008
-<!--
-Při nízké kalémii se zahajuje podávání inzulinu až po doplnění hladiny kalia k hodnotám, která se blíží dolní hranici referenčních hodnot (tj. ~ 3,8 mmol/L)
+**Hyperkalemia at low pH – acidosis can, during rapid correction of glycemia and acidosis, lead to hypokalemia**
+source: A. Jabor et al., Internal Environment, Grada, 2008
 
-ATB – nejprve empiricky, poté dle citlivosti.
-
-Náhrada iontů: zejména K+ - administrovat opatrně, protože inzulin navodí přesun (shift) K+ do buněk – dle EKG má vstupně změny, které souvisí s vysokou hladinou K+ extracelulárně! Vyčkat normalizace hladin a normalizace EKG – na něm vysoké hrotnaté T (Eiffel tower tvar), i když není přítomna bradykardie…. Může být dáno i lehkou teplotou a hypotenzí! Následně substituovat a zabránit hypokalémii, která má také kardiovaskulární rizika!-->
 </div>
 <div id="ketoacidoza3">
 
-Dobrovolně - prosím vyplňte závěrečný test a dejte nám zpětnou vazbu
+Voluntary – please fill in the final test and give us your feedback
 
 
-<a class="w3-button w3-theme-dark" href="https://api.socrative.com/rc/VghYke" target="_blank">TEST a ZPÉTNÁ VAZBA</a>
-https://api.socrative.com/rc/kK9Emj
+<a class="w3-button w3-theme-dark" href="https://api.socrative.com/rc/kK9Emj" target="_blank">TEST and FEEDBACK</a>
 </div>
 </div>
 </div>
 <div class="w3-half w3-padding w3-xlarge w3-palatino" style="line-height:1.0">
 
-**Vyberte nejlepší odpověď na otázku**
+**Choose the best answer to the question**
 
 <bdl-quizx id="q3.1" type="choice2" 
-          question="3.1 Infuzní terapie krystaloidy u diabetické ketoacidózy (DKA): který výrok je správný?" 
-          answers="A. Na začátku je terapie agresivní a používají se hyperosmolární roztoky k rychlé korekci dehydratace.|B. Na začátku je terapie agresivní a používají se izotonické krystaloidy k obnově intravaskulárního objemu a korekci dehydratace.|C. Na začátku se tekutiny nepodávají, rozhodující je okamžitý inzulinový bolus ke korekci glykémie." 
+          question="3.1 Infusion therapy with crystalloids in diabetic ketoacidosis (DKA): which statement is correct?" 
+          answers="A. At the beginning the therapy is aggressive and hyperosmolar solutions are used for rapid correction of dehydration.|B. At the beginning the therapy is aggressive and isotonic crystalloids are used to restore intravascular volume and correct dehydration.|C. At the beginning fluids are not given, the key is an immediate insulin bolus to correct glycemia." 
           correctoptions="false|true|false" 
-          explanations="DKA je především stav těžké hypovolémie vzniklé v důsledku osmotické diurézy, proto je prvním krokem rychlá rehydratace izotonickým krystaloidem (typicky 0,9% NaCl nebo vyváženým roztokem dle zvyklostí), aby se obnovila perfuze orgánů a snížil stresový hormonální drive.|Hyperosmolární roztoky nejsou standardním zahajovacím roztokem u DKA, protože by mohly dále zvyšovat hyperosmolalitu a riziko komplikací, proto nejsou k úvodní agresivní rehydrataci vhodné.|Podání tekutin je u DKA klíčové od samého začátku; inzulinová léčba se zahajuje až po základní úpravě objemového stavu a vždy s ohledem na aktuální kalémii, při těžké hypokalémii se inzulin odkládá a nejprve se doplňuje draslík." 
-          buttontitle="zkontrolovat odpověď"></bdl-quizx>
+          explanations="DKA is above all a state of severe hypovolemia arising due to osmotic diuresis, therefore the first step is rapid rehydration with an isotonic crystalloid (typically 0.9% NaCl or a balanced solution according to local practice) to restore organ perfusion and reduce the stress hormone drive.|Hyperosmolar solutions are not the standard initial solution in DKA, because they could further increase hyperosmolality and the risk of complications, so they are not suitable for initial aggressive rehydration.|Fluid administration is crucial from the very beginning in DKA; insulin therapy is started only after basic correction of volume status and always with respect to current kalemia, in severe hypokalemia insulin is postponed and potassium is replaced first." 
+          buttontitle="check the answer"></bdl-quizx>
           
-<bdl-quizx id="q3.2" type="choice2" question="3.2 Kterou kontinuální infuzi zahájíme po rehydrataci a úpravě kalémie ke snížení hyperglykémie a potlačení ketogeneze u hyperglykemické krize?" answers="A. Kontinuální infuze kortizolu.|B. Kontinuální infuze glukagonu.|C. Kontinuální infuze IGF‑1.|D. Kontinuální infuze inzulinu." correctoptions="false|false|false|true" explanations="Kortizol je kontraregulační hormon, který zvyšuje glukoneogenezi a inzulinovou rezistenci, takže by hyperglykémii spíše zhoršil, nikoli léčil.|Glukagon stimuluje glykogenolýzu a glukoneogenezi v játrech, čímž zvyšuje glykémii a může podporovat ketogenezi, proto se pro léčbu hyperglykemické krize nepoužívá.|IGF‑1 má sice účinky podobné inzulinu, ale není standardní ani bezpečnou rutinní léčbou hyperglykemických krizí.|Kontinuální intravenózní infuze krátkodobě působícího inzulinu po rehydrataci a úpravě kalémie je základním krokem v léčbě hyperglykemické krize; inzulin snižuje glykémii, zlepšuje periferní utilizaci glukózy a hlavně zastavuje lipolýzu a ketogenezi." buttontitle="zkontrolovat odpověď"></bdl-quizx>
+<bdl-quizx id="q3.2" type="choice2" question="3.2 Which continuous infusion do we start after rehydration and correction of kalemia to reduce hyperglycemia and suppress ketogenesis in hyperglycemic crisis?" answers="A. Continuous cortisol infusion.|B. Continuous glucagon infusion.|C. Continuous IGF‑1 infusion.|D. Continuous insulin infusion." correctoptions="false|false|false|true" explanations="Cortisol is a counterregulatory hormone that increases gluconeogenesis and insulin resistance, so it would rather worsen hyperglycemia than treat it.|Glucagon stimulates glycogenolysis and gluconeogenesis in the liver, thereby increasing glycemia and potentially promoting ketogenesis, so it is not used to treat hyperglycemic crisis.|IGF‑1 does have insulin‑like effects, but it is not a standard or safe routine treatment of hyperglycemic crises.|Continuous intravenous infusion of short‑acting insulin after rehydration and correction of kalemia is a key step in the treatment of hyperglycemic crisis; insulin lowers glycemia, improves peripheral glucose utilization and mainly stops lipolysis and ketogenesis." buttontitle="check the answer"></bdl-quizx>
 
 <bdl-quizx id="q3.3" type="choice2" 
-          question="3.3 Jaký je doporučený (bezpečný) cíl rychlosti poklesu glykémie při léčbě hyperglykemické krize?" 
-          answers="A. Na rychlosti nezáleží, glykémii je nutné snižovat co nejrychleji.|B. Pokles má být řízený, typicky přibližně 2,5–4,5 mmol/l za hodinu." 
+          question="3.3 What is the recommended (safe) target rate of glycemia decrease in the treatment of hyperglycemic crisis?" 
+          answers="A. The rate does not matter, glycemia must be lowered as quickly as possible.|B. The decrease should be controlled, typically approximately 2.5–4.5 mmol/l per hour." 
           correctoptions="false|true" 
-          explanations="Příliš rychlá korekce glykémie a s ní spojené osmolality je nebezpečná, protože zvyšuje riziko cerebrálního edému, zejména u dětí, a dalších komplikací; léčba musí být účinná, ale kontrolovaná a nesmí směřovat k maximálně rychlému poklesu za každou cenu.|Cílem je řízený pokles glykémie zhruba o 2,5–4,5 mmol/l za hodinu; při dosažení nižších hodnot se obvykle přidává glukóza do infuze, aby bylo možné bezpečně pokračovat v kontinuálním podávání inzulinu a dokončit korekci ketózy, aniž by došlo k prudkému poklesu osmolality a kalémie." 
-          buttontitle="zkontrolovat odpověď"></bdl-quizx>
+          explanations="Too rapid correction of glycemia and the associated osmolality is dangerous because it increases the risk of cerebral edema, especially in children, and other complications; treatment must be effective but controlled and must not aim for the fastest possible decrease at any cost.|The goal is a controlled decrease in glycemia of roughly 2.5–4.5 mmol/l per hour; after reaching lower values, glucose is usually added to the infusion so that it is possible to safely continue continuous insulin administration and complete correction of ketosis without a sudden drop in osmolality and kalemia." 
+          buttontitle="check the answer"></bdl-quizx>
           
 <bdl-quizx id="q3.4" type="choice" 
-          question="3.4 Proč nesmí být rychlost snižování glykémie při léčbě hyperglykemické krize příliš vysoká? (Vyberte 2 správné odpovědi.)" 
-          answers="A. Aby rychlý pokles osmolality séra nevedl k přesunu vody do centrálního nervového systému a k riziku mozkového edému.|B. Protože inzulin a rehydratace mohou rychle snížit kalémii (přesun draslíku do buněk a zvýšené renální ztráty), což vytváří riziko těžké hypokalémie.|C. Aby se v krvi zachoval dostatečný „energetický pool“ glukózy pro životně důležité orgány." 
+          question="3.4 Why must the rate of glycemia reduction in the treatment of hyperglycemic crisis not be too high? (Select 2 correct answers.)" 
+          answers="A. So that rapid drop in serum osmolality does not lead to water shift into the central nervous system and risk of cerebral edema.|B. Because insulin and rehydration can rapidly decrease kalemia (potassium shift into cells and increased renal losses), which creates a risk of severe hypokalemia.|C. To preserve a sufficient “energy pool” of glucose in the blood for vital organs." 
           correctoptions="true|true|false" 
-          explanations="Příliš rychlý pokles glykémie vede k prudké změně osmolality séra, což může způsobit přesun vody do buněk centrálního nervového systému a zvýšit riziko mozkového edému, zejména u dětí, proto musí být korekce řízená a pozvolná.|Kombinace inzulinoterapie a rehydratace podporuje přesun draslíku zpět do buněk a zlepšuje renální perfuzi, takže se draslík více vylučuje močí; bez pečlivého monitorování a substituce tak může rychle vzniknout těžká hypokalémie s rizikem život ohrožujících arytmií.|Důvodem omezení rychlosti poklesu glykémie není snaha „šetřit“ glukózu pro orgány, protože při dosažení nižších cílových hodnot se může podat glukóza v infuzi a bezpečně pokračovat v inzulinoterapii; hlavní rizika spočívají v osmotických změnách a poruchách kalémie." 
-          buttontitle="zkontrolovat odpověď"></bdl-quizx>
+          explanations="Too rapid a drop in glycemia leads to an abrupt change in serum osmolality, which may cause water to shift into cells of the central nervous system and increase the risk of cerebral edema, especially in children, therefore correction must be controlled and gradual.|The combination of insulin therapy and rehydration promotes potassium shift back into cells and improves renal perfusion, thus increasing potassium excretion; without careful monitoring and substitution, severe hypokalemia with risk of life‑threatening arrhythmias can rapidly develop.|The reason to limit the rate of glycemia decrease is not to “save” glucose for organs, because once lower target values are reached, glucose can be given in infusion and insulin therapy safely continued; the main risks lie in osmotic changes and disturbances in kalemia." 
+          buttontitle="check the answer"></bdl-quizx>
 
 <bdl-quizx id="q3.5" type="choice" 
-          question="3.5 Inzulin v léčbě diabetické ketoacidózy (DKA) navodí které změny? (Vyberte 2 správné odpovědi.)" 
-          answers="A. Přesun draslíku (K⁺) do buněk.|B. Přesun glukózy z buněk ven, aby byla k dispozici pro životně důležité orgány.|C. Přesun glukózy do buněk a zvýšení její utilizace v periferních tkáních.|D. Přesun protonů (H⁺) do buněk jako hlavní a přímý efekt inzulinu." 
+          question="3.5 Insulin in the treatment of diabetic ketoacidosis (DKA) induces which changes? (Select 2 correct answers.)" 
+          answers="A. Shift of potassium (K⁺) into cells.|B. Shift of glucose out of cells so that it is available for vital organs.|C. Shift of glucose into cells and increased utilization in peripheral tissues.|D. Shift of protons (H⁺) into cells as the main and direct effect of insulin." 
           correctoptions="true|false|true|false" 
-          explanations="Inzulin aktivuje Na⁺/K⁺‑ATPázu a podporuje tak přesun draslíku z extracelulárního prostoru do buněk, což může vést k rychlému poklesu sérové kalémie, a proto je nutné kalémii pečlivě monitorovat a draslík často cíleně substituovat.|Při nedostatku inzulinu se glukóza do inzulin‑senzitivních tkání nedostává; podání inzulinu tento stav obrací, takže glukóza do buněk vstupuje více, nikoli naopak, proto tvrzení o přesunu glukózy z buněk ven neodpovídá skutečnosti.|Inzulin zvyšuje vychytávání glukózy v periferních inzulin‑senzitivních tkáních (sval, tuk) a současně tlumí jaterní produkci glukózy, čímž snižuje glykémii a pomáhá korigovat hyperglykemii v rámci DKA.|Korekce acidózy při DKA probíhá především tím, že inzulin zastaví lipolýzu a ketogenezi a tím sníží tvorbu kyselých ketolátek; formulace „přesun protonů do buněk“ nevystihuje hlavní mechanismus účinku inzulinu a není považována za správnou odpověď." 
-          buttontitle="zkontrolovat odpověď"></bdl-quizx>
+          explanations="Insulin activates Na⁺/K⁺‑ATPase and thus promotes potassium shift from the extracellular space into cells, which can lead to a rapid drop in serum kalemia, and therefore kalemia must be carefully monitored and potassium often deliberately substituted.|In insulin deficiency, glucose does not enter insulin‑sensitive tissues; administration of insulin reverses this situation, so glucose enters cells more, not less, therefore the statement about glucose moving out of cells is incorrect.|Insulin increases uptake of glucose in peripheral insulin‑sensitive tissues (muscle, fat) and simultaneously suppresses hepatic glucose production, thereby lowering glycemia and helping to correct hyperglycemia in DKA.|Correction of acidosis in DKA occurs mainly because insulin stops lipolysis and ketogenesis and thus reduces production of acidic ketone bodies; the formulation “shift of protons into cells” does not capture the main mechanism of insulin action and is not considered a correct answer." 
+          buttontitle="check the answer"></bdl-quizx>
 
 <bdl-quizx id="q3.6" type="choice2" 
-          question="3.6 Diabetická ketoacidóza (DKA) je typicky častější komplikací u diabetes mellitus typu:" 
-          answers="A. DM I typu.|B. DM II. typu" 
+          question="3.6 Diabetic ketoacidosis (DKA) is typically a more frequent complication in which type of diabetes mellitus:" 
+          answers="A. Type 1 DM.|B. Type 2 DM" 
           correctoptions="true|false" 
-          explanations="U diabetu 1. typu se často vyskytuje absolutní deficit inzulinu, který snadno vede k nebrzděné lipolýze a ketogenezi a tím k rozvoji DKA, zejména při vynechání inzulinu nebo akutním stresu, infekci.|U diabetu 2. typu bývá inzulinu obvykle ještě dostatek k částečnému potlačení ketogeneze, a proto je typičtější hyperosmolární hyperglykemický stav; DKA se u DM2 může objevit spíše při těžké zátěži, infekci, u tzv. ketosis‑prone diabetu nebo při některých lécích." 
-          buttontitle="zkontrolovat odpověď"></bdl-quizx>
+          explanations="In type 1 diabetes there is often absolute insulin deficiency, which easily leads to unchecked lipolysis and ketogenesis and thus to DKA, especially when insulin is omitted or during acute stress or infection.|In type 2 diabetes, insulin is usually still sufficient to partly suppress ketogenesis, and the hyperosmolar hyperglycemic state is more typical; DKA in type 2 DM may occur rather under severe stress, infection, in so‑called ketosis‑prone diabetes or with some drugs." 
+          buttontitle="check the answer"></bdl-quizx>
           
 <bdl-quizx id="q3.7" type="choice" 
-          question="3.7 Které z následujících hormonů přímo (akutně) regulují hladinu glykémie? (Vyberte všechny správné odpovědi.)" 
-          answers="A. Inzulin.|B. Glukagon.|C. Růstový hormon.|D. Katecholaminy.|E. Hormony štítné žlázy.|F. Aldosteron.|G. Glukokortikoidy.|H. Melatonin.|I. Leptin." 
+          question="3.7 Which of the following hormones directly (acutely) regulate blood glucose level? (Select all correct answers.)" 
+          answers="A. Insulin.|B. Glucagon.|C. Growth hormone.|D. Catecholamines.|E. Thyroid hormones.|F. Aldosterone.|G. Glucocorticoids.|H. Melatonin.|I. Leptin." 
           correctoptions="true|true|true|true|false|false|true|false|false" 
-          explanations="Inzulin snižuje glykémii zvýšením utilizace glukózy v periferních tkáních a potlačením jaterní produkce glukózy.|Glukagon zvyšuje glykémii především stimulací jaterní glykogenolýzy a glukoneogeneze.|Růstový hormon patří mezi kontraregulační hormony, zvyšuje glykémii hlavně navozením inzulinové rezistence a zvýšením lipolýzy, účinek je sice více pozvolný, ale patří do hormonální regulace glykémie.|Katecholaminy (například adrenalin) zvyšují glykémii aktivací glykogenolýzy a glukoneogeneze a zároveň snižují sekreci inzulinu.|Hormony štítné žlázy ovlivňují metabolismus spíše dlouhodobě a nepůsobí jako hlavní akutní regulátory glykémie.|Aldosteron primárně reguluje hospodaření se sodíkem, draslíkem a vodou, nikoli přímo akutní hladinu glykémie.|Glukokortikoidy (například kortizol) zvyšují glykémii stimulací glukoneogeneze a podporou inzulinové rezistence, zejména ve stresových stavech.|Melatonin moduluje metabolismus a cirkadiánní rytmy spíše nepřímo a dlouhodobě, není ale hlavním akutním regulátorem glykémie.|Leptin ovlivňuje příjem potravy a energetickou bilanci dlouhodobě, ale nepatří mezi hlavní hormony pro akutní řízení glykémie." 
-          buttontitle="zkontrolovat odpověď"></bdl-quizx>
+          explanations="Insulin lowers glycemia by increasing glucose utilization in peripheral tissues and suppressing hepatic glucose production.|Glucagon raises glycemia primarily by stimulating hepatic glycogenolysis and gluconeogenesis.|Growth hormone belongs among counterregulatory hormones, raising glycemia mainly by inducing insulin resistance and increasing lipolysis; although the effect is more gradual, it is part of hormonal regulation of glycemia.|Catecholamines (for example adrenaline) raise glycemia by activating glycogenolysis and gluconeogenesis and simultaneously reducing insulin secretion.|Thyroid hormones affect metabolism rather in the long term and do not act as major acute regulators of glycemia.|Aldosterone primarily regulates sodium, potassium and water balance, not directly the acute blood glucose level.|Glucocorticoids (for example cortisol) raise glycemia by stimulating gluconeogenesis and promoting insulin resistance, especially in stress states.|Melatonin modulates metabolism and circadian rhythms rather indirectly and long term, but is not a main acute regulator of glycemia.|Leptin influences food intake and energy balance long term, but is not among the main hormones for acute control of glycemia." 
+          buttontitle="check the answer"></bdl-quizx>
           
 <bdl-quizx id="q3.8" type="choice2" 
-          question="3.8 Může být diabetická ketoacidóza (DKA) doprovázena laktátovou acidózou?" 
-          answers="A. Ano, může.|B. Ne, nemůže." 
+          question="3.8 Can diabetic ketoacidosis (DKA) be accompanied by lactic acidosis?" 
+          answers="A. Yes, it can.|B. No, it cannot." 
           correctoptions="true|false" 
-          explanations="U diabetické ketoacidózy se může současně rozvinout laktátová acidóza, zejména při hypoperfuzi a dehydrataci, sepse či jiné infekci, hypoxii nebo šokovém stavu; vzniká tak smíšená metabolická acidóza se zvýšeným anion gapem, kde se na acidóze podílejí jak ketolátky, tak laktát, a roli může mít i deplece fosfátu se snížením 2,3‑difosfoglycerátu, která zhoršuje uvolňování kyslíku ve tkáních a tím podporuje tkáňovou hypoxii.|Laktátová acidóza není u DKA vyloučena, naopak je klinicky důležité na ni myslet a aktivně ji hledat, například stanovením laktátu v rámci krevních plynů; tvrzení, že DKA nemůže být doprovázena laktátovou acidózou, je proto nesprávné." 
-          buttontitle="zkontrolovat odpověď"></bdl-quizx>
+          explanations="In diabetic ketoacidosis, lactic acidosis can develop simultaneously, especially in hypoperfusion and dehydration, sepsis or other infection, hypoxia or shock; a mixed metabolic acidosis with increased anion gap arises, where both ketone bodies and lactate contribute to acidosis, and phosphate depletion with reduced 2,3‑diphosphoglycerate, which impairs oxygen release in tissues and thus promotes tissue hypoxia, may also play a role.|Lactic acidosis is not excluded in DKA; on the contrary, it is clinically important to consider it and actively look for it, for example by measuring lactate in blood gases; the statement that DKA cannot be accompanied by lactic acidosis is therefore incorrect." 
+          buttontitle="check the answer"></bdl-quizx>
 
 <bdl-quiz-summary id="qs">
-  Shrnutí odpovědí:
+  Summary of answers:
 </bdl-quiz-summary>             
 <bdl-quiz-control ids="q3.1,q3.2,q3.3,q3.4,q3.5,q3.6,q3.7,q3.8,qs"></bdl-quiz-control>
 
