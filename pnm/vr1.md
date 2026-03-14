@@ -1,5 +1,5 @@
 <div class="w3-blue" style="position: absolute;right:1px">
-<span class="w3-small">25.05.11-c&nbsp;</span>
+<span class="w3-small">26.03-a&nbsp;</span>
 <bdl-animate-control id="controlbuttons1" controlfmi="true" showstep="false" playafterstart="true"playafterstartmillis="1000"></bdl-animate-control>
 <bdl-animate-control id="controlbuttons2" controlfmi="true" showstep="false" playafterstart="true"playafterstartmillis="20000"></bdl-animate-control>
 <bdl-animate-control id="controlbuttons3" controlfmi="true" showstep="false" playafterstart="true" playafterstartmillis="40000"></bdl-animate-control>
@@ -172,8 +172,7 @@ Ventilated gas: <!--bdl-buttonparams title="Normal" ids="ido2,idco2,idh2o" value
 <bdl-buttonparams title="O2 40%" ids="ido2,idco2,idh2o" values="40,0.03,6"></bdl-buttonparams>
 <bdl-buttonparams title="O2 60%" ids="ido2,idco2,idh2o" values="60,0.03,6"></bdl-buttonparams-->
 <bdl-range id="ido2" title="O2 %" min="5" max="93" default="21" fromid="vrapi" refindex="o2_fraction"  refconditionvar="patient_state" refconditionvalue="3"></bdl-range><br/>
-<bdl-range id="iddeadspace" title="dead space" min="100" max="550" default="150" initdefault="true"></bdl-range>
-<bdl-range id="iddeadspace" title="dead space" min="100" max="4500" default="150" initdefault="true"></bdl-range>
+<bdl-range id="iddeadspace" title="dead space" min="100" max="400" default="150" initdefault="true"></bdl-range>
 <bdl-range id="idshunts" title="L-V shunts %" min="5" max="95" default="2" initdefault="true"></bdl-range>
 <bdl-range id="idco2" title="CO2 %" min="0" max="10" default="0.03" step="0.01"></bdl-range>
 <bdl-range id="idh2o" title="H2O %" min="0" max="10" default="6" step="0.1"></bdl-range>
