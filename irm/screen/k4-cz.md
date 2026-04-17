@@ -140,6 +140,6 @@ A ![1mediumregulacehepcidinu](imageregulacehepcidinu.png)
 </div>
 <div id="feedback">
 
-<a href="https://api.socrative.com/rc/eeuJ96" target="_blank" class="w3-button w3-theme-d1 w3-xxlarge">ohodnoťte seminář</a>
+<a href="https://api.socrative.com/rc/2cSewK" target="_blank" class="w3-button w3-theme-d1 w3-xxlarge">zpětná vazba na seminář</a>
 
 </div>
