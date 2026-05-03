@@ -29,7 +29,7 @@ Dobrovolně - prosím vyplňte závěrečný test a dejte nám zpětnou vazbu
 
 
 <a class="w3-button w3-theme-dark" href="https://api.socrative.com/rc/VghYke" target="_blank">TEST a ZPÉTNÁ VAZBA</a>
-https://api.socrative.com/rc/kK9Emj
+
 </div>
 </div>
 </div>
