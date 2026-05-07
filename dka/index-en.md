@@ -1,3 +1,5 @@
+<div class="w3-row">
+<div class="w3-twothird">
 <div class="w3-margin w3-xxlarge w3-sand w3-padding">
 Interactive case study with simulator
     
@@ -9,4 +11,13 @@ Interactive case study with simulator
 <button onclick="document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen()" class="w3-button w3-right w3-theme-dark">
   Fullscreen
 </button>
+</div>
+
+</div>
+<div class="w3-third">
+
+![qrcodedka](qrcodedka.png)
+
+
+</div>
 </div>
