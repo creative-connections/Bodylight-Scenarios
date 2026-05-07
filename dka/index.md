@@ -1,3 +1,5 @@
+<div class="w3-row">
+<div class="w3-twothird">
 <div class="w3-margin w3-xxlarge w3-sand w3-padding">
     Interaktivní kazuistika
     
@@ -10,5 +12,13 @@
   Celá obrazovka
 </button>
 
+</div>
+
+</div>
+<div class="w3-third">
+
+![qrcodedka](qrcodedka.png)
+
+</div>
 </div>
 
