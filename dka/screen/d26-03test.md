@@ -144,6 +144,24 @@ Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016
 <bdl-quizx id="q2.1" type="choice2" question="2.1 Aniontová mezera (anion gap, AG) se v praxi nejčastěji počítá jakým vzorcem?" answers="A. AG = Na⁺ − (Cl⁻ + HCO₃⁻).|B. AG = Na⁺ + (2×Cl⁻) + HCO₃⁻.|C. AG = (Na⁺ + K⁺) + (Cl⁻ + HCO₃⁻).|D. AG = (Cl⁻ + HCO₃⁻) − Na⁺.|E. AG = (Na⁺ + Cl⁻) − (K⁺ + HCO₃⁻)." correctoptions="true|false|false|false|false" explanations="Nejběžněji se v klinické praxi používá vzorec AG = Na⁺ − (Cl⁻ + HCO₃⁻), přičemž některé laboratoře uvádějí i variantu s draslíkem (AG = [Na⁺ + K⁺] − [Cl⁻ + HCO₃⁻]); je proto důležité znát použitou verzi při interpretaci referenčního rozmezí.|Tento vzorec nesmyslně zdvojuje koncentraci chloridů a neodpovídá fyziologické definici aniontové mezery.|Ve správném výpočtu se koncentrace hlavních aniontů od koncentrace kationtů odečítají, nikoli přičítají, proto tento zápis neodpovídá definici aniontové mezery.|Tento vzorec má obrácené znaménko (anionty minus kationty), takže by vedl k záporným hodnotám a neodpovídá běžně používané definici AG.|Tento zápis kombinuje ionty bez vazby na standardní definici aniontové mezery a nedává klinicky užitečný ani používaný výsledek." buttontitle="zkontrolovat odpověď"></bdl-quizx>
 
 <bdl-quizx id="q2.2" type="choice2" question="2.2 Aniontová mezera (AG) se v této úloze počítá jako AG = Na⁺ − (Cl⁻ + HCO₃⁻) bez K⁺. Z daných hodnot: Na 123 mmol/l, Cl 88 mmol/l, HCO₃⁻ (aktuální) 6,1 mmol/l spočítejte AG a vyberte správnou odpověď." answers="A. AG = 314,2.|B. AG = 6.|C. AG = 28,9." correctoptions="false|false|true" explanations="Výpočet: 123 − (88 + 6,1) = 123 − 94,1 = 28,9 mmol/l, což odpovídá vysoké aniontové mezeře typické pro metabolickou acidózu (například ketoacidózu, laktátovou acidózu nebo hromadění uremických kyselin).|Tato hodnota by odpovídala normální nebo nízké aniontové mezeře, což neodpovídá takto nízkému HCO₃⁻ při daných koncentracích sodíku a chloridů; jde o chybný výsledek.|Správně vypočtená aniontová mezera je 28,9 mmol/l, což svědčí pro vysokou AG metabolickou acidózu a je v souladu s uvedenými koncentracemi Na⁺, Cl⁻ a HCO₃⁻." buttontitle="zkontrolovat odpověď"></bdl-quizx>
+<bdl-quizx id="q2.2a" type="choice2" 
+           question="2.2a Jaká je to porucha ABR dle diagramu ASTRUP pH pCO2?" 
+           answers="A. chronický base deficit|B. akutní base deficit|C. chronická hypercapnie|D. akutní hypercapnie" 
+           correctoptions="true|false|false|false" 
+           explanations="ano|ne|ne|ne" 
+           buttontitle="zkontrolovat odpověď"></bdl-quizx>
+<bdl-quizx id="q2.2b" type="choice2" 
+           question="2.2b Jaká je to porucha ABR dle diagramu ASTRUP pH HCO3-?" 
+           answers="A. akutní respirační acidóza|B. metabolická acidóza|C. chronická respirační acidóza|D. metabolická alkalóza" 
+           correctoptions="false|true|false|false" 
+           explanations="ne|ano|ne|ne" 
+           buttontitle="zkontrolovat odpověď"></bdl-quizx>
+<bdl-quizx id="q2.2c" type="choice2" 
+           question="2.2c Jaká je to porucha ABR dle diagramu ASTRUP BE pCO2?" 
+           answers="A. ARAc - akutní respirační acidóza|B. UMAc - ustálená metabolická acidóza|C. URAlk - ustálená respirační alkalóza|D. AMAlk - akutní metabolická alkalóza" 
+           correctoptions="false|true|false|false" 
+           explanations="ano|ne|ne|ne" 
+           buttontitle="zkontrolovat odpověď"></bdl-quizx> 
 
 <bdl-quizx id="q2.3" type="choice2" 
           question="2.3 Na základě hodnot (glykémie 48,4 mmol/l, aktuální HCO₃⁻ 6,1 mmol/l, standardní HCO₃⁻ 8,9 mmol/l, Na 123 mmol/l, Cl 88 mmol/l, AG ≈ 28,9) jaká akutní komplikace diabetu je nejpravděpodobnější?" 
@@ -197,7 +215,7 @@ Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016
   Shrnutí odpovědí:
 
 </bdl-quiz-summary>          
-<bdl-quiz-control ids="q2.1;astrup2,q2.2,q2.3,q2.4,q2.5,q2.6,q2.7,q2.8,q2.9,qs1"></bdl-quiz-control>             
+<bdl-quiz-control ids="q2.1;astrup2,q2.2,q2.2a;astrup2,q2.2b;astrup,q2.2c;astrup3,q2.3,q2.4,q2.5,q2.6,q2.7,q2.8,q2.9,qs1"></bdl-quiz-control>             
 
 </div>
 </div>
