@@ -144,6 +144,24 @@ Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016
 <bdl-quizx id="q2.1" type="choice2" question="2.1 The anion gap (AG) is most often calculated in practice using which formula?" answers="A. AG = Na⁺ − (Cl⁻ + HCO₃⁻).|B. AG = Na⁺ + (2×Cl⁻) + HCO₃⁻.|C. AG = (Na⁺ + K⁺) + (Cl⁻ + HCO₃⁻).|D. AG = (Cl⁻ + HCO₃⁻) − Na⁺.|E. AG = (Na⁺ + Cl⁻) − (K⁺ + HCO₃⁻)." correctoptions="true|false|false|false|false" explanations="The most commonly used formula in clinical practice is AG = Na⁺ − (Cl⁻ + HCO₃⁻), while some laboratories also use a variant with potassium (AG = [Na⁺ + K⁺] − [Cl⁻ + HCO₃⁻]); it is therefore important to know the version used when interpreting the reference range.|This formula nonsensically doubles the chloride concentration and does not correspond to the physiological definition of the anion gap.|In the correct calculation, the concentration of the main anions is subtracted from the concentration of cations, not added, therefore this expression does not correspond to the definition of the anion gap.|This formula has the sign reversed (anions minus cations), so it would lead to negative values and does not correspond to the commonly used definition of AG.|This expression combines ions without relation to the standard definition of the anion gap and does not give a clinically useful or commonly used result." buttontitle="check the answer"></bdl-quizx>
 
 <bdl-quizx id="q2.2" type="choice2" question="2.2 In this task, the anion gap (AG) is calculated as AG = Na⁺ − (Cl⁻ + HCO₃⁻) without K⁺. From the given values: Na 123 mmol/l, Cl 88 mmol/l, HCO₃⁻ (actual) 6.1 mmol/l, calculate AG and choose the correct answer." answers="A. AG = 314.2.|B. AG = 6.|C. AG = 28.9." correctoptions="false|false|true" explanations="Calculation: 123 − (88 + 6.1) = 123 − 94.1 = 28.9 mmol/l, which corresponds to a high anion gap typical of metabolic acidosis (for example ketoacidosis, lactic acidosis or accumulation of uremic acids).|This value would correspond to a normal or low anion gap, which does not match such a low HCO₃⁻ at the given sodium and chloride concentrations; it is an incorrect result.|The correctly calculated anion gap is 28.9 mmol/l, which indicates high AG metabolic acidosis and is consistent with the given Na⁺, Cl⁻ and HCO₃⁻ concentrations." buttontitle="check the answer"></bdl-quizx>
+<bdl-quizx id="q2.2a" type="choice2" 
+           question="2.2a What type of ABR disorder is this - as in pH pCO2 diagram?" 
+           answers="A. chronic base deficit|B. acute base deficit|C. chronic hypercapnia|D. acute hypercapnia" 
+           correctoptions="true|false|false|false" 
+           explanations="ano|ne|ne|ne" 
+           buttontitle="check answer"></bdl-quizx>
+<bdl-quizx id="q2.2b" type="choice2" 
+           question="2.2b What type of ABR disorder is this - as in pH HCO3- diagram?" 
+           answers="A. chronic respiratory acidosis|B. metabolic alkalosis|C. metabolic acidosis|D. acute respiratory acidosis" 
+           correctoptions="false|false|true|false" 
+           explanations="no|no|yes|no" 
+           buttontitle="check answer"></bdl-quizx>
+<bdl-quizx id="q2.2c" type="choice2" 
+           question="2.2c What type of ABR disorder is this - as in BE pCO2 nomogram?" 
+           answers="A. UMAc - steady metabolic acidosis|B. AMAc - acute metabolic acidosis|C. URAlk - steady respiratory alkalosis|D. AMAlk - acute metabolic alkalosis" 
+           correctoptions="true|false|false|false" 
+           explanations="ano|ne|ne|ne" 
+           buttontitle="check answer"></bdl-quizx>               
 
 <bdl-quizx id="q2.3" type="choice2" 
           question="2.3 Based on the values (glycemia 48.4 mmol/l, actual HCO₃⁻ 6.1 mmol/l, standard HCO₃⁻ 8.9 mmol/l, Na 123 mmol/l, Cl 88 mmol/l, AG ≈ 28.9) which acute complication of diabetes is most likely?" 
@@ -197,7 +215,7 @@ Color Atlas of Pathophysiology** Thieme, 3<sup>rd</sup>edition, 2016
   Summary of answers:
 
 </bdl-quiz-summary>          
-<bdl-quiz-control ids="q2.1;astrup2,q2.2,q2.3,q2.4,q2.5,q2.6,q2.7,q2.8,q2.9,qs1"></bdl-quiz-control>             
+<bdl-quiz-control ids="q2.1;astrup2,q2.2,q2.2a;astrup2,q2.2b;astrup,q2.2c;astrup3,q2.3,q2.4,q2.5,q2.6,q2.7,q2.8,q2.9,qs1"></bdl-quiz-control>             
 
 </div>
 </div>
