@@ -6,5 +6,9 @@
   3. **další vyšetření** - rozbor dalších výsledků vyšetření
   4. **léčba** - základní management léčby
 
+<button onclick="document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen()" class="w3-button w3-right w3-theme-dark">
+  Celá obrazovka
+</button>
+
 </div>
 
