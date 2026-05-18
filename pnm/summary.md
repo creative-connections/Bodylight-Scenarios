@@ -6,3 +6,5 @@
 * [ Simulátor pro VR](#vr1.md)
   * [ simulátor pro VR - zpomalený čas](#vr2.md)
   * [Surrogate model demo](#surrogate.md)
+  * [Surrogate model ve VR](#vr1-surrogate.md)
+  
