@@ -5,4 +5,4 @@
   * [pacient4-scmv](#pacient4.md)
 * [ Simulátor pro VR](#vr1.md)
   * [ simulátor pro VR - zpomalený čas](#vr2.md)
-
+  * [Surrogate model demo](#surrogate.md)
