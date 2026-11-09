@@ -1,5 +1,5 @@
 <div class="w3-blue" style="position: absolute;right:1px">
-<span class="w3-small">26.03-a&nbsp;</span>
+<span class="w3-small">26.11-a&nbsp;</span>
 <bdl-animate-control id="controlbuttons1" controlfmi="true" showstep="false" playafterstart="true"playafterstartmillis="1000"></bdl-animate-control>
 <bdl-animate-control id="controlbuttons2" controlfmi="true" showstep="false" playafterstart="true"playafterstartmillis="5000"></bdl-animate-control>
 <bdl-animate-control id="controlbuttons3" controlfmi="true" showstep="false" playafterstart="true" playafterstartmillis="10000"></bdl-animate-control>
@@ -56,8 +56,8 @@
 <div class="w3-quarter">
 <div class="" style="white-space:nowrap">
 <div class="w3-text-yellow w3-large">
-&nbsp;sO<sub>2</sub><sup>art</sup><b class="w3-xxxlarge"><bdl-value id="spo2value" fromid="idfmi" refindex="1" convertor="100,1" precision="3" ></bdl-value></b>&nbsp;<span class="w3-small">%</span><br/></div>
-<div class="w3-text-red w3-large">&nbsp;pO<sub>2</sub><sup>art</sup><b class="w3-large"><bdl-value id="idpo2"  fromid="idfmi" refindex="13" convertor="1,133.322" precision="2" convertors="1,133.322"></bdl-value></b>&nbsp;<span class="w3-small">mmHg</span><br/></div>
+&nbsp;sO<sub>2</sub><sup>art</sup><b class="w3-xxxlarge"><bdl-value id="spo2value" fromid="idfmi" refindex="1" convertor="50 * (x + 1 - ((x - 1) ** 2) ** 0.5)" precision="3" ></bdl-value></b>&nbsp;<span class="w3-small">%</span><br/></div>
+<div class="w3-text-red w3-large">&nbsp;pO<sub>2</sub><sup>art</sup><b class="w3-large"><bdl-value id="idpo2"  fromid="idfmi" refindex="13" convertor="1,133.322" precision="4" convertors="1,133.322"></bdl-value></b>&nbsp;<span class="w3-small">mmHg</span><br/></div>
 <div class="w3-text-green w3-large">&nbsp;pCO<sub>2</sub><sup>art</sup><b class="w3-large"><bdl-value fromid="idfmi" refindex="14" convertor="1,133.322" precision="4" convertors="1,133.322"></bdl-value></b>&nbsp;<span class="w3-small">mmHg</span></div>
 <div class="w3-text-blue w3-large">&nbsp;etCO<sub>2</sub><b class="w3-large"><bdl-value id="idetco2"  fromid="idfmi" refindex="14" convertor="1,134" precision="2" convertors="1,133.322" ></bdl-value></b>&nbsp;<span class="w3-small">mmHg</span></div>
 </div>
@@ -116,6 +116,8 @@
 <bdl-buttonparams title="2(pneumonia)" ids="idshunts,iddeadspace,idrate,idcomp,ido2,idpause,idexp,hradd" values="85,350,31,5,21,2,0.31,0" fromid="vrapi" refindex="patient_state" thresholdvalue="2"></bdl-buttonparams>
 <bdl-buttonparams title="3(ventilated)" ids="idshunts,iddeadspace,idrate,idcomp,hradd" values="55,250,15,10,-40" fromid="vrapi" refindex="patient_state" thresholdvalue="3"></bdl-buttonparams>
 <bdl-buttonparams title="4(stabilized)" ids="idshunts,iddeadspace,idrate,idcomp,ido2,hradd" values="50,250,15,10,60,-10" fromid="vrapi" refindex="patient_state" thresholdvalue="4"></bdl-buttonparams>
+<!-- Scenario 8 basic settings-->
+<bdl-buttonparams title="8(scenario)" ids="idshunts,iddeadspace,idrate,idcomp,ido2,idpause,idexp,hradd,idiratio,ideratio" values="18,180,16,35,93,10,0.1,-13,1,2" fromid="vrapi" thresholdvalue="8" refindex="patient_state"></bdl-buttonparams> 
 <button class="w3-button w3-blue" onclick="['idRR', 'idheartrate', 'idpH', 'idpHven','idpHmix','spo2value'].forEach(id => document.getElementById(id).style.display = 'inline');">show1</button>
 <button class="w3-button w3-blue" onclick="['idNIBP', 'idNIBP2', 'idP', 'idV','idetco2','idpo2','idpv'].forEach(id => document.getElementById(id).style.display = 'inline');">show2</button>
 <button class="w3-button w3-blue" onclick="['idRR', 'idheartrate', 'idpH', 'idpHven','idpHmix','spo2value','idNIBP', 'idNIBP2', 'idP', 'idV','idetco2','idpo2','idpv'].forEach(id => document.getElementById(id).style.display = 'none');">hide</button>
@@ -172,7 +174,7 @@ Ventilated gas: <!--bdl-buttonparams title="Normal" ids="ido2,idco2,idh2o" value
 <bdl-buttonparams title="O2 40%" ids="ido2,idco2,idh2o" values="40,0.03,6"></bdl-buttonparams>
 <bdl-buttonparams title="O2 60%" ids="ido2,idco2,idh2o" values="60,0.03,6"></bdl-buttonparams-->
 <bdl-range id="ido2" title="O2 %" min="5" max="93" default="21" fromid="vrapi" refindex="o2_fraction"  refconditionvar="patient_state" refconditionvalue="3"></bdl-range><br/>
-<bdl-range id="iddeadspace" title="dead space" min="100" max="400" default="150" initdefault="true"></bdl-range>
+<bdl-range id="iddeadspace" title="dead space" min="100" max="1000" default="150" initdefault="true"></bdl-range>
 <bdl-range id="idshunts" title="L-V shunts %" min="5" max="95" default="2" initdefault="true"></bdl-range>
 <bdl-range id="idco2" title="CO2 %" min="0" max="10" default="0.03" step="0.01"></bdl-range>
 <bdl-range id="idh2o" title="H2O %" min="0" max="10" default="6" step="0.1"></bdl-range>
